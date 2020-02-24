@@ -1,0 +1,103 @@
+{
+  "title": "Resource",
+  "description": "An imagery source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "locationSet",
+    "name",
+    "description",
+    "url"
+  ],
+
+  "properties": {
+    "id": {
+      "description": "(required) A unique identifier for the resource",
+      "type": "string",
+      "pattern": "^[-_.A-Za-z0-9]+$"
+    },
+    "type": {
+      "description": "(required) Type of imagery source",
+      "type": "string",
+      "enum": ["tms", "wms"]
+    },
+    "locationSet": {
+      "$comment": "See location-conflation documentation for compatible values: https://github.com/ideditor/location-conflation#readme",
+      "description": "(required) included and excluded locations for this resource",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "include"
+      ],
+      "properties": {
+        "include": {
+          "description": "(required) locations included",
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "anyOf": [
+              { "$ref": "#/definitions/countryCoder" },
+              { "$ref": "#/definitions/coordinatePair" },
+              { "$ref": "#/definitions/geojsonFilename" }
+            ]
+          }
+        },
+        "exclude": {
+          "description": "(optional) locations excluded",
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "anyOf": [
+              { "$ref": "#/definitions/countryCoder" },
+              { "$ref": "#/definitions/coordinatePair" },
+              { "$ref": "#/definitions/geojsonFilename" }
+            ]
+          }
+        }
+      }
+    },
+    "name": {
+      "$comment": "Assumed to be in English, this value will be sent to Transifex for translation",
+      "description": "(required) Display name for this imagery source",
+      "type": "string"
+    },
+    "description": {
+      "$comment": "Assumed to be in English, this value will be sent to Transifex for translation",
+      "description": "(required) One line description of the imagery source",
+      "type": "string"
+    },
+    "extendedDescription": {
+      "$comment": "Assumed to be in English, this value will be sent to Transifex for translation",
+      "description": "(optional) Longer description of the imagery source",
+      "type": "string"
+    },
+    "url": {
+      "description": "(required) A url template for the imagery source",
+      "type": "string"
+    }
+  },
+
+  "definitions": {
+    "countryCoder": {
+      "$comment": "See country-coder documentation for compatible values: https://github.com/ideditor/country-coder#readme",
+      "description": "A country code (ISO 3166-1, United Nations M49, or anything recognized by country-coder)",
+      "type": "string"
+    },
+    "coordinatePair": {
+      "description": "A coordinate pair formatted as [longitude, latitude]",
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
+    "geojsonFilename": {
+      "description": "A filename for one of the geojson features in this project",
+      "type": "string",
+      "pattern": "^.*\\.geojson$"
+    }
+  }
+}
