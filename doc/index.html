@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'/>
+<title>Imagery Index</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet'/>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    color: #eee;
+    background: #151513;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    overscroll-behavior: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:visited, a {
+    color: #67e;
+    font-weight: bold;
+  }
+  a:hover {
+    color: #56a;
+  }
+  #wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  #top, #mid {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+  }
+  #top {
+    flex: 0 1 auto;
+    align-items: center;
+  }
+  #title {
+    flex: 0 0 50%;
+  }
+  #controls {
+    flex: 1 1 auto;
+    padding: 10px;
+  }
+  #map {
+    flex: 0 0 75%;
+  }
+  #side {
+    padding: 10px;
+    flex: 1 1 auto;
+  }
+  h2 {
+    margin: 15px;
+  }
+  input[type=range] {
+    vertical-align: middle;
+  }
+</style>
+</head>
+
+<body>
+<div id='wrap'>
+  <div id='top'>
+    <div id='title'>
+      <h2>🛰 Imagery Index</h2>
+    </div>
+    <div id='controls'>
+      <label>Opacity: </label>
+      <input id='slider' type='range' min='0' max='100' step='0' value='70'/>
+      <span id='slider-value'>70%</span>
+    </div>
+  </div>
+  <div id='mid'>
+    <div id='map'></div>
+    <div id='side'>side</div>
+  </div>
+</div>
+
+<script>
+var slider = document.getElementById('slider');
+var sliderValue = document.getElementById('slider-value');
+
+mapboxgl.accessToken = 'pk.eyJ1IjoibWlrZWxtYXJvbiIsImEiOiJjaWZlY25lZGQ2cTJjc2trbmdiZDdjYjllIn0.Wx1n0X7aeCQyDTnK6_mrGw';
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/light-v10',
+  center: [0,0],
+  zoom: 1
+});
+
+// wait for map to load before adjusting it
+map.on('load', function() {
+  // var dataURL = 'https://cdn.jsdelivr.net/gh/osmlab/osm-community-index@master/dist/combined.min.geojson';
+  // map.addSource('osm-community-index', { type: 'geojson', data: dataURL });
+  // map.addLayer({
+  //   'id': 'osm-community-index',
+  //   'type': 'fill',
+  //   'source': 'osm-community-index',
+  //   'paint': { 'fill-color': 'hsla(243, 93%, 64%, 0.24)', 'fill-opacity': 1 }
+  // });
+
+  var tiles = ['https://a.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2013/{z}/{x}/{y}.jpg'];
+
+  map.addLayer({
+    id: 'raster-layer',
+    type: 'raster',
+    source: {
+      type: 'raster',
+      tiles: tiles,
+    },
+    paint: {
+      'raster-opacity': 0.7
+    },
+    minzoom: 0,
+    maxzoom: 22
+  });
+
+  var lastVal;
+  slider.addEventListener('input', function(e) {
+    var currVal = parseInt(e.target.value, 10);
+    if (currVal !== lastVal) {
+      lastVal = currVal;
+      map.setPaintProperty('raster-layer', 'raster-opacity', currVal / 100);
+      sliderValue.textContent = e.target.value + '%';
+    }
+  });
+
+});
+
+</script>
+</body>
+</html>
