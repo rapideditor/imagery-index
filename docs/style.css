@@ -30,7 +30,7 @@ a:hover,
 
 .hasCols { display: flex; flex-flow: row nowrap; }
 .hasRows { display: flex; flex-flow: column nowrap; }
-.hasCols > div, .hasRows > div { flex: 1 1 auto; }
+.hasCols > div, .hasRows > div { flex: 1; }
 
 .hide { display: none; }
 
@@ -67,8 +67,8 @@ a:hover,
   align-items: center;
   justify-content: flex-start;
 }
-#controls > .control {
-  flex: 1 0 50px;
+#control-slider {
+  flex: 2;
 }
 
 #octocat {

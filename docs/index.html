@@ -20,7 +20,7 @@
     <div id='sidebar' class='hasRows'>
       <div class='section'>
         <p>Paste an ELI geojson file here:</p>
-<textarea autofocus id='eli-textarea' name='eli-textarea' rows='15'>
+<textarea autofocus id='eli-textarea' name='eli-textarea' rows='16'>
 {
   "type": "Feature",
   "geometry": null,
@@ -46,14 +46,22 @@
 
   <div id='viewer' class='hasRows'>
     <div id='controls' class='hasCols'>
-      <div class='control'>
+      <div id='control-slider' class='control'>
         <label>Opacity: </label>
         <input id='slider' type='range' min='0' max='100' step='0' value='70'/>
         <span id='slider-value'>70%</span>
       </div>
-      <div class='control'>
+      <div id='control-zoom' class='control'>
         <label>Zoom: </label>
         <span id='zoom-value'>1</span>
+      </div>
+      <div id='control-minzoom' class='control hide'>
+        <label>Min Zoom: </label>
+        <span id='minzoom-value'>1</span>
+      </div>
+      <div id='control-maxzoom' class='control hide'>
+        <label>Max Zoom: </label>
+        <span id='maxzoom-value'>1</span>
       </div>
       <div id='octocat'>
         <a href='https://github.com/ideditor/imagery-index' target='_blank'>
@@ -68,16 +76,6 @@
 </div>
 
 <script>
-var slider = document.getElementById('slider');
-var sliderValue = document.getElementById('slider-value');
-var zoomValue = document.getElementById('zoom-value');
-var eliTextarea = document.getElementById('eli-textarea');
-var viewButton = document.getElementById('view-button');
-var isGood = document.getElementById('isgood');
-var isBad = document.getElementById('isbad');
-var results = document.getElementById('results');
-var attribution = document.getElementById('attribution');
-
 mapboxgl.accessToken = 'pk.eyJ1IjoibWlrZWxtYXJvbiIsImEiOiJjaWZlY25lZGQ2cTJjc2trbmdiZDdjYjllIn0.Wx1n0X7aeCQyDTnK6_mrGw';
 var map = new mapboxgl.Map({
   attributionControl: false,
@@ -87,8 +85,44 @@ var map = new mapboxgl.Map({
   zoom: 1
 });
 
+// select some elements to use later
+var slider = document.getElementById('slider');
+var sliderValue = document.getElementById('slider-value');
+var zoomValue = document.getElementById('zoom-value');
+var controlMinZoom = document.getElementById('control-minzoom');
+var controlMaxZoom = document.getElementById('control-maxzoom');
+var minZoomValue = document.getElementById('minzoom-value');
+var maxZoomValue = document.getElementById('maxzoom-value');
+var eliTextarea = document.getElementById('eli-textarea');
+var viewButton = document.getElementById('view-button');
+var isGood = document.getElementById('isgood');
+var isBad = document.getElementById('isbad');
+var results = document.getElementById('results');
+var attribution = document.getElementById('attribution');
+
 var baseAttribution = ' <a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a>';
 attribution.innerHTML = baseAttribution;
+
+// state
+var _rasterLayer = {
+  id: 'raster-layer',
+  type: 'raster',
+  source: {
+    type: 'raster',
+    tiles: []
+  },
+  paint: {
+    'raster-opacity': 0.7,
+    'raster-fade-duration': 50
+  },
+  minzoom: 0,
+  maxzoom: 22
+};
+
+var _lastOpacity;
+var _lastZoom;
+var _isReset = true;
+
 
 // wait for map to load before adjusting it
 map.on('load', function() {
@@ -102,25 +136,6 @@ map.on('load', function() {
   //   'paint': { 'fill-color': 'hsla(243, 93%, 64%, 0.24)', 'fill-opacity': 1 }
   // });
 
-  var _rasterLayer = {
-    id: 'raster-layer',
-    type: 'raster',
-    source: {
-      type: 'raster',
-      tiles: []
-    },
-    paint: {
-      'raster-opacity': 0.7,
-      'raster-fade-duration': 50
-    },
-    minzoom: 0,
-    maxzoom: 22
-  };
-
-  var _lastOpacity;
-  var _lastZoom;
-  var _isReset = true;
-
   map.on('zoom', function(e) {
     var currZoom = Math.round((e.target.transform.zoom + Number.EPSILON) * 100) / 100;
     if (currZoom !== _lastZoom) {
@@ -128,7 +143,6 @@ map.on('load', function() {
       zoomValue.textContent = '' + currZoom;
     }
   });
-
 
   slider.addEventListener('input', function(e) {
     var currOpacity = parseInt(e.target.value, 10);
@@ -153,6 +167,13 @@ map.on('load', function() {
       var minZoom = props.min_zoom || 0;
       var maxZoom = props.max_zoom || 22;
 
+      // setup zoom displays
+      controlMinZoom.className = 'control';
+      controlMaxZoom.className = 'control';
+      minZoomValue.textContent = '' + minZoom;
+      maxZoomValue.textContent = '' + maxZoom;
+
+
       // show attribution, if any
       var attr = props.attribution || {};
       var attrText = attr.text || '';
@@ -161,7 +182,7 @@ map.on('load', function() {
       if (attrText && !attrURL) {
         attribution.innerHTML = '<span>' + attrText + '</span>' + baseAttribution;
       } else if (attrText && attrURL) {
-        attribution.innerHTML = '<a href="' + attrURL + '" target="_blank">' + attrText + '</a>' + baseAttribution;
+        attribution.innerHTML = '<a href="' + attrURL + '" target="_blank">© ' + attrText + '</a>' + baseAttribution;
       } else {
         attribution.innerHTML = baseAttribution;
       }
