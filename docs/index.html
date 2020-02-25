@@ -104,13 +104,16 @@ var baseAttribution = ' <a href="https://www.mapbox.com/about/maps/" target="_bl
 attribution.innerHTML = baseAttribution;
 
 // state
+var _rasterSource = {
+  id: 'raster-source',
+  type: 'raster',
+  tiles: []
+};
+
 var _rasterLayer = {
   id: 'raster-layer',
   type: 'raster',
-  source: {
-    type: 'raster',
-    tiles: []
-  },
+  source: 'raster-source',
   paint: {
     'raster-opacity': 0.7,
     'raster-fade-duration': 50
@@ -153,6 +156,7 @@ map.on('load', function() {
     }
   });
 
+  // parse the given ELI data
   viewButton.addEventListener('click', function(e) {
     e.target.blur();
     if (eliTextarea.value === '') return;
@@ -187,7 +191,7 @@ map.on('load', function() {
         attribution.innerHTML = baseAttribution;
       }
 
-      // swap some tokens to make it work in Mapbox GL.
+      // Swap some tokens to make URLs work in Mapbox GL.
       if (type === 'tms') {
         url = url
           .replace(/{zoom}/i, '{z}')
@@ -196,15 +200,19 @@ map.on('load', function() {
         throw 'Unsupported type "' + type + '".';
       }
 
-      // setup the layer properties
-      _rasterLayer.source.tiles = [url];
+      // Setup the source/layer properties
+      _rasterSource.tiles = [url];
       _rasterLayer.minzoom = minZoom;
       _rasterLayer.maxzoom = maxZoom;
 
-      // replace the layer
-      if (map.getLayer(_rasterLayer.id)) {
-        map.removeLayer(_rasterLayer.id);
+      // replace the source/layer
+      if (map.getLayer('raster-layer')) {
+        map.removeLayer('raster-layer');
       }
+      if (map.getSource('raster-source')) {
+        map.removeSource('raster-source');
+      }
+      map.addSource('raster-source', _rasterSource);
       map.addLayer(_rasterLayer);
 
       isGood.className = '';
