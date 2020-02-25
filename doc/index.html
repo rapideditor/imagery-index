@@ -4,9 +4,9 @@
 <meta charset='utf-8'/>
 <title>Imagery Index</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
 <script src='https://kit.fontawesome.com/c772610440.js' crossorigin='anonymous'></script>
-<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet'/>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet'/>
 <style>
   body {
     margin: 0;
@@ -54,11 +54,15 @@
   #title {
     flex: 0 0 50px;
     align-items: center;
+    padding: 0 10px;
   }
   #controls {
     flex: 0 0 50px;
     padding: 10px 20px;
     align-items: center;
+  }
+  #control-zoom {
+    flex: 1 0 50px;
   }
   #octocat {
     flex: 0 0 40px;
@@ -163,10 +167,14 @@
 
   <div id='viewer' class='hasRows'>
     <div id='controls' class='hasCols'>
-      <div>
+      <div id='control-opacity'>
         <label>Opacity: </label>
         <input id='slider' type='range' min='0' max='100' step='0' value='70'/>
         <span id='slider-value'>70%</span>
+      </div>
+      <div id='control-zoom'>
+        <label>Zoom: </label>
+        <span id='zoom-value'>1</span>
       </div>
       <div id='octocat'>
         <a href='https://github.com/ideditor/imagery-index' target='_blank'>
@@ -181,6 +189,7 @@
 <script>
 var slider = document.getElementById('slider');
 var sliderValue = document.getElementById('slider-value');
+var zoomValue = document.getElementById('zoom-value');
 var eliTextarea = document.getElementById('eli-textarea');
 var viewButton = document.getElementById('view-button');
 var isGood = document.getElementById('isgood');
@@ -206,31 +215,40 @@ map.on('load', function() {
   //   'paint': { 'fill-color': 'hsla(243, 93%, 64%, 0.24)', 'fill-opacity': 1 }
   // });
 
-  var tiles = ['https://a.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2013/{z}/{x}/{y}.jpg'];
-
-  map.addLayer({
+  var _layer = {
     id: 'raster-layer',
     type: 'raster',
     source: {
       type: 'raster',
-      tiles: tiles,
+      tiles: []
     },
     paint: {
-      'raster-opacity': 0.7
+      'raster-opacity': 0.7,
+      'raster-fade-duration': 50
     },
     minzoom: 0,
     maxzoom: 22
-  });
+  };
 
   var _lastOpacity;
+  var _lastZoom;
   var _isReset = true;
+
+  map.on('zoom', function(e) {
+    var currZoom = Math.round((e.target.transform.zoom + Number.EPSILON) * 100) / 100;
+    if (currZoom !== _lastZoom) {
+      _lastZoom = currZoom;
+      zoomValue.textContent = '' + currZoom;
+    }
+  });
+
 
   slider.addEventListener('input', function(e) {
     var currOpacity = parseInt(e.target.value, 10);
     if (currOpacity !== _lastOpacity) {
       _lastOpacity = currOpacity;
       map.setPaintProperty('raster-layer', 'raster-opacity', currOpacity / 100);
-      sliderValue.textContent = e.target.value + '%';
+      sliderValue.textContent = '' + currOpacity + '%';
     }
   });
 
@@ -240,12 +258,40 @@ map.on('load', function() {
     _isReset = false;
 
     try {
-      JSON.parse(eliTextarea.value);
+      var gj = JSON.parse(eliTextarea.value);
+      var props = gj.properties;
+      var name = props.name;
+      var type = props.type;
+      var url = props.url;
+      var minZoom = props.min_zoom || 0;
+      var maxZoom = props.max_zoom || 22;
+
+      // swap some tokens to make it work in Mapbox GL.
+      if (type === 'tms') {
+        url = url
+          .replace(/{zoom}/i, '{z}')
+          .replace(/{switch:(\w+)[^}]+}/i, '$1');
+      } else {
+        throw 'Unsupported type "' + type + '".';
+      }
+
+      // setup the layer properties
+      _layer.source.tiles = [url];
+      _layer.minzoom = minZoom;
+      _layer.maxzoom = maxZoom;
+
+      // replace the layer
+      if (map.getLayer(_layer.id)) {
+        map.removeLayer(_layer.id);
+      }
+      map.addLayer(_layer);
+
       isGood.className = '';
-      results.textContent = 'Valid JSON, but this does nothing yet';
-    } catch {
+      results.innerHTML = 'Valid JSON.<br/><em>' + name + '</em>';
+
+    } catch (err) {
       isBad.className = '';
-      results.textContent = 'Invalid JSON, but this does nothing yet';
+      results.innerHTML = 'Invalid JSON.<br/><em>' + err + '</em>';
     }
   });
 
@@ -256,7 +302,7 @@ map.on('load', function() {
     _isReset = true;
     isGood.className = 'hide';
     isBad.className = 'hide';
-    results.textContent = '';
+    results.innerHTML = '';
   }
 
 });
