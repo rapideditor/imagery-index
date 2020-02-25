@@ -16,6 +16,13 @@
     font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
     overscroll-behavior: none;
   }
+  textarea, button {
+    outline: none;
+    font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+  }
+  input[type=range] {
+    vertical-align: middle;
+  }
   a {
     text-decoration: none;
   }
@@ -26,9 +33,11 @@
     color: #56a;
   }
 
-  .col-container { display: flex; flex-flow: row nowrap; }
-  .row-container { display: flex; flex-flow: column nowrap; }
-  .col-container > div, .row-container > div { flex: 1 1 auto; }
+  .hasCols { display: flex; flex-flow: row nowrap; }
+  .hasRows { display: flex; flex-flow: column nowrap; }
+  .hasCols > div, .hasRows > div { flex: 1 1 auto; }
+
+  .hide { display: none; }
 
   #wrap {
     position: absolute;
@@ -67,33 +76,100 @@
   #title .icon {
     flex: 0 0 32px;
   }
-  input[type=range] {
-    vertical-align: middle;
+
+  #sidebar > div {
+    flex: 0 0 auto;
+    padding: 10px 10px 20px 10px;
+  }
+  #button-row {
+    align-items: center;
+  }
+  #isgood {
+    color: #0f0;
+  }
+  #isbad {
+    color: #f00;
+  }
+  #result-icon {
+    flex: 0 0 40px;
+  }
+
+  textarea {
+    overflow: auto;
+    width: 98%;
+    color: #ddd;
+    background: #444;
+    border: 2px solid #777;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    display: inline-block;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #eee;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  button:hover,
+  button:focus {
+    background: #0053ba;
+  }
+  button:focus {
+    outline: 1px solid #eee;
+    outline-offset: -4px;
+  }
+  button:active {
+    transform: scale(0.99);
   }
 
 </style>
 </head>
 
 <body>
-<div id='wrap' class='col-container'>
-  <div id='side' class='row-container'>
-    <div id='title' class='col-container'>
+<div id='wrap' class='hasCols'>
+  <div id='side' class='hasRows'>
+    <div id='title' class='hasCols'>
       <div class='icon'><i class='fas fa-satellite fa-2x'></i></div>
       <div><h2>imagery-index</h2></div>
     </div>
-    <div id='sidebar'>
+    <div id='sidebar' class='hasRows'>
+      <div id='eli'>
+        <p>Paste an ELI geojson file here:</p>
+        <textarea autofocus id='eli-textarea' name='eli-textarea' rows='20'></textarea>
+        <div id='button-row' class='hasCols'>
+          <div>
+            <button id='view-button'>View it!</button>
+          </div>
+          <div id='result-icon'>
+            <div id='isgood' class='hide'><i class='fas fa-check-circle fa-2x'></i></div>
+            <div id='isbad' class='hide'><i class='fas fa-times-circle fa-2x'></i></div>
+          </div>
+        </div>
+      </div>
+      <div id='results'></div>
     </div>
   </div>
 
-  <div id='viewer' class='row-container'>
-    <div id='controls' class='col-container'>
+  <div id='viewer' class='hasRows'>
+    <div id='controls' class='hasCols'>
       <div>
         <label>Opacity: </label>
         <input id='slider' type='range' min='0' max='100' step='0' value='70'/>
         <span id='slider-value'>70%</span>
       </div>
       <div id='octocat'>
-        <a href="https://github.com/ideditor/imagery-index" target="_blank">
+        <a href='https://github.com/ideditor/imagery-index' target='_blank'>
         <i class='fab fa-github fa-2x'></i>
         </a>
       </div>
@@ -105,6 +181,11 @@
 <script>
 var slider = document.getElementById('slider');
 var sliderValue = document.getElementById('slider-value');
+var eliTextarea = document.getElementById('eli-textarea');
+var viewButton = document.getElementById('view-button');
+var isGood = document.getElementById('isgood');
+var isBad = document.getElementById('isbad');
+var results = document.getElementById('results');
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibWlrZWxtYXJvbiIsImEiOiJjaWZlY25lZGQ2cTJjc2trbmdiZDdjYjllIn0.Wx1n0X7aeCQyDTnK6_mrGw';
 var map = new mapboxgl.Map({
@@ -141,15 +222,42 @@ map.on('load', function() {
     maxzoom: 22
   });
 
-  var lastVal;
+  var _lastOpacity;
+  var _isReset = true;
+
   slider.addEventListener('input', function(e) {
-    var currVal = parseInt(e.target.value, 10);
-    if (currVal !== lastVal) {
-      lastVal = currVal;
-      map.setPaintProperty('raster-layer', 'raster-opacity', currVal / 100);
+    var currOpacity = parseInt(e.target.value, 10);
+    if (currOpacity !== _lastOpacity) {
+      _lastOpacity = currOpacity;
+      map.setPaintProperty('raster-layer', 'raster-opacity', currOpacity / 100);
       sliderValue.textContent = e.target.value + '%';
     }
   });
+
+  viewButton.addEventListener('click', function(e) {
+    e.target.blur();
+    if (eliTextarea.value === '') return;
+    _isReset = false;
+
+    try {
+      JSON.parse(eliTextarea.value);
+      isGood.className = '';
+      results.textContent = 'Valid JSON, but this does nothing yet';
+    } catch {
+      isBad.className = '';
+      results.textContent = 'Invalid JSON, but this does nothing yet';
+    }
+  });
+
+  eliTextarea.addEventListener('input', reset);
+
+  function reset() {
+    if (_isReset) return;
+    _isReset = true;
+    isGood.className = 'hide';
+    isBad.className = 'hide';
+    results.textContent = '';
+  }
 
 });
 
