@@ -5,6 +5,7 @@
 <title>Imagery Index</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+<script src='https://kit.fontawesome.com/c772610440.js' crossorigin='anonymous'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet'/>
 <style>
   body {
@@ -60,6 +61,14 @@
   h2 {
     margin: 15px;
   }
+  h2 i.fas {
+    display: inline-block;
+    width: 24px;
+  }
+  h2 span.title {
+    display: inline-block;
+    padding: 0px 10px;
+  }
   input[type=range] {
     vertical-align: middle;
   }
@@ -70,7 +79,7 @@
 <div id='wrap'>
   <div id='top'>
     <div id='title'>
-      <h2>🛰 Imagery Index</h2>
+      <h2><i class='fas fa-satellite'></i><span class='title'>Imagery Index</span></h2>
     </div>
     <div id='controls'>
       <label>Opacity: </label>
