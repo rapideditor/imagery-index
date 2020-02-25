@@ -5,7 +5,9 @@
   "repository": "ideditor/imagery-index",
   "author": "Bryan Housel <bhousel@gmail.com>",
   "description": "An index of background imagery useful for mapping",
-  "keywords": ["imagery"],
+  "keywords": [
+    "imagery"
+  ],
   "scripts": {
     "build": "node build.js",
     "dist": "node build_dist.js",
