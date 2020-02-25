@@ -104,24 +104,6 @@ var baseAttribution = ' <a href="https://www.mapbox.com/about/maps/" target="_bl
 attribution.innerHTML = baseAttribution;
 
 // state
-var _rasterSource = {
-  id: 'raster-source',
-  type: 'raster',
-  tiles: []
-};
-
-var _rasterLayer = {
-  id: 'raster-layer',
-  type: 'raster',
-  source: 'raster-source',
-  paint: {
-    'raster-opacity': 0.7,
-    'raster-fade-duration': 50
-  },
-  minzoom: 0,
-  maxzoom: 22
-};
-
 var _lastOpacity;
 var _lastZoom;
 var _isReset = true;
@@ -162,9 +144,22 @@ map.on('load', function() {
     if (eliTextarea.value === '') return;
     _isReset = false;
 
+    // Remove any existing sources and layers
+    if (map.getLayer('raster-layer'))         map.removeLayer('raster-layer');
+    if (map.getLayer('geojson-line-layer'))   map.removeLayer('geojson-line-layer');
+    if (map.getLayer('geojson-point-layer'))  map.removeLayer('geojson-point-layer');
+    if (map.getSource('raster-source'))       map.removeSource('raster-source');
+    if (map.getSource('geojson-source'))      map.removeSource('geojson-source');
+
+    // Hide minzoom displays
+    controlMinZoom.className = 'control hide';
+    controlMaxZoom.className = 'control hide';
+
+    // Lets go!
     try {
-      var gj = JSON.parse(eliTextarea.value);
-      var props = gj.properties;
+      var eli = JSON.parse(eliTextarea.value);
+      var props = eli.properties || {};
+      var geometry = eli.geometry || {};
       var name = props.name;
       var type = props.type;
       var url = props.url;
@@ -176,7 +171,6 @@ map.on('load', function() {
       controlMaxZoom.className = 'control';
       minZoomValue.textContent = '' + minZoom;
       maxZoomValue.textContent = '' + maxZoom;
-
 
       // show attribution, if any
       var attr = props.attribution || {};
@@ -200,20 +194,69 @@ map.on('load', function() {
         throw 'Unsupported type "' + type + '".';
       }
 
-      // Setup the source/layer properties
-      _rasterSource.tiles = [url];
-      _rasterLayer.minzoom = minZoom;
-      _rasterLayer.maxzoom = maxZoom;
+      // Setup the raster source and layer
+      map.addSource('raster-source', {
+        id: 'raster-source',
+        type: 'raster',
+        tiles: [url]
+      });
 
-      // replace the source/layer
-      if (map.getLayer('raster-layer')) {
-        map.removeLayer('raster-layer');
+      map.addLayer({
+        id: 'raster-layer',
+        type: 'raster',
+        source: 'raster-source',
+        paint: {
+          'raster-opacity': 0.7,
+          'raster-fade-duration': 100
+        },
+        minzoom: minZoom,
+        maxzoom: maxZoom
+      });
+
+
+      // Setup the GeoJSON source and layer
+      if (geometry.coordinates) {
+        // Workaround for editor-layer-index weirdness..
+        // Add an extra array nest to each element in `coordinates`
+        // so the rings are not treated as a bunch of holes:
+        // what we have: [ [[outer],[hole],[hole]] ]
+        // what we want: [ [[outer]],[[outer]],[[outer]] ]
+        var rings = geometry.coordinates.map(function(ring) { return [ring]; });
+
+        map.addSource('geojson-source', {
+          type: 'geojson',
+          data: {
+            type: 'Feature',
+            properties: { },
+            geometry: { type: 'MultiPolygon', coordinates: rings }
+          }
+        });
+
+        map.addLayer({
+          id: 'geojson-line-layer',
+          type: 'line',
+          source: 'geojson-source',
+          paint: {
+            'line-blur': 1,
+            'line-width': 3,
+            'line-color': '#0a0',
+            'line-opacity': 0.9
+          }
+        });
+        map.addLayer({
+          id: 'geojson-point-layer',
+          type: 'circle',
+          source: 'geojson-source',
+          paint: {
+            'circle-radius': 3,
+            'circle-color': '#fff',
+            'circle-opacity': 0.9,
+            'circle-stroke-width': 1,
+            'circle-stroke-color': '#000',
+            'circle-stroke-opacity': 0.9
+          }
+        });
       }
-      if (map.getSource('raster-source')) {
-        map.removeSource('raster-source');
-      }
-      map.addSource('raster-source', _rasterSource);
-      map.addLayer(_rasterLayer);
 
       isGood.className = '';
       results.innerHTML = 'Valid JSON.<br/><em>' + name + '</em>';
