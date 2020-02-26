@@ -7,6 +7,21 @@ body {
   font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
   overscroll-behavior: none;
 }
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #aaa #555;  /* thumb, background */
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #555;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 6px;
+  border: 3px solid #aaa;
+}
 
 textarea, button {
   font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
@@ -15,6 +30,8 @@ textarea, button {
 input[type=range] {
   vertical-align: middle;
 }
+
+
 
 a,
 a:visited,
