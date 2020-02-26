@@ -12,13 +12,16 @@
 
 <body>
 <div id='wrap' class='hasCols'>
+
   <div id='side' class='hasRows'>
+
     <div id='title' class='hasCols'>
       <div class='icon'><i class='fas fa-satellite fa-2x'></i></div>
       <div><h2>imagery-index</h2></div>
     </div>
+
     <div id='sidebar' class='hasRows'>
-      <div class='section'>
+      <div id='eli' class='section'>
         <p>Paste an ELI geojson file here:</p>
 <textarea autofocus id='eli-textarea' name='eli-textarea' rows='16'>
 {
@@ -33,21 +36,46 @@
 }
 </textarea>
         <div id='button-row' class='hasCols'>
-          <div><button id='view-button'>View it!</button></div>
-          <div id='result-icon' class='invisible'>
+          <div><button id='eli-view-button'>View it!</button></div>
+          <div id='eli-result-icon' class='invisible'>
             <div id='isgood' class='hide'><i class='fas fa-check-circle fa-2x'></i></div>
             <div id='isbad' class='hide'><i class='fas fa-times-circle fa-2x'></i></div>
           </div>
         </div>
+
+        <div id='eli-result-message' class='invisible'></div>
       </div>
+
+
+      <div id='loco' class='section'>
+        <p>Paste an LocationConflation locationSet:</p>
+<textarea autofocus id='loco-textarea' name='loco-textarea' rows='5'>
+{
+  "include": [ Array of locations ],
+  "exclude": [ Array of locations ]
+}
+</textarea>
+        <div id='button-row' class='hasCols'>
+          <div><button id='loco-view-button'>View it!</button></div>
+<!--
+          <div id='result-icon' class='invisible'>
+            <div id='isgood' class='hide'><i class='fas fa-check-circle fa-2x'></i></div>
+            <div id='isbad' class='hide'><i class='fas fa-times-circle fa-2x'></i></div>
+          </div>
+ -->
+        </div>
+      </div>
+<!--
       <div id='results' class='section'>
         <div id='result-message' class='invisible'>
         </div>
       </div>
+-->
     </div>
   </div>
 
   <div id='viewer' class='hasRows'>
+
     <div id='controls' class='hasCols'>
       <div id='control-slider' class='control'>
         <label>Opacity: </label>
@@ -72,9 +100,11 @@
         </a>
       </div>
     </div>
+
     <div id='map'>
      <div id='attribution' class='mapboxgl-ctrl mapboxgl-ctrl-attrib mapboxgl-ctrl-bottom-right'></div>
     </div>
+
   </div>
 </div>
 
@@ -97,11 +127,11 @@ var controlMaxZoom = document.getElementById('control-maxzoom');
 var minZoomValue = document.getElementById('minzoom-value');
 var maxZoomValue = document.getElementById('maxzoom-value');
 var eliTextarea = document.getElementById('eli-textarea');
-var viewButton = document.getElementById('view-button');
-var resultIcon = document.getElementById('result-icon');
+var eliViewButton = document.getElementById('eli-view-button');
+var eliResultMessage = document.getElementById('eli-result-message');
+var eliResultIcon = document.getElementById('eli-result-icon');
 var isGood = document.getElementById('isgood');
 var isBad = document.getElementById('isbad');
-var resultMessage = document.getElementById('result-message');
 var attribution = document.getElementById('attribution');
 
 var baseAttribution = ' <a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a>';
@@ -134,7 +164,7 @@ map.on('load', function() {
   });
 
   // parse the given ELI data
-  viewButton.addEventListener('click', function(e) {
+  eliViewButton.addEventListener('click', function(e) {
     e.target.blur();
     if (eliTextarea.value === '') return;
     _isReset = false;
@@ -309,15 +339,15 @@ map.on('load', function() {
       }
 
       isGood.className = '';
-      resultIcon.className = 'visible';
-      resultMessage.className = 'visible';
-      resultMessage.innerHTML = 'Valid JSON.<br/><em>' + name + '</em>';
+      eliResultIcon.className = 'visible';
+      eliResultMessage.className = 'visible';
+      eliResultMessage.innerHTML = 'Valid JSON.<br/><em>' + name + '</em>';
 
     } catch (err) {
       isBad.className = '';
-      resultIcon.className = 'visible';
-      resultMessage.className = 'visible';
-      resultMessage.innerHTML = 'Invalid JSON.<br/><em>' + err + '</em>';
+      eliResultIcon.className = 'visible';
+      eliResultMessage.className = 'visible';
+      eliResultMessage.innerHTML = 'Invalid JSON.<br/><em>' + err + '</em>';
     }
   });
 
@@ -326,12 +356,12 @@ map.on('load', function() {
   function reset() {
     if (_isReset) return;
     _isReset = true;
-    resultIcon.className = 'invisible';
-    resultMessage.className = 'invisible';
+    eliResultIcon.className = 'invisible';
+    eliResultMessage.className = 'invisible';
     window.setTimeout(function() {
       isGood.className = 'hide';
       isBad.className = 'hide';
-      resultMessage.innerHTML = '';
+      eliResultMessage.innerHTML = '';
     }, 100);
   }
 

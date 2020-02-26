@@ -3,12 +3,12 @@ body {
   padding: 0;
   color: #ddd;
   background: #111;
+  font-size: 14px;
   font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
   overscroll-behavior: none;
 }
 
 textarea, button {
-  outline: none;
   font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
 }
 
@@ -30,7 +30,8 @@ a:hover,
 
 .hasCols { display: flex; flex-flow: row nowrap; }
 .hasRows { display: flex; flex-flow: column nowrap; }
-.hasCols > div, .hasRows > div { flex: 1; }
+.hasCols > div { flex: 1; }
+.hasRows > div { flex: 1; }
 
 .hide { display: none; }
 .visible { opacity: 1; }
@@ -54,20 +55,23 @@ a:hover,
 #side {
   flex: 0 0 25%;
   background: #222;
-  padding: 10px;
 }
 
 #title {
   flex: 0 0 50px;
   align-items: center;
-  padding: 0 10px;
+  padding: 5px 10px;
 }
 
 #controls {
   flex: 0 0 50px;
-  padding: 10px 20px;
+  padding: 5px 10px;
   align-items: center;
   justify-content: flex-start;
+  font-size: 16px;
+}
+#controls > .control {
+  padding: 0 20px;
 }
 #control-slider {
   flex: 2;
@@ -90,9 +94,15 @@ a:hover,
   flex: 0 0 32px;
 }
 
+#sidebar {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 #sidebar > .section {
+  border-top: 1px solid #555;
   flex: 0 0 auto;
-  padding: 10px 10px 20px 10px;
+  padding: 10px 15px 30px 15px;
 }
 
 #button-row {
@@ -101,14 +111,13 @@ a:hover,
 #isgood { color: #0c0; }
 #isbad  { color: #e00; }
 
-#result-icon {
+#eli-result-icon {
   flex: 0 0 40px;
   transition: opacity 200ms ease;
 }
-#result-message {
+#eli-result-message {
   transition: opacity 200ms ease;
 }
-
 
 textarea {
   overflow: auto;
@@ -124,7 +133,7 @@ textarea {
 button {
   display: inline-block;
   border: none;
-  padding: 0.8rem 1.5rem;
+  padding: 0.7rem 1rem;
   margin: 0;
   text-decoration: none;
   background: #0069ed;
