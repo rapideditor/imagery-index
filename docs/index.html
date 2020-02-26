@@ -5,7 +5,8 @@
 <title>Imagery Index</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
-<script src='https://kit.fontawesome.com/c772610440.js' crossorigin='anonymous'></script>
+<script defer src='https://kit.fontawesome.com/c772610440.js' crossorigin='anonymous'></script>
+<script defer src='bundle.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet'/>
 <link href='style.css' rel='stylesheet' type='text/css'/>
 </head>
@@ -42,7 +43,6 @@
             <div id='eli-icon-bad' class='hidden'><i class='fas fa-times-circle fa-2x'></i></div>
           </div>
         </div>
-
         <p id='eli-result-message' class='invisible'></p>
       </div>
 
@@ -62,15 +62,9 @@
             <div id='loco-icon-bad' class='hidden'><i class='fas fa-times-circle fa-2x'></i></div>
           </div>
         </div>
-
         <p id='loco-result-message' class='invisible'></p>
       </div>
-<!--
-      <div id='results' class='section'>
-        <div id='result-message' class='invisible'>
-        </div>
-      </div>
--->
+
     </div>
   </div>
 
