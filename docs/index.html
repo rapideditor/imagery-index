@@ -51,8 +51,8 @@
         <p>Paste an LocationConflation locationSet:</p>
 <textarea autofocus id='loco-textarea' name='loco-textarea' rows='5'>
 {
-  "include": [ Array of locations ],
-  "exclude": [ Array of locations ]
+  "include": [ "de", "cz", "pl" ],
+  "exclude": [ [13.4, 52.5] ]
 }
 </textarea>
         <div id='button-row' class='hasCols'>
@@ -135,8 +135,13 @@ attribution.innerHTML = baseAttribution;
 // state
 var _lastOpacity;
 var _lastZoom;
-var _isReset = true;
+var _eliReset = true;
+var _locoReset = true;
+var _loco;
 
+window.addEventListener('DOMContentLoaded', function(e) {
+  _loco = new LocationConflation.LocationConflation();  // todo: fix whatever the bundle did
+});
 
 // wait for map to load before adjusting it
 map.on('load', function() {
@@ -162,7 +167,7 @@ map.on('load', function() {
   eliViewButton.addEventListener('click', function(e) {
     e.target.blur();
     if (eliTextarea.value === '') return;
-    _isReset = false;
+    _eliReset = false;
 
     // Remove any existing sources and layers
     if (map.getLayer('raster-layer'))         map.removeLayer('raster-layer');
@@ -346,10 +351,70 @@ map.on('load', function() {
     }
   });
 
+
+  // Parse the given LocationConflation locationSet..
+  locoViewButton.addEventListener('click', function(e) {
+    e.target.blur();
+    if (locoTextarea.value === '') return;
+    _locoReset = false;
+
+    // Remove any existing sources and layers
+    if (map.getLayer('loco-line-layer'))   map.removeLayer('loco-line-layer');
+    if (map.getLayer('loco-point-layer'))  map.removeLayer('loco-point-layer');
+    if (map.getSource('loco-source'))      map.removeSource('loco-source');
+
+    // Lets go!
+    try {
+      var locationSet = JSON.parse(locoTextarea.value);
+      var gj = _loco.resolveLocationSet(locationSet);
+
+      map.addSource('loco-source', {
+        type: 'geojson',
+        data: gj
+      });
+
+      map.addLayer({
+        id: 'loco-line-layer',
+        type: 'line',
+        source: 'loco-source',
+        paint: {
+          'line-blur': 1,
+          'line-width': 4,
+          'line-color': '#0c0',
+          'line-opacity': 0.9
+        }
+      });
+      map.addLayer({
+        id: 'loco-point-layer',
+        type: 'circle',
+        source: 'loco-source',
+        paint: {
+          'circle-radius': 2.5,
+          'circle-color': '#ddd',
+          'circle-opacity': 0.9,
+          'circle-stroke-width': 1,
+          'circle-stroke-color': '#111',
+          'circle-stroke-opacity': 0.9
+        }
+      });
+
+      locoIconGood.className = '';  // remove 'hidden'
+      locoResultIcon.className = 'visible green';
+      locoResultMessage.className = 'visible';
+      locoResultMessage.innerHTML = 'Valid LocationSet.<br/>';
+
+    } catch (err) {
+      locoIconBad.className = '';  // remove 'hidden'
+      locoResultIcon.className = 'visible red';
+      locoResultMessage.className = 'visible';
+      locoResultMessage.innerHTML = 'Invalid LocationSet.<br/><em>' + err + '</em>';
+    }
+  });
+
   // Reset eli-input and results
   eliTextarea.addEventListener('input', function() {
-    if (_isReset) return;
-    _isReset = true;
+    if (_eliReset) return;
+    _eliReset = true;
     eliResultIcon.className = eliResultIcon.className.replace('visible', 'invisible');
     eliResultMessage.className = eliResultMessage.className.replace('visible', 'invisible');
     window.setTimeout(function() {
@@ -359,25 +424,17 @@ map.on('load', function() {
     }, 100);
   });
 
-  // Parse the given LocationConflation locationSet..
-  locoViewButton.addEventListener('click', function(e) {
-    e.target.blur();
-    if (locoTextarea.value === '') return;
-
-    // Lets go!
-    try {
-      var locationSet = JSON.parse(locoTextarea.value);
-      locoIconGood.className = '';  // remove 'hidden'
-      locoResultIcon.className = 'visible green';
-      locoResultMessage.className = 'visible';
-      locoResultMessage.innerHTML = 'Valid JSON.<br/>';
-
-    } catch (err) {
-      locoIconBad.className = '';  // remove 'hidden'
-      locoResultIcon.className = 'visible red';
-      locoResultMessage.className = 'visible';
-      locoResultMessage.innerHTML = 'Invalid JSON.<br/><em>' + err + '</em>';
-    }
+  // Reset loco-input and results
+  locoTextarea.addEventListener('input', function() {
+    if (_locoReset) return;
+    _locoReset = true;
+    locoResultIcon.className = locoResultIcon.className.replace('visible', 'invisible');
+    locoResultMessage.className = locoResultMessage.className.replace('visible', 'invisible');
+    window.setTimeout(function() {
+      locoIconGood.className = 'hidden';
+      locoIconBad.className = 'hidden';
+      locoResultMessage.innerHTML = '';
+    }, 100);
   });
 
 });
