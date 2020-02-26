@@ -1,15 +1,6 @@
-body {
-  margin: 0;
-  padding: 0;
-  color: #ddd;
-  background: #111;
-  font-size: 14px;
-  font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
-  overscroll-behavior: none;
-}
 html {
   scrollbar-width: thin;
-  scrollbar-color: #aaa #555;  /* thumb, background */
+  scrollbar-color: #aaa #555;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -23,6 +14,16 @@ html {
   border: 3px solid #aaa;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  color: #ddd;
+  background: #111;
+  font-size: 14px;
+  font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+  overscroll-behavior: none;
+}
+
 textarea, button {
   font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
 }
@@ -31,7 +32,44 @@ input[type=range] {
   vertical-align: middle;
 }
 
+textarea {
+  overflow: auto;
+  width: 98%;
+  color: #ddd;
+  background: #444;
+  border: 2px solid #666;
+  border-radius: 2px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
 
+button {
+  display: inline-block;
+  border: none;
+  padding: 0.7rem 1rem;
+  margin: 0;
+  text-decoration: none;
+  background: #0069ed;
+  color: #eee;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  background: #0053ba;
+}
+button:focus {
+  outline: 1px solid #eee;
+  outline-offset: -4px;
+}
+button:active {
+  transform: scale(0.99);
+}
 
 a,
 a:visited,
@@ -46,6 +84,9 @@ a:hover,
 .mapboxgl-ctrl-attrib a:hover {
   color: #999;
   text-decoration: none;
+}
+a.mapboxgl-ctrl-logo {
+  opacity: 0.4;
 }
 
 .hasCols { display: flex; flex-flow: row nowrap; }
@@ -69,7 +110,7 @@ a:hover,
   position: fixed;
   bottom: 0;
   right: 0;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(32,32,32,0.6);
 }
 
 #side {
@@ -139,41 +180,3 @@ a:hover,
   transition: opacity 200ms ease;
 }
 
-textarea {
-  overflow: auto;
-  width: 98%;
-  color: #ddd;
-  background: #444;
-  border: 2px solid #777;
-  border-radius: 2px;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-button {
-  display: inline-block;
-  border: none;
-  padding: 0.7rem 1rem;
-  margin: 0;
-  text-decoration: none;
-  background: #0069ed;
-  color: #eee;
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: center;
-  transition: background 250ms ease-in-out, transform 150ms ease;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-button:hover,
-button:focus {
-  background: #0053ba;
-}
-button:focus {
-  outline: 1px solid #eee;
-  outline-offset: -4px;
-}
-button:active {
-  transform: scale(0.99);
-}
