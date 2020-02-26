@@ -33,6 +33,8 @@ a:hover,
 .hasCols > div, .hasRows > div { flex: 1; }
 
 .hide { display: none; }
+.visible { opacity: 1; }
+.invisible { opacity: 0; }
 
 #wrap {
   position: absolute;
@@ -101,7 +103,12 @@ a:hover,
 
 #result-icon {
   flex: 0 0 40px;
+  transition: opacity 200ms ease;
 }
+#result-message {
+  transition: opacity 200ms ease;
+}
+
 
 textarea {
   overflow: auto;

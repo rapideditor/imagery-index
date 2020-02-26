@@ -34,13 +34,16 @@
 </textarea>
         <div id='button-row' class='hasCols'>
           <div><button id='view-button'>View it!</button></div>
-          <div id='result-icon'>
+          <div id='result-icon' class='invisible'>
             <div id='isgood' class='hide'><i class='fas fa-check-circle fa-2x'></i></div>
             <div id='isbad' class='hide'><i class='fas fa-times-circle fa-2x'></i></div>
           </div>
         </div>
       </div>
-      <div id='results' class='section'></div>
+      <div id='results' class='section'>
+        <div id='result-message' class='invisible'>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -95,9 +98,10 @@ var minZoomValue = document.getElementById('minzoom-value');
 var maxZoomValue = document.getElementById('maxzoom-value');
 var eliTextarea = document.getElementById('eli-textarea');
 var viewButton = document.getElementById('view-button');
+var resultIcon = document.getElementById('result-icon');
 var isGood = document.getElementById('isgood');
 var isBad = document.getElementById('isbad');
-var results = document.getElementById('results');
+var resultMessage = document.getElementById('result-message');
 var attribution = document.getElementById('attribution');
 
 var baseAttribution = ' <a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a>';
@@ -301,11 +305,15 @@ map.on('load', function() {
       }
 
       isGood.className = '';
-      results.innerHTML = 'Valid JSON.<br/><em>' + name + '</em>';
+      resultIcon.className = 'visible';
+      resultMessage.className = 'visible';
+      resultMessage.innerHTML = 'Valid JSON.<br/><em>' + name + '</em>';
 
     } catch (err) {
       isBad.className = '';
-      results.innerHTML = 'Invalid JSON.<br/><em>' + err + '</em>';
+      resultIcon.className = 'visible';
+      resultMessage.className = 'visible';
+      resultMessage.innerHTML = 'Invalid JSON.<br/><em>' + err + '</em>';
     }
   });
 
@@ -314,9 +322,13 @@ map.on('load', function() {
   function reset() {
     if (_isReset) return;
     _isReset = true;
-    isGood.className = 'hide';
-    isBad.className = 'hide';
-    results.innerHTML = '';
+    resultIcon.className = 'invisible';
+    resultMessage.className = 'invisible';
+    window.setTimeout(function() {
+      isGood.className = 'hide';
+      isBad.className = 'hide';
+      resultMessage.innerHTML = '';
+    }, 100);
   }
 
 });
