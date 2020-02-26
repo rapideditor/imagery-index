@@ -86,13 +86,7 @@
         <label>Zoom: </label>
         <span id='zoom-value'>1</span>
       </div>
-      <div id='control-minzoom' class='control hide'>
-        <label>Min Zoom: </label>
-        <span id='minzoom-value'>1</span>
-      </div>
-      <div id='control-maxzoom' class='control hide'>
-        <label>Max Zoom: </label>
-        <span id='maxzoom-value'>1</span>
+      <div id='control-name' class='control hide'>
       </div>
       <div id='octocat'>
         <a href='https://github.com/ideditor/imagery-index' target='_blank'>
@@ -115,17 +109,18 @@ var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/dark-v10',
   center: [0,0],
-  zoom: 1
+  zoom: 1,
+  minZoom: 0,
+  maxZoom: 24,
+  minPitch: 0,
+  maxPitch: 0
 });
 
 // select some elements to use later
 var slider = document.getElementById('slider');
 var sliderValue = document.getElementById('slider-value');
 var zoomValue = document.getElementById('zoom-value');
-var controlMinZoom = document.getElementById('control-minzoom');
-var controlMaxZoom = document.getElementById('control-maxzoom');
-var minZoomValue = document.getElementById('minzoom-value');
-var maxZoomValue = document.getElementById('maxzoom-value');
+var controlName = document.getElementById('control-name');
 var eliTextarea = document.getElementById('eli-textarea');
 var eliViewButton = document.getElementById('eli-view-button');
 var eliResultMessage = document.getElementById('eli-result-message');
@@ -176,9 +171,8 @@ map.on('load', function() {
     if (map.getSource('raster-source'))       map.removeSource('raster-source');
     if (map.getSource('geojson-source'))      map.removeSource('geojson-source');
 
-    // Hide minzoom displays
-    controlMinZoom.className = 'control hide';
-    controlMaxZoom.className = 'control hide';
+    // Hide name display
+    controlName.className = 'control hide';
 
     // Lets go!
     try {
@@ -188,14 +182,12 @@ map.on('load', function() {
       var name = props.name;
       var type = props.type;
       var url = props.url;
-      var minZoom = props.min_zoom || 0;
-      var maxZoom = props.max_zoom || 22;
+      var minzoom = props.min_zoom || 0;
+      var maxzoom = props.max_zoom || 24;
 
-      // setup zoom displays
-      controlMinZoom.className = 'control';
-      controlMaxZoom.className = 'control';
-      minZoomValue.textContent = '' + minZoom;
-      maxZoomValue.textContent = '' + maxZoom;
+      // setup name display
+      controlName.className = 'control';
+      controlName.textContent = '' + name;
 
       // show attribution, if any
       var attr = props.attribution || {};
@@ -278,8 +270,8 @@ map.on('load', function() {
           'raster-opacity': 0.35,
           'raster-fade-duration': 100
         },
-        minzoom: minZoom,
-        maxzoom: maxZoom
+        minzoom: 0,  // minzoom,
+        maxzoom: 24, // maxzoom
       });
 
 
@@ -341,7 +333,10 @@ map.on('load', function() {
       isGood.className = '';
       eliResultIcon.className = 'visible';
       eliResultMessage.className = 'visible';
-      eliResultMessage.innerHTML = 'Valid JSON.<br/><em>' + name + '</em>';
+      eliResultMessage.innerHTML = 'Valid JSON.<br/>' +
+        '<em>name = ' + name + '</em><br/>' +
+        '<em>minzoom = ' + minzoom + '</em><br/>' +
+        '<em>maxzoom = ' + maxzoom + '</em>';
 
     } catch (err) {
       isBad.className = '';
