@@ -48,11 +48,10 @@
 
 
       <div id='loco' class='section'>
-        <p>Paste an LocationConflation locationSet:</p>
+        <p>Paste LocationConflation locationSet:</p>
 <textarea autofocus id='loco-textarea' name='loco-textarea' rows='5'>
 {
-  "include": [ "de", "cz", "pl" ],
-  "exclude": [ [13.4, 52.5] ]
+  "include": [ "de", "cz", "pl" ]
 }
 </textarea>
         <div id='button-row' class='hasCols'>
@@ -131,6 +130,12 @@ var attribution = document.getElementById('attribution');
 
 var baseAttribution = ' <a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a>';
 attribution.innerHTML = baseAttribution;
+
+// style
+var ELICOLOR = '#f0f';
+var LOCOCOLOR = '#f90';
+var ELICLASS = 'magenta';
+var LOCOCLASS = 'orange';
 
 // state
 var _lastOpacity;
@@ -314,7 +319,7 @@ map.on('load', function() {
           paint: {
             'line-blur': 1,
             'line-width': 4,
-            'line-color': '#0c0',
+            'line-color': ELICOLOR,
             'line-opacity': 0.9
           }
         });
@@ -324,7 +329,7 @@ map.on('load', function() {
           source: 'geojson-source',
           paint: {
             'circle-radius': 2.5,
-            'circle-color': '#ddd',
+            'circle-color': ELICOLOR,
             'circle-opacity': 0.9,
             'circle-stroke-width': 1,
             'circle-stroke-color': '#111',
@@ -336,7 +341,7 @@ map.on('load', function() {
       }
 
       eliIconGood.className = '';  // remove 'hidden'
-      eliResultIcon.className = 'visible green';
+      eliResultIcon.className = 'visible ' + ELICLASS;
       eliResultMessage.className = 'visible';
       eliResultMessage.innerHTML = 'Valid JSON.<br/>' +
         '<em>name = ' + name + '</em><br/>' +
@@ -380,7 +385,7 @@ map.on('load', function() {
         paint: {
           'line-blur': 1,
           'line-width': 4,
-          'line-color': '#0c0',
+          'line-color': LOCOCOLOR,
           'line-opacity': 0.9
         }
       });
@@ -390,7 +395,7 @@ map.on('load', function() {
         source: 'loco-source',
         paint: {
           'circle-radius': 2.5,
-          'circle-color': '#ddd',
+          'circle-color': LOCOCOLOR,
           'circle-opacity': 0.9,
           'circle-stroke-width': 1,
           'circle-stroke-color': '#111',
@@ -399,7 +404,7 @@ map.on('load', function() {
       });
 
       locoIconGood.className = '';  // remove 'hidden'
-      locoResultIcon.className = 'visible green';
+      locoResultIcon.className = 'visible ' + LOCOCLASS;
       locoResultMessage.className = 'visible';
       locoResultMessage.innerHTML = 'Valid LocationSet.<br/>';
 

@@ -97,8 +97,16 @@ a.mapboxgl-ctrl-logo {
 .hidden    { display: none; }  /* remove from layout */
 .invisible { opacity: 0; }     /* preserve layout */
 .visible   { opacity: 1; }
-.green     { color: #0c0; }
-.red       { color: #e00; }
+
+.red     { color: rgba(255, 0, 0, 0.9); }
+.green   { color: rgba(0, 255, 0, 0.9); }
+.blue    { color: rgba(176, 176, 255, 0.9); }
+.yellow  { color: rgba(255, 255, 0, 0.9); }
+.cyan    { color: rgba(0, 255, 255, 0.9); }
+.magenta { color: rgba(255, 0, 255, 0.9); }
+.orange  { color: rgba(255, 153, 0, 0.9); }
+.pink    { color: rgba(255, 0, 153, 0.9); }
+.purple  { color: rgba(153, 0, 255, 0.9); }
 
 #wrap {
   position: absolute;
