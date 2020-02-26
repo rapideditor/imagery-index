@@ -96,8 +96,8 @@ a:hover,
 #button-row {
   align-items: center;
 }
-#isgood { color: #0f0; }
-#isbad  { color: #f00; }
+#isgood { color: #0c0; }
+#isbad  { color: #e00; }
 
 #result-icon {
   flex: 0 0 40px;

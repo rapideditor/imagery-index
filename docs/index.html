@@ -112,15 +112,6 @@ var _isReset = true;
 // wait for map to load before adjusting it
 map.on('load', function() {
 
-  // var dataURL = 'https://cdn.jsdelivr.net/gh/osmlab/osm-community-index@master/dist/combined.min.geojson';
-  // map.addSource('osm-community-index', { type: 'geojson', data: dataURL });
-  // map.addLayer({
-  //   'id': 'osm-community-index',
-  //   'type': 'fill',
-  //   'source': 'osm-community-index',
-  //   'paint': { 'fill-color': 'hsla(243, 93%, 64%, 0.24)', 'fill-opacity': 1 }
-  // });
-
   map.on('zoom', function(e) {
     var currZoom = Math.round((e.target.transform.zoom + Number.EPSILON) * 100) / 100;
     if (currZoom !== _lastZoom) {
