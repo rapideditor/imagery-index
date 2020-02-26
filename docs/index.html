@@ -38,8 +38,8 @@
         <div id='button-row' class='hasCols'>
           <div><button id='eli-view-button'>View it!</button></div>
           <div id='eli-result-icon' class='invisible'>
-            <div id='isgood' class='hide'><i class='fas fa-check-circle fa-2x'></i></div>
-            <div id='isbad' class='hide'><i class='fas fa-times-circle fa-2x'></i></div>
+            <div id='eli-icon-good' class='hidden'><i class='fas fa-check-circle fa-2x'></i></div>
+            <div id='eli-icon-bad' class='hidden'><i class='fas fa-times-circle fa-2x'></i></div>
           </div>
         </div>
 
@@ -57,13 +57,13 @@
 </textarea>
         <div id='button-row' class='hasCols'>
           <div><button id='loco-view-button'>View it!</button></div>
-<!--
-          <div id='result-icon' class='invisible'>
-            <div id='isgood' class='hide'><i class='fas fa-check-circle fa-2x'></i></div>
-            <div id='isbad' class='hide'><i class='fas fa-times-circle fa-2x'></i></div>
+          <div id='loco-result-icon' class='invisible'>
+            <div id='loco-icon-good' class='hidden'><i class='fas fa-check-circle fa-2x'></i></div>
+            <div id='loco-icon-bad' class='hidden'><i class='fas fa-times-circle fa-2x'></i></div>
           </div>
- -->
         </div>
+
+        <p id='loco-result-message' class='invisible'></p>
       </div>
 <!--
       <div id='results' class='section'>
@@ -86,7 +86,7 @@
         <label>Zoom: </label>
         <span id='zoom-value'>1</span>
       </div>
-      <div id='control-name' class='control hide'>
+      <div id='control-name' class='control hidden'>
       </div>
       <div id='octocat'>
         <a href='https://github.com/ideditor/imagery-index' target='_blank'>
@@ -125,8 +125,14 @@ var eliTextarea = document.getElementById('eli-textarea');
 var eliViewButton = document.getElementById('eli-view-button');
 var eliResultMessage = document.getElementById('eli-result-message');
 var eliResultIcon = document.getElementById('eli-result-icon');
-var isGood = document.getElementById('isgood');
-var isBad = document.getElementById('isbad');
+var eliIconGood = document.getElementById('eli-icon-good');
+var eliIconBad = document.getElementById('eli-icon-bad');
+var locoTextarea = document.getElementById('loco-textarea');
+var locoViewButton = document.getElementById('loco-view-button');
+var locoResultMessage = document.getElementById('loco-result-message');
+var locoResultIcon = document.getElementById('loco-result-icon');
+var locoIconGood = document.getElementById('loco-icon-good');
+var locoIconBad = document.getElementById('loco-icon-bad');
 var attribution = document.getElementById('attribution');
 
 var baseAttribution = ' <a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a>';
@@ -158,7 +164,7 @@ map.on('load', function() {
     }
   });
 
-  // parse the given ELI data
+  // Parse the given ELI data..
   eliViewButton.addEventListener('click', function(e) {
     e.target.blur();
     if (eliTextarea.value === '') return;
@@ -171,8 +177,8 @@ map.on('load', function() {
     if (map.getSource('raster-source'))       map.removeSource('raster-source');
     if (map.getSource('geojson-source'))      map.removeSource('geojson-source');
 
-    // Hide name display
-    controlName.className = 'control hide';
+    // hidden name display
+    controlName.className = 'control hidden';
 
     // Lets go!
     try {
@@ -186,7 +192,7 @@ map.on('load', function() {
       var maxzoom = props.max_zoom || 24;
 
       // setup name display
-      controlName.className = 'control';
+      controlName.className = 'control';  // remove 'hidden'
       controlName.textContent = '' + name;
 
       // show attribution, if any
@@ -330,8 +336,8 @@ map.on('load', function() {
         map.fitBounds(bounds, { padding: 50 });
       }
 
-      isGood.className = '';
-      eliResultIcon.className = 'visible';
+      eliIconGood.className = '';  // remove 'hidden'
+      eliResultIcon.className = 'visible green';
       eliResultMessage.className = 'visible';
       eliResultMessage.innerHTML = 'Valid JSON.<br/>' +
         '<em>name = ' + name + '</em><br/>' +
@@ -339,26 +345,46 @@ map.on('load', function() {
         '<em>maxzoom = ' + maxzoom + '</em>';
 
     } catch (err) {
-      isBad.className = '';
-      eliResultIcon.className = 'visible';
+      eliIconBad.className = '';  // remove 'hidden'
+      eliResultIcon.className = 'visible red';
       eliResultMessage.className = 'visible';
       eliResultMessage.innerHTML = 'Invalid JSON.<br/><em>' + err + '</em>';
     }
   });
 
-  eliTextarea.addEventListener('input', reset);
-
-  function reset() {
+  // Reset eli-input and results
+  eliTextarea.addEventListener('input', function() {
     if (_isReset) return;
     _isReset = true;
-    eliResultIcon.className = 'invisible';
-    eliResultMessage.className = 'invisible';
+    eliResultIcon.className = eliResultIcon.className.replace('visible', 'invisible');
+    eliResultMessage.className = eliResultMessage.className.replace('visible', 'invisible');
     window.setTimeout(function() {
-      isGood.className = 'hide';
-      isBad.className = 'hide';
+      eliIconGood.className = 'hidden';
+      eliIconBad.className = 'hidden';
       eliResultMessage.innerHTML = '';
     }, 100);
-  }
+  });
+
+  // Parse the given LocationConflation locationSet..
+  locoViewButton.addEventListener('click', function(e) {
+    e.target.blur();
+    if (locoTextarea.value === '') return;
+
+    // Lets go!
+    try {
+      var locationSet = JSON.parse(locoTextarea.value);
+      locoIconGood.className = '';  // remove 'hidden'
+      locoResultIcon.className = 'visible green';
+      locoResultMessage.className = 'visible';
+      locoResultMessage.innerHTML = 'Valid JSON.<br/>';
+
+    } catch (err) {
+      locoIconBad.className = '';  // remove 'hidden'
+      locoResultIcon.className = 'visible red';
+      locoResultMessage.className = 'visible';
+      locoResultMessage.innerHTML = 'Invalid JSON.<br/><em>' + err + '</em>';
+    }
+  });
 
 });
 

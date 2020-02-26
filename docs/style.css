@@ -94,9 +94,11 @@ a.mapboxgl-ctrl-logo {
 .hasCols > div { flex: 1; }
 .hasRows > div { flex: 1; }
 
-.hide { display: none; }
-.visible { opacity: 1; }
-.invisible { opacity: 0; }
+.hidden    { display: none; }  /* remove from layout */
+.invisible { opacity: 0; }     /* preserve layout */
+.visible   { opacity: 1; }
+.green     { color: #0c0; }
+.red       { color: #e00; }
 
 #wrap {
   position: absolute;
@@ -169,14 +171,14 @@ a.mapboxgl-ctrl-logo {
 #button-row {
   align-items: center;
 }
-#isgood { color: #0c0; }
-#isbad  { color: #e00; }
 
-#eli-result-icon {
+#eli-result-icon,
+#loco-result-icon {
   flex: 0 0 40px;
   transition: opacity 200ms ease;
 }
-#eli-result-message {
+#eli-result-message,
+#loco-result-message {
   transition: opacity 200ms ease;
 }
 
