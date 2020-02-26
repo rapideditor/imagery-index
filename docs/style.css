@@ -16,8 +16,11 @@ input[type=range] {
   vertical-align: middle;
 }
 
-a, a:visited,
-.mapboxgl-ctrl-attrib a, .mapboxgl-ctrl-attrib a:visited {
+a,
+a:visited,
+.mapboxgl-ctrl-attrib span,
+.mapboxgl-ctrl-attrib a,
+.mapboxgl-ctrl-attrib a:visited {
   color: #777;
   font-weight: bold;
   text-decoration: none;
