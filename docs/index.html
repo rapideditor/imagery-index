@@ -79,8 +79,8 @@
     <div id='controls' class='hasCols'>
       <div id='control-slider' class='control'>
         <label>Opacity: </label>
-        <input id='slider' type='range' min='0' max='100' step='0' value='70'/>
-        <span id='slider-value'>70%</span>
+        <input id='slider' type='range' min='0' max='100' step='0' value='35'/>
+        <span id='slider-value'>35%</span>
       </div>
       <div id='control-zoom' class='control'>
         <label>Zoom: </label>
@@ -275,7 +275,7 @@ map.on('load', function() {
         type: 'raster',
         source: 'raster-source',
         paint: {
-          'raster-opacity': 0.7,
+          'raster-opacity': 0.35,
           'raster-fade-duration': 100
         },
         minzoom: minZoom,
@@ -316,8 +316,8 @@ map.on('load', function() {
           source: 'geojson-source',
           paint: {
             'line-blur': 1,
-            'line-width': 3,
-            'line-color': '#0a0',
+            'line-width': 4,
+            'line-color': '#0c0',
             'line-opacity': 0.9
           }
         });
@@ -326,11 +326,11 @@ map.on('load', function() {
           type: 'circle',
           source: 'geojson-source',
           paint: {
-            'circle-radius': 3,
-            'circle-color': '#fff',
+            'circle-radius': 2.5,
+            'circle-color': '#ddd',
             'circle-opacity': 0.9,
             'circle-stroke-width': 1,
-            'circle-stroke-color': '#000',
+            'circle-stroke-color': '#111',
             'circle-stroke-opacity': 0.9
           }
         });
