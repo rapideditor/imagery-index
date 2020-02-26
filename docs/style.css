@@ -103,9 +103,9 @@ a:hover,
   overflow-y: auto;
 }
 #sidebar > .section {
-  border-top: 1px solid #555;
+  border-top: 1px solid #444;
   flex: 0 0 auto;
-  padding: 10px 15px 30px 15px;
+  padding: 10px 15px;
 }
 
 #button-row {
