@@ -172,10 +172,14 @@ map.on('load', function() {
       var attrText = attr.text || '';
       var attrURL = attr.url || '';
 
+      if (attrText && !/^©/.test(attrText)) {   // prepend © if it doesn't have one
+        attrText = '© ' + attrText;
+      }
+
       if (attrText && !attrURL) {
         attribution.innerHTML = '<span>' + attrText + '</span>' + baseAttribution;
       } else if (attrText && attrURL) {
-        attribution.innerHTML = '<a href="' + attrURL + '" target="_blank">© ' + attrText + '</a>' + baseAttribution;
+        attribution.innerHTML = '<a href="' + attrURL + '" target="_blank">' + attrText + '</a>' + baseAttribution;
       } else {
         attribution.innerHTML = baseAttribution;
       }
