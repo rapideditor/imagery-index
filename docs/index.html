@@ -215,7 +215,6 @@ map.on('load', function() {
 
 
       // Setup the GeoJSON source and layer
-      var bounds = [-180, -90, 180, 90];  // W,S,E,N
       if (geometry.coordinates) {
         // Workaround for editor-layer-index weirdness..
         // Add an extra array nest to each element in `coordinates`
@@ -223,7 +222,7 @@ map.on('load', function() {
         // what we have: [ [[outer],[hole],[hole]] ]
         // what we want: [ [[outer]],[[outer]],[[outer]] ]
         var rings = geometry.coordinates.map(function(ring) { return [ring]; });
-        bounds = rings.reduce(function(bounds, ring) {
+        var bounds = rings.reduce(function(bounds, ring) {
           ring[0].forEach(function(coord) {
             if (coord[0] > bounds[0])  bounds[0] = coord[0];
             if (coord[1] > bounds[1])  bounds[1] = coord[1];
@@ -231,7 +230,7 @@ map.on('load', function() {
             if (coord[1] < bounds[3])  bounds[3] = coord[1];
           });
           return bounds;
-        }, bounds);
+        }, [-180, -90, 180, 90]);  // W,S,E,N
 
         map.addSource('geojson-source', {
           type: 'geojson',
@@ -266,9 +265,9 @@ map.on('load', function() {
             'circle-stroke-opacity': 0.9
           }
         });
-      }
 
-      map.fitBounds(bounds, { padding: 50 });
+        map.fitBounds(bounds, { padding: 50 });
+      }
 
       isGood.className = '';
       results.innerHTML = 'Valid JSON.<br/><em>' + name + '</em>';
