@@ -118,7 +118,7 @@ function collectFeatures() {
   return features;
 }
 
-
+/* eslint-disable no-unused-vars */
 // FROM ELI
 function convertLegacySources() {
   let sources = {};
