@@ -1,0 +1,18 @@
+{
+  "id": "COS2010_v1.0",
+  "type": "wms",
+  "locationSet": {"include": ["pt"]},
+  "name": "Carta de Uso do Solo 2010 (WMS)",
+  "url": "http://mapas.dgterritorio.pt/wms-inspire/cos2010v1?language=por&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=COS2010_v1.0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "min_zoom": 14,
+  "max_zoom": 18,
+  "license_url": "http://www.dgterritorio.pt/dados_abertos/cos/",
+  "start_date": "2010",
+  "end_date": "2010",
+  "available_projections": ["EPSG:3763", "EPSG:3857", "EPSG:4258", "EPSG:4326"],
+  "attribution": {
+    "text": "Direcção-Geral do Território",
+    "url": "http://www.dgterritorio.pt/dados_abertos/cos/"
+  },
+  "icon": "http://www.igeo.pt/favicon.ico"
+}

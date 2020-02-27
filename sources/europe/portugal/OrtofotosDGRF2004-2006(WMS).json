@@ -1,0 +1,18 @@
+{
+  "id": "ORTOS_DGRF_2004_06",
+  "type": "wms",
+  "locationSet": {"include": ["pt"]},
+  "name": "Ortofotos DGRF 2004-2006 (WMS)",
+  "url": "http://mapas.dgterritorio.pt:8888/wms/produtos?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ortos&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "min_zoom": 14,
+  "max_zoom": 19,
+  "license_url": "http://www.igeo.pt/DadosAbertos/Listagem.aspx",
+  "start_date": "2004",
+  "end_date": "2006",
+  "available_projections": ["EPSG:3763", "EPSG:3857", "EPSG:4258", "EPSG:4326"],
+  "attribution": {
+    "text": "Direcção-Geral do Território",
+    "url": "http://www.dgterritorio.pt/dados_abertos/ortofotos/"
+  },
+  "icon": "http://www.igeo.pt/favicon.ico"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "Loire_Atlantique-Orthophotos-2016",
+  "type": "wms",
+  "locationSet": {"include": ["fr"]},
+  "name": "Loire-Atlantique - Orthophotos 2016 - 10 cm",
+  "url": "https://wms-vuduciel2.makina-corpus.net/geoserver/wms?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=cg44:ortho44-2016&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 20,
+  "license_url": "https://wiki.openstreetmap.org/wiki/FR:Sources_de_donn%C3%A9es_potentielles/France",
+  "start_date": "2016",
+  "end_date": "2016",
+  "available_projections": ["EPSG:2154", "EPSG:3857", "EPSG:4326"],
+  "attribution": {
+    "required": true,
+    "url": "http://data2.loire-atlantique.fr/licences/",
+    "text": "© Loire-Atlantique ouverture des données publiques"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "OSM_Inspector-Multipolygon",
+  "type": "tms",
+  "name": "OSM Inspector: Area",
+  "url": "https://tools.geofabrik.de/osmi/tiles/area/{zoom}/{x}/{y}.png",
+  "category": "qa",
+  "min_zoom": 8,
+  "max_zoom": 19,
+  "overlay": true,
+  "attribution": {
+    "required": true,
+    "text": "© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
+    "url": "https://tools.geofabrik.de/osmi"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OSMIHighways.png"
+}

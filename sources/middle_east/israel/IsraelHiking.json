@@ -1,0 +1,16 @@
+{
+  "id": "Israel_Hiking",
+  "type": "tms",
+  "locationSet": {"include": ["il"]},
+  "name": "Israel Hiking",
+  "description": "Israel Hiking map",
+  "url": "https://israelhiking.osm.org.il/Tiles/{zoom}/{x}/{y}.png",
+  "min_zoom": 7,
+  "max_zoom": 16,
+  "attribution": {
+    "text": "Tiles © IsraelHiking, CC BY-SA-NC 3.0. Data by OpenStreetMap under ODbL.",
+    "url": "https://israelhiking.osm.org.il/",
+    "required": true
+  },
+  "icon": "https://israelhiking.osm.org.il/content/favicons/favicon.ico"
+}

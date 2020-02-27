@@ -1,0 +1,15 @@
+{
+  "id": "openseamap",
+  "type": "tms",
+  "name": "OpenSeaMap",
+  "url": "https://tiles.openseamap.org/seamark/{zoom}/{x}/{y}.png",
+  "category": "osmbasedmap",
+  "max_zoom": 18,
+  "overlay": true,
+  "attribution": {
+    "required": true,
+    "text": "© OpenStreetMap contributors, CC-BY-SA",
+    "url": "https://www.openstreetmap.org/copyright"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenSeaMap.png"
+}

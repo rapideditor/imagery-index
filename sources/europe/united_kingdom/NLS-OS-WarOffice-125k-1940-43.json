@@ -1,0 +1,16 @@
+{
+  "id": "NLS-OS-WarOffice-125k-1940-43",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "NLS - OS/War Office - GSGS 3906 1:25,000, 1940-43",
+  "url": "https://geo.nls.uk/mapdata3/gsgs3906/{zoom}/{x}/{y}.png",
+  "min_zoom": 5,
+  "max_zoom": 16,
+  "end_date": "1943",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland Historic Maps",
+    "url": "https://geo.nls.uk/maps"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "gsi.go.jp_seamlessphoto",
+  "type": "tms",
+  "locationSet": {"include": ["jp"]},
+  "name": "Japan GSI seamlessphoto Imagery",
+  "description": "Japan GSI seamlessphoto Imagery. The collection of latest imageries of GSI ortho, airphoto, post disaster and others.",
+  "url": "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{zoom}/{x}/{y}.jpg",
+  "min_zoom": 14,
+  "max_zoom": 18,
+  "license_url": "https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto",
+  "attribution": {
+    "url": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "text": "GSI Japan seamless photo"
+  }
+}

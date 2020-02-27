@@ -1,0 +1,16 @@
+{
+  "id": "Tours-Orthophoto-2013",
+  "type": "tms",
+  "locationSet": {"include": ["fr"]},
+  "name": "Tours - Orthophotos 2013",
+  "url": "https://wms.openstreetmap.fr/tms/1.0.0/tours_2013/{zoom}/{x}/{y}",
+  "max_zoom": 22,
+  "license_url": "https://wiki.openstreetmap.org/wiki/Tours/Orthophoto",
+  "start_date": "2013",
+  "end_date": "2013",
+  "attribution": {
+    "url": "https://wiki.openstreetmap.org/wiki/Tours/Orthophoto",
+    "text": "Orthophoto Tour(s)plus 2013",
+    "required": true
+  }
+}

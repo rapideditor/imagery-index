@@ -1,0 +1,16 @@
+{
+  "id": "EsriWorldImagery",
+  "type": "tms",
+  "name": "Esri World Imagery",
+  "description": "Esri world imagery.",
+  "url": "https://{switch:services,server}.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{zoom}/{y}/{x}",
+  "category": "photo",
+  "max_zoom": 22,
+  "permission_osm": "explicit",
+  "attribution": {
+    "required": true,
+    "text": "Terms & Feedback",
+    "url": "https://wiki.openstreetmap.org/wiki/Esri"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/world/EsriImageryClarity.png"
+}

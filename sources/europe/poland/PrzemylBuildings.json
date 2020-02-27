@@ -1,0 +1,11 @@
+{
+  "id": "przemysl-buildings",
+  "type": "wms",
+  "locationSet": {"include": ["pl"]},
+  "name": "Przemyśl: Buildings",
+  "url": "http://przemysl.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=adresy,budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 19,
+  "available_projections": ["EPSG:2179", "EPSG:2180", "EPSG:4326"],
+  "attribution": {"text": "Miasto Przemyśl"},
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/PowiatrzeszowskiBuildings.png"
+}

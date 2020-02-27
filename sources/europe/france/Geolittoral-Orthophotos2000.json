@@ -1,0 +1,16 @@
+{
+  "id": "Geolittoral-Orthophotos2000",
+  "type": "wms",
+  "locationSet": {"include": ["fr"]},
+  "name": "Géolittoral - Orthophotos 2000",
+  "url": "http://geolittoral.din.developpement-durable.gouv.fr/wxs?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortholittorale&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "license_url": "http://www.geolittoral.developpement-durable.gouv.fr/mentions-legales-a37.html",
+  "start_date": "2000",
+  "end_date": "2000",
+  "available_projections": ["EPSG:3857", "EPSG:4326"],
+  "attribution": {
+    "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
+    "text": "Ortho littorale 2000",
+    "required": true
+  }
+}

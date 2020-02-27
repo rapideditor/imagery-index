@@ -1,0 +1,18 @@
+{
+  "id": "NLS_kirkcaldy1855",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "OS Town Plans, Kirkcaldy 1855 (NLS)",
+  "description": "Detailed town plan of Kirkcaldy 1855, courtesy of National Library of Scotland.",
+  "url": "https://geo.nls.uk/maps/towns/kirkcaldy1855/{zoom}/{x}/{-y}.png",
+  "min_zoom": 13,
+  "max_zoom": 20,
+  "start_date": "1855",
+  "end_date": "1856",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland - Kirkcaldy 1855",
+    "url": "https://maps.nls.uk/townplans/kirkcaldy_1.html"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

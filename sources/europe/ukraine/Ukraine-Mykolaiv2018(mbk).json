@@ -1,0 +1,21 @@
+{
+  "id": "UkraineMykolaiv2018",
+  "type": "tms",
+  "locationSet": {"include": ["ua"]},
+  "name": "Ukraine - Mykolaiv 2018",
+  "url": "http://mbk.mkrada.gov.ua/map/rtile/carto_2013928517078615452/ua/{zoom}/{x}/{y}.png",
+  "category": "photo",
+  "min_zoom": 11,
+  "max_zoom": 19,
+  "permission_osm": "implicit",
+  "license_url": "https://zakon.rada.gov.ua/laws/show/2939-17",
+  "privacy_policy_url": "https://mbk.mkrada.gov.ua/ugoda-koristuvacha",
+  "best": true,
+  "start_date": "2018",
+  "end_date": "2018",
+  "attribution": {
+    "text": "Map data: © Геоінформаційна система містобудівного кадастру Миколаївської міської ради",
+    "required": true
+  },
+  "icon": "https://mkrada.gov.ua/favicon.ico"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "Bologna-Orthophoto-2017",
+  "type": "tms",
+  "locationSet": {"include": ["it"]},
+  "name": "Bologna ortofoto 2017",
+  "url": "https://sitmappe.comune.bologna.it/tms/tileserver/Ortofoto2017/{zoom}/{x}/{y}.png",
+  "max_zoom": 19,
+  "license_url": "http://dati.comune.bologna.it/node/3449",
+  "best": true,
+  "start_date": "2017",
+  "end_date": "2017",
+  "attribution": {
+    "url": "http://dati.comune.bologna.it/node/3449",
+    "text": "© Comune di Bologna cc-by 4.0 ODbL compliant",
+    "required": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Bordeaux_2012",
+  "type": "tms",
+  "locationSet": {"include": ["fr"]},
+  "name": "Bordeaux - 2012",
+  "url": "https://wms.openstreetmap.fr/tms/1.0.0/bordeaux_2012/{zoom}/{x}/{y}",
+  "max_zoom": 20,
+  "license_url": "https://openstreetmap.fr/outils",
+  "start_date": "2012",
+  "end_date": "2012",
+  "attribution": {"text": "Communauté urbaine de Bordeaux - 2012", "required": true}
+}

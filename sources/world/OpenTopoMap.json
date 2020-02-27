@@ -1,0 +1,15 @@
+{
+  "id": "OpenTopoMap",
+  "type": "tms",
+  "name": "OpenTopoMap",
+  "url": "https://{switch:a,b,c}.tile.opentopomap.org/{zoom}/{x}/{y}.png",
+  "category": "osmbasedmap",
+  "min_zoom": 3,
+  "max_zoom": 17,
+  "attribution": {
+    "required": true,
+    "text": "Kartendaten: © OpenStreetMap-Mitwirkende, SRTM | Kartendarstellung: © OpenTopoMap (CC-BY-SA)",
+    "url": "https://tile.opentopomap.org/about#verwendung"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenTopoMap.png"
+}

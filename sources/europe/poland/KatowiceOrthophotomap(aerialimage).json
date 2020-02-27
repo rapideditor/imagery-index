@@ -1,0 +1,10 @@
+{
+  "id": "Katowice-aerial_image",
+  "type": "wms",
+  "locationSet": {"include": ["pl"]},
+  "name": "Katowice: Orthophotomap (aerial image)",
+  "url": "http://mapserver.um.katowice.pl/services/ortowms/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=2&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 23,
+  "available_projections": ["EPSG:2157", "EPSG:2177", "EPSG:4326"],
+  "attribution": {"text": "Urząd Miasta Katowic"}
+}

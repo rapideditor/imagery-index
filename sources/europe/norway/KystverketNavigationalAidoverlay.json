@@ -1,0 +1,18 @@
+{
+  "id": "kystverket-navigasjon",
+  "type": "wms",
+  "locationSet": {"include": ["no"]},
+  "name": "Kystverket Navigational Aid overlay",
+  "description": "Beacons, buoys, lights and fairways maintained by the Norwegian Coastal Administration",
+  "url": "https://nfs.kystverket.no/arcgis/services/nfs/NFSSistOperativ/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=17,16,15,14,12,10,9,8,7,4&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "min_zoom": 12,
+  "max_zoom": 19,
+  "license_url": "https://lists.nuug.no/pipermail/kart/2017-December/006320.html",
+  "overlay": true,
+  "available_projections": ["EPSG:25833", "EPSG:32633", "EPSG:3857", "EPSG:4326"],
+  "attribution": {
+    "text": "© Kystverket",
+    "url": "https://kystverket.no/Maritim-infrastruktur/Fyr-og-merker-/"
+  },
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Coat_of_arms_of_the_Norwegian_Coastal_Administration.svg/143px-Coat_of_arms_of_the_Norwegian_Coastal_Administration.svg.png"
+}

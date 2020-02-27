@@ -1,0 +1,18 @@
+{
+  "id": "NLS_peebles1856",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "OS Town Plans, Peebles 1856 (NLS)",
+  "description": "Detailed town plan of Peebles 1856, courtesy of National Library of Scotland.",
+  "url": "https://geo.nls.uk/maps/towns/peebles/{zoom}/{x}/{-y}.png",
+  "min_zoom": 13,
+  "max_zoom": 20,
+  "start_date": "1856",
+  "end_date": "1857",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland - Peebles 1856",
+    "url": "https://maps.nls.uk/townplans/peebles.html"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

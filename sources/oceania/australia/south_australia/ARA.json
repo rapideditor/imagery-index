@@ -1,0 +1,20 @@
+{
+  "id": "ARA_Bushfires_2020",
+  "type": "tms",
+  "locationSet": {"include": ["au"]},
+  "name": "ARA Bushfires 2020",
+  "url": "https://cogeoxyz.b-cdn.net/46b53084a82973a36c0f57a1d5446c605d00ed851f11a6f5ca7c75db/{zoom}/{x}/{y}.jpg",
+  "min_zoom": 14,
+  "max_zoom": 22,
+  "license_url": "https://wiki.openstreetmap.org/wiki/File:OSM_waiver_AirborneResearchSouthAustralia.pdf",
+  "privacy_policy_url": "https://bunnycdn.com/privacy",
+  "best": true,
+  "start_date": "2020-01-08",
+  "end_date": "2020-02-06",
+  "attribution": {
+    "url": "https://www.airborneresearch.org.au/",
+    "text": "ARA - Airborne Research Australia",
+    "required": true
+  },
+  "icon": "https://static.wixstatic.com/media/a40742_9e0c1ee9ed0743a8bbf73b2fe6613802.gif"
+}

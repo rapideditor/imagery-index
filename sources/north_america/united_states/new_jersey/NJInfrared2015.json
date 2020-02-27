@@ -1,0 +1,26 @@
+{
+  "id": "img.nj.gov-Infrared2015",
+  "type": "wms",
+  "locationSet": {"include": ["us"]},
+  "name": "NJ 2015 Aerial Imagery (Infrared)",
+  "description": "Digital orthophotography of New Jersey, Near Infrared, 1 foot resolution",
+  "url": "https://img.nj.gov/imagerywms/Infrared2015?FORMAT=image/png&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&WIDTH={width}&HEIGHT={height}&LAYERS=Infrared2015&BBOX={bbox}",
+  "max_zoom": 20,
+  "start_date": "2015-03-29",
+  "end_date": "2015-05-03",
+  "available_projections": [
+    "EPSG:102711",
+    "EPSG:2959",
+    "EPSG:3424",
+    "EPSG:3616",
+    "EPSG:3857",
+    "EPSG:4269",
+    "EPSG:4326",
+    "EPSG:6527"
+  ],
+  "attribution": {
+    "url": "https://njgin.state.nj.us/NJ_NJGINExplorer/ShowMetadata.jsp?docId=188471FF-2803-4145-A5AD-605DE86D3B4D",
+    "text": "NJ Office of Information Technology (NJOIT), Office of Geographic Information Systems (OGIS)",
+    "required": false
+  }
+}

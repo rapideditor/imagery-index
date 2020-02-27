@@ -1,0 +1,13 @@
+{
+  "id": "osmse-ekonomiska",
+  "type": "tms",
+  "locationSet": {"include": ["se"]},
+  "name": "Lantmäteriet Economic Map 1950–1980",
+  "description": "Scan of \"Economic maps\" ca. 1950–1980",
+  "url": "https://mapproxy.openstreetmap.se/tms/1.0.0/ek_EPSG3857/{zoom}/{x}/{-y}.jpeg",
+  "min_zoom": 3,
+  "max_zoom": 17,
+  "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
+  "attribution": {"required": true, "text": "© Lantmäteriet", "url": "https://www.lantmateriet.se"},
+  "icon": "https://raw.githubusercontent.com/osmlab/editor-layer-index/gh-pages/sources/europe/se/lantmateriet_icon.png"
+}

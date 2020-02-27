@@ -1,0 +1,17 @@
+{
+  "id": "GSGS4136",
+  "type": "tms",
+  "locationSet": {"include": ["ie"]},
+  "name": "Ireland British War Office One-Inch 1941-43 GSGS 4136",
+  "url": "https://geo.nls.uk/maps/ireland/gsgs4136/{zoom}/{x}/{-y}.png",
+  "min_zoom": 5,
+  "max_zoom": 15,
+  "start_date": "1941",
+  "end_date": "1943",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland Historic Maps",
+    "url": "https://geo.nls.uk/maps"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

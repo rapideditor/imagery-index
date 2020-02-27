@@ -1,0 +1,13 @@
+{
+  "id": "Berlin-2011",
+  "type": "wms",
+  "locationSet": {"include": ["de"]},
+  "name": "Berlin aerial photography 2011",
+  "url": "https://fbinter.stadt-berlin.de/fb/wms/senstadt/k_luftbild2011_20?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "category": "historicphoto",
+  "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=367583#p367583",
+  "start_date": "2011",
+  "end_date": "2011",
+  "available_projections": ["EPSG:25832", "EPSG:25833", "EPSG:3068", "EPSG:4258", "EPSG:4326"],
+  "attribution": {"text": "Geoportal Berlin/Digitale farbige Orthophotos 2011", "required": true}
+}

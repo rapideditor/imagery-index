@@ -1,0 +1,18 @@
+{
+  "id": "NLS_dundee1870_1872",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "OS Town Plans, Dundee 1870-1872 (NLS)",
+  "description": "Detailed town plan of Dundee 1870-1872, courtesy of National Library of Scotland.",
+  "url": "https://geo.nls.uk/maps/towns/dundee1870/{zoom}/{x}/{-y}.png",
+  "min_zoom": 13,
+  "max_zoom": 20,
+  "start_date": "1870",
+  "end_date": "1873",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland - Dundee 1870-1872",
+    "url": "https://maps.nls.uk/townplans/dundee_2.html"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "ACT2017",
+  "type": "wms",
+  "locationSet": {"include": ["au"]},
+  "name": "ACTmapi Imagery 2017",
+  "url": "https://data.actmapi.act.gov.au/arcgis/rest/services/actmapi/imagery2017mga/ImageServer/exportImage?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo={proj}",
+  "max_zoom": 21,
+  "license_url": "https://osmlab.github.io/editor-layer-index/sources/australia/au/act/ACTmapi-Imagery.PDF",
+  "privacy_policy_url": "https://www.environment.act.gov.au/about/privacy",
+  "start_date": "2017-05",
+  "end_date": "2017-05",
+  "available_projections": ["EPSG:3857"],
+  "attribution": {
+    "url": "https://actmapi-actgov.opendata.arcgis.com/datasets/884456bde6fd46d68e0c05479f55d548",
+    "text": "© Jacobs Group (Australia) Pty Ltd and Australian Capital Territory",
+    "required": true
+  },
+  "icon": "http://actmapi.act.gov.au/img/apple-touch-icon.png"
+}

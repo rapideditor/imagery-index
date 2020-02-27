@@ -1,0 +1,8 @@
+{
+  "id": "US_Forest_Service_roads",
+  "type": "tms",
+  "locationSet": {"include": ["us"]},
+  "name": "U.S. Forest Service roads",
+  "url": "https://osm.cycle.travel/forest/{zoom}/{x}/{y}.png",
+  "max_zoom": 19
+}

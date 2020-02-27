@@ -1,0 +1,18 @@
+{
+  "id": "NLS_edinburgh1893_1894",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "OS Town Plans, Edinburgh 1893-1894 (NLS)",
+  "description": "Detailed town plan of Edinburgh 1893-1894, courtesy of National Library of Scotland.",
+  "url": "https://geo.nls.uk/maps/towns/edinburgh1893/{zoom}/{x}/{-y}.png",
+  "min_zoom": 13,
+  "max_zoom": 20,
+  "start_date": "1893",
+  "end_date": "1895",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland - Edinburgh 1893-1894",
+    "url": "https://maps.nls.uk/townplans/edinburgh500.html"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

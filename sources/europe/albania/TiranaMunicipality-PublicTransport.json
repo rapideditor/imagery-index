@@ -1,0 +1,17 @@
+{
+  "id": "openlabs-geoportal-public-transport",
+  "type": "tms",
+  "locationSet": {"include": ["al"]},
+  "name": "Municipality of Tirana - Public Transport (Open Labs GeoPortal) (overlay)",
+  "description": "Bus stops & lines provided by the Muncipality of Tirana hosted by Open Labs",
+  "url": "https://geoportal.openlabs.cc/mapcache/tms/1.0.0/public-transport@GoogleMapsCompatibleExtended/{zoom}/{x}/{-y}.png",
+  "max_zoom": 21,
+  "license_url": "https://cloud.openlabs.cc/s/3lzVn1ZzUEMifHq#pdfviewer",
+  "start_date": "2017",
+  "end_date": "2017",
+  "overlay": true,
+  "attribution": {
+    "url": "https://geoportal.openlabs.cc/",
+    "text": "Data provided by the Muncipality of Tirana hosted by Open Labs"
+  }
+}

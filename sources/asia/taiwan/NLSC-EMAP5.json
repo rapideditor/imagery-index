@@ -1,0 +1,17 @@
+{
+  "id": "NLSC-EMAP5",
+  "type": "tms",
+  "locationSet": {"include": ["tw"]},
+  "name": "NLSC General Map with Contour line",
+  "description": "The emap from Taiwan National Land Surveying and Mapping Center",
+  "url": "https://wmts.nlsc.gov.tw/wmts/EMAP5_OPENDATA/default/EPSG:3857/{zoom}/{y}/{x}",
+  "max_zoom": 15,
+  "license_url": "https://data.gov.tw/license",
+  "start_date": "2015",
+  "attribution": {
+    "required": true,
+    "text": "© National Land Surveying and Mapping Center, Taiwan OGDL 1.0",
+    "url": "https://maps.nlsc.gov.tw"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/tw/Taiwane-MapOpenData.png"
+}

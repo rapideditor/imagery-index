@@ -1,0 +1,18 @@
+{
+  "id": "antrimnuig",
+  "type": "tms",
+  "locationSet": {"include": ["ie"]},
+  "name": "Ireland Civil Parishes and Baronies - Memorial Atlas",
+  "description": "Memorial Atlas of Ireland (1901) L.J. Richards",
+  "url": "https://mapwarper.net/layers/tile/295/{zoom}/{x}/{y}.png",
+  "min_zoom": 5,
+  "max_zoom": 20,
+  "start_date": "1901",
+  "end_date": "1901",
+  "attribution": {
+    "required": true,
+    "text": "James Hardiman Library, NUIG",
+    "url": "https://library.nuigalway.ie/collections/archives/depositedcollections/digitisedarchives/"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/ie/IrelandCivilParishesandBaronies-MemorialAtlas.png"
+}

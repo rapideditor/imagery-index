@@ -1,0 +1,31 @@
+{
+  "id": "ssb-sentrum",
+  "type": "wms",
+  "locationSet": {"include": ["no"]},
+  "name": "SSB City Centres overlay",
+  "description": "Downtown areas with significant commercial and service activities.",
+  "url": "https://ogc.ssb.no/wms.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=layer_193&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 22,
+  "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006345.html",
+  "overlay": true,
+  "available_projections": [
+    "EPSG:25829",
+    "EPSG:25830",
+    "EPSG:25831",
+    "EPSG:25832",
+    "EPSG:25833",
+    "EPSG:25834",
+    "EPSG:25835",
+    "EPSG:25836",
+    "EPSG:32631",
+    "EPSG:32632",
+    "EPSG:32633",
+    "EPSG:32634",
+    "EPSG:32635",
+    "EPSG:32636",
+    "EPSG:3857",
+    "EPSG:4326"
+  ],
+  "attribution": {"text": "© SSB", "url": "https://www.ssb.no/arealsentrum/"},
+  "icon": "https://www.fosterhjemsforening.no/wp-content/uploads/2015/06/SSB_logo1.png"
+}

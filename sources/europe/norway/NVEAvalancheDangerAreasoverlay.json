@@ -1,0 +1,33 @@
+{
+  "id": "nve-snoskred",
+  "type": "wms",
+  "locationSet": {"include": ["no"]},
+  "name": "NVE Avalanche Danger Areas overlay",
+  "description": "Potential snowslide areas, computed from theoretical height model. Valid for drops higher than 20-50 meters. Dark red=trigger area.",
+  "url": "https://gis3.nve.no/map/services/SkredSnoAktR/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Snoskred-Aktsomhetsomrader&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "min_zoom": 5,
+  "max_zoom": 13,
+  "license_url": "https://lists.nuug.no/pipermail/kart/2017-December/006312.html",
+  "overlay": true,
+  "available_projections": [
+    "EPSG:25831",
+    "EPSG:25832",
+    "EPSG:25833",
+    "EPSG:25834",
+    "EPSG:25835",
+    "EPSG:25836",
+    "EPSG:32631",
+    "EPSG:32632",
+    "EPSG:32633",
+    "EPSG:32634",
+    "EPSG:32635",
+    "EPSG:32636",
+    "EPSG:3857",
+    "EPSG:4326"
+  ],
+  "attribution": {
+    "text": "© NVE",
+    "url": "https://www.nve.no/flaum-og-skred/kartlegging/aktsemdkart/aktsomhetskart-for-snoskred/"
+  },
+  "icon": "https://kommunikasjon.ntb.no/data/images/00525/e8799776-4b69-4ec4-906d-46285ccb3dbe-w_300_h_100.png"
+}

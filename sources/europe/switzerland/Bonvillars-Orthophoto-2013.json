@@ -1,0 +1,17 @@
+{
+  "id": "Bonvillars-2013",
+  "type": "tms",
+  "locationSet": {"include": ["ch"]},
+  "name": "Bonvillars Orthophoto 2013",
+  "url": "https://osmdata.asitvd.ch/tiles/bonvillars2013/{zoom}/{x}/{y}.png",
+  "min_zoom": 14,
+  "max_zoom": 20,
+  "privacy_policy_url": "https://www.asitvd.ch/tarifs-conditions.html",
+  "start_date": "2013",
+  "end_date": "2013",
+  "attribution": {
+    "url": "https://osmdata.asitvd.ch/",
+    "text": "Bonvillars - Orthophoto technique 2013",
+    "required": false
+  }
+}

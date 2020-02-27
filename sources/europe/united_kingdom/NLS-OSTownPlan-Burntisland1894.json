@@ -1,0 +1,18 @@
+{
+  "id": "NLS_burntisland1894",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "OS Town Plans, Burntisland 1894 (NLS)",
+  "description": "Detailed town plan of Burntisland 1894, courtesy of National Library of Scotland.",
+  "url": "https://geo.nls.uk/maps/towns/burntisland/{zoom}/{x}/{-y}.png",
+  "min_zoom": 13,
+  "max_zoom": 20,
+  "start_date": "1894",
+  "end_date": "1895",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland - Burntisland 1894",
+    "url": "https://maps.nls.uk/townplans/burntisland.html"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "openrailwaymap",
+  "type": "tms",
+  "name": "OpenRailwayMap",
+  "description": "Overlay imagery for railway mapping in OSM",
+  "url": "https://{switch:a,b,c}.tiles.openrailwaymap.org/standard/{zoom}/{x}/{y}.png",
+  "category": "osmbasedmap",
+  "max_zoom": 20,
+  "overlay": true,
+  "attribution": {"text": "© OpenRailwayMap.org", "url": "https://www.openrailwaymap.org/"},
+  "icon": "https://www.openrailwaymap.org/img/openrailwaymap-64.png"
+}

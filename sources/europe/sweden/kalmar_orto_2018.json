@@ -1,0 +1,21 @@
+{
+  "id": "kalmar-orto-2018",
+  "type": "wms",
+  "locationSet": {"include": ["se"]},
+  "name": "Kalmar Urban Orthophoto 2018",
+  "description": "Orthophotos for urban areas of the municipality of Kalmar 2018",
+  "url": "https://kartportal.kalmar.se/arcgisserver/services/Ortofoto/Kalmar_2018/ImageServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "min_zoom": 9,
+  "max_zoom": 22,
+  "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/se/Kalmar_permission.pdf",
+  "best": true,
+  "start_date": "2018",
+  "end_date": "2018",
+  "available_projections": ["EPSG:3010", "EPSG:4326"],
+  "attribution": {
+    "required": true,
+    "text": "© Kalmar municipality",
+    "url": "http://data-kalmar.opendata.arcgis.com/"
+  },
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kalmarvapen_1a.svg/206px-Kalmarvapen_1a.svg.png"
+}

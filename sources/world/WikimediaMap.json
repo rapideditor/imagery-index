@@ -1,0 +1,13 @@
+{
+  "id": "wikimedia-map",
+  "type": "tms",
+  "name": "Wikimedia Map",
+  "url": "https://maps.wikimedia.org/osm-intl/{zoom}/{x}/{y}.png",
+  "category": "osmbasedmap",
+  "max_zoom": 18,
+  "attribution": {
+    "text": "© OpenStreetMap contributors, CC-BY-SA",
+    "url": "https://www.openstreetmap.org/",
+    "required": true
+  }
+}

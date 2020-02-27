@@ -1,0 +1,18 @@
+{
+  "id": "Budapest_XI_2017",
+  "type": "wms",
+  "locationSet": {"include": ["hu"]},
+  "name": "Budapest district XI orthophoto 2017",
+  "description": "5 cm resolution bald image",
+  "url": "https://terinfo.ujbuda.hu/mapproxy/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto_2017&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofotók#Budapest_XI._ker.C3.BClet",
+  "best": true,
+  "start_date": "2017-03",
+  "end_date": "2017-03",
+  "available_projections": ["EPSG:23700", "EPSG:4326"],
+  "attribution": {
+    "url": "https://terinfo.ujbuda.hu",
+    "text": "Budapest XI. kerület önkormányzata",
+    "required": true
+  }
+}

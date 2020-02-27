@@ -1,0 +1,17 @@
+{
+  "id": "Aargau-AGIS-2019",
+  "type": "tms",
+  "locationSet": {"include": ["ch"]},
+  "name": "Kanton Aargau 25cm (AGIS 2019)",
+  "description": "This imagery is provided via a proxy operated by https://sosm.ch/",
+  "url": "https://mapproxy.osm.ch/tiles/AGIS2019/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
+  "category": "photo",
+  "min_zoom": 8,
+  "max_zoom": 19,
+  "license_url": "https://wiki.openstreetmap.org/wiki/Switzerland/AGIS",
+  "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
+  "best": true,
+  "start_date": "2019",
+  "end_date": "2019",
+  "attribution": {"text": "AGIS OF2019", "required": false}
+}

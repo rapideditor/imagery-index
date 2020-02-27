@@ -1,0 +1,20 @@
+{
+  "id": "bavaria-80cm",
+  "type": "wms",
+  "locationSet": {"include": ["de"]},
+  "name": "Bavaria (80 cm)",
+  "url": "https://geoservices.bayern.de/wms/v2/ogc_dop80_oa.cgi?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=by_dop80c&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "category": "photo",
+  "min_zoom": 7,
+  "max_zoom": 18,
+  "best": true,
+  "available_projections": [
+    "EPSG:25832",
+    "EPSG:25833",
+    "EPSG:31467",
+    "EPSG:31468",
+    "EPSG:4258",
+    "EPSG:4326"
+  ],
+  "attribution": {"text": "Bayerische Vermessungsverwaltung", "url": "https://www.ldbv.bayern.de/"}
+}

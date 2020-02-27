@@ -1,0 +1,26 @@
+{
+  "id": "vogis.cnv.at-ef2012_12cm",
+  "type": "wms",
+  "locationSet": {"include": ["at"]},
+  "name": "VoGIS: Echtfarbenbild 2012 (12cm)",
+  "url": "https://vogis.cnv.at/mapserver/mapserv?map=i_luftbilder_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ef2012_12cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "category": "historicphoto",
+  "permission_osm": "explicit",
+  "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
+  "start_date": "2012",
+  "end_date": "2012",
+  "available_projections": [
+    "EPSG:21781",
+    "EPSG:25832",
+    "EPSG:31254",
+    "EPSG:31284",
+    "EPSG:32632",
+    "EPSG:3857",
+    "EPSG:4326"
+  ],
+  "attribution": {
+    "text": "Datenquelle: Land Vorarlberg – data.vorarlberg.gv.at",
+    "url": "https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png"
+}

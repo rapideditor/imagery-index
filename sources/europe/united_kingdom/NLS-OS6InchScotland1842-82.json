@@ -1,0 +1,17 @@
+{
+  "id": "NLS-OS-6inch-Scotland-hist",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "NLS - OS 6-inch Scotland 1842-82",
+  "url": "https://geo.nls.uk/mapdata3/os/6inchfirst/{zoom}/{x}/{y}.png",
+  "min_zoom": 5,
+  "max_zoom": 16,
+  "start_date": "1842",
+  "end_date": "1883",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland Historic Maps",
+    "url": "https://geo.nls.uk/maps"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

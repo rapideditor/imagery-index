@@ -1,0 +1,17 @@
+{
+  "id": "lantmateriet-topowebb",
+  "type": "tms",
+  "locationSet": {"include": ["se"]},
+  "name": "Lantmäteriet Topographic Map",
+  "description": "Topographic map of Sweden 1:50 000",
+  "url": "https://api.lantmateriet.se/open/topowebb-ccby/v1/wmts/token/9b342b7d9f12d4ddb92277be9869d860/1.0.0/topowebb/default/3857/{zoom}/{y}/{x}.png",
+  "min_zoom": 3,
+  "max_zoom": 15,
+  "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
+  "attribution": {
+    "required": true,
+    "text": "© Lantmäteriet, CC0",
+    "url": "https://www.lantmateriet.se/"
+  },
+  "icon": "https://raw.githubusercontent.com/osmlab/editor-layer-index/gh-pages/sources/europe/se/lantmateriet_icon.png"
+}

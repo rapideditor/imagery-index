@@ -1,0 +1,18 @@
+{
+  "id": "NLS_standrews1854",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "OS Town Plans, St Andrews 1854 (NLS)",
+  "description": "Detailed town plan of St Andrews 1854, courtesy of National Library of Scotland.",
+  "url": "https://geo.nls.uk/maps/towns/standrews1854/{zoom}/{x}/{-y}.png",
+  "min_zoom": 13,
+  "max_zoom": 20,
+  "start_date": "1854",
+  "end_date": "1855",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland - St Andrews 1854",
+    "url": "https://maps.nls.uk/townplans/st-andrews_1.html"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

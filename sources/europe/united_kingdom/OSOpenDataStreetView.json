@@ -1,0 +1,9 @@
+{
+  "id": "OS-OpenData_StreetView",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "OS OpenData StreetView",
+  "url": "https://{switch:a,b,c}.os.openstreetmap.org/sv/{zoom}/{x}/{y}.png",
+  "min_zoom": 1,
+  "max_zoom": 18
+}

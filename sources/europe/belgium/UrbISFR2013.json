@@ -1,0 +1,17 @@
+{
+  "id": "URBISfr2013",
+  "type": "wms",
+  "locationSet": {"include": ["be"]},
+  "name": "URBISfr numerical imagery (2013)",
+  "url": "https://gis.irisnet.be/arcgis/rest/services/basemap/urbisFR/MapServer/export?f=image&format=png8&transparent=False&SRS={proj}&bboxSR=3857&imageSR=3857&bbox={bbox}&size={width},{height}",
+  "category": "map",
+  "license_url": "https://bric.brussels/en/our-solutions/urbis-solutions/Licence_Open_data_Fr_v4.pdf",
+  "start_date": "2013",
+  "end_date": "2013",
+  "available_projections": ["EPSG:3857"],
+  "attribution": {
+    "required": true,
+    "text": "Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/UrbIS.png"
+}

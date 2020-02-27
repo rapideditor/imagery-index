@@ -1,0 +1,15 @@
+{
+  "id": "gaza_pleiades_20140706_nir",
+  "type": "tms",
+  "locationSet": {"include": ["ps"]},
+  "name": "Gaza Strip - Pléiades - 2014/07/06 (NIR)",
+  "url": "https://imagery.openstreetmap.fr/tms/1.0.0/gaza_pleiades_20140706_nir/{zoom}/{x}/{y}",
+  "max_zoom": 22,
+  "start_date": "2014-07-06",
+  "end_date": "2014-07-06",
+  "attribution": {
+    "text": "Copyright CNES 2014, Distribution Airbus Defence and Space",
+    "url": "https://wiki.openstreetmap.org/wiki/2014_Gaza_Strip",
+    "required": true
+  }
+}

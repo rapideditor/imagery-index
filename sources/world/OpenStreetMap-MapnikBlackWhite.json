@@ -1,0 +1,14 @@
+{
+  "id": "osm-mapnik-black_and_white",
+  "type": "tms",
+  "name": "OpenStreetMap (Standard Black & White)",
+  "url": "https://tiles.wmflabs.org/bw-mapnik/{zoom}/{x}/{y}.png",
+  "category": "osmbasedmap",
+  "max_zoom": 18,
+  "attribution": {
+    "required": true,
+    "text": "© OpenStreetMap contributors, CC-BY-SA",
+    "url": "https://www.openstreetmap.org"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenStreetMap-MapnikBlackWhite.png"
+}

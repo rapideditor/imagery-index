@@ -1,0 +1,14 @@
+{
+  "id": "osmfr",
+  "type": "tms",
+  "name": "OpenStreetMap (French Style)",
+  "url": "https://{switch:a,b,c}.tile.openstreetmap.fr/osmfr/{zoom}/{x}/{y}.png",
+  "category": "osmbasedmap",
+  "max_zoom": 20,
+  "attribution": {
+    "required": true,
+    "text": "Tiles © cquest@Openstreetmap France, data © OpenStreetMap contributors, ODBL",
+    "url": "https://www.openstreetmap.org/"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenStreetMap-GPS.png"
+}

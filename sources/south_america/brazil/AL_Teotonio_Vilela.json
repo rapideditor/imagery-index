@@ -1,0 +1,13 @@
+{
+  "id": "teotonio_vilela",
+  "type": "wms",
+  "locationSet": {"include": ["br"]},
+  "name": "Teotonio Vilela AL",
+  "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Teotonio%20Vilela&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+  "available_projections": ["EPSG:22525", "EPSG:3857", "EPSG:4326"],
+  "attribution": {
+    "url": "http://www.seplag.al.gov.br",
+    "text": "Secretaria de Estado do Planejamento, Gestão e Patrimônio"
+  }
+}

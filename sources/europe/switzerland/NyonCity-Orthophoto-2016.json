@@ -1,0 +1,19 @@
+{
+  "id": "Ville_de_Nyon-HD-2016",
+  "type": "tms",
+  "locationSet": {"include": ["ch"]},
+  "name": "Ville de Nyon - Orthophoto 2016 HD 5cm/pi",
+  "url": "http://osmdata.asitvd.ch/tiles/nyon2016/{zoom}/{x}/{y}.png",
+  "min_zoom": 10,
+  "max_zoom": 20,
+  "permission_osm": "explicit",
+  "license_url": "https://wiki.openstreetmap.org/wiki/File:OSM_waiver_Nyon.pdf",
+  "privacy_policy_url": "https://www.asitvd.ch/tarifs-conditions.html",
+  "start_date": "2016-03-10",
+  "end_date": "2016-03-10",
+  "attribution": {
+    "url": "http://www.nyon.ch/fr/officiel/services-offices/informatique-et-population-776-3911",
+    "text": "Ville de Nyon",
+    "required": false
+  }
+}

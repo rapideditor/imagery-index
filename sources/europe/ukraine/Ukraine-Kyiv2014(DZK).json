@@ -1,0 +1,11 @@
+{
+  "id": "UkraineKyiv2014DZK",
+  "type": "tms",
+  "locationSet": {"include": ["ua"]},
+  "name": "Ukraine - Kyiv 2014 (DZK)",
+  "description": "Works only from within Ukraine or with an Ukrainian proxy server.",
+  "url": "https://map.land.gov.ua/map/ortho_kiev/{zoom}/{x}/{-y}.jpg",
+  "max_zoom": 16,
+  "start_date": "2014",
+  "end_date": "2014"
+}

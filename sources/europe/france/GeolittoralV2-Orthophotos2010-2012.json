@@ -1,0 +1,16 @@
+{
+  "id": "GeolittoralV2-Orthophotos",
+  "type": "wms",
+  "locationSet": {"include": ["fr"]},
+  "name": "Géolittoral V2 - Orthophotos 2011-2014",
+  "url": "http://geolittoral.din.developpement-durable.gouv.fr/wxs?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortholittorale_v2_rvb&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "license_url": "http://www.geolittoral.developpement-durable.gouv.fr/mentions-legales-a37.html",
+  "start_date": "2011",
+  "end_date": "2014",
+  "available_projections": ["EPSG:3857", "EPSG:4326"],
+  "attribution": {
+    "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
+    "text": "Ortho Littorale V2 - MEDDE",
+    "required": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "Maaamet-Estonia_Cadastre",
+  "type": "wms",
+  "locationSet": {"include": ["ee"]},
+  "name": "Estonia Cadastre (Maaamet)",
+  "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=of10000,TOPOYKSUS_6569,TOPOYKSUS_6573&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
+  "available_projections": ["EPSG:4326"],
+  "attribution": {"text": "Maa-Ameti katastrikaart ortofoto alusel", "required": true}
+}

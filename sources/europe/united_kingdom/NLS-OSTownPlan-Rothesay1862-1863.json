@@ -1,0 +1,18 @@
+{
+  "id": "NLS_rothesay1862_1863",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "OS Town Plans, Rothesay 1862-1863 (NLS)",
+  "description": "Detailed town plan of Rothesay 1862-1863, courtesy of National Library of Scotland.",
+  "url": "https://geo.nls.uk/maps/towns/rothesay/{zoom}/{x}/{-y}.png",
+  "min_zoom": 13,
+  "max_zoom": 20,
+  "start_date": "1862",
+  "end_date": "1864",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland - Rothesay 1862-1863",
+    "url": "https://maps.nls.uk/townplans/rothesay.html"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

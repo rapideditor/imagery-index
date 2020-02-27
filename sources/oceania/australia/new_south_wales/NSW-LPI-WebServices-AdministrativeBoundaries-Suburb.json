@@ -1,0 +1,18 @@
+{
+  "id": "LPI_NSW_Administrative_Boundaries_Suburb",
+  "type": "wms",
+  "locationSet": {"include": ["au"]},
+  "name": "LPI NSW Administrative Boundaries Suburb",
+  "url": "https://maps.six.nsw.gov.au/arcgis/services/public/NSW_Administrative_Boundaries/MapServer/WMSServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&CRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&LAYERS=7&STYLES=&FORMAT=image/png32&DPI=96&MAP_RESOLUTION=96&FORMAT_OPTIONS=dpi:96&TRANSPARENT=TRUE",
+  "min_zoom": 1,
+  "max_zoom": 21,
+  "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
+  "overlay": true,
+  "available_projections": ["EPSG:3857"],
+  "attribution": {
+    "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
+    "text": "© Department of Customer Service 2019",
+    "required": true
+  },
+  "icon": "https://www.spatial.nsw.gov.au/__data/assets/file/0017/224801/favicon.ico"
+}

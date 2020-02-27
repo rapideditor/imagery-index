@@ -1,0 +1,16 @@
+{
+  "id": "Zug-2016",
+  "type": "wms",
+  "locationSet": {"include": ["ch"]},
+  "name": "Kanton Zug Nord 2016",
+  "url": "https://services.geo.zg.ch:443/ows/Orthofotos?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=zg.orthofoto_2016_kt_zg&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "min_zoom": 10,
+  "max_zoom": 21,
+  "license_url": "https://www.zg.ch/behoerden/direktion-des-innern/geoportal/geodaten-einbinden/wms",
+  "privacy_policy_url": "https://www.zg.ch/datenschutzerklaerung",
+  "best": true,
+  "start_date": "2016",
+  "end_date": "2016",
+  "available_projections": ["EPSG:2056", "EPSG:21781", "EPSG:3857", "EPSG:4326"],
+  "attribution": {"text": "GIS Kanton Zug", "required": false}
+}

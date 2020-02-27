@@ -1,0 +1,15 @@
+{
+  "id": "Singapore-Landlot",
+  "type": "wms",
+  "locationSet": {"include": ["sg"]},
+  "name": "Singapore Landlot",
+  "url": "https://mapservices.onemap.sg/mapproxy/service?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=singapore_landlot_wmts&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "license_url": "https://www.onemap.sg/legal/opendatalicence.html",
+  "available_projections": ["EPSG:3414", "EPSG:4326"],
+  "attribution": {
+    "required": true,
+    "text": "©OneMap Singapore ODL v1.0",
+    "url": "https://www.onemap.sg/legal/opendatalicence.html"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/sg/OM2_logo.png"
+}

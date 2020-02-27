@@ -1,0 +1,15 @@
+{
+  "id": "GEOSN-DOP-CIR",
+  "type": "wms",
+  "locationSet": {"include": ["de"]},
+  "name": "Saxony latest aerial imagery infrared",
+  "url": "https://geodienste.sachsen.de/wms_geosn_dop-cir/guest?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=sn_dop_020_cir&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
+  "available_projections": ["EPSG:25833", "EPSG:31468", "EPSG:3857", "EPSG:4326"],
+  "attribution": {
+    "required": true,
+    "text": "Staatsbetrieb Geobasisinformation und Vermessung Sachsen",
+    "url": "https://geoportal.sachsen.de/cps/metadaten_portal.html?id=ba87bbed-4cb5-4539-a9f5-f863de752f52"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/SaxonyWebAtlasSN.png"
+}

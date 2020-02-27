@@ -1,0 +1,16 @@
+{
+  "id": "UrbisAdmNL",
+  "type": "wms",
+  "locationSet": {"include": ["be"]},
+  "name": "UrbisAdm NL",
+  "url": "https://geoservices-urbis.irisnet.be/geoserver/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=urbisNL&WIDTH={width}&HEIGHT={height}&CRS={proj}&STYLES=&BBOX={bbox}",
+  "category": "map",
+  "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
+  "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
+  "available_projections": ["EPSG:31370", "EPSG:3857", "EPSG:4326"],
+  "attribution": {
+    "required": true,
+    "text": "Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/UrbIS.png"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "dgu-topo-100",
+  "type": "wms",
+  "locationSet": {"include": ["hr"]},
+  "name": "dgu.hr: Topo 100",
+  "url": "https://geoportal.dgu.hr/services/tk/ows?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=tk:TK100&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "permission_osm": "explicit",
+  "license_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_25_403.html",
+  "privacy_policy_url": "https://geoportal.dgu.hr/#/menu/uvjeti-koristenja",
+  "start_date": "1980",
+  "end_date": "1984",
+  "available_projections": ["EPSG:3765", "EPSG:4326"],
+  "attribution": {
+    "required": true,
+    "text": "Sadrži podatke Državne geodetske uprave",
+    "url": "https://dgu.gov.hr/"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/dgu.png"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "NLS_peterhead1868",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "OS Town Plans, Peterhead 1868 (NLS)",
+  "description": "Detailed town plan of Peterhead 1868, courtesy of National Library of Scotland.",
+  "url": "https://geo.nls.uk/maps/towns/peterhead/{zoom}/{x}/{-y}.png",
+  "min_zoom": 13,
+  "max_zoom": 20,
+  "start_date": "1868",
+  "end_date": "1869",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland - Peterhead 1868",
+    "url": "https://maps.nls.uk/townplans/peterhead"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

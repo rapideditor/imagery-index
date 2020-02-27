@@ -1,0 +1,12 @@
+{
+  "id": "opensnowmap-overlay",
+  "type": "tms",
+  "name": "OpenSnowMap overlay",
+  "description": "Overlay imagery for piste mapping in OSM. Updated daily.",
+  "url": "https://www.opensnowmap.org/pistes/{zoom}/{x}/{y}.png",
+  "category": "osmbasedmap",
+  "max_zoom": 18,
+  "overlay": true,
+  "attribution": {"text": "© OpenSnowMap.org", "url": "https://www.opensnowmap.org/"},
+  "icon": "https://www.opensnowmap.org/pics/alpine.png"
+}

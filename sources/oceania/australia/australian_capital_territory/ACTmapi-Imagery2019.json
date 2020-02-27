@@ -1,0 +1,19 @@
+{
+  "id": "ACT2019",
+  "type": "wms",
+  "locationSet": {"include": ["au"]},
+  "name": "ACTmapi Imagery Feb 2019",
+  "url": "https://data.actmapi.act.gov.au/arcgis/rest/services/actmapi/imagery2019mga/ImageServer/exportImage?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo={proj}",
+  "max_zoom": 21,
+  "license_url": "https://osmlab.github.io/editor-layer-index/sources/australia/au/act/ACTmapi-Imagery.PDF",
+  "privacy_policy_url": "https://www.environment.act.gov.au/about/privacy",
+  "start_date": "2019-02",
+  "end_date": "2019-02",
+  "available_projections": ["EPSG:3857"],
+  "attribution": {
+    "url": "http://actmapi.act.gov.au/terms.html",
+    "text": "Aerial Imagery from ACTMapi ©ACT Government",
+    "required": true
+  },
+  "icon": "http://actmapi.act.gov.au/img/apple-touch-icon.png"
+}

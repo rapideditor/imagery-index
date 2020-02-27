@@ -1,0 +1,16 @@
+{
+  "id": "CRAIG-Auvergne-2016_mirror1",
+  "type": "wms",
+  "locationSet": {"include": ["fr"]},
+  "name": "Auvergne 2016 25cm CRAIG",
+  "url": "https://tiles.craig.fr/ortho/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortho_2016&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
+  "start_date": "2016",
+  "end_date": "2016",
+  "available_projections": ["EPSG:2154", "EPSG:3857", "EPSG:4258", "EPSG:4326"],
+  "attribution": {
+    "url": "http://ids.craig.fr/geocat/srv/fre/catalog.search?node=srv#/metadata/e37c057b-5884-429b-8bec-5db0baef0ee",
+    "text": "CRAIG - IGN -TopoGEODIS - Feder Auvergne-Rhône-Alpes 2016",
+    "required": true
+  }
+}

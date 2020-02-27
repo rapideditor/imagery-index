@@ -1,0 +1,17 @@
+{
+  "id": "NLS-OS-7th_Series",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "NLS - OS 1-inch 7th Series 1955-61",
+  "url": "https://geo.nls.uk/mapdata2/os/seventh/{zoom}/{x}/{-y}.png",
+  "min_zoom": 5,
+  "max_zoom": 16,
+  "start_date": "1955",
+  "end_date": "1962",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland Historic Maps",
+    "url": "https://geo.nls.uk/maps"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

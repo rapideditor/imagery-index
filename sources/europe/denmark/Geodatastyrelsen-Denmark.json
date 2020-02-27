@@ -1,0 +1,15 @@
+{
+  "id": "Geodatastyrelsen_Denmark",
+  "type": "tms",
+  "locationSet": {"include": ["dk"]},
+  "name": "SDFE aerial imagery",
+  "url": "https://osmtools.septima.dk/mapproxy/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg",
+  "max_zoom": 21,
+  "best": true,
+  "attribution": {
+    "required": true,
+    "text": "Geodatastyrelsen og Danske Kommuner",
+    "url": "https://download.kortforsyningen.dk/content/vilkaar-og-betingelser"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/dk/SDFESkrmkort.png"
+}

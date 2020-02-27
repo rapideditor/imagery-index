@@ -1,0 +1,12 @@
+{
+  "id": "mtbmap-no",
+  "type": "tms",
+  "locationSet": {"include": ["no"]},
+  "name": "MTBmap.no",
+  "description": "Norwegian mountain biking map from OSM (max zoom 14-16, varies per region)",
+  "url": "https://mtbmap.no/tiles/osm/mtbmap/{zoom}/{x}/{y}.jpg",
+  "min_zoom": 3,
+  "max_zoom": 14,
+  "attribution": {"text": "© MTBmap.no", "url": "https://www.mtbmap.no/"},
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/no/MTBmapno.png"
+}

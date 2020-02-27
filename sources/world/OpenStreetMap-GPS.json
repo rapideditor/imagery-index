@@ -1,0 +1,19 @@
+{
+  "id": "osm-gps",
+  "type": "tms",
+  "name": "OpenStreetMap GPS traces",
+  "description": "Public GPS traces uploaded to OpenStreetMap.",
+  "url": "https://{switch:a,b,c}.gps-tile.openstreetmap.org/lines/{zoom}/{x}/{y}.png",
+  "category": "other",
+  "max_zoom": 20,
+  "license_url": "https://wiki.osmfoundation.org/wiki/Terms_of_Use",
+  "privacy_policy_url": "https://wiki.osmfoundation.org/wiki/Privacy_Policy",
+  "overlay": true,
+  "attribution": {
+    "html": "<span style='display: inline-block; padding: 0 8px; background-color: rgba(0,0,0,0.5);'><span style='color: #eee;'>GPS Direction:</span> <span style='font-size: 15px; padding-left: 2px; font-weight: bold;'> <span style='color: #0ee;'>&larr;</span> <span style='color: #96f;'>&darr;</span> <span style='color: #6e0;'>&uarr;</span> <span style='color: #f63;'>&rarr;</span> </span></span> © <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap contributors</a>.",
+    "required": true,
+    "text": "© OpenStreetMap contributors",
+    "url": "https://www.openstreetmap.org/copyright"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenStreetMap-GPS.png"
+}

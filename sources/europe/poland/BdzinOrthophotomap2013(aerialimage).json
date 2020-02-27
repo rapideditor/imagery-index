@@ -1,0 +1,12 @@
+{
+  "id": "Bedzin-PL-aerial_image",
+  "type": "wms",
+  "locationSet": {"include": ["pl"]},
+  "name": "Będzin: Orthophotomap 2013 (aerial image)",
+  "url": "http://www.geo.powiat.bedzin.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto_2013&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 23,
+  "start_date": "2013",
+  "end_date": "2013",
+  "available_projections": ["EPSG:2177"],
+  "attribution": {"text": "Starostwo Powiatowe w Będzinie"}
+}

@@ -1,0 +1,14 @@
+{
+  "id": "OpenStreetMap-turistautak",
+  "type": "tms",
+  "locationSet": {"include": ["hu"]},
+  "name": "OpenStreetMap (turistautak)",
+  "url": "http://{switch:h,i,j}.tile.openstreetmap.hu/turistautak/{zoom}/{x}/{y}.png",
+  "max_zoom": 18,
+  "license_url": "http://www.openstreetmap.hu",
+  "attribution": {
+    "url": "https://www.openstreetmap.org",
+    "text": "© OpenStreetMap contributors",
+    "required": true
+  }
+}

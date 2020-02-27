@@ -1,0 +1,20 @@
+{
+  "id": "eufar-balaton",
+  "type": "tms",
+  "locationSet": {"include": ["hu"]},
+  "name": "EUFAR Balaton orthophotos",
+  "description": "1940 geo-tagged photography from Balaton Limnological Institute.",
+  "url": "http://e.tile.openstreetmap.hu/balaton/0/{zoom}/{x}/{y}.jpg",
+  "min_zoom": 12,
+  "max_zoom": 19,
+  "permission_osm": "explicit",
+  "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k#Balaton",
+  "best": true,
+  "start_date": "2010-08-01",
+  "end_date": "2010-08-31",
+  "attribution": {
+    "url": "http://www.bli.okologia.mta.hu/",
+    "text": "EUFAR Balaton ortofotó 2010",
+    "required": true
+  }
+}

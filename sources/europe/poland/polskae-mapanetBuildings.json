@@ -1,0 +1,23 @@
+{
+  "id": "e-mapa.net-buildings",
+  "type": "wms",
+  "locationSet": {"include": ["pl"]},
+  "name": "polska.e-mapa.net: Buildings",
+  "url": "https://integracja02.gugik.gov.pl/cgi-bin/KrajowaIntegracjaEwidencjiGruntow?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 19,
+  "license_url": "http://e-mapa.net/warunki/",
+  "available_projections": [
+    "EPSG:2176",
+    "EPSG:2177",
+    "EPSG:2178",
+    "EPSG:2179",
+    "EPSG:2180",
+    "EPSG:3857",
+    "EPSG:4326"
+  ],
+  "attribution": {
+    "text": "polska.e-mapa.net - Geoportal otwartych danych przestrzennych",
+    "url": "https://polska.e-mapa.net/"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/polskae-mapanetBuildings.png"
+}

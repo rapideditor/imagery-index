@@ -1,0 +1,14 @@
+{
+  "id": "HDM_HOT",
+  "type": "tms",
+  "name": "OpenStreetMap (HOT Style)",
+  "url": "https://{switch:a,b,c}.tile.openstreetmap.fr/hot/{zoom}/{x}/{y}.png",
+  "category": "osmbasedmap",
+  "max_zoom": 20,
+  "attribution": {
+    "url": "https://www.hotosm.org/",
+    "text": "© OpenStreetMap contributors, tiles courtesy of Humanitarian OpenStreetMap Team",
+    "required": true
+  },
+  "icon": "https://wiki.openstreetmap.org/w/images/thumb/c/c9/Hot_logo.svg/300px-Hot_logo.svg.png"
+}

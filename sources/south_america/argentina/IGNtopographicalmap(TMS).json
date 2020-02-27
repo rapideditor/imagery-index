@@ -1,0 +1,15 @@
+{
+  "id": "ign-topografico-tms",
+  "type": "tms",
+  "locationSet": {"include": ["ar"]},
+  "name": "IGN topographical map (TMS)",
+  "url": "https://ide.ign.gob.ar/geoservicios/rest/services/Mapas_IGN/mapa_topografico/MapServer/tile/{zoom}/{y}/{x}",
+  "min_zoom": 1,
+  "max_zoom": 19,
+  "license_url": "https://www.ign.gob.ar/descargas/tyc1.html",
+  "attribution": {
+    "text": "Instituto Geográfico Nacional de la República Argentina",
+    "url": "https://www.ign.gob.ar/"
+  },
+  "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png"
+}

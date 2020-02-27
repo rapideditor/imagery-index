@@ -1,0 +1,20 @@
+{
+  "id": "OSIP_6in",
+  "type": "wms",
+  "locationSet": {"include": ["us"]},
+  "name": "OSIP 6in Imagery Most Current Available",
+  "description": "Most recent available 6-inch orthoimagery from the Ohio Statewide Imagery Program.",
+  "url": "https://geo1.oit.ohio.gov/arcgis/services/OSIP/OSIP_6in_best_avail/ImageServer/WMSServer?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "min_zoom": 8,
+  "max_zoom": 20,
+  "permission_osm": "implicit",
+  "license_url": "https://ogrip.oit.ohio.gov/Portals/0/PDFs/OSIP%20Program%20Description.pdf#page=2",
+  "start_date": "2010",
+  "end_date": "2018",
+  "available_projections": ["EPSG:3753", "EPSG:4326"],
+  "attribution": {
+    "url": "https://ogrip.oit.ohio.gov/ProjectsInitiatives/StatewideImagery.aspx",
+    "text": "Ohio Statewide Imagery Program",
+    "required": false
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "SPWrelief2014",
+  "type": "wms",
+  "locationSet": {"include": ["be"]},
+  "name": "SPW(allonie) shaded relief",
+  "url": "https://geoservices.wallonie.be/arcgis/services/RELIEF/WALLONIE_MNT_2013_2014_HILLSHADE/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "category": "elevation",
+  "license_url": "https://wiki.openstreetmap.org/wiki/File:OSM_license_for_SPW_WMS_usage.pdf",
+  "start_date": "2013",
+  "end_date": "2014",
+  "available_projections": ["EPSG:31370", "EPSG:3857", "EPSG:4326"],
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png"
+}

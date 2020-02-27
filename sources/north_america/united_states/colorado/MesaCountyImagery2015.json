@@ -1,0 +1,15 @@
+{
+  "id": "MCGIS-County-NAIP-Imagery-2015",
+  "type": "wms",
+  "locationSet": {"include": ["us"]},
+  "name": "Mesa County GIS NAIP 2015",
+  "url": "https://mcgis.mesacounty.us/image/services/Mosaic_Datasets/MesaCounty_2015/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 20,
+  "permission_osm": "implicit",
+  "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/co/Mesa_County_Data.pdf",
+  "start_date": "2015",
+  "end_date": "2015",
+  "available_projections": ["CRS:84", "EPSG:3742", "EPSG:4326"],
+  "attribution": {"url": "https://gis.mesacounty.us/", "text": "Mesa County GIS", "required": true},
+  "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png"
+}

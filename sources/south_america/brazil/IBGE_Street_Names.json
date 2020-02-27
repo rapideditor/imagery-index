@@ -1,0 +1,13 @@
+{
+  "id": "IBGE_Nomes_Ruas",
+  "type": "tms",
+  "locationSet": {"include": ["br"]},
+  "name": "IBGE Nomes de Ruas",
+  "url": "https://api.maptiler.com/maps/b2037b15-5614-4fed-9608-9830b8dc574a/256/{zoom}/{x}/{y}.png?key=YmPoUxbTlEHlrASzv56Z",
+  "min_zoom": 4,
+  "max_zoom": 22,
+  "license_url": "https://wiki.openstreetmap.org/wiki/IBGE_Street_Names",
+  "overlay": true,
+  "attribution": {"text": "IBGE, OSM Brasil"},
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/IBGE.png"
+}

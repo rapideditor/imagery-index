@@ -1,0 +1,30 @@
+{
+  "id": "Gliwice-buildings",
+  "type": "wms",
+  "locationSet": {"include": ["pl"]},
+  "name": "Gliwice: Buildings",
+  "url": "http://185.60.246.14:9090/isdp/gs/ows?FORMAT=image/png&transparent=true&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=default:EGIB_budynek,default:pkt_adr&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "available_projections": [
+    "EPSG:2172",
+    "EPSG:2173",
+    "EPSG:2174",
+    "EPSG:2175",
+    "EPSG:2176",
+    "EPSG:2177",
+    "EPSG:2178",
+    "EPSG:2179",
+    "EPSG:2180",
+    "EPSG:3120",
+    "EPSG:32633",
+    "EPSG:32634",
+    "EPSG:32635",
+    "EPSG:3329",
+    "EPSG:3330",
+    "EPSG:3331",
+    "EPSG:3332",
+    "EPSG:3333",
+    "EPSG:3334",
+    "EPSG:4326"
+  ],
+  "attribution": {"text": "Urząd Miasta Gliwice"}
+}

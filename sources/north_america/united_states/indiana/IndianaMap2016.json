@@ -1,0 +1,21 @@
+{
+  "id": "IndianaMap2016",
+  "type": "wms",
+  "locationSet": {"include": ["us"]},
+  "name": "IndianaMap Orthoimagery 2016",
+  "description": "Orthophotography for 24 counties in central Indiana, collected during leaf-off conditions in 2016. One-foot resolution for Bartholomew, Boon, Brown, Carroll, Cass, Clinton, Elkhart, Hamilton, Hendricks, Howard, Johnson, Marion, Marshall, Pulaski, St. Joseph, Starke, and Tipton counties. Six-inch resolution for Fulton, Harrison, Jackson, Kosciusko, Monroe, Morgan, and Wabash counties.",
+  "url": "https://maps.indiana.edu/arcgis/services/Imagery/Orthos_2016/MapServer/WmsServer?FORMAT=image/jpeg&TRANSPARENT=FALSE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "min_zoom": 4,
+  "max_zoom": 20,
+  "permission_osm": "implicit",
+  "license_url": "https://gis.iu.edu/datasetInfo/statewide/in_2016.php",
+  "privacy_policy_url": "https://gis.iu.edu/privacy.php",
+  "start_date": "2016",
+  "end_date": "2016",
+  "available_projections": ["EPSG:26916", "EPSG:4326"],
+  "attribution": {
+    "text": "Indiana Office of Information Technology, Indiana University Spatial Data Portal, UITS, Woolpert Inc.",
+    "required": false
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/in/IU.gif"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "Mulhouse_2018",
+  "type": "tms",
+  "locationSet": {"include": ["fr"]},
+  "name": "Mulhouse - 2018",
+  "url": "https://wms.openstreetmap.fr/tms/1.0.0/mulhouse_2018/{zoom}/{x}/{y}",
+  "max_zoom": 22,
+  "license_url": "https://data.mulhouse-alsace.fr/explore/dataset/m2a_orthophotographie-2018/information/",
+  "start_date": "2018",
+  "end_date": "2018",
+  "attribution": {
+    "url": "https://data.mulhouse-alsace.fr/explore/dataset/m2a_orthophotographie-2018/information/",
+    "text": "Mulhouse Alsace Agglomération 2018",
+    "required": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "geovekst-nib2",
+  "type": "tms",
+  "locationSet": {"include": ["no"]},
+  "name": "Norway Orthophoto (more recent, less zoom)",
+  "description": "Most recent Norwegian orthophotos (max zoom 19), courtesy of Geovekst and Kartverket.",
+  "url": "https://opencache{switch:,2,3}.statkart.no/gatekeeper/gk/gk.open_nib_web_mercator_wmts_v2?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=Nibcache_web_mercator_v2&STYLE=default&FORMAT=image/jpgpng&tileMatrixSet=default028mm&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
+  "max_zoom": 19,
+  "license_url": "https://forum.openstreetmap.org/viewtopic.php?id=62083",
+  "best": true,
+  "attribution": {"required": true, "text": "© Geovekst", "url": "https://www.norgeibilder.no"},
+  "icon": "https://register.geonorge.no/data/organizations/_L_norgeibilder96x96.png"
+}

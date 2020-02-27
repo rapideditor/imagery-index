@@ -1,0 +1,16 @@
+{
+  "id": "osmbe",
+  "type": "tms",
+  "locationSet": {"include": ["be"]},
+  "name": "OpenStreetMap (Belgian Style)",
+  "url": "https://tile.openstreetmap.be/osmbe/{zoom}/{x}/{y}.png",
+  "category": "osmbasedmap",
+  "max_zoom": 18,
+  "license_url": "https://github.com/jbelien/openstreetmap-carto-be/wiki/Tile-Usage-Policy",
+  "attribution": {
+    "required": true,
+    "text": "© OpenStreetMap contributors, CC-BY-SA; Tiles courtesy of GEO-6",
+    "url": "https://openstreetmap.org/"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenStreetMap-GPS.png"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "AIV_DHMV_II_SVF_25cm",
+  "type": "wms",
+  "locationSet": {"include": ["be"]},
+  "name": "AIV Digitaal Hoogtemodel Vlaanderen II, Skyview factor 0,25 m",
+  "url": "https://geoservices.informatievlaanderen.be/raadpleegdiensten/dhmv/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=DHMV_II_SVF_25cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "category": "elevation",
+  "license_url": "https://www.geopunt.be/catalogus/datasetfolder/07dcd02f-eb0a-4247-95d1-155bb1129b3b",
+  "start_date": "2013",
+  "end_date": "2015",
+  "available_projections": [
+    "EPSG:102100",
+    "EPSG:25831",
+    "EPSG:3043",
+    "EPSG:31370",
+    "EPSG:32631",
+    "EPSG:3812",
+    "EPSG:3857",
+    "EPSG:4258",
+    "EPSG:4326"
+  ],
+  "attribution": {"required": true, "text": "© agentschap Informatie Vlaanderen"},
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/AIV.png"
+}

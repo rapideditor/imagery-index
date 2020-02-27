@@ -1,0 +1,11 @@
+{
+  "id": "SanJuanMetroAreaUSACEOrthophotos",
+  "type": "tms",
+  "locationSet": {"include": ["us"]},
+  "name": "San Juan Metro Area: 2013 USACE Orthophotos",
+  "url": "http://imagery-pr-usace-2013.s3-website-us-east-1.amazonaws.com/tiles/{zoom}/{x}/{y}.jpg",
+  "max_zoom": 20,
+  "license_url": "https://wiki.openstreetmap.org/wiki/Puerto_Rico_Imagery#Recommended_imagery_for_the_San_Juan_Metro_Area:_2013_USACE_Orthophotos",
+  "start_date": "2013-03-13",
+  "end_date": "2013-03-15"
+}

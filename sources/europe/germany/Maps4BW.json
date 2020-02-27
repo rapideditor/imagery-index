@@ -1,0 +1,22 @@
+{
+  "id": "Maps4BW-LGL_BW",
+  "type": "wms",
+  "locationSet": {"include": ["de"]},
+  "name": "Maps4BW (LGL-BW, www.lgl-bw.de)",
+  "url": "https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_Maps4BW?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=webatlasde&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "license_url": "https://wiki.openstreetmap.org/wiki/Maps4BW#Genehmigung_zur_Nutzung",
+  "available_projections": [
+    "EPSG:25832",
+    "EPSG:25833",
+    "EPSG:31466",
+    "EPSG:31467",
+    "EPSG:31468",
+    "EPSG:3857",
+    "EPSG:4326"
+  ],
+  "attribution": {
+    "url": "https://www.lgl-bw.de/",
+    "text": "Datengrundlage: LGL, www.lgl-bw.de",
+    "required": true
+  }
+}

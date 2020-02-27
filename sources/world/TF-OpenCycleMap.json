@@ -1,0 +1,15 @@
+{
+  "id": "tf-cycle",
+  "type": "tms",
+  "name": "Thunderforest OpenCycleMap",
+  "url": "https://{switch:a,b,c}.tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png",
+  "category": "osmbasedmap",
+  "max_zoom": 22,
+  "license_url": "https://thunderforest.com/terms",
+  "attribution": {
+    "required": true,
+    "text": "Maps © Thunderforest, Data © OpenStreetMap contributors",
+    "url": "https://www.thunderforest.com/terms"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/world/TF-OpenCycleMap.png"
+}

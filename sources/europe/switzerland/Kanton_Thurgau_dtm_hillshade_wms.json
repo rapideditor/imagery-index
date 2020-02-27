@@ -1,0 +1,20 @@
+{
+  "id": "kt_tg_dtm_hillshade",
+  "type": "wms",
+  "locationSet": {"include": ["ch"]},
+  "name": "Kanton Thurgau Relief DTM",
+  "description": "Digitale Repräsentation des Geländes",
+  "url": "https://ows-raster.geo.tg.ch/geofy_access_proxy/reliefschattierung?LAYERS=DTMRelief&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+  "min_zoom": 8,
+  "max_zoom": 21,
+  "license_url": "https://opendata.swiss/dataset/reliefschattierung",
+  "privacy_policy_url": "https://geoinformation.tg.ch/thurgis/thurgis-disclaimer.html/7128",
+  "start_date": "2014",
+  "end_date": "2014",
+  "available_projections": ["EPSG:2056", "EPSG:21781", "EPSG:3857", "EPSG:4326"],
+  "attribution": {
+    "url": "https://opendata.swiss/dataset/reliefschattierung",
+    "text": "Kanton Thurgau, DTM Relief 2014",
+    "required": true
+  }
+}

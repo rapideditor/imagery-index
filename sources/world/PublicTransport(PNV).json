@@ -1,0 +1,14 @@
+{
+  "id": "public_transport_oepnv",
+  "type": "tms",
+  "name": "Public Transport (ÖPNV)",
+  "url": "https://tile.memomaps.de/tilegen/{zoom}/{x}/{y}.png",
+  "category": "osmbasedmap",
+  "max_zoom": 18,
+  "attribution": {
+    "required": true,
+    "text": "© OpenStreetMap contributors, CC-BY-SA",
+    "url": "https://öpnvkarte.de/"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/world/PublicTransport(PNV).png"
+}

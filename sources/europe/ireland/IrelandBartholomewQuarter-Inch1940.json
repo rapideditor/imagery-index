@@ -1,0 +1,17 @@
+{
+  "id": "bartholomew_qi1940",
+  "type": "tms",
+  "locationSet": {"include": ["ie"]},
+  "name": "Ireland Bartholomew Quarter-Inch 1940",
+  "url": "https://geo.nls.uk/maps/ireland/bartholomew/{zoom}/{x}/{-y}.png",
+  "min_zoom": 5,
+  "max_zoom": 13,
+  "start_date": "1940",
+  "end_date": "1940",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland Historic Maps",
+    "url": "https://geo.nls.uk/maps"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

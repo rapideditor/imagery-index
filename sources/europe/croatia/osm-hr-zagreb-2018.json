@@ -1,0 +1,20 @@
+{
+  "id": "osm-hr-zagreb-2018",
+  "type": "tms",
+  "locationSet": {"include": ["hr"]},
+  "name": "osm-hr: Zagreb 2018 Aerial imagery",
+  "url": "https://tms.osm-hr.org/zagreb-2018/{zoom}/{x}/{-y}.png",
+  "max_zoom": 19,
+  "permission_osm": "explicit",
+  "license_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_25_403.html",
+  "privacy_policy_url": "https://tms.osm-hr.org/privacy.htm",
+  "best": true,
+  "start_date": "2018",
+  "end_date": "2018",
+  "attribution": {
+    "required": true,
+    "text": "Grad Zagreb, Gradski ured za strategijsko planiranje i razvoj Grada",
+    "url": "https://geoportal.zagreb.hr/"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/osm-hr.png"
+}

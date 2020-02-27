@@ -1,0 +1,10 @@
+{
+  "id": "Lodz-buildings",
+  "type": "wms",
+  "locationSet": {"include": ["pl"]},
+  "name": "Łódź: Buildings",
+  "url": "https://gis.mapa.lodz.pl/awiskts/services/WMS_publikowane/LODZ/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Budynki,Ulice,Adresy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "available_projections": ["EPSG:2177", "EPSG:4326"],
+  "attribution": {"text": "Urząd Miasta Łodzi"},
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/dOrthophotomap2017(aerialimage).png"
+}

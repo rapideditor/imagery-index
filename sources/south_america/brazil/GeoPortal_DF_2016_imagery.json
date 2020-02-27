@@ -1,0 +1,17 @@
+{
+  "id": "GeoPortal_DF_2016",
+  "type": "wms",
+  "locationSet": {"include": ["br"]},
+  "name": "GeoPortal DF 2016",
+  "description": "Satellite imagery",
+  "url": "https://www.geoservicos1.segeth.df.gov.br/arcgis/services/Imagens/FOTO_2016/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 22,
+  "start_date": "2016",
+  "end_date": "2016",
+  "attribution": {
+    "text": "GeoPortal DF",
+    "required": false,
+    "url": "http://www.geoportal.segeth.df.gov.br/"
+  },
+  "icon": "http://www.geoportal.segeth.df.gov.br/static/dist/img/logo_geoportal.png"
+}

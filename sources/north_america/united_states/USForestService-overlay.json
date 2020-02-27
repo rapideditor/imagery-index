@@ -1,0 +1,11 @@
+{
+  "id": "US_Forest_Service_roads_overlay",
+  "type": "tms",
+  "locationSet": {"include": ["us"]},
+  "name": "U.S. Forest Roads Overlay",
+  "description": "Highway: Green casing = unclassified. Brown casing = track. Surface: gravel = light brown fill, Asphalt = black, paved = gray, ground =white, concrete = blue, grass = green. Seasonal = white bars",
+  "url": "https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/glassman/cjf4qjmps0tgv2qpahj977mvz/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1IjoiZ2xhc3NtYW4iLCJhIjoiRjk3dWdwYyJ9.Tg_fMJWxygeKBgVTrZHmGA",
+  "max_zoom": 20,
+  "overlay": true,
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USForestService-overlay.png"
+}

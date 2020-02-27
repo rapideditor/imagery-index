@@ -1,0 +1,14 @@
+{
+  "id": "Geolittoral-Sentiers",
+  "type": "wms",
+  "locationSet": {"include": ["fr"]},
+  "name": "Géolittoral - Sentiers",
+  "url": "http://geolittoral.din.developpement-durable.gouv.fr/wxs?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=n_sentier_littoral_l&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "license_url": "http://www.geolittoral.developpement-durable.gouv.fr/mentions-legales-a37.html",
+  "available_projections": ["EPSG:3857", "EPSG:4326"],
+  "attribution": {
+    "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
+    "text": "Ortho littorale 2000",
+    "required": true
+  }
+}

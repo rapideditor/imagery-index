@@ -1,0 +1,18 @@
+{
+  "id": "NLS_kirriemuir1861",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "OS Town Plans, Kirriemuir 1861 (NLS)",
+  "description": "Detailed town plan of Kirriemuir 1861, courtesy of National Library of Scotland.",
+  "url": "https://geo.nls.uk/maps/towns/kirriemuir/{zoom}/{x}/{-y}.png",
+  "min_zoom": 13,
+  "max_zoom": 20,
+  "start_date": "1861",
+  "end_date": "1862",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland - Kirriemuir 1861",
+    "url": "https://maps.nls.uk/townplans/kirriemuir.html"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

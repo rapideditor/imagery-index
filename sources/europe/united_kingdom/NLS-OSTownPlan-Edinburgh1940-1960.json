@@ -1,0 +1,18 @@
+{
+  "id": "NLS_edinburgh1940_1960",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "OS Town Plans, Edinburgh 1940s-1960s (NLS)",
+  "description": "Detailed town plan of Edinburgh 1940s-1960s, courtesy of National Library of Scotland.",
+  "url": "https://geo.nls.uk/mapdata3/os/edinburgh_1250_out/{zoom}/{x}/{y}.png",
+  "min_zoom": 13,
+  "max_zoom": 20,
+  "start_date": "1940",
+  "end_date": "1960",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland - Edinburgh 1940s-1960s",
+    "url": "https://maps.nls.uk/os/national-grid/index.html"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

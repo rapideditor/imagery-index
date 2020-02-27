@@ -1,0 +1,12 @@
+{
+  "id": "Czestochowa-2017",
+  "type": "wms",
+  "locationSet": {"include": ["pl"]},
+  "name": "Częstochowa: Orthophotomap 2017 (aerial image)",
+  "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orto_2017&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 23,
+  "start_date": "2017-11-18",
+  "end_date": "2017-11-19",
+  "available_projections": ["EPSG:2177"],
+  "attribution": {"text": "Urząd Miasta Częstochowy"}
+}

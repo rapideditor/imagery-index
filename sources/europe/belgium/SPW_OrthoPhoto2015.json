@@ -1,0 +1,13 @@
+{
+  "id": "SPW2015",
+  "type": "wms",
+  "locationSet": {"include": ["be"]},
+  "name": "SPW(allonie) 2015 aerial imagery",
+  "url": "https://geoservices.wallonie.be/arcgis/services/IMAGERIE/ORTHO_2015/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "category": "historicphoto",
+  "license_url": "https://wiki.openstreetmap.org/wiki/File:OSM_license_for_SPW_WMS_usage.pdf",
+  "start_date": "2015",
+  "end_date": "2015",
+  "available_projections": ["EPSG:31370", "EPSG:3857", "EPSG:4326"],
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png"
+}

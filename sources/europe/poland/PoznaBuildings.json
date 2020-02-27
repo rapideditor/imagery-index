@@ -1,0 +1,12 @@
+{
+  "id": "poznan-buildings",
+  "type": "wms",
+  "locationSet": {"include": ["pl"]},
+  "name": "Poznań: Buildings",
+  "url": "http://wms2.geopoz.poznan.pl:8080/geoserver/sip/wms?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki_ewidencyjne_sql&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 23,
+  "start_date": "2018",
+  "end_date": "2018",
+  "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:3857", "EPSG:4326"],
+  "attribution": {"text": "Zarząd Geodezji i Katastru Miejskiego GEOPOZ"}
+}

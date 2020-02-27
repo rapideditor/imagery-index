@@ -1,0 +1,22 @@
+{
+  "id": "kt_tg_ortho_2017",
+  "type": "wms",
+  "locationSet": {"include": ["ch"]},
+  "name": "Kanton Thurgau, Orthofoto2017 RGB",
+  "description": "Digitales multispektrales Orthofotomosaik des Kantons Thurgau",
+  "url": "https://ows-raster.geo.tg.ch/geofy_access_proxy/orthofoto2017?LAYERS=Orthofoto2017_RGB&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
+  "category": "photo",
+  "min_zoom": 8,
+  "max_zoom": 21,
+  "license_url": "https://opendata.swiss/dataset/orthofoto-2017-dop17",
+  "privacy_policy_url": "https://geoinformation.tg.ch/thurgis/thurgis-disclaimer.html/7128",
+  "best": true,
+  "start_date": "2017",
+  "end_date": "2017",
+  "available_projections": ["EPSG:2056", "EPSG:21781", "EPSG:3857", "EPSG:4326"],
+  "attribution": {
+    "url": "https://opendata.swiss/en/dataset/orthofoto-2017-dop17",
+    "text": "Kanton Thurgau, Orthofoto2017 RGB",
+    "required": true
+  }
+}

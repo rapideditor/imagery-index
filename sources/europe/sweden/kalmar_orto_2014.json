@@ -1,0 +1,21 @@
+{
+  "id": "kalmar-orto-2014",
+  "type": "wms",
+  "locationSet": {"include": ["se"]},
+  "name": "Kalmar North Orthophoto 2014",
+  "description": "Orthophotos for the north coast of the municipality of Kalmar 2014",
+  "url": "https://kartportal.kalmar.se/arcgisserver/services/Ortofoto/Kalmar_2014/ImageServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "min_zoom": 9,
+  "max_zoom": 22,
+  "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/se/Kalmar_permission.pdf",
+  "best": true,
+  "start_date": "2014",
+  "end_date": "2014",
+  "available_projections": ["EPSG:3011", "EPSG:4326"],
+  "attribution": {
+    "required": true,
+    "text": "© Kalmar municipality",
+    "url": "http://data-kalmar.opendata.arcgis.com/"
+  },
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kalmarvapen_1a.svg/206px-Kalmarvapen_1a.svg.png"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "NLS_montrose1861_1862",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "OS Town Plans, Montrose 1861-1862 (NLS)",
+  "description": "Detailed town plan of Montrose 1861-1862, courtesy of National Library of Scotland.",
+  "url": "https://geo.nls.uk/maps/towns/montrose/{zoom}/{x}/{-y}.png",
+  "min_zoom": 13,
+  "max_zoom": 20,
+  "start_date": "1861",
+  "end_date": "1863",
+  "attribution": {
+    "required": true,
+    "text": "National Library of Scotland - Montrose 1861-1862",
+    "url": "https://maps.nls.uk/townplans/montrose.html"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png"
+}

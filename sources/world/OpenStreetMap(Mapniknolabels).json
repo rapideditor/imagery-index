@@ -1,0 +1,14 @@
+{
+  "id": "osm-mapnik-no_labels",
+  "type": "tms",
+  "name": "OpenStreetMap (Mapnik, no labels)",
+  "url": "https://tiles.wmflabs.org/osm-no-labels/{zoom}/{x}/{y}.png",
+  "category": "osmbasedmap",
+  "max_zoom": 18,
+  "attribution": {
+    "required": true,
+    "text": "© OpenStreetMap contributors, CC-BY-SA",
+    "url": "https://www.openstreetmap.org/"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenStreetMap-GPS.png"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "Maxar_19-20_Australian_Bushfires_PreEvent",
+  "type": "tms",
+  "locationSet": {"include": ["au"]},
+  "name": "Maxar 2019-2020 Australian Bushfires Pre-event",
+  "url": "https://cogeoxyz.b-cdn.net/6b6f479fbacd9a42e9e38bc5c0c6889f009beae13b07742ec4a1648f/{zoom}/{x}/{y}.jpg",
+  "category": "photo",
+  "min_zoom": 11,
+  "max_zoom": 19,
+  "permission_osm": "explicit",
+  "license_url": "https://www.digitalglobe.com/ecosystem/open-data/australia-wildfires",
+  "privacy_policy_url": "https://bunnycdn.com/privacy",
+  "start_date": "2018-01-20",
+  "end_date": "2019-10-18",
+  "attribution": {
+    "url": "https://www.digitalglobe.com/ecosystem/open-data/australia-wildfires",
+    "text": "©2020 DigitalGlobe",
+    "required": true
+  }
+}

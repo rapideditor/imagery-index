@@ -1,0 +1,19 @@
+{
+  "id": "linkoping-orto",
+  "type": "wms",
+  "locationSet": {"include": ["se"]},
+  "name": "Linköping Orthophoto",
+  "description": "Orthophotos from the municipality of Linköping 2010, open data",
+  "url": "http://kartan.linkoping.se/wms?servicename=wms_ortofoto&FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Kommun_2010_25cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "min_zoom": 13,
+  "max_zoom": 20,
+  "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/se/linkoping_permission.pdf",
+  "best": true,
+  "available_projections": ["EPSG:3009", "EPSG:3857"],
+  "attribution": {
+    "required": true,
+    "text": "© Linköping municipality",
+    "url": "https://www.linkoping.se/open/"
+  },
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Linköping_vapen.svg/198px-Linköping_vapen.svg.png"
+}

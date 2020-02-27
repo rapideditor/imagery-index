@@ -1,0 +1,12 @@
+{
+  "id": "USGS-Imagery",
+  "type": "tms",
+  "locationSet": {"include": ["us"]},
+  "name": "USGS Imagery",
+  "description": "Public domain aerial imagery, mostly NAIP",
+  "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{zoom}/{y}/{x}",
+  "min_zoom": 12,
+  "max_zoom": 20,
+  "privacy_policy_url": "https://www.usgs.gov/privacy-policies",
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USGSTopographicMaps.png"
+}

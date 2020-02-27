@@ -1,0 +1,13 @@
+{
+  "id": "Erlangen-2016",
+  "type": "tms",
+  "locationSet": {"include": ["de"]},
+  "name": "Erlangen Luftbild (2016 5,0 cm)",
+  "url": "https://osm.rrze.fau.de/protected/YgktSWTTo6HS9nKi/lbe2016/{zoom}/{x}/{y}.jpg",
+  "category": "historicphoto",
+  "max_zoom": 21,
+  "license_url": "https://erlangen.maps.arcgis.com/home/item.html?id=abab0a0c8a4c483290878068fe667a3a",
+  "start_date": "2016-03-18",
+  "end_date": "2016-03-18",
+  "attribution": {"text": "© Stadt Erlangen | © GEOCART GmbH", "required": true}
+}

@@ -1,0 +1,24 @@
+{
+  "id": "Geodatastyrelsen_DTK_Kort25",
+  "type": "wms",
+  "locationSet": {"include": ["dk"]},
+  "name": "SDFE DTK Kort25",
+  "url": "https://kortforsyningen.kms.dk/topo25?FORMAT=image/png&VERSION=1.1.1&login=OpenStreetMapDK2015&password=Gall4Peters&SERVICE=WMS&REQUEST=GetMap&Layers=topo25_klassisk&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 19,
+  "available_projections": [
+    "EPSG:25832",
+    "EPSG:25833",
+    "EPSG:32632",
+    "EPSG:32633",
+    "EPSG:3395",
+    "EPSG:3857",
+    "EPSG:4093",
+    "EPSG:4094",
+    "EPSG:4095",
+    "EPSG:4096",
+    "EPSG:4258",
+    "EPSG:4326"
+  ],
+  "attribution": {"required": true, "text": "Geodatastyrelsen og Danske Kommuner"},
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/dk/SDFESkrmkort.png"
+}

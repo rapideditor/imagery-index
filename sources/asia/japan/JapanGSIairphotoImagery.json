@@ -1,0 +1,15 @@
+{
+  "id": "gsi.go.jp_airphoto",
+  "type": "tms",
+  "locationSet": {"include": ["jp"]},
+  "name": "Japan GSI airphoto Imagery",
+  "description": "Japan GSI airphoto Imagery. Not fully orthorectified, but a bit newer and/or differently covered than GSI ortho Imagery.",
+  "url": "https://cyberjapandata.gsi.go.jp/xyz/airphoto/{zoom}/{x}/{y}.png",
+  "min_zoom": 14,
+  "max_zoom": 18,
+  "license_url": "https://maps.gsi.go.jp/development/ichiran.html#airphoto",
+  "attribution": {
+    "url": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
+    "text": "GSI Japan"
+  }
+}

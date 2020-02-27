@@ -1,0 +1,18 @@
+{
+  "id": "orthos.dhses.ny.gov_latest",
+  "type": "wms",
+  "locationSet": {"include": ["us"]},
+  "name": "NYS Orthos Online",
+  "description": "New York State High Resolution Digital Orthoimagery, 1 foot resolution",
+  "url": "https://orthos.dhses.ny.gov/arcgis/services/Latest/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0,1,2,3,4&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 19,
+  "start_date": "2013",
+  "end_date": "2018",
+  "available_projections": ["EPSG:120100", "EPSG:3857", "EPSG:4326"],
+  "attribution": {
+    "required": false,
+    "text": "New York State Statewide Digital Orthoimagery Program",
+    "url": "https://gis.ny.gov/gateway/orthoprogram/index.cfm"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/ny/NYS_Orthos_Online.png"
+}

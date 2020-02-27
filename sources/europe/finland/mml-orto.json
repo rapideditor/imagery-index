@@ -1,0 +1,18 @@
+{
+  "id": "mml-orto",
+  "type": "tms",
+  "locationSet": {"include": ["fi"]},
+  "name": "MML Orthophoto",
+  "description": "Ortophotos from the National Land Survey of Finland",
+  "url": "https://tiles.kartat.kapsi.fi/ortokuva/{zoom}/{x}/{y}.jpg",
+  "min_zoom": 2,
+  "max_zoom": 19,
+  "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=356296#p356296",
+  "best": true,
+  "attribution": {
+    "required": true,
+    "text": "© Maanmittauslaitos",
+    "url": "https://www.maanmittauslaitos.fi/en"
+  },
+  "icon": "https://www.maanmittauslaitos.fi/apple-touch-icon.png"
+}

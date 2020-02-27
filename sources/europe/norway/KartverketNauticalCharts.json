@@ -1,0 +1,13 @@
+{
+  "id": "kartverket-sjokart",
+  "type": "tms",
+  "locationSet": {"include": ["no"]},
+  "name": "Kartverket Nautical Charts",
+  "description": "Norwegian nautical charts (includes Spitsbergen/Svalbard and Antarctica). Raster representation of paper charts. Updated biweekly.",
+  "url": "https://opencache{switch:,2,3}.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=sjokartraster&zoom={zoom}&x={x}&y={y}",
+  "min_zoom": 3,
+  "max_zoom": 20,
+  "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
+  "attribution": {"text": "© Kartverket", "url": "https://www.kartverket.no/Kart/Sjokart/"},
+  "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png"
+}

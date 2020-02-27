@@ -1,0 +1,15 @@
+{
+  "id": "basemap.at-orthofoto",
+  "type": "tms",
+  "locationSet": {"include": ["at"]},
+  "name": "basemap.at Orthofoto",
+  "description": "Orthofoto layer provided by basemap.at. \"Successor\" of geoimage.at imagery.",
+  "url": "https://maps{switch:1,2,3,4}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{zoom}/{y}/{x}.jpeg",
+  "category": "photo",
+  "max_zoom": 19,
+  "permission_osm": "explicit",
+  "license_url": "https://basemap.at/#sec-nutzung",
+  "best": true,
+  "attribution": {"url": "https://basemap.at", "text": "basemap.at", "required": true},
+  "icon": "https://www.basemap.at/images/logo_basemap.jpg"
+}

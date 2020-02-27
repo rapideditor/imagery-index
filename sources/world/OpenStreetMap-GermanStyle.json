@@ -1,0 +1,14 @@
+{
+  "id": "osm-mapnik-german_style",
+  "type": "tms",
+  "name": "OpenStreetMap (German Style)",
+  "url": "https://{switch:a,b,c,d}.tile.openstreetmap.de/tiles/osmde/{zoom}/{x}/{y}.png",
+  "category": "osmbasedmap",
+  "max_zoom": 18,
+  "attribution": {
+    "required": false,
+    "text": "© OpenStreetMap contributors, CC-BY-SA",
+    "url": "https://www.openstreetmap.org"
+  },
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenStreetMap-GPS.png"
+}

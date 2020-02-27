@@ -1,0 +1,12 @@
+{
+  "id": "Zuerich-zh_uebersichtsplan-tms",
+  "type": "tms",
+  "locationSet": {"include": ["ch"]},
+  "name": "Übersichtsplan Zürich",
+  "description": "This imagery is provided via a proxy operated by https://sosm.ch/",
+  "url": "https://mapproxy.osm.ch/tiles/zh_uebersichtsplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
+  "max_zoom": 21,
+  "license_url": "https://data.stadt-zuerich.ch/dataset/geo_uebersichtsplan_stadt_zuerich",
+  "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
+  "attribution": {"text": "Stadt Zürich Open Government Data", "required": false}
+}

@@ -1,0 +1,10 @@
+{
+  "id": "OS-New_Popular_Edition-historic",
+  "type": "tms",
+  "locationSet": {"include": ["gb"]},
+  "name": "OS New Popular Edition historic",
+  "url": "https://ooc.openstreetmap.org/npe/{zoom}/{x}/{y}.png",
+  "min_zoom": 6,
+  "max_zoom": 15,
+  "end_date": "1955"
+}

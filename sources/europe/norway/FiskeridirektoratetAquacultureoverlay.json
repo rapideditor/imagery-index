@@ -1,0 +1,32 @@
+{
+  "id": "fiskeridir-akvakultur",
+  "type": "wms",
+  "locationSet": {"include": ["no"]},
+  "name": "Fiskeridirektoratet Aquaculture overlay",
+  "description": "Aquaculture/marine farms (licensed sites, may not yet have any installations)",
+  "url": "https://ogc.fiskeridir.no/wms.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=layer_262&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "min_zoom": 3,
+  "max_zoom": 22,
+  "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006347.html",
+  "overlay": true,
+  "available_projections": [
+    "EPSG:25829",
+    "EPSG:25830",
+    "EPSG:25831",
+    "EPSG:25832",
+    "EPSG:25833",
+    "EPSG:25834",
+    "EPSG:25835",
+    "EPSG:25836",
+    "EPSG:32631",
+    "EPSG:32632",
+    "EPSG:32633",
+    "EPSG:32634",
+    "EPSG:32635",
+    "EPSG:32636",
+    "EPSG:3857",
+    "EPSG:4326"
+  ],
+  "attribution": {"text": "© Fiskeridirektoratet", "url": "https://www.fiskeridir.no/Kart"},
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg/175px-Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg.png"
+}

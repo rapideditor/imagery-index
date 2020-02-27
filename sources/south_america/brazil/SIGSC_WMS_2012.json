@@ -1,0 +1,15 @@
+{
+  "id": "sc2012",
+  "type": "wms",
+  "locationSet": {"include": ["br"]},
+  "name": "SIG Santa Catarina OrtoRGB 2012",
+  "url": "http://sigsc.sc.gov.br/sigserver/SIGSC/wms?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=OrtoRGB-Landsat-2012&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "license_url": "http://sigsc.sds.sc.gov.br",
+  "start_date": "2012",
+  "end_date": "2012",
+  "available_projections": ["EPSG:29193", "EPSG:31982", "EPSG:3857", "EPSG:41001", "EPSG:4326"],
+  "attribution": {
+    "url": "http://sigsc.sds.sc.gov.br/download/termo_sigsc.pdf",
+    "text": "Sistema de Informações Geográficas - Governo de Santa Catarina"
+  }
+}

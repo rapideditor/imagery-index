@@ -1,0 +1,16 @@
+{
+  "id": "Erlangen-2018",
+  "type": "tms",
+  "locationSet": {"include": ["de"]},
+  "name": "Erlangen Luftbild (2018 5,0 cm)",
+  "url": "https://osm.rrze.fau.de/protected/YgktSWTTo6HS9nKi/lbe2018/{zoom}/{x}/{y}.jpg",
+  "category": "photo",
+  "max_zoom": 21,
+  "permission_osm": "explicit",
+  "license_url": "https://osm.rrze.fau.de/description-and-license-luftbild-erlangen-2018.html",
+  "privacy_policy_url": "https://osm.rrze.fau.de/datenschutz/",
+  "best": true,
+  "start_date": "2018-04-09",
+  "end_date": "2018-04-09",
+  "attribution": {"text": "© Stadt Erlangen | © Hansa Luftbild AG", "required": true}
+}

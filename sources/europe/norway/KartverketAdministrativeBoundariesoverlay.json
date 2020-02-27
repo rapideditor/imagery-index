@@ -1,0 +1,43 @@
+{
+  "id": "kartverket-abas",
+  "type": "wms",
+  "locationSet": {"include": ["no"]},
+  "name": "Kartverket Administrative Boundaries overlay",
+  "description": "Official administrative boundaries at the national, county and municipality levels",
+  "url": "https://openwms.statkart.no/skwms1/wms.adm_enheter?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=avtaltavgrensningslinje,territorialgrense,riksgrense,fylker,kommuner&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 22,
+  "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
+  "overlay": true,
+  "available_projections": [
+    "EPSG:25829",
+    "EPSG:25830",
+    "EPSG:25831",
+    "EPSG:25832",
+    "EPSG:25833",
+    "EPSG:25834",
+    "EPSG:25835",
+    "EPSG:25836",
+    "EPSG:27391",
+    "EPSG:27392",
+    "EPSG:27393",
+    "EPSG:27394",
+    "EPSG:27395",
+    "EPSG:27396",
+    "EPSG:27397",
+    "EPSG:27398",
+    "EPSG:3034",
+    "EPSG:32631",
+    "EPSG:32632",
+    "EPSG:32633",
+    "EPSG:32634",
+    "EPSG:32635",
+    "EPSG:32636",
+    "EPSG:3857",
+    "EPSG:4326"
+  ],
+  "attribution": {
+    "text": "© Kartverket",
+    "url": "https://www.kartverket.no/data/Kartdata/Grenser/"
+  },
+  "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png"
+}
