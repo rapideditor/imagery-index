@@ -39,6 +39,7 @@
 </textarea>
         <div id='button-row' class='hasCols'>
           <div><button id='eli-view-button'>View it!</button></div>
+          <div><button id='eli-remove-button' class='invisible'>Remove</button></div>
           <div id='eli-result-icon' class='invisible'>
             <div id='eli-icon-good' class='hidden'><i class='fas fa-check-circle fa-2x'></i></div>
             <div id='eli-icon-bad' class='hidden'><i class='fas fa-times-circle fa-2x'></i></div>
@@ -59,6 +60,7 @@
 </textarea>
         <div id='button-row' class='hasCols'>
           <div><button id='loco-view-button'>View it!</button></div>
+          <div><button id='loco-remove-button' class='invisible'>Remove</button></div>
           <div id='loco-result-icon' class='invisible'>
             <div id='loco-icon-good' class='hidden'><i class='fas fa-check-circle fa-2x'></i></div>
             <div id='loco-icon-bad' class='hidden'><i class='fas fa-times-circle fa-2x'></i></div>
@@ -119,12 +121,14 @@ var zoomValue = document.getElementById('zoom-value');
 var controlName = document.getElementById('control-name');
 var eliTextarea = document.getElementById('eli-textarea');
 var eliViewButton = document.getElementById('eli-view-button');
+var eliRemoveButton = document.getElementById('eli-remove-button');
 var eliResultMessage = document.getElementById('eli-result-message');
 var eliResultIcon = document.getElementById('eli-result-icon');
 var eliIconGood = document.getElementById('eli-icon-good');
 var eliIconBad = document.getElementById('eli-icon-bad');
 var locoTextarea = document.getElementById('loco-textarea');
 var locoViewButton = document.getElementById('loco-view-button');
+var locoRemoveButton = document.getElementById('loco-remove-button');
 var locoResultMessage = document.getElementById('loco-result-message');
 var locoResultIcon = document.getElementById('loco-result-icon');
 var locoIconGood = document.getElementById('loco-icon-good');
@@ -162,6 +166,7 @@ map.on('load', function() {
     }
   });
 
+
   slider.addEventListener('input', function(e) {
     var newOpacity = parseInt(e.target.value, 10);
     if (newOpacity !== _currOpacity) {
@@ -173,22 +178,64 @@ map.on('load', function() {
     }
   });
 
-  // Parse the given ELI data..
-  eliViewButton.addEventListener('click', function(e) {
-    e.target.blur();
-    if (eliTextarea.value === '') return;
-    _eliReset = false;
 
-    // Remove any existing sources and layers
+  eliViewButton.addEventListener('click', function(e) { e.target.blur(); eliParseInput(); });
+  eliRemoveButton.addEventListener('click', function(e) { e.target.blur(); eliRemoveData(); eliClearResults(); });
+  eliTextarea.addEventListener('input', eliClearResults);
+
+  locoViewButton.addEventListener('click', function(e) { e.target.blur(); locoParseInput(); });
+  locoRemoveButton.addEventListener('click', function(e) { e.target.blur(); locoRemoveData(); locoClearResults(); });
+  locoTextarea.addEventListener('input', locoClearResults);
+
+
+  function eliRemoveData() {
+    controlName.className = 'control hidden';
+    eliRemoveButton.className = eliRemoveButton.className.replace('visible', 'invisible');
     if (map.getLayer('raster-layer'))         map.removeLayer('raster-layer');
     if (map.getLayer('geojson-fill-layer'))   map.removeLayer('geojson-fill-layer');
     if (map.getLayer('geojson-line-layer'))   map.removeLayer('geojson-line-layer');
     if (map.getLayer('geojson-point-layer'))  map.removeLayer('geojson-point-layer');
     if (map.getSource('raster-source'))       map.removeSource('raster-source');
     if (map.getSource('geojson-source'))      map.removeSource('geojson-source');
+  }
 
-    // hidden name display
-    controlName.className = 'control hidden';
+  function locoRemoveData() {
+    locoRemoveButton.className = locoRemoveButton.className.replace('visible', 'invisible');
+    if (map.getLayer('loco-fill-layer'))   map.removeLayer('loco-fill-layer');
+    if (map.getLayer('loco-line-layer'))   map.removeLayer('loco-line-layer');
+    if (map.getLayer('loco-point-layer'))  map.removeLayer('loco-point-layer');
+    if (map.getSource('loco-source'))      map.removeSource('loco-source');
+  }
+
+  function eliClearResults() {
+    if (_eliReset) return;
+    _eliReset = true;
+    eliResultIcon.className = eliResultIcon.className.replace('visible', 'invisible');
+    eliResultMessage.className = eliResultMessage.className.replace('visible', 'invisible');
+    window.setTimeout(function() {
+      eliIconGood.className = 'hidden';
+      eliIconBad.className = 'hidden';
+      eliResultMessage.innerHTML = '';
+    }, 100);
+  }
+
+  function locoClearResults() {
+    if (_locoReset) return;
+    _locoReset = true;
+    locoResultIcon.className = locoResultIcon.className.replace('visible', 'invisible');
+    locoResultMessage.className = locoResultMessage.className.replace('visible', 'invisible');
+    window.setTimeout(function() {
+      locoIconGood.className = 'hidden';
+      locoIconBad.className = 'hidden';
+      locoResultMessage.innerHTML = '';
+    }, 100);
+  }
+
+
+  function eliParseInput() {
+    if (eliTextarea.value === '') return;
+    _eliReset = false;
+    eliRemoveData();
 
     // Lets go!
     try {
@@ -358,6 +405,7 @@ map.on('load', function() {
         map.fitBounds(bounds, { padding: 50 });
       }
 
+      eliRemoveButton.className = 'visible';
       eliIconGood.className = '';  // remove 'hidden'
       eliResultIcon.className = 'visible ' + ELICLASS;
       eliResultMessage.className = 'visible';
@@ -367,25 +415,19 @@ map.on('load', function() {
         '<em>maxzoom = ' + maxzoom + '</em>';
 
     } catch (err) {
+      eliRemoveButton.className = 'visible';
       eliIconBad.className = '';  // remove 'hidden'
       eliResultIcon.className = 'visible red';
       eliResultMessage.className = 'visible';
       eliResultMessage.innerHTML = 'Invalid JSON.<br/><em>' + err + '</em>';
     }
-  });
+  }
 
 
-  // Parse the given LocationConflation locationSet..
-  locoViewButton.addEventListener('click', function(e) {
-    e.target.blur();
+  function locoParseInput() {
     if (locoTextarea.value === '') return;
     _locoReset = false;
-
-    // Remove any existing sources and layers
-    if (map.getLayer('loco-fill-layer'))   map.removeLayer('loco-fill-layer');
-    if (map.getLayer('loco-line-layer'))   map.removeLayer('loco-line-layer');
-    if (map.getLayer('loco-point-layer'))  map.removeLayer('loco-point-layer');
-    if (map.getSource('loco-source'))      map.removeSource('loco-source');
+    locoRemoveData();
 
     // Lets go!
     try {
@@ -442,6 +484,7 @@ map.on('load', function() {
         }
       });
 
+      locoRemoveButton.className = 'visible';
       locoIconGood.className = '';  // remove 'hidden'
       locoResultIcon.className = 'visible ' + LOCOCLASS;
       locoResultMessage.className = 'visible';
@@ -450,38 +493,13 @@ map.on('load', function() {
         displayHTML;
 
     } catch (err) {
+      locoRemoveButton.className = 'visible';
       locoIconBad.className = '';  // remove 'hidden'
       locoResultIcon.className = 'visible red';
       locoResultMessage.className = 'visible';
       locoResultMessage.innerHTML = 'Invalid LocationSet.<br/><em>' + err + '</em>';
     }
-  });
-
-  // Reset eli-input and results
-  eliTextarea.addEventListener('input', function() {
-    if (_eliReset) return;
-    _eliReset = true;
-    eliResultIcon.className = eliResultIcon.className.replace('visible', 'invisible');
-    eliResultMessage.className = eliResultMessage.className.replace('visible', 'invisible');
-    window.setTimeout(function() {
-      eliIconGood.className = 'hidden';
-      eliIconBad.className = 'hidden';
-      eliResultMessage.innerHTML = '';
-    }, 100);
-  });
-
-  // Reset loco-input and results
-  locoTextarea.addEventListener('input', function() {
-    if (_locoReset) return;
-    _locoReset = true;
-    locoResultIcon.className = locoResultIcon.className.replace('visible', 'invisible');
-    locoResultMessage.className = locoResultMessage.className.replace('visible', 'invisible');
-    window.setTimeout(function() {
-      locoIconGood.className = 'hidden';
-      locoIconBad.className = 'hidden';
-      locoResultMessage.innerHTML = '';
-    }, 100);
-  });
+  }
 
 });
 

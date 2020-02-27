@@ -183,8 +183,12 @@ a.mapboxgl-ctrl-logo {
 #eli-result-icon,
 #loco-result-icon {
   flex: 0 0 40px;
-  transition: opacity 200ms ease;
 }
+
+#eli-remove-button,
+#loco-remove-button,
+#eli-result-icon,
+#loco-result-icon,
 #eli-result-message,
 #loco-result-message {
   transition: opacity 200ms ease;
