@@ -1,0 +1,20 @@
+{
+    "geometry": null,
+    "properties": {
+        "attribution": {
+            "required": true,
+            "text": "Maps \u00a9 Thunderforest, Data \u00a9 OpenStreetMap contributors",
+            "url": "https://www.thunderforest.com/terms"
+        },
+        "i18n": true,
+        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/TF-OpenCycleMap.png",
+        "id": "tf-cycle",
+        "license_url": "https://thunderforest.com/terms",
+        "max_zoom": 22,
+        "name": "Thunderforest OpenCycleMap",
+        "type": "tms",
+        "category": "osmbasedmap",
+        "url": "https://{switch:a,b,c}.tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png"
+    },
+    "type": "Feature"
+}
