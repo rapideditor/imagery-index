@@ -7,7 +7,7 @@ import nodeResolve from '@rollup/plugin-node-resolve';
 export default {
   input: 'app/index.mjs',
   output: {
-    name: 'LocationConflation',
+    name: 'bundle',
     file: 'docs/bundle.js',
     format: 'iife'
   },
