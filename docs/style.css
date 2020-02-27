@@ -190,3 +190,7 @@ a.mapboxgl-ctrl-logo {
   transition: opacity 200ms ease;
 }
 
+span.emojiFlag {
+  margin: 0 10px;
+  font-size: larger;
+}

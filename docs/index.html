@@ -6,6 +6,7 @@
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no'/>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
 <script defer src='https://kit.fontawesome.com/c772610440.js' crossorigin='anonymous'></script>
+<script defer src='https://cdn.jsdelivr.net/npm/json5@2.1/dist/index.min.js'></script>
 <script defer src='bundle.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet'/>
 <link href='style.css' rel='stylesheet' type='text/css'/>
@@ -23,7 +24,7 @@
 
     <div id='sidebar' class='hasRows'>
       <div id='eli' class='section'>
-        <p>Paste an ELI geojson file here:</p>
+        <p>Paste an ELI geojson file:</p>
 <textarea autofocus id='eli-textarea' name='eli-textarea' rows='16'>
 {
   "type": "Feature",
@@ -48,10 +49,10 @@
 
 
       <div id='loco' class='section'>
-        <p>Paste LocationConflation locationSet:</p>
+        <p>Paste a locationSet:</p>
 <textarea autofocus id='loco-textarea' name='loco-textarea' rows='5'>
 {
-  "include": [ "de", "cz", "pl" ]
+  include: ['de', 'cz', 'pl']
 }
 </textarea>
         <div id='button-row' class='hasCols'>
@@ -189,7 +190,7 @@ map.on('load', function() {
 
     // Lets go!
     try {
-      var eli = JSON.parse(eliTextarea.value);
+      var eli = JSON5.parse(eliTextarea.value);
       var props = eli.properties || {};
       var geometry = eli.geometry || {};
       var name = props.name;
@@ -386,8 +387,19 @@ map.on('load', function() {
 
     // Lets go!
     try {
-      var locationSet = JSON.parse(locoTextarea.value);
+      var locationSet = JSON5.parse(locoTextarea.value);
+      if (!locationSet.include) {
+        throw 'Missing property "include".';
+      }
       var gj = _loco.resolveLocationSet(locationSet);
+      var props = gj.properties || {};
+      var displayHTML = '';
+      if (props.nameEn) {
+        displayHTML += '<span class="nameEn">' + props.nameEn + '</span>';
+      }
+      if (props.emojiFlag) {
+        displayHTML += '<span class="emojiFlag">' + props.emojiFlag + '</span>';
+      }
 
       map.addSource('loco-source', {
         type: 'geojson',
@@ -431,7 +443,9 @@ map.on('load', function() {
       locoIconGood.className = '';  // remove 'hidden'
       locoResultIcon.className = 'visible ' + LOCOCLASS;
       locoResultMessage.className = 'visible';
-      locoResultMessage.innerHTML = 'Valid LocationSet.<br/>';
+      locoResultMessage.innerHTML = 'Valid LocationSet.<br/>' +
+        '<em>id = ' + gj.id + '</em><br/>' +
+        displayHTML;
 
     } catch (err) {
       locoIconBad.className = '';  // remove 'hidden'
