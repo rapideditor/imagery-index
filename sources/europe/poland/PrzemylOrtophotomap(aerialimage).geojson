@@ -124,7 +124,7 @@
             "EPSG:4326"
         ],
         "country_code": "PL",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/PowiatrzeszowskiBuildings.png",
+        "icon": "Powiat.png",
         "id": "przemysl-aerial",
         "max_zoom": 23,
         "name": "Przemy\u015bl: Ortophotomap (aerial image)",

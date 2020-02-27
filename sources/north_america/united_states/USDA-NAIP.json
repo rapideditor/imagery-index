@@ -8,5 +8,5 @@
   "min_zoom": 12,
   "max_zoom": 20,
   "available_projections": ["EPSG:3857", "EPSG:4326"],
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png"
+  "icon": "USDA.png"
 }

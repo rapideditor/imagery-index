@@ -6,5 +6,5 @@
   "url": "http://wms.podgik.poznan.pl/cgi-bin/poznan?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:4326"],
   "attribution": {"text": "PODGIK Poznań"},
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/PowiatpoznaskiOrthophotomap(aerialimage).png"
+  "icon": "PODGIK.png"
 }

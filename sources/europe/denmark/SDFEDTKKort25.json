@@ -20,5 +20,5 @@
     "EPSG:4326"
   ],
   "attribution": {"required": true, "text": "Geodatastyrelsen og Danske Kommuner"},
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/dk/SDFESkrmkort.png"
+  "icon": "SDFE.png"
 }

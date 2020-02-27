@@ -2089,7 +2089,7 @@
   "properties": {
     "country_code": "US",
     "description": "Public domain aerial imagery, mostly NAIP",
-    "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USGSTopographicMaps.png",
+    "icon": "USGS.png",
     "id": "USGS-Imagery",
     "max_zoom": 20,
     "min_zoom": 12,

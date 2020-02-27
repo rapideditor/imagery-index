@@ -78,7 +78,7 @@
         },
         "country_code": "TW",
         "description": "The emap from Taiwan National Land Surveying and Mapping Center",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/tw/Taiwane-MapOpenData.png",
+        "icon": "NLSC.png",
         "id": "NLSC-EMAP5",
         "license_url": "https://data.gov.tw/license",
         "max_zoom": 15,

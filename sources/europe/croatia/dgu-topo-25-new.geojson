@@ -3,7 +3,7 @@
     "properties": {
         "id": "dgu-topo-25-new",
         "name": "dgu.hr: Topo 25 new",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/dgu.png",
+        "icon": "dgu.png",
         "start_date": "2011",
         "url": "https://geoportal.dgu.hr/services/tk/ows?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=tk:TK25_NOVI&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "permission_osm": "explicit",

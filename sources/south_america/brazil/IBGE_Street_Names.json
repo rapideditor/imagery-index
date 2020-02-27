@@ -9,5 +9,5 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/IBGE_Street_Names",
   "overlay": true,
   "attribution": {"text": "IBGE, OSM Brasil"},
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/IBGE.png"
+  "icon": "IBGE.png"
 }

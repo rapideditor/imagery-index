@@ -120,7 +120,7 @@
         "country_code": "SE",
         "description": "Mosaic of Swedish orthophotos from the period 1955\u20131965. Older and younger pictures may occur.",
         "i18n": true,
-        "icon": "https://raw.githubusercontent.com/osmlab/editor-layer-index/gh-pages/sources/europe/se/lantmateriet_icon.png",
+        "icon": "lantmateriet.png",
         "id": "lantmateriet-orto1960",
         "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
         "max_zoom": 19,

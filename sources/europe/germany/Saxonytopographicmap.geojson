@@ -519,7 +519,7 @@
             "EPSG:31468"
         ],
         "country_code": "DE",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/SaxonyWebAtlasSN.png",
+        "icon": "GeoSN.png",
         "id": "GEOSN-DTK",
         "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
         "name": "Saxony topographic map",

@@ -197,7 +197,7 @@
         ],
         "category": "other",
         "country_code": "BE",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/TEC.png",
+        "icon": "TEC.png",
         "id": "TEClines",
         "name": "TEC bus lines",
         "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",

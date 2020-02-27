@@ -1018,7 +1018,7 @@
             "EPSG:21781"
         ],
         "country_code": "AT",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png",
+        "icon": "VoGIS.png",
         "id": "vogis.cnv.at-flaechenwidmung_wms",
         "name": "VoGIS: Fl\u00e4chenwidmungsplan",
         "type": "wms_endpoint",

@@ -3,7 +3,7 @@
     "properties": {
         "id": "dgu-dof-2018",
         "name": "dgu.hr: Croatia 2018 Aerial imagery",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/dgu.png",
+        "icon": "dgu.png",
         "start_date": "2018",
         "end_date": "2018",
         "url": "https://geoportal.dgu.hr/services/inspire/orthophoto_2018/ows?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=OI.OrthoImagery&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

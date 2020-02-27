@@ -1656,7 +1656,7 @@
         },
         "country_code": "GB",
         "end_date": "1960",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "icon": "NLS.png",
         "id": "NLS-OS-NatGrid-12500-1940-60-doubles",
         "max_zoom": 18,
         "name": "NLS - OS 1:2,500 National Grid Maps, 1940s-1960s - double sheets",

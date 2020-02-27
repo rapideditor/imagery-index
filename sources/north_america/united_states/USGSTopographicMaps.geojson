@@ -515,7 +515,7 @@
             "url": "https://caltopo.com"
         },
         "country_code": "US",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USGSTopographicMaps.png",
+        "icon": "USGS.png",
         "id": "USGS-Scanned_Topographic",
         "max_zoom": 16,
         "name": "USGS Topographic Maps",

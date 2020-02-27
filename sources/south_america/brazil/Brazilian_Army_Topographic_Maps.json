@@ -8,5 +8,5 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/BDGEx_Tile_Layer",
   "available_projections": ["EPSG:3857"],
   "attribution": {"text": "BDGEx"},
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/Exercito.png"
+  "icon": "Exercito.png"
 }

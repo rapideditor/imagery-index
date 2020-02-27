@@ -106,7 +106,7 @@
             "EPSG:2177"
         ],
         "country_code": "PL",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/PowiatpoznaskiOrthophotomap(aerialimage).png",
+        "icon": "PODGIK.png",
         "id": "poznanski-aerial",
         "max_zoom": 23,
         "name": "Powiat pozna\u0144ski: Orthophotomap (aerial image)",

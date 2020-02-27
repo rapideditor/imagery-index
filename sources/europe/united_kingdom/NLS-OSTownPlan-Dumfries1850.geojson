@@ -35,7 +35,7 @@
         "country_code": "GB",
         "description": "Detailed town plan of Dumfries 1850, courtesy of National Library of Scotland.",
         "end_date": "1851",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "icon": "NLS.png",
         "id": "NLS_dumfries1850",
         "max_zoom": 20,
         "min_zoom": 13,

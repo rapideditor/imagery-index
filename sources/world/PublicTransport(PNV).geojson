@@ -5,7 +5,7 @@
             "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
             "url": "https://\u00f6pnvkarte.de/"
         },
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/PublicTransport(PNV).png",
+        "icon": "PNV.png",
         "id": "public_transport_oepnv",
         "max_zoom": 18,
         "name": "Public Transport (\u00d6PNV)",

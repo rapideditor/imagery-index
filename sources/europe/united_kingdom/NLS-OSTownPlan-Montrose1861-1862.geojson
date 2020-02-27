@@ -35,7 +35,7 @@
         "country_code": "GB",
         "description": "Detailed town plan of Montrose 1861-1862, courtesy of National Library of Scotland.",
         "end_date": "1863",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "icon": "NLS.png",
         "id": "NLS_montrose1861_1862",
         "max_zoom": 20,
         "min_zoom": 13,

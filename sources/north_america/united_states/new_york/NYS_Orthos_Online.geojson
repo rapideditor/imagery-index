@@ -1316,7 +1316,7 @@
         "country_code": "US",
         "description": "New York State High Resolution Digital Orthoimagery, 1 foot resolution",
         "end_date": "2018",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/ny/NYS_Orthos_Online.png",
+        "icon": "NewYorkState.png",
         "id": "orthos.dhses.ny.gov_latest",
         "max_zoom": 19,
         "name": "NYS Orthos Online",

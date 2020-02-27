@@ -9,5 +9,5 @@
   "end_date": "2015",
   "available_projections": ["EPSG:2177", "EPSG:4326"],
   "attribution": {"text": "Urząd Miasta Łodzi"},
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/dOrthophotomap2017(aerialimage).png"
+  "icon": "lodz.png"
 }

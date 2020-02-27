@@ -5,7 +5,7 @@
             "text": "\u00a9 OpenStreetMap contributors, CC-BY-SA",
             "url": "https://www.openstreetmap.org/copyright"
         },
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenSeaMap.png",
+        "icon": "OpenSeaMap.png",
         "id": "openseamap",
         "max_zoom": 18,
         "name": "OpenSeaMap",

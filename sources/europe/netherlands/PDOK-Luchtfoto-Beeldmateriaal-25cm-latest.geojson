@@ -235,7 +235,7 @@
         "best": true,
         "country_code": "NL",
         "description": "Nationwide data set 25cm resolution color aerial imagery of the most recent year.",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/nl/PDOK-Luchtfoto-Beeldmateriaal-25cm-latest.png",
+        "icon": "beeldmateriaal.png",
         "id": "Actueel_ortho25_WMS",
         "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=630995#p630995",
         "max_zoom": 19,

@@ -235,7 +235,7 @@
             "EPSG:2177"
         ],
         "country_code": "PL",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/dOrthophotomap2017(aerialimage).png",
+        "icon": "lodz.png",
         "id": "Lodz-buildings",
         "name": "\u0141\u00f3d\u017a: Buildings",
         "type": "wms",

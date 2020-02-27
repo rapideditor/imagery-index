@@ -117,7 +117,7 @@
         },
         "country_code": "NO",
         "description": "Norwegian mountain biking map from OSM (max zoom 14-16, varies per region)",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/no/MTBmapno.png",
+        "icon": "MTBmapno.png",
         "id": "mtbmap-no",
         "max_zoom": 14,
         "min_zoom": 3,

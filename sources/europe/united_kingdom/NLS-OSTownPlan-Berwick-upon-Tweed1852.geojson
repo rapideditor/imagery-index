@@ -35,7 +35,7 @@
         "country_code": "GB",
         "description": "Detailed town plan of Berwick-upon-Tweed 1852, courtesy of National Library of Scotland.",
         "end_date": "1853",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "icon": "NLS.png",
         "id": "NLS_berwick1852",
         "max_zoom": 20,
         "min_zoom": 13,

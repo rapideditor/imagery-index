@@ -83,7 +83,7 @@
       "EPSG:3825"
     ],
     "country_code": "TW",
-    "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/tw/Taiwane-MapOpenData.png",
+    "icon": "NLSC.png",
     "id": "TW_NLSC_WMS_Village",
     "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
     "name": "Taiwan Village Boundaries",

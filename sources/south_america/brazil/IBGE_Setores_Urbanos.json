@@ -7,5 +7,5 @@
   "max_zoom": 19,
   "license_url": "https://wiki.openstreetmap.org/wiki/IBGE_Tile_Layer",
   "attribution": {"text": "IBGE"},
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/IBGE.png"
+  "icon": "IBGE.png"
 }

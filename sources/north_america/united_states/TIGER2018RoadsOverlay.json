@@ -9,5 +9,5 @@
   "start_date": "2018",
   "end_date": "2018",
   "overlay": true,
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/TIGER2017RoadsOverlay.png"
+  "icon": "TIGER.png"
 }

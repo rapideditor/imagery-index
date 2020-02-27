@@ -7,7 +7,7 @@
             "url": "https://www.thunderforest.com/terms"
         },
         "i18n": true,
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/TF-OpenCycleMap.png",
+        "icon": "OpenCycleMap.png",
         "id": "tf-cycle",
         "license_url": "https://thunderforest.com/terms",
         "max_zoom": 22,

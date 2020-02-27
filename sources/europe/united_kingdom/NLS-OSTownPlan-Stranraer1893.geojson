@@ -35,7 +35,7 @@
         "country_code": "GB",
         "description": "Detailed town plan of Stranraer 1893, courtesy of National Library of Scotland.",
         "end_date": "1894",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "icon": "NLS.png",
         "id": "NLS_stranraer1893",
         "max_zoom": 20,
         "min_zoom": 13,

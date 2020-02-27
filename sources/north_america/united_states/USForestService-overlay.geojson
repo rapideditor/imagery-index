@@ -482,7 +482,7 @@
         "country_code": "US",
         "description": "Highway: Green casing = unclassified. Brown casing = track. Surface: gravel = light brown fill, Asphalt = black, paved = gray, ground =white, concrete = blue, grass = green. Seasonal = white bars",
         "i18n": true,
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USForestService-overlay.png",
+        "icon": "USFS.png",
         "id": "US_Forest_Service_roads_overlay",
         "max_zoom": 20,
         "name": "U.S. Forest Roads Overlay",

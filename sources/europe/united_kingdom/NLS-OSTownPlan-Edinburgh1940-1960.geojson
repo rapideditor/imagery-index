@@ -87,7 +87,7 @@
         "country_code": "GB",
         "description": "Detailed town plan of Edinburgh 1940s-1960s, courtesy of National Library of Scotland.",
         "end_date": "1960",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "icon": "NLS.png",
         "id": "NLS_edinburgh1940_1960",
         "max_zoom": 20,
         "min_zoom": 13,

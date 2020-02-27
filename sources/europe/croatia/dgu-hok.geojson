@@ -3,7 +3,7 @@
     "properties": {
         "id": "dgu-hok",
         "name": "dgu.hr: HOK",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/dgu.png",
+        "icon": "dgu.png",
         "start_date": "1954",
         "end_date": "2009",
         "url": "https://geoportal.dgu.hr/services/hok/ows?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=HOK5&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

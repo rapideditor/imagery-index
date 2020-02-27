@@ -667,7 +667,7 @@
         "best": true,
         "country_code": "CH",
         "end_date": "2017",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/ch/KantonSolothurn-SOGIS-wms.png",
+        "icon": "KantonSolothurn.png",
         "id": "Solothurn-sogis2014-wms",
         "license_url": "https://wiki.openstreetmap.org/wiki/SOGIS_WMS",
         "max_zoom": 20,

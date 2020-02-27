@@ -91,7 +91,7 @@
                 "country_code": "SE",
                 "description": "Topographic map of Sweden 1:50 000",
                 "i18n": true,
-                "icon": "https://raw.githubusercontent.com/osmlab/editor-layer-index/gh-pages/sources/europe/se/lantmateriet_icon.png",
+                "icon": "lantmateriet.png",
                 "id": "lantmateriet-topowebb",
                 "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
                 "max_zoom": 15,

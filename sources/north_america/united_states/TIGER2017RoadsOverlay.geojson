@@ -533,7 +533,7 @@
         "description": "Yellow = Public domain map data from the US Census. Red = Data not found in OpenStreetMap",
         "end_date": "2017",
         "i18n": true,
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/TIGER2017RoadsOverlay.png",
+        "icon": "TIGER.png",
         "id": "US-TIGER-Roads-2017",
         "max_zoom": 22,
         "name": "TIGER Roads 2017",

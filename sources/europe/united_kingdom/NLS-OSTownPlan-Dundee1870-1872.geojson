@@ -35,7 +35,7 @@
         "country_code": "GB",
         "description": "Detailed town plan of Dundee 1870-1872, courtesy of National Library of Scotland.",
         "end_date": "1873",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "icon": "NLS.png",
         "id": "NLS_dundee1870_1872",
         "max_zoom": 20,
         "min_zoom": 13,

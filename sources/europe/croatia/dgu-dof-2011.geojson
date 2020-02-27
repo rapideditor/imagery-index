@@ -3,7 +3,7 @@
     "properties": {
         "id": "dgu-dof-2011",
         "name": "dgu.hr: Croatia 2011 Aerial imagery",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/dgu.png",
+        "icon": "dgu.png",
         "start_date": "2011",
         "end_date": "2011",
         "url": "https://geoportal.dgu.hr/services/dof/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=DOF5_2011&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

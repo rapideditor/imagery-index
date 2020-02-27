@@ -654,7 +654,7 @@
             "EPSG:3857"
         ],
         "country_code": "DK",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/dk/SDFESkrmkort.png",
+        "icon": "SDFE.png",
         "id": "Geodatastyrelsen_Cadastral_Parcels_INSPIRE_View",
         "max_zoom": 20,
         "name": "SDFE Cadastral Parcels INSPIRE View",

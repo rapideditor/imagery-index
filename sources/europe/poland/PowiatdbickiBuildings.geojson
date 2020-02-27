@@ -92,7 +92,7 @@
             "EPSG:4326"
         ],
         "country_code": "PL",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/PowiatrzeszowskiBuildings.png",
+        "icon": "Powiat.png",
         "id": "debicki-buildings",
         "max_zoom": 19,
         "name": "Powiat d\u0119bicki: Buildings",

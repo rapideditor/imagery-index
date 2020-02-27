@@ -170,7 +170,7 @@
         },
         "country_code": "IE",
         "end_date": "1940",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "icon": "NLS.png",
         "id": "bartholomew_qi1940",
         "max_zoom": 13,
         "min_zoom": 5,

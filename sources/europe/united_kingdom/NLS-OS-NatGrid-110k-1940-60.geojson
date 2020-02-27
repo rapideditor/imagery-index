@@ -1102,7 +1102,7 @@
         },
         "country_code": "GB",
         "end_date": "1960",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "icon": "NLS.png",
         "id": "NLS-OS-NatGrid-110k-1940-60",
         "max_zoom": 16,
         "min_zoom": 5,

@@ -5,7 +5,7 @@
             "text": "Kartendaten: \u00a9 OpenStreetMap-Mitwirkende, SRTM | Kartendarstellung: \u00a9 OpenTopoMap (CC-BY-SA)",
             "url": "https://tile.opentopomap.org/about#verwendung"
         },
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenTopoMap.png",
+        "icon": "OpenTopoMap.png",
         "id": "OpenTopoMap",
         "max_zoom": 17,
         "min_zoom": 3,

@@ -8,7 +8,7 @@
       "EPSG:3857"
     ],
     "country_code": "BR",
-    "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/Exercito.png",
+    "icon": "Exercito.png",
     "id": "BDGEx_ctm_multi",
     "license_url": "https://wiki.openstreetmap.org/wiki/BDGEx_Tile_Layer",
     "min_zoom": 1,

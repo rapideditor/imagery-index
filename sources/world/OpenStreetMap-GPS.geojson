@@ -9,7 +9,7 @@
         },
         "description": "Public GPS traces uploaded to OpenStreetMap.",
         "i18n": true,
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenStreetMap-GPS.png",
+        "icon": "OpenStreetMap.png",
         "id": "osm-gps",
         "max_zoom": 20,
         "name": "OpenStreetMap GPS traces",

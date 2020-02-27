@@ -35,7 +35,7 @@
         "country_code": "GB",
         "description": "Detailed town plan of Aberdeen 1866-1867, courtesy of National Library of Scotland.",
         "end_date": "1868",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "icon": "NLS.png",
         "id": "NLS_aberdeen1866_1867",
         "max_zoom": 20,
         "min_zoom": 13,

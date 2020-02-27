@@ -25,7 +25,7 @@
       "EPSG:3414"
     ],
     "country_code": "SG",
-    "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/sg/OM2_logo.png",
+    "icon": "OM2.png",
     "id": "Singapore-Landlot",
     "license_url": "https://www.onemap.sg/legal/opendatalicence.html",
     "name": "Singapore Landlot",

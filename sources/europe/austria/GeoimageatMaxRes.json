@@ -27,5 +27,5 @@
     "EPSG:4326"
   ],
   "attribution": {"required": true, "text": "geoimage.at", "url": "http://geoimage.at"},
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/GeoimageatMaxRes.png"
+  "icon": "Geoimageat.png"
 }

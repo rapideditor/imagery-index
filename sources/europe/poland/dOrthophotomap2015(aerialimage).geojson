@@ -236,7 +236,7 @@
         ],
         "country_code": "PL",
         "end_date": "2015",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/dOrthophotomap2017(aerialimage).png",
+        "icon": "lodz.png",
         "id": "Lodz-2015",
         "max_zoom": 22,
         "name": "\u0141\u00f3d\u017a: Orthophotomap 2015 (aerial image)",

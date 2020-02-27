@@ -8,5 +8,5 @@
   "min_zoom": 12,
   "max_zoom": 20,
   "privacy_policy_url": "https://www.usgs.gov/privacy-policies",
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USGSTopographicMaps.png"
+  "icon": "USGS.png"
 }

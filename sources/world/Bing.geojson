@@ -4,7 +4,7 @@
         "default": true,
         "description": "Satellite and aerial imagery.",
         "i18n": true,
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/Bing.png",
+        "icon": "Bing.png",
         "id": "Bing",
         "permission_osm": "explicit",
         "license_url": "https://wiki.openstreetmap.org/wiki/Bing_Maps",

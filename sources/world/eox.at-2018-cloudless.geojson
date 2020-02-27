@@ -10,7 +10,7 @@
         "permission_osm": "explicit",
         "description": "Post-processed Sentinel Satellite imagery.",
         "i18n": true,
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/eox.png",
+        "icon": "eox.png",
         "id": "EOXAT2018CLOUDLESS",
         "license_url": "https://wiki.openstreetmap.org/wiki/Eox.at",
         "available_projections": [

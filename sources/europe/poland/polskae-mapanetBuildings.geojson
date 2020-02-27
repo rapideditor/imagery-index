@@ -409,7 +409,7 @@
             "EPSG:2179"
         ],
         "country_code": "PL",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/polskae-mapanetBuildings.png",
+        "icon": "emapa.png",
         "id": "e-mapa.net-buildings",
         "license_url": "http://e-mapa.net/warunki/",
         "max_zoom": 19,

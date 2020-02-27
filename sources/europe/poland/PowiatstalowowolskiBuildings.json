@@ -7,5 +7,5 @@
   "max_zoom": 19,
   "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
   "attribution": {"text": "Powiat stalowowolski"},
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/PowiatrzeszowskiBuildings.png"
+  "icon": "Powiat.png"
 }

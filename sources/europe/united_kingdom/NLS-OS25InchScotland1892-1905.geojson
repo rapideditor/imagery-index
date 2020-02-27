@@ -1652,7 +1652,7 @@
         },
         "country_code": "GB",
         "end_date": "1906",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "icon": "NLS.png",
         "id": "NLS-OS-25inch-hist",
         "max_zoom": 18,
         "name": "NLS - OS 25-inch (Scotland), 1892-1905",

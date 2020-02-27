@@ -16,5 +16,5 @@
     "text": "Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017 & 2018)",
     "url": "https://s2maps.eu/"
   },
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/world/eox.png"
+  "icon": "eox.png"
 }

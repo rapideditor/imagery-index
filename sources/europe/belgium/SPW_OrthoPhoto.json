@@ -8,5 +8,5 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/File:OSM_license_for_SPW_WMS_usage.pdf",
   "best": true,
   "available_projections": ["EPSG:31370", "EPSG:3857", "EPSG:4326"],
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/SPW.png"
+  "icon": "SPW.png"
 }

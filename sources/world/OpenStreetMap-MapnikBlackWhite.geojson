@@ -8,7 +8,7 @@
         },
         "default": true,
         "i18n": true,
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenStreetMap-MapnikBlackWhite.png",
+        "icon": "OpenStreetMap.png",
         "id": "osm-mapnik-black_and_white",
         "max_zoom": 18,
         "name": "OpenStreetMap (Standard Black & White)",

@@ -520,7 +520,7 @@
         ],
         "best": true,
         "country_code": "DE",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/de/SaxonyWebAtlasSN.png",
+        "icon": "GeoSN.png",
         "id": "GEOSN-DOP-RGB",
         "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
         "name": "Saxony latest aerial imagery",

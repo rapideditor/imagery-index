@@ -2011,7 +2011,7 @@
         "license_url": "https://github.com/jbelien/openstreetmap-carto-be/wiki/Tile-Usage-Policy",
         "category": "osmbasedmap",
         "country_code": "BE",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenStreetMap-GPS.png",
+        "icon": "OpenStreetMap.png",
         "id": "osmbe",
         "max_zoom": 18,
         "name": "OpenStreetMap (Belgian Style)",

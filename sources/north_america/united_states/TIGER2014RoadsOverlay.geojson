@@ -533,7 +533,7 @@
         "description": "At zoom level 16+, public domain map data from the US Census. At lower zooms, only changes since 2006 minus changes already incorporated into OpenStreetMap",
         "end_date": "2014",
         "i18n": true,
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/TIGER2017RoadsOverlay.png",
+        "icon": "TIGER.png",
         "id": "US-TIGER-Roads-2014",
         "max_zoom": 22,
         "name": "TIGER Roads 2014",

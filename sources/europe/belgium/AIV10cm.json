@@ -19,5 +19,5 @@
     "EPSG:4326"
   ],
   "attribution": {"required": true, "text": "© agentschap Informatie Vlaanderen"},
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/be/AIV.png"
+  "icon": "AIV.png"
 }

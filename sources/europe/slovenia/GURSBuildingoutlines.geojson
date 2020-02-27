@@ -721,7 +721,7 @@
             "url": "https://www.gov.si/drzavni-organi/organi-v-sestavi/geodetska-uprava/"
         },
         "country_code": "SI",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/si/GURSRoadlines.png",
+        "icon": "GURS.png",
         "id": "GURS-buildings",
         "license_url": "https://wiki.openstreetmap.org/wiki/GURS",
         "max_zoom": 19,

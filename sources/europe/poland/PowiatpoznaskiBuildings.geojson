@@ -108,7 +108,7 @@
             "EPSG:4326"
         ],
         "country_code": "PL",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/PowiatpoznaskiOrthophotomap(aerialimage).png",
+        "icon": "PODGIK.png",
         "id": "poznanski-buildings",
         "name": "Powiat pozna\u0144ski: Buildings",
         "type": "wms",

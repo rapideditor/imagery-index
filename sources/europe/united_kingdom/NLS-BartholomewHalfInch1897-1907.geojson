@@ -1088,7 +1088,7 @@
         },
         "country_code": "GB",
         "end_date": "1908",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "icon": "NLS.png",
         "id": "NLS-Bartholomew-hfinch-hist",
         "max_zoom": 15,
         "name": "NLS - Bartholomew Half Inch, 1897-1907",

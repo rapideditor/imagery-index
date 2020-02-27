@@ -721,7 +721,7 @@
             "url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ"
         },
         "country_code": "SI",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/si/RABA-KGZSloveniafarmlanduse.png",
+        "icon": "RABA.png",
         "id": "RABA-KGZ-3000",
         "max_zoom": 19,
         "min_zoom": 8,

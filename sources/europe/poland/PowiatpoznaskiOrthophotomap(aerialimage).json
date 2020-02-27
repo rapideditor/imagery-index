@@ -7,5 +7,5 @@
   "max_zoom": 23,
   "available_projections": ["EPSG:2177"],
   "attribution": {"text": "PODGIK Poznań"},
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/pl/PowiatpoznaskiOrthophotomap(aerialimage).png"
+  "icon": "PODGIK.png"
 }

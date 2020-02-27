@@ -796,7 +796,7 @@
             "EPSG:4326"
         ],
         "country_code": "AT",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/GeoimageatMaxRes.png",
+        "icon": "Geoimageat.png",
         "id": "geoimage.at",
         "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
         "name": "Geoimage.at MaxRes",

@@ -11,5 +11,5 @@
     "text": "Kartendaten: © OpenStreetMap-Mitwirkende, SRTM | Kartendarstellung: © OpenTopoMap (CC-BY-SA)",
     "url": "https://tile.opentopomap.org/about#verwendung"
   },
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenTopoMap.png"
+  "icon": "OpenTopoMap.png"
 }

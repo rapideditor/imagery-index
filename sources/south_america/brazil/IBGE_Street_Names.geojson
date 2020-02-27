@@ -5,7 +5,7 @@
       "text": "IBGE, OSM Brasil"
     },
     "country_code": "BR",
-    "icon": "https://osmlab.github.io/editor-layer-index/sources/south-america/br/IBGE.png",
+    "icon": "IBGE.png",
     "id": "IBGE_Nomes_Ruas",
     "license_url": "https://wiki.openstreetmap.org/wiki/IBGE_Street_Names",
     "max_zoom": 22,

@@ -7,5 +7,5 @@
   "url": "https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/glassman/cjf4qjmps0tgv2qpahj977mvz/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1IjoiZ2xhc3NtYW4iLCJhIjoiRjk3dWdwYyJ9.Tg_fMJWxygeKBgVTrZHmGA",
   "max_zoom": 20,
   "overlay": true,
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USForestService-overlay.png"
+  "icon": "USFS.png"
 }

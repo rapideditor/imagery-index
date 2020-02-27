@@ -9,7 +9,7 @@
         "default": true,
         "description": "The default OpenStreetMap layer.",
         "i18n": true,
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenStreetMap-GPS.png",
+        "icon": "OpenStreetMap.png",
         "id": "MAPNIK",
         "max_zoom": 19,
         "name": "OpenStreetMap (Standard)",

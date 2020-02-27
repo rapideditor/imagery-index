@@ -14,5 +14,5 @@
     "text": "Sadrži podatke Državne geodetske uprave",
     "url": "https://dgu.gov.hr/"
   },
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/dgu.png"
+  "icon": "dgu.png"
 }

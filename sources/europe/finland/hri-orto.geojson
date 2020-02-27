@@ -14,7 +14,7 @@
                 "best": true,
                 "country_code": "FI",
                 "description": "Ortophotos from the municipalities of Espoo, Helsinki, Vantaa, Kirkkonummi and Nurmijärvi + HSL and HSY",
-                "icon": "https://raw.githubusercontent.com/osmlab/editor-layer-index/gh-pages/sources/europe/fi/hri_logo.png",
+                "icon": "HRI.png",
                 "id": "hri-orto",
                 "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/HRI_permission_07082018.pdf",
                 "max_zoom": 19,
@@ -29,47 +29,47 @@
                         [
                             24.2694848,
                             59.8592993
-                        ], 
+                        ],
                         [
                             24.2667376,
                             60.2254939
-                        ], 
+                        ],
                         [
                             24.5530687,
                             60.3670349
-                        ], 
+                        ],
                         [
                             24.5036303,
                             60.4903811
-                        ], 
+                        ],
                         [
                             24.7638689,
                             60.6007908
-                        ], 
+                        ],
                         [
                             25.0062548,
                             60.5417499
-                        ], 
+                        ],
                         [
                             24.9005114,
                             60.3819697
-                        ], 
+                        ],
                         [
                             24.988402,
                             60.3507345
-                        ], 
+                        ],
                         [
-                            25.0694262, 
+                            25.0694262,
                             60.4409633
-                        ], 
+                        ],
                         [
-                            25.1751696, 
+                            25.1751696,
                             60.4524782
-                        ], 
+                        ],
                         [
                             25.1806627,
                             60.3412222
-                        ], 
+                        ],
                         [
                             25.2795397,
                             60.2942995

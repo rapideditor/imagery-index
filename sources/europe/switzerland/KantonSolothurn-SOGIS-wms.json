@@ -13,5 +13,5 @@
   "end_date": "2017",
   "available_projections": ["EPSG:2056", "EPSG:21781", "EPSG:4326"],
   "attribution": {"required": false, "text": "Orthofoto WMS Solothurn"},
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/ch/KantonSolothurn-SOGIS-wms.png"
+  "icon": "KantonSolothurn.png"
 }

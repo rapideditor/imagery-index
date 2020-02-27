@@ -22,5 +22,5 @@
     "text": "Datenquelle: Land Vorarlberg – data.vorarlberg.gv.at",
     "url": "https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm"
   },
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png"
+  "icon": "VoGIS.png"
 }

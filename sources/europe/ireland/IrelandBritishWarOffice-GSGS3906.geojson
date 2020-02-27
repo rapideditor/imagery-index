@@ -193,7 +193,7 @@
             "url": "https://wiki.openstreetmap.org/wiki/Ireland/Background_Imagery#Trinity_College_Dublin"
         },
         "country_code": "IE",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/ie/IrelandBritishWarOffice-GSGS3906.png",
+        "icon": "IrelandBritishWarOffice.png",
         "id": "GSGS3906",
         "max_zoom": 18,
         "name": "Ireland British War Office 1:25k GSGS 3906",

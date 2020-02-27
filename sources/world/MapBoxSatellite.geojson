@@ -11,7 +11,7 @@
         "permission_osm": "explicit",
         "description": "Satellite and aerial imagery.",
         "i18n": true,
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/MapBoxSatellite.png",
+        "icon": "Mapbox.png",
         "id": "Mapbox",
         "license_url": "https://wiki.openstreetmap.org/wiki/Vertical_Aerial_Photographs#DigitalGlobe_.2F_MapBox",
         "max_zoom": 22,

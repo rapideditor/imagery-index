@@ -12,7 +12,7 @@
     "max_zoom": 20,
     "min_zoom": 12,
     "country_code": "US",
-    "icon": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/USDA.png",
+    "icon": "USDA.png",
     "description": "The most recent year of DOQQs from the National Agriculture Imagery Program (NAIP) for each state in the contiguous United States.",
     "i18n": true
   },

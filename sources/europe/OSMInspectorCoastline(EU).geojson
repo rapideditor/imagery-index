@@ -1105,7 +1105,7 @@
             "url": "https://tools.geofabrik.de/osmi/"
         },
         "country_code": "EU",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OSMIHighways.png",
+        "icon": "OSMI.png",
         "id": "OSM_Inspector-Boundaries",
         "max_zoom": 18,
         "name": "OSM Inspector: Coastline (EU)",

@@ -7,7 +7,7 @@
             "url": "https://tools.geofabrik.de/osmi"
         },
         "i18n": true,
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OSMIHighways.png",
+        "icon": "OSMI.png",
         "id": "OSM_Inspector-Highways",
         "max_zoom": 18,
         "name": "OSM Inspector: Highways",

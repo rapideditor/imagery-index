@@ -6,7 +6,7 @@
             "text": "Tiles \u00a9 cquest@Openstreetmap France, data \u00a9 OpenStreetMap contributors, ODBL",
             "url": "https://www.openstreetmap.org/"
         },
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/world/OpenStreetMap-GPS.png",
+        "icon": "OpenStreetMap.png",
         "id": "osmfr",
         "max_zoom": 20,
         "name": "OpenStreetMap (French Style)",

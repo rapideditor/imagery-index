@@ -364,7 +364,7 @@
         },
         "country_code": "GB",
         "end_date": "1943",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/gb/NLS-OSTownPlan-Hamilton1858.png",
+        "icon": "NLS.png",
         "id": "NLS-OS-WarOffice-125k-1940-43",
         "max_zoom": 16,
         "min_zoom": 5,

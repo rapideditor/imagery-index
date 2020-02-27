@@ -77,7 +77,7 @@
             "url": "https://maps.nlsc.gov.tw/"
         },
         "country_code": "TW",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/asia/tw/Taiwane-MapOpenData.png",
+        "icon": "NLSC.png",
         "id": "TW_NLSC_WMS_EMAP6",
         "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
         "max_zoom": 15,

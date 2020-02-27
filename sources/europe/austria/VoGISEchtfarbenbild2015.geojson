@@ -138,7 +138,7 @@
         ],
         "country_code": "AT",
         "end_date": "2015",
-        "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/at/VoGISFlchenwidmungsplan.png",
+        "icon": "VoGIS.png",
         "id": "vogis.cnv.at-ef2015_10cm",
         "attribution": {
             "text": "Datenquelle: Land Vorarlberg \u2013 data.vorarlberg.gv.at",
