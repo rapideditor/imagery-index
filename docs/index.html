@@ -138,8 +138,8 @@ var ELICLASS = 'magenta';
 var LOCOCLASS = 'orange';
 
 // state
-var _lastOpacity;
-var _lastZoom;
+var _currOpacity = 35;
+var _currZoom = 1;
 var _eliReset = true;
 var _locoReset = true;
 var _loco;
@@ -152,19 +152,21 @@ window.addEventListener('DOMContentLoaded', function(e) {
 map.on('load', function() {
 
   map.on('zoom', function(e) {
-    var currZoom = Math.round((e.target.transform.zoom + Number.EPSILON) * 100) / 100;
-    if (currZoom !== _lastZoom) {
-      _lastZoom = currZoom;
-      zoomValue.textContent = '' + currZoom;
+    var newZoom = Math.round((e.target.transform.zoom + Number.EPSILON) * 100) / 100;
+    if (newZoom !== _currZoom) {
+      _currZoom = newZoom;
+      zoomValue.textContent = '' + newZoom;
     }
   });
 
   slider.addEventListener('input', function(e) {
-    var currOpacity = parseInt(e.target.value, 10);
-    if (currOpacity !== _lastOpacity) {
-      _lastOpacity = currOpacity;
-      map.setPaintProperty('raster-layer', 'raster-opacity', currOpacity / 100);
-      sliderValue.textContent = '' + currOpacity + '%';
+    var newOpacity = parseInt(e.target.value, 10);
+    if (newOpacity !== _currOpacity) {
+      _currOpacity = newOpacity;
+      if (map.getLayer('raster-layer')) {
+        map.setPaintProperty('raster-layer', 'raster-opacity', newOpacity / 100);
+      }
+      sliderValue.textContent = '' + newOpacity + '%';
     }
   });
 
@@ -176,6 +178,7 @@ map.on('load', function() {
 
     // Remove any existing sources and layers
     if (map.getLayer('raster-layer'))         map.removeLayer('raster-layer');
+    if (map.getLayer('geojson-fill-layer'))   map.removeLayer('geojson-fill-layer');
     if (map.getLayer('geojson-line-layer'))   map.removeLayer('geojson-line-layer');
     if (map.getLayer('geojson-point-layer'))  map.removeLayer('geojson-point-layer');
     if (map.getSource('raster-source'))       map.removeSource('raster-source');
@@ -272,17 +275,20 @@ map.on('load', function() {
         tiles: [url]
       });
 
+      // If there is an existing data overlay, ensure the raster layer shows beneath it.
+      var before = (map.getLayer('loco-fill-layer')) ? 'loco-fill-layer' : null;
+
       map.addLayer({
         id: 'raster-layer',
         type: 'raster',
         source: 'raster-source',
         paint: {
-          'raster-opacity': 0.35,
+          'raster-opacity': _currOpacity / 100,
           'raster-fade-duration': 100
         },
         minzoom: 0,  // minzoom,
         maxzoom: 24, // maxzoom
-      });
+      }, before);
 
 
       // Setup the GeoJSON source and layer
@@ -312,6 +318,15 @@ map.on('load', function() {
           }
         });
 
+        map.addLayer({
+          id: 'geojson-fill-layer',
+          type: 'fill',
+          source: 'geojson-source',
+          paint: {
+            'fill-color': ELICOLOR,
+            'fill-opacity': 0.1
+          }
+        });
         map.addLayer({
           id: 'geojson-line-layer',
           type: 'line',
@@ -364,6 +379,7 @@ map.on('load', function() {
     _locoReset = false;
 
     // Remove any existing sources and layers
+    if (map.getLayer('loco-fill-layer'))   map.removeLayer('loco-fill-layer');
     if (map.getLayer('loco-line-layer'))   map.removeLayer('loco-line-layer');
     if (map.getLayer('loco-point-layer'))  map.removeLayer('loco-point-layer');
     if (map.getSource('loco-source'))      map.removeSource('loco-source');
@@ -378,6 +394,15 @@ map.on('load', function() {
         data: gj
       });
 
+      map.addLayer({
+        id: 'loco-fill-layer',
+        type: 'fill',
+        source: 'loco-source',
+        paint: {
+          'fill-color': LOCOCOLOR,
+          'fill-opacity': 0.1
+        }
+      });
       map.addLayer({
         id: 'loco-line-layer',
         type: 'line',
