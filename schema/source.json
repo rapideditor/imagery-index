@@ -1,8 +1,9 @@
 {
-  "title": "Resource",
+  "title": "Source",
   "description": "An imagery source",
   "type": "object",
   "additionalProperties": false,
+
   "required": [
     "id",
     "type",
@@ -14,18 +15,143 @@
 
   "properties": {
     "id": {
-      "description": "(required) A unique identifier for the resource",
+      "description": "(required) A unique identifier for the imagery source",
       "type": "string",
       "pattern": "^[-_.A-Za-z0-9]+$"
     },
+
     "type": {
       "description": "(required) Type of imagery source",
       "type": "string",
       "enum": ["tms", "wms"]
     },
+
     "locationSet": {
       "$comment": "See location-conflation documentation for compatible values: https://github.com/ideditor/location-conflation#readme",
-      "description": "(required) included and excluded locations for this resource",
+      "description": "(required) included and excluded locations for this imagery source",
+      "$ref": "#/definitions/locationSet"
+    },
+
+    "name": {
+      "$comment": "Assumed to be in English, this value will be sent to Transifex for translation",
+      "description": "(required) Display name for this imagery source",
+      "type": "string"
+    },
+
+    "description": {
+      "$comment": "Assumed to be in English, this value will be sent to Transifex for translation",
+      "description": "(required) One line description of the imagery source",
+      "type": "string"
+    },
+
+    "url": {
+      "description": "(required) A url template for the imagery source",
+      "type": "string"
+    },
+
+    "category": {
+      "description": "(optional) A category for the imagery source",
+      "type": "string",
+      "enum": ["photo", "map", "historicmap", "osmbasedmap", "historicphoto", "qa", "elevation", "other"]
+    },
+
+    "min_zoom": {
+      "description": "(optional) The minimum zoom that the source will return imagery",
+      "type": "integer",
+      "minimum": 0,
+      "default": 0
+    },
+
+    "max_zoom": {
+      "description": "(optional) The maximum zoom that the source will return imagery",
+      "type": "integer",
+      "minimum": 1
+    },
+
+    "permission_osm": {
+      "description": "(optional) explicit/implicit permission by the owner for use in OSM",
+      "type": "string",
+      "enum": ["explicit", "implicit", "no"]
+    },
+
+    "license_url": {
+      "description": "(optional) A URL for the license or permissions for the imagery",
+      "type": "string"
+    },
+
+    "privacy_policy_url": {
+      "description": "(optional) A URL for the privacy policy of the imagery operator",
+      "type": "string"
+    },
+
+    "best": {
+      "description": "(optional) Whether this imagery is the best source for the region",
+      "type": "boolean",
+      "default": false
+    },
+
+    "start_date": {
+      "description": "(optional) The age of the oldest imagery or data in the source, as an RFC3339 date or leading portion of one",
+      "type": "string",
+      "pattern": "^\\d\\d\\d\\d(-\\d\\d(-\\d\\d)?)?$"
+    },
+
+    "end_date": {
+      "description": "(optional) The age of the newest imagery or data in the source, as an RFC3339 date or leading portion of one",
+      "type": "string",
+      "pattern": "^\\d\\d\\d\\d(-\\d\\d(-\\d\\d)?)?$"
+    },
+
+    "overlay": {
+      "description": "(optional) `true` if tiles are transparent and can be overlaid on another source",
+      "type": "boolean",
+      "default": false
+    },
+
+    "available_projections": {
+      "description": "(optional) WMS-only: An array of available projections supported by the imagery source",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+
+    "attribution": {
+      "description": "(optional) Information about how and whether to display attribution when using this imagery source",
+      "type": "object",
+      "properties": {
+        "url": {
+          "description": "(optional) URL link to the attribution",
+          "type": "string"
+        },
+        "text": {
+          "description": "(optional) Text for the attribution",
+          "type": "string"
+        },
+        "html": {
+          "description": "(optional) HTML for the attribution",
+          "type": "string"
+        },
+        "required": {
+          "description": "(optional) `true` if displaying attribution is required when displaying this imagery",
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "icon": {
+      "description": "(optional) A URL for an icon for this imagery source",
+      "type": "string"
+    }
+  },
+
+  "definitions": {
+    "locationSet": {
+      "$comment": "See location-conflation documentation for compatible values: https://github.com/ideditor/location-conflation#readme",
       "type": "object",
       "additionalProperties": false,
       "required": [
@@ -58,28 +184,6 @@
         }
       }
     },
-    "name": {
-      "$comment": "Assumed to be in English, this value will be sent to Transifex for translation",
-      "description": "(required) Display name for this imagery source",
-      "type": "string"
-    },
-    "description": {
-      "$comment": "Assumed to be in English, this value will be sent to Transifex for translation",
-      "description": "(required) One line description of the imagery source",
-      "type": "string"
-    },
-    "extendedDescription": {
-      "$comment": "Assumed to be in English, this value will be sent to Transifex for translation",
-      "description": "(optional) Longer description of the imagery source",
-      "type": "string"
-    },
-    "url": {
-      "description": "(required) A url template for the imagery source",
-      "type": "string"
-    }
-  },
-
-  "definitions": {
     "countryCoder": {
       "$comment": "See country-coder documentation for compatible values: https://github.com/ideditor/country-coder#readme",
       "description": "A country code (ISO 3166-1, United Nations M49, or anything recognized by country-coder)",
