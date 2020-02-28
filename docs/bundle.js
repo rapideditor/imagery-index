@@ -1,4 +1,4 @@
-var bundle = (function (exports) {
+var bundle = (function (exports, d3, d3Array, d3Polygon, d3Geo, d3Zoom, vector_js) {
 	'use strict';
 
 	var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
@@ -22784,8 +22784,1216 @@ var bundle = (function (exports) {
 	  return this._cache;
 	};
 
+	// constants
+	var TAU = 2 * Math.PI;
+	var EQUATORIAL_RADIUS = 6356752.314245179;
+	var POLAR_RADIUS$1 = 6378137.0;
+
+
+	function geoLatToMeters(dLat) {
+	    return dLat * (TAU * POLAR_RADIUS$1 / 360);
+	}
+
+
+	function geoLonToMeters(dLon, atLat) {
+	    return Math.abs(atLat) >= 90 ? 0 :
+	        dLon * (TAU * EQUATORIAL_RADIUS / 360) * Math.abs(Math.cos(atLat * (Math.PI / 180)));
+	}
+
+
+	function geoMetersToLat(m) {
+	    return m / (TAU * POLAR_RADIUS$1 / 360);
+	}
+
+
+	function geoMetersToLon(m, atLat) {
+	    return Math.abs(atLat) >= 90 ? 0 :
+	        m / (TAU * EQUATORIAL_RADIUS / 360) / Math.abs(Math.cos(atLat * (Math.PI / 180)));
+	}
+
+
+	function geoMetersToOffset(meters, tileSize) {
+	    tileSize = tileSize || 256;
+	    return [
+	        meters[0] * tileSize / (TAU * EQUATORIAL_RADIUS),
+	        -meters[1] * tileSize / (TAU * POLAR_RADIUS$1)
+	    ];
+	}
+
+
+	function geoOffsetToMeters(offset, tileSize) {
+	    tileSize = tileSize || 256;
+	    return [
+	        offset[0] * TAU * EQUATORIAL_RADIUS / tileSize,
+	        -offset[1] * TAU * POLAR_RADIUS$1 / tileSize
+	    ];
+	}
+
+
+	// Equirectangular approximation of spherical distances on Earth
+	function geoSphericalDistance(a, b) {
+	    var x = geoLonToMeters(a[0] - b[0], (a[1] + b[1]) / 2);
+	    var y = geoLatToMeters(a[1] - b[1]);
+	    return Math.sqrt((x * x) + (y * y));
+	}
+
+
+	// scale to zoom
+	function geoScaleToZoom(k, tileSize) {
+	    tileSize = tileSize || 256;
+	    var log2ts = Math.log(tileSize) * Math.LOG2E;
+	    return Math.log(k * TAU) / Math.LN2 - log2ts;
+	}
+
+
+	// zoom to scale
+	function geoZoomToScale(z, tileSize) {
+	    tileSize = tileSize || 256;
+	    return tileSize * Math.pow(2, z) / TAU;
+	}
+
+
+	// returns info about the node from `nodes` closest to the given `point`
+	function geoSphericalClosestNode(nodes, point) {
+	    var minDistance = Infinity, distance;
+	    var indexOfMin;
+
+	    for (var i in nodes) {
+	        distance = geoSphericalDistance(nodes[i].loc, point);
+	        if (distance < minDistance) {
+	            minDistance = distance;
+	            indexOfMin = i;
+	        }
+	    }
+
+	    if (indexOfMin !== undefined) {
+	        return { index: indexOfMin, distance: minDistance, node: nodes[indexOfMin] };
+	    } else {
+	        return null;
+	    }
+	}
+
+	function geoExtent(min, max) {
+	    if (!(this instanceof geoExtent)) {
+	        return new geoExtent(min, max);
+	    } else if (min instanceof geoExtent) {
+	        return min;
+	    } else if (min && min.length === 2 && min[0].length === 2 && min[1].length === 2) {
+	        this[0] = min[0];
+	        this[1] = min[1];
+	    } else {
+	        this[0] = min        || [ Infinity,  Infinity];
+	        this[1] = max || min || [-Infinity, -Infinity];
+	    }
+	}
+
+	geoExtent.prototype = new Array(2);
+
+	Object.assign(geoExtent.prototype, {
+
+	    equals: function (obj) {
+	        return this[0][0] === obj[0][0] &&
+	            this[0][1] === obj[0][1] &&
+	            this[1][0] === obj[1][0] &&
+	            this[1][1] === obj[1][1];
+	    },
+
+
+	    extend: function(obj) {
+	        if (!(obj instanceof geoExtent)) { obj = new geoExtent(obj); }
+	        return geoExtent(
+	            [Math.min(obj[0][0], this[0][0]), Math.min(obj[0][1], this[0][1])],
+	            [Math.max(obj[1][0], this[1][0]), Math.max(obj[1][1], this[1][1])]
+	        );
+	    },
+
+
+	    _extend: function(extent) {
+	        this[0][0] = Math.min(extent[0][0], this[0][0]);
+	        this[0][1] = Math.min(extent[0][1], this[0][1]);
+	        this[1][0] = Math.max(extent[1][0], this[1][0]);
+	        this[1][1] = Math.max(extent[1][1], this[1][1]);
+	    },
+
+
+	    area: function() {
+	        return Math.abs((this[1][0] - this[0][0]) * (this[1][1] - this[0][1]));
+	    },
+
+
+	    center: function() {
+	        return [(this[0][0] + this[1][0]) / 2, (this[0][1] + this[1][1]) / 2];
+	    },
+
+
+	    rectangle: function() {
+	        return [this[0][0], this[0][1], this[1][0], this[1][1]];
+	    },
+
+
+	    bbox: function() {
+	        return { minX: this[0][0], minY: this[0][1], maxX: this[1][0], maxY: this[1][1] };
+	    },
+
+
+	    polygon: function() {
+	        return [
+	            [this[0][0], this[0][1]],
+	            [this[0][0], this[1][1]],
+	            [this[1][0], this[1][1]],
+	            [this[1][0], this[0][1]],
+	            [this[0][0], this[0][1]]
+	        ];
+	    },
+
+
+	    contains: function(obj) {
+	        if (!(obj instanceof geoExtent)) { obj = new geoExtent(obj); }
+	        return obj[0][0] >= this[0][0] &&
+	               obj[0][1] >= this[0][1] &&
+	               obj[1][0] <= this[1][0] &&
+	               obj[1][1] <= this[1][1];
+	    },
+
+
+	    intersects: function(obj) {
+	        if (!(obj instanceof geoExtent)) { obj = new geoExtent(obj); }
+	        return obj[0][0] <= this[1][0] &&
+	               obj[0][1] <= this[1][1] &&
+	               obj[1][0] >= this[0][0] &&
+	               obj[1][1] >= this[0][1];
+	    },
+
+
+	    intersection: function(obj) {
+	        if (!this.intersects(obj)) { return new geoExtent(); }
+	        return new geoExtent(
+	            [Math.max(obj[0][0], this[0][0]), Math.max(obj[0][1], this[0][1])],
+	            [Math.min(obj[1][0], this[1][0]), Math.min(obj[1][1], this[1][1])]
+	        );
+	    },
+
+
+	    percentContainedIn: function(obj) {
+	        if (!(obj instanceof geoExtent)) { obj = new geoExtent(obj); }
+	        var a1 = this.intersection(obj).area();
+	        var a2 = this.area();
+
+	        if (a1 === Infinity || a2 === Infinity || a1 === 0 || a2 === 0) {
+	            return 0;
+	        } else {
+	            return a1 / a2;
+	        }
+	    },
+
+
+	    padByMeters: function(meters) {
+	        var dLat = geoMetersToLat(meters);
+	        var dLon = geoMetersToLon(meters, this.center()[1]);
+	        return geoExtent(
+	            [this[0][0] - dLon, this[0][1] - dLat],
+	            [this[1][0] + dLon, this[1][1] + dLat]
+	        );
+	    },
+
+
+	    toParam: function() {
+	        return this.rectangle().join(',');
+	    }
+
+	});
+
+	// vector equals
+	function geoVecEqual(a, b, epsilon) {
+	    if (epsilon) {
+	        return (Math.abs(a[0] - b[0]) <= epsilon) && (Math.abs(a[1] - b[1]) <= epsilon);
+	    } else {
+	        return (a[0] === b[0]) && (a[1] === b[1]);
+	    }
+	}
+
+	// vector addition
+	function geoVecAdd(a, b) {
+	    return [ a[0] + b[0], a[1] + b[1] ];
+	}
+
+	// vector subtraction
+	function geoVecSubtract(a, b) {
+	    return [ a[0] - b[0], a[1] - b[1] ];
+	}
+
+	// vector scaling
+	function geoVecScale(a, mag) {
+	    return [ a[0] * mag, a[1] * mag ];
+	}
+
+	// vector rounding (was: geoRoundCoordinates)
+	function geoVecFloor(a) {
+	    return [ Math.floor(a[0]), Math.floor(a[1]) ];
+	}
+
+	// linear interpolation
+	function geoVecInterp(a, b, t) {
+	    return [
+	        a[0] + (b[0] - a[0]) * t,
+	        a[1] + (b[1] - a[1]) * t
+	    ];
+	}
+
+	// http://jsperf.com/id-dist-optimization
+	function geoVecLength(a, b) {
+	    return Math.sqrt(geoVecLengthSquare(a,b));
+	}
+
+	// length of vector raised to the power two
+	function geoVecLengthSquare(a, b) {
+	    b = b || [0, 0];
+	    var x = a[0] - b[0];
+	    var y = a[1] - b[1];
+	    return (x * x) + (y * y);
+	}
+
+	// get a unit vector
+	function geoVecNormalize(a) {
+	    var length = Math.sqrt((a[0] * a[0]) + (a[1] * a[1]));
+	    if (length !== 0) {
+	        return geoVecScale(a, 1 / length);
+	    }
+	    return [0, 0];
+	}
+
+	// Return the counterclockwise angle in the range (-pi, pi)
+	// between the positive X axis and the line intersecting a and b.
+	function geoVecAngle(a, b) {
+	    return Math.atan2(b[1] - a[1], b[0] - a[0]);
+	}
+
+	// dot product
+	function geoVecDot(a, b, origin) {
+	    origin = origin || [0, 0];
+	    var p = geoVecSubtract(a, origin);
+	    var q = geoVecSubtract(b, origin);
+	    return (p[0]) * (q[0]) + (p[1]) * (q[1]);
+	}
+
+	// normalized dot product
+	function geoVecNormalizedDot(a, b, origin) {
+	    origin = origin || [0, 0];
+	    var p = geoVecNormalize(geoVecSubtract(a, origin));
+	    var q = geoVecNormalize(geoVecSubtract(b, origin));
+	    return geoVecDot(p, q);
+	}
+
+	// 2D cross product of OA and OB vectors, returns magnitude of Z vector
+	// Returns a positive value, if OAB makes a counter-clockwise turn,
+	// negative for clockwise turn, and zero if the points are collinear.
+	function geoVecCross(a, b, origin) {
+	    origin = origin || [0, 0];
+	    var p = geoVecSubtract(a, origin);
+	    var q = geoVecSubtract(b, origin);
+	    return (p[0]) * (q[1]) - (p[1]) * (q[0]);
+	}
+
+
+	// find closest orthogonal projection of point onto points array
+	function geoVecProject(a, points) {
+	    var min = Infinity;
+	    var idx;
+	    var target;
+
+	    for (var i = 0; i < points.length - 1; i++) {
+	        var o = points[i];
+	        var s = geoVecSubtract(points[i + 1], o);
+	        var v = geoVecSubtract(a, o);
+	        var proj = geoVecDot(v, s) / geoVecDot(s, s);
+	        var p;
+
+	        if (proj < 0) {
+	            p = o;
+	        } else if (proj > 1) {
+	            p = points[i + 1];
+	        } else {
+	            p = [o[0] + proj * s[0], o[1] + proj * s[1]];
+	        }
+
+	        var dist = geoVecLength(p, a);
+	        if (dist < min) {
+	            min = dist;
+	            idx = i + 1;
+	            target = p;
+	        }
+	    }
+
+	    if (idx !== undefined) {
+	        return { index: idx, distance: min, target: target };
+	    } else {
+	        return null;
+	    }
+	}
+
+	// Return the counterclockwise angle in the range (-pi, pi)
+	// between the positive X axis and the line intersecting a and b.
+	function geoAngle(a, b, projection) {
+	    return geoVecAngle(projection(a.loc), projection(b.loc));
+	}
+
+
+	function geoEdgeEqual(a, b) {
+	    return (a[0] === b[0] && a[1] === b[1]) ||
+	        (a[0] === b[1] && a[1] === b[0]);
+	}
+
+
+	// Rotate all points counterclockwise around a pivot point by given angle
+	function geoRotate(points, angle, around) {
+	    return points.map(function(point) {
+	        var radial = geoVecSubtract(point, around);
+	        return [
+	            radial[0] * Math.cos(angle) - radial[1] * Math.sin(angle) + around[0],
+	            radial[0] * Math.sin(angle) + radial[1] * Math.cos(angle) + around[1]
+	        ];
+	    });
+	}
+
+
+	// Choose the edge with the minimal distance from `point` to its orthogonal
+	// projection onto that edge, if such a projection exists, or the distance to
+	// the closest vertex on that edge. Returns an object with the `index` of the
+	// chosen edge, the chosen `loc` on that edge, and the `distance` to to it.
+	function geoChooseEdge(nodes, point, projection, activeID) {
+	    var dist = geoVecLength;
+	    var points = nodes.map(function(n) { return projection(n.loc); });
+	    var ids = nodes.map(function(n) { return n.id; });
+	    var min = Infinity;
+	    var idx;
+	    var loc;
+
+	    for (var i = 0; i < points.length - 1; i++) {
+	        if (ids[i] === activeID || ids[i + 1] === activeID) { continue; }
+
+	        var o = points[i];
+	        var s = geoVecSubtract(points[i + 1], o);
+	        var v = geoVecSubtract(point, o);
+	        var proj = geoVecDot(v, s) / geoVecDot(s, s);
+	        var p;
+
+	        if (proj < 0) {
+	            p = o;
+	        } else if (proj > 1) {
+	            p = points[i + 1];
+	        } else {
+	            p = [o[0] + proj * s[0], o[1] + proj * s[1]];
+	        }
+
+	        var d = dist(p, point);
+	        if (d < min) {
+	            min = d;
+	            idx = i + 1;
+	            loc = projection.invert(p);
+	        }
+	    }
+
+	    if (idx !== undefined) {
+	        return { index: idx, distance: min, loc: loc };
+	    } else {
+	        return null;
+	    }
+	}
+
+
+	// Test active (dragged or drawing) segments against inactive segments
+	// This is used to test e.g. multipolygon rings that cross
+	// `activeNodes` is the ring containing the activeID being dragged.
+	// `inactiveNodes` is the other ring to test against
+	function geoHasLineIntersections(activeNodes, inactiveNodes, activeID) {
+	    var actives = [];
+	    var inactives = [];
+	    var j, k, n1, n2, segment;
+
+	    // gather active segments (only segments in activeNodes that contain the activeID)
+	    for (j = 0; j < activeNodes.length - 1; j++) {
+	        n1 = activeNodes[j];
+	        n2 = activeNodes[j+1];
+	        segment = [n1.loc, n2.loc];
+	        if (n1.id === activeID || n2.id === activeID) {
+	            actives.push(segment);
+	        }
+	    }
+
+	    // gather inactive segments
+	    for (j = 0; j < inactiveNodes.length - 1; j++) {
+	        n1 = inactiveNodes[j];
+	        n2 = inactiveNodes[j+1];
+	        segment = [n1.loc, n2.loc];
+	        inactives.push(segment);
+	    }
+
+	    // test
+	    for (j = 0; j < actives.length; j++) {
+	        for (k = 0; k < inactives.length; k++) {
+	            var p = actives[j];
+	            var q = inactives[k];
+	            var hit = geoLineIntersection(p, q);
+	            if (hit) {
+	                return true;
+	            }
+	        }
+	    }
+
+	    return false;
+	}
+
+
+	// Test active (dragged or drawing) segments against inactive segments
+	// This is used to test whether a way intersects with itself.
+	function geoHasSelfIntersections(nodes, activeID) {
+	    var actives = [];
+	    var inactives = [];
+	    var j, k;
+
+	    // group active and passive segments along the nodes
+	    for (j = 0; j < nodes.length - 1; j++) {
+	        var n1 = nodes[j];
+	        var n2 = nodes[j+1];
+	        var segment = [n1.loc, n2.loc];
+	        if (n1.id === activeID || n2.id === activeID) {
+	            actives.push(segment);
+	        } else {
+	            inactives.push(segment);
+	        }
+	    }
+
+	    // test
+	    for (j = 0; j < actives.length; j++) {
+	        for (k = 0; k < inactives.length; k++) {
+	            var p = actives[j];
+	            var q = inactives[k];
+	            // skip if segments share an endpoint
+	            if (geoVecEqual(p[1], q[0]) || geoVecEqual(p[0], q[1]) ||
+	                geoVecEqual(p[0], q[0]) || geoVecEqual(p[1], q[1]) ) {
+	                continue;
+	            }
+
+	            var hit = geoLineIntersection(p, q);
+	            if (hit) {
+	                var epsilon = 1e-8;
+	                // skip if the hit is at the segment's endpoint
+	                if (geoVecEqual(p[1], hit, epsilon) || geoVecEqual(p[0], hit, epsilon) ||
+	                    geoVecEqual(q[1], hit, epsilon) || geoVecEqual(q[0], hit, epsilon) ) {
+	                    continue;
+	                } else {
+	                    return true;
+	                }
+	            }
+	        }
+	    }
+
+	    return false;
+	}
+
+
+	// Return the intersection point of 2 line segments.
+	// From https://github.com/pgkelley4/line-segments-intersect
+	// This uses the vector cross product approach described below:
+	//  http://stackoverflow.com/a/565282/786339
+	function geoLineIntersection(a, b) {
+	    var p = [a[0][0], a[0][1]];
+	    var p2 = [a[1][0], a[1][1]];
+	    var q = [b[0][0], b[0][1]];
+	    var q2 = [b[1][0], b[1][1]];
+	    var r = geoVecSubtract(p2, p);
+	    var s = geoVecSubtract(q2, q);
+	    var uNumerator = geoVecCross(geoVecSubtract(q, p), r);
+	    var denominator = geoVecCross(r, s);
+
+	    if (uNumerator && denominator) {
+	        var u = uNumerator / denominator;
+	        var t = geoVecCross(geoVecSubtract(q, p), s) / denominator;
+
+	        if ((t >= 0) && (t <= 1) && (u >= 0) && (u <= 1)) {
+	            return geoVecInterp(p, p2, t);
+	        }
+	    }
+
+	    return null;
+	}
+
+
+	function geoPathIntersections(path1, path2) {
+	    var intersections = [];
+	    for (var i = 0; i < path1.length - 1; i++) {
+	        for (var j = 0; j < path2.length - 1; j++) {
+	            var a = [ path1[i], path1[i+1] ];
+	            var b = [ path2[j], path2[j+1] ];
+	            var hit = geoLineIntersection(a, b);
+	            if (hit) {
+	                intersections.push(hit);
+	            }
+	        }
+	    }
+	    return intersections;
+	}
+
+	function geoPathHasIntersections(path1, path2) {
+	    for (var i = 0; i < path1.length - 1; i++) {
+	        for (var j = 0; j < path2.length - 1; j++) {
+	            var a = [ path1[i], path1[i+1] ];
+	            var b = [ path2[j], path2[j+1] ];
+	            var hit = geoLineIntersection(a, b);
+	            if (hit) {
+	                return true;
+	            }
+	        }
+	    }
+	    return false;
+	}
+
+
+	// Return whether point is contained in polygon.
+	//
+	// `point` should be a 2-item array of coordinates.
+	// `polygon` should be an array of 2-item arrays of coordinates.
+	//
+	// From https://github.com/substack/point-in-polygon.
+	// ray-casting algorithm based on
+	// http://www.ecse.rpi.edu/Homepages/wrf/Research/Short_Notes/pnpoly.html
+	//
+	function geoPointInPolygon(point, polygon) {
+	    var x = point[0];
+	    var y = point[1];
+	    var inside = false;
+
+	    for (var i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
+	        var xi = polygon[i][0];
+	        var yi = polygon[i][1];
+	        var xj = polygon[j][0];
+	        var yj = polygon[j][1];
+
+	        var intersect = ((yi > y) !== (yj > y)) &&
+	            (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
+	        if (intersect) { inside = !inside; }
+	    }
+
+	    return inside;
+	}
+
+
+	function geoPolygonContainsPolygon(outer, inner) {
+	    return inner.every(function(point) {
+	        return geoPointInPolygon(point, outer);
+	    });
+	}
+
+
+	function geoPolygonIntersectsPolygon(outer, inner, checkSegments) {
+	    function testPoints(outer, inner) {
+	        return inner.some(function(point) {
+	            return geoPointInPolygon(point, outer);
+	        });
+	    }
+
+	   return testPoints(outer, inner) || (!!checkSegments && geoPathHasIntersections(outer, inner));
+	}
+
+
+	// http://gis.stackexchange.com/questions/22895/finding-minimum-area-rectangle-for-given-points
+	// http://gis.stackexchange.com/questions/3739/generalisation-strategies-for-building-outlines/3756#3756
+	function geoGetSmallestSurroundingRectangle(points) {
+	    var hull = d3Polygon.polygonHull(points);
+	    var centroid = d3Polygon.polygonCentroid(hull);
+	    var minArea = Infinity;
+	    var ssrExtent = [];
+	    var ssrAngle = 0;
+	    var c1 = hull[0];
+
+	    for (var i = 0; i <= hull.length - 1; i++) {
+	        var c2 = (i === hull.length - 1) ? hull[0] : hull[i + 1];
+	        var angle = Math.atan2(c2[1] - c1[1], c2[0] - c1[0]);
+	        var poly = geoRotate(hull, -angle, centroid);
+	        var extent = poly.reduce(function(extent, point) {
+	            return extent.extend(geoExtent(point));
+	        }, geoExtent());
+
+	        var area = extent.area();
+	        if (area < minArea) {
+	            minArea = area;
+	            ssrExtent = extent;
+	            ssrAngle = angle;
+	        }
+	        c1 = c2;
+	    }
+
+	    return {
+	        poly: geoRotate(ssrExtent.polygon(), ssrAngle, centroid),
+	        angle: ssrAngle
+	    };
+	}
+
+
+	function geoPathLength(path) {
+	    var length = 0;
+	    for (var i = 0; i < path.length - 1; i++) {
+	        length += geoVecLength(path[i], path[i + 1]);
+	    }
+	    return length;
+	}
+
+
+	// If the given point is at the edge of the padded viewport,
+	// return a vector that will nudge the viewport in that direction
+	function geoViewportEdge(point, dimensions) {
+	    var pad = [80, 20, 50, 20];   // top, right, bottom, left
+	    var x = 0;
+	    var y = 0;
+
+	    if (point[0] > dimensions[0] - pad[1])
+	        { x = -10; }
+	    if (point[0] < pad[3])
+	        { x = 10; }
+	    if (point[1] > dimensions[1] - pad[2])
+	        { y = -10; }
+	    if (point[1] < pad[0])
+	        { y = 10; }
+
+	    if (x || y) {
+	        return [x, y];
+	    } else {
+	        return null;
+	    }
+	}
+
+	/*
+	    Bypasses features of D3's default projection stream pipeline that are unnecessary:
+	    * Antimeridian clipping
+	    * Spherical rotation
+	    * Resampling
+	*/
+	function geoRawMercator() {
+	    var project = d3Geo.geoMercatorRaw;
+	    var k = 512 / Math.PI; // scale
+	    var x = 0;
+	    var y = 0; // translate
+	    var clipExtent = [[0, 0], [0, 0]];
+
+
+	    function projection(point) {
+	        point = project(point[0] * Math.PI / 180, point[1] * Math.PI / 180);
+	        return [point[0] * k + x, y - point[1] * k];
+	    }
+
+
+	    projection.invert = function(point) {
+	        point = project.invert((point[0] - x) / k, (y - point[1]) / k);
+	        return point && [point[0] * 180 / Math.PI, point[1] * 180 / Math.PI];
+	    };
+
+
+	    projection.scale = function(_) {
+	        if (!arguments.length) { return k; }
+	        k = +_;
+	        return projection;
+	    };
+
+
+	    projection.translate = function(_) {
+	        if (!arguments.length) { return [x, y]; }
+	        x = +_[0];
+	        y = +_[1];
+	        return projection;
+	    };
+
+
+	    projection.clipExtent = function(_) {
+	        if (!arguments.length) { return clipExtent; }
+	        clipExtent = _;
+	        return projection;
+	    };
+
+
+	    projection.transform = function(obj) {
+	        if (!arguments.length) { return d3Zoom.zoomIdentity.translate(x, y).scale(k); }
+	        x = +obj.x;
+	        y = +obj.y;
+	        k = +obj.k;
+	        return projection;
+	    };
+
+
+	    projection.stream = d3Geo.geoTransform({
+	        point: function(x, y) {
+	            var vec = projection([x, y]);
+	            this.stream.point(vec[0], vec[1]);
+	        }
+	    }).stream;
+
+
+	    return projection;
+	}
+
+	function geoOrthoNormalizedDotProduct(a, b, origin) {
+	    if (geoVecEqual(origin, a) || geoVecEqual(origin, b)) {
+	        return 1;  // coincident points, treat as straight and try to remove
+	    }
+	    return geoVecNormalizedDot(a, b, origin);
+	}
+
+
+	function geoOrthoFilterDotProduct(dotp, epsilon, lowerThreshold, upperThreshold, allowStraightAngles) {
+	    var val = Math.abs(dotp);
+	    if (val < epsilon) {
+	        return 0;      // already orthogonal
+	    } else if (allowStraightAngles && Math.abs(val-1) < epsilon) {
+	        return 0;      // straight angle, which is okay in this case
+	    } else if (val < lowerThreshold || val > upperThreshold) {
+	        return dotp;   // can be adjusted
+	    } else {
+	        return null;   // ignore vertex
+	    }
+	}
+
+
+	function geoOrthoCalcScore(points, isClosed, epsilon, threshold) {
+	    var score = 0;
+	    var first = isClosed ? 0 : 1;
+	    var last = isClosed ? points.length : points.length - 1;
+	    var coords = points.map(function(p) { return p.coord; });
+
+	    var lowerThreshold = Math.cos((90 - threshold) * Math.PI / 180);
+	    var upperThreshold = Math.cos(threshold * Math.PI / 180);
+
+	    for (var i = first; i < last; i++) {
+	        var a = coords[(i - 1 + coords.length) % coords.length];
+	        var origin = coords[i];
+	        var b = coords[(i + 1) % coords.length];
+
+	        var dotp = geoOrthoFilterDotProduct(geoOrthoNormalizedDotProduct(a, b, origin), epsilon, lowerThreshold, upperThreshold);
+	        if (dotp === null) { continue; }    // ignore vertex
+	        score = score + 2.0 * Math.min(Math.abs(dotp - 1.0), Math.min(Math.abs(dotp), Math.abs(dotp + 1)));
+	    }
+
+	    return score;
+	}
+
+	// returns the maximum angle less than `lessThan` between the actual corner and a 0° or 90° corner
+	function geoOrthoMaxOffsetAngle(coords, isClosed, lessThan) {
+	    var max = -Infinity;
+
+	    var first = isClosed ? 0 : 1;
+	    var last = isClosed ? coords.length : coords.length - 1;
+
+	    for (var i = first; i < last; i++) {
+	        var a = coords[(i - 1 + coords.length) % coords.length];
+	        var origin = coords[i];
+	        var b = coords[(i + 1) % coords.length];
+	        var normalizedDotP = geoOrthoNormalizedDotProduct(a, b, origin);
+
+	        var angle = Math.acos(Math.abs(normalizedDotP)) * 180 / Math.PI;
+
+	        if (angle > 45) { angle = 90 - angle; }
+
+	        if (angle >= lessThan) { continue; }
+
+	        if (angle > max) { max = angle; }
+	    }
+
+	    if (max === -Infinity) { return null; }
+
+	    return max;
+	}
+
+
+	// similar to geoOrthoCalcScore, but returns quickly if there is something to do
+	function geoOrthoCanOrthogonalize(coords, isClosed, epsilon, threshold, allowStraightAngles) {
+	    var score = null;
+	    var first = isClosed ? 0 : 1;
+	    var last = isClosed ? coords.length : coords.length - 1;
+
+	    var lowerThreshold = Math.cos((90 - threshold) * Math.PI / 180);
+	    var upperThreshold = Math.cos(threshold * Math.PI / 180);
+
+	    for (var i = first; i < last; i++) {
+	        var a = coords[(i - 1 + coords.length) % coords.length];
+	        var origin = coords[i];
+	        var b = coords[(i + 1) % coords.length];
+
+	        var dotp = geoOrthoFilterDotProduct(geoOrthoNormalizedDotProduct(a, b, origin), epsilon, lowerThreshold, upperThreshold, allowStraightAngles);
+	        if (dotp === null) { continue; }        // ignore vertex
+	        if (Math.abs(dotp) > 0) { return 1; }   // something to do
+	        score = 0;                          // already square
+	    }
+
+	    return score;
+	}
+
+	function utilTiler() {
+	    var _size = [256, 256];
+	    var _scale = 256;
+	    var _tileSize = 256;
+	    var _zoomExtent = [0, 20];
+	    var _translate = [_size[0] / 2, _size[1] / 2];
+	    var _margin = 0;
+	    var _skipNullIsland = false;
+
+
+	    function clamp(num, min, max) {
+	        return Math.max(min, Math.min(num, max));
+	    }
+
+
+	    function nearNullIsland(tile) {
+	        var x = tile[0];
+	        var y = tile[1];
+	        var z = tile[2];
+	        if (z >= 7) {
+	            var center = Math.pow(2, z - 1);
+	            var width = Math.pow(2, z - 6);
+	            var min = center - (width / 2);
+	            var max = center + (width / 2) - 1;
+	            return x >= min && x <= max && y >= min && y <= max;
+	        }
+	        return false;
+	    }
+
+
+	    function tiler() {
+	        var z = geoScaleToZoom(_scale / (2 * Math.PI), _tileSize);
+	        var z0 = clamp(Math.round(z), _zoomExtent[0], _zoomExtent[1]);
+	        var tileMin = 0;
+	        var tileMax = Math.pow(2, z0) - 1;
+	        var log2ts = Math.log(_tileSize) * Math.LOG2E;
+	        var k = Math.pow(2, z - z0 + log2ts);
+	        var origin = [
+	            (_translate[0] - _scale / 2) / k,
+	            (_translate[1] - _scale / 2) / k
+	        ];
+
+	        var cols = d3Array.range(
+	            clamp(Math.floor(-origin[0]) - _margin,               tileMin, tileMax + 1),
+	            clamp(Math.ceil(_size[0] / k - origin[0]) + _margin,  tileMin, tileMax + 1)
+	        );
+	        var rows = d3Array.range(
+	            clamp(Math.floor(-origin[1]) - _margin,               tileMin, tileMax + 1),
+	            clamp(Math.ceil(_size[1] / k - origin[1]) + _margin,  tileMin, tileMax + 1)
+	        );
+
+	        var tiles = [];
+	        for (var i = 0; i < rows.length; i++) {
+	            var y = rows[i];
+	            for (var j = 0; j < cols.length; j++) {
+	                var x = cols[j];
+
+	                if (i >= _margin && i <= rows.length - _margin &&
+	                    j >= _margin && j <= cols.length - _margin) {
+	                    tiles.unshift([x, y, z0]);  // tiles in view at beginning
+	                } else {
+	                    tiles.push([x, y, z0]);     // tiles in margin at the end
+	                }
+	            }
+	        }
+
+	        tiles.translate = origin;
+	        tiles.scale = k;
+
+	        return tiles;
+	    }
+
+
+	    /**
+	     * getTiles() returns an array of tiles that cover the map view
+	     */
+	    tiler.getTiles = function(projection) {
+	        var origin = [
+	            projection.scale() * Math.PI - projection.translate()[0],
+	            projection.scale() * Math.PI - projection.translate()[1]
+	        ];
+
+	        this
+	            .size(projection.clipExtent()[1])
+	            .scale(projection.scale() * 2 * Math.PI)
+	            .translate(projection.translate());
+
+	        var tiles = tiler();
+	        var ts = tiles.scale;
+
+	        return tiles
+	            .map(function(tile) {
+	                if (_skipNullIsland && nearNullIsland(tile)) {
+	                    return false;
+	                }
+	                var x = tile[0] * ts - origin[0];
+	                var y = tile[1] * ts - origin[1];
+	                return {
+	                    id: tile.toString(),
+	                    xyz: tile,
+	                    extent: geoExtent(
+	                        projection.invert([x, y + ts]),
+	                        projection.invert([x + ts, y])
+	                    )
+	                };
+	            }).filter(Boolean);
+	    };
+
+
+	    /**
+	     * getGeoJSON() returns a FeatureCollection for debugging tiles
+	     */
+	    tiler.getGeoJSON = function(projection) {
+	        var features = tiler.getTiles(projection).map(function(tile) {
+	            return {
+	                type: 'Feature',
+	                properties: {
+	                    id: tile.id,
+	                    name: tile.id
+	                },
+	                geometry: {
+	                    type: 'Polygon',
+	                    coordinates: [ tile.extent.polygon() ]
+	                }
+	            };
+	        });
+
+	        return {
+	            type: 'FeatureCollection',
+	            features: features
+	        };
+	    };
+
+
+	    tiler.tileSize = function(val) {
+	        if (!arguments.length) { return _tileSize; }
+	        _tileSize = val;
+	        return tiler;
+	    };
+
+
+	    tiler.zoomExtent = function(val) {
+	        if (!arguments.length) { return _zoomExtent; }
+	        _zoomExtent = val;
+	        return tiler;
+	    };
+
+
+	    tiler.size = function(val) {
+	        if (!arguments.length) { return _size; }
+	        _size = val;
+	        return tiler;
+	    };
+
+
+	    tiler.scale = function(val) {
+	        if (!arguments.length) { return _scale; }
+	        _scale = val;
+	        return tiler;
+	    };
+
+
+	    tiler.translate = function(val) {
+	        if (!arguments.length) { return _translate; }
+	        _translate = val;
+	        return tiler;
+	    };
+
+
+	    // number to extend the rows/columns beyond those covering the viewport
+	    tiler.margin = function(val) {
+	        if (!arguments.length) { return _margin; }
+	        _margin = +val;
+	        return tiler;
+	    };
+
+
+	    tiler.skipNullIsland = function(val) {
+	        if (!arguments.length) { return _skipNullIsland; }
+	        _skipNullIsland = val;
+	        return tiler;
+	    };
+
+
+	    return tiler;
+	}
+
+	function TileLayer() {
+	  var tiler = utilTiler();
+
+	  var _tileSize = 256;
+	  var _projection;
+	  var _cache = {};
+	  var _tileOrigin;
+	  var _zoom;
+	  var _source;
+
+
+	  function tileSizeAtZoom(d, z) {
+	    var EPSILON = 0.002;    // close seams
+	    return ((_tileSize * Math.pow(2, z - d[2])) / _tileSize) + EPSILON;
+	  }
+
+	  function atZoom(t, distance) {
+	    var power = Math.pow(2, distance);
+	    return [
+	      Math.floor(t[0] * power),
+	      Math.floor(t[1] * power),
+	      t[2] + distance
+	    ];
+	  }
+
+	  function lookUp(d) {
+	    for (var up = -1; up > -d[2]; up--) {
+	      var tile = atZoom(d, up);
+	      if (_cache[_source.url(tile)] !== false) {
+	        return tile;
+	      }
+	    }
+	  }
+
+	  function uniqueBy(a, n) {
+	    var o = [];
+	    var seen = {};
+	    for (var i = 0; i < a.length; i++) {
+	      if (seen[a[i][n]] === undefined) {
+	        o.push(a[i]);
+	        seen[a[i][n]] = true;
+	      }
+	    }
+	    return o;
+	  }
+
+
+	  function addSource(d) {
+	    d.push(_source.url(d));
+	    return d;
+	  }
+
+
+	  // Update tiles based on current state of `projection`.
+	  function tilelayer(selection) {
+	    _zoom = geoScaleToZoom(_projection.scale(), _tileSize);
+
+	    var translate = [
+	      _projection.translate()[0],
+	      _projection.translate()[1]
+	    ];
+
+	    tiler
+	      .scale(_projection.scale() * 2 * Math.PI)
+	      .translate(translate);
+
+	    _tileOrigin = [
+	      _projection.scale() * Math.PI - translate[0],
+	      _projection.scale() * Math.PI - translate[1]
+	    ];
+
+	    render(selection);
+	  }
+
+
+	  // Derive the tiles onscreen, remove those offscreen and position them.
+	  // Important that this part not depend on `_projection` because it's
+	  // rentered when tiles load/error (see #644).
+	  function render(selection) {
+	    if (!_source) { return; }
+
+	    var requests = [];
+	    if (_source.validZoom(_zoom)) {
+	      tiler().forEach(function (d) {
+	        addSource(d);
+	        if (d[3] === '') { return; }
+	        if (typeof d[3] !== 'string') { return; } // iD #2295
+	        requests.push(d);
+	        if (_cache[d[3]] === false && lookUp(d)) {
+	          requests.push(addSource(lookUp(d)));
+	        }
+	      });
+	      requests = uniqueBy(requests, 3)
+	        .filter(function (r) { return _cache[r[3]] !== false; });  // skip tiles which have failed in the past
+	    }
+
+	    var image = selection.selectAll('img')
+	      .data(requests, function (d) { return d[3]; });
+
+	    image.exit()
+	      .style('transform', imageTransform)
+	      .classed('tile-removing', true)
+	      .each(function (d, i, nodes) {
+	        var tile = d3.select(nodes[i]);
+	        window.setTimeout(function () {
+	          if (tile.classed('tile-removing')) {
+	            tile.remove();
+	          }
+	        }, 300);
+	      });
+
+	    image.enter()
+	      .append('img')
+	        .attr('class', 'tile')
+	        .style('width', (_tileSize + "px"))
+	        .style('height', (_tileSize + "px"))
+	        .attr('src', function (d) { return d[3]; })
+	        .on('error', error)
+	        .on('load', load)
+	      .merge(image)
+	        .style('transform', imageTransform)
+	        .classed('tile-removing', false);
+
+
+	    function load(d, i, nodes) {
+	      _cache[d[3]] = true;
+	      d3.select(nodes[i])
+	        .on('error', null)
+	        .on('load', null)
+	        .classed('tile-loaded', true);
+	      render(selection);
+	    }
+
+	    function error(d, i, nodes) {
+	      _cache[d[3]] = false;
+	      d3.select(nodes[i])
+	        .on('error', null)
+	        .on('load', null)
+	        .remove();
+	      render(selection);
+	    }
+
+	    function imageTransform(d) {
+	      var ts = _tileSize * Math.pow(2, _zoom - d[2]);
+	      var scale = tileSizeAtZoom(d, _zoom);
+	      return 'translate(' +
+	        ((d[0] * ts) - _tileOrigin[0]) + 'px,' +
+	        ((d[1] * ts) - _tileOrigin[1]) + 'px) ' +
+	        'scale(' + scale + ',' + scale + ')';
+	    }
+	  }
+
+
+	  tilelayer.projection = function(val) {
+	    if (!arguments.length) { return _projection; }
+	    _projection = val;
+	    return tilelayer;
+	  };
+
+
+	  tilelayer.dimensions = function(val) {
+	    if (!arguments.length) { return tiler.size(); }
+	    tiler.size(val);
+	    return tilelayer;
+	  };
+
+
+	  tilelayer.source = function(val) {
+	    if (!arguments.length) { return _source; }
+	    _source = val;
+	    _tileSize = _source.tileSize;
+	    _cache = {};
+	    tiler.tileSize(_source.tileSize).zoomExtent(_source.zoomExtent);
+	    return tilelayer;
+	  };
+
+	  return tilelayer;
+	}
+
 	exports.LocationConflation = defaultExport;
+	exports.TileLayer = TileLayer;
 
 	return exports;
 
-}({}));
+}({}, d3, d3, d3, d3, d3, null));

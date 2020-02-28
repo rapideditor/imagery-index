@@ -7,6 +7,7 @@
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
 <script defer src='https://kit.fontawesome.com/c772610440.js' crossorigin='anonymous'></script>
 <script defer src='https://cdn.jsdelivr.net/npm/json5@2.1/dist/index.min.js'></script>
+<script defer src='https://d3js.org/d3.v5.min.js'></script>
 <script defer src='bundle.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet'/>
 <link href='style.css' rel='stylesheet' type='text/css'/>
@@ -91,8 +92,10 @@
       </div>
     </div>
 
-    <div id='map'>
-     <div id='attribution' class='mapboxgl-ctrl mapboxgl-ctrl-attrib mapboxgl-ctrl-bottom-right'></div>
+    <div id='maps'>
+      <div id='basemap'></div>
+      <svg id='tilelayer'></svg>
+      <div id='attribution' class='mapboxgl-ctrl mapboxgl-ctrl-attrib mapboxgl-ctrl-bottom-right'></div>
     </div>
 
   </div>
@@ -102,7 +105,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoibWlrZWxtYXJvbiIsImEiOiJjaWZlY25lZGQ2cTJjc2trbmdiZDdjYjllIn0.Wx1n0X7aeCQyDTnK6_mrGw';
 var map = new mapboxgl.Map({
   attributionControl: false,
-  container: 'map',
+  container: 'basemap',
   style: 'mapbox://styles/mapbox/dark-v10',
   center: [0,0],
   zoom: 1,
@@ -148,9 +151,14 @@ var _currZoom = 1;
 var _eliReset = true;
 var _locoReset = true;
 var _loco;
+var _tilelayer;
+var _projection;
 
 window.addEventListener('DOMContentLoaded', function(e) {
   _loco = new bundle.LocationConflation();
+  _projection = d3.geoMercator();
+  _tileLayer = bundle.TileLayer().projection(_projection);
+  d3.select('#tilelayer').call(_tileLayer);
 });
 
 // wait for map to load before adjusting it

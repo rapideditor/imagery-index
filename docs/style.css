@@ -116,11 +116,27 @@ a.mapboxgl-ctrl-logo {
   right: 0;
 }
 
+#maps {
+  position: relative;
+}
+
+#basemap, #tilelayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#basemap   { z-index: 1; }
+#tilelayer { z-index: 2; pointer-events: none; }
+
 #attribution {
   position: fixed;
   bottom: 0;
   right: 0;
   background-color: rgba(32,32,32,0.6);
+  z-index: 3;
 }
 
 #side {
