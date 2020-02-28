@@ -9,7 +9,7 @@
   "license_url": "http://www.dgterritorio.pt/dados_abertos/ortofotos/",
   "start_date": "2014",
   "end_date": "2015",
+  "icon": "http://www.igeo.pt/favicon.ico",
   "available_projections": ["EPSG:3763", "EPSG:3857", "EPSG:4258", "EPSG:4326"],
-  "attribution": {"text": "Direcção-Geral do Território", "url": "http://www.dgterritorio.pt/"},
-  "icon": "http://www.igeo.pt/favicon.ico"
+  "attribution": {"url": "http://www.dgterritorio.pt/", "text": "Direcção-Geral do Território"}
 }

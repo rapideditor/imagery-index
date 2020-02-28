@@ -7,6 +7,6 @@
   "url": "https://tiles.skoterleder.org/tiles/{zoom}/{x}/{y}.png",
   "min_zoom": 5,
   "max_zoom": 14,
-  "attribution": {"text": "© Skoterleder.org", "url": "https://skoterleder.org/"},
-  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Sweden_road_sign_D9.svg/200px-Sweden_road_sign_D9.svg.png"
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Sweden_road_sign_D9.svg/200px-Sweden_road_sign_D9.svg.png",
+  "attribution": {"url": "https://skoterleder.org/", "text": "© Skoterleder.org"}
 }

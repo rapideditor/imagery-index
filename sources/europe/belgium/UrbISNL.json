@@ -7,10 +7,10 @@
   "category": "map",
   "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
   "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
-  "available_projections": ["EPSG:31370", "EPSG:3857", "EPSG:4326"],
+  "icon": "UrbIS.png",
+  "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
   "attribution": {
     "required": true,
     "text": "Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB"
-  },
-  "icon": "UrbIS.png"
+  }
 }

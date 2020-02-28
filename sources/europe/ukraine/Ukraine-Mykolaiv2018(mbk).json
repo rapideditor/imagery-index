@@ -13,9 +13,9 @@
   "best": true,
   "start_date": "2018",
   "end_date": "2018",
+  "icon": "https://mkrada.gov.ua/favicon.ico",
   "attribution": {
-    "text": "Map data: © Геоінформаційна система містобудівного кадастру Миколаївської міської ради",
-    "required": true
-  },
-  "icon": "https://mkrada.gov.ua/favicon.ico"
+    "required": true,
+    "text": "Map data: © Геоінформаційна система містобудівного кадастру Миколаївської міської ради"
+  }
 }

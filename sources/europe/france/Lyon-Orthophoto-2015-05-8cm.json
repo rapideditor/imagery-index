@@ -11,8 +11,8 @@
   "start_date": "2015-05",
   "end_date": "2018",
   "attribution": {
+    "required": true,
     "url": "https://data.grandlyon.com/imagerie/orthophotographie-2015-du-grand-lyon/",
-    "text": "Métropole de Lyon DINSI",
-    "required": true
+    "text": "Métropole de Lyon DINSI"
   }
 }

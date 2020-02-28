@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1861",
   "end_date": "1862",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Kirriemuir 1861",
-    "url": "https://maps.nls.uk/townplans/kirriemuir.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/kirriemuir.html",
+    "text": "National Library of Scotland - Kirriemuir 1861"
+  }
 }

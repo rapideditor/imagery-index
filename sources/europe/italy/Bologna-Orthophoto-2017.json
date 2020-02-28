@@ -10,8 +10,8 @@
   "start_date": "2017",
   "end_date": "2017",
   "attribution": {
+    "required": true,
     "url": "http://dati.comune.bologna.it/node/3449",
-    "text": "© Comune di Bologna cc-by 4.0 ODbL compliant",
-    "required": true
+    "text": "© Comune di Bologna cc-by 4.0 ODbL compliant"
   }
 }

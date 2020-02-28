@@ -6,10 +6,10 @@
   "category": "other",
   "max_zoom": 17,
   "overlay": true,
+  "icon": "https://static.waymarkedtrails.org/img/map_mtb.png",
   "attribution": {
+    "required": true,
     "url": "https://mtb.waymarkedtrails.org/en/help/legal",
-    "text": "© waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0",
-    "required": true
-  },
-  "icon": "https://static.waymarkedtrails.org/img/map_mtb.png"
+    "text": "© waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0"
+  }
 }

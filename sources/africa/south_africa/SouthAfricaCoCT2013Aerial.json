@@ -10,8 +10,8 @@
   "start_date": "2013",
   "end_date": "2015",
   "attribution": {
+    "required": true,
     "url": "https://www.capetown.gov.za",
-    "text": "City of Cape Town Aerial - OPENSTREETMAP USE ONLY",
-    "required": true
+    "text": "City of Cape Town Aerial - OPENSTREETMAP USE ONLY"
   }
 }

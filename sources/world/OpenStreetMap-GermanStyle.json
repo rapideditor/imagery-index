@@ -5,10 +5,9 @@
   "url": "https://{switch:a,b,c,d}.tile.openstreetmap.de/tiles/osmde/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",
   "max_zoom": 18,
+  "icon": "OpenStreetMap.png",
   "attribution": {
-    "required": false,
-    "text": "© OpenStreetMap contributors, CC-BY-SA",
-    "url": "https://www.openstreetmap.org"
-  },
-  "icon": "OpenStreetMap.png"
+    "url": "https://www.openstreetmap.org",
+    "text": "© OpenStreetMap contributors, CC-BY-SA"
+  }
 }

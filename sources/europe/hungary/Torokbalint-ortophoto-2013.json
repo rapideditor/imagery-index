@@ -8,6 +8,6 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k#T.C3.B6r.C3.B6kb.C3.A1lint",
   "start_date": "2013-09",
   "end_date": "2013-09",
-  "available_projections": ["EPSG:23700", "EPSG:3857", "EPSG:4326"],
-  "attribution": {"url": "http://www.torokbalint.hu", "text": "Törökbálint", "required": true}
+  "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:23700"],
+  "attribution": {"required": true, "url": "http://www.torokbalint.hu", "text": "Törökbálint"}
 }

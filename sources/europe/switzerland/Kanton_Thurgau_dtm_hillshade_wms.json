@@ -11,10 +11,10 @@
   "privacy_policy_url": "https://geoinformation.tg.ch/thurgis/thurgis-disclaimer.html/7128",
   "start_date": "2014",
   "end_date": "2014",
-  "available_projections": ["EPSG:2056", "EPSG:21781", "EPSG:3857", "EPSG:4326"],
+  "available_projections": ["EPSG:2056", "EPSG:3857", "EPSG:4326", "EPSG:21781"],
   "attribution": {
+    "required": true,
     "url": "https://opendata.swiss/dataset/reliefschattierung",
-    "text": "Kanton Thurgau, DTM Relief 2014",
-    "required": true
+    "text": "Kanton Thurgau, DTM Relief 2014"
   }
 }

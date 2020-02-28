@@ -9,5 +9,5 @@
   "start_date": "2011",
   "end_date": "2011",
   "available_projections": ["EPSG:3857", "EPSG:4326"],
-  "attribution": {"text": "© Stadt Erlangen | © Aerowest GmbH", "required": true}
+  "attribution": {"required": true, "text": "© Stadt Erlangen | © Aerowest GmbH"}
 }

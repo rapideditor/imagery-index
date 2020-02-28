@@ -11,7 +11,7 @@
   "start_date": "2019-04-01",
   "end_date": "2019-04-06",
   "attribution": {
-    "text": "Geoportal Berlin/Digitale farbige Orthophotos 2019 (DOP20RGB)",
-    "required": true
+    "required": true,
+    "text": "Geoportal Berlin/Digitale farbige Orthophotos 2019 (DOP20RGB)"
   }
 }

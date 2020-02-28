@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1848",
   "end_date": "1849",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Wigtown 1848",
-    "url": "https://maps.nls.uk/townplans/wigtown_1.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/wigtown_1.html",
+    "text": "National Library of Scotland - Wigtown 1848"
+  }
 }

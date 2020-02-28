@@ -10,6 +10,6 @@
   "permission_osm": "explicit",
   "license_url": "https://basemap.at/#sec-nutzung",
   "best": true,
-  "attribution": {"url": "https://basemap.at", "text": "basemap.at", "required": true},
-  "icon": "https://www.basemap.at/images/logo_basemap.jpg"
+  "icon": "https://www.basemap.at/images/logo_basemap.jpg",
+  "attribution": {"required": true, "url": "https://basemap.at", "text": "basemap.at"}
 }

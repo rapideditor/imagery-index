@@ -9,8 +9,8 @@
   "start_date": "2013",
   "end_date": "2013",
   "attribution": {
+    "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/Tours/Orthophoto",
-    "text": "Orthophoto Tour(s)plus 2013",
-    "required": true
+    "text": "Orthophoto Tour(s)plus 2013"
   }
 }

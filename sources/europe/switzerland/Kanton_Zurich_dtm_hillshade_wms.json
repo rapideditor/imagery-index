@@ -11,16 +11,15 @@
   "end_date": "2014",
   "available_projections": [
     "EPSG:2056",
+    "EPSG:3857",
+    "EPSG:4258",
+    "EPSG:4326",
     "EPSG:21780",
     "EPSG:21781",
     "EPSG:21782",
-    "EPSG:31297",
-    "EPSG:3857",
-    "EPSG:4258",
-    "EPSG:4326"
+    "EPSG:31297"
   ],
   "attribution": {
-    "text": "Geographisches Informationssystem des Kantons Zürich (GIS-ZH), Terrainschummerung",
-    "required": false
+    "text": "Geographisches Informationssystem des Kantons Zürich (GIS-ZH), Terrainschummerung"
   }
 }

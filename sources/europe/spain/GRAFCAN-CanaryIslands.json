@@ -6,10 +6,10 @@
   "description": "High resolution imagery covering the Canary Islands, 12.5 or 10 cm/pixel in urban areas, and 20 cm/pixel elsewhere. Older in some urban areas than the lower-resolution \"GRAFCAN OrtoExpress\".",
   "url": "https://idecan1.grafcan.es/ServicioWMS/OrtoUrb?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OU&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "best": true,
-  "available_projections": ["EPSG:32627", "EPSG:32628", "EPSG:4326"],
+  "available_projections": ["EPSG:4326", "EPSG:32627", "EPSG:32628"],
   "attribution": {
-    "text": "GRAFCAN OrtoExpress Urbana",
+    "required": true,
     "url": "https://catalogo.idecanarias.es/geonetwork/srv/spa/catalog.search#/metadata/spagrafcan_ORTOURBANAWMS_20160101",
-    "required": true
+    "text": "GRAFCAN OrtoExpress Urbana"
   }
 }

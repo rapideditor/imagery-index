@@ -5,7 +5,7 @@
   "name": "Powiat ropczycko-sędziszowski: Buildings",
   "url": "https://spropczyce.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 19,
+  "icon": "Powiat.png",
   "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
-  "attribution": {"text": "Powiat ropczycko-sędziszowski"},
-  "icon": "Powiat.png"
+  "attribution": {"text": "Powiat ropczycko-sędziszowski"}
 }

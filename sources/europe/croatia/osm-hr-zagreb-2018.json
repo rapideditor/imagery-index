@@ -11,10 +11,10 @@
   "best": true,
   "start_date": "2018",
   "end_date": "2018",
+  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/osm-hr.png",
   "attribution": {
     "required": true,
-    "text": "Grad Zagreb, Gradski ured za strategijsko planiranje i razvoj Grada",
-    "url": "https://geoportal.zagreb.hr/"
-  },
-  "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/osm-hr.png"
+    "url": "https://geoportal.zagreb.hr/",
+    "text": "Grad Zagreb, Gradski ured za strategijsko planiranje i razvoj Grada"
+  }
 }

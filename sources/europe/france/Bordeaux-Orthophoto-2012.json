@@ -8,5 +8,5 @@
   "license_url": "https://openstreetmap.fr/outils",
   "start_date": "2012",
   "end_date": "2012",
-  "attribution": {"text": "Communauté urbaine de Bordeaux - 2012", "required": true}
+  "attribution": {"required": true, "text": "Communauté urbaine de Bordeaux - 2012"}
 }

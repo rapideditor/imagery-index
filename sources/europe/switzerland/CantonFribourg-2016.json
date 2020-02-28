@@ -12,5 +12,5 @@
   "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
   "start_date": "2016",
   "end_date": "2016",
-  "attribution": {"text": "Canton Fribourg 2016 'orthophoto technique'", "required": true}
+  "attribution": {"required": true, "text": "Canton Fribourg 2016 'orthophoto technique'"}
 }

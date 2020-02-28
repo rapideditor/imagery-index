@@ -7,6 +7,6 @@
   "category": "osmbasedmap",
   "max_zoom": 20,
   "overlay": true,
-  "attribution": {"text": "© OpenRailwayMap.org", "url": "https://www.openrailwaymap.org/"},
-  "icon": "https://www.openrailwaymap.org/img/openrailwaymap-64.png"
+  "icon": "https://www.openrailwaymap.org/img/openrailwaymap-64.png",
+  "attribution": {"url": "https://www.openrailwaymap.org/", "text": "© OpenRailwayMap.org"}
 }

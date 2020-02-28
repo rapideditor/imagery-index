@@ -9,8 +9,7 @@
   "start_date": "2006",
   "end_date": "2011",
   "attribution": {
-    "text": "AGRI, Geoscience Australia",
     "url": "https://data.gov.au/dataset/agri-the-australian-geographic-reference-image",
-    "required": false
+    "text": "AGRI, Geoscience Australia"
   }
 }

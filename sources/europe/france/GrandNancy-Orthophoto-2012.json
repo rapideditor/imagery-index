@@ -9,8 +9,8 @@
   "start_date": "2012",
   "end_date": "2012",
   "attribution": {
+    "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/Nancy/Orthophotographie",
-    "text": "GrandNancy Orthophotographie 2012",
-    "required": true
+    "text": "GrandNancy Orthophotographie 2012"
   }
 }

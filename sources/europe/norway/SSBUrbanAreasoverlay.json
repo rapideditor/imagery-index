@@ -8,7 +8,10 @@
   "max_zoom": 22,
   "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006345.html",
   "overlay": true,
+  "icon": "https://www.fosterhjemsforening.no/wp-content/uploads/2015/06/SSB_logo1.png",
   "available_projections": [
+    "EPSG:3857",
+    "EPSG:4326",
     "EPSG:25829",
     "EPSG:25830",
     "EPSG:25831",
@@ -22,10 +25,7 @@
     "EPSG:32633",
     "EPSG:32634",
     "EPSG:32635",
-    "EPSG:32636",
-    "EPSG:3857",
-    "EPSG:4326"
+    "EPSG:32636"
   ],
-  "attribution": {"text": "© SSB", "url": "https://www.ssb.no/beftett"},
-  "icon": "https://www.fosterhjemsforening.no/wp-content/uploads/2015/06/SSB_logo1.png"
+  "attribution": {"url": "https://www.ssb.no/beftett", "text": "© SSB"}
 }

@@ -14,7 +14,6 @@
   "available_projections": ["EPSG:3753", "EPSG:4326"],
   "attribution": {
     "url": "https://ogrip.oit.ohio.gov/ProjectsInitiatives/StatewideImagery.aspx",
-    "text": "Ohio Statewide Imagery Program",
-    "required": false
+    "text": "Ohio Statewide Imagery Program"
   }
 }

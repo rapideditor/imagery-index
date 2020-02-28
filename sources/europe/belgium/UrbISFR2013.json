@@ -8,10 +8,10 @@
   "license_url": "https://bric.brussels/en/our-solutions/urbis-solutions/Licence_Open_data_Fr_v4.pdf",
   "start_date": "2013",
   "end_date": "2013",
+  "icon": "UrbIS.png",
   "available_projections": ["EPSG:3857"],
   "attribution": {
     "required": true,
     "text": "Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB"
-  },
-  "icon": "UrbIS.png"
+  }
 }

@@ -13,8 +13,8 @@
   "start_date": "2018-01-20",
   "end_date": "2019-10-18",
   "attribution": {
+    "required": true,
     "url": "https://www.digitalglobe.com/ecosystem/open-data/australia-wildfires",
-    "text": "©2020 DigitalGlobe",
-    "required": true
+    "text": "©2020 DigitalGlobe"
   }
 }

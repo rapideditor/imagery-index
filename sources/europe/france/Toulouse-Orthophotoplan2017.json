@@ -11,8 +11,8 @@
   "end_date": "2017",
   "available_projections": ["EPSG:3857", "EPSG:3943"],
   "attribution": {
+    "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/Toulouse/ToulouseMetropoleData",
-    "text": "ToulouseMetropole",
-    "required": true
+    "text": "ToulouseMetropole"
   }
 }

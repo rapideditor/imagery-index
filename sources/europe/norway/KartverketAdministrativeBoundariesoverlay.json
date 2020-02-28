@@ -8,7 +8,11 @@
   "max_zoom": 22,
   "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
   "overlay": true,
+  "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
   "available_projections": [
+    "EPSG:3034",
+    "EPSG:3857",
+    "EPSG:4326",
     "EPSG:25829",
     "EPSG:25830",
     "EPSG:25831",
@@ -25,19 +29,12 @@
     "EPSG:27396",
     "EPSG:27397",
     "EPSG:27398",
-    "EPSG:3034",
     "EPSG:32631",
     "EPSG:32632",
     "EPSG:32633",
     "EPSG:32634",
     "EPSG:32635",
-    "EPSG:32636",
-    "EPSG:3857",
-    "EPSG:4326"
+    "EPSG:32636"
   ],
-  "attribution": {
-    "text": "© Kartverket",
-    "url": "https://www.kartverket.no/data/Kartdata/Grenser/"
-  },
-  "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png"
+  "attribution": {"url": "https://www.kartverket.no/data/Kartdata/Grenser/", "text": "© Kartverket"}
 }

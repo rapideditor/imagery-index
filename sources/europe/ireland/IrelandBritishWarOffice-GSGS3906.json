@@ -5,10 +5,10 @@
   "name": "Ireland British War Office 1:25k GSGS 3906",
   "url": "https://mapwarper.net/layers/tile/101/{zoom}/{x}/{y}.png",
   "max_zoom": 18,
+  "icon": "IrelandBritishWarOffice.png",
   "attribution": {
     "required": true,
-    "text": "Glucksman Map Library, Trinity College Dublin",
-    "url": "https://wiki.openstreetmap.org/wiki/Ireland/Background_Imagery#Trinity_College_Dublin"
-  },
-  "icon": "IrelandBritishWarOffice.png"
+    "url": "https://wiki.openstreetmap.org/wiki/Ireland/Background_Imagery#Trinity_College_Dublin",
+    "text": "Glucksman Map Library, Trinity College Dublin"
+  }
 }

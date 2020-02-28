@@ -9,10 +9,10 @@
   "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
   "start_date": "2012",
   "end_date": "2012",
+  "icon": "UrbIS.png",
   "available_projections": ["EPSG:3857"],
   "attribution": {
     "required": true,
     "text": "Realized by means of Brussels UrbIS®© - Distribution & Copyright CIRB"
-  },
-  "icon": "UrbIS.png"
+  }
 }

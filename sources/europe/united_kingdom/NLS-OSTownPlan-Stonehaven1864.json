@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1864",
   "end_date": "1865",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Stonehaven 1864",
-    "url": "https://maps.nls.uk/townplans/stonehaven.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/stonehaven.html",
+    "text": "National Library of Scotland - Stonehaven 1864"
+  }
 }

@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1852",
   "end_date": "1853",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Dalkeith 1852",
-    "url": "https://maps.nls.uk/townplans/dalkeith_1.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/dalkeith_1.html",
+    "text": "National Library of Scotland - Dalkeith 1852"
+  }
 }

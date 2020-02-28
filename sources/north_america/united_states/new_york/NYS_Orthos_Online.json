@@ -8,11 +8,10 @@
   "max_zoom": 19,
   "start_date": "2013",
   "end_date": "2018",
-  "available_projections": ["EPSG:120100", "EPSG:3857", "EPSG:4326"],
+  "icon": "NewYorkState.png",
+  "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:120100"],
   "attribution": {
-    "required": false,
-    "text": "New York State Statewide Digital Orthoimagery Program",
-    "url": "https://gis.ny.gov/gateway/orthoprogram/index.cfm"
-  },
-  "icon": "NewYorkState.png"
+    "url": "https://gis.ny.gov/gateway/orthoprogram/index.cfm",
+    "text": "New York State Statewide Digital Orthoimagery Program"
+  }
 }

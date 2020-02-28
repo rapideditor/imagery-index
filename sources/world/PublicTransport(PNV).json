@@ -5,10 +5,10 @@
   "url": "https://tile.memomaps.de/tilegen/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",
   "max_zoom": 18,
+  "icon": "PNV.png",
   "attribution": {
     "required": true,
-    "text": "© OpenStreetMap contributors, CC-BY-SA",
-    "url": "https://öpnvkarte.de/"
-  },
-  "icon": "PNV.png"
+    "url": "https://öpnvkarte.de/",
+    "text": "© OpenStreetMap contributors, CC-BY-SA"
+  }
 }

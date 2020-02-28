@@ -8,6 +8,6 @@
   "min_zoom": 3,
   "max_zoom": 20,
   "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
-  "attribution": {"text": "© Kartverket", "url": "https://www.kartverket.no/Kart/Sjokart/"},
-  "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png"
+  "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+  "attribution": {"url": "https://www.kartverket.no/Kart/Sjokart/", "text": "© Kartverket"}
 }

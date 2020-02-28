@@ -8,10 +8,10 @@
   "max_zoom": 19,
   "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=630995#p630995",
   "best": true,
+  "icon": "beeldmateriaal.png",
   "attribution": {
     "required": true,
-    "text": "Kadaster / Beeldmateriaal.nl, CC BY 4.0",
-    "url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search?facet.q=license%2FCC-BY&isChild=%27false%27&resultType=details&any_OR_title_OR_keyword=luchtfoto&fast=index&_content_type=json&from=1&to=20&sortBy=relevance"
-  },
-  "icon": "beeldmateriaal.png"
+    "url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search?facet.q=license%2FCC-BY&isChild=%27false%27&resultType=details&any_OR_title_OR_keyword=luchtfoto&fast=index&_content_type=json&from=1&to=20&sortBy=relevance",
+    "text": "Kadaster / Beeldmateriaal.nl, CC BY 4.0"
+  }
 }

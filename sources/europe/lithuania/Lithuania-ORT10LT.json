@@ -9,5 +9,5 @@
   "best": true,
   "start_date": "2010",
   "end_date": "2016",
-  "attribution": {"url": "https://www.geoportal.lt", "text": "NŽT ORT10LT", "required": true}
+  "attribution": {"required": true, "url": "https://www.geoportal.lt", "text": "NŽT ORT10LT"}
 }

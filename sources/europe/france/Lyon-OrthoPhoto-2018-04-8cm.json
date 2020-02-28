@@ -12,8 +12,8 @@
   "start_date": "2018-04-17",
   "end_date": "2018-04-20",
   "attribution": {
+    "required": true,
     "url": "https://data.grandlyon.com/imagerie/orthophotographie-2015-du-grand-lyon/",
-    "text": "Métropole de Lyon",
-    "required": true
+    "text": "Métropole de Lyon"
   }
 }

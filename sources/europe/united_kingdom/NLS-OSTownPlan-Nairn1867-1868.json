@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1867",
   "end_date": "1869",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Nairn 1867-1868",
-    "url": "https://maps.nls.uk/townplans/nairn.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/nairn.html",
+    "text": "National Library of Scotland - Nairn 1867-1868"
+  }
 }

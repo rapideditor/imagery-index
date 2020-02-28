@@ -9,10 +9,10 @@
   "permission_osm": "explicit",
   "license_url": "https://wiki.openstreetmap.org/wiki/Vertical_Aerial_Photographs#DigitalGlobe_.2F_MapBox",
   "privacy_policy_url": "https://www.mapbox.com/legal/privacy/",
+  "icon": "Mapbox.png",
   "attribution": {
     "required": true,
-    "text": "Terms & Feedback",
-    "url": "https://www.mapbox.com/about/maps"
-  },
-  "icon": "Mapbox.png"
+    "url": "https://www.mapbox.com/about/maps",
+    "text": "Terms & Feedback"
+  }
 }

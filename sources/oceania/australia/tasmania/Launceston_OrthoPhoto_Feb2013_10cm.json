@@ -10,6 +10,6 @@
   "license_url": "https://osmlab.github.io/editor-layer-index/sources/australia/au/tas/Launceston_OrthoPhoto.pdf",
   "start_date": "2013-02-15",
   "end_date": "2013-02-15",
-  "attribution": {"text": "© City of Launceston", "required": true},
-  "icon": "https://www.launceston.tas.gov.au/files/assets/public/templateimages/favicons/favicon-196x196.png"
+  "icon": "https://www.launceston.tas.gov.au/files/assets/public/templateimages/favicons/favicon-196x196.png",
+  "attribution": {"required": true, "text": "© City of Launceston"}
 }

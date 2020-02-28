@@ -7,6 +7,6 @@
   "category": "map",
   "max_zoom": 21,
   "license_url": "https://www.agiv.be/~/media/agiv/producten/grb/documenten/grb%20open%20data%20licentie.pdf",
-  "attribution": {"required": true, "text": "© agentschap Informatie Vlaanderen"},
-  "icon": "AIV.png"
+  "icon": "AIV.png",
+  "attribution": {"required": true, "text": "© agentschap Informatie Vlaanderen"}
 }

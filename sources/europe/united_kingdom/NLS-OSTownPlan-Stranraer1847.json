@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1847",
   "end_date": "1848",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Stranraer 1847",
-    "url": "https://maps.nls.uk/townplans/stranraer_1.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/stranraer_1.html",
+    "text": "National Library of Scotland - Stranraer 1847"
+  }
 }

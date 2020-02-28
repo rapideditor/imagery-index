@@ -6,6 +6,6 @@
   "url": "https://geoservices.wallonie.be/arcgis/services/TOPOGRAPHIE/PICC_VDIFF/MapServer/WmsServer?SERVICE=WMS&VERSION=1.1.1&FORMAT=image/png8&TRANSPARENT=FALSE&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&LAYERS=0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
   "category": "map",
   "license_url": "https://wiki.openstreetmap.org/wiki/File:OSM_license_for_SPW_WMS_usage.pdf",
-  "available_projections": ["EPSG:31370", "EPSG:3857", "EPSG:4258", "EPSG:4326"],
-  "icon": "SPW.png"
+  "icon": "SPW.png",
+  "available_projections": ["EPSG:3857", "EPSG:4258", "EPSG:4326", "EPSG:31370"]
 }

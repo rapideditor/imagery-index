@@ -6,10 +6,10 @@
   "category": "osmbasedmap",
   "max_zoom": 18,
   "overlay": true,
+  "icon": "OpenSeaMap.png",
   "attribution": {
     "required": true,
-    "text": "© OpenStreetMap contributors, CC-BY-SA",
-    "url": "https://www.openstreetmap.org/copyright"
-  },
-  "icon": "OpenSeaMap.png"
+    "url": "https://www.openstreetmap.org/copyright",
+    "text": "© OpenStreetMap contributors, CC-BY-SA"
+  }
 }

@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1858",
   "end_date": "1859",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Coatbridge 1858",
-    "url": "https://maps.nls.uk/townplans/coatbridge.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/coatbridge.html",
+    "text": "National Library of Scotland - Coatbridge 1858"
+  }
 }

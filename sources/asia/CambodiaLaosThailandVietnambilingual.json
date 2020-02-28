@@ -5,8 +5,8 @@
   "url": "https://{switch:a,b,c,d}.tile.osm-tools.org/osm/{zoom}/{x}/{y}.png",
   "max_zoom": 20,
   "attribution": {
+    "required": true,
     "url": "http://www.osm-tools.org",
-    "text": "© osm-tools.org & OpenStreetMap contributors, CC-BY-SA",
-    "required": true
+    "text": "© osm-tools.org & OpenStreetMap contributors, CC-BY-SA"
   }
 }

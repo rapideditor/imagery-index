@@ -7,6 +7,6 @@
   "category": "osmbasedmap",
   "max_zoom": 18,
   "overlay": true,
-  "attribution": {"text": "© OpenSnowMap.org", "url": "https://www.opensnowmap.org/"},
-  "icon": "https://www.opensnowmap.org/pics/alpine.png"
+  "icon": "https://www.opensnowmap.org/pics/alpine.png",
+  "attribution": {"url": "https://www.opensnowmap.org/", "text": "© OpenSnowMap.org"}
 }

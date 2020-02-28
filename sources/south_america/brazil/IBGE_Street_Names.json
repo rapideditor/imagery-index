@@ -8,6 +8,6 @@
   "max_zoom": 22,
   "license_url": "https://wiki.openstreetmap.org/wiki/IBGE_Street_Names",
   "overlay": true,
-  "attribution": {"text": "IBGE, OSM Brasil"},
-  "icon": "IBGE.png"
+  "icon": "IBGE.png",
+  "attribution": {"text": "IBGE, OSM Brasil"}
 }

@@ -9,7 +9,7 @@
   "license_url": "https://osmlab.github.io/editor-layer-index/sources/north-america/us/co/Mesa_County_Data.pdf",
   "start_date": "2015",
   "end_date": "2015",
+  "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png",
   "available_projections": ["CRS:84", "EPSG:3742", "EPSG:4326"],
-  "attribution": {"url": "https://gis.mesacounty.us/", "text": "Mesa County GIS", "required": true},
-  "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png"
+  "attribution": {"required": true, "url": "https://gis.mesacounty.us/", "text": "Mesa County GIS"}
 }

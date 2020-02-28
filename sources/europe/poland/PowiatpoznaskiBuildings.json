@@ -4,7 +4,7 @@
   "locationSet": {"include": ["pl"]},
   "name": "Powiat poznański: Buildings",
   "url": "http://wms.podgik.poznan.pl/cgi-bin/poznan?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "icon": "PODGIK.png",
   "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:4326"],
-  "attribution": {"text": "PODGIK Poznań"},
-  "icon": "PODGIK.png"
+  "attribution": {"text": "PODGIK Poznań"}
 }

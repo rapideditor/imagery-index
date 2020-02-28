@@ -5,7 +5,7 @@
   "name": "Powiat poznański: Orthophotomap (aerial image)",
   "url": "http://wms.podgik.poznan.pl/cgi-bin/poznan?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto-poznan&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 23,
+  "icon": "PODGIK.png",
   "available_projections": ["EPSG:2177"],
-  "attribution": {"text": "PODGIK Poznań"},
-  "icon": "PODGIK.png"
+  "attribution": {"text": "PODGIK Poznań"}
 }

@@ -9,12 +9,12 @@
   "max_zoom": 18,
   "best": true,
   "available_projections": [
+    "EPSG:4258",
+    "EPSG:4326",
     "EPSG:25832",
     "EPSG:25833",
     "EPSG:31467",
-    "EPSG:31468",
-    "EPSG:4258",
-    "EPSG:4326"
+    "EPSG:31468"
   ],
-  "attribution": {"text": "Bayerische Vermessungsverwaltung", "url": "https://www.ldbv.bayern.de/"}
+  "attribution": {"url": "https://www.ldbv.bayern.de/", "text": "Bayerische Vermessungsverwaltung"}
 }

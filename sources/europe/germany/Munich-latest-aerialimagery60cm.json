@@ -9,11 +9,11 @@
   "license_url": "https://lists.openstreetmap.de/pipermail/bayern/2017-March/001345.html",
   "start_date": "2015",
   "end_date": "2015",
-  "available_projections": ["EPSG:31468", "EPSG:3857"],
+  "icon": "https://www.muenchen.de/media/css/images/favicon_114x114.png",
+  "available_projections": ["EPSG:3857", "EPSG:31468"],
   "attribution": {
+    "required": true,
     "url": "https://www.muenchen.de/rathaus/Stadtverwaltung/Kommunalreferat/geodatenservice.html",
-    "text": "Datenquelle: dl-de/by-2-0: Landeshauptstadt München – Kommunalreferat – GeodatenService – www.geodatenservice-muenchen.de",
-    "required": true
-  },
-  "icon": "https://www.muenchen.de/media/css/images/favicon_114x114.png"
+    "text": "Datenquelle: dl-de/by-2-0: Landeshauptstadt München – Kommunalreferat – GeodatenService – www.geodatenservice-muenchen.de"
+  }
 }

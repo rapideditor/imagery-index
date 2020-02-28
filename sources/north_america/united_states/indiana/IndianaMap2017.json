@@ -12,10 +12,9 @@
   "privacy_policy_url": "https://gis.iu.edu/privacy.php",
   "start_date": "2017",
   "end_date": "2017",
-  "available_projections": ["EPSG:26916", "EPSG:4326"],
+  "icon": "IU.gif",
+  "available_projections": ["EPSG:4326", "EPSG:26916"],
   "attribution": {
-    "text": "Indiana Office of Information Technology, Indiana University Spatial Data Portal, UITS, Woolpert Inc.",
-    "required": false
-  },
-  "icon": "IU.gif"
+    "text": "Indiana Office of Information Technology, Indiana University Spatial Data Portal, UITS, Woolpert Inc."
+  }
 }

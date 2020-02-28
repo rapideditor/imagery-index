@@ -9,8 +9,8 @@
   "end_date": "2014",
   "available_projections": ["EPSG:3857", "EPSG:4326"],
   "attribution": {
+    "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
-    "text": "Ortho Littorale V2 - MEDDE",
-    "required": true
+    "text": "Ortho Littorale V2 - MEDDE"
   }
 }

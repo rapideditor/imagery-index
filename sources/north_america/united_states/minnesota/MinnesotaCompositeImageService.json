@@ -10,11 +10,10 @@
   "privacy_policy_url": "https://www.co.dakota.mn.us/Policies/Pages/default.aspx",
   "start_date": "2008",
   "end_date": "2017",
+  "icon": "https://gisdata.mn.gov/agencyLogos/mnLogo.jpg",
   "available_projections": ["EPSG:26915"],
   "attribution": {
-    "required": false,
-    "text": "MnGeo",
-    "url": "https://www.mngeo.state.mn.us/chouse/wms/composite_image.html"
-  },
-  "icon": "https://gisdata.mn.gov/agencyLogos/mnLogo.jpg"
+    "url": "https://www.mngeo.state.mn.us/chouse/wms/composite_image.html",
+    "text": "MnGeo"
+  }
 }

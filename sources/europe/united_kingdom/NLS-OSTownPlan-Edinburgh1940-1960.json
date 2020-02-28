@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1940",
   "end_date": "1960",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Edinburgh 1940s-1960s",
-    "url": "https://maps.nls.uk/os/national-grid/index.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/os/national-grid/index.html",
+    "text": "National Library of Scotland - Edinburgh 1940s-1960s"
+  }
 }

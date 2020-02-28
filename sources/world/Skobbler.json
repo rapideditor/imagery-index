@@ -6,10 +6,10 @@
   "category": "osmbasedmap",
   "min_zoom": 1,
   "max_zoom": 18,
+  "icon": "https://www.skobbler.com/images/skobbler_logo_josm.png",
   "attribution": {
+    "required": true,
     "url": "https://maps.skobbler.com",
-    "text": "© Tiles: skobbler Map data: OpenStreetMap contributors",
-    "required": true
-  },
-  "icon": "https://www.skobbler.com/images/skobbler_logo_josm.png"
+    "text": "© Tiles: skobbler Map data: OpenStreetMap contributors"
+  }
 }

@@ -8,10 +8,10 @@
   "max_zoom": 22,
   "permission_osm": "explicit",
   "license_url": "https://github.com/osmlab/editor-layer-index/pull/358#issuecomment-361416110",
+  "icon": "Esri.png",
   "attribution": {
     "required": true,
-    "text": "Terms & Feedback",
-    "url": "https://wiki.openstreetmap.org/wiki/Esri"
-  },
-  "icon": "Esri.png"
+    "url": "https://wiki.openstreetmap.org/wiki/Esri",
+    "text": "Terms & Feedback"
+  }
 }

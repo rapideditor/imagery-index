@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1868",
   "end_date": "1869",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Forres 1868",
-    "url": "https://maps.nls.uk/townplans/forres.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/forres.html",
+    "text": "National Library of Scotland - Forres 1868"
+  }
 }

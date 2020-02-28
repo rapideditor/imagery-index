@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1856",
   "end_date": "1857",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Peebles 1856",
-    "url": "https://maps.nls.uk/townplans/peebles.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/peebles.html",
+    "text": "National Library of Scotland - Peebles 1856"
+  }
 }

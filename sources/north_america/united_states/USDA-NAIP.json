@@ -7,6 +7,6 @@
   "url": "https://gis.apfo.usda.gov/arcgis/services/NAIP/USDA_CONUS_PRIME/ImageServer/WMSServer?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "min_zoom": 12,
   "max_zoom": 20,
-  "available_projections": ["EPSG:3857", "EPSG:4326"],
-  "icon": "USDA.png"
+  "icon": "USDA.png",
+  "available_projections": ["EPSG:3857", "EPSG:4326"]
 }

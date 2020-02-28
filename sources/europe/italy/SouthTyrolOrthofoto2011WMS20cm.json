@@ -11,8 +11,8 @@
   "end_date": "2011",
   "available_projections": ["EPSG:3857"],
   "attribution": {
+    "required": true,
     "url": "https://geoservices.buergernetz.bz.it/geokatalog",
-    "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC-BY 3.0",
-    "required": true
+    "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC-BY 3.0"
   }
 }

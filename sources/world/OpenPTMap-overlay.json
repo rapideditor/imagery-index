@@ -7,10 +7,10 @@
   "min_zoom": 4,
   "max_zoom": 17,
   "overlay": true,
+  "icon": "http://openptmap.de/favicon_pt.png",
   "attribution": {
+    "required": true,
     "url": "http://openptmap.de",
-    "text": "© OpenStreetMap contributors, CC-BY-SA",
-    "required": true
-  },
-  "icon": "http://openptmap.de/favicon_pt.png"
+    "text": "© OpenStreetMap contributors, CC-BY-SA"
+  }
 }

@@ -6,9 +6,9 @@
   "url": "https://{switch:a,b,c,d}.freemap.sk/C/{zoom}/{x}/{y}.jpeg",
   "min_zoom": 8,
   "max_zoom": 16,
+  "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png",
   "attribution": {
-    "text": "Copyright ©2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.",
-    "required": true
-  },
-  "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png"
+    "required": true,
+    "text": "Copyright ©2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved."
+  }
 }

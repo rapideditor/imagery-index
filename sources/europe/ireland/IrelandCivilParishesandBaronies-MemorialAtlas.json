@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1901",
   "end_date": "1901",
+  "icon": "IrelandCivilParishesandBaronies.png",
   "attribution": {
     "required": true,
-    "text": "James Hardiman Library, NUIG",
-    "url": "https://library.nuigalway.ie/collections/archives/depositedcollections/digitisedarchives/"
-  },
-  "icon": "IrelandCivilParishesandBaronies.png"
+    "url": "https://library.nuigalway.ie/collections/archives/depositedcollections/digitisedarchives/",
+    "text": "James Hardiman Library, NUIG"
+  }
 }

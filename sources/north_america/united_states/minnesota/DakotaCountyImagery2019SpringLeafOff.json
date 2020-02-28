@@ -10,7 +10,7 @@
   "privacy_policy_url": "https://www.co.dakota.mn.us/Policies/Pages/default.aspx",
   "start_date": "2019",
   "end_date": "2019",
-  "available_projections": ["CRS:84", "EPSG:103726", "EPSG:26915", "EPSG:4326"],
-  "attribution": {"required": false, "text": "Dakota County GIS", "url": "https://dakotacounty.us"},
-  "icon": "https://www.co.dakota.mn.us//SiteAssets/DakotaCountyLogo_W.png"
+  "icon": "https://www.co.dakota.mn.us//SiteAssets/DakotaCountyLogo_W.png",
+  "available_projections": ["CRS:84", "EPSG:4326", "EPSG:26915", "EPSG:103726"],
+  "attribution": {"url": "https://dakotacounty.us", "text": "Dakota County GIS"}
 }

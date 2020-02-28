@@ -8,5 +8,5 @@
   "license_url": "https://www.data.gouv.fr/fr/datasets/photos-aeriennes-orthorectifiees-de-la-reserve-naturelle-des-hauts-plateaux-du-vercors/",
   "start_date": "1999",
   "end_date": "1999",
-  "attribution": {"text": "Parc Naturel Régional du Vercors", "required": true}
+  "attribution": {"required": true, "text": "Parc Naturel Régional du Vercors"}
 }

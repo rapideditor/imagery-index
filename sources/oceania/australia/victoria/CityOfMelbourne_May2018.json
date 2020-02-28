@@ -10,10 +10,10 @@
   "privacy_policy_url": "https://www.mapbox.com/legal/privacy/",
   "start_date": "2018-05",
   "end_date": "2018-05",
+  "icon": "https://www.melbourne.vic.gov.au/_catalogs/masterpage/android-icon.png",
   "attribution": {
+    "required": true,
     "url": "https://data.melbourne.vic.gov.au/Property-Planning/2018-Aerial-Imagery-True-Ortho-/qa5h-sfgh",
-    "text": "City of Melbourne",
-    "required": true
-  },
-  "icon": "https://www.melbourne.vic.gov.au/_catalogs/masterpage/android-icon.png"
+    "text": "City of Melbourne"
+  }
 }

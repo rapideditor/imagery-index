@@ -6,10 +6,10 @@
   "url": "https://geo.nls.uk/maps/os/scotland_2500_singles/{zoom}/{x}/{y}.png",
   "max_zoom": 18,
   "end_date": "1960",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland Historic Maps",
-    "url": "https://geo.nls.uk/maps"
-  },
-  "icon": "NLS.png"
+    "url": "https://geo.nls.uk/maps",
+    "text": "National Library of Scotland Historic Maps"
+  }
 }

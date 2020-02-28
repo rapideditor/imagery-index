@@ -9,9 +9,6 @@
   "privacy_policy_url": "https://www.so.ch/rechtliches/",
   "start_date": "2014",
   "end_date": "2014",
-  "available_projections": ["CRS:84", "EPSG:2056", "EPSG:21781", "EPSG:3857", "EPSG:4326"],
-  "attribution": {
-    "required": false,
-    "text": "DTM Relief 2014 - Auflösung 50cm, WMS Solothurn (SOGIS)"
-  }
+  "available_projections": ["CRS:84", "EPSG:2056", "EPSG:3857", "EPSG:4326", "EPSG:21781"],
+  "attribution": {"text": "DTM Relief 2014 - Auflösung 50cm, WMS Solothurn (SOGIS)"}
 }

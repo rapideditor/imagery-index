@@ -6,10 +6,10 @@
   "url": "https://map.cazzaserver.com/linz_topo/{zoom}/{x}/{y}.png",
   "max_zoom": 21,
   "license_url": "https://wiki.openstreetmap.org/wiki/Contributors#LINZ",
+  "icon": "https://koordinates.a.ssl.fastly.net/media/settings/branding/favicon-lds.ico",
   "attribution": {
+    "required": true,
     "url": "https://data.linz.govt.nz/layer/2343-nz-mainland-topo50-gridless-maps",
-    "text": "CC BY 4.0 Land Information New Zealand",
-    "required": true
-  },
-  "icon": "https://koordinates.a.ssl.fastly.net/media/settings/branding/favicon-lds.ico"
+    "text": "CC BY 4.0 Land Information New Zealand"
+  }
 }

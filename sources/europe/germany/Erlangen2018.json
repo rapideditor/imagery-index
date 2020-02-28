@@ -12,5 +12,5 @@
   "best": true,
   "start_date": "2018-04-09",
   "end_date": "2018-04-09",
-  "attribution": {"text": "© Stadt Erlangen | © Hansa Luftbild AG", "required": true}
+  "attribution": {"required": true, "text": "© Stadt Erlangen | © Hansa Luftbild AG"}
 }

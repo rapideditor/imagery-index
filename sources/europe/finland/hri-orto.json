@@ -8,11 +8,11 @@
   "max_zoom": 19,
   "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/HRI_permission_07082018.pdf",
   "best": true,
+  "icon": "HRI.png",
   "available_projections": ["EPSG:3857", "EPSG:3879", "EPSG:4326"],
   "attribution": {
     "required": true,
-    "text": "© Espoon, Helsingin ja Vantaan kaupungit, Kirkkonummen ja Nurmijärven kunnat sekä HSL ja HSY",
-    "url": "https://hri.fi/data/en_GB/dataset/paakaupunkiseudun-ortokuva-2017"
-  },
-  "icon": "HRI.png"
+    "url": "https://hri.fi/data/en_GB/dataset/paakaupunkiseudun-ortokuva-2017",
+    "text": "© Espoon, Helsingin ja Vantaan kaupungit, Kirkkonummen ja Nurmijärven kunnat sekä HSL ja HSY"
+  }
 }

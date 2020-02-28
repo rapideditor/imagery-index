@@ -9,11 +9,11 @@
   "license_url": "https://wiki.osmfoundation.org/wiki/Terms_of_Use",
   "privacy_policy_url": "https://wiki.osmfoundation.org/wiki/Privacy_Policy",
   "overlay": true,
+  "icon": "OpenStreetMap.png",
   "attribution": {
-    "html": "<span style='display: inline-block; padding: 0 8px; background-color: rgba(0,0,0,0.5);'><span style='color: #eee;'>GPS Direction:</span> <span style='font-size: 15px; padding-left: 2px; font-weight: bold;'> <span style='color: #0ee;'>&larr;</span> <span style='color: #96f;'>&darr;</span> <span style='color: #6e0;'>&uarr;</span> <span style='color: #f63;'>&rarr;</span> </span></span> © <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap contributors</a>.",
     "required": true,
+    "url": "https://www.openstreetmap.org/copyright",
     "text": "© OpenStreetMap contributors",
-    "url": "https://www.openstreetmap.org/copyright"
-  },
-  "icon": "OpenStreetMap.png"
+    "html": "<span style='display: inline-block; padding: 0 8px; background-color: rgba(0,0,0,0.5);'><span style='color: #eee;'>GPS Direction:</span> <span style='font-size: 15px; padding-left: 2px; font-weight: bold;'> <span style='color: #0ee;'>&larr;</span> <span style='color: #96f;'>&darr;</span> <span style='color: #6e0;'>&uarr;</span> <span style='color: #f63;'>&rarr;</span> </span></span> © <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap contributors</a>."
+  }
 }

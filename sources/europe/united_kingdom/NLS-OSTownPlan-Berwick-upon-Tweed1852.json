@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1852",
   "end_date": "1853",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Berwick-upon-Tweed 1852",
-    "url": "https://maps.nls.uk/townplans/berwick.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/berwick.html",
+    "text": "National Library of Scotland - Berwick-upon-Tweed 1852"
+  }
 }

@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1866",
   "end_date": "1868",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Aberdeen 1866-1867",
-    "url": "https://maps.nls.uk/townplans/aberdeen.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/aberdeen.html",
+    "text": "National Library of Scotland - Aberdeen 1866-1867"
+  }
 }

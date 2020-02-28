@@ -8,6 +8,6 @@
   "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=367583#p367583",
   "start_date": "2011",
   "end_date": "2011",
-  "available_projections": ["EPSG:25832", "EPSG:25833", "EPSG:3068", "EPSG:4258", "EPSG:4326"],
-  "attribution": {"text": "Geoportal Berlin/Digitale farbige Orthophotos 2011", "required": true}
+  "available_projections": ["EPSG:3068", "EPSG:4258", "EPSG:4326", "EPSG:25832", "EPSG:25833"],
+  "attribution": {"required": true, "text": "Geoportal Berlin/Digitale farbige Orthophotos 2011"}
 }

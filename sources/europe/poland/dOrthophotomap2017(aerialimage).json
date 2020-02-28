@@ -7,7 +7,7 @@
   "max_zoom": 22,
   "start_date": "2017",
   "end_date": "2017",
+  "icon": "lodz.png",
   "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:4326"],
-  "attribution": {"text": "Urząd Miasta Łodzi"},
-  "icon": "lodz.png"
+  "attribution": {"text": "Urząd Miasta Łodzi"}
 }

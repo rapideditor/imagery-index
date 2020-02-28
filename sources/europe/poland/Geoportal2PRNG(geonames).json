@@ -6,6 +6,7 @@
   "url": "http://mapy.geoportal.gov.pl/wss/service/pub/guest/G2_PRNG_WMS/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=PozostaleObiektyFizjograficzne,Hydrografia,PozostaleMiejscowosci,Wies,UksztaltowanieTerenu&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}{header(User-Agent,Mozilla/5.0 (JOSM)}",
   "license_url": "https://wiki.openstreetmap.org/wiki/Geoportal.gov.pl",
   "overlay": true,
+  "icon": "https://wiki.openstreetmap.org/w/images/2/25/Geoportal-josm.png",
   "available_projections": [
     "EPSG:2176",
     "EPSG:2177",
@@ -15,8 +16,7 @@
     "EPSG:4326"
   ],
   "attribution": {
-    "text": "Centralny Ośrodek Dokumentacji Geodezyjnej i Kartograficznej",
-    "url": "http://www.codgik.gov.pl/index.php/darmowe-dane/prng.html"
-  },
-  "icon": "https://wiki.openstreetmap.org/w/images/2/25/Geoportal-josm.png"
+    "url": "http://www.codgik.gov.pl/index.php/darmowe-dane/prng.html",
+    "text": "Centralny Ośrodek Dokumentacji Geodezyjnej i Kartograficznej"
+  }
 }

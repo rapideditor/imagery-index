@@ -9,11 +9,11 @@
   "privacy_policy_url": "https://geoportal.dgu.hr/#/menu/uvjeti-koristenja",
   "start_date": "2018",
   "end_date": "2018",
+  "icon": "dgu.png",
   "available_projections": ["EPSG:3765", "EPSG:4326"],
   "attribution": {
     "required": true,
-    "text": "Sadrži podatke Državne geodetske uprave",
-    "url": "https://dgu.gov.hr/"
-  },
-  "icon": "dgu.png"
+    "url": "https://dgu.gov.hr/",
+    "text": "Sadrži podatke Državne geodetske uprave"
+  }
 }

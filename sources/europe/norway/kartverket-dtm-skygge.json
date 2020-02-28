@@ -7,13 +7,8 @@
   "url": "https://wms.geonorge.no/skwms1/wms.hoyde-dtm_somlos_skyggerelieff?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=las_dtm_skyggerelieff_somlos&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 24,
   "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
+  "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
   "available_projections": [
-    "EPSG:25831",
-    "EPSG:25832",
-    "EPSG:25833",
-    "EPSG:25834",
-    "EPSG:25835",
-    "EPSG:25836",
     "EPSG:3857",
     "EPSG:4258",
     "EPSG:4326",
@@ -42,8 +37,13 @@
     "EPSG:5127",
     "EPSG:5128",
     "EPSG:5129",
-    "EPSG:5130"
+    "EPSG:5130",
+    "EPSG:25831",
+    "EPSG:25832",
+    "EPSG:25833",
+    "EPSG:25834",
+    "EPSG:25835",
+    "EPSG:25836"
   ],
-  "attribution": {"required": true, "text": "© Kartverket", "url": "https://hoydedata.no/"},
-  "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png"
+  "attribution": {"required": true, "url": "https://hoydedata.no/", "text": "© Kartverket"}
 }

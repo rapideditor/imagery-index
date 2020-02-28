@@ -5,10 +5,10 @@
   "url": "https://{switch:a,b,c}.tile.openstreetmap.fr/osmfr/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",
   "max_zoom": 20,
+  "icon": "OpenStreetMap.png",
   "attribution": {
     "required": true,
-    "text": "Tiles © cquest@Openstreetmap France, data © OpenStreetMap contributors, ODBL",
-    "url": "https://www.openstreetmap.org/"
-  },
-  "icon": "OpenStreetMap.png"
+    "url": "https://www.openstreetmap.org/",
+    "text": "Tiles © cquest@Openstreetmap France, data © OpenStreetMap contributors, ODBL"
+  }
 }

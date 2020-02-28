@@ -12,7 +12,6 @@
   "end_date": "2016",
   "attribution": {
     "url": "http://carto.lausanne.ch/lausanne-gc/",
-    "text": "Ville de Lausanne - Orthophoto 2016",
-    "required": false
+    "text": "Ville de Lausanne - Orthophoto 2016"
   }
 }

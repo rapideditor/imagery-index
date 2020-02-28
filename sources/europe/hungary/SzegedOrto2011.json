@@ -12,8 +12,8 @@
   "start_date": "2011",
   "end_date": "2011",
   "attribution": {
+    "required": true,
     "url": "http://www.geo.u-szeged.hu",
-    "text": "SZTE TFGT - University of Szeged",
-    "required": true
+    "text": "SZTE TFGT - University of Szeged"
   }
 }

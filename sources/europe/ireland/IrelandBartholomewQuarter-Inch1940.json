@@ -8,10 +8,10 @@
   "max_zoom": 13,
   "start_date": "1940",
   "end_date": "1940",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland Historic Maps",
-    "url": "https://geo.nls.uk/maps"
-  },
-  "icon": "NLS.png"
+    "url": "https://geo.nls.uk/maps",
+    "text": "National Library of Scotland Historic Maps"
+  }
 }

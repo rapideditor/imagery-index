@@ -9,10 +9,9 @@
   "license_url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts",
   "start_date": "2017-06-14",
   "end_date": "2017-06-22",
+  "icon": "https://www.geoportail.lu/static/img/lion.png",
   "attribution": {
     "url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts",
-    "text": "Administration du Cadastre et de la Topographie",
-    "required": false
-  },
-  "icon": "https://www.geoportail.lu/static/img/lion.png"
+    "text": "Administration du Cadastre et de la Topographie"
+  }
 }

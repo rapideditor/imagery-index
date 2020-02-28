@@ -6,7 +6,7 @@
   "url": "https://bdgex.eb.mil.br/mapcache?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ctmmultiescalas_mercator&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "min_zoom": 1,
   "license_url": "https://wiki.openstreetmap.org/wiki/BDGEx_Tile_Layer",
+  "icon": "Exercito.png",
   "available_projections": ["EPSG:3857"],
-  "attribution": {"text": "BDGEx"},
-  "icon": "Exercito.png"
+  "attribution": {"text": "BDGEx"}
 }

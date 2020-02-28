@@ -8,6 +8,6 @@
   "max_zoom": 19,
   "license_url": "https://forum.openstreetmap.org/viewtopic.php?id=62083",
   "best": true,
-  "attribution": {"required": true, "text": "© Geovekst", "url": "https://www.norgeibilder.no"},
-  "icon": "https://register.geonorge.no/data/organizations/_L_norgeibilder96x96.png"
+  "icon": "https://register.geonorge.no/data/organizations/_L_norgeibilder96x96.png",
+  "attribution": {"required": true, "url": "https://www.norgeibilder.no", "text": "© Geovekst"}
 }

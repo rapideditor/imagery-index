@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1861",
   "end_date": "1863",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Montrose 1861-1862",
-    "url": "https://maps.nls.uk/townplans/montrose.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/montrose.html",
+    "text": "National Library of Scotland - Montrose 1861-1862"
+  }
 }

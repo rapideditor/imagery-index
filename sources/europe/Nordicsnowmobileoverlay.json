@@ -7,6 +7,6 @@
   "min_zoom": 3,
   "max_zoom": 18,
   "overlay": true,
-  "attribution": {"text": "© Kelkkareitit.fi", "url": "https://kelkkareitit.fi/"},
-  "icon": "https://kelkkareitit.fi/img/favicon.png"
+  "icon": "https://kelkkareitit.fi/img/favicon.png",
+  "attribution": {"url": "https://kelkkareitit.fi/", "text": "© Kelkkareitit.fi"}
 }

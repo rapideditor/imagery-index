@@ -6,10 +6,10 @@
   "category": "qa",
   "max_zoom": 18,
   "overlay": true,
+  "icon": "OSMI.png",
   "attribution": {
     "required": true,
-    "text": "© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA",
-    "url": "https://tools.geofabrik.de/osmi"
-  },
-  "icon": "OSMI.png"
+    "url": "https://tools.geofabrik.de/osmi",
+    "text": "© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA"
+  }
 }

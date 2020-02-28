@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1857",
   "end_date": "1858",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Kelso 1857",
-    "url": "https://maps.nls.uk/townplans/kelso.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/kelso.html",
+    "text": "National Library of Scotland - Kelso 1857"
+  }
 }

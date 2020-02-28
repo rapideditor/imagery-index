@@ -11,10 +11,10 @@
   "best": true,
   "start_date": "2019-02-02",
   "end_date": "2019-02-03",
+  "icon": "https://www.melbourne.vic.gov.au/_catalogs/masterpage/android-icon.png",
   "attribution": {
+    "required": true,
     "url": "https://data.melbourne.vic.gov.au/Environment/2019-Aerial-Imagery/cwpe-ugri",
-    "text": "City of Melbourne",
-    "required": true
-  },
-  "icon": "https://www.melbourne.vic.gov.au/_catalogs/masterpage/android-icon.png"
+    "text": "City of Melbourne"
+  }
 }

@@ -8,11 +8,8 @@
   "min_zoom": 5,
   "max_zoom": 19,
   "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
+  "icon": "lantmateriet.png",
   "available_projections": [
-    "EPSG:25832",
-    "EPSG:25833",
-    "EPSG:25834",
-    "EPSG:25835",
     "EPSG:3006",
     "EPSG:3007",
     "EPSG:3008",
@@ -36,8 +33,11 @@
     "EPSG:3857",
     "EPSG:4258",
     "EPSG:4326",
-    "EPSG:4619"
+    "EPSG:4619",
+    "EPSG:25832",
+    "EPSG:25833",
+    "EPSG:25834",
+    "EPSG:25835"
   ],
-  "attribution": {"text": "© Lantmäteriet, CC0", "url": "https://www.lantmateriet.se/"},
-  "icon": "lantmateriet.png"
+  "attribution": {"url": "https://www.lantmateriet.se/", "text": "© Lantmäteriet, CC0"}
 }

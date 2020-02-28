@@ -8,11 +8,11 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
   "start_date": "2005",
   "end_date": "2005",
-  "available_projections": ["EPSG:25833", "EPSG:31468", "EPSG:3857", "EPSG:4326"],
+  "icon": "GeoSN.png",
+  "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:25833", "EPSG:31468"],
   "attribution": {
     "required": true,
-    "text": "Staatsbetrieb Geobasisinformation und Vermessung Sachsen",
-    "url": "https://geoportal.sachsen.de/cps/metadaten_portal.html?id=3f38c3f3-03db-4a2a-b6da-2704b9a1d5f0"
-  },
-  "icon": "GeoSN.png"
+    "url": "https://geoportal.sachsen.de/cps/metadaten_portal.html?id=3f38c3f3-03db-4a2a-b6da-2704b9a1d5f0",
+    "text": "Staatsbetrieb Geobasisinformation und Vermessung Sachsen"
+  }
 }

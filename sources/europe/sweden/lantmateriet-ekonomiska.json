@@ -8,6 +8,6 @@
   "min_zoom": 3,
   "max_zoom": 17,
   "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
-  "attribution": {"required": true, "text": "© Lantmäteriet", "url": "https://www.lantmateriet.se"},
-  "icon": "lantmateriet.png"
+  "icon": "lantmateriet.png",
+  "attribution": {"required": true, "url": "https://www.lantmateriet.se", "text": "© Lantmäteriet"}
 }

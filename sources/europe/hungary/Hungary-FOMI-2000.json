@@ -9,8 +9,8 @@
   "start_date": "2000",
   "end_date": "2000",
   "attribution": {
+    "required": true,
     "url": "https://www.fomi.hu",
-    "text": "Földmérési és Távérzékelési Intézet",
-    "required": true
+    "text": "Földmérési és Távérzékelési Intézet"
   }
 }

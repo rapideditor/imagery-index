@@ -10,5 +10,5 @@
   "best": true,
   "start_date": "2017-03",
   "end_date": "2017-03",
-  "attribution": {"url": "http://fototerkep.hu", "text": "Fototerkep.hu", "required": true}
+  "attribution": {"required": true, "url": "http://fototerkep.hu", "text": "Fototerkep.hu"}
 }

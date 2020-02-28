@@ -10,11 +10,11 @@
   "best": true,
   "start_date": "2019-06",
   "end_date": "2019-06",
+  "icon": "http://actmapi.act.gov.au/img/apple-touch-icon.png",
   "available_projections": ["EPSG:3857"],
   "attribution": {
+    "required": true,
     "url": "http://actmapi.act.gov.au/terms.html",
-    "text": "Aerial Imagery from ACTMapi ©ACT Government and Spookfish Australia Pty Ltd",
-    "required": true
-  },
-  "icon": "http://actmapi.act.gov.au/img/apple-touch-icon.png"
+    "text": "Aerial Imagery from ACTMapi ©ACT Government and Spookfish Australia Pty Ltd"
+  }
 }

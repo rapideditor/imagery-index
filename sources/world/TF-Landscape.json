@@ -7,8 +7,8 @@
   "max_zoom": 22,
   "license_url": "https://thunderforest.com/terms",
   "attribution": {
+    "required": true,
     "url": "https://www.thunderforest.com/terms",
-    "text": "Maps © Thunderforest, Data © OpenStreetMap contributors",
-    "required": true
+    "text": "Maps © Thunderforest, Data © OpenStreetMap contributors"
   }
 }

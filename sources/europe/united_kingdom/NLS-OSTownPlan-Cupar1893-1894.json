@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1893",
   "end_date": "1895",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Cupar 1893-1894",
-    "url": "https://maps.nls.uk/townplans/cupar_2.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/cupar_2.html",
+    "text": "National Library of Scotland - Cupar 1893-1894"
+  }
 }

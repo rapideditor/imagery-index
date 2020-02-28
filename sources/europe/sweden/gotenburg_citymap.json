@@ -10,11 +10,11 @@
   "license_url": "https://catalog.goteborg.se/catalog/6/datasets/718",
   "privacy_policy_url": "https://goteborg.se/wps/portal/start/kommun-o-politik/beslut-insyn-och-rattskerhet/sa-har-behandlar-kommunen-dina-personuppgifter/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziTYzcDQy9TAy9LVyDXA0CLcJ8A70sDQ3cLcz1wwkpiAJKG-AAjgb6BbmhigA2cFOY/dz/d5/L2dBISEvZ0FBIS9nQSEh/#collapse-012212692658198088",
   "best": true,
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png/206px-G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png",
   "available_projections": ["CRS:84", "EPSG:3006", "EPSG:3007", "EPSG:3857"],
   "attribution": {
     "required": true,
-    "text": "© Gothenburg municipality, CC0",
-    "url": "https://catalog.goteborg.se/catalog/6/datasets/718"
-  },
-  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png/206px-G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png"
+    "url": "https://catalog.goteborg.se/catalog/6/datasets/718",
+    "text": "© Gothenburg municipality, CC0"
+  }
 }

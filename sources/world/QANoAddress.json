@@ -7,8 +7,8 @@
   "max_zoom": 18,
   "overlay": true,
   "attribution": {
+    "required": true,
     "url": "https://qa.poole.ch",
-    "text": "Simon Poole, Data ©OpenStreetMap contributors",
-    "required": true
+    "text": "Simon Poole, Data ©OpenStreetMap contributors"
   }
 }

@@ -7,8 +7,8 @@
   "max_zoom": 18,
   "license_url": "http://www.openstreetmap.hu",
   "attribution": {
+    "required": true,
     "url": "https://www.openstreetmap.org",
-    "text": "© OpenStreetMap contributors",
-    "required": true
+    "text": "© OpenStreetMap contributors"
   }
 }

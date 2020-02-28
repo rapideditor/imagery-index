@@ -7,10 +7,10 @@
   "max_zoom": 21,
   "license_url": "https://wiki.openstreetmap.org/wiki/Contributors#LINZ",
   "best": true,
+  "icon": "https://koordinates.a.ssl.fastly.net/media/settings/branding/favicon-lds.ico",
   "attribution": {
+    "required": true,
     "url": "https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data",
-    "text": "Sourced from LINZ CC-BY 4.0",
-    "required": true
-  },
-  "icon": "https://koordinates.a.ssl.fastly.net/media/settings/branding/favicon-lds.ico"
+    "text": "Sourced from LINZ CC-BY 4.0"
+  }
 }

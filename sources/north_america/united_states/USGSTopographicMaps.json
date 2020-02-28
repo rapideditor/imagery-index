@@ -5,6 +5,6 @@
   "name": "USGS Topographic Maps",
   "url": "https://caltopo.s3.amazonaws.com/topo/{zoom}/{x}/{y}.png",
   "max_zoom": 16,
-  "attribution": {"required": true, "text": "© Caltopo", "url": "https://caltopo.com"},
-  "icon": "USGS.png"
+  "icon": "USGS.png",
+  "attribution": {"required": true, "url": "https://caltopo.com", "text": "© Caltopo"}
 }

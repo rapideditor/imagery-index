@@ -9,8 +9,8 @@
   "start_date": "2016",
   "end_date": "2016",
   "attribution": {
+    "required": true,
     "url": "http://ids.craig.fr/geocat/srv/fre/catalog.search?node=srv#/metadata/e37c057b-5884-429b-8bec-5db0baef0ee",
-    "text": "CRAIG - IGN -TopoGEODIS - Feder Auvergne-Rhône-Alpes 2016",
-    "required": true
+    "text": "CRAIG - IGN -TopoGEODIS - Feder Auvergne-Rhône-Alpes 2016"
   }
 }

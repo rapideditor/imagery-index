@@ -9,8 +9,8 @@
   "start_date": "2014",
   "end_date": "2014",
   "attribution": {
-    "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC-BY 3.0",
+    "required": true,
     "url": "https://geoservices.buergernetz.bz.it/geokatalog/",
-    "required": true
+    "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC-BY 3.0"
   }
 }

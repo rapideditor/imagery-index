@@ -8,6 +8,6 @@
   "min_zoom": 10,
   "max_zoom": 19,
   "permission_osm": "explicit",
-  "attribution": {"url": "https://data.wien.gv.at", "text": "Stadt Wien", "required": false},
-  "icon": "https://www.wien.gv.at/layout-a/logo/wappen-klein.gif"
+  "icon": "https://www.wien.gv.at/layout-a/logo/wappen-klein.gif",
+  "attribution": {"url": "https://data.wien.gv.at", "text": "Stadt Wien"}
 }

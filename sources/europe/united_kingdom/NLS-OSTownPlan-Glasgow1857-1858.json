@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1857",
   "end_date": "1859",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Glasgow 1857-1858",
-    "url": "https://maps.nls.uk/townplans/glasgow_1.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/glasgow_1.html",
+    "text": "National Library of Scotland - Glasgow 1857-1858"
+  }
 }

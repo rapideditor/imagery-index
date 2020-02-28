@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1860",
   "end_date": "1862",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Forfar 1860-1861",
-    "url": "https://maps.nls.uk/townplans/forfar.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/forfar.html",
+    "text": "National Library of Scotland - Forfar 1860-1861"
+  }
 }

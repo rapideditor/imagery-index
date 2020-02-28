@@ -10,8 +10,8 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/FR:Servers/tile.openstreetmap.fr#Route500.E2.84.A2.C2.A9.C2.AE",
   "overlay": true,
   "attribution": {
+    "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/FR:Servers/tile.openstreetmap.fr#Route500.E2.84.A2.C2.A9.C2.AE",
-    "text": "Tiles © cquest@Openstreetmap France, data © IGN, LO/OL",
-    "required": true
+    "text": "Tiles © cquest@Openstreetmap France, data © IGN, LO/OL"
   }
 }

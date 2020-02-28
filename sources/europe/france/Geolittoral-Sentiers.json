@@ -7,8 +7,8 @@
   "license_url": "http://www.geolittoral.developpement-durable.gouv.fr/mentions-legales-a37.html",
   "available_projections": ["EPSG:3857", "EPSG:4326"],
   "attribution": {
+    "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/G%C3%A9oLittoral",
-    "text": "Ortho littorale 2000",
-    "required": true
+    "text": "Ortho littorale 2000"
   }
 }

@@ -8,10 +8,9 @@
   "max_zoom": 20,
   "start_date": "2013",
   "end_date": "2016",
-  "available_projections": ["EPSG:102685", "EPSG:2248", "EPSG:26985", "EPSG:3857", "EPSG:4326"],
+  "available_projections": ["EPSG:2248", "EPSG:3857", "EPSG:4326", "EPSG:26985", "EPSG:102685"],
   "attribution": {
     "url": "http://imap.maryland.gov/Pages/imagery-products.aspx",
-    "text": "DoIT, MD iMap, MDP",
-    "required": false
+    "text": "DoIT, MD iMap, MDP"
   }
 }

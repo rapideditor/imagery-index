@@ -9,11 +9,11 @@
   "max_zoom": 24,
   "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
   "overlay": true,
+  "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
   "available_projections": ["EPSG:3857", "EPSG:4326"],
   "attribution": {
     "required": true,
-    "text": "© Kartverket",
-    "url": "https://kartverket.no/geodataarbeid/temadata/nasjonal-database-for-tur--og-friluftsruter/"
-  },
-  "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png"
+    "url": "https://kartverket.no/geodataarbeid/temadata/nasjonal-database-for-tur--og-friluftsruter/",
+    "text": "© Kartverket"
+  }
 }

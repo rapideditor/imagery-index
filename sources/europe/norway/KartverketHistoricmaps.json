@@ -7,7 +7,11 @@
   "url": "https://wms.geonorge.no/skwms1/wms.historiskekart?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=amt1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "min_zoom": 5,
   "max_zoom": 15,
+  "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
   "available_projections": [
+    "EPSG:3034",
+    "EPSG:3857",
+    "EPSG:4326",
     "EPSG:25829",
     "EPSG:25830",
     "EPSG:25831",
@@ -24,16 +28,12 @@
     "EPSG:27396",
     "EPSG:27397",
     "EPSG:27398",
-    "EPSG:3034",
     "EPSG:32631",
     "EPSG:32632",
     "EPSG:32633",
     "EPSG:32634",
     "EPSG:32635",
-    "EPSG:32636",
-    "EPSG:3857",
-    "EPSG:4326"
+    "EPSG:32636"
   ],
-  "attribution": {"text": "© Kartverket", "url": "https://www.kartverket.no/kart/historiske-kart/"},
-  "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png"
+  "attribution": {"url": "https://www.kartverket.no/kart/historiske-kart/", "text": "© Kartverket"}
 }

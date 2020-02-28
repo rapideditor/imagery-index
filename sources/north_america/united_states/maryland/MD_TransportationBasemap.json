@@ -7,15 +7,14 @@
   "url": "https://geodata.md.gov/imap/services/Transportation/MD_ColorBasemap/MapServer/WmsServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=MD_ColorBasemap&WIDTH={width}&HEIGHT={height}&CRS={proj}&STYLES=&BBOX={bbox}",
   "available_projections": [
     "CRS:84",
-    "EPSG:102685",
     "EPSG:2248",
-    "EPSG:26985",
     "EPSG:3857",
-    "EPSG:4326"
+    "EPSG:4326",
+    "EPSG:26985",
+    "EPSG:102685"
   ],
   "attribution": {
     "url": "http://imap.maryland.gov/Pages/imagery-products.aspx",
-    "text": "DoIT, MD iMap, MDP",
-    "required": false
+    "text": "DoIT, MD iMap, MDP"
   }
 }

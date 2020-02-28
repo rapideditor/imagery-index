@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1872",
   "end_date": "1873",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Wick 1872",
-    "url": "https://maps.nls.uk/townplans/wick.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/wick.html",
+    "text": "National Library of Scotland - Wick 1872"
+  }
 }

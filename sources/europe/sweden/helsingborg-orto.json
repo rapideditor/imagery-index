@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "license_url": "https://helsingborg.opendatasoft.com/explore/dataset/flygbilder/information/",
   "best": true,
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Helsingborg_vapen.svg/198px-Helsingborg_vapen.svg.png",
   "attribution": {
     "required": true,
-    "text": "© Helsingborg municipality",
-    "url": "https://helsingborg.opendatasoft.com/"
-  },
-  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Helsingborg_vapen.svg/198px-Helsingborg_vapen.svg.png"
+    "url": "https://helsingborg.opendatasoft.com/",
+    "text": "© Helsingborg municipality"
+  }
 }

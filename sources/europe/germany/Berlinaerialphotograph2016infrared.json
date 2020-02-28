@@ -10,7 +10,7 @@
   "start_date": "2016-04-02",
   "end_date": "2016-04-03",
   "attribution": {
-    "text": "Geoportal Berlin/Digitale Color-Infrarot-Orthophotos 2016",
-    "required": true
+    "required": true,
+    "text": "Geoportal Berlin/Digitale Color-Infrarot-Orthophotos 2016"
   }
 }

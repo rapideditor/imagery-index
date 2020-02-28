@@ -6,10 +6,10 @@
   "category": "osmbasedmap",
   "min_zoom": 3,
   "max_zoom": 17,
+  "icon": "OpenTopoMap.png",
   "attribution": {
     "required": true,
-    "text": "Kartendaten: © OpenStreetMap-Mitwirkende, SRTM | Kartendarstellung: © OpenTopoMap (CC-BY-SA)",
-    "url": "https://tile.opentopomap.org/about#verwendung"
-  },
-  "icon": "OpenTopoMap.png"
+    "url": "https://tile.opentopomap.org/about#verwendung",
+    "text": "Kartendaten: © OpenStreetMap-Mitwirkende, SRTM | Kartendarstellung: © OpenTopoMap (CC-BY-SA)"
+  }
 }

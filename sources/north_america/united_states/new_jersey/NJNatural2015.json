@@ -9,18 +9,17 @@
   "start_date": "2015-03-29",
   "end_date": "2015-05-03",
   "available_projections": [
-    "EPSG:102711",
     "EPSG:2959",
     "EPSG:3424",
     "EPSG:3616",
     "EPSG:3857",
     "EPSG:4269",
     "EPSG:4326",
-    "EPSG:6527"
+    "EPSG:6527",
+    "EPSG:102711"
   ],
   "attribution": {
     "url": "https://njgin.state.nj.us/NJ_NJGINExplorer/ShowMetadata.jsp?docId=188471FF-2803-4145-A5AD-605DE86D3B4D",
-    "text": "NJ Office of Information Technology (NJOIT), Office of Geographic Information Systems (OGIS)",
-    "required": false
+    "text": "NJ Office of Information Technology (NJOIT), Office of Geographic Information Systems (OGIS)"
   }
 }

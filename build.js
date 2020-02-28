@@ -160,7 +160,7 @@ function convertLegacySources() {
     if (source.start_date)             { converted.start_date = source.start_date; }
     if (source.end_date)               { converted.end_date = source.end_date; }
     if (source.overlay)                { converted.overlay = source.overlay; }
-    if (source.available_projections)  { converted.available_projections = source.available_projections.sort(); }
+    if (source.available_projections)  { converted.available_projections = source.available_projections.sort(sortProjections); }
     if (source.attribution)            { converted.attribution = source.attribution; }
     if (source.icon)                   { converted.icon = source.icon; }
 
@@ -207,21 +207,47 @@ function collectSources(tstrings, featureCollection) {
       process.exit(1);
     }
 
-    // // sort properties and array values
-    // let obj = {};
-    // if (source.id)    { obj.id = source.id; }
-    // if (source.type)  { obj.type = source.type; }
+    // Cleanup the source files to be consistent.
+    // Reorder properties and sort array values
+    let obj = {};
+    if (source.id)    { obj.id = source.id; }
+    if (source.type)  { obj.type = source.type; }
 
-    // if (source.locationSet) {
-    //   obj.locationSet = {};
-    //   if (source.locationSet.include) { obj.locationSet.include = source.locationSet.include; }
-    //   if (source.locationSet.exclude) { obj.locationSet.exclude = source.locationSet.exclude; }
-    // }
-    // if (source.name)                { obj.name = source.name; }
-    // if (source.description)         { obj.description = source.description; }
-    // if (source.url)                 { obj.url = source.url; }
-    // source = obj;
+    if (source.locationSet) {
+      obj.locationSet = {};
+      if (source.locationSet.include) { obj.locationSet.include = source.locationSet.include; }
+      if (source.locationSet.exclude) { obj.locationSet.exclude = source.locationSet.exclude; }
+    }
 
+    if (source.name)                { obj.name = source.name; }
+    if (source.description)         { obj.description = source.description; }
+    if (source.url)                 { obj.url = source.url; }
+    if (source.category)            { obj.category = source.category; }
+    if (source.min_zoom)            { obj.min_zoom = source.min_zoom; }
+    if (source.max_zoom)            { obj.max_zoom = source.max_zoom; }
+    if (source.permission_osm)      { obj.permission_osm = source.permission_osm; }
+    if (source.license_url)         { obj.license_url = source.license_url; }
+    if (source.privacy_policy_url)  { obj.privacy_policy_url = source.privacy_policy_url; }
+    if (source.best)                { obj.best = source.best; }
+    if (source.start_date)          { obj.start_date = source.start_date; }
+    if (source.end_date)            { obj.end_date = source.end_date; }
+    if (source.overlay)             { obj.overlay = source.overlay; }
+    if (source.icon)                { obj.icon = source.icon; }
+
+    if (source.available_projections)  {
+      let unique = [...new Set(source.available_projections)];
+      obj.available_projections = unique.sort(sortProjections);
+    }
+
+    if (source.attribution) {
+      obj.attribution = {};
+      if (source.attribution.required) { obj.attribution.required = source.attribution.required; }
+      if (source.attribution.url)      { obj.attribution.url = source.attribution.url; }
+      if (source.attribution.text)     { obj.attribution.text = source.attribution.text; }
+      if (source.attribution.html)     { obj.attribution.html = source.attribution.html; }
+    }
+
+    source = obj;
     validateFile(file, source, sourceSchema);
 
     // locationSets will be required eventually
@@ -307,3 +333,10 @@ function sort(obj) {
   });
   return sorted;
 }
+
+function sortProjections(a, b) {
+  let aId = parseInt(a.replace('EPSG:', ''), 10);
+  let bId = parseInt(b.replace('EPSG:', ''), 10);
+  return aId - bId;
+}
+

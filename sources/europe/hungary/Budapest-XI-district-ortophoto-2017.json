@@ -9,10 +9,10 @@
   "best": true,
   "start_date": "2017-03",
   "end_date": "2017-03",
-  "available_projections": ["EPSG:23700", "EPSG:4326"],
+  "available_projections": ["EPSG:4326", "EPSG:23700"],
   "attribution": {
+    "required": true,
     "url": "https://terinfo.ujbuda.hu",
-    "text": "Budapest XI. kerület önkormányzata",
-    "required": true
+    "text": "Budapest XI. kerület önkormányzata"
   }
 }

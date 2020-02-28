@@ -11,10 +11,10 @@
   "best": true,
   "start_date": "2020-01-08",
   "end_date": "2020-02-06",
+  "icon": "https://static.wixstatic.com/media/a40742_9e0c1ee9ed0743a8bbf73b2fe6613802.gif",
   "attribution": {
+    "required": true,
     "url": "https://www.airborneresearch.org.au/",
-    "text": "ARA - Airborne Research Australia",
-    "required": true
-  },
-  "icon": "https://static.wixstatic.com/media/a40742_9e0c1ee9ed0743a8bbf73b2fe6613802.gif"
+    "text": "ARA - Airborne Research Australia"
+  }
 }

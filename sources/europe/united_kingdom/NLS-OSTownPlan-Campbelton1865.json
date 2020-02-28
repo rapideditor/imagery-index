@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1865",
   "end_date": "1866",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Campbelton 1865",
-    "url": "https://maps.nls.uk/townplans/campbelton.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/campbelton.html",
+    "text": "National Library of Scotland - Campbelton 1865"
+  }
 }

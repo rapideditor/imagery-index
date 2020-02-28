@@ -13,8 +13,8 @@
   "start_date": "2010-08-01",
   "end_date": "2010-08-31",
   "attribution": {
+    "required": true,
     "url": "http://www.bli.okologia.mta.hu/",
-    "text": "EUFAR Balaton ortofotó 2010",
-    "required": true
+    "text": "EUFAR Balaton ortofotó 2010"
   }
 }

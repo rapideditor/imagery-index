@@ -6,8 +6,8 @@
   "category": "osmbasedmap",
   "max_zoom": 18,
   "attribution": {
-    "text": "© OpenStreetMap contributors, CC-BY-SA",
+    "required": true,
     "url": "https://www.openstreetmap.org/",
-    "required": true
+    "text": "© OpenStreetMap contributors, CC-BY-SA"
   }
 }

@@ -8,8 +8,8 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/Potential_Datasources#Texas",
   "start_date": "2012",
   "attribution": {
+    "required": true,
     "url": "https://tnris.org/maps-and-data/online-mapping-services",
-    "text": "Texas Natural Resources Information System",
-    "required": true
+    "text": "Texas Natural Resources Information System"
   }
 }

@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1855",
   "end_date": "1856",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Ayr 1855",
-    "url": "https://maps.nls.uk/townplans/ayr.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/ayr.html",
+    "text": "National Library of Scotland - Ayr 1855"
+  }
 }

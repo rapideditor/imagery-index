@@ -8,8 +8,8 @@
   "start_date": "2014-07-06",
   "end_date": "2014-07-06",
   "attribution": {
-    "text": "Copyright CNES 2014, Distribution Airbus Defence and Space",
+    "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/2014_Gaza_Strip",
-    "required": true
+    "text": "Copyright CNES 2014, Distribution Airbus Defence and Space"
   }
 }

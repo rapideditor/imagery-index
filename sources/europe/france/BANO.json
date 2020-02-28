@@ -10,8 +10,8 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/FR:WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)#Licence_du_r.C3.A9sultat",
   "overlay": true,
   "attribution": {
+    "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/FR:WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)#Licence_du_r.C3.A9sultat",
-    "text": "Tiles © cquest@Openstreetmap France, data © OpenStreetMap contributors, ODBL",
-    "required": true
+    "text": "Tiles © cquest@Openstreetmap France, data © OpenStreetMap contributors, ODBL"
   }
 }

@@ -12,6 +12,6 @@
   "best": true,
   "start_date": "2018",
   "end_date": "2018",
-  "available_projections": ["EPSG:2056", "EPSG:21781", "EPSG:3857", "EPSG:4326"],
-  "attribution": {"text": "GIS Kanton Zug", "required": false}
+  "available_projections": ["EPSG:2056", "EPSG:3857", "EPSG:4326", "EPSG:21781"],
+  "attribution": {"text": "GIS Kanton Zug"}
 }

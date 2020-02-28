@@ -9,8 +9,8 @@
   "start_date": "2018",
   "end_date": "2018",
   "attribution": {
+    "required": true,
     "url": "https://data.mulhouse-alsace.fr/explore/dataset/m2a_orthophotographie-2018/information/",
-    "text": "Mulhouse Alsace Agglomération 2018",
-    "required": true
+    "text": "Mulhouse Alsace Agglomération 2018"
   }
 }

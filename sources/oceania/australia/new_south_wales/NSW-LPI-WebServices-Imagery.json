@@ -8,10 +8,10 @@
   "max_zoom": 21,
   "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
   "best": true,
+  "icon": "https://www.spatial.nsw.gov.au/__data/assets/file/0017/224801/favicon.ico",
   "attribution": {
+    "required": true,
     "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
-    "text": "© Department of Customer Service 2019",
-    "required": true
-  },
-  "icon": "https://www.spatial.nsw.gov.au/__data/assets/file/0017/224801/favicon.ico"
+    "text": "© Department of Customer Service 2019"
+  }
 }

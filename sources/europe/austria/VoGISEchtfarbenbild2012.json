@@ -9,18 +9,18 @@
   "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
   "start_date": "2012",
   "end_date": "2012",
+  "icon": "VoGIS.png",
   "available_projections": [
+    "EPSG:3857",
+    "EPSG:4326",
     "EPSG:21781",
     "EPSG:25832",
     "EPSG:31254",
     "EPSG:31284",
-    "EPSG:32632",
-    "EPSG:3857",
-    "EPSG:4326"
+    "EPSG:32632"
   ],
   "attribution": {
-    "text": "Datenquelle: Land Vorarlberg – data.vorarlberg.gv.at",
-    "url": "https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm"
-  },
-  "icon": "VoGIS.png"
+    "url": "https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm",
+    "text": "Datenquelle: Land Vorarlberg – data.vorarlberg.gv.at"
+  }
 }

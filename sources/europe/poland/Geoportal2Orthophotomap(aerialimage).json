@@ -7,6 +7,7 @@
   "max_zoom": 23,
   "license_url": "https://wiki.openstreetmap.org/wiki/Geoportal.gov.pl",
   "best": true,
+  "icon": "https://wiki.openstreetmap.org/w/images/2/25/Geoportal-josm.png",
   "available_projections": [
     "EPSG:2176",
     "EPSG:2177",
@@ -16,8 +17,7 @@
     "EPSG:4326"
   ],
   "attribution": {
-    "text": "Główny Urząd Geodezji i Kartografii",
-    "url": "https://geoportal.gov.pl/web/guest/regulamin"
-  },
-  "icon": "https://wiki.openstreetmap.org/w/images/2/25/Geoportal-josm.png"
+    "url": "https://geoportal.gov.pl/web/guest/regulamin",
+    "text": "Główny Urząd Geodezji i Kartografii"
+  }
 }

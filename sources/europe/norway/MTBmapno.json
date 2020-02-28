@@ -7,6 +7,6 @@
   "url": "https://mtbmap.no/tiles/osm/mtbmap/{zoom}/{x}/{y}.jpg",
   "min_zoom": 3,
   "max_zoom": 14,
-  "attribution": {"text": "© MTBmap.no", "url": "https://www.mtbmap.no/"},
-  "icon": "MTBmapno.png"
+  "icon": "MTBmapno.png",
+  "attribution": {"url": "https://www.mtbmap.no/", "text": "© MTBmap.no"}
 }

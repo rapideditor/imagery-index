@@ -10,11 +10,11 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/Eox.at",
   "start_date": "2018",
   "end_date": "2018",
+  "icon": "eox.png",
   "available_projections": ["EPSG:3857"],
   "attribution": {
     "required": true,
-    "text": "Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017 & 2018)",
-    "url": "https://s2maps.eu/"
-  },
-  "icon": "eox.png"
+    "url": "https://s2maps.eu/",
+    "text": "Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017 & 2018)"
+  }
 }

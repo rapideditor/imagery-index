@@ -11,6 +11,6 @@
   "best": true,
   "start_date": "2017",
   "end_date": "2017",
-  "available_projections": ["CRS:84", "EPSG:2056", "EPSG:21781", "EPSG:3857", "EPSG:4326"],
-  "attribution": {"text": "Kanton Glarus, Luftbild Orthofoto 2017", "required": true}
+  "available_projections": ["CRS:84", "EPSG:2056", "EPSG:3857", "EPSG:4326", "EPSG:21781"],
+  "attribution": {"required": true, "text": "Kanton Glarus, Luftbild Orthofoto 2017"}
 }

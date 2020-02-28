@@ -11,11 +11,11 @@
   "best": true,
   "start_date": "2014",
   "end_date": "2014",
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kalmarvapen_1a.svg/206px-Kalmarvapen_1a.svg.png",
   "available_projections": ["EPSG:3011", "EPSG:4326"],
   "attribution": {
     "required": true,
-    "text": "© Kalmar municipality",
-    "url": "http://data-kalmar.opendata.arcgis.com/"
-  },
-  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kalmarvapen_1a.svg/206px-Kalmarvapen_1a.svg.png"
+    "url": "http://data-kalmar.opendata.arcgis.com/",
+    "text": "© Kalmar municipality"
+  }
 }

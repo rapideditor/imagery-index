@@ -9,8 +9,8 @@
   "max_zoom": 20,
   "license_url": "https://geoservices.buergernetz.bz.it/geoserver/ows?SERVICE=WMS&REQUEST=GetCapabilities",
   "attribution": {
+    "required": true,
     "url": "https://geoservices.buergernetz.bz.it/geokatalog",
-    "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano",
-    "required": true
+    "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano"
   }
 }

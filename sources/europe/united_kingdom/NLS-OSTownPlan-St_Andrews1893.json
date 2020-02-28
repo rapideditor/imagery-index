@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1893",
   "end_date": "1894",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - St Andrews 1893",
-    "url": "https://maps.nls.uk/townplans/st-andrews_2.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/st-andrews_2.html",
+    "text": "National Library of Scotland - St Andrews 1893"
+  }
 }

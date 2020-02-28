@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1850",
   "end_date": "1851",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Kirkcudbright 1850",
-    "url": "https://maps.nls.uk/townplans/kirkcudbright_1.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/kirkcudbright_1.html",
+    "text": "National Library of Scotland - Kirkcudbright 1850"
+  }
 }

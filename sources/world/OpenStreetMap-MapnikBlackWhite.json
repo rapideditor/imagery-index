@@ -5,10 +5,10 @@
   "url": "https://tiles.wmflabs.org/bw-mapnik/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",
   "max_zoom": 18,
+  "icon": "OpenStreetMap.png",
   "attribution": {
     "required": true,
-    "text": "© OpenStreetMap contributors, CC-BY-SA",
-    "url": "https://www.openstreetmap.org"
-  },
-  "icon": "OpenStreetMap.png"
+    "url": "https://www.openstreetmap.org",
+    "text": "© OpenStreetMap contributors, CC-BY-SA"
+  }
 }

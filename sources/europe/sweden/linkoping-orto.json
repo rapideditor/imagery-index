@@ -9,11 +9,11 @@
   "max_zoom": 20,
   "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/se/linkoping_permission.pdf",
   "best": true,
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Linköping_vapen.svg/198px-Linköping_vapen.svg.png",
   "available_projections": ["EPSG:3009", "EPSG:3857"],
   "attribution": {
     "required": true,
-    "text": "© Linköping municipality",
-    "url": "https://www.linkoping.se/open/"
-  },
-  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Linköping_vapen.svg/198px-Linköping_vapen.svg.png"
+    "url": "https://www.linkoping.se/open/",
+    "text": "© Linköping municipality"
+  }
 }

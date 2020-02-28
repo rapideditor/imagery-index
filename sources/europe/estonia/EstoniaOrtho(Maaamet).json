@@ -9,5 +9,5 @@
   "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
   "best": true,
   "available_projections": ["EPSG:3301"],
-  "attribution": {"text": "Maa-Ameti ortofoto", "required": true}
+  "attribution": {"required": true, "text": "Maa-Ameti ortofoto"}
 }

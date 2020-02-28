@@ -6,5 +6,5 @@
   "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=reljeef&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
   "available_projections": ["EPSG:4326"],
-  "attribution": {"text": "Maa-Ameti reljeefikaart", "required": true}
+  "attribution": {"required": true, "text": "Maa-Ameti reljeefikaart"}
 }

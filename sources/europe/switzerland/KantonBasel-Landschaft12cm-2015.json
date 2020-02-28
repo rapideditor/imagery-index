@@ -12,8 +12,8 @@
   "start_date": "2015",
   "end_date": "2015",
   "attribution": {
-    "text": "Geodaten des Kantons Basel-Landschaft 2015",
+    "required": true,
     "url": "https://www.geo.bl.ch/fileadmin/user_upload/Geodaten/Nutzungsbedingungen_GBD_BL_V3p2.pdf",
-    "required": true
+    "text": "Geodaten des Kantons Basel-Landschaft 2015"
   }
 }

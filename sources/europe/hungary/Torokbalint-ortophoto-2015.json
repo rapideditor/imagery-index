@@ -9,6 +9,6 @@
   "best": true,
   "start_date": "2015",
   "end_date": "2015",
-  "available_projections": ["EPSG:23700", "EPSG:3857", "EPSG:4326"],
-  "attribution": {"url": "http://www.torokbalint.hu/", "text": "Törökbálint", "required": true}
+  "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:23700"],
+  "attribution": {"required": true, "url": "http://www.torokbalint.hu/", "text": "Törökbálint"}
 }

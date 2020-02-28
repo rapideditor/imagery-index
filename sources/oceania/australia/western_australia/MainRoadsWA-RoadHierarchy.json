@@ -9,8 +9,8 @@
   "overlay": true,
   "available_projections": ["EPSG:3857", "EPSG:4326"],
   "attribution": {
+    "required": true,
     "url": "https://catalogue.data.wa.gov.au/dataset/clss-road-hierarchy",
-    "text": "Main Roads Western Australia",
-    "required": true
+    "text": "Main Roads Western Australia"
   }
 }

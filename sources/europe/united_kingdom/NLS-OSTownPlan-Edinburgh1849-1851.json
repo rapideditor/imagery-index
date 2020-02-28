@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1849",
   "end_date": "1852",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Edinburgh 1849-1851",
-    "url": "https://maps.nls.uk/townplans/edinburgh1056_1.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/edinburgh1056_1.html",
+    "text": "National Library of Scotland - Edinburgh 1849-1851"
+  }
 }

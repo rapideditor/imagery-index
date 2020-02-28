@@ -10,5 +10,5 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k#.C3.81rv.C3.ADzi_ortofot.C3.B3_a_Dun.C3.A1r.C3.B3l",
   "start_date": "2013",
   "end_date": "2013",
-  "attribution": {"url": "http://fototerkep.hu", "text": "Fotótérkép.hu", "required": true}
+  "attribution": {"required": true, "url": "http://fototerkep.hu", "text": "Fotótérkép.hu"}
 }

@@ -8,6 +8,6 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/File:OSM_license_for_SPW_WMS_usage.pdf",
   "start_date": "2013",
   "end_date": "2014",
-  "available_projections": ["EPSG:31370", "EPSG:3857", "EPSG:4326"],
-  "icon": "SPW.png"
+  "icon": "SPW.png",
+  "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"]
 }

@@ -6,10 +6,10 @@
   "url": "https://wmts.nlsc.gov.tw/wmts/EMAP6_OPENDATA/default/GoogleMapsCompatible/{zoom}/{y}/{x}",
   "max_zoom": 15,
   "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
+  "icon": "NLSC.png",
   "attribution": {
     "required": true,
-    "text": "© National Land Surveying and Mapping Center, Taiwan OGDL 1.0",
-    "url": "https://maps.nlsc.gov.tw/"
-  },
-  "icon": "NLSC.png"
+    "url": "https://maps.nlsc.gov.tw/",
+    "text": "© National Land Surveying and Mapping Center, Taiwan OGDL 1.0"
+  }
 }

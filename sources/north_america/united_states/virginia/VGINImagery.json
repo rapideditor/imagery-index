@@ -10,8 +10,8 @@
   "start_date": "2013-04",
   "end_date": "2018-08",
   "attribution": {
+    "required": true,
     "url": "https://vgin.maps.arcgis.com/home/item.html?id=36386a7e7dae4032a33cb0b83a1711f1",
-    "text": "Virginia Geographic Information Network (VGIN)",
-    "required": true
+    "text": "Virginia Geographic Information Network (VGIN)"
   }
 }

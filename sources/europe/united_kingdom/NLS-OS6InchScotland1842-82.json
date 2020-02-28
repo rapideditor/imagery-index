@@ -8,10 +8,10 @@
   "max_zoom": 16,
   "start_date": "1842",
   "end_date": "1883",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland Historic Maps",
-    "url": "https://geo.nls.uk/maps"
-  },
-  "icon": "NLS.png"
+    "url": "https://geo.nls.uk/maps",
+    "text": "National Library of Scotland Historic Maps"
+  }
 }

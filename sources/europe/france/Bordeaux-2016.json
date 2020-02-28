@@ -9,5 +9,5 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/Bordeaux",
   "start_date": "2016",
   "end_date": "2016",
-  "attribution": {"text": "Bordeaux Métropole - 2016", "required": true}
+  "attribution": {"required": true, "text": "Bordeaux Métropole - 2016"}
 }

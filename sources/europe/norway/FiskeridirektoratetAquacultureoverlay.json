@@ -9,7 +9,10 @@
   "max_zoom": 22,
   "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006347.html",
   "overlay": true,
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg/175px-Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg.png",
   "available_projections": [
+    "EPSG:3857",
+    "EPSG:4326",
     "EPSG:25829",
     "EPSG:25830",
     "EPSG:25831",
@@ -23,10 +26,7 @@
     "EPSG:32633",
     "EPSG:32634",
     "EPSG:32635",
-    "EPSG:32636",
-    "EPSG:3857",
-    "EPSG:4326"
+    "EPSG:32636"
   ],
-  "attribution": {"text": "© Fiskeridirektoratet", "url": "https://www.fiskeridir.no/Kart"},
-  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg/175px-Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg.png"
+  "attribution": {"url": "https://www.fiskeridir.no/Kart", "text": "© Fiskeridirektoratet"}
 }

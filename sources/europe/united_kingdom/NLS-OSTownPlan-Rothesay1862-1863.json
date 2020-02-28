@@ -9,10 +9,10 @@
   "max_zoom": 20,
   "start_date": "1862",
   "end_date": "1864",
+  "icon": "NLS.png",
   "attribution": {
     "required": true,
-    "text": "National Library of Scotland - Rothesay 1862-1863",
-    "url": "https://maps.nls.uk/townplans/rothesay.html"
-  },
-  "icon": "NLS.png"
+    "url": "https://maps.nls.uk/townplans/rothesay.html",
+    "text": "National Library of Scotland - Rothesay 1862-1863"
+  }
 }
