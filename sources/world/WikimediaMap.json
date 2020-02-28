@@ -1,6 +1,7 @@
 {
   "id": "wikimedia-map",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "Wikimedia Map",
   "url": "https://maps.wikimedia.org/osm-intl/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",

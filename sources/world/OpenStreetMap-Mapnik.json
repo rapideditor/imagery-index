@@ -1,6 +1,7 @@
 {
   "id": "MAPNIK",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "OpenStreetMap (Standard)",
   "description": "The default OpenStreetMap layer.",
   "url": "https://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png",

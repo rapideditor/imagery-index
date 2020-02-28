@@ -1,6 +1,7 @@
 {
   "id": "Waymarked_Trails-Winter_Sports",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "Waymarked Trails: Winter Sports",
   "url": "https://tile.waymarkedtrails.org/slopes/{zoom}/{x}/{y}.png",
   "category": "other",

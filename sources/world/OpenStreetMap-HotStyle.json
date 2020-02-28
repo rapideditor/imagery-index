@@ -1,6 +1,7 @@
 {
   "id": "HDM_HOT",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "OpenStreetMap (HOT Style)",
   "url": "https://{switch:a,b,c}.tile.openstreetmap.fr/hot/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",

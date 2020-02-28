@@ -1,6 +1,7 @@
 {
   "id": "openrailwaymap",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "OpenRailwayMap",
   "description": "Overlay imagery for railway mapping in OSM",
   "url": "https://{switch:a,b,c}.tiles.openrailwaymap.org/standard/{zoom}/{x}/{y}.png",

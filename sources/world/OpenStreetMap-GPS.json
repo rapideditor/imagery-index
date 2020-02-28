@@ -1,6 +1,7 @@
 {
   "id": "osm-gps",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "OpenStreetMap GPS traces",
   "description": "Public GPS traces uploaded to OpenStreetMap.",
   "url": "https://{switch:a,b,c}.gps-tile.openstreetmap.org/lines/{zoom}/{x}/{y}.png",

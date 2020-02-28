@@ -1,6 +1,7 @@
 {
   "id": "OpenTopoMap",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "OpenTopoMap",
   "url": "https://{switch:a,b,c}.tile.opentopomap.org/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",

@@ -1,6 +1,7 @@
 {
   "id": "Waymarked_Trails-Hiking",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "Waymarked Trails: Hiking",
   "url": "https://tile.waymarkedtrails.org/hiking/{zoom}/{x}/{y}.png",
   "category": "other",

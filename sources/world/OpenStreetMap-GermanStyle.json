@@ -1,6 +1,7 @@
 {
   "id": "osm-mapnik-german_style",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "OpenStreetMap (German Style)",
   "url": "https://{switch:a,b,c,d}.tile.openstreetmap.de/tiles/osmde/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",

@@ -1,6 +1,7 @@
 {
   "id": "qa_no_address",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "QA No Address",
   "url": "https://tile{switch:2,3}.poole.ch/noaddress/{zoom}/{x}/{y}.png",
   "category": "qa",

@@ -1,6 +1,7 @@
 {
   "id": "opensnowmap-overlay",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "OpenSnowMap overlay",
   "description": "Overlay imagery for piste mapping in OSM. Updated daily.",
   "url": "https://www.opensnowmap.org/pistes/{zoom}/{x}/{y}.png",

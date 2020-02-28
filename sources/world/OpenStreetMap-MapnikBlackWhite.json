@@ -1,6 +1,7 @@
 {
   "id": "osm-mapnik-black_and_white",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "OpenStreetMap (Standard Black & White)",
   "url": "https://tiles.wmflabs.org/bw-mapnik/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",

@@ -1,6 +1,7 @@
 {
   "id": "EsriWorldImagery",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "Esri World Imagery",
   "description": "Esri world imagery.",
   "url": "https://{switch:services,server}.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{zoom}/{y}/{x}",

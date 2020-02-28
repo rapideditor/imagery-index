@@ -1,6 +1,7 @@
 {
   "id": "EsriWorldImageryClarity",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "Esri World Imagery (Clarity) Beta",
   "description": "Esri archive imagery that may be clearer and more accurate than the default layer.",
   "url": "https://clarity.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{zoom}/{y}/{x}",

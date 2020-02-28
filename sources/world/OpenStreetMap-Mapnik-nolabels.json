@@ -1,6 +1,7 @@
 {
   "id": "osm-mapnik-no_labels",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "OpenStreetMap (Mapnik, no labels)",
   "url": "https://tiles.wmflabs.org/osm-no-labels/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",

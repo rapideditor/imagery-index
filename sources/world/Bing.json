@@ -1,6 +1,7 @@
 {
   "id": "Bing",
   "type": "bing",
+  "locationSet": {"include": ["001"]},
   "name": "Bing aerial imagery",
   "description": "Satellite and aerial imagery.",
   "url": "https://www.bing.com/maps",

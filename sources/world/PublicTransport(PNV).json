@@ -1,6 +1,7 @@
 {
   "id": "public_transport_oepnv",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "Public Transport (ÖPNV)",
   "url": "https://tile.memomaps.de/tilegen/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",

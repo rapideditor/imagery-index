@@ -1,6 +1,7 @@
 {
   "id": "stamen-terrain-background",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "Stamen Terrain",
   "url": "https://stamen-tiles-{switch:a,b,c,d}.a.ssl.fastly.net/terrain-background/{zoom}/{x}/{y}.jpg",
   "category": "elevation",

@@ -212,6 +212,12 @@ function collectSources(tstrings, featureCollection) {
     if (source.id)    { obj.id = source.id; }
     if (source.type)  { obj.type = source.type; }
 
+// if (/world/.test(file)) {   // world sources are easy - no geometry to convert
+//   console.log(file);
+//   source.locationSet = { include: ['001'] };               // world
+//   shell.rm('-f', [file.replace('.json', '.geojson')]);     // remove legacy .geojson file
+// }
+
     if (source.locationSet) {
       obj.locationSet = {};
       if (source.locationSet.include) { obj.locationSet.include = source.locationSet.include; }

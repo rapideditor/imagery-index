@@ -1,6 +1,7 @@
 {
   "id": "osmfr",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "OpenStreetMap (French Style)",
   "url": "https://{switch:a,b,c}.tile.openstreetmap.fr/osmfr/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",

@@ -1,6 +1,7 @@
 {
   "id": "OSM_Inspector-Tagging",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "OSM Inspector: Tagging",
   "url": "https://tools.geofabrik.de/osmi/tiles/tagging/{zoom}/{x}/{y}.png",
   "category": "qa",

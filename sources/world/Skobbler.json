@@ -1,6 +1,7 @@
 {
   "id": "skobbler",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "skobbler",
   "url": "https://tiles{switch:1,2,3,4}-4001b3692e229e3215c9b7a73e528198.skobblermaps.com/TileService/tiles/2.0/00021210101/0/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",

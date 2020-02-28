@@ -1,6 +1,7 @@
 {
   "id": "Waymarked_Trails-MTB",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "Waymarked Trails: MTB",
   "url": "https://tile.waymarkedtrails.org/mtb/{zoom}/{x}/{y}.png",
   "category": "other",

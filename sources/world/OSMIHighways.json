@@ -1,6 +1,7 @@
 {
   "id": "OSM_Inspector-Highways",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "OSM Inspector: Highways",
   "url": "https://tools.geofabrik.de/osmi/tiles/highways/{zoom}/{x}/{y}.png",
   "category": "qa",

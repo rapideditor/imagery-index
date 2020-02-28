@@ -1,6 +1,7 @@
 {
   "id": "OSM_Inspector-Geometry",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "OSM Inspector: Geometry",
   "url": "https://tools.geofabrik.de/osmi/tiles/geometry/{zoom}/{x}/{y}.png",
   "category": "qa",

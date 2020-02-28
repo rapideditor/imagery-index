@@ -1,6 +1,7 @@
 {
   "id": "OSM_Inspector-Places",
   "type": "tms",
+  "locationSet": {"include": ["001"]},
   "name": "OSM Inspector: Places",
   "url": "https://tools.geofabrik.de/osmi/tiles/places/{zoom}/{x}/{y}.png",
   "category": "qa",
