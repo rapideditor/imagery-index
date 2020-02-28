@@ -196,7 +196,6 @@ function collectSources(tstrings, featureCollection) {
 
   glob.sync('sources/**/*.json').forEach(file => {
     let contents = fs.readFileSync(file, 'utf8');
-
     let source;
     try {
       source = JSON.parse(contents);
@@ -206,17 +205,22 @@ function collectSources(tstrings, featureCollection) {
       process.exit(1);
     }
 
+// rewrite tricky filenames
+// if (/\((aerialimage|geonames|WMS)\)/.test(file)) {
+//   console.log(file);
+//   let orig = file;
+//   file = file.replace(/\((aerialimage|geonames|WMS)\)/, '');
+//   contents = '';              // force rewrite of new file
+//   // shell.rm('-f', [orig]);     // remove orig file
+//   let source = orig.replace('(', '\(').replace(')','\)');
+//   shell.exec(`git mv "${orig}" "${file}"`);
+// }
+
     // Cleanup the source files to be consistent.
     // Reorder properties and sort array values
     let obj = {};
     if (source.id)    { obj.id = source.id; }
     if (source.type)  { obj.type = source.type; }
-
-// if (/world/.test(file)) {   // world sources are easy - no geometry to convert
-//   console.log(file);
-//   source.locationSet = { include: ['001'] };               // world
-//   shell.rm('-f', [file.replace('.json', '.geojson')]);     // remove legacy .geojson file
-// }
 
     if (source.locationSet) {
       obj.locationSet = {};
