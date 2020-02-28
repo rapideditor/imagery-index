@@ -83,6 +83,9 @@ en:
     name: 'Kanton Bern, Digitales Oberflaechenmodell 50cm, Relief'
   Bern-dtm-hillshade-2015:
     name: 'Kanton Bern, Digitales Terrainmodell 50cm, Relief'
+  Bing:
+    name: Bing aerial imagery
+    description: Satellite and aerial imagery.
   Bologna-Orthophoto-2017:
     name: Bologna ortofoto 2017
   Bonvillars-2013:

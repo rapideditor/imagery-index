@@ -47,8 +47,8 @@ function buildAll() {
 
   // Sources
   const sources = collectSources(tstrings, featureCollection);
-  fs.writeFileSync('dist/sources.json', prettyStringify({ sources: sort(sources) }, { maxLength: 9999 }));
-  fs.writeFileSync('i18n/en.yaml', YAML.safeDump({ en: sort(tstrings) }, { lineWidth: -1 }) );
+  fs.writeFileSync('dist/sources.json', prettyStringify({ sources: sortObject(sources) }, { maxLength: 9999 }));
+  fs.writeFileSync('i18n/en.yaml', YAML.safeDump({ en: sortObject(tstrings) }, { lineWidth: -1 }) );
 
   console.timeEnd(END);
 }
@@ -118,75 +118,74 @@ function collectFeatures() {
   return features;
 }
 
-/* eslint-disable no-unused-vars */
 // FROM ELI
-function convertLegacySources() {
-  let sources = {};
-  let files = {};
-  process.stdout.write('🔧  Legacy Sources: ');
+// function convertLegacySources() {
+//   let sources = {};
+//   let files = {};
+//   process.stdout.write('🔧  Legacy Sources: ');
 
-  glob.sync('sources/**/*.geojson').forEach(file => {
-    let outfile = file.replace('.geojson', '.json');
-    // Start clean
-    shell.rm('-f', [outfile]);
+//   glob.sync('sources/**/*.geojson').forEach(file => {
+//     let outfile = file.replace('.geojson', '.json');
+//     // Start clean
+//     shell.rm('-f', [outfile]);
 
-    let contents = fs.readFileSync(file, 'utf8');
-    let source;
-    try {
-      source = JSON.parse(contents);
-    } catch (jsonParseError) {
-      console.error(colors.red(`Error - ${jsonParseError.message} in:`));
-      console.error('  ' + colors.yellow(file));
-      process.exit(1);
-    }
+//     let contents = fs.readFileSync(file, 'utf8');
+//     let source;
+//     try {
+//       source = JSON.parse(contents);
+//     } catch (jsonParseError) {
+//       console.error(colors.red(`Error - ${jsonParseError.message} in:`));
+//       console.error('  ' + colors.yellow(file));
+//       process.exit(1);
+//     }
 
-    source = source.properties;
+//     source = source.properties;
 
-    // sort properties and array values
-    let converted = {};
-    if (source.id)                     { converted.id = source.id; }
-    if (source.type)                   { converted.type = source.type; }
-    if (source.country_code)           { converted.locationSet = { include: [ source.country_code.toLowerCase() ] }; }
-    if (source.name)                   { converted.name = source.name; }
-    if (source.description)            { converted.description = source.description; }
-    if (source.url)                    { converted.url = source.url; }
-    if (source.category)               { converted.category = source.category; }
-    if (source.min_zoom)               { converted.min_zoom = source.min_zoom; }
-    if (source.max_zoom)               { converted.max_zoom = source.max_zoom; }
-    if (source.permission_osm)         { converted.permission_osm = source.permission_osm; }
-    if (source.license_url)            { converted.license_url = source.license_url; }
-    if (source.privacy_policy_url)     { converted.privacy_policy_url = source.privacy_policy_url; }
-    if (source.best)                   { converted.best = source.best; }
-    if (source.start_date)             { converted.start_date = source.start_date; }
-    if (source.end_date)               { converted.end_date = source.end_date; }
-    if (source.overlay)                { converted.overlay = source.overlay; }
-    if (source.available_projections)  { converted.available_projections = source.available_projections.sort(sortProjections); }
-    if (source.attribution)            { converted.attribution = source.attribution; }
-    if (source.icon)                   { converted.icon = source.icon; }
+//     // sort properties and array values
+//     let converted = {};
+//     if (source.id)                     { converted.id = source.id; }
+//     if (source.type)                   { converted.type = source.type; }
+//     if (source.country_code)           { converted.locationSet = { include: [ source.country_code.toLowerCase() ] }; }
+//     if (source.name)                   { converted.name = source.name; }
+//     if (source.description)            { converted.description = source.description; }
+//     if (source.url)                    { converted.url = source.url; }
+//     if (source.category)               { converted.category = source.category; }
+//     if (source.min_zoom)               { converted.min_zoom = source.min_zoom; }
+//     if (source.max_zoom)               { converted.max_zoom = source.max_zoom; }
+//     if (source.permission_osm)         { converted.permission_osm = source.permission_osm; }
+//     if (source.license_url)            { converted.license_url = source.license_url; }
+//     if (source.privacy_policy_url)     { converted.privacy_policy_url = source.privacy_policy_url; }
+//     if (source.best)                   { converted.best = source.best; }
+//     if (source.start_date)             { converted.start_date = source.start_date; }
+//     if (source.end_date)               { converted.end_date = source.end_date; }
+//     if (source.overlay)                { converted.overlay = source.overlay; }
+//     if (source.available_projections)  { converted.available_projections = source.available_projections.sort(sortProjections); }
+//     if (source.attribution)            { converted.attribution = source.attribution; }
+//     if (source.icon)                   { converted.icon = source.icon; }
 
-    // only convert these types
-    if (['tms', 'wms'].indexOf(source.type) === -1) return;
+//     // only convert these types
+//     if (['tms', 'wms'].indexOf(source.type) === -1) return;
 
-    prettifyFile(outfile, converted, '');
+//     prettifyFile(outfile, converted, '');
 
-    let sourceId = source.id;
-    if (files[sourceId]) {
-      console.error(colors.red('Error - Duplicate source id: ') + colors.yellow(sourceId));
-      console.error('  ' + colors.yellow(files[sourceId]));
-      console.error('  ' + colors.yellow(file));
-      process.exit(1);
-    }
+//     let sourceId = source.id;
+//     if (files[sourceId]) {
+//       console.error(colors.red('Error - Duplicate source id: ') + colors.yellow(sourceId));
+//       console.error('  ' + colors.yellow(files[sourceId]));
+//       console.error('  ' + colors.yellow(file));
+//       process.exit(1);
+//     }
 
-    sources[sourceId] = source;
-    files[sourceId] = file;
+//     sources[sourceId] = source;
+//     files[sourceId] = file;
 
-    process.stdout.write(colors.green('✓'));
-  });
+//     process.stdout.write(colors.green('✓'));
+//   });
 
-  process.stdout.write(' ' + Object.keys(files).length + '\n');
+//   process.stdout.write(' ' + Object.keys(files).length + '\n');
 
-  return sources;
-}
+//   return sources;
+// }
 
 
 function collectSources(tstrings, featureCollection) {
@@ -245,6 +244,10 @@ function collectSources(tstrings, featureCollection) {
       if (source.attribution.url)      { obj.attribution.url = source.attribution.url; }
       if (source.attribution.text)     { obj.attribution.text = source.attribution.text; }
       if (source.attribution.html)     { obj.attribution.html = source.attribution.html; }
+    }
+
+    if (source.no_tile_header) {
+      obj.no_tile_header = sortObject(source.no_tile_header);
     }
 
     source = obj;
@@ -326,7 +329,7 @@ function prettifyFile(file, object, contents) {
 
 // Returns an object with sorted keys and sorted values.
 // (This is useful for file diffing)
-function sort(obj) {
+function sortObject(obj) {
   let sorted = {};
   Object.keys(obj).sort().forEach(k => {
     sorted[k] = Array.isArray(obj[k]) ? obj[k].sort() : obj[k];

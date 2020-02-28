@@ -21,7 +21,7 @@
     "type": {
       "description": "(required) Type of imagery source",
       "type": "string",
-      "enum": ["tms", "wms"]
+      "enum": ["tms", "wms", "bing"]
     },
 
     "locationSet": {
@@ -141,6 +141,29 @@
         "html": {
           "description": "(optional) HTML for the attribution",
           "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "no_tile_header": {
+      "description": "(optional) HTTP header to check for information if the tile is invalid",
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 1,
+      "patternProperties": {
+        "^.*$": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
         }
       },
       "additionalProperties": false
