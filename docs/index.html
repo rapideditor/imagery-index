@@ -154,17 +154,16 @@ var _locoReset = true;
 var _loco;
 var _tilelayer;
 var _projection;
+var _dimensions;
 
 window.addEventListener('DOMContentLoaded', function(e) {
   _loco = new bundle.LocationConflation();
 
 // todo handle resize
   var cr = tilelayer.getBoundingClientRect();
-  var dims = [cr.width, cr.height];
-
-  _projection = d3.geoMercator();
-  _tileLayer = bundle.TileLayer().projection(_projection).dimensions(dims);
-  // d3.select('#tilelayer').call(_tileLayer);
+  _dimensions = [cr.width, cr.height];
+  _projection = d3.geoMercator().clipExtent([[0, 0], _dimensions]);
+  _tileLayer = bundle.TileLayer().projection(_projection).dimensions(_dimensions);
 });
 
 // wait for map to load before adjusting it
@@ -178,6 +177,8 @@ map.on('load', function() {
     }
   });
 
+  map.on('viewreset', function() { renderTileLayer(); })
+  map.on('move', function() { renderTileLayer(); })
 
   slider.addEventListener('input', function(e) {
     var newOpacity = parseInt(e.target.value, 10);
@@ -200,6 +201,42 @@ map.on('load', function() {
   locoViewButton.addEventListener('click', function(e) { e.target.blur(); locoParseInput(); });
   locoRemoveButton.addEventListener('click', function(e) { e.target.blur(); locoRemoveData(); locoClearResults(); });
   locoTextarea.addEventListener('input', locoClearResults);
+
+
+  function renderTileLayer() {
+    var setCenter = map.getCenter();
+    var setZoom = map.getZoom();
+
+    var proj = d3.geoMercator()
+      .scale(_projection.scale())
+      .translate(_projection.translate());  // copy _projection
+
+    // var k2 = clamp(geoZoomToScale(z2, TILESIZE), kMin, kMax);
+    var tileSize = 512;
+    var k = tileSize * Math.pow(2, setZoom) / (2 * Math.PI);
+    proj.scale(k);
+
+    var t = proj.translate();
+    var point = proj([setCenter.lng, setCenter.lat]);
+    var center = [_dimensions[0] / 2, _dimensions[1] / 2];
+    t[0] += center[0] - point[0];
+    t[1] += center[1] - point[1];
+
+    _projection
+      .translate(t)
+      .scale(k);
+
+    // var merc = d3.geoMercator()
+    //   .center([center.lng, center.lat])
+    //   .translate([_dimensions[0] / 2, _dimensions[1] / 2])
+    //   .scale(scale);
+
+    // _projection
+    //   .translate(merc.translate())
+    //   .scale(merc.scale());
+
+    d3.select('#tilelayer').call(_tileLayer);
+  }
 
 
   function eliRemoveData() {
@@ -312,7 +349,7 @@ map.on('load', function() {
       props.zoomExtent = [minzoom, maxzoom];
 
       _tileLayer.source(bundle.BackgroundSource(props));
-      d3.select('#tilelayer').call(_tileLayer);  // render
+      renderTileLayer();
 
 //MAPBOX GL OUT
       // // Swap some tokens to make URLs work in Mapbox GL.
