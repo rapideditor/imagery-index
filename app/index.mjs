@@ -1,7 +1,7 @@
 import LocationConflation from '@ideditor/location-conflation';
 export { LocationConflation };
 
-import { select as d3_select } from 'd3';
+import { select as d3_select, geoMercatorRaw as d3_geoMercatorRaw } from 'd3';
 import { geoScaleToZoom } from '../node_modules/iD/modules/geo/geo.js';
 import { utilTiler } from '../node_modules/iD/modules/util/tiler.js';
 
@@ -186,3 +186,96 @@ export function TileLayer() {
 }
 
 
+export function BackgroundSource(data) {
+  let _source = Object.assign({}, data);   // shallow copy
+  const _template = _source.template; // _source.encrypted ? utilAesDecrypt(_source.template) : _source.template;
+
+  _source.tileSize = data.tileSize || 256;
+  _source.zoomExtent = data.zoomExtent || [0, 22];
+  _source.overzoom = data.overzoom !== false;
+
+  _source.url = function(coord) {
+    if (_source.type === 'wms') {
+      let tileToProjectedCoords = ((x, y, z) => {
+        //polyfill for IE11, PhantomJS
+        let sinh = Math.sinh || function(x) {
+          const y = Math.exp(x);
+          return (y - 1 / y) / 2;
+        };
+
+        const zoomSize = Math.pow(2, z);
+        const lon = x / zoomSize * Math.PI * 2 - Math.PI;
+        const lat = Math.atan(sinh(Math.PI * (1 - 2 * y / zoomSize)));
+
+        switch (_source.projection) {
+          case 'EPSG:4326':
+            return {
+              x: lon * 180 / Math.PI,
+              y: lat * 180 / Math.PI
+            };
+          default: // EPSG:3857 and synonyms
+            const mercCoords = d3_geoMercatorRaw(lon, lat);
+            return {
+              x: 20037508.34 / Math.PI * mercCoords[0],
+              y: 20037508.34 / Math.PI * mercCoords[1]
+            };
+        }
+      });
+
+      const minXmaxY = tileToProjectedCoords(coord[0], coord[1], coord[2]);
+      const maxXminY = tileToProjectedCoords(coord[0]+1, coord[1]+1, coord[2]);
+      return _template.replace(/\{(\w+)\}/g, (token, key) => {
+        switch (key) {
+          case 'width':
+          case 'height':
+            return _source.tileSize;
+          case 'proj':
+            return _source.projection;
+          case 'wkid':
+            return _source.projection.replace(/^EPSG:/, '');
+          case 'bbox':
+            return minXmaxY.x + ',' + maxXminY.y + ',' + maxXminY.x + ',' + minXmaxY.y;
+          case 'w':
+            return minXmaxY.x;
+          case 's':
+            return maxXminY.y;
+          case 'n':
+            return maxXminY.x;
+          case 'e':
+            return minXmaxY.y;
+          default:
+            return token;
+        }
+      });
+    }
+
+    return _template
+      .replace('{x}', coord[0])
+      .replace('{y}', coord[1])
+      // TMS-flipped y coordinate
+      .replace(/\{[t-]y\}/, Math.pow(2, coord[2]) - coord[1] - 1)
+      .replace(/\{z(oom)?\}/, coord[2])
+      .replace(/\{switch:([^}]+)\}/, (s, r) => {
+        const subdomains = r.split(',');
+        return subdomains[(coord[0] + coord[1]) % subdomains.length];
+      })
+      .replace('{u}', () => {
+        let u = '';
+        for (let zoom = coord[2]; zoom > 0; zoom--) {
+          let b = 0;
+          const mask = 1 << (zoom - 1);
+          if ((coord[0] & mask) !== 0) b++;
+          if ((coord[1] & mask) !== 0) b += 2;
+          u += b.toString();
+        }
+        return u;
+      });
+  };
+
+
+  _source.validZoom = function(z) {
+    return _source.zoomExtent[0] <= z && (_source.overzoom || _source.zoomExtent[1] > z);
+  };
+
+  return _source;
+}

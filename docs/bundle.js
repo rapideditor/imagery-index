@@ -23991,6 +23991,102 @@ var bundle = (function (exports, d3, d3Array, d3Polygon, d3Geo, d3Zoom, vector_j
 	  return tilelayer;
 	}
 
+
+	function BackgroundSource(data) {
+	  var _source = Object.assign({}, data);   // shallow copy
+	  var _template = _source.template; // _source.encrypted ? utilAesDecrypt(_source.template) : _source.template;
+
+	  _source.tileSize = data.tileSize || 256;
+	  _source.zoomExtent = data.zoomExtent || [0, 22];
+	  _source.overzoom = data.overzoom !== false;
+
+	  _source.url = function(coord) {
+	    if (_source.type === 'wms') {
+	      var tileToProjectedCoords = (function (x, y, z) {
+	        //polyfill for IE11, PhantomJS
+	        var sinh = Math.sinh || function(x) {
+	          var y = Math.exp(x);
+	          return (y - 1 / y) / 2;
+	        };
+
+	        var zoomSize = Math.pow(2, z);
+	        var lon = x / zoomSize * Math.PI * 2 - Math.PI;
+	        var lat = Math.atan(sinh(Math.PI * (1 - 2 * y / zoomSize)));
+
+	        switch (_source.projection) {
+	          case 'EPSG:4326':
+	            return {
+	              x: lon * 180 / Math.PI,
+	              y: lat * 180 / Math.PI
+	            };
+	          default: // EPSG:3857 and synonyms
+	            var mercCoords = d3.geoMercatorRaw(lon, lat);
+	            return {
+	              x: 20037508.34 / Math.PI * mercCoords[0],
+	              y: 20037508.34 / Math.PI * mercCoords[1]
+	            };
+	        }
+	      });
+
+	      var minXmaxY = tileToProjectedCoords(coord[0], coord[1], coord[2]);
+	      var maxXminY = tileToProjectedCoords(coord[0]+1, coord[1]+1, coord[2]);
+	      return _template.replace(/\{(\w+)\}/g, function (token, key) {
+	        switch (key) {
+	          case 'width':
+	          case 'height':
+	            return _source.tileSize;
+	          case 'proj':
+	            return _source.projection;
+	          case 'wkid':
+	            return _source.projection.replace(/^EPSG:/, '');
+	          case 'bbox':
+	            return minXmaxY.x + ',' + maxXminY.y + ',' + maxXminY.x + ',' + minXmaxY.y;
+	          case 'w':
+	            return minXmaxY.x;
+	          case 's':
+	            return maxXminY.y;
+	          case 'n':
+	            return maxXminY.x;
+	          case 'e':
+	            return minXmaxY.y;
+	          default:
+	            return token;
+	        }
+	      });
+	    }
+
+	    return _template
+	      .replace('{x}', coord[0])
+	      .replace('{y}', coord[1])
+	      // TMS-flipped y coordinate
+	      .replace(/\{[t-]y\}/, Math.pow(2, coord[2]) - coord[1] - 1)
+	      .replace(/\{z(oom)?\}/, coord[2])
+	      .replace(/\{switch:([^}]+)\}/, function (s, r) {
+	        var subdomains = r.split(',');
+	        return subdomains[(coord[0] + coord[1]) % subdomains.length];
+	      })
+	      .replace('{u}', function () {
+	        var u = '';
+	        for (var zoom = coord[2]; zoom > 0; zoom--) {
+	          var b = 0;
+	          var mask = 1 << (zoom - 1);
+	          if ((coord[0] & mask) !== 0) { b++; }
+	          if ((coord[1] & mask) !== 0) { b += 2; }
+	          u += b.toString();
+	        }
+	        return u;
+	      });
+	  };
+
+
+	  _source.validZoom = function(z) {
+	    return _source.zoomExtent[0] <= z && (_source.overzoom || _source.zoomExtent[1] > z);
+	  };
+
+	  return _source;
+	}
+
+	exports.BackgroundSource = BackgroundSource;
 	exports.LocationConflation = defaultExport;
 	exports.TileLayer = TileLayer;
 
