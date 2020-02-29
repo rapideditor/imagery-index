@@ -83,7 +83,7 @@
         <label>Zoom: </label>
         <span id='zoom-value'>1</span>
       </div>
-      <div id='control-name' class='control hidden'>
+      <div id='control-name' class='control'>
       </div>
       <div id='octocat'>
         <a href='https://github.com/ideditor/imagery-index' target='_blank'>
@@ -112,7 +112,9 @@ var map = new mapboxgl.Map({
   minZoom: 0,
   maxZoom: 24,
   minPitch: 0,
-  maxPitch: 0
+  maxPitch: 0,
+  dragRotate: false,
+  renderWorldCopies: false
 });
 
 // select some elements to use later
@@ -184,15 +186,10 @@ map.on('load', function() {
     var newOpacity = parseInt(e.target.value, 10);
     if (newOpacity !== _currOpacity) {
       _currOpacity = newOpacity;
-
       tilelayer.style.opacity = newOpacity / 100;
-      // if (map.getLayer('raster-layer')) {
-      //   map.setPaintProperty('raster-layer', 'raster-opacity', newOpacity / 100);
-      // }
       sliderValue.textContent = '' + newOpacity + '%';
     }
   });
-
 
   eliViewButton.addEventListener('click', function(e) { e.target.blur(); eliParseInput(); });
   eliRemoveButton.addEventListener('click', function(e) { e.target.blur(); eliRemoveData(); eliClearResults(); });
@@ -204,20 +201,21 @@ map.on('load', function() {
 
 
   function renderTileLayer() {
+    if (!_tileLayer.source()) return;
+
     var setCenter = map.getCenter();
     var setZoom = map.getZoom();
 
-    var proj = d3.geoMercator()
-      .scale(_projection.scale())
-      .translate(_projection.translate());  // copy _projection
+    var merc = d3.geoMercator()    // copy _projection
+      .translate(_projection.translate())
+      .scale(_projection.scale());
 
-    // var k2 = clamp(geoZoomToScale(z2, TILESIZE), kMin, kMax);
-    var tileSize = 512;
+    var tileSize = 512;  // calculate scale based on Mapbox GL tilesize
     var k = tileSize * Math.pow(2, setZoom) / (2 * Math.PI);
-    proj.scale(k);
+    merc.scale(k);
 
-    var t = proj.translate();
-    var point = proj([setCenter.lng, setCenter.lat]);
+    var t = merc.translate();
+    var point = merc([setCenter.lng, setCenter.lat]);
     var center = [_dimensions[0] / 2, _dimensions[1] / 2];
     t[0] += center[0] - point[0];
     t[1] += center[1] - point[1];
@@ -226,27 +224,24 @@ map.on('load', function() {
       .translate(t)
       .scale(k);
 
-    // var merc = d3.geoMercator()
-    //   .center([center.lng, center.lat])
-    //   .translate([_dimensions[0] / 2, _dimensions[1] / 2])
-    //   .scale(scale);
-
-    // _projection
-    //   .translate(merc.translate())
-    //   .scale(merc.scale());
-
     d3.select('#tilelayer').call(_tileLayer);
   }
 
 
   function eliRemoveData() {
-    controlName.className = 'control hidden';
+    controlName.textContent = '';
     eliRemoveButton.className = eliRemoveButton.className.replace('visible', 'invisible');
-    // if (map.getLayer('raster-layer'))         map.removeLayer('raster-layer');
+
+    _tileLayer.source(null);
+    d3.selectAll('#tilelayer > img.tile')  // remove any existing tiles
+      .classed('tile-removing', true)
+      .each(function(d, i, nodes) {
+        window.setTimeout(function() { d3.select(nodes[i]).remove(); }, 300);
+      });
+
     if (map.getLayer('geojson-fill-layer'))   map.removeLayer('geojson-fill-layer');
     if (map.getLayer('geojson-line-layer'))   map.removeLayer('geojson-line-layer');
     if (map.getLayer('geojson-point-layer'))  map.removeLayer('geojson-point-layer');
-    // if (map.getSource('raster-source'))       map.removeSource('raster-source');
     if (map.getSource('geojson-source'))      map.removeSource('geojson-source');
   }
 
@@ -257,6 +252,7 @@ map.on('load', function() {
     if (map.getLayer('loco-point-layer'))  map.removeLayer('loco-point-layer');
     if (map.getSource('loco-source'))      map.removeSource('loco-source');
   }
+
 
   function eliClearResults() {
     if (_eliReset) return;
@@ -300,7 +296,6 @@ map.on('load', function() {
       var maxzoom = props.max_zoom || 24;
 
       // setup name display
-      controlName.className = 'control';  // remove 'hidden'
       controlName.textContent = '' + name;
 
       // show attribution, if any
@@ -320,7 +315,6 @@ map.on('load', function() {
         attribution.innerHTML = baseAttribution;
       }
 
-//iD IN
       if (type === 'wms') {
         var supportedWMSProjections = {
           'EPSG:4326': true,
@@ -351,78 +345,6 @@ map.on('load', function() {
       _tileLayer.source(bundle.BackgroundSource(props));
       renderTileLayer();
 
-//MAPBOX GL OUT
-      // // Swap some tokens to make URLs work in Mapbox GL.
-      // if (type === 'tms') {
-      //   url = url
-      //     .replace(/{zoom}/i, '{z}')
-      //     .replace(/{switch:(\w+)[^}]+}/i, '$1');
-
-      // } else if (type === 'wms') {
-      //   var supportedWMSProjections = {
-      //     // 'EPSG:4326': true,
-      //     'EPSG:3857': true,
-      //     'EPSG:900913': true,
-      //     'EPSG:3587': true,
-      //     'EPSG:54004': true,
-      //     'EPSG:41001': true,
-      //     'EPSG:102113': true,
-      //     'EPSG:102100': true,
-      //     'EPSG:3785': true
-      //   };
-
-      //   var projections = (props.available_projections || [])
-      //     .map(function(proj) { return proj.toUpperCase(); })
-      //     .filter(function (proj) { return supportedWMSProjections[proj]; });
-
-      //   if (!projections.length) {
-      //     throw 'No supported wms projection found.';
-      //   }
-
-      //   url = url
-      //     .replace(/{switch:(\w+)[^}]+}/i, '$1')
-      //     .replace(/\{(\w+)\}/g, function (token, key) {
-      //       switch (key) {
-      //         case 'width':
-      //         case 'height':
-      //           return 256;
-      //         case 'proj':
-      //           return projections[0];
-      //         case 'wkid':
-      //           return projections[0].replace(/^EPSG:/, '');
-      //         case 'bbox':
-      //           return '{bbox-epsg-3857}';
-      //         default:
-      //           return token;
-      //       }
-      //     });
-
-      // } else {
-      //   throw 'Unsupported type "' + type + '".';
-      // }
-
-      // // Setup the raster source and layer
-      // map.addSource('raster-source', {
-      //   id: 'raster-source',
-      //   type: 'raster',
-      //   tiles: [url]
-      // });
-
-      // // If there is an existing data overlay, ensure the raster layer shows beneath it.
-      // var before = (map.getLayer('loco-fill-layer')) ? 'loco-fill-layer' : null;
-
-      // map.addLayer({
-      //   id: 'raster-layer',
-      //   type: 'raster',
-      //   source: 'raster-source',
-      //   paint: {
-      //     'raster-opacity': _currOpacity / 100,
-      //     'raster-fade-duration': 100
-      //   },
-      //   minzoom: 0,  // minzoom,
-      //   maxzoom: 24, // maxzoom
-      // }, before);
-// OUT
 
       // Setup the GeoJSON source and layer
       if (geometry.coordinates) {

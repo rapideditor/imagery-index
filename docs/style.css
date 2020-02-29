@@ -86,7 +86,7 @@ a:hover,
   text-decoration: none;
 }
 a.mapboxgl-ctrl-logo {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .hasCols { display: flex; flex-flow: row nowrap; }
@@ -108,6 +108,7 @@ a.mapboxgl-ctrl-logo {
 .pink    { color: rgba(255, 0, 153, 0.9); }
 .purple  { color: rgba(153, 0, 255, 0.9); }
 
+
 #wrap {
   position: absolute;
   top: 0;
@@ -116,8 +117,9 @@ a.mapboxgl-ctrl-logo {
   right: 0;
 }
 
-#maps {
+#viewer, #maps {
   position: relative;
+  overflow: hidden;
 }
 
 #basemap, #tilelayer {
@@ -160,9 +162,9 @@ a.mapboxgl-ctrl-logo {
 #controls > .control {
   padding: 0 20px;
 }
-#control-slider {
-  flex: 2;
-}
+#control-slider { flex: 2; }
+#control-zoom   { flex: 1; }
+#control-name   { flex: 3; }
 
 #octocat {
   flex: 0 0 40px;
@@ -213,4 +215,32 @@ a.mapboxgl-ctrl-logo {
 span.emojiFlag {
   margin: 0 10px;
   font-size: larger;
+}
+
+img.tile {
+  position: absolute;
+  transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  opacity: 0;
+
+  -webkit-transition: opacity 100ms linear;
+  -moz-transition: opacity 100ms linear;
+  transition: opacity 100ms linear;
+}
+
+img.tile-loaded {
+  opacity: 1;
+}
+
+img.tile-removing {
+  opacity: 0;
 }
