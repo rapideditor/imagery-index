@@ -176,9 +176,11 @@ export function TileLayer() {
   tilelayer.source = function(val) {
     if (!arguments.length) return _source;
     _source = val;
-    _tileSize = _source.tileSize;
     _cache = {};
-    tiler.tileSize(_source.tileSize).zoomExtent(_source.zoomExtent);
+    if (_source) {
+      _tileSize = _source.tileSize;
+      tiler.tileSize(_source.tileSize).zoomExtent(_source.zoomExtent);
+    }
     return tilelayer;
   };
 
