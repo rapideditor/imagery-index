@@ -1,4 +1,3 @@
-const calcArea = require('@mapbox/geojson-area');
 const colors = require('colors/safe');
 const fs = require('fs');
 const glob = require('glob');
@@ -76,14 +75,6 @@ function collectFeatures() {
     // A FeatureCollection with a single feature inside (geojson.io likes to make these).
     if (feature.type === 'FeatureCollection' && Array.isArray(fc) && fc.length === 1) {
       feature = fc[0];
-    }
-
-    // warn if this feature is so small it would better be represented as a point.
-    let area = calcArea.geometry(feature.geometry) / 1e6;   // m² to km²
-    area = Number(area.toFixed(2));
-    if (area < 2000) {
-      console.warn(colors.yellow(`Warning - small area (${area} km²).  Use a point 'includeLocation' instead.`));
-      console.warn('  ' + colors.yellow(file));
     }
 
     // use the filename as the feature.id
