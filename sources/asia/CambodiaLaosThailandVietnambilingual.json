@@ -1,6 +1,7 @@
 {
   "id": "osm-cambodia_laos_thailand_vietnam-bilingual",
   "type": "tms",
+  "locationSet": {"include": ["kh", "la", "th", "vn", "my", "mm"]},
   "name": "Cambodia, Laos, Thailand, Vietnam, Malaysia, Myanmar bilingual",
   "url": "https://{switch:a,b,c,d}.tile.osm-tools.org/osm/{zoom}/{x}/{y}.png",
   "max_zoom": 20,

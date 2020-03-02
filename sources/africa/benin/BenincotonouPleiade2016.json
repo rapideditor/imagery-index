@@ -1,7 +1,7 @@
 {
   "id": "Benin_cotonou_pleiade_2016",
   "type": "tms",
-  "locationSet": {"include": ["benincotonoupleiade2016.geojson"]},
+  "locationSet": {"include": ["benin_cotonou_pleiade.geojson"]},
   "name": "Benin: Cotonou Pleiade 2016",
   "url": "https://geoxxx.agrocampus-ouest.fr/owsifl/gwc/service/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=Benin:cotonou_pleiade_2016&STYLE=&FORMAT=image/jpeg&tileMatrixSet=EPSG:3857&tileMatrix=EPSG:3857:{zoom}&tileRow={y}&tileCol={x}",
   "max_zoom": 21,

@@ -5,7 +5,7 @@
   "name": "Japan GSI airphoto Imagery",
   "description": "Japan GSI airphoto Imagery. Not fully orthorectified, but a bit newer and/or differently covered than GSI ortho Imagery.",
   "url": "https://cyberjapandata.gsi.go.jp/xyz/airphoto/{zoom}/{x}/{y}.png",
-  "min_zoom": 14,
+  "min_zoom": 13,
   "max_zoom": 18,
   "license_url": "https://maps.gsi.go.jp/development/ichiran.html#airphoto",
   "attribution": {

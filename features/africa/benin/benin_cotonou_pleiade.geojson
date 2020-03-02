@@ -1,7 +1,7 @@
 {
   "type": "Feature",
-  "id": "benincotonoupleiade2016.geojson",
-  "properties": {"id": "BenincotonouPleiade2016.geojson"},
+  "id": "benin_cotonou_pleiade.geojson",
+  "properties": {"id": "benin_cotonou_pleiade.geojson"},
   "geometry": {
     "type": "MultiPolygon",
     "coordinates": [
