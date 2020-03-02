@@ -1,7 +1,7 @@
 {
   "id": "South_Africa-CapeTown-Aerial-2013",
   "type": "tms",
-  "locationSet": {"include": ["za"]},
+  "locationSet": {"include": ["cape_town.geojson"]},
   "name": "City of Cape Town 2013 Aerial",
   "description": "OpenStreetMap use only. City of Cape Town Aerial ortho-photography of the municipal area. 12cm ground sample distance",
   "url": "https://{switch:a,b,c}.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2013/{zoom}/{x}/{y}.jpg",

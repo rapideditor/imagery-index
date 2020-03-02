@@ -818,12 +818,12 @@ en:
     description: Topographical basemap of South Tyrol
   South_Africa-CD_NGI-Aerial:
     name: 'South Africa CD:NGI Aerial'
-  South_Africa-CapeTown-Aerial:
-    name: City of Cape Town 2015 Aerial
-    description: OpenStreetMap use only. City of Cape Town Aerial ortho-photography of the municipal area. 8cm ground sample distance
   South_Africa-CapeTown-Aerial-2013:
     name: City of Cape Town 2013 Aerial
     description: OpenStreetMap use only. City of Cape Town Aerial ortho-photography of the municipal area. 12cm ground sample distance
+  South_Africa-CapeTown-Aerial-2015:
+    name: City of Cape Town 2015 Aerial
+    description: OpenStreetMap use only. City of Cape Town Aerial ortho-photography of the municipal area. 8cm ground sample distance
   Surrey-Air_Survey:
     name: Surrey Air Survey
   Swietochlowice-2008:
