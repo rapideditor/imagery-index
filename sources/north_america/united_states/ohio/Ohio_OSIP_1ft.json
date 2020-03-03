@@ -1,7 +1,7 @@
 {
   "id": "OSIP_1ft",
   "type": "wms",
-  "locationSet": {"include": ["us"]},
+  "locationSet": {"include": ["ohio.geojson"]},
   "name": "OSIP 1ft Imagery Most Current Available",
   "description": "Most recent available 1-foot orthoimagery from the Ohio Statewide Imagery Program.",
   "url": "https://geo1.oit.ohio.gov/arcgis/services/OSIP/osip_best_avail_1ft/ImageServer/WMSServer?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
