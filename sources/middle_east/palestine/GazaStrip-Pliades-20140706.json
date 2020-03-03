@@ -1,7 +1,7 @@
 {
   "id": "gaza_pleiades_20140706",
   "type": "tms",
-  "locationSet": {"include": ["ps"]},
+  "locationSet": {"include": ["gaza_strip.geojson"]},
   "name": "Gaza Strip - Pléiades - 2014/07/06",
   "url": "https://imagery.openstreetmap.fr/tms/1.0.0/gaza_pleiades_20140706/{zoom}/{x}/{y}",
   "max_zoom": 22,
