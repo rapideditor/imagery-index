@@ -1,7 +1,7 @@
 {
   "id": "DCGIS-County-Imagery-2017-Fall-Leaf-Off-6-Inch",
   "type": "wms",
-  "locationSet": {"include": ["us"]},
+  "locationSet": {"include": ["minnesota_dakota_county.geojson"]},
   "name": "Dakota County GIS 2017 Fall Leaf-Off 6-Inch",
   "url": "https://gisimg.co.dakota.mn.us/arcgis/services/AerialPhotography/2017AirPhotoLeafOff6Inch/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=2017AirPhotoLeafOff6Inch:None&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "min_zoom": 5,

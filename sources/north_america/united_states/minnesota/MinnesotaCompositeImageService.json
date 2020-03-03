@@ -1,7 +1,7 @@
 {
   "id": "Minnesota-Composite-Image-Service",
   "type": "wms",
-  "locationSet": {"include": ["us"]},
+  "locationSet": {"include": ["minnesota.geojson"]},
   "name": "Minnesota Composite Image Service",
   "url": "https://imageserver.gisdata.mn.gov/cgi-bin/mncomp?LAYERS=mncomp&FORMAT=image/jpeg&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}",
   "min_zoom": 5,
