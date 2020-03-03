@@ -3,10 +3,11 @@
   "type": "tms",
   "locationSet": {"include": ["001"]},
   "name": "Thunderforest OpenCycleMap",
-  "url": "https://{switch:a,b,c}.tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png",
+  "url": "https://{switch:a,b,c}.tile.thunderforest.com/cycle/{zoom}/{x}/{y}.png?apikey={apikey}",
   "category": "osmbasedmap",
   "max_zoom": 22,
   "license_url": "https://thunderforest.com/terms",
+  "privacy_policy_url": "https://www.thunderforest.com/privacy",
   "icon": "OpenCycleMap.png",
   "attribution": {
     "required": true,

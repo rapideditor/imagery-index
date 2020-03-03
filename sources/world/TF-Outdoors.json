@@ -1,9 +1,9 @@
 {
-  "id": "tf-landscape",
+  "id": "tf-outdoors",
   "type": "tms",
   "locationSet": {"include": ["001"]},
-  "name": "Thunderforest Landscape",
-  "url": "https://{switch:a,b,c}.tile.thunderforest.com/landscape/{zoom}/{x}/{y}.png?apikey={apikey}",
+  "name": "Thunderforest Outdoors",
+  "url": "https://{switch:a,b,c}.tile.thunderforest.com/outdoors/{zoom}/{x}/{y}.png?apikey={apikey}",
   "category": "osmbasedmap",
   "max_zoom": 22,
   "license_url": "https://thunderforest.com/terms",

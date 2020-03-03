@@ -1396,6 +1396,8 @@ en:
     name: Thunderforest OpenCycleMap
   tf-landscape:
     name: Thunderforest Landscape
+  tf-outdoors:
+    name: Thunderforest Outdoors
   tirol.gv.at-DGM:
     name: 'Tiris: DGM (Terrain model)'
   tirol.gv.at-DOM:
