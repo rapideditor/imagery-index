@@ -7,7 +7,7 @@
   "min_zoom": 1,
   "max_zoom": 19,
   "license_url": "https://www.ign.gob.ar/descargas/tyc1.html",
-  "icon": "https://www.ign.gob.ar/sites/default/files/favicon.png",
+  "icon": "ign.png",
   "attribution": {
     "url": "https://www.ign.gob.ar/",
     "text": "Instituto Geográfico Nacional de la República Argentina"
