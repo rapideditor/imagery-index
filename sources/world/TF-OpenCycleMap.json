@@ -8,7 +8,7 @@
   "max_zoom": 22,
   "license_url": "https://thunderforest.com/terms",
   "privacy_policy_url": "https://www.thunderforest.com/privacy",
-  "icon": "OpenCycleMap.png",
+  "icon": "thunderforest.png",
   "attribution": {
     "required": true,
     "url": "https://www.thunderforest.com/terms",
