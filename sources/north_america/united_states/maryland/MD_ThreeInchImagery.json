@@ -1,7 +1,7 @@
 {
   "id": "geodata.md.gov-MD_ThreeInchImagery",
   "type": "wms",
-  "locationSet": {"include": ["us"]},
+  "locationSet": {"include": ["maryland_3in.geojson"]},
   "name": "MD Three Inch Aerial Imagery",
   "description": "Three Inch Resolution Imagery for the cities of Rockville, Gaithersburg and Annapolis",
   "url": "https://geodata.md.gov/imap/services/Imagery/MD_ThreeInchImagery/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=MD_ThreeInchImagery&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
