@@ -1,0 +1,9 @@
+{
+  "type": "Feature",
+  "id": "western_australia.geojson",
+  "properties": {},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [[[129, -35], [113, -37], [111, -20], [127, -12], [129, -14], [129, -35]]]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "Feature",
+  "id": "launceston_orthophoto_feb2013_10cm.geojson",
+  "properties": {},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [147.06561, -41.5081],
+        [147.06547, -41.36487],
+        [147.23734, -41.36464],
+        [147.23786, -41.50787],
+        [147.06561, -41.5081]
+      ]
+    ]
+  }
+}

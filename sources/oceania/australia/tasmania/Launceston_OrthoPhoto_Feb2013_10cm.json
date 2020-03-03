@@ -1,7 +1,7 @@
 {
   "id": "CityOfLaunceston_2013",
   "type": "tms",
-  "locationSet": {"include": ["au"]},
+  "locationSet": {"include": ["launceston_orthophoto_feb2013_10cm.geojson"]},
   "name": "Launceston OrthoPhoto 2013",
   "url": "https://mapping.launceston.tas.gov.au/arcgis/rest/services/Public/OrthoPhoto_Feb2013_10cm/MapServer/tile/{zoom}/{y}/{x}",
   "min_zoom": 12,
@@ -10,6 +10,6 @@
   "license_url": "https://osmlab.github.io/editor-layer-index/sources/australia/au/tas/Launceston_OrthoPhoto.pdf",
   "start_date": "2013-02-15",
   "end_date": "2013-02-15",
-  "icon": "https://www.launceston.tas.gov.au/files/assets/public/templateimages/favicons/favicon-196x196.png",
+  "icon": "launceston.png",
   "attribution": {"required": true, "text": "© City of Launceston"}
 }

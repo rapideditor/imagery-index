@@ -1,7 +1,7 @@
 {
   "id": "ACT201906",
   "type": "wms",
-  "locationSet": {"include": ["au"]},
+  "locationSet": {"include": ["actmapi-imagery201906.geojson"]},
   "name": "ACTmapi Imagery Jun 2019",
   "url": "https://data.actmapi.act.gov.au/arcgis/rest/services/actmapi/imagery201906mga/ImageServer/exportImage?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo={proj}",
   "max_zoom": 21,
@@ -10,7 +10,7 @@
   "best": true,
   "start_date": "2019-06",
   "end_date": "2019-06",
-  "icon": "http://actmapi.act.gov.au/img/apple-touch-icon.png",
+  "icon": "ACT-mapi.png",
   "available_projections": ["EPSG:3857"],
   "attribution": {
     "required": true,
