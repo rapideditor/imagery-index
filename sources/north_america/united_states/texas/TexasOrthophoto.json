@@ -1,7 +1,7 @@
 {
   "id": "tnris.org",
   "type": "tms",
-  "locationSet": {"include": ["us"]},
+  "locationSet": {"include": ["texas.geojson"]},
   "name": "Texas Orthophoto",
   "url": "https://txgi.tnris.org/login/path/ecology-fiona-poem-romeo/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=texas&STYLE=&FORMAT=image/png&tileMatrixSet=0to20&tileMatrix=0to20:{zoom}&tileRow={y}&tileCol={x}",
   "max_zoom": 20,
