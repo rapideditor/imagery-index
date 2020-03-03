@@ -1,7 +1,7 @@
 {
   "id": "img.nj.gov-Infrared2015",
   "type": "wms",
-  "locationSet": {"include": ["us"]},
+  "locationSet": {"include": ["new_jersey.geojson"]},
   "name": "NJ 2015 Aerial Imagery (Infrared)",
   "description": "Digital orthophotography of New Jersey, Near Infrared, 1 foot resolution",
   "url": "https://img.nj.gov/imagerywms/Infrared2015?FORMAT=image/png&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&WIDTH={width}&HEIGHT={height}&LAYERS=Infrared2015&BBOX={bbox}",
