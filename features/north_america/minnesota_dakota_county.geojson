@@ -3,6 +3,7 @@
   "id": "minnesota_dakota_county.geojson",
   "properties": {},
   "geometry": {
+    "type": "Polygon",
     "coordinates": [
       [
         [-93.32967, 44.79107],
@@ -59,7 +60,6 @@
         [-93.32964, 44.63037],
         [-93.32967, 44.79107]
       ]
-    ],
-    "type": "Polygon"
+    ]
   }
 }

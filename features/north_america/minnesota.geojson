@@ -3,6 +3,7 @@
   "id": "minnesota.geojson",
   "properties": {},
   "geometry": {
+    "type": "Polygon",
     "coordinates": [
       [
         [-97.17831, 48.87603],
@@ -204,7 +205,6 @@
         [-97.1904, 48.81522],
         [-97.17831, 48.87603]
       ]
-    ],
-    "type": "Polygon"
+    ]
   }
 }

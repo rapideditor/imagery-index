@@ -86,7 +86,24 @@ function collectFeatures() {
     if (feature.type)       { obj.type = feature.type; }
     if (feature.id)         { obj.id = feature.id; }
     if (feature.properties) { obj.properties = feature.properties; }
-    if (feature.geometry)   { obj.geometry = feature.geometry; }
+
+    if (feature.geometry) {
+      if (feature.geometry.type !== 'Polygon' && feature.geometry.type !== 'MultiPolygon') {
+        console.error(colors.red('Error - Feature type must be "Polygon" or "MultiPolygon" in:'));
+        console.error('  ' + colors.yellow(file));
+        process.exit(1);
+      }
+      if (!feature.geometry.coordinates) {
+        console.error(colors.red('Error - Feature missing coordinates in:'));
+        console.error('  ' + colors.yellow(file));
+        process.exit(1);
+      }
+      obj.geometry = {
+        type: feature.geometry.type,
+        coordinates: feature.geometry.coordinates
+      };
+    }
+
     feature = obj;
 
     validateFile(file, feature, featureSchema);
