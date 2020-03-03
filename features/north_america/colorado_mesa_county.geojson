@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "id": "mesa_county_colorado.geojson",
+  "id": "colorado_mesa_county.geojson",
   "properties": {},
   "geometry": {
     "type": "Polygon",
