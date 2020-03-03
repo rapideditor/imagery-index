@@ -1451,3 +1451,5 @@ en:
     name: Wikimedia Map
   wroclaw-orto2015:
     name: 'Wrocław: Orthophotomap 2015 (aerial image)'
+  wroclaw-orto2018:
+    name: 'Wrocław: Orthophotomap 2018 (aerial image)'

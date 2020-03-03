@@ -5,9 +5,10 @@
   "name": "Wrocław: Orthophotomap 2015 (aerial image)",
   "url": "http://gis1.um.wroc.pl/arcgis/services/ogc/OGC_ortofoto_2015/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 23,
+  "privacy_policy_url": "http://bip.um.wroc.pl/artykul/7/32673/dane-osobowe",
   "start_date": "2015",
   "end_date": "2015",
-  "icon": "https://i.imgur.com/PRqROXB.png",
+  "icon": "wroclaw.png",
   "available_projections": ["EPSG:2177", "EPSG:3857", "EPSG:4326"],
   "attribution": {"text": "Urząd Miasta Wrocław"}
 }
