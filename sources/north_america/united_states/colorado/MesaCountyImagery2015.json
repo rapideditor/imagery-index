@@ -1,7 +1,7 @@
 {
   "id": "MCGIS-County-NAIP-Imagery-2015",
   "type": "wms",
-  "locationSet": {"include": ["us"]},
+  "locationSet": {"include": ["mesa_county_colorado.geojson"]},
   "name": "Mesa County GIS NAIP 2015",
   "url": "https://mcgis.mesacounty.us/image/services/Mosaic_Datasets/MesaCounty_2015/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 20,
