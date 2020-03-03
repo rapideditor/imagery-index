@@ -7,7 +7,7 @@
   "category": "elevation",
   "min_zoom": 4,
   "max_zoom": 18,
-  "icon": "https://stamen.com/wp-content/uploads/2016/07/stamen_compass_rose_small-01.png",
+  "icon": "stamen_compass_rose_small.png",
   "attribution": {
     "required": true,
     "url": "http://maps.stamen.com/#terrain",
