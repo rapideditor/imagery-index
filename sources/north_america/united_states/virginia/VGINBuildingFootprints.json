@@ -1,7 +1,7 @@
 {
   "id": "VGIN-BuildingFootprints_WM",
   "type": "tms",
-  "locationSet": {"include": ["us"]},
+  "locationSet": {"include": ["virginia.geojson"]},
   "name": "Virginia Building Footprints",
   "description": "Virginia Building Footprint Map Service",
   "url": "https://tileify-ags.herokuapp.com/tiles/{zoom}/{x}/{y}?url=https%3A%2F%2Fgismaps.vita.virginia.gov%2Farcgis%2Frest%2Fservices%2FVA_Base_layers%2FVA_Building_Footprints%2FMapServer&transparent=true&layers=show%3A20",
