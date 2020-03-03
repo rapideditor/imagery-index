@@ -1,7 +1,7 @@
 {
   "id": "Geobase_Hydrography_French",
   "type": "wms",
-  "locationSet": {"include": ["ca"]},
+  "locationSet": {"include": ["ca", "pm"]},
   "name": "Geobase Hydrography - French",
   "url": "https://maps.geogratis.gc.ca/wms/hydro_network_fr?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=nhn:nhn&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "overlay": true,
