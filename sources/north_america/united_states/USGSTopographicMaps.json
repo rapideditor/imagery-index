@@ -1,7 +1,7 @@
 {
   "id": "USGS-Scanned_Topographic",
   "type": "tms",
-  "locationSet": {"include": ["us"]},
+  "locationSet": {"include": ["us", "ca", "mx"], "exclude": ["as", "um", "pr", "vi"]},
   "name": "USGS Topographic Maps",
   "url": "https://caltopo.s3.amazonaws.com/topo/{zoom}/{x}/{y}.png",
   "max_zoom": 16,

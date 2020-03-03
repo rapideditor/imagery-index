@@ -1,7 +1,7 @@
 {
   "id": "USGS-Imagery",
   "type": "tms",
-  "locationSet": {"include": ["us"]},
+  "locationSet": {"include": ["us"], "exclude": ["as", "um", "alaska_hawaii.geojson"]},
   "name": "USGS Imagery",
   "description": "Public domain aerial imagery, mostly NAIP",
   "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{zoom}/{y}/{x}",
