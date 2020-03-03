@@ -1,7 +1,7 @@
 {
   "id": "IndianaMap2018",
   "type": "wms",
-  "locationSet": {"include": ["us"]},
+  "locationSet": {"include": ["indiana_map_2018.geojson"]},
   "name": "IndianaMap Orthoimagery 2018",
   "description": "Orthophotography for 19 counties and one city in western Indiana, collected during leaf-off conditions in 2018. One-foot resolution for Benton, Clay, Fountain, Greene, Jasper, LaPorte, Montogomery, Newton, Owen, Parke, Sullivan, Tippecanoe, Vigo, Warren, and White counties. Six-inch resolution for Allen, Lake, Porter, and Putnam counties. Three-inch resolution for Huntingburg.",
   "url": "https://maps.indiana.edu/arcgis/services/Imagery/Orthos_2018/MapServer/WmsServer?FORMAT=image/jpeg&TRANSPARENT=FALSE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
