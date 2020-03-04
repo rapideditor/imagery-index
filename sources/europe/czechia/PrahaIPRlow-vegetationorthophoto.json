@@ -1,7 +1,7 @@
 {
   "id": "PrahaIPRlow-vegetationorthophoto",
   "type": "wms",
-  "locationSet": {"include": ["cz"]},
+  "locationSet": {"include": ["prague-ortho.geojson"]},
   "name": "Praha IPR low-vegetation orthophoto",
   "url": "http://giswa1.mag.mepnet.cz/arcgis/services/MAP/mimovegetacni_snimkovani_cache/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "min_zoom": 1,
