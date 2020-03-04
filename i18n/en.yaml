@@ -1264,12 +1264,6 @@ en:
     description: 'Wind power turbines, farms and concession areas (blue: planned, light green: construction, dark green: built).'
   olho_dagua_do_casado:
     name: Olho d'Agua do Casado AL
-  openlabs-geoportal-public-transport:
-    name: Municipality of Tirana - Public Transport (Open Labs GeoPortal) (overlay)
-    description: Bus stops & lines provided by the Muncipality of Tirana hosted by Open Labs
-  openlabs-geoportal-tirana:
-    name: Municipality of Tirana (Open Labs GeoPortal)
-    description: Streets & Builings provided by the Muncipality of Tirana hosted by Open Labs
   openpt_map:
     name: OpenPT Map (overlay)
   openrailwaymap:
@@ -1398,6 +1392,12 @@ en:
     name: Thunderforest Landscape
   tf-outdoors:
     name: Thunderforest Outdoors
+  tirana-public-transport:
+    name: Municipality of Tirana - Public Transport (Open Labs GeoPortal) (overlay)
+    description: Bus stops & lines provided by the Muncipality of Tirana hosted by Open Labs
+  tirana-streets-buildings:
+    name: Municipality of Tirana (Open Labs GeoPortal)
+    description: Streets & Builings provided by the Muncipality of Tirana hosted by Open Labs
   tirol.gv.at-DGM:
     name: 'Tiris: DGM (Terrain model)'
   tirol.gv.at-DOM:
