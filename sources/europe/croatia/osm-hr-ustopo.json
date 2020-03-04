@@ -1,7 +1,7 @@
 {
   "id": "osm-hr-ustopo50",
   "type": "tms",
-  "locationSet": {"include": ["hr"]},
+  "locationSet": {"include": ["ustopo.geojson"]},
   "name": "osm-hr: US Topo 50",
   "url": "https://tms.osm-hr.org/ustopo/{zoom}/{x}/{y}.png",
   "max_zoom": 15,

@@ -1,7 +1,7 @@
 {
   "id": "osm-hr-zagreb-2018",
   "type": "tms",
-  "locationSet": {"include": ["hr"]},
+  "locationSet": {"include": ["zagreb.geojson"]},
   "name": "osm-hr: Zagreb 2018 Aerial imagery",
   "url": "https://tms.osm-hr.org/zagreb-2018/{zoom}/{x}/{-y}.png",
   "max_zoom": 19,

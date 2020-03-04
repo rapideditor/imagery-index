@@ -1,7 +1,7 @@
 {
   "id": "dgu-topo-25-new",
   "type": "wms",
-  "locationSet": {"include": ["hr"]},
+  "locationSet": {"include": ["dgu-topo-25-new.geojson"]},
   "name": "dgu.hr: Topo 25 new",
   "url": "https://geoportal.dgu.hr/services/tk/ows?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=tk:TK25_NOVI&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "permission_osm": "explicit",
