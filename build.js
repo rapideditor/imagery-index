@@ -69,7 +69,7 @@ function collectFeatures() {
       process.exit(1);
     }
 
-    let feature = precision(rewind(parsed, true), 5);
+    let feature = precision(rewind(parsed, true), 4);
     let fc = feature.features;
 
     // A FeatureCollection with a single feature inside (geojson.io likes to make these).
