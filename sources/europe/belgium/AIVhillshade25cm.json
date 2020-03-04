@@ -1,7 +1,7 @@
 {
   "id": "AIV_DHMV_II_HILL_25cm",
   "type": "wms",
-  "locationSet": {"include": ["be"]},
+  "locationSet": {"include": ["flanders.geojson"]},
   "name": "AIV Digitaal Hoogtemodel Vlaanderen II, multidirectionale hillshade 0,25 m",
   "url": "https://geoservices.informatievlaanderen.be/raadpleegdiensten/dhmv/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=DHMV_II_HILL_25cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "category": "elevation",
