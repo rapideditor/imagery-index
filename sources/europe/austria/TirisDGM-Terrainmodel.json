@@ -1,7 +1,7 @@
 {
   "id": "tirol.gv.at-DGM",
   "type": "wms",
-  "locationSet": {"include": ["at"]},
+  "locationSet": {"include": ["tiris.geojson"]},
   "name": "Tiris: DGM (Terrain model)",
   "url": "https://gis.tirol.gv.at/arcgis/services/Service_Public/terrain/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Image_Schummerung_Gelaendemodell&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "category": "elevation",

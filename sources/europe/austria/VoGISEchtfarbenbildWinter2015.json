@@ -1,7 +1,7 @@
 {
   "id": "vogis.cnv.at-wi2015_20cm",
   "type": "wms",
-  "locationSet": {"include": ["at"]},
+  "locationSet": {"include": ["vorarlberg-orthofoto-winter2015.geojson"]},
   "name": "VoGIS: Echtfarbenbild Winter 2015 (20cm)",
   "url": "https://vogis.cnv.at/mapserver/mapserv?map=i_luftbilder_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=wi2015_20cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "category": "historicphoto",

@@ -1,7 +1,7 @@
 {
   "id": "vogis.cnv.at-DOM",
   "type": "wms",
-  "locationSet": {"include": ["at"]},
+  "locationSet": {"include": ["vorarlberg.geojson"]},
   "name": "VoGIS: DOM (Surface model)",
   "url": "https://vogis.cnv.at/mapserver/mapserv?map=i_hoehen_und_gelaende_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=schummerung_50cm_surface&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "category": "elevation",
