@@ -1,7 +1,7 @@
 {
   "id": "Mulhouse_2018",
   "type": "tms",
-  "locationSet": {"include": ["fr"]},
+  "locationSet": {"include": ["mulhouse.geojson"]},
   "name": "Mulhouse - 2018",
   "url": "https://wms.openstreetmap.fr/tms/1.0.0/mulhouse_2018/{zoom}/{x}/{y}",
   "max_zoom": 22,

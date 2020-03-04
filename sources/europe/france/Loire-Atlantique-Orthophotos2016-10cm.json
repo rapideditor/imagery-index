@@ -1,7 +1,7 @@
 {
   "id": "Loire_Atlantique-Orthophotos-2016",
   "type": "wms",
-  "locationSet": {"include": ["fr"]},
+  "locationSet": {"include": ["loire-atlantique.geojson"]},
   "name": "Loire-Atlantique - Orthophotos 2016 - 10 cm",
   "url": "https://wms-vuduciel2.makina-corpus.net/geoserver/wms?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=cg44:ortho44-2016&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 20,

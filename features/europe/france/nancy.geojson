@@ -1,0 +1,11 @@
+{
+  "type": "Feature",
+  "id": "nancy.geojson",
+  "properties": {},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [[6.0607, 48.6055], [6.069, 48.7471], [6.3061, 48.7408], [6.2972, 48.5992], [6.0607, 48.6055]]
+    ]
+  }
+}

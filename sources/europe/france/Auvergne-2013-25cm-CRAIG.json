@@ -1,7 +1,7 @@
 {
   "id": "CRAIG-Auvergne-2013",
   "type": "tms",
-  "locationSet": {"include": ["fr"]},
+  "locationSet": {"include": ["auvergne.geojson"]},
   "name": "Auvergne 2013 25cm CRAIG",
   "url": "https://tiles.craig.fr/osm/wmts/1.0.0/ortho_2013/webmercator/{zoom}/{x}/{y}.jpeg",
   "max_zoom": 21,

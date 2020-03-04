@@ -1,7 +1,7 @@
 {
   "id": "BANO",
   "type": "tms",
-  "locationSet": {"include": ["fr"]},
+  "locationSet": {"include": ["fx"]},
   "name": "BANO",
   "description": "French address registry or Base Adresses Nationale Ouverte",
   "url": "https://{switch:a,b,c}.layers.openstreetmap.fr/bano/{zoom}/{x}/{y}.png",

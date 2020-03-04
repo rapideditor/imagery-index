@@ -1,7 +1,7 @@
 {
   "id": "route500",
   "type": "tms",
-  "locationSet": {"include": ["fr"]},
+  "locationSet": {"include": ["fx"]},
   "name": "Route 500",
   "description": "Routes du réseau classé (autoroutes, nationales, départementales)",
   "url": "https://{switch:a,b,c}.tile.openstreetmap.fr/route500/{zoom}/{x}/{y}.png",

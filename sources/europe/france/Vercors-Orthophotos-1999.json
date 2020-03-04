@@ -1,7 +1,7 @@
 {
   "id": "Vercors-Orthophotos-1999",
   "type": "tms",
-  "locationSet": {"include": ["fr"]},
+  "locationSet": {"include": ["vercors_reserve.geojson"]},
   "name": "Vercors (Réserve naturelle des Hauts-Plateaux du Vercors) - Orthophoto - 1999 - 1 m",
   "url": "https://wms.openstreetmap.fr/tms/1.0.0/PNRVercors-RHP-1999/{zoom}/{x}/{y}",
   "max_zoom": 19,

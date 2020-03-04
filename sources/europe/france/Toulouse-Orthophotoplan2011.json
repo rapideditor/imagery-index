@@ -1,7 +1,7 @@
 {
   "id": "Toulouse-Orthophotoplan-2011",
   "type": "wms",
-  "locationSet": {"include": ["fr"]},
+  "locationSet": {"include": ["toulouse.geojson"]},
   "name": "Toulouse - Orthophotoplan 2011",
   "url": "https://wms.plan.toulouse.fr/geocache/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortho2011&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 22,

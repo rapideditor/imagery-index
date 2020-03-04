@@ -1,7 +1,7 @@
 {
   "id": "route500hydro",
   "type": "tms",
-  "locationSet": {"include": ["fr"]},
+  "locationSet": {"include": ["fx"]},
   "name": "BD Carthage",
   "description": "Réseau hydrographique: cours et plans d'eau et POI",
   "url": "https://{switch:a,b,c}.tile.openstreetmap.fr/route500hydro/{zoom}/{x}/{y}.png",

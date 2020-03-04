@@ -1,7 +1,7 @@
 {
   "id": "orthophoto_lyon_2018",
   "type": "wms",
-  "locationSet": {"include": ["fr"]},
+  "locationSet": {"include": ["lyon.geojson"]},
   "name": "Lyon Orthophoto 2018",
   "url": "https://download.data.grandlyon.com/wms/grandlyon?VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&WIDTH={width}&HEIGHT={height}&transparent=true&LAYERS=Ortho2018_Dalle_unique_8cm_CC46&FORMAT=image/png&CRS={proj}&BBOX={bbox}",
   "min_zoom": 10,
@@ -11,6 +11,15 @@
   "best": true,
   "start_date": "2018-04-17",
   "end_date": "2018-04-20",
+  "available_projections": [
+    "EPSG:2154",
+    "EPSG:3857",
+    "EPSG:3946",
+    "EPSG:4171",
+    "EPSG:4326",
+    "EPSG:27562",
+    "EPSG:27572"
+  ],
   "attribution": {
     "required": true,
     "url": "https://data.grandlyon.com/imagerie/orthophotographie-2015-du-grand-lyon/",

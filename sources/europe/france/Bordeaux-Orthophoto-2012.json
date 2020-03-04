@@ -1,7 +1,7 @@
 {
   "id": "Bordeaux_2012",
   "type": "tms",
-  "locationSet": {"include": ["fr"]},
+  "locationSet": {"include": ["bordeaux.geojson"]},
   "name": "Bordeaux - 2012",
   "url": "https://wms.openstreetmap.fr/tms/1.0.0/bordeaux_2012/{zoom}/{x}/{y}",
   "max_zoom": 20,
