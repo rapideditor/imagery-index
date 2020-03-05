@@ -1,7 +1,7 @@
 {
   "id": "Berlin-2016",
   "type": "tms",
-  "locationSet": {"include": ["de"]},
+  "locationSet": {"include": ["berlin.geojson"]},
   "name": "Berlin aerial photography 2016",
   "url": "https://tiles.codefor.de/berlin-2016/{zoom}/{x}/{y}.png",
   "category": "historicphoto",

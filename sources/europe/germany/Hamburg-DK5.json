@@ -1,7 +1,7 @@
 {
   "id": "Hamburg-DK5",
   "type": "wms",
-  "locationSet": {"include": ["de"]},
+  "locationSet": {"include": ["hamburg.geojson"]},
   "name": "Hamburg (DK5)",
   "url": "https://geodienste.hamburg.de/HH_WMS_DK5?FORMAT=image/png&TRANSPARENT=false&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "available_projections": [

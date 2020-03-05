@@ -1,7 +1,7 @@
 {
   "id": "Metropole_Ruhr_RVR-DOP10",
   "type": "wms",
-  "locationSet": {"include": ["de"]},
+  "locationSet": {"include": ["metropole-ruhr.geojson"]},
   "name": "Metropole Ruhr: Luftbilder (10 cm)",
   "url": "https://geodaten.metropoleruhr.de/dop/dop?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=DOP&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "category": "photo",

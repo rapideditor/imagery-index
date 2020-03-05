@@ -1,7 +1,7 @@
 {
   "id": "GEOSN-WebAtlas",
   "type": "wms",
-  "locationSet": {"include": ["de"]},
+  "locationSet": {"include": ["saxony.geojson"]},
   "name": "Saxony WebAtlasSN",
   "url": "https://geodienste.sachsen.de/wms_geosn_webatlas-sn/guest?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vegetation,Siedlung,Gewaesser,Verkehr,Administrative_Einheiten,Beschriftung&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",

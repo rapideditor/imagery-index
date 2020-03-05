@@ -1,7 +1,7 @@
 {
   "id": "MunichLatestAerialImagery",
   "type": "wms",
-  "locationSet": {"include": ["de"]},
+  "locationSet": {"include": ["munich.geojson"]},
   "name": "Munich latest aerial imagery 60cm",
   "url": "https://ogc.muenchen.de/wms/opendata_luftbild?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=bgl0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "category": "historicphoto",

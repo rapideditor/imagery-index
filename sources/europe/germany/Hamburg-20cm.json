@@ -1,7 +1,7 @@
 {
   "id": "hamburg-20cm",
   "type": "wms",
-  "locationSet": {"include": ["de"]},
+  "locationSet": {"include": ["hamburg.geojson"]},
   "name": "Hamburg (20 cm)",
   "url": "https://geodienste.hamburg.de/HH_WMS_DOP20?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "category": "photo",
