@@ -1,7 +1,7 @@
 {
   "id": "GRAFCAN_Express-Canary_Islands",
   "type": "wms",
-  "locationSet": {"include": ["es"]},
+  "locationSet": {"include": ["canary_islands.geojson"]},
   "name": "GRAFCAN OrtoExpress - Canary Islands",
   "description": "High resolution imagery covering the Canary Islands, 20 cm/pixel. More recent in some urban areas than the higher-resolution \"GRAFCAN OrtoExpress Urbana\".",
   "url": "https://idecan1.grafcan.es/ServicioWMS/OrtoExpress?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortoexpress&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
