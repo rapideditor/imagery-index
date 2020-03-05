@@ -1,7 +1,7 @@
 {
   "id": "GSGS3906",
   "type": "tms",
-  "locationSet": {"include": ["ie"]},
+  "locationSet": {"include": ["ie", "northern_ireland.geojson"]},
   "name": "Ireland British War Office 1:25k GSGS 3906",
   "url": "https://mapwarper.net/layers/tile/101/{zoom}/{x}/{y}.png",
   "max_zoom": 18,
