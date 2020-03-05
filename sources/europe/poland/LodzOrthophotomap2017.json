@@ -1,0 +1,13 @@
+{
+  "id": "Lodz-2017",
+  "type": "wms",
+  "locationSet": {"include": ["lodz.geojson"]},
+  "name": "Łódź: Orthophotomap 2017 (aerial image)",
+  "url": "https://mapa.lodz.pl/3/services/OGC/Ortofotomapa/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 22,
+  "start_date": "2017",
+  "end_date": "2017",
+  "icon": "lodz.png",
+  "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:4326"],
+  "attribution": {"text": "Urząd Miasta Łodzi"}
+}

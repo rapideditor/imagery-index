@@ -1,0 +1,11 @@
+{
+  "id": "przemysl-aerial",
+  "type": "wms",
+  "locationSet": {"include": ["przemysl.geojson"]},
+  "name": "Przemyśl: Ortophotomap (aerial image)",
+  "url": "http://przemysl.geoportal2.pl/map/wms/wms.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "max_zoom": 23,
+  "icon": "Powiat.png",
+  "available_projections": ["EPSG:2179", "EPSG:2180", "EPSG:4326"],
+  "attribution": {"text": "Miasto Przemyśl"}
+}

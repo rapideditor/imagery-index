@@ -1,7 +1,7 @@
 {
   "id": "Gliwice-buildings",
   "type": "wms",
-  "locationSet": {"include": ["pl"]},
+  "locationSet": {"include": ["gliwice.geojson"]},
   "name": "Gliwice: Buildings",
   "url": "http://185.60.246.14:9090/isdp/gs/ows?FORMAT=image/png&transparent=true&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=default:EGIB_budynek,default:pkt_adr&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "available_projections": [

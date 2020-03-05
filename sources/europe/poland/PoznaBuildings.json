@@ -1,7 +1,7 @@
 {
   "id": "poznan-buildings",
   "type": "wms",
-  "locationSet": {"include": ["pl"]},
+  "locationSet": {"include": ["poznan2.geojson"]},
   "name": "Poznań: Buildings",
   "url": "http://wms2.geopoz.poznan.pl:8080/geoserver/sip/wms?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki_ewidencyjne_sql&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 23,

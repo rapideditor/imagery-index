@@ -1,9 +1,0 @@
-{
-  "id": "Bedzin-PL-buildings",
-  "type": "wms",
-  "locationSet": {"include": ["pl"]},
-  "name": "Będzin: Buildings",
-  "url": "http://www.geo.powiat.bedzin.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=eg_budynki_geo,pkt_adr&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-  "available_projections": ["EPSG:2177"],
-  "attribution": {"text": "Starostwo Powiatowe w Będzinie"}
-}

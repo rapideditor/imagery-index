@@ -1,7 +1,7 @@
 {
   "id": "Zabrze-2011",
   "type": "wms",
-  "locationSet": {"include": ["pl"]},
+  "locationSet": {"include": ["zabrze.geojson"]},
   "name": "Zabrze: Orthophotomap 2011 (aerial image)",
   "url": "http://siot.um.zabrze.pl/arcgis/services/UMZ_Ortofoto_2011/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 23,
