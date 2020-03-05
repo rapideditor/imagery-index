@@ -1,0 +1,9 @@
+{
+  "type": "Feature",
+  "id": "ussr_scan.geojson",
+  "properties": {},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [[[18, 60], [30, 60], [30, 56], [18, 56], [18, 60]]]
+  }
+}
