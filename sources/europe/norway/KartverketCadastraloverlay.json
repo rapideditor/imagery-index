@@ -1,7 +1,7 @@
 {
   "id": "kartverket-matrikkel",
   "type": "wms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
   "name": "Kartverket Cadastral overlay",
   "description": "Real estate boundaries from the official land register (`matrikkelen´). Monthly update.",
   "url": "https://wms.geonorge.no/skwms1/wms.matrikkel?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=matrikkel_WMS&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

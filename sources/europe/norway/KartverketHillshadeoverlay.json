@@ -1,7 +1,7 @@
 {
   "id": "kartverket-fjellskygge",
   "type": "tms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
   "name": "Kartverket Hillshade overlay",
   "description": "Hillshade for Norway",
   "url": "https://opencache{switch:,2,3}.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=fjellskygge&zoom={zoom}&x={x}&y={y}",

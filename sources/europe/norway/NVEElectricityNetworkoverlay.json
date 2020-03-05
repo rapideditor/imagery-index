@@ -1,7 +1,7 @@
 {
   "id": "nve-nettanlegg",
   "type": "wms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
   "name": "NVE Electricity Network overlay",
   "description": "Power lines (high voltage network) including transformers, submarine cables and pylons. Local distribution network is not included.",
   "url": "https://gis3.nve.no/map/services/Nettanlegg2/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Sentralnett,Regionalnett,Distribusjonsnett,Sjokabler,Master og stolper,Transformatorstasjoner&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

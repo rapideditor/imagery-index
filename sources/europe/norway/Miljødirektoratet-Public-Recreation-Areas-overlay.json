@@ -1,7 +1,7 @@
 {
   "id": "miljodirektoratet-friluftsomrader",
   "type": "wms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
   "name": "Miljødirektoratet Public Recreation Areas overlay",
   "description": "Public recreation areas with State ownership (\"friluftsområder\").",
   "url": "https://kart.miljodirektoratet.no/arcgis/services/friluftsliv_statlig_sikra/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=friluftsliv_statlig_sikra&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

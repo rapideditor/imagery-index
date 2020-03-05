@@ -1,7 +1,7 @@
 {
   "id": "ssb-sentrum",
   "type": "wms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
   "name": "SSB City Centres overlay",
   "description": "Downtown areas with significant commercial and service activities.",
   "url": "https://ogc.ssb.no/wms.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=layer_193&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

@@ -1,7 +1,7 @@
 {
   "id": "kartverket-hoydekurver",
   "type": "wms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
   "name": "Kartverket Contour Lines overlay",
   "description": "Contours for Norway",
   "url": "https://openwms.statkart.no/skwms1/wms.topo4?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=hoydetall5linje,hoydetall5punkt,hoydepunkt,vannpunkt,hoydekurver_1m,hoydekurver_5m,N50Hoydekurver,N250Hoydekurver,N500Hoydekurver,N1000Hoydekurver,N2000Hoydekurver&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

@@ -1,7 +1,7 @@
 {
   "id": "kartverket-topo4",
   "type": "tms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
   "name": "Kartverket N50 topo",
   "description": "Topographic map N50, equivalent to Norway 1:50.000 paper map series.",
   "url": "https://opencache{switch:,2,3}.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom={zoom}&x={x}&y={y}",

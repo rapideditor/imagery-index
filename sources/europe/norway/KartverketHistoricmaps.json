@@ -1,7 +1,7 @@
 {
   "id": "kartverket-historic",
   "type": "wms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
   "name": "Kartverket Historic maps",
   "description": "Historic maps - for the time being `Amtskartserien´ 1826-1917.",
   "url": "https://wms.geonorge.no/skwms1/wms.historiskekart?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=amt1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

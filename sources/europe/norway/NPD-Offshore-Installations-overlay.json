@@ -1,7 +1,7 @@
 {
   "id": "npd-offshore",
   "type": "wms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["npd_offshore_installations.geojson"]},
   "name": "NPD Offshore Installations overlay",
   "description": "Production platforms and oil/natural gas fields on the Norwegian continental shelf",
   "url": "https://gis.npd.no/ogc/factmaps/2_0?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=fclFixed,pplAll,fldByStatus&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

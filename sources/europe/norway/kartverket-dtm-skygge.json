@@ -1,7 +1,7 @@
 {
   "id": "kartverket-dtm-skygge",
   "type": "wms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
   "name": "Kartverket DTM Digital Terrain Model",
   "description": "Shaded relief representation of the Norwegian digital terrain model (DTM), i.e. earth surface without trees, buildings and other objects.",
   "url": "https://wms.geonorge.no/skwms1/wms.hoyde-dtm_somlos_skyggerelieff?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=las_dtm_skyggerelieff_somlos&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

@@ -1,7 +1,7 @@
 {
   "id": "geovekst-nib",
   "type": "tms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
   "name": "Norway Orthophoto",
   "description": "Norwegian orthophotos (max zoom 21), courtesy of Geovekst and Norkart.",
   "url": "https://waapi.webatlas.no/maptiles/tiles/webatlas-orto-newup/wa_grid/{zoom}/{x}/{y}.jpeg?api_key=b8e36d51-119a-423b-b156-d744d54123d5",

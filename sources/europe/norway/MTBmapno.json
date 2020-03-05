@@ -1,7 +1,7 @@
 {
   "id": "mtbmap-no",
   "type": "tms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
   "name": "MTBmap.no",
   "description": "Norwegian mountain biking map from OSM (max zoom 14-16, varies per region)",
   "url": "https://mtbmap.no/tiles/osm/mtbmap/{zoom}/{x}/{y}.jpg",

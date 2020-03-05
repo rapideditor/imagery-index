@@ -1,7 +1,7 @@
 {
   "id": "riksantikvaren-kulturminner",
   "type": "wms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["bv"]},
   "name": "Riksantikvaren Heritage Sites overlay",
   "description": "Archeological and architectural monuments/sites and cultural environments protected by law (''enkeltminner'') from the Norwegian Directorate for Cultural Heritage",
   "url": "https://kart.ra.no/arcgis/services/Distribusjon/Kulturminner/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=3,6&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

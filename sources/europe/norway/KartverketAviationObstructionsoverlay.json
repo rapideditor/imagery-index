@@ -1,7 +1,7 @@
 {
   "id": "kartverket-luftfartshindre",
   "type": "wms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
   "name": "Kartverket Aviation Obstructions overlay",
   "description": "Vertical obstructions to aircrafts, above 15m in rural areas and 30m in urban areas (e.g. masts, towers, high buildings, power lines)",
   "url": "https://openwms.statkart.no/skwms1/wms.nrl?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=nrl3_wms&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

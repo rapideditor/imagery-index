@@ -1,7 +1,7 @@
 {
   "id": "nve-vindkraft",
   "type": "wms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
   "name": "NVE Wind Power Plants overlay",
   "description": "Wind power turbines, farms and concession areas (blue: planned, light green: construction, dark green: built).",
   "url": "https://gis3.nve.no/map/services/Vindkraft2/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vindkraft_konsesjon_gitt_ikke_utbygd,Vindkraft_under_bygging,Vindkraft_utbygd,Vindkraftomrade,Vindturbin&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

@@ -1,7 +1,7 @@
 {
   "id": "ssb-tettsteder",
   "type": "wms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
   "name": "SSB Urban Areas overlay",
   "description": "Human settlements of at least 200 people with less than 200 meters between households",
   "url": "https://ogc.ssb.no/wms.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=layer_198&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

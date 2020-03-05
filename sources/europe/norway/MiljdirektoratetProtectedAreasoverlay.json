@@ -1,7 +1,7 @@
 {
   "id": "miljodirektoratet-vern",
   "type": "wms",
-  "locationSet": {"include": ["no"]},
+  "locationSet": {"include": ["no"], "exclude": ["bv"]},
   "name": "Miljødirektoratet Protected Areas overlay",
   "description": "Norwegian national parks, nature reserves and other protected areas and objects from Naturbase, including Svalbard/Spitsbergen",
   "url": "https://kart.miljodirektoratet.no/arcgis/services/vern/MapServer/WmsServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=naturvern_klasser_omrade&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
