@@ -1,7 +1,7 @@
 {
   "id": "PCN-Italy-2012",
   "type": "wms",
-  "locationSet": {"include": ["it"]},
+  "locationSet": {"include": ["it", "sm", "va"]},
   "name": "PCN 2012 - Italy",
   "url": "http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/raster/ortofoto_colore_12.map&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=OI.ORTOIMMAGINI.2012&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "category": "photo",
