@@ -1,0 +1,11 @@
+{
+  "type": "Feature",
+  "id": "luxembourg_lidar_prototype.geojson",
+  "properties": {},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [[6.05, 49.8218], [6.0498, 49.9117], [6.189, 49.9117], [6.189, 49.8218], [6.05, 49.8218]]
+    ]
+  }
+}
