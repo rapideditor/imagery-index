@@ -1,7 +1,7 @@
 {
   "id": "osm-hu-ortho",
   "type": "tms",
-  "locationSet": {"include": ["hu"]},
+  "locationSet": {"include": ["osm-hu-orthophotos.geojson"]},
   "name": "openstreetmap.hu orthophotos",
   "url": "http://adam.openstreetmap.hu/mapproxy/tiles/1.0.0/openstreetmap.hu.orthophotos/mercator/{zoom}/{x}/{y}.png",
   "max_zoom": 21,

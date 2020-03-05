@@ -1,7 +1,7 @@
 {
   "id": "hu-hillshade",
   "type": "tms",
-  "locationSet": {"include": ["hu"]},
+  "locationSet": {"include": ["hungary_hillshade.geojson"]},
   "name": "Hillshade Hungary",
   "url": "https://{switch:a,b,c}.map.turistautak.hu/tiles/shading/{zoom}/{x}/{y}.png",
   "max_zoom": 18,

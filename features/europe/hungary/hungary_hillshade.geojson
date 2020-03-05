@@ -1,0 +1,9 @@
+{
+  "type": "Feature",
+  "id": "hungary_hillshade.geojson",
+  "properties": {},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [[[15, 45], [15, 49], [24, 49], [24, 45], [15, 45]]]
+  }
+}
