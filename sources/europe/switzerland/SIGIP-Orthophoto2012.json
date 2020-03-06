@@ -1,7 +1,7 @@
 {
   "id": "SIGIP-2012",
   "type": "tms",
-  "locationSet": {"include": ["ch"]},
+  "locationSet": {"include": ["sigip_ortho_2012.geojson"]},
   "name": "SIGIP - Orthophoto 2012",
   "url": "https://osmdata.asitvd.ch/tiles/sigip2012/{zoom}/{x}/{y}.png",
   "min_zoom": 14,

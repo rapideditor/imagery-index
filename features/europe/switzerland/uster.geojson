@@ -1,0 +1,9 @@
+{
+  "type": "Feature",
+  "id": "uster.geojson",
+  "properties": {},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [[[8.68, 47.32], [8.68, 47.365], [8.74, 47.365], [8.74, 47.32], [8.68, 47.32]]]
+  }
+}

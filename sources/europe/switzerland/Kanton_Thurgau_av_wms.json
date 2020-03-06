@@ -1,7 +1,7 @@
 {
   "id": "kt_tg_av",
   "type": "wms",
-  "locationSet": {"include": ["ch"]},
+  "locationSet": {"include": ["kanton_thurgau.geojson"]},
   "name": "Kanton Thurgau, Basisplan-AV",
   "description": "Basisplan-AV des Kantons Thurgau farbig & schwarzweiss mit Liegenschaften, Nomenklatur, Landes-, Kantons- und Gemeindegrenzen, Einzelobjekten, Bodenbedeckung, Strassennamen, Höhenkurven und Geländemodell",
   "url": "https://ows.geo.tg.ch/geofy_access_proxy/basisplanf?LAYERS=Basisplan_farbig&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",

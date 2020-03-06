@@ -1,0 +1,16 @@
+{
+  "id": "Zug-2011",
+  "type": "wms",
+  "locationSet": {"include": ["kanton_zug.geojson"]},
+  "name": "Kanton Zug 2011",
+  "url": "https://services.geo.zg.ch:443/ows/Orthofotos?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=zg.orthofoto_2011_kt_zg&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "min_zoom": 10,
+  "max_zoom": 21,
+  "license_url": "https://www.zg.ch/behoerden/direktion-des-innern/geoportal/geodaten-einbinden/wms",
+  "privacy_policy_url": "https://www.zg.ch/datenschutzerklaerung",
+  "best": true,
+  "start_date": "2011",
+  "end_date": "2011",
+  "available_projections": ["EPSG:2056", "EPSG:3857", "EPSG:4326", "EPSG:21781"],
+  "attribution": {"text": "GIS Kanton Zug"}
+}

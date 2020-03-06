@@ -1,0 +1,16 @@
+{
+  "id": "CTFRIBOURG2016",
+  "type": "tms",
+  "locationSet": {"include": ["kanton_fribourg.geojson"]},
+  "name": "Canton Fribourg 2016",
+  "description": "This imagery is provided via a proxy operated by https://sosm.ch/",
+  "url": "https://mapproxy.osm.ch/tiles/fribourg_2016/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
+  "category": "photo",
+  "min_zoom": 1,
+  "max_zoom": 21,
+  "license_url": "https://www.geocat.ch/geonetwork/srv/fre/catalog.search#/metadata/9c059550-1cf7-4338-aa51-f39474a67639",
+  "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
+  "start_date": "2016",
+  "end_date": "2016",
+  "attribution": {"required": true, "text": "Canton Fribourg 2016 'orthophoto technique'"}
+}

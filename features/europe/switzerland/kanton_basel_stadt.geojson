@@ -1,0 +1,11 @@
+{
+  "type": "Feature",
+  "id": "kanton_basel_stadt.geojson",
+  "properties": {},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [[7.492, 47.4817], [7.492, 47.6342], [7.784, 47.6342], [7.784, 47.4817], [7.492, 47.4817]]
+    ]
+  }
+}

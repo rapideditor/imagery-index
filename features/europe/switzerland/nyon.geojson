@@ -1,0 +1,11 @@
+{
+  "type": "Feature",
+  "id": "nyon.geojson",
+  "properties": {},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [[6.1807, 46.3888], [6.2145, 46.4152], [6.2577, 46.3887], [6.224, 46.3623], [6.1807, 46.3888]]
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "id": "KTGL_ORTHO_2017",
   "type": "wms",
-  "locationSet": {"include": ["ch"]},
+  "locationSet": {"include": ["kanton_glarus.geojson"]},
   "name": "Kanton Glarus Orthophoto 2017",
   "url": "https://wms.geo.gl.ch?LAYERS=ch.gl.imagery.orthofoto2017&STYLES=default&FORMAT=image/jpeg&CRS={proj}&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
   "category": "photo",

@@ -1,0 +1,11 @@
+{
+  "type": "Feature",
+  "id": "stadt_zurich_ortho_2011.geojson",
+  "properties": {},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [[8.4462, 47.4414], [8.6318, 47.4397], [8.629, 47.3138], [8.4438, 47.3155], [8.4462, 47.4414]]
+    ]
+  }
+}

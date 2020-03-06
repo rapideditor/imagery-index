@@ -954,16 +954,11 @@ en:
     name: 'Waymarked Trails: Winter Sports'
   Zabrze-2011:
     name: 'Zabrze: Orthophotomap 2011 (aerial image)'
-  Zuerich-aerial_2011:
-    name: City of Zürich Orthophoto 2011
-  Zuerich-city_map:
-    name: Stadtplan Zürich
-    description: 'This imagery is provided via a proxy operated by https://sosm.ch/'
-  Zuerich-overview:
-    name: 'City of Zürich Overview map (Steets, buildings, house numbers)'
-  Zuerich-zh_luftbild2011-tms:
+  Zuerich-ortho-2011-tms:
     name: Stadt Zürich Luftbild 2011
     description: 'This imagery is provided via a proxy operated by https://sosm.ch/'
+  Zuerich-ortho-2011-wms:
+    name: City of Zürich Orthophoto 2011
   Zuerich-zh_uebersichtsplan-tms:
     name: Übersichtsplan Zürich
     description: 'This imagery is provided via a proxy operated by https://sosm.ch/'
@@ -973,6 +968,11 @@ en:
     name: Kanton Zug Nord 2016
   Zug-2018:
     name: Kanton Zug Gemeinde Zug Süd 2018
+  Zurich-overviewmap_tms:
+    name: Stadtplan Zürich
+    description: 'This imagery is provided via a proxy operated by https://sosm.ch/'
+  Zurich-overviewmap_wms:
+    name: 'City of Zürich Overview map (Steets, buildings, house numbers)'
   al_palestina:
     name: Palestina AL
   al_piranhas:

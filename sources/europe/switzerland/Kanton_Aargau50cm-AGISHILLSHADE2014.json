@@ -1,0 +1,15 @@
+{
+  "id": "Aargau-AGIS-2014-Hillshade",
+  "type": "tms",
+  "locationSet": {"include": ["kanton_aargau.geojson"]},
+  "name": "Kanton Aargau 50cm DTM/Hillshade",
+  "description": "This imagery is provided via a proxy operated by https://sosm.ch/",
+  "url": "https://mapproxy.osm.ch/tiles/AGIS2014HILLSHADE/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
+  "min_zoom": 8,
+  "max_zoom": 19,
+  "license_url": "https://wiki.openstreetmap.org/wiki/Switzerland/AGIS",
+  "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
+  "best": true,
+  "start_date": "2014",
+  "attribution": {"text": "AGIS 2014 50cm DTM/Hillshade"}
+}
