@@ -1,7 +1,7 @@
 {
   "id": "OS-OpenData_Locator",
   "type": "tms",
-  "locationSet": {"include": ["gb"]},
+  "locationSet": {"include": ["great_britain.geojson"]},
   "name": "OS OpenData Locator",
   "url": "https://tiles.itoworld.com/os_locator/{zoom}/{x}/{y}.png",
   "max_zoom": 22,

@@ -1,7 +1,7 @@
 {
   "id": "OS-OpenData_StreetView",
   "type": "tms",
-  "locationSet": {"include": ["gb"]},
+  "locationSet": {"include": ["great_britain.geojson"]},
   "name": "OS OpenData StreetView",
   "url": "https://{switch:a,b,c}.os.openstreetmap.org/sv/{zoom}/{x}/{y}.png",
   "min_zoom": 1,
