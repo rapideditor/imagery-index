@@ -650,6 +650,8 @@ en:
     description: Works only from within Ukraine or with an Ukrainian proxy server.
   UkraineMykolaiv2018:
     name: Ukraine - Mykolaiv 2018
+  UkraineVinnytsia2018:
+    name: Ukraine - Vinnytsia 2018
   UrbISOrtho2016:
     name: UrbIS-Ortho 2016
   UrbISOrtho2017:

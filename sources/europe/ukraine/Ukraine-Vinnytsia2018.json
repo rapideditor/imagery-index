@@ -1,0 +1,22 @@
+{
+  "id": "UkraineVinnytsia2018",
+  "type": "tms",
+  "locationSet": {"include": ["vinnytsia.geojson"]},
+  "name": "Ukraine - Vinnytsia 2018",
+  "url": "https://gisapi.vmr.gov.ua/OpenData/ofp/2018-10/GoogleMapsCompatible/{zoom}/{y}/{x}.png?ver=22102018",
+  "category": "photo",
+  "min_zoom": 14,
+  "max_zoom": 20,
+  "permission_osm": "implicit",
+  "license_url": "https://zakon.rada.gov.ua/laws/show/2939-17",
+  "privacy_policy_url": "https://zakon.rada.gov.ua/laws/show/3792-12",
+  "best": true,
+  "start_date": "2018-10",
+  "end_date": "2018-10",
+  "icon": "https://www.vmr.gov.ua/_catalogs/masterpage/images/favicon.ico",
+  "attribution": {
+    "required": true,
+    "url": "https://www.vmr.gov.ua/",
+    "text": "© Вінницька міська рада"
+  }
+}
