@@ -1,7 +1,7 @@
 {
   "id": "UkraineMykolaiv2018",
   "type": "tms",
-  "locationSet": {"include": ["ua"]},
+  "locationSet": {"include": ["mykolaiv.geojson"]},
   "name": "Ukraine - Mykolaiv 2018",
   "url": "http://mbk.mkrada.gov.ua/map/rtile/carto_2013928517078615452/ua/{zoom}/{x}/{y}.png",
   "category": "photo",

@@ -1,7 +1,7 @@
 {
   "id": "Ukraine-orto10000-2012",
   "type": "tms",
-  "locationSet": {"include": ["ua"]},
+  "locationSet": {"include": ["ua", "crimea.geojson"]},
   "name": "Ukraine - Orthophotomaps 2012",
   "description": "Works only from within Ukraine or with an Ukrainian proxy server.",
   "url": "http://212.26.144.110/tile2/orto_10000/{zoom}/{x}/{-y}.jpg",
