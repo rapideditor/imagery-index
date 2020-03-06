@@ -1009,6 +1009,12 @@ en:
   openrailwaymap:
     name: OpenRailwayMap
     description: Overlay imagery for railway mapping in OSM
+  openrailwaymap-maxspeeds:
+    name: OpenRailwayMap Maxspeeds
+    description: Overlay imagery showing railway speed limits based on OpenStreetMap data
+  openrailwaymap-signalling:
+    name: OpenRailwayMap Signalling
+    description: Overlay imagery showing railway signals based on OpenStreetMap data
   openseamap:
     name: OpenSeaMap
   opensnowmap-overlay:

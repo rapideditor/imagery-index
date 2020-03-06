@@ -1,0 +1,16 @@
+{
+  "id": "openrailwaymap-maxspeeds",
+  "type": "tms",
+  "locationSet": {"include": ["001"]},
+  "name": "OpenRailwayMap Maxspeeds",
+  "description": "Overlay imagery showing railway speed limits based on OpenStreetMap data",
+  "url": "https://{switch:a,b,c}.tiles.openrailwaymap.org/maxspeed/{zoom}/{x}/{y}.png",
+  "max_zoom": 20,
+  "privacy_policy_url": "https://www.openrailwaymap.org/en/imprint",
+  "overlay": true,
+  "icon": "https://www.openrailwaymap.org/img/openrailwaymap-64.png",
+  "attribution": {
+    "url": "https://www.openrailwaymap.org/",
+    "text": "Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors"
+  }
+}
