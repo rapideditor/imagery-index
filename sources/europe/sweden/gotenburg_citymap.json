@@ -1,7 +1,7 @@
 {
   "id": "gothenburg-citymap",
   "type": "wms",
-  "locationSet": {"include": ["se"]},
+  "locationSet": {"include": ["gotenburg.geojson"]},
   "name": "Gothenburg City map",
   "description": "The city map is an overview map that describes Gothenburg. It contains general information about land, communications, hydrography, buildings, address numbers and street names, administrative division and other orientation text.",
   "url": "https://opengeodata.goteborg.se/services/stadskarta.wms.v4/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=stadskarta&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

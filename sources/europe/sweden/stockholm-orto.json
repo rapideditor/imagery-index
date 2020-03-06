@@ -1,7 +1,7 @@
 {
   "id": "stockholm-orto",
   "type": "wms",
-  "locationSet": {"include": ["se"]},
+  "locationSet": {"include": ["stockholm.geojson"]},
   "name": "Stockholm Orthophoto",
   "description": "Orthophotos from the municipality of Stockholm 2016, CC0 license",
   "url": "https://openmap.stockholm.se/bios/wms/app/baggis/web/WMS_STHLM_ORTOFOTO_2016?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=p_1002630&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

@@ -1,7 +1,7 @@
 {
   "id": "kalmar-orto-2018",
   "type": "wms",
-  "locationSet": {"include": ["se"]},
+  "locationSet": {"include": ["kalmar_orto_2018.geojson"]},
   "name": "Kalmar Urban Orthophoto 2018",
   "description": "Orthophotos for urban areas of the municipality of Kalmar 2018",
   "url": "https://kartportal.kalmar.se/arcgisserver/services/Ortofoto/Kalmar_2018/ImageServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

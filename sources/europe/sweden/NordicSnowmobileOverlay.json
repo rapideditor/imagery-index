@@ -1,6 +1,7 @@
 {
   "id": "kelkkareitit",
   "type": "tms",
+  "locationSet": {"include": ["se", "no", "fi"], "exclude": ["sj", "bv"]},
   "name": "Nordic snowmobile overlay",
   "description": "Kelkkareitit.fi snowmobile trails from OSM (Nordic coverage)",
   "url": "https://tiles.kelkkareitit.fi/kelkkareitit/{zoom}/{x}/{y}.png",

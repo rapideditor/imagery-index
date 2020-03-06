@@ -1,7 +1,7 @@
 {
   "id": "kalmar-orto-2016",
   "type": "wms",
-  "locationSet": {"include": ["se"]},
+  "locationSet": {"include": ["kalmar_orto_2016.geojson"]},
   "name": "Kalmar South Orthophoto 2016",
   "description": "Orthophotos for the south coast of the municipality of Kalmar 2016",
   "url": "https://kartportal.kalmar.se/arcgisserver/services/Ortofoto/Kalmar_2016/ImageServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

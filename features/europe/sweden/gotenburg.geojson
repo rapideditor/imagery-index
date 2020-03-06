@@ -1,0 +1,17 @@
+{
+  "type": "Feature",
+  "id": "gotenburg.geojson",
+  "properties": {},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [10.8078, 58.3427],
+        [13.0258, 58.3427],
+        [13.0258, 57.0896],
+        [11.7033, 57.0896],
+        [10.8078, 58.3427]
+      ]
+    ]
+  }
+}

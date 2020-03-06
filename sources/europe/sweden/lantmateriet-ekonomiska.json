@@ -1,7 +1,7 @@
 {
   "id": "osmse-ekonomiska",
   "type": "tms",
-  "locationSet": {"include": ["se"]},
+  "locationSet": {"include": ["lantmateriet-ekonomiska.geojson"]},
   "name": "Lantmäteriet Economic Map 1950–1980",
   "description": "Scan of \"Economic maps\" ca. 1950–1980",
   "url": "https://mapproxy.openstreetmap.se/tms/1.0.0/ek_EPSG3857/{zoom}/{x}/{-y}.jpeg",

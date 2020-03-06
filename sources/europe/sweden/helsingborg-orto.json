@@ -1,7 +1,7 @@
 {
   "id": "helsingborg-orto",
   "type": "tms",
-  "locationSet": {"include": ["se"]},
+  "locationSet": {"include": ["helsingborg.geojson"]},
   "name": "Helsingborg Orthophoto",
   "description": "Orthophotos from the municipality of Helsingborg 2016, public domain",
   "url": "https://mapproxy.openstreetmap.se/tiles/1.0.0/hborg2016_EPSG3857/{zoom}/{x}/{y}.jpeg",
