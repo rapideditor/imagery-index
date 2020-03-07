@@ -39,11 +39,11 @@ function buildAll() {
   let tstrings = {};   // translation strings
   const features = collectFeatures();
   const featureCollection = { type: 'FeatureCollection', features: features };
-  fs.writeFileSync('dist/featureCollection.json', prettyStringify(featureCollection, { maxLength: 9999 }));
+  fs.writeFileSync('dist/featureCollection.json', prettyStringify(featureCollection, { maxLength: 99999 }));
 
   // Sources
   const sources = collectSources(tstrings, featureCollection);
-  fs.writeFileSync('dist/sources.json', prettyStringify({ sources: sortObject(sources) }, { maxLength: 9999 }));
+  fs.writeFileSync('dist/sources.json', prettyStringify({ sources: sortObject(sources) }, { maxLength: 99999 }));
   fs.writeFileSync('i18n/en.yaml', YAML.safeDump({ en: sortObject(tstrings) }, { lineWidth: -1 }) );
 
   console.timeEnd(END);
