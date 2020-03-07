@@ -1,0 +1,15 @@
+{
+  "id": "Stuttgart-latest",
+  "type": "wms",
+  "locationSet": {"include": ["stuttgart.geojson"]},
+  "name": "Stuttgart Luftbild Stadtmessungsamt 2017",
+  "url": "https://gis5.stuttgart.de/arcgis/services/1_Base/WMS_Luftbilder_aktuell/MapServer/WmsServer?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "permission_osm": "explicit",
+  "license_url": "https://lists.openstreetmap.de/pipermail/stuttgart/2018-September/000882.html",
+  "privacy_policy_url": "https://www.stuttgart.de/datenschutzerklaerung",
+  "best": true,
+  "start_date": "2017-04-12",
+  "end_date": "2017-04-21",
+  "icon": "https://www.stuttgart.de/favicon.ico",
+  "available_projections": ["EPSG:3857", "EPSG:25832"]
+}
