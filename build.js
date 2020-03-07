@@ -41,9 +41,6 @@ function buildAll() {
   const featureCollection = { type: 'FeatureCollection', features: features };
   fs.writeFileSync('dist/featureCollection.json', prettyStringify(featureCollection, { maxLength: 9999 }));
 
-// FROM ELI - do once
-// convertLegacySources();
-
   // Sources
   const sources = collectSources(tstrings, featureCollection);
   fs.writeFileSync('dist/sources.json', prettyStringify({ sources: sortObject(sources) }, { maxLength: 9999 }));
@@ -126,75 +123,6 @@ function collectFeatures() {
   return features;
 }
 
-// FROM ELI
-// function convertLegacySources() {
-//   let sources = {};
-//   let files = {};
-//   process.stdout.write('🔧  Legacy Sources: ');
-
-//   glob.sync('sources/**/*.geojson').forEach(file => {
-//     let outfile = file.replace('.geojson', '.json');
-//     // Start clean
-//     shell.rm('-f', [outfile]);
-
-//     let contents = fs.readFileSync(file, 'utf8');
-//     let source;
-//     try {
-//       source = JSON.parse(contents);
-//     } catch (jsonParseError) {
-//       console.error(colors.red(`Error - ${jsonParseError.message} in:`));
-//       console.error('  ' + colors.yellow(file));
-//       process.exit(1);
-//     }
-
-//     source = source.properties;
-
-//     // sort properties and array values
-//     let converted = {};
-//     if (source.id)                     { converted.id = source.id; }
-//     if (source.type)                   { converted.type = source.type; }
-//     if (source.country_code)           { converted.locationSet = { include: [ source.country_code.toLowerCase() ] }; }
-//     if (source.name)                   { converted.name = source.name; }
-//     if (source.description)            { converted.description = source.description; }
-//     if (source.url)                    { converted.url = source.url; }
-//     if (source.category)               { converted.category = source.category; }
-//     if (source.min_zoom)               { converted.min_zoom = source.min_zoom; }
-//     if (source.max_zoom)               { converted.max_zoom = source.max_zoom; }
-//     if (source.permission_osm)         { converted.permission_osm = source.permission_osm; }
-//     if (source.license_url)            { converted.license_url = source.license_url; }
-//     if (source.privacy_policy_url)     { converted.privacy_policy_url = source.privacy_policy_url; }
-//     if (source.best)                   { converted.best = source.best; }
-//     if (source.start_date)             { converted.start_date = source.start_date; }
-//     if (source.end_date)               { converted.end_date = source.end_date; }
-//     if (source.overlay)                { converted.overlay = source.overlay; }
-//     if (source.available_projections)  { converted.available_projections = source.available_projections.sort(sortProjections); }
-//     if (source.attribution)            { converted.attribution = source.attribution; }
-//     if (source.icon)                   { converted.icon = source.icon; }
-
-//     // only convert these types
-//     if (['tms', 'wms'].indexOf(source.type) === -1) return;
-
-//     prettifyFile(outfile, converted, '');
-
-//     let sourceId = source.id;
-//     if (files[sourceId]) {
-//       console.error(colors.red('Error - Duplicate source id: ') + colors.yellow(sourceId));
-//       console.error('  ' + colors.yellow(files[sourceId]));
-//       console.error('  ' + colors.yellow(file));
-//       process.exit(1);
-//     }
-
-//     sources[sourceId] = source;
-//     files[sourceId] = file;
-
-//     process.stdout.write(colors.green('✓'));
-//   });
-
-//   process.stdout.write(' ' + Object.keys(files).length + '\n');
-
-//   return sources;
-// }
-
 
 function collectSources(tstrings, featureCollection) {
   let sources = {};
@@ -212,17 +140,6 @@ function collectSources(tstrings, featureCollection) {
       console.error('  ' + colors.yellow(file));
       process.exit(1);
     }
-
-// rewrite tricky filenames
-// if (/\((aerialimage|geonames|WMS)\)/.test(file)) {
-//   console.log(file);
-//   let orig = file;
-//   file = file.replace(/\((aerialimage|geonames|WMS)\)/, '');
-//   contents = '';              // force rewrite of new file
-//   // shell.rm('-f', [orig]);     // remove orig file
-//   let source = orig.replace('(', '\(').replace(')','\)');
-//   shell.exec(`git mv "${orig}" "${file}"`);
-// }
 
     // Cleanup the source files to be consistent.
     // Reorder properties and sort array values
@@ -271,28 +188,25 @@ function collectSources(tstrings, featureCollection) {
     source = obj;
     validateFile(file, source, sourceSchema);
 
-    // locationSets will be required eventually
-    if (source.locationSet) {
-      (source.locationSet.include || []).forEach(location => {
-        if (!loco.validateLocation(location)) {
-          console.error(colors.red('Error - Invalid include location: ') + colors.yellow(location));
-          console.error('  ' + colors.yellow(file));
-          process.exit(1);
-        }
-      });
+    (source.locationSet.include || []).forEach(location => {
+      if (!loco.validateLocation(location)) {
+        console.error(colors.red('Error - Invalid include location: ') + colors.yellow(location));
+        console.error('  ' + colors.yellow(file));
+        process.exit(1);
+      }
+    });
 
-      (source.locationSet.exclude || []).forEach(location => {
-        if (!loco.validateLocation(location)) {
-          console.error(colors.red('Error - Invalid exclude location: ') + colors.yellow(location));
-          console.error('  ' + colors.yellow(file));
-          process.exit(1);
-        }
-      });
-    }
+    (source.locationSet.exclude || []).forEach(location => {
+      if (!loco.validateLocation(location)) {
+        console.error(colors.red('Error - Invalid exclude location: ') + colors.yellow(location));
+        console.error('  ' + colors.yellow(file));
+        process.exit(1);
+      }
+    });
 
     prettifyFile(file, source, contents);
 
-    let sourceId = source.id;
+    const sourceId = source.id;
     if (files[sourceId]) {
       console.error(colors.red('Error - Duplicate source id: ') + colors.yellow(sourceId));
       console.error('  ' + colors.yellow(files[sourceId]));
@@ -304,9 +218,7 @@ function collectSources(tstrings, featureCollection) {
     files[sourceId] = file;
 
     // collect translation strings for this source
-    tstrings[sourceId] = {
-      name: source.name
-    };
+    tstrings[sourceId] = { name: source.name };
     if (source.description) {
       tstrings[sourceId].description = source.description;
     }
