@@ -37,7 +37,7 @@ function buildAll() {
 
   // Features
   let tstrings = {};   // translation strings
-  const features = collectFeatures();
+  const features = collectFeatures().sort((a,b) => a.id.localeCompare(b.id));
   const featureCollection = { type: 'FeatureCollection', features: features };
   fs.writeFileSync('dist/featureCollection.json', prettyStringify(featureCollection, { maxLength: 99999 }));
 
@@ -268,8 +268,7 @@ function sortObject(obj) {
 }
 
 function sortProjections(a, b) {
-  let aId = parseInt(a.replace('EPSG:', ''), 10);
-  let bId = parseInt(b.replace('EPSG:', ''), 10);
+  const aId = parseInt(a.replace('EPSG:', ''), 10);
+  const bId = parseInt(b.replace('EPSG:', ''), 10);
   return aId - bId;
 }
-
