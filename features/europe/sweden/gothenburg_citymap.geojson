@@ -1,6 +1,6 @@
 {
   "type": "Feature",
-  "id": "gotenburg.geojson",
+  "id": "gothenburg_citymap.geojson",
   "properties": {},
   "geometry": {
     "type": "Polygon",

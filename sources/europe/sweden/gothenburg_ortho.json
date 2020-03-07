@@ -1,0 +1,21 @@
+{
+  "id": "gothenburg-ortho",
+  "type": "wms",
+  "locationSet": {"include": ["gothenburg_ortho.geojson"]},
+  "name": "Gothenburg Orthophoto",
+  "description": "Orthophoto for Gothenburg municipality",
+  "url": "https://opengeodata.goteborg.se/services/ortofoto.wms.v1/ows?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "category": "photo",
+  "min_zoom": 6,
+  "max_zoom": 20,
+  "license_url": "https://catalog.goteborg.se/catalog/6/datasets/892",
+  "privacy_policy_url": "https://goteborg.se/wps/portal/start/kommun-o-politik/beslut-insyn-och-rattskerhet/sa-har-behandlar-kommunen-dina-personuppgifter/",
+  "best": true,
+  "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png/206px-G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png",
+  "available_projections": ["EPSG:3006", "EPSG:3007", "EPSG:3857"],
+  "attribution": {
+    "required": true,
+    "url": "https://catalog.goteborg.se/catalog/6/datasets/892",
+    "text": "© Gothenburg municipality, CC0"
+  }
+}

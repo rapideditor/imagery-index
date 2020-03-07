@@ -1,7 +1,7 @@
 {
   "id": "gothenburg-citymap",
   "type": "wms",
-  "locationSet": {"include": ["gotenburg.geojson"]},
+  "locationSet": {"include": ["gothenburg_citymap.geojson"]},
   "name": "Gothenburg City map",
   "description": "The city map is an overview map that describes Gothenburg. It contains general information about land, communications, hydrography, buildings, address numbers and street names, administrative division and other orientation text.",
   "url": "https://opengeodata.goteborg.se/services/stadskarta.wms.v4/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=stadskarta&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
@@ -9,9 +9,8 @@
   "max_zoom": 21,
   "license_url": "https://catalog.goteborg.se/catalog/6/datasets/718",
   "privacy_policy_url": "https://goteborg.se/wps/portal/start/kommun-o-politik/beslut-insyn-och-rattskerhet/sa-har-behandlar-kommunen-dina-personuppgifter/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziTYzcDQy9TAy9LVyDXA0CLcJ8A70sDQ3cLcz1wwkpiAJKG-AAjgb6BbmhigA2cFOY/dz/d5/L2dBISEvZ0FBIS9nQSEh/#collapse-012212692658198088",
-  "best": true,
   "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png/206px-G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png",
-  "available_projections": ["CRS:84", "EPSG:3006", "EPSG:3007", "EPSG:3857"],
+  "available_projections": ["EPSG:3006", "EPSG:3007", "EPSG:3857"],
   "attribution": {
     "required": true,
     "url": "https://catalog.goteborg.se/catalog/6/datasets/718",
