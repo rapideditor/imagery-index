@@ -1,7 +1,7 @@
 {
   "type": "Feature",
   "id": "pangasinn_bulacan.geojson",
-  "properties": {"id": "pangasinn_bulacan.geojson"},
+  "properties": {},
   "geometry": {
     "type": "MultiPolygon",
     "coordinates": [

@@ -1,7 +1,7 @@
 {
   "type": "Feature",
   "id": "cape_town.geojson",
-  "properties": {"id": "cape_town.geojson"},
+  "properties": {},
   "geometry": {
     "type": "Polygon",
     "coordinates": [

@@ -47,6 +47,7 @@ function buildAll() {
   fs.writeFileSync('i18n/en.yaml', YAML.safeDump({ en: sortObject(tstrings) }, { lineWidth: -1 }) );
 
   console.timeEnd(END);
+  console.log('');
 }
 
 
@@ -82,7 +83,10 @@ function collectFeatures() {
     let obj = {};
     if (feature.type)       { obj.type = feature.type; }
     if (feature.id)         { obj.id = feature.id; }
-    if (feature.properties) { obj.properties = feature.properties; }
+    if (feature.properties) {
+      obj.properties = feature.properties;
+      delete obj.properties.id;  // to prevent possiblity of conflicting ids
+    }
 
     if (feature.geometry) {
       if (feature.geometry.type !== 'Polygon' && feature.geometry.type !== 'MultiPolygon') {
