@@ -221,10 +221,13 @@ function collectSources(tstrings, featureCollection) {
     sources[sourceId] = source;
     files[sourceId] = file;
 
-    // collect translation strings for this source
-    tstrings[sourceId] = { name: source.name };
-    if (source.description) {
-      tstrings[sourceId].description = source.description;
+
+    // Collect translation strings for some sources..
+    if (/sources\/world/.test(file)) {
+      tstrings[sourceId] = { name: source.name };
+      if (source.description) {
+        tstrings[sourceId].description = source.description;
+      }
     }
 
     process.stdout.write(colors.green('✓'));
