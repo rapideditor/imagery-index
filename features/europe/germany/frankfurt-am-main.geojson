@@ -1,0 +1,11 @@
+{
+  "type": "Feature",
+  "id": "frankfurt-am-main.geojson",
+  "properties": {},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [[8.4696, 50.0111], [8.4696, 50.228], [8.8318, 50.228], [8.8318, 50.0111], [8.4696, 50.0111]]
+    ]
+  }
+}
