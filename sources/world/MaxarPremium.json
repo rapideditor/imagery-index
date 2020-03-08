@@ -1,0 +1,18 @@
+{
+  "id": "Maxar-Premium",
+  "type": "tms",
+  "locationSet": {"include": ["001"]},
+  "name": "Maxar Premium Imagery (Beta)",
+  "description": "Maxar Premium is a mosaic composed of Maxar basemap with select regions filled with +Vivid or custom area of interest imagery, 50cm resolution or better, and refreshed more frequently with ongoing updates.",
+  "url": "https://services.digitalglobe.com/earthservice/tmsaccess/tms/1.0.0/DigitalGlobe:ImageryTileService@EPSG:3857@jpg/{zoom}/{x}/{-y}.jpg?connectId={apikey}",
+  "category": "photo",
+  "max_zoom": 22,
+  "permission_osm": "explicit",
+  "license": "COMMERCIAL",
+  "icon": "Maxar.png",
+  "attribution": {
+    "required": true,
+    "url": "https://wiki.openstreetmap.org/wiki/DigitalGlobe",
+    "text": "Terms & Feedback"
+  }
+}
