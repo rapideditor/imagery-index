@@ -8,6 +8,7 @@
   "category": "photo",
   "max_zoom": 22,
   "permission_osm": "explicit",
+  "license": "COMMERCIAL",
   "icon": "Esri.png",
   "attribution": {
     "required": true,

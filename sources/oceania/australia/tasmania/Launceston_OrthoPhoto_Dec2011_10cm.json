@@ -7,6 +7,7 @@
   "min_zoom": 10,
   "max_zoom": 20,
   "permission_osm": "explicit",
+  "license": "COMMERCIAL",
   "license_url": "https://osmlab.github.io/editor-layer-index/sources/australia/au/tas/Launceston_OrthoPhoto.pdf",
   "start_date": "2011-12",
   "end_date": "2011-12",

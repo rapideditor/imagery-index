@@ -7,5 +7,6 @@
   "min_zoom": 16,
   "max_zoom": 22,
   "permission_osm": "explicit",
+  "license": "CC-BY-4.0",
   "best": true
 }

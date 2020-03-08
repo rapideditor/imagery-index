@@ -7,6 +7,7 @@
   "category": "photo",
   "max_zoom": 21,
   "permission_osm": "explicit",
+  "license": "CC-BY-4.0",
   "license_url": "https://osm.rrze.fau.de/description-and-license-luftbild-erlangen-2018.html",
   "privacy_policy_url": "https://osm.rrze.fau.de/datenschutz/",
   "best": true,

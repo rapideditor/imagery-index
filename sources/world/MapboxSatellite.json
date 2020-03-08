@@ -8,6 +8,7 @@
   "category": "photo",
   "max_zoom": 22,
   "permission_osm": "explicit",
+  "license": "COMMERCIAL",
   "license_url": "https://wiki.openstreetmap.org/wiki/Vertical_Aerial_Photographs#DigitalGlobe_.2F_MapBox",
   "privacy_policy_url": "https://www.mapbox.com/legal/privacy/",
   "icon": "Mapbox.png",

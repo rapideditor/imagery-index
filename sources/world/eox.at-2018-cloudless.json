@@ -8,6 +8,7 @@
   "category": "photo",
   "max_zoom": 18,
   "permission_osm": "explicit",
+  "license": "COMMERCIAL",
   "license_url": "https://wiki.openstreetmap.org/wiki/Eox.at",
   "start_date": "2018",
   "end_date": "2018",

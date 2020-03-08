@@ -8,6 +8,7 @@
   "category": "map",
   "max_zoom": 19,
   "permission_osm": "explicit",
+  "license": "CC-BY-3.0",
   "license_url": "https://basemap.at/#sec-nutzung",
   "overlay": true,
   "icon": "https://www.basemap.at/images/logo_basemap.jpg",

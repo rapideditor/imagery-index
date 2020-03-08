@@ -7,6 +7,7 @@
   "url": "https://api.lantmateriet.se/historiska-ortofoton/wms/v1/token/9b342b7d9f12d4ddb92277be9869d860/?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=OI.Histortho_75&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "min_zoom": 5,
   "max_zoom": 19,
+  "license": "CC0-1.0",
   "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
   "icon": "lantmateriet.png",
   "available_projections": [

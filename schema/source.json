@@ -73,6 +73,11 @@
       "enum": ["explicit", "implicit", "no"]
     },
 
+    "license": {
+      "description": "(optional) The license for the imagery specified using a SPDX identifier, or 'COMMERCIAL'",
+      "type": "string"
+    },
+
     "license_url": {
       "description": "(optional) A URL for the license or permissions for the imagery",
       "type": "string"

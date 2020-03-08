@@ -1007,6 +1007,7 @@
             "text": "Datenquelle: Land Vorarlberg \u2013 data.vorarlberg.gv.at",
             "url": "https://www.vorarlberg.at/vorarlberg/bauen_wohnen/bauen/vermessung_geoinformation/weitereinformationen/services/wmsdienste.htm"
         },
+        "license": "CC-BY-3.0",
         "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
         "available_projections": [
             "EPSG:4326",

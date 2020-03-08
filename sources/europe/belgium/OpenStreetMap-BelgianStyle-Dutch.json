@@ -6,6 +6,7 @@
   "url": "https://tile.openstreetmap.be/osmbe-nl/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",
   "max_zoom": 18,
+  "license": "CC-BY-SA-4.0",
   "license_url": "https://github.com/jbelien/openstreetmap-carto-be/wiki/Tile-Usage-Policy",
   "icon": "OpenStreetMap.png",
   "attribution": {

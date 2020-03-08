@@ -8,6 +8,7 @@
   "category": "photo",
   "max_zoom": 22,
   "permission_osm": "explicit",
+  "license": "COMMERCIAL",
   "license_url": "https://github.com/osmlab/editor-layer-index/pull/358#issuecomment-361416110",
   "icon": "Esri.png",
   "attribution": {

@@ -7,6 +7,7 @@
   "url": "https://api.lantmateriet.se/open/topowebb-ccby/v1/wmts/token/9b342b7d9f12d4ddb92277be9869d860/1.0.0/topowebb/default/3857/{zoom}/{y}/{x}.png",
   "min_zoom": 3,
   "max_zoom": 15,
+  "license": "CC0-1.0",
   "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
   "icon": "lantmateriet.png",
   "attribution": {

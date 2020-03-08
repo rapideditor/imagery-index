@@ -164,6 +164,7 @@ function collectSources(tstrings, featureCollection) {
     if (source.min_zoom)            { obj.min_zoom = source.min_zoom; }
     if (source.max_zoom)            { obj.max_zoom = source.max_zoom; }
     if (source.permission_osm)      { obj.permission_osm = source.permission_osm; }
+    if (source.license)             { obj.license = source.license; }
     if (source.license_url)         { obj.license_url = source.license_url; }
     if (source.privacy_policy_url)  { obj.privacy_policy_url = source.privacy_policy_url; }
     if (source.best)                { obj.best = source.best; }

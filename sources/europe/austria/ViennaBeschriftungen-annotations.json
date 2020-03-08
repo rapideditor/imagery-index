@@ -8,6 +8,7 @@
   "min_zoom": 12,
   "max_zoom": 19,
   "permission_osm": "explicit",
+  "license": "CC-BY-3.0",
   "overlay": true,
   "icon": "https://www.wien.gv.at/layout-a/logo/wappen-klein.gif",
   "attribution": {"url": "https://data.wien.gv.at", "text": "Stadt Wien"}

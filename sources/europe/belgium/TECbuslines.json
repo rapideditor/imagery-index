@@ -5,6 +5,7 @@
   "name": "TEC bus lines",
   "url": "https://geodata.tec-wl.be/arcgis/services/Lignes/MapServer/WMSServer?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "category": "other",
+  "license": "CC-BY-SA-4.0",
   "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",
   "overlay": true,
   "icon": "TEC.png",

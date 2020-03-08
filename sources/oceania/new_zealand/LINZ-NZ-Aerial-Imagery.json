@@ -5,6 +5,7 @@
   "name": "LINZ NZ Aerial Imagery",
   "url": "https://map.cazzaserver.com/linz_aerial/{zoom}/{x}/{y}.png",
   "max_zoom": 21,
+  "license": "CC-BY-4.0",
   "license_url": "https://wiki.openstreetmap.org/wiki/Contributors#LINZ",
   "best": true,
   "icon": "https://koordinates.a.ssl.fastly.net/media/settings/branding/favicon-lds.ico",
