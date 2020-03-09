@@ -6,6 +6,7 @@
   "url": "https://maps.wikimedia.org/osm-intl/{zoom}/{x}/{y}.png",
   "category": "osmbasedmap",
   "max_zoom": 18,
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "https://www.openstreetmap.org/",

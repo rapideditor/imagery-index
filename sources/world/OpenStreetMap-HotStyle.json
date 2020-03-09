@@ -7,6 +7,7 @@
   "category": "osmbasedmap",
   "max_zoom": 20,
   "icon": "https://wiki.openstreetmap.org/w/images/thumb/c/c9/Hot_logo.svg/300px-Hot_logo.svg.png",
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "https://www.hotosm.org/",

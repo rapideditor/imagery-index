@@ -11,6 +11,7 @@
   "license": "COMMERCIAL",
   "license_url": "https://github.com/osmlab/editor-layer-index/pull/358#issuecomment-361416110",
   "icon": "Esri.png",
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/Esri",

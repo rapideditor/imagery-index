@@ -9,6 +9,7 @@
   "max_zoom": 17,
   "overlay": true,
   "icon": "http://openptmap.de/favicon_pt.png",
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "http://openptmap.de",

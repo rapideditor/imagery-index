@@ -11,5 +11,6 @@
   "license": "CC-BY-3.0",
   "license_url": "https://basemap.at/#sec-nutzung",
   "icon": "https://www.basemap.at/images/logo_basemap.jpg",
+  "i18n": true,
   "attribution": {"required": true, "url": "https://basemap.at", "text": "basemap.at"}
 }

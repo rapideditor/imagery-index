@@ -8,6 +8,7 @@
   "min_zoom": 3,
   "max_zoom": 17,
   "icon": "OpenTopoMap.png",
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "https://tile.opentopomap.org/about#verwendung",

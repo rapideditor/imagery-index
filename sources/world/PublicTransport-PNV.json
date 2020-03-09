@@ -7,6 +7,7 @@
   "category": "osmbasedmap",
   "max_zoom": 18,
   "icon": "PNV.png",
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "https://öpnvkarte.de/",

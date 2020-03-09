@@ -8,6 +8,7 @@
   "max_zoom": 17,
   "overlay": true,
   "icon": "https://static.waymarkedtrails.org/img/map_hiking.png",
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "https://hiking.waymarkedtrails.org/en/help/legal",

@@ -9,5 +9,6 @@
   "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",
   "overlay": true,
   "icon": "TEC.png",
+  "i18n": true,
   "available_projections": ["EPSG:3857", "EPSG:4326"]
 }

@@ -10,6 +10,7 @@
   "license": "CC0-1.0",
   "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
   "icon": "lantmateriet.png",
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "https://www.lantmateriet.se/",

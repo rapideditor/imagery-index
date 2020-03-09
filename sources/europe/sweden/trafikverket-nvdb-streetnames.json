@@ -10,6 +10,7 @@
   "license_url": "https://api.trafikinfo.trafikverket.se/Content/ContentDetails/58e384810bb22118e8041667",
   "overlay": true,
   "icon": "https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png",
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "https://www.trafikverket.se",

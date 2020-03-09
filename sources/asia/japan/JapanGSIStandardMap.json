@@ -8,5 +8,6 @@
   "min_zoom": 4,
   "max_zoom": 18,
   "license_url": "https://wiki.openstreetmap.org/wiki/GSImaps",
+  "i18n": true,
   "attribution": {"url": "https://maps.gsi.go.jp/help/use.html", "text": "GSI Japan"}
 }

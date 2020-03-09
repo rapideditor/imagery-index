@@ -153,8 +153,15 @@ function collectSources(tstrings, featureCollection) {
 
     if (source.locationSet) {
       obj.locationSet = {};
-      if (source.locationSet.include) { obj.locationSet.include = source.locationSet.include; }
-      if (source.locationSet.exclude) { obj.locationSet.exclude = source.locationSet.exclude; }
+      if (source.locationSet.include) {
+        obj.locationSet.include = source.locationSet.include;
+        // force i18n true for worldwide sources
+        if (source.locationSet.include.indexOf('001') !== -1) source.i18n = true;
+        if (source.locationSet.include.indexOf('Q2') !== -1) source.i18n = true;
+      }
+      if (source.locationSet.exclude) {
+        obj.locationSet.exclude = source.locationSet.exclude;
+      }
     }
 
     if (source.name)                { obj.name = source.name; }
@@ -172,6 +179,7 @@ function collectSources(tstrings, featureCollection) {
     if (source.end_date)            { obj.end_date = source.end_date; }
     if (source.overlay)             { obj.overlay = source.overlay; }
     if (source.icon)                { obj.icon = source.icon; }
+    if (source.i18n)                { obj.i18n = source.i18n; }
 
     if (source.available_projections)  {
       let unique = [...new Set(source.available_projections)];
@@ -224,7 +232,7 @@ function collectSources(tstrings, featureCollection) {
 
 
     // Collect translation strings for some sources..
-    if (/sources\/world/.test(file)) {
+    if (source.i18n) {
       tstrings[sourceId] = { name: source.name };
       if (source.description) {
         tstrings[sourceId].description = source.description;

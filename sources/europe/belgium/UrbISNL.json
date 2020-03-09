@@ -8,6 +8,7 @@
   "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
   "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
   "icon": "UrbIS.png",
+  "i18n": true,
   "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
   "attribution": {
     "required": true,

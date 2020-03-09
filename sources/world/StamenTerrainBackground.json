@@ -8,6 +8,7 @@
   "min_zoom": 4,
   "max_zoom": 18,
   "icon": "stamen_compass_rose_small.png",
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "http://maps.stamen.com/#terrain",

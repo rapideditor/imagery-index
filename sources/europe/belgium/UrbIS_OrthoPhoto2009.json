@@ -10,6 +10,7 @@
   "start_date": "2009",
   "end_date": "2009",
   "icon": "UrbIS.png",
+  "i18n": true,
   "available_projections": ["EPSG:3857"],
   "attribution": {
     "required": true,

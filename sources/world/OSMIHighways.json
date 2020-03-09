@@ -8,6 +8,7 @@
   "max_zoom": 18,
   "overlay": true,
   "icon": "OSMI.png",
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "https://tools.geofabrik.de/osmi",

@@ -9,6 +9,7 @@
   "max_zoom": 16,
   "privacy_policy_url": "https://www.mapbox.com/legal/privacy/",
   "overlay": true,
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "https://www.mapbox.com/about/maps",

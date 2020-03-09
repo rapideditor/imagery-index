@@ -9,6 +9,7 @@
   "license_url": "https://thunderforest.com/terms",
   "privacy_policy_url": "https://www.thunderforest.com/privacy",
   "icon": "thunderforest.png",
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "https://www.thunderforest.com/terms",

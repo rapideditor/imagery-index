@@ -9,5 +9,6 @@
   "max_zoom": 18,
   "overlay": true,
   "icon": "https://www.opensnowmap.org/pics/alpine.png",
+  "i18n": true,
   "attribution": {"url": "https://www.opensnowmap.org/", "text": "© OpenSnowMap.org"}
 }

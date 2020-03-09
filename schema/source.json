@@ -117,6 +117,12 @@
       "type": "string"
     },
 
+    "i18n": {
+      "$comment": "Automatically set true for worldwide sources",
+      "description": "(optional) Whether the imagery name, description, and attribution text should be translated",
+      "type": "boolean"
+    },
+
     "available_projections": {
       "description": "(optional) WMS-only: An array of available projections supported by the imagery source",
       "type": "array",

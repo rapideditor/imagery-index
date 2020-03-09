@@ -9,6 +9,7 @@
   "start_date": "2013",
   "end_date": "2015",
   "icon": "AIV.png",
+  "i18n": true,
   "available_projections": [
     "EPSG:3043",
     "EPSG:3812",

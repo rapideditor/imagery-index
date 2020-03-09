@@ -10,6 +10,7 @@
   "license": "CC0-1.0",
   "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
   "icon": "lantmateriet.png",
+  "i18n": true,
   "available_projections": [
     "EPSG:3006",
     "EPSG:3007",

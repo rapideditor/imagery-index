@@ -10,6 +10,7 @@
   "license_url": "https://helsingborg.opendatasoft.com/explore/dataset/flygbilder/information/",
   "best": true,
   "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Helsingborg_vapen.svg/198px-Helsingborg_vapen.svg.png",
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "https://helsingborg.opendatasoft.com/",

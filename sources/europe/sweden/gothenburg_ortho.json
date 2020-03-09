@@ -12,6 +12,7 @@
   "privacy_policy_url": "https://goteborg.se/wps/portal/start/kommun-o-politik/beslut-insyn-och-rattskerhet/sa-har-behandlar-kommunen-dina-personuppgifter/",
   "best": true,
   "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png/206px-G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png",
+  "i18n": true,
   "available_projections": ["EPSG:3006", "EPSG:3007", "EPSG:3857"],
   "attribution": {
     "required": true,

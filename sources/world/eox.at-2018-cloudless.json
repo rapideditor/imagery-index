@@ -13,6 +13,7 @@
   "start_date": "2018",
   "end_date": "2018",
   "icon": "eox.png",
+  "i18n": true,
   "available_projections": ["EPSG:3857"],
   "attribution": {
     "required": true,

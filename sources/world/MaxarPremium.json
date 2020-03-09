@@ -10,6 +10,7 @@
   "permission_osm": "explicit",
   "license": "COMMERCIAL",
   "icon": "Maxar.png",
+  "i18n": true,
   "attribution": {
     "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/DigitalGlobe",

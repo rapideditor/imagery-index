@@ -12,6 +12,7 @@
   "start_date": "2016",
   "end_date": "2016",
   "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kalmarvapen_1a.svg/206px-Kalmarvapen_1a.svg.png",
+  "i18n": true,
   "available_projections": ["EPSG:3010", "EPSG:4326"],
   "attribution": {
     "required": true,

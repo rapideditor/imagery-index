@@ -9,6 +9,7 @@
   "privacy_policy_url": "https://www.openrailwaymap.org/en/imprint",
   "overlay": true,
   "icon": "https://www.openrailwaymap.org/img/openrailwaymap-64.png",
+  "i18n": true,
   "attribution": {
     "url": "https://www.openrailwaymap.org/",
     "text": "Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors"

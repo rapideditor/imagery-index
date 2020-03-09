@@ -8,6 +8,7 @@
   "min_zoom": 13,
   "max_zoom": 18,
   "license_url": "https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto",
+  "i18n": true,
   "attribution": {
     "url": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
     "text": "GSI Japan seamless photo"

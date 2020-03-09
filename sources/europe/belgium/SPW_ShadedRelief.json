@@ -9,5 +9,6 @@
   "start_date": "2013",
   "end_date": "2014",
   "icon": "SPW.png",
+  "i18n": true,
   "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"]
 }

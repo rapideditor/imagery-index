@@ -8,5 +8,6 @@
   "min_zoom": 5,
   "max_zoom": 14,
   "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Sweden_road_sign_D9.svg/200px-Sweden_road_sign_D9.svg.png",
+  "i18n": true,
   "attribution": {"url": "https://skoterleder.org/", "text": "© Skoterleder.org"}
 }

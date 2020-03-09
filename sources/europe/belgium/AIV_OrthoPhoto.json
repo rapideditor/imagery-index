@@ -9,5 +9,6 @@
   "license_url": "https://download.agiv.be/Producten/Detail?id=1545&title=Orthofotomozaiek_middenschalig_winteropnamen_kleur_meest_recent_Vlaanderen_2016_04",
   "best": true,
   "icon": "AIV.png",
+  "i18n": true,
   "attribution": {"required": true, "text": "© agentschap Informatie Vlaanderen"}
 }

@@ -9,5 +9,6 @@
   "max_zoom": 20,
   "overlay": true,
   "icon": "https://www.openrailwaymap.org/img/openrailwaymap-64.png",
+  "i18n": true,
   "attribution": {"url": "https://www.openrailwaymap.org/", "text": "© OpenRailwayMap.org"}
 }
