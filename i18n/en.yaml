@@ -1,101 +1,186 @@
 en:
-  Bing:
-    name: Bing aerial imagery
-    description: Satellite and aerial imagery.
-  EOXAT2018CLOUDLESS:
-    name: eox.at 2018 cloudless
-    description: Post-processed Sentinel Satellite imagery.
-  EsriWorldImagery:
-    name: Esri World Imagery
-    description: Esri world imagery.
-  EsriWorldImageryClarity:
-    name: Esri World Imagery (Clarity) Beta
-    description: Esri archive imagery that may be clearer and more accurate than the default layer.
-  HDM_HOT:
-    name: OpenStreetMap (HOT Style)
-  MAPNIK:
-    name: OpenStreetMap (Standard)
-    description: The default OpenStreetMap layer.
-  Mapbox:
-    name: Mapbox Satellite
-    description: Satellite and aerial imagery.
-  Maxar-Premium:
-    name: Maxar Premium Imagery (Beta)
-    description: 'Maxar Premium is a mosaic composed of Maxar basemap with select regions filled with +Vivid or custom area of interest imagery, 50cm resolution or better, and refreshed more frequently with ongoing updates.'
-  Maxar-Standard:
-    name: Maxar Standard Imagery (Beta)
-    description: 'Maxar Standard is a curated set of imagery covering 86% of the earth’s landmass, with 30-60cm resolution where available, backfilled by Landsat. Average age is 2.31 years, with some areas updated 2x per year.'
-  OSM_Inspector-Addresses:
-    name: 'OSM Inspector: Addresses'
-  OSM_Inspector-Geometry:
-    name: 'OSM Inspector: Geometry'
-  OSM_Inspector-Highways:
-    name: 'OSM Inspector: Highways'
-  OSM_Inspector-Multipolygon:
-    name: 'OSM Inspector: Area'
-  OSM_Inspector-Places:
-    name: 'OSM Inspector: Places'
-  OSM_Inspector-Routing:
-    name: 'OSM Inspector: Routing'
-  OSM_Inspector-Tagging:
-    name: 'OSM Inspector: Tagging'
-  OpenTopoMap:
-    name: OpenTopoMap
-  Waymarked_Trails-Cycling:
-    name: 'Waymarked Trails: Cycling'
-  Waymarked_Trails-Hiking:
-    name: 'Waymarked Trails: Hiking'
-  Waymarked_Trails-Horse_Riding:
-    name: 'Waymarked Trails: Horse Riding'
-  Waymarked_Trails-MTB:
-    name: 'Waymarked Trails: MTB'
-  Waymarked_Trails-Skating:
-    name: 'Waymarked Trails: Skating'
-  Waymarked_Trails-Winter_Sports:
-    name: 'Waymarked Trails: Winter Sports'
-  mapbox_locator_overlay:
-    name: Locator Overlay
-    description: Shows major features to help orient you.
-  openpt_map:
-    name: OpenPT Map (overlay)
-  openrailwaymap:
-    name: OpenRailwayMap
-    description: Overlay imagery for railway mapping in OSM
-  openrailwaymap-maxspeeds:
-    name: OpenRailwayMap Maxspeeds
-    description: Overlay imagery showing railway speed limits based on OpenStreetMap data
-  openrailwaymap-signalling:
-    name: OpenRailwayMap Signalling
-    description: Overlay imagery showing railway signals based on OpenStreetMap data
-  openseamap:
-    name: OpenSeaMap
-  opensnowmap-overlay:
-    name: OpenSnowMap overlay
-    description: Overlay imagery for piste mapping in OSM. Updated daily.
-  osm-gps:
-    name: OpenStreetMap GPS traces
-    description: Public GPS traces uploaded to OpenStreetMap.
-  osm-mapnik-black_and_white:
-    name: OpenStreetMap (Standard Black & White)
-  osm-mapnik-german_style:
-    name: OpenStreetMap (German Style)
-  osm-mapnik-no_labels:
-    name: 'OpenStreetMap (Mapnik, no labels)'
-  osmfr:
-    name: OpenStreetMap (French Style)
-  public_transport_oepnv:
-    name: Public Transport (ÖPNV)
-  qa_no_address:
-    name: QA No Address
-  skobbler:
-    name: skobbler
-  stamen-terrain-background:
-    name: Stamen Terrain
-  tf-cycle:
-    name: Thunderforest OpenCycleMap
-  tf-landscape:
-    name: Thunderforest Landscape
-  tf-outdoors:
-    name: Thunderforest Outdoors
-  wikimedia-map:
-    name: Wikimedia Map
+  imagery:
+    Bing:
+      name: Bing aerial imagery
+      description: Satellite and aerial imagery.
+    EOXAT2018CLOUDLESS:
+      name: eox.at 2018 cloudless
+      description: Post-processed Sentinel Satellite imagery.
+      attribution:
+        text: 'Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2017 & 2018)'
+    EsriWorldImagery:
+      name: Esri World Imagery
+      description: Esri world imagery.
+      attribution:
+        text: Terms & Feedback
+    EsriWorldImageryClarity:
+      name: Esri World Imagery (Clarity) Beta
+      description: Esri archive imagery that may be clearer and more accurate than the default layer.
+      attribution:
+        text: Terms & Feedback
+    HDM_HOT:
+      name: OpenStreetMap (HOT Style)
+      attribution:
+        text: '© OpenStreetMap contributors, tiles courtesy of Humanitarian OpenStreetMap Team'
+    MAPNIK:
+      name: OpenStreetMap (Standard)
+      description: The default OpenStreetMap layer.
+      attribution:
+        text: '© OpenStreetMap contributors, CC-BY-SA 2.0'
+    Mapbox:
+      name: Mapbox Satellite
+      description: Satellite and aerial imagery.
+      attribution:
+        text: Terms & Feedback
+    Maxar-Premium:
+      name: Maxar Premium Imagery (Beta)
+      description: 'Maxar Premium is a mosaic composed of Maxar basemap with select regions filled with +Vivid or custom area of interest imagery, 50cm resolution or better, and refreshed more frequently with ongoing updates.'
+      attribution:
+        text: Terms & Feedback
+    Maxar-Standard:
+      name: Maxar Standard Imagery (Beta)
+      description: 'Maxar Standard is a curated set of imagery covering 86% of the earth’s landmass, with 30-60cm resolution where available, backfilled by Landsat. Average age is 2.31 years, with some areas updated 2x per year.'
+      attribution:
+        text: Terms & Feedback
+    OSM_Inspector-Addresses:
+      name: 'OSM Inspector: Addresses'
+      attribution:
+        text: '© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA'
+    OSM_Inspector-Geometry:
+      name: 'OSM Inspector: Geometry'
+      attribution:
+        text: '© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA'
+    OSM_Inspector-Highways:
+      name: 'OSM Inspector: Highways'
+      attribution:
+        text: '© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA'
+    OSM_Inspector-Multipolygon:
+      name: 'OSM Inspector: Area'
+      attribution:
+        text: '© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA'
+    OSM_Inspector-Places:
+      name: 'OSM Inspector: Places'
+      attribution:
+        text: '© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA'
+    OSM_Inspector-Routing:
+      name: 'OSM Inspector: Routing'
+      attribution:
+        text: '© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA'
+    OSM_Inspector-Tagging:
+      name: 'OSM Inspector: Tagging'
+      attribution:
+        text: '© Geofabrik GmbH, OpenStreetMap contributors, CC-BY-SA'
+    OpenTopoMap:
+      name: OpenTopoMap
+      attribution:
+        text: 'Kartendaten: © OpenStreetMap-Mitwirkende, SRTM | Kartendarstellung: © OpenTopoMap (CC-BY-SA)'
+    Waymarked_Trails-Cycling:
+      name: 'Waymarked Trails: Cycling'
+      attribution:
+        text: '© waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0'
+    Waymarked_Trails-Hiking:
+      name: 'Waymarked Trails: Hiking'
+      attribution:
+        text: '© waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0'
+    Waymarked_Trails-Horse_Riding:
+      name: 'Waymarked Trails: Horse Riding'
+      attribution:
+        text: '© waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0'
+    Waymarked_Trails-MTB:
+      name: 'Waymarked Trails: MTB'
+      attribution:
+        text: '© waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0'
+    Waymarked_Trails-Skating:
+      name: 'Waymarked Trails: Skating'
+      attribution:
+        text: '© waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0'
+    Waymarked_Trails-Winter_Sports:
+      name: 'Waymarked Trails: Winter Sports'
+      attribution:
+        text: '© waymarkedtrails.org, OpenStreetMap contributors, CC by-SA 3.0'
+    mapbox_locator_overlay:
+      name: Locator Overlay
+      description: Shows major features to help orient you.
+      attribution:
+        text: Terms & Feedback
+    openpt_map:
+      name: OpenPT Map (overlay)
+      attribution:
+        text: '© OpenStreetMap contributors, CC-BY-SA'
+    openrailwaymap:
+      name: OpenRailwayMap
+      description: Overlay imagery for railway mapping in OSM
+      attribution:
+        text: © OpenRailwayMap.org
+    openrailwaymap-maxspeeds:
+      name: OpenRailwayMap Maxspeeds
+      description: Overlay imagery showing railway speed limits based on OpenStreetMap data
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors'
+    openrailwaymap-signalling:
+      name: OpenRailwayMap Signalling
+      description: Overlay imagery showing railway signals based on OpenStreetMap data
+      attribution:
+        text: 'Rendering: OpenRailwayMap, © Map data OpenStreetMap contributors'
+    openseamap:
+      name: OpenSeaMap
+      attribution:
+        text: '© OpenStreetMap contributors, CC-BY-SA'
+    opensnowmap-overlay:
+      name: OpenSnowMap overlay
+      description: Overlay imagery for piste mapping in OSM. Updated daily.
+      attribution:
+        text: © OpenSnowMap.org
+    osm-gps:
+      name: OpenStreetMap GPS traces
+      description: Public GPS traces uploaded to OpenStreetMap.
+      attribution:
+        text: © OpenStreetMap contributors
+    osm-mapnik-black_and_white:
+      name: OpenStreetMap (Standard Black & White)
+      attribution:
+        text: '© OpenStreetMap contributors, CC-BY-SA'
+    osm-mapnik-german_style:
+      name: OpenStreetMap (German Style)
+      attribution:
+        text: '© OpenStreetMap contributors, CC-BY-SA'
+    osm-mapnik-no_labels:
+      name: 'OpenStreetMap (Mapnik, no labels)'
+      attribution:
+        text: '© OpenStreetMap contributors, CC-BY-SA'
+    osmfr:
+      name: OpenStreetMap (French Style)
+      attribution:
+        text: 'Tiles © cquest@Openstreetmap France, data © OpenStreetMap contributors, ODBL'
+    public_transport_oepnv:
+      name: Public Transport (ÖPNV)
+      attribution:
+        text: '© OpenStreetMap contributors, CC-BY-SA'
+    qa_no_address:
+      name: QA No Address
+      attribution:
+        text: 'Simon Poole, Data ©OpenStreetMap contributors'
+    skobbler:
+      name: skobbler
+      attribution:
+        text: '© Tiles: skobbler Map data: OpenStreetMap contributors'
+    stamen-terrain-background:
+      name: Stamen Terrain
+      attribution:
+        text: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL'
+    tf-cycle:
+      name: Thunderforest OpenCycleMap
+      attribution:
+        text: 'Maps © Thunderforest, Data © OpenStreetMap contributors'
+    tf-landscape:
+      name: Thunderforest Landscape
+      attribution:
+        text: 'Maps © Thunderforest, Data © OpenStreetMap contributors'
+    tf-outdoors:
+      name: Thunderforest Outdoors
+      attribution:
+        text: 'Maps © Thunderforest, Data © OpenStreetMap contributors'
+    wikimedia-map:
+      name: Wikimedia Map
+      attribution:
+        text: '© OpenStreetMap contributors, CC-BY-SA'

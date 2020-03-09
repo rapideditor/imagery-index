@@ -44,7 +44,7 @@ function buildAll() {
   // Sources
   const sources = collectSources(tstrings, featureCollection);
   fs.writeFileSync('dist/sources.json', prettyStringify({ sources: sortObject(sources) }, { maxLength: 99999 }));
-  fs.writeFileSync('i18n/en.yaml', YAML.safeDump({ en: sortObject(tstrings) }, { lineWidth: -1 }) );
+  fs.writeFileSync('i18n/en.yaml', YAML.safeDump({ en: { imagery: sortObject(tstrings) } }, { lineWidth: -1 }) );
 
   console.timeEnd(END);
   console.log('');
@@ -228,6 +228,9 @@ function collectSources(tstrings, featureCollection) {
       tstrings[sourceId] = { name: source.name };
       if (source.description) {
         tstrings[sourceId].description = source.description;
+      }
+      if (source.attribution && source.attribution.text) {
+        tstrings[sourceId].attribution = { text: source.attribution.text };
       }
     }
 
