@@ -2,6 +2,7 @@
   "id": "kelkkareitit",
   "type": "tms",
   "locationSet": {"include": ["se", "no", "fi"], "exclude": ["sj", "bv"]},
+  "country_code": "SE",
   "name": "Nordic snowmobile overlay",
   "description": "Kelkkareitit.fi snowmobile trails from OSM (Nordic coverage)",
   "url": "https://tiles.kelkkareitit.fi/kelkkareitit/{zoom}/{x}/{y}.png",
@@ -10,6 +11,5 @@
   "overlay": true,
   "icon": "https://kelkkareitit.fi/img/favicon.png",
   "i18n": true,
-  "country_code": "SE",
   "attribution": {"url": "https://kelkkareitit.fi/", "text": "© Kelkkareitit.fi"}
 }

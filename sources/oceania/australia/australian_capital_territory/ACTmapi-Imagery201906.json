@@ -2,6 +2,7 @@
   "id": "ACT201906",
   "type": "wms",
   "locationSet": {"include": ["actmapi-imagery201906.geojson"]},
+  "country_code": "AU",
   "name": "ACTmapi Imagery Jun 2019",
   "url": "https://data.actmapi.act.gov.au/arcgis/rest/services/actmapi/imagery201906mga/ImageServer/exportImage?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo={proj}",
   "max_zoom": 21,

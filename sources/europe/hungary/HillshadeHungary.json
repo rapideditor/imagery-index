@@ -2,6 +2,7 @@
   "id": "hu-hillshade",
   "type": "tms",
   "locationSet": {"include": ["hungary_hillshade.geojson"]},
+  "country_code": "HU",
   "name": "Hillshade Hungary",
   "url": "https://{switch:a,b,c}.map.turistautak.hu/tiles/shading/{zoom}/{x}/{y}.png",
   "max_zoom": 18,

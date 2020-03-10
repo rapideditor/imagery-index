@@ -2,6 +2,7 @@
   "id": "antrimnuig",
   "type": "tms",
   "locationSet": {"include": ["ie", "northern_ireland.geojson"]},
+  "country_code": "IE",
   "name": "Ireland Civil Parishes and Baronies - Memorial Atlas",
   "description": "Memorial Atlas of Ireland (1901) L.J. Richards",
   "url": "https://mapwarper.net/layers/tile/295/{zoom}/{x}/{y}.png",
@@ -10,7 +11,6 @@
   "start_date": "1901",
   "end_date": "1901",
   "icon": "IrelandCivilParishesandBaronies.png",
-  "country_code": "IE",
   "attribution": {
     "required": true,
     "url": "https://library.nuigalway.ie/collections/archives/depositedcollections/digitisedarchives/",

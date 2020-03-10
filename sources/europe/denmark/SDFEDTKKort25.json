@@ -2,11 +2,11 @@
   "id": "Geodatastyrelsen_DTK_Kort25",
   "type": "wms",
   "locationSet": {"include": ["dk"]},
+  "country_code": "DK",
   "name": "SDFE DTK Kort25",
   "url": "https://kortforsyningen.kms.dk/topo25?FORMAT=image/png&VERSION=1.1.1&login=OpenStreetMapDK2015&password=Gall4Peters&SERVICE=WMS&REQUEST=GetMap&Layers=topo25_klassisk&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 19,
   "icon": "SDFE.png",
-  "country_code": "DK",
   "available_projections": [
     "EPSG:3395",
     "EPSG:3857",

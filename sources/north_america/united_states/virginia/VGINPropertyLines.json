@@ -2,6 +2,7 @@
   "id": "VGIN-PropertyLines_WM",
   "type": "tms",
   "locationSet": {"include": ["virginia.geojson"]},
+  "country_code": "US",
   "name": "Virginia Property Lines",
   "description": "A statewide Parcel service showing property ownership outlines where available",
   "url": "https://tileify-ags.herokuapp.com/tiles/{zoom}/{x}/{y}?url=http%3A%2F%2Fgismaps.vita.virginia.gov%2Farcgis%2Frest%2Fservices%2FVA_Base_layers%2FVA_Parcels%2FMapServer&transparent=true",

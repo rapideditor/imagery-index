@@ -2,6 +2,7 @@
   "id": "Zuerich-ortho-2011-wms",
   "type": "wms",
   "locationSet": {"include": ["stadt_zurich_ortho_2011.geojson"]},
+  "country_code": "CH",
   "name": "City of Zürich Orthophoto 2011",
   "url": "https://www.gis.stadt-zuerich.ch/maps/services/wms/WMS-ZH-STZH-OGD/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Luftbild_2011&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 21,

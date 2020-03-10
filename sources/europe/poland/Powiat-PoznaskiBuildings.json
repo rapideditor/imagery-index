@@ -2,6 +2,7 @@
   "id": "poznanski-buildings",
   "type": "wms",
   "locationSet": {"include": ["poznan.geojson"]},
+  "country_code": "PL",
   "name": "Powiat poznański: Buildings",
   "url": "http://wms.podgik.poznan.pl/cgi-bin/poznan?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "icon": "PODGIK.png",

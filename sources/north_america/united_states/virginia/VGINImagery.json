@@ -2,6 +2,7 @@
   "id": "VGIN-Imagery_WM",
   "type": "tms",
   "locationSet": {"include": ["virginia.geojson"]},
+  "country_code": "US",
   "name": "Virginia Imagery Service - Most Recent",
   "description": "The most recently available VBMP orthoimagery for all of Virginia.",
   "url": "https://tileify-ags.herokuapp.com/tiles/{zoom}/{x}/{y}?url=https%3A%2F%2Fgismaps.vita.virginia.gov%2Farcgis%2Frest%2Fservices%2FMostRecentImagery%2FMostRecentImagery_WGS%2FMapServer&transparent=true&layers=show%3A0",

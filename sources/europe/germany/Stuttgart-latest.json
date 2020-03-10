@@ -2,6 +2,7 @@
   "id": "Stuttgart-latest",
   "type": "wms",
   "locationSet": {"include": ["stuttgart.geojson"]},
+  "country_code": "DE",
   "name": "Stuttgart Luftbild Stadtmessungsamt 2017",
   "url": "https://gis5.stuttgart.de/arcgis/services/1_Base/WMS_Luftbilder_aktuell/MapServer/WmsServer?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "permission_osm": "explicit",

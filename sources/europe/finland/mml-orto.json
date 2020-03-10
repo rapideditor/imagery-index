@@ -2,6 +2,7 @@
   "id": "mml-orto",
   "type": "tms",
   "locationSet": {"include": ["fi"]},
+  "country_code": "FI",
   "name": "MML Orthophoto",
   "description": "Ortophotos from the National Land Survey of Finland",
   "url": "https://tiles.kartat.kapsi.fi/ortokuva/{zoom}/{x}/{y}.jpg",
@@ -10,7 +11,6 @@
   "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=356296#p356296",
   "best": true,
   "icon": "https://www.maanmittauslaitos.fi/apple-touch-icon.png",
-  "country_code": "FI",
   "attribution": {
     "required": true,
     "url": "https://www.maanmittauslaitos.fi/en",

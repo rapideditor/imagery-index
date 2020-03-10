@@ -2,6 +2,7 @@
   "id": "tirana-streets-buildings",
   "type": "tms",
   "locationSet": {"include": ["tirana-streets-buildings.geojson"]},
+  "country_code": "AL",
   "name": "Municipality of Tirana (Open Labs GeoPortal)",
   "description": "Streets & Builings provided by the Muncipality of Tirana hosted by Open Labs",
   "url": "https://geoportal.openlabs.cc/mapcache/tms/1.0.0/tirana@GoogleMapsCompatibleExtended/{zoom}/{x}/{-y}.png",

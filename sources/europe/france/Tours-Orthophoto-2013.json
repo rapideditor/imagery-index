@@ -2,6 +2,7 @@
   "id": "Tours-Orthophoto-2013",
   "type": "tms",
   "locationSet": {"include": ["tours.geojson"]},
+  "country_code": "FR",
   "name": "Tours - Orthophotos 2013",
   "url": "https://wms.openstreetmap.fr/tms/1.0.0/tours_2013/{zoom}/{x}/{y}",
   "max_zoom": 22,

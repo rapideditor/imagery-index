@@ -2,6 +2,7 @@
   "id": "Bonvillars-2013",
   "type": "tms",
   "locationSet": {"include": ["bonvillars.geojson"]},
+  "country_code": "CH",
   "name": "Bonvillars Orthophoto 2013",
   "url": "https://osmdata.asitvd.ch/tiles/bonvillars2013/{zoom}/{x}/{y}.png",
   "min_zoom": 14,

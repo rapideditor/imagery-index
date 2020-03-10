@@ -2,6 +2,7 @@
   "id": "CityOfLaunceston_2013",
   "type": "tms",
   "locationSet": {"include": ["launceston_orthophoto_feb2013_10cm.geojson"]},
+  "country_code": "AU",
   "name": "Launceston OrthoPhoto 2013",
   "url": "https://mapping.launceston.tas.gov.au/arcgis/rest/services/Public/OrthoPhoto_Feb2013_10cm/MapServer/tile/{zoom}/{y}/{x}",
   "min_zoom": 12,

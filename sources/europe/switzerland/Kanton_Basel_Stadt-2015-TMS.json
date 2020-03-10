@@ -2,6 +2,7 @@
   "id": "KTBASELSTADT2015",
   "type": "tms",
   "locationSet": {"include": ["kanton_basel_stadt.geojson"]},
+  "country_code": "CH",
   "name": "Kanton Basel-Stadt 2015",
   "description": "This imagery is provided via a proxy operated by https://sosm.ch/",
   "url": "https://mapproxy.osm.ch/tiles/KTBASELSTADT2015/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",

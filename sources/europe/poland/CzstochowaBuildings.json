@@ -2,6 +2,7 @@
   "id": "Czestochowa-buildings",
   "type": "wms",
   "locationSet": {"include": ["czestochowa.geojson"]},
+  "country_code": "PL",
   "name": "Częstochowa: Buildings",
   "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/png&transparent=true&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ieg_budynek&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "available_projections": [

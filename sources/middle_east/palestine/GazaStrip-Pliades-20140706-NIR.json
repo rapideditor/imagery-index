@@ -2,6 +2,7 @@
   "id": "gaza_pleiades_20140706_nir",
   "type": "tms",
   "locationSet": {"include": ["gaza_strip.geojson"]},
+  "country_code": "PS",
   "name": "Gaza Strip - Pléiades - 2014/07/06 (NIR)",
   "url": "https://imagery.openstreetmap.fr/tms/1.0.0/gaza_pleiades_20140706_nir/{zoom}/{x}/{y}",
   "max_zoom": 22,

@@ -9,6 +9,7 @@
     "start_date": "2017-05",
     "end_date": "2017-05",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ACT-mapi.png",
+    "country_code": "AU",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -96,6 +97,7 @@
     "start_date": "2018-03-19",
     "end_date": "2018-03-19",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ACT-mapi.png",
+    "country_code": "AU",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -186,6 +188,7 @@
     "start_date": "2019-02",
     "end_date": "2019-02",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ACT-mapi.png",
+    "country_code": "AU",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -244,6 +247,7 @@
     "start_date": "2019-06",
     "end_date": "2019-06",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ACT-mapi.png",
+    "country_code": "AU",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -301,6 +305,7 @@
     "license_url": "https://download.agiv.be/Producten/Detail?id=1545&title=Orthofotomozaiek_middenschalig_winteropnamen_kleur_meest_recent_Vlaanderen_2016_04",
     "best": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AIV.png",
+    "country_code": "BE",
     "attribution": {
       "required": true,
       "text": "© agentschap Informatie Vlaanderen"
@@ -423,6 +428,7 @@
     "start_date": "2013",
     "end_date": "2015",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AIV.png",
+    "country_code": "BE",
     "available_projections": [
       "EPSG:3043",
       "EPSG:3812",
@@ -552,6 +558,7 @@
     "url": "https://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=grb_bsk&STYLE=&FORMAT=image/png&tileMatrixSet=GoogleMapsVL&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
     "license_url": "https://www.agiv.be/~/media/agiv/producten/grb/documenten/grb%20open%20data%20licentie.pdf",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AIV.png",
+    "country_code": "BE",
     "attribution": {
       "required": true,
       "text": "© agentschap Informatie Vlaanderen"
@@ -735,6 +742,7 @@
     "start_date": "2013",
     "end_date": "2015",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AIV.png",
+    "country_code": "BE",
     "available_projections": [
       "EPSG:3043",
       "EPSG:3812",
@@ -867,6 +875,7 @@
     "start_date": "2013",
     "end_date": "2015",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AIV.png",
+    "country_code": "BE",
     "available_projections": [
       "EPSG:3043",
       "EPSG:3812",
@@ -1001,6 +1010,7 @@
     "start_date": "2020-01-08",
     "end_date": "2020-02-06",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ara.gif",
+    "country_code": "AU",
     "attribution": {
       "required": true,
       "url": "https://www.airborneresearch.org.au/",
@@ -1172,6 +1182,7 @@
     "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
     "start_date": "2014",
     "end_date": "2014",
+    "country_code": "CH",
     "attribution": {"text": "AGIS OF2014"},
     "extent": {
       "max_zoom": 19,
@@ -1268,6 +1279,7 @@
     "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
     "best": true,
     "start_date": "2014",
+    "country_code": "CH",
     "attribution": {"text": "AGIS 2014 50cm DTM/Hillshade"},
     "extent": {
       "max_zoom": 19,
@@ -1364,6 +1376,7 @@
     "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
     "start_date": "2016",
     "end_date": "2016",
+    "country_code": "CH",
     "attribution": {"text": "AGIS OF2016"},
     "extent": {
       "max_zoom": 19,
@@ -1460,6 +1473,7 @@
     "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
     "start_date": "2017",
     "end_date": "2017",
+    "country_code": "CH",
     "attribution": {"text": "AGIS OF2017"},
     "extent": {
       "max_zoom": 19,
@@ -1557,6 +1571,7 @@
     "best": true,
     "start_date": "2019",
     "end_date": "2019",
+    "country_code": "CH",
     "attribution": {"text": "AGIS OF2019"},
     "extent": {
       "max_zoom": 19,
@@ -1652,6 +1667,7 @@
     "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=630995#p630995",
     "best": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/beeldmateriaal.png",
+    "country_code": "NL",
     "attribution": {
       "required": true,
       "url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search?facet.q=license%2FCC-BY&isChild=%27false%27&resultType=details&any_OR_title_OR_keyword=luchtfoto&fast=index&_content_type=json&from=1&to=20&sortBy=relevance",
@@ -1726,6 +1742,7 @@
     "name": "Lupang Arenda, Taytay Drone Imagery",
     "url": "https://tiles.openaerialmap.org/5d25d7bf161a790005c03e6e/0/5d25d7bf161a790005c03e6f/{zoom}/{x}/{y}.png",
     "best": true,
+    "country_code": "PH",
     "extent": {
       "max_zoom": 22,
       "min_zoom": 16,
@@ -1765,7 +1782,7 @@
     "url": "https://{switch:a,b,c}.layers.openstreetmap.fr/bano/{zoom}/{x}/{y}.png",
     "license_url": "https://wiki.openstreetmap.org/wiki/FR:WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)#Licence_du_r.C3.A9sultat",
     "overlay": true,
-    "country_code": "FX",
+    "country_code": "FR",
     "attribution": {
       "required": true,
       "url": "https://wiki.openstreetmap.org/wiki/FR:WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)#Licence_du_r.C3.A9sultat",
@@ -2702,6 +2719,7 @@
     "best": true,
     "start_date": "2015",
     "end_date": "2015",
+    "country_code": "CH",
     "attribution": {
       "required": true,
       "url": "https://www.geo.bl.ch/fileadmin/user_upload/Geodaten/Nutzungsbedingungen_GBD_BL_V3p2.pdf",
@@ -2936,6 +2954,7 @@
     "url": "http://www.geo.powiat.bedzin.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto_2013&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2013",
     "end_date": "2013",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177"],
     "attribution": {"text": "Starostwo Powiatowe w Będzinie"},
     "extent": {
@@ -2998,6 +3017,7 @@
     "type": "wms",
     "name": "Będzin: Buildings",
     "url": "http://www.geo.powiat.bedzin.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=eg_budynki_geo,pkt_adr&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177"],
     "attribution": {"text": "Starostwo Powiatowe w Będzinie"},
     "extent": {
@@ -3063,6 +3083,7 @@
     "best": true,
     "start_date": "2016",
     "end_date": "2016",
+    "country_code": "BJ",
     "extent": {
       "max_zoom": 21,
       "polygon": [
@@ -3220,6 +3241,7 @@
     "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=367583#p367583",
     "start_date": "2011",
     "end_date": "2011",
+    "country_code": "DE",
     "available_projections": [
       "EPSG:3068",
       "EPSG:4258",
@@ -3310,6 +3332,7 @@
     "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=367583#p367583",
     "start_date": "2014",
     "end_date": "2014",
+    "country_code": "DE",
     "attribution": {
       "required": true,
       "text": "Geoportal Berlin/Digitale farbige Orthophotos 2014"
@@ -3394,6 +3417,7 @@
     "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=367583#p367583",
     "start_date": "2015-08-02",
     "end_date": "2015-08-03",
+    "country_code": "DE",
     "attribution": {
       "required": true,
       "text": "Geoportal Berlin/Digitale farbige Orthophotos 2015"
@@ -3478,6 +3502,7 @@
     "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=367583#p367583",
     "start_date": "2016-04-02",
     "end_date": "2016-04-03",
+    "country_code": "DE",
     "attribution": {
       "required": true,
       "text": "Geoportal Berlin/Digitale farbige Orthophotos 2016"
@@ -3562,6 +3587,7 @@
     "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=367583#p367583",
     "start_date": "2016-04-02",
     "end_date": "2016-04-03",
+    "country_code": "DE",
     "attribution": {
       "required": true,
       "text": "Geoportal Berlin/Digitale Color-Infrarot-Orthophotos 2016"
@@ -3646,6 +3672,7 @@
     "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=367583#p367583",
     "start_date": "2017-03-27",
     "end_date": "2017-03-28",
+    "country_code": "DE",
     "attribution": {
       "required": true,
       "text": "Geoportal Berlin/Digitale farbige Orthophotos 2017"
@@ -3730,6 +3757,7 @@
     "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=367583#p367583",
     "start_date": "2018-03-19",
     "end_date": "2018-04-07",
+    "country_code": "DE",
     "attribution": {
       "required": true,
       "text": "Geoportal Berlin/Digitale farbige Orthophotos 2018"
@@ -3815,6 +3843,7 @@
     "best": true,
     "start_date": "2019-04-01",
     "end_date": "2019-04-06",
+    "country_code": "DE",
     "attribution": {
       "required": true,
       "text": "Geoportal Berlin/Digitale farbige Orthophotos 2019 (DOP20RGB)"
@@ -3901,6 +3930,7 @@
     "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
     "start_date": "2012",
     "end_date": "2012",
+    "country_code": "CH",
     "attribution": {"text": "Orthophoto 2012, Vermessungsamt Stadt Bern"},
     "extent": {
       "max_zoom": 19,
@@ -3979,6 +4009,7 @@
     "best": true,
     "start_date": "2016",
     "end_date": "2016",
+    "country_code": "CH",
     "attribution": {
       "required": true,
       "text": "Orthophoto 2016, Vermessungsamt Stadt Bern"
@@ -4010,6 +4041,7 @@
     "best": true,
     "start_date": "2016",
     "end_date": "2016",
+    "country_code": "CH",
     "available_projections": ["EPSG:4326", "EPSG:21781"],
     "attribution": {
       "required": true,
@@ -4040,6 +4072,7 @@
     "privacy_policy_url": "http://www.geo.apps.be.ch/de/rechtliches.html",
     "start_date": "2015",
     "end_date": "2015",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -4085,6 +4118,7 @@
     "privacy_policy_url": "http://www.geo.apps.be.ch/de/rechtliches.html",
     "start_date": "2015",
     "end_date": "2015",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -4141,6 +4175,7 @@
     "best": true,
     "start_date": "2017",
     "end_date": "2017",
+    "country_code": "IT",
     "attribution": {
       "required": true,
       "url": "http://dati.comune.bologna.it/node/3449",
@@ -4221,6 +4256,7 @@
     "privacy_policy_url": "https://www.asitvd.ch/tarifs-conditions.html",
     "start_date": "2013",
     "end_date": "2013",
+    "country_code": "CH",
     "attribution": {
       "url": "https://osmdata.asitvd.ch/",
       "text": "Bonvillars - Orthophoto technique 2013"
@@ -4248,6 +4284,7 @@
     "license_url": "https://openstreetmap.fr/outils",
     "start_date": "2012",
     "end_date": "2012",
+    "country_code": "FR",
     "attribution": {
       "required": true,
       "text": "Communauté urbaine de Bordeaux - 2012"
@@ -4333,6 +4370,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/Bordeaux",
     "start_date": "2016",
     "end_date": "2016",
+    "country_code": "FR",
     "attribution": {"required": true, "text": "Bordeaux Métropole - 2016"},
     "extent": {
       "max_zoom": 20,
@@ -4418,6 +4456,7 @@
     "privacy_policy_url": "https://kozigazgatas.ujbuda.hu/adatvedelem",
     "start_date": "2015",
     "end_date": "2015",
+    "country_code": "HU",
     "available_projections": ["EPSG:4326", "EPSG:23700"],
     "attribution": {
       "required": true,
@@ -4527,6 +4566,7 @@
     "privacy_policy_url": "https://kozigazgatas.ujbuda.hu/adatvedelem",
     "start_date": "2017-03",
     "end_date": "2017-03",
+    "country_code": "HU",
     "available_projections": ["EPSG:4326", "EPSG:23700"],
     "attribution": {
       "required": true,
@@ -4637,6 +4677,7 @@
     "best": true,
     "start_date": "2019",
     "end_date": "2019",
+    "country_code": "HU",
     "available_projections": ["EPSG:4326", "EPSG:23700"],
     "attribution": {
       "required": true,
@@ -4743,6 +4784,7 @@
     "url": "http://sitplan.um.bytom.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=tiff_ortofoto_2012&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2012",
     "end_date": "2012",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177"],
     "attribution": {"text": "Urząd Miasta Bytomia"},
     "extent": {
@@ -4779,6 +4821,7 @@
     "url": "http://sitplan.um.bytom.pl:11180/isdp/gs/wms?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=default:fotoplan_2014&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2014",
     "end_date": "2014",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177"],
     "attribution": {"text": "Urząd Miasta Bytomia"},
     "extent": {
@@ -4812,6 +4855,7 @@
     "type": "wms",
     "name": "Bytom: Buildings",
     "url": "http://sitplan.um.bytom.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=adr_osie_ulic,adr_punkty_adresowe,eg_budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Bytomia"},
     "extent": {
@@ -5042,6 +5086,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
     "start_date": "2013",
     "end_date": "2013",
+    "country_code": "FR",
     "attribution": {
       "required": true,
       "url": "http://ids.craig.fr/geocat/srv/fre/catalog.search?node=srv#/metadata/8cabc987-829c-4c9f-943b-6a0e255cd73",
@@ -5095,6 +5140,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
     "start_date": "2016",
     "end_date": "2016",
+    "country_code": "FR",
     "attribution": {
       "required": true,
       "url": "http://ids.craig.fr/geocat/srv/fre/catalog.search?node=srv#/metadata/e37c057b-5884-429b-8bec-5db0baef0ee",
@@ -5148,6 +5194,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",
     "start_date": "2016",
     "end_date": "2016",
+    "country_code": "FR",
     "available_projections": [
       "EPSG:2154",
       "EPSG:3857",
@@ -5208,6 +5255,7 @@
     "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
     "start_date": "2016",
     "end_date": "2016",
+    "country_code": "CH",
     "attribution": {
       "required": true,
       "text": "Canton Fribourg 2016 'orthophoto technique'"
@@ -5595,7 +5643,7 @@
     "url": "http://tms.cadastre.openstreetmap.fr/*/tout/{zoom}/{x}/{y}.png",
     "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation#Mention_de_la_source_et_du_mill.C3.A9sime",
     "icon": "https://svn.openstreetmap.org/applications/editors/josm/plugins/cadastre-fr/images/cadastre_small.png",
-    "country_code": "FX",
+    "country_code": "FR",
     "attribution": {
       "required": true,
       "url": "https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation",
@@ -6955,6 +7003,7 @@
     "privacy_policy_url": "https://www.asitvd.ch/tarifs-conditions.html",
     "start_date": "2012",
     "end_date": "2012",
+    "country_code": "CH",
     "attribution": {
       "url": "https://map.cartoriviera.ch/?baselayer_ref=orthos_2012_mobile&baselayer_opacity=100",
       "text": "Cartoriviera"
@@ -7448,6 +7497,7 @@
     "type": "wms",
     "name": "Chorzów: Buildings",
     "url": "http://e-odgik.chorzow.eu/services/wms/wms_funkcje_bud/MapServer/WMSServer?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=3,2,1,8,7,6&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "PL",
     "available_projections": ["EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Chorzowa"},
     "extent": {
@@ -7508,6 +7558,7 @@
     "start_date": "2011-12",
     "end_date": "2011-12",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/launceston.png",
+    "country_code": "AU",
     "attribution": {"required": true, "text": "© City of Launceston"},
     "extent": {
       "max_zoom": 20,
@@ -7534,6 +7585,7 @@
     "start_date": "2013-02-15",
     "end_date": "2013-02-15",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/launceston.png",
+    "country_code": "AU",
     "attribution": {"required": true, "text": "© City of Launceston"},
     "extent": {
       "max_zoom": 20,
@@ -7560,6 +7612,7 @@
     "start_date": "2019-02-02",
     "end_date": "2019-02-03",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/melbourne.png",
+    "country_code": "AU",
     "attribution": {
       "required": true,
       "url": "https://data.melbourne.vic.gov.au/Environment/2019-Aerial-Imagery/cwpe-ugri",
@@ -7717,6 +7770,7 @@
     "start_date": "2018-05",
     "end_date": "2018-05",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/melbourne.png",
+    "country_code": "AU",
     "attribution": {
       "required": true,
       "url": "https://data.melbourne.vic.gov.au/Property-Planning/2018-Aerial-Imagery-True-Ortho-/qa5h-sfgh",
@@ -9597,6 +9651,7 @@
     "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto_2011&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2011",
     "end_date": "2011",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177"],
     "attribution": {"text": "Urząd Miasta Częstochowy"},
     "extent": {
@@ -9704,6 +9759,7 @@
     "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orto_2013&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2013",
     "end_date": "2013",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177"],
     "attribution": {"text": "Urząd Miasta Częstochowy"},
     "extent": {
@@ -9811,6 +9867,7 @@
     "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orto_2014&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2014",
     "end_date": "2014",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177"],
     "attribution": {"text": "Urząd Miasta Częstochowy"},
     "extent": {
@@ -9918,6 +9975,7 @@
     "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orto_2015&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2015",
     "end_date": "2015",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177"],
     "attribution": {"text": "Urząd Miasta Częstochowy"},
     "extent": {
@@ -10025,6 +10083,7 @@
     "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orto_2016&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2016-11-05",
     "end_date": "2016-11-08",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177"],
     "attribution": {"text": "Urząd Miasta Częstochowy"},
     "extent": {
@@ -10132,6 +10191,7 @@
     "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orto_2017&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2017-11-18",
     "end_date": "2017-11-19",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177"],
     "attribution": {"text": "Urząd Miasta Częstochowy"},
     "extent": {
@@ -10237,6 +10297,7 @@
     "type": "wms",
     "name": "Częstochowa: Buildings",
     "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/png&transparent=true&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ieg_budynek&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "PL",
     "available_projections": [
       "EPSG:2172",
       "EPSG:2173",
@@ -10367,6 +10428,7 @@
     "start_date": "2017",
     "end_date": "2017",
     "icon": "https://www.co.dakota.mn.us//SiteAssets/DakotaCountyLogo_W.png",
+    "country_code": "US",
     "available_projections": ["CRS:84", "EPSG:4326", "EPSG:26915"],
     "attribution": {
       "url": "https://dakotacounty.us",
@@ -10444,6 +10506,7 @@
     "start_date": "2019",
     "end_date": "2019",
     "icon": "https://www.co.dakota.mn.us//SiteAssets/DakotaCountyLogo_W.png",
+    "country_code": "US",
     "available_projections": [
       "CRS:84",
       "EPSG:4326",
@@ -10524,6 +10587,7 @@
     "url": "https://firstmap.delaware.gov/arcgis/services/DE_Imagery/DE_Imagery_2012/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2012",
     "end_date": "2012",
+    "country_code": "US",
     "available_projections": ["EPSG:3857", "EPSG:4326"],
     "attribution": {
       "url": "https://firstmap.delaware.gov/arcgis/rest/services/DE_Imagery/DE_Imagery_2012/ImageServer",
@@ -10558,6 +10622,7 @@
     "url": "https://firstmap.delaware.gov/arcgis/services/DE_Imagery/DE_Imagery_2017/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2017",
     "end_date": "2017",
+    "country_code": "US",
     "available_projections": ["EPSG:3857", "EPSG:4326"],
     "attribution": {
       "url": "https://firstmap.delaware.gov/arcgis/rest/services/DE_Imagery/DE_Imagery_2017/ImageServer",
@@ -10593,6 +10658,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Hungary/Ortofot%C3%B3k#.C3.81rv.C3.ADzi_ortofot.C3.B3_a_Dun.C3.A1r.C3.B3l",
     "start_date": "2013",
     "end_date": "2013",
+    "country_code": "HU",
     "attribution": {
       "required": true,
       "url": "http://fototerkep.hu",
@@ -10642,6 +10708,7 @@
     "license_url": "https://erlangen.maps.arcgis.com/home/item.html?id=f834ddb433a148c9b325e9075ad0df80",
     "start_date": "2011",
     "end_date": "2011",
+    "country_code": "DE",
     "available_projections": ["EPSG:3857", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -10685,6 +10752,7 @@
     "license_url": "https://erlangen.maps.arcgis.com/home/item.html?id=d8659c9277ed4ba291a82ec1f2de3035",
     "start_date": "2013",
     "end_date": "2013",
+    "country_code": "DE",
     "available_projections": ["EPSG:3857", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -10731,6 +10799,7 @@
     "license_url": "https://erlangen.maps.arcgis.com/home/item.html?id=abab0a0c8a4c483290878068fe667a3a",
     "start_date": "2016-03-18",
     "end_date": "2016-03-18",
+    "country_code": "DE",
     "attribution": {
       "required": true,
       "text": "© Stadt Erlangen | © GEOCART GmbH"
@@ -10803,6 +10872,7 @@
     "best": true,
     "start_date": "2018-04-09",
     "end_date": "2018-04-09",
+    "country_code": "DE",
     "attribution": {
       "required": true,
       "text": "© Stadt Erlangen | © Hansa Luftbild AG"
@@ -11289,6 +11359,7 @@
     "privacy_policy_url": "https://www.asitvd.ch/tarifs-conditions.html",
     "start_date": "2013",
     "end_date": "2013",
+    "country_code": "CH",
     "attribution": {
       "url": "https://osmdata.asitvd.ch/",
       "text": "Fiez - Orthophoto technique 2013"
@@ -11319,6 +11390,7 @@
     "privacy_policy_url": "https://geoportal.frankfurt.de/impressum/datenschutz.html",
     "start_date": "2016-05-06",
     "end_date": "2016-05-06",
+    "country_code": "DE",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -11352,6 +11424,7 @@
     "privacy_policy_url": "https://geoportal.frankfurt.de/impressum/datenschutz.html",
     "start_date": "2017-06-11",
     "end_date": "2017-07-06",
+    "country_code": "DE",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -11960,6 +12033,7 @@
     "start_date": "2005",
     "end_date": "2005",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/GeoSN.png",
+    "country_code": "DE",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -12112,6 +12186,7 @@
     "start_date": "2012",
     "end_date": "2012",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/GeoSN.png",
+    "country_code": "DE",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -12262,6 +12337,7 @@
     "url": "https://geodienste.sachsen.de/wms_geosn_dop-cir/guest?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=sn_dop_020_cir&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/GeoSN.png",
+    "country_code": "DE",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -12413,6 +12489,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
     "best": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/GeoSN.png",
+    "country_code": "DE",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -12563,6 +12640,7 @@
     "url": "https://geodienste.sachsen.de/wms_geosn_dtk-pg-color/guest?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=sn_dtk_pg_color&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/GeoSN.png",
+    "country_code": "DE",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -12713,6 +12791,7 @@
     "url": "https://geodienste.sachsen.de/wms_geosn_webatlas-sn/guest?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vegetation,Siedlung,Gewaesser,Verkehr,Administrative_Einheiten,Beschriftung&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/GeoSN.png",
+    "country_code": "DE",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -12863,6 +12942,7 @@
     "description": "High resolution imagery covering the Canary Islands, 12.5 or 10 cm/pixel in urban areas, and 20 cm/pixel elsewhere. Older in some urban areas than the lower-resolution \"GRAFCAN OrtoExpress\".",
     "url": "https://idecan1.grafcan.es/ServicioWMS/OrtoUrb?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OU&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "best": true,
+    "country_code": "ES",
     "available_projections": ["EPSG:4326", "EPSG:32627", "EPSG:32628"],
     "attribution": {
       "required": true,
@@ -13008,6 +13088,7 @@
     "name": "GRAFCAN OrtoExpress - Canary Islands",
     "description": "High resolution imagery covering the Canary Islands, 20 cm/pixel. More recent in some urban areas than the higher-resolution \"GRAFCAN OrtoExpress Urbana\".",
     "url": "https://idecan1.grafcan.es/ServicioWMS/OrtoExpress?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=ortoexpress&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "ES",
     "available_projections": ["EPSG:4326", "EPSG:32627", "EPSG:32628"],
     "attribution": {
       "required": true,
@@ -14076,6 +14157,7 @@
     "license_url": "http://ge.ch/sitg/donnees/conditions-d-utilisation/open-data",
     "start_date": "2011",
     "end_date": "2011",
+    "country_code": "CH",
     "available_projections": ["EPSG:2056", "EPSG:3857", "EPSG:4326"],
     "attribution": {
       "url": "http://ge.ch/sitg/donnees/conditions-d-utilisation/open-data",
@@ -17182,6 +17264,7 @@
     "license_url": "http://www.geolittoral.developpement-durable.gouv.fr/mentions-legales-a37.html",
     "start_date": "2000",
     "end_date": "2000",
+    "country_code": "FR",
     "available_projections": ["EPSG:3857", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -17455,6 +17538,7 @@
     "name": "Géolittoral - Sentiers",
     "url": "http://geolittoral.din.developpement-durable.gouv.fr/wxs?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=n_sentier_littoral_l&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "http://www.geolittoral.developpement-durable.gouv.fr/mentions-legales-a37.html",
+    "country_code": "FR",
     "available_projections": ["EPSG:3857", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -17954,6 +18038,7 @@
     "license_url": "http://www.geolittoral.developpement-durable.gouv.fr/mentions-legales-a37.html",
     "start_date": "2011",
     "end_date": "2014",
+    "country_code": "FR",
     "available_projections": ["EPSG:3857", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -19149,6 +19234,7 @@
     "url": "http://185.60.246.14:9090/isdp/gs/ows?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto_2013&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2013",
     "end_date": "2013",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177"],
     "attribution": {"text": "Urząd Miasta Gliwice"},
     "extent": {
@@ -19200,6 +19286,7 @@
     "type": "wms",
     "name": "Gliwice: Buildings",
     "url": "http://185.60.246.14:9090/isdp/gs/ows?FORMAT=image/png&transparent=true&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=default:EGIB_budynek,default:pkt_adr&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "PL",
     "available_projections": [
       "EPSG:2172",
       "EPSG:2173",
@@ -19274,6 +19361,7 @@
     "license_url": "https://openstreetmap.fr/outils",
     "start_date": "2012",
     "end_date": "2012",
+    "country_code": "FR",
     "attribution": {
       "required": true,
       "url": "https://wiki.openstreetmap.org/wiki/Nancy/Orthophotographie",
@@ -19310,6 +19398,7 @@
     "type": "wms",
     "name": "Hamburg (DK5)",
     "url": "https://geodienste.hamburg.de/HH_WMS_DK5?FORMAT=image/png&TRANSPARENT=false&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "DE",
     "available_projections": [
       "EPSG:3034",
       "EPSG:3035",
@@ -19462,6 +19551,7 @@
     "license_url": "https://github.com/osmlab/editor-layer-index/commit/aad3f972a7bf68347cbc6507baa1ec87c54137b5#commitcomment-26962498",
     "start_date": "2013",
     "end_date": "2014",
+    "country_code": "GB",
     "extent": {
       "max_zoom": 20,
       "min_zoom": 8,
@@ -19656,6 +19746,7 @@
     "license_url": "https://github.com/osmlab/editor-layer-index/commit/aad3f972a7bf68347cbc6507baa1ec87c54137b5#commitcomment-26962498",
     "start_date": "2013",
     "end_date": "2013",
+    "country_code": "GB",
     "extent": {
       "max_zoom": 20,
       "min_zoom": 8,
@@ -24374,6 +24465,7 @@
     "name": "IPR ortofoto LAST (tmsproxy)",
     "url": "https://osm-{switch:a,b,c}.zby.cz/tiles_ipr_last.php/{zoom}/{x}/{y}.jpg",
     "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
+    "country_code": "CZ",
     "extent": {
       "max_zoom": 20,
       "min_zoom": 1,
@@ -24428,6 +24520,7 @@
     "name": "IPR ortofoto Low-Vegetation (tmsproxy)",
     "url": "https://osm-{switch:a,b,c}.zby.cz/tiles_ipr_vege.php/{zoom}/{x}/{y}.jpg",
     "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
+    "country_code": "CZ",
     "extent": {
       "max_zoom": 20,
       "min_zoom": 2,
@@ -24481,6 +24574,7 @@
     "type": "wms",
     "name": "ITACyL - Castile and León",
     "url": "http://orto.wms.itacyl.es/WMS?REQUEST=GetMap&SERVICE=WMS&VERSION=1.1.1&LAYERS=Ortofoto_CyL&SRS={proj}&FORMAT=image/jpeg&STYLES=Default&TRANSPARENT=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "ES",
     "available_projections": [
       "EPSG:4230",
       "EPSG:4258",
@@ -24883,6 +24977,7 @@
     "start_date": "2016",
     "end_date": "2016",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IU.gif",
+    "country_code": "US",
     "available_projections": ["EPSG:4326", "EPSG:26916"],
     "attribution": {
       "text": "Indiana Office of Information Technology, Indiana University Spatial Data Portal, UITS, Woolpert Inc."
@@ -25197,6 +25292,7 @@
     "start_date": "2017",
     "end_date": "2017",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IU.gif",
+    "country_code": "US",
     "available_projections": ["EPSG:4326", "EPSG:26916"],
     "attribution": {
       "text": "Indiana Office of Information Technology, Indiana University Spatial Data Portal, UITS, Woolpert Inc."
@@ -25610,6 +25706,7 @@
     "start_date": "2018",
     "end_date": "2018",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IU.gif",
+    "country_code": "US",
     "available_projections": ["EPSG:4326", "EPSG:26916"],
     "attribution": {
       "text": "Indiana Office of Information Technology, Indiana University Spatial Data Portal, UITS, Woolpert Inc."
@@ -26324,6 +26421,7 @@
     "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
     "start_date": "2015",
     "end_date": "2015",
+    "country_code": "CH",
     "attribution": {"required": true, "text": "Kanton Basel-Stadt OF 2015"},
     "extent": {
       "max_zoom": 21,
@@ -26348,6 +26446,7 @@
     "privacy_policy_url": "https://www.gl.ch/services/datenschutzerklaerung.html/18",
     "start_date": "2013",
     "end_date": "2013",
+    "country_code": "CH",
     "available_projections": [
       "CRS:84",
       "EPSG:2056",
@@ -26392,6 +26491,7 @@
     "privacy_policy_url": "https://www.gl.ch/services/datenschutzerklaerung.html/18",
     "start_date": "2015",
     "end_date": "2015",
+    "country_code": "CH",
     "available_projections": [
       "CRS:84",
       "EPSG:2056",
@@ -26437,6 +26537,7 @@
     "best": true,
     "start_date": "2017",
     "end_date": "2017",
+    "country_code": "CH",
     "available_projections": [
       "CRS:84",
       "EPSG:2056",
@@ -26477,6 +26578,7 @@
     "type": "wms",
     "name": "Katowice: Orthophotomap (aerial image)",
     "url": "http://mapserver.um.katowice.pl/services/ortowms/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=2&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "PL",
     "available_projections": ["EPSG:2157", "EPSG:2177", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Katowic"},
     "extent": {
@@ -26533,6 +26635,7 @@
     "type": "wms",
     "name": "Katowice: Buildings",
     "url": "http://mapserver.um.katowice.pl/services/ortowms/MapServer/WMSServer?FORMAT=image/png&transparent=true&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=4,5,6&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "PL",
     "available_projections": ["EPSG:2157", "EPSG:2177", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Katowic"},
     "extent": {
@@ -26686,6 +26789,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
     "overlay": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+    "country_code": "AU",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -26735,6 +26839,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
     "overlay": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+    "country_code": "AU",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -26784,6 +26889,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
     "overlay": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+    "country_code": "AU",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -26833,6 +26939,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
     "overlay": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+    "country_code": "AU",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -26882,6 +26989,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
     "overlay": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+    "country_code": "AU",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -26931,6 +27039,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
     "overlay": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+    "country_code": "AU",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -26980,6 +27089,7 @@
     "privacy_policy_url": "https://www.asitvd.ch/tarifs-conditions.html",
     "start_date": "2016",
     "end_date": "2016",
+    "country_code": "CH",
     "attribution": {
       "url": "http://carto.lausanne.ch/lausanne-gc/",
       "text": "Ville de Lausanne - Orthophoto 2016"
@@ -27016,6 +27126,7 @@
     "start_date": "2015",
     "end_date": "2015",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/lodz.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Łodzi"},
     "extent": {
@@ -27089,6 +27200,7 @@
     "start_date": "2017",
     "end_date": "2017",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/lodz.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Łodzi"},
     "extent": {
@@ -27160,6 +27272,7 @@
     "name": "Łódź: Buildings",
     "url": "https://gis.mapa.lodz.pl/awiskts/services/WMS_publikowane/LODZ/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Budynki,Ulice,Adresy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/lodz.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Łodzi"},
     "extent": {
@@ -27232,6 +27345,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/FR:Sources_de_donn%C3%A9es_potentielles/France",
     "start_date": "2016",
     "end_date": "2016",
+    "country_code": "FR",
     "available_projections": ["EPSG:2154", "EPSG:3857", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -27336,6 +27450,7 @@
     "type": "wms",
     "name": "Lombardia - Italy (CTR)",
     "url": "https://www.cartografia.regione.lombardia.it/ArcGIS10/services/wms/ctr_wms/MapServer/WMSServer?STYLES=&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "IT",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:32632"],
     "attribution": {
       "url": "https://www.dati.gov.it/content/italian-open-data-license-v20",
@@ -27459,6 +27574,7 @@
     "type": "wms",
     "name": "Lombardia - Italy (CTR DBT)",
     "url": "https://www.cartografia.servizirl.it/arcgis/services/wms/ctr_wms/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Sfondo%20C.T.R.%2010000&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "IT",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:32632"],
     "attribution": {
       "url": "https://www.dati.gov.it/content/italian-open-data-license-v20",
@@ -27602,6 +27718,7 @@
     "start_date": "2015",
     "end_date": "2015",
     "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png",
+    "country_code": "US",
     "available_projections": ["CRS:84", "EPSG:3742", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -27646,6 +27763,7 @@
     "start_date": "2017-08-26",
     "end_date": "2017-10-24",
     "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png",
+    "country_code": "US",
     "available_projections": ["CRS:84", "EPSG:3742", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -27690,6 +27808,7 @@
     "start_date": "2018",
     "end_date": "2018",
     "icon": "https://gis.mesacounty.us/globalassets/images/county-logos/mesa-county-logo.png",
+    "country_code": "US",
     "available_projections": ["CRS:84", "EPSG:3742", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -27950,6 +28069,7 @@
     "url": "https://services.slip.wa.gov.au/public/services/SLIP_Public_Services/Transport/MapServer/WMSServer?LAYERS=8&TRANSPARENT=TRUE&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fpng&SRS={proj}&BBOX={bbox}&WIDTH={width}&HEIGHT={height}",
     "license_url": "https://wiki.openstreetmap.org/wiki/Contributors#Main_Roads_.28state_government_agency.29",
     "overlay": true,
+    "country_code": "AU",
     "available_projections": ["EPSG:3857", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -27985,6 +28105,7 @@
     "name": "Maps4BW (LGL-BW, www.lgl-bw.de)",
     "url": "https://owsproxy.lgl-bw.de/owsproxy/ows/WMS_Maps4BW?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=webatlasde&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "https://wiki.openstreetmap.org/wiki/Maps4BW#Genehmigung_zur_Nutzung",
+    "country_code": "DE",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -28299,6 +28420,7 @@
     "name": "MassGIS L3 Parcels",
     "url": "https://tiles.arcgis.com/tiles/hGdibHYSPO59RG1h/arcgis/rest/services/MassGIS_Level3_Parcels/MapServer/tile/{zoom}/{y}/{x}",
     "overlay": true,
+    "country_code": "US",
     "extent": {
       "max_zoom": 20,
       "min_zoom": 15,
@@ -28426,6 +28548,7 @@
     "privacy_policy_url": "https://bunnycdn.com/privacy",
     "start_date": "2018-01-20",
     "end_date": "2019-10-18",
+    "country_code": "AU",
     "attribution": {
       "required": true,
       "url": "https://www.digitalglobe.com/ecosystem/open-data/australia-wildfires",
@@ -28471,6 +28594,7 @@
     "type": "wms",
     "name": "Metropole Ruhr: Luftbilder (10 cm)",
     "url": "https://geodaten.metropoleruhr.de/dop/dop?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=DOP&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "DE",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4258",
@@ -29038,6 +29162,7 @@
     "start_date": "2008",
     "end_date": "2017",
     "icon": "https://gisdata.mn.gov/agencyLogos/mnLogo.jpg",
+    "country_code": "US",
     "available_projections": ["EPSG:26915"],
     "attribution": {
       "url": "https://www.mngeo.state.mn.us/chouse/wms/composite_image.html",
@@ -29258,6 +29383,7 @@
     "license_url": "https://data.mulhouse-alsace.fr/explore/dataset/m2a_orthophotographie-2018/information/",
     "start_date": "2018",
     "end_date": "2018",
+    "country_code": "FR",
     "attribution": {
       "required": true,
       "url": "https://data.mulhouse-alsace.fr/explore/dataset/m2a_orthophotographie-2018/information/",
@@ -29334,6 +29460,7 @@
     "start_date": "2015",
     "end_date": "2015",
     "icon": "https://www.muenchen.de/media/css/images/favicon_114x114.png",
+    "country_code": "DE",
     "available_projections": ["EPSG:3857", "EPSG:31468"],
     "attribution": {
       "required": true,
@@ -29411,6 +29538,7 @@
     "url": "https://services.nconemap.gov/secure/services/Imagery/Orthoimagery_Latest/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2010",
     "end_date": "2014",
+    "country_code": "US",
     "available_projections": [
       "EPSG:2264",
       "EPSG:3358",
@@ -29508,6 +29636,7 @@
     "url": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Base_Map/MapServer/tile/{zoom}/{y}/{x}",
     "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+    "country_code": "AU",
     "attribution": {
       "required": true,
       "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
@@ -29556,6 +29685,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
     "best": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+    "country_code": "AU",
     "attribution": {
       "required": true,
       "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
@@ -29604,6 +29734,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
     "overlay": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+    "country_code": "AU",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -29651,6 +29782,7 @@
     "url": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}",
     "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+    "country_code": "AU",
     "attribution": {
       "required": true,
       "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
@@ -29700,6 +29832,7 @@
     "privacy_policy_url": "https://www.zh.ch/internet/de/service/nav/footer/nutzungsregelungen.html",
     "start_date": "2014",
     "end_date": "2014",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -29894,6 +30027,7 @@
     "privacy_policy_url": "https://www.zh.ch/internet/de/service/nav/footer/nutzungsregelungen.html",
     "start_date": "2014",
     "end_date": "2014",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -30088,6 +30222,7 @@
     "privacy_policy_url": "https://www.zh.ch/internet/de/service/nav/footer/nutzungsregelungen.html",
     "start_date": "2014",
     "end_date": "2015",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -30282,6 +30417,7 @@
     "privacy_policy_url": "https://www.zh.ch/internet/de/service/nav/footer/nutzungsregelungen.html",
     "start_date": "2015",
     "end_date": "2016",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -30477,6 +30613,7 @@
     "best": true,
     "start_date": "2018",
     "end_date": "2018",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -31163,6 +31300,7 @@
     "start_date": "2014",
     "end_date": "2015",
     "icon": "http://www.igeo.pt/favicon.ico",
+    "country_code": "PT",
     "available_projections": [
       "EPSG:3763",
       "EPSG:3857",
@@ -31267,6 +31405,7 @@
     "name": "OS OpenData Locator",
     "url": "https://tiles.itoworld.com/os_locator/{zoom}/{x}/{y}.png",
     "overlay": true,
+    "country_code": "GB",
     "extent": {
       "max_zoom": 22,
       "polygon": [
@@ -31303,6 +31442,7 @@
     "type": "tms",
     "name": "OS OpenData StreetView",
     "url": "https://{switch:a,b,c}.os.openstreetmap.org/sv/{zoom}/{x}/{y}.png",
+    "country_code": "GB",
     "extent": {
       "max_zoom": 18,
       "min_zoom": 1,
@@ -31344,6 +31484,7 @@
     "license_url": "https://ogrip.oit.ohio.gov/Portals/0/PDFs/OSIP%20Program%20Description.pdf#page=2",
     "start_date": "2011",
     "end_date": "2014",
+    "country_code": "US",
     "available_projections": ["EPSG:3754", "EPSG:4326"],
     "attribution": {
       "url": "https://ogrip.oit.ohio.gov/ProjectsInitiatives/StatewideImagery.aspx",
@@ -31431,6 +31572,7 @@
     "license_url": "https://ogrip.oit.ohio.gov/Portals/0/PDFs/OSIP%20Program%20Description.pdf#page=2",
     "start_date": "2010",
     "end_date": "2018",
+    "country_code": "US",
     "available_projections": ["EPSG:3753", "EPSG:4326"],
     "attribution": {
       "url": "https://ogrip.oit.ohio.gov/ProjectsInitiatives/StatewideImagery.aspx",
@@ -32277,6 +32419,7 @@
     "url": "http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/raster/ortofoto_colore_08.map&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=OI.ORTOIMMAGINI.2008.33&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2008",
     "end_date": "2008",
+    "country_code": "IT",
     "available_projections": ["EPSG:3857", "EPSG:4326"],
     "extent": {
       "polygon": [
@@ -33183,6 +33326,7 @@
     "type": "tms",
     "name": "Pangasinán/Bulacan (Philippines HiRes)",
     "url": "https://gravitystorm.dev.openstreetmap.org/imagery/philippines/{zoom}/{x}/{y}.png",
+    "country_code": "PH",
     "extent": {
       "max_zoom": 19,
       "min_zoom": 12,
@@ -33215,6 +33359,7 @@
     "name": "Praha IPR latest orthophoto",
     "url": "http://giswa1.mag.mepnet.cz/arcgis/services/MAP/letecke_snimky_posledni_snimkovani_cache/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "https://wiki.openstreetmap.org/wiki/Cs:WikiProjekt_%C4%8Cesko/freemap#Ortofotomapy_IPR_Praha",
+    "country_code": "CZ",
     "available_projections": ["EPSG:4326", "EPSG:5514", "EPSG:102067"],
     "extent": {
       "max_zoom": 20,
@@ -33236,6 +33381,7 @@
     "name": "Praha IPR low-vegetation orthophoto",
     "url": "http://giswa1.mag.mepnet.cz/arcgis/services/MAP/mimovegetacni_snimkovani_cache/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "https://wiki.openstreetmap.org/wiki/Cs:WikiProjekt_%C4%8Cesko/freemap#Ortofotomapy_IPR_Praha",
+    "country_code": "CZ",
     "available_projections": ["EPSG:4326", "EPSG:5514", "EPSG:102067"],
     "extent": {
       "max_zoom": 20,
@@ -33778,6 +33924,7 @@
     "type": "wms",
     "name": "Ruda Śląska: Orthophotomap (aerial image)",
     "url": "https://rudaslaska.geoportal2.pl/map/wmsorto/wms.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Ruda Śląska"},
     "extent": {
@@ -33840,6 +33987,7 @@
     "type": "wms",
     "name": "Rzeszów: Orthophotomap (aerial image)",
     "url": "http://wms.erzeszow.pl/?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=rastry&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "PL",
     "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Rzeszowa"},
     "extent": {
@@ -33890,6 +34038,7 @@
     "type": "wms",
     "name": "Rzeszów: Buildings",
     "url": "http://wms.erzeszow.pl/?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=komunikacja,budynki,adresy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "PL",
     "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Rzeszowa"},
     "extent": {
@@ -34129,6 +34278,7 @@
     "privacy_policy_url": "https://www.asitvd.ch/tarifs-conditions.html",
     "start_date": "2012",
     "end_date": "2012",
+    "country_code": "CH",
     "attribution": {"url": "https://www.sigip.ch/", "text": "SIGIP"},
     "extent": {
       "max_zoom": 20,
@@ -34163,6 +34313,7 @@
     "start_date": "2009",
     "end_date": "2010",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SPW.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
     "extent": {
       "polygon": [
@@ -34303,6 +34454,7 @@
     "start_date": "2012",
     "end_date": "2013",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SPW.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
     "extent": {
       "polygon": [
@@ -34443,6 +34595,7 @@
     "start_date": "2015",
     "end_date": "2015",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SPW.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
     "extent": {
       "polygon": [
@@ -34583,6 +34736,7 @@
     "start_date": "2016",
     "end_date": "2016",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SPW.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
     "extent": {
       "polygon": [
@@ -34722,6 +34876,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/File:OSM_license_for_SPW_WMS_usage.pdf",
     "best": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SPW.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
     "extent": {
       "polygon": [
@@ -34860,6 +35015,7 @@
     "url": "https://geoservices.wallonie.be/arcgis/services/TOPOGRAPHIE/PICC_VDIFF/MapServer/WmsServer?SERVICE=WMS&VERSION=1.1.1&FORMAT=image/png8&TRANSPARENT=FALSE&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&LAYERS=0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
     "license_url": "https://wiki.openstreetmap.org/wiki/File:OSM_license_for_SPW_WMS_usage.pdf",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SPW.png",
+    "country_code": "BE",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4258",
@@ -35005,6 +35161,7 @@
     "start_date": "2013",
     "end_date": "2014",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SPW.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
     "extent": {
       "polygon": [
@@ -35144,6 +35301,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/Puerto_Rico_Imagery#Recommended_imagery_for_the_San_Juan_Metro_Area:_2013_USACE_Orthophotos",
     "start_date": "2013-03-13",
     "end_date": "2013-03-15",
+    "country_code": "US",
     "extent": {
       "max_zoom": 20,
       "polygon": [
@@ -35492,6 +35650,7 @@
     "type": "wms",
     "name": "Sicily - Italy",
     "url": "http://map.sitr.regione.sicilia.it/ArcGIS/services/WGS84_F33/Ortofoto_ATA20072008_f33/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=0&STYLES=default&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "IT",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:32633"],
     "extent": {
       "polygon": [
@@ -35518,6 +35677,7 @@
     "type": "wms",
     "name": "Siemianowice Śląskie: Orthophotomap (aerial image)",
     "url": "https://siemianowice.geoportal2.pl/map/wms/wms.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Siemianowice Śląskie"},
     "extent": {
@@ -35553,6 +35713,7 @@
     "type": "wms",
     "name": "Siemianowice Śląskie: Buildings",
     "url": "https://siemianowice.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&transparent=true&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki,drogi,adresy,ulice&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Siemianowice Śląskie"},
     "extent": {
@@ -35817,6 +35978,7 @@
     "start_date": "2015",
     "end_date": "2017",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/KantonSolothurn.png",
+    "country_code": "CH",
     "available_projections": [
       "CRS:84",
       "EPSG:2056",
@@ -36005,6 +36167,7 @@
     "privacy_policy_url": "https://www.so.ch/rechtliches/",
     "start_date": "2014",
     "end_date": "2014",
+    "country_code": "CH",
     "available_projections": [
       "CRS:84",
       "EPSG:2056",
@@ -36194,6 +36357,7 @@
     "privacy_policy_url": "https://www.so.ch/rechtliches/",
     "start_date": "2014",
     "end_date": "2014",
+    "country_code": "CH",
     "available_projections": [
       "CRS:84",
       "EPSG:2056",
@@ -36385,6 +36549,7 @@
     "start_date": "2015",
     "end_date": "2017",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/KantonSolothurn.png",
+    "country_code": "CH",
     "available_projections": ["EPSG:2056", "EPSG:4326", "EPSG:21781"],
     "attribution": {"text": "Orthofoto WMS Solothurn"},
     "extent": {
@@ -36567,6 +36732,7 @@
     "best": true,
     "start_date": "2017-03",
     "end_date": "2017-03",
+    "country_code": "HU",
     "attribution": {
       "required": true,
       "url": "http://fototerkep.hu",
@@ -36703,6 +36869,7 @@
     "best": true,
     "start_date": "2014-07",
     "end_date": "2015-11",
+    "country_code": "IT",
     "attribution": {
       "required": true,
       "url": "https://geoservices.buergernetz.bz.it/geokatalog",
@@ -37194,6 +37361,7 @@
     "best": true,
     "start_date": "2017-07",
     "end_date": "2017-10",
+    "country_code": "IT",
     "attribution": {
       "url": "https://geoservices.buergernetz.bz.it/geokatalog",
       "text": "© Autonomen Provinz Bozen/Provincia Autonoma di Bolzano CC0-1.0"
@@ -37424,6 +37592,7 @@
     "license_url": "https://geoservices.buergernetz.bz.it/geoserver/ows?SERVICE=WMS&REQUEST=GetCapabilities",
     "start_date": "2011",
     "end_date": "2011",
+    "country_code": "IT",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -37913,6 +38082,7 @@
     "url": "https://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=P_BZ_OF_2014_EPSG3857&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{zoom}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg",
     "start_date": "2014",
     "end_date": "2014",
+    "country_code": "IT",
     "attribution": {
       "required": true,
       "url": "https://geoservices.buergernetz.bz.it/geokatalog/",
@@ -38019,6 +38189,7 @@
     "description": "Topographical basemap of South Tyrol",
     "url": "https://geoservices.buergernetz.bz.it/geoserver/gwc/service/wmts/?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=P_BZ_BASEMAP_TOPO&STYLE=default&TILEMATRIXSET=GoogleMapsCompatible&TILEMATRIX=GoogleMapsCompatible%3A{zoom}&TILEROW={y}&TILECOL={x}&FORMAT=image%2Fjpeg",
     "license_url": "https://geoservices.buergernetz.bz.it/geoserver/ows?SERVICE=WMS&REQUEST=GetCapabilities",
+    "country_code": "IT",
     "attribution": {
       "required": true,
       "url": "https://geoservices.buergernetz.bz.it/geokatalog",
@@ -38648,6 +38819,7 @@
     "url": "https://{switch:a,b,c}.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2013/{zoom}/{x}/{y}.jpg",
     "start_date": "2013",
     "end_date": "2015",
+    "country_code": "ZA",
     "attribution": {
       "required": true,
       "url": "https://www.capetown.gov.za",
@@ -38867,6 +39039,7 @@
     "url": "https://{switch:a,b,c}.coct.aerial.openstreetmap.org.za/layer/za_coct_aerial_2015/{zoom}/{x}/{y}.jpg",
     "start_date": "2015",
     "end_date": "2016",
+    "country_code": "ZA",
     "attribution": {
       "required": true,
       "url": "https://www.capetown.gov.za",
@@ -39089,6 +39262,7 @@
     "start_date": "2017-04-12",
     "end_date": "2017-04-21",
     "icon": "https://www.stuttgart.de/favicon.ico",
+    "country_code": "DE",
     "available_projections": ["EPSG:3857", "EPSG:25832"],
     "extent": {
       "polygon": [
@@ -39163,6 +39337,7 @@
     "url": "https://{switch:a,b,c}.surrey.aerial.openstreetmap.org.uk/layer/gb_surrey_aerial/{zoom}/{x}/{y}.png",
     "start_date": "2007",
     "end_date": "2009",
+    "country_code": "GB",
     "extent": {
       "max_zoom": 21,
       "min_zoom": 8,
@@ -39298,6 +39473,7 @@
     "url": "https://swietochlowice.geoportal2.pl/map/wms/wms.php?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=ortofotomapa2008&STYLES=&FORMAT=image/jpeg&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&SRS={proj}",
     "start_date": "2008",
     "end_date": "2008",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Świętochłowice"},
     "extent": {
@@ -39349,6 +39525,7 @@
     "url": "https://swietochlowice.geoportal2.pl/map/wms/wms.php?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=ortofotomapa2009&STYLES=&FORMAT=image/jpeg&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&SRS={proj}",
     "start_date": "2009",
     "end_date": "2009",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Świętochłowice"},
     "extent": {
@@ -39400,6 +39577,7 @@
     "url": "https://swietochlowice.geoportal2.pl/map/wms/wms.php?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=ortofotomapa2012&STYLES=&FORMAT=image/jpeg&BBOX={bbox}&WIDTH={width}&HEIGHT={height}&SRS={proj}",
     "start_date": "2012",
     "end_date": "2012",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Świętochłowice"},
     "extent": {
@@ -39454,6 +39632,7 @@
     "best": true,
     "start_date": "2011",
     "end_date": "2011",
+    "country_code": "HU",
     "attribution": {
       "required": true,
       "url": "http://www.geo.u-szeged.hu",
@@ -39529,6 +39708,7 @@
     "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",
     "overlay": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TEC.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857", "EPSG:4326"],
     "extent": {
       "polygon": [
@@ -39668,6 +39848,7 @@
     "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",
     "overlay": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TEC.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857", "EPSG:4326"],
     "extent": {
       "polygon": [
@@ -39912,6 +40093,7 @@
     "privacy_policy_url": "https://www.torokbalint.hu/app/cms/TorokbalintApp/index?id=52",
     "start_date": "2013-09",
     "end_date": "2013-09",
+    "country_code": "HU",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:23700"],
     "attribution": {
       "required": true,
@@ -39972,6 +40154,7 @@
     "privacy_policy_url": "https://www.torokbalint.hu/app/cms/TorokbalintApp/index?id=52",
     "start_date": "2015",
     "end_date": "2015",
+    "country_code": "HU",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:23700"],
     "attribution": {
       "required": true,
@@ -40033,6 +40216,7 @@
     "best": true,
     "start_date": "2018",
     "end_date": "2018",
+    "country_code": "HU",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:23700"],
     "attribution": {
       "required": true,
@@ -40091,6 +40275,7 @@
     "license_url": "https://data.toulouse-metropole.fr/page/licence",
     "start_date": "2007",
     "end_date": "2007",
+    "country_code": "FR",
     "available_projections": ["EPSG:3857", "EPSG:3943"],
     "attribution": {
       "required": true,
@@ -40168,6 +40353,7 @@
     "license_url": "https://data.toulouse-metropole.fr/page/licence",
     "start_date": "2011",
     "end_date": "2011",
+    "country_code": "FR",
     "available_projections": ["EPSG:3857", "EPSG:3943"],
     "attribution": {
       "required": true,
@@ -40245,6 +40431,7 @@
     "license_url": "https://data.toulouse-metropole.fr/page/licence",
     "start_date": "2013",
     "end_date": "2013",
+    "country_code": "FR",
     "available_projections": ["EPSG:3857", "EPSG:3943"],
     "attribution": {
       "required": true,
@@ -40322,6 +40509,7 @@
     "license_url": "https://data.toulouse-metropole.fr/page/licence",
     "start_date": "2015",
     "end_date": "2015",
+    "country_code": "FR",
     "available_projections": ["EPSG:3857", "EPSG:3943"],
     "attribution": {
       "required": true,
@@ -40400,6 +40588,7 @@
     "best": true,
     "start_date": "2017",
     "end_date": "2017",
+    "country_code": "FR",
     "available_projections": ["EPSG:3857", "EPSG:3943"],
     "attribution": {
       "required": true,
@@ -40477,6 +40666,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/Tours/Orthophoto",
     "start_date": "2008",
     "end_date": "2011",
+    "country_code": "FR",
     "attribution": {
       "required": true,
       "url": "https://wiki.openstreetmap.org/wiki/Tours/Orthophoto",
@@ -40609,6 +40799,7 @@
     "license_url": "https://wiki.openstreetmap.org/wiki/Tours/Orthophoto",
     "start_date": "2013",
     "end_date": "2013",
+    "country_code": "FR",
     "attribution": {
       "required": true,
       "url": "https://wiki.openstreetmap.org/wiki/Tours/Orthophoto",
@@ -40743,6 +40934,7 @@
     "start_date": "2009",
     "end_date": "2009",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -40842,6 +41034,7 @@
     "start_date": "2012",
     "end_date": "2012",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -40941,6 +41134,7 @@
     "start_date": "2014",
     "end_date": "2014",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -41040,6 +41234,7 @@
     "start_date": "2015",
     "end_date": "2015",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -41138,6 +41333,7 @@
     "start_date": "2013",
     "end_date": "2013",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -41236,6 +41432,7 @@
     "start_date": "2013",
     "end_date": "2013",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857"],
     "attribution": {
       "required": true,
@@ -45730,6 +45927,7 @@
     "url": "https://map.land.gov.ua/map/ortho_kiev/{zoom}/{x}/{-y}.jpg",
     "start_date": "2014",
     "end_date": "2014",
+    "country_code": "UA",
     "extent": {
       "max_zoom": 16,
       "polygon": [
@@ -45909,6 +46107,7 @@
     "start_date": "2018",
     "end_date": "2018",
     "icon": "https://mkrada.gov.ua/favicon.ico",
+    "country_code": "UA",
     "attribution": {
       "required": true,
       "text": "Map data: © Геоінформаційна система містобудівного кадастру Миколаївської міської ради"
@@ -45965,6 +46164,7 @@
     "start_date": "2018-10",
     "end_date": "2018-10",
     "icon": "https://www.vmr.gov.ua/_catalogs/masterpage/images/favicon.ico",
+    "country_code": "UA",
     "attribution": {
       "required": true,
       "url": "https://www.vmr.gov.ua/",
@@ -45997,6 +46197,7 @@
     "start_date": "2016",
     "end_date": "2016",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+    "country_code": "BE",
     "available_projections": ["CRS:84", "EPSG:3857", "EPSG:4326", "EPSG:31370"],
     "attribution": {
       "required": true,
@@ -46096,6 +46297,7 @@
     "start_date": "2017",
     "end_date": "2017",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+    "country_code": "BE",
     "available_projections": ["CRS:84", "EPSG:3857", "EPSG:4326", "EPSG:31370"],
     "attribution": {
       "required": true,
@@ -46195,6 +46397,7 @@
     "start_date": "2018",
     "end_date": "2018",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+    "country_code": "BE",
     "available_projections": ["CRS:84", "EPSG:3857", "EPSG:4326", "EPSG:31370"],
     "attribution": {
       "required": true,
@@ -46295,6 +46498,7 @@
     "start_date": "2019",
     "end_date": "2019",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+    "country_code": "BE",
     "available_projections": ["CRS:84", "EPSG:3857", "EPSG:4326", "EPSG:31370"],
     "attribution": {
       "required": true,
@@ -46392,6 +46596,7 @@
     "license_url": "https://bric.brussels/en/our-solutions/urbis-solutions/Licence_Open_data_Fr_v4.pdf",
     "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
     "attribution": {
       "required": true,
@@ -46489,6 +46694,7 @@
     "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
     "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+    "country_code": "BE",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
     "attribution": {
       "required": true,
@@ -46588,6 +46794,7 @@
     "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
     "start_date": "2008",
     "end_date": "2008",
+    "country_code": "CH",
     "attribution": {"text": "Stadt Uster Vermessung Orthophoto 2008"},
     "extent": {
       "max_zoom": 21,
@@ -46612,6 +46819,7 @@
     "start_date": "2015-05",
     "end_date": "2018-06",
     "overlay": true,
+    "country_code": "US",
     "attribution": {
       "required": true,
       "url": "https://vgin.maps.arcgis.com/home/item.html?id=bcd049dfcdc342a7a08ec81644eeb339",
@@ -46711,6 +46919,7 @@
     "license_url": "http://data.virginia.gov/#opendata",
     "start_date": "2013-04",
     "end_date": "2018-08",
+    "country_code": "US",
     "attribution": {
       "required": true,
       "url": "https://vgin.maps.arcgis.com/home/item.html?id=36386a7e7dae4032a33cb0b83a1711f1",
@@ -46811,6 +47020,7 @@
     "start_date": "2015-05",
     "end_date": "2018-06",
     "overlay": true,
+    "country_code": "US",
     "attribution": {
       "required": true,
       "url": "https://vgin.maps.arcgis.com/home/item.html?id=f1dccaf1f42e40cbba791feae2e23690",
@@ -46909,6 +47119,7 @@
     "license_url": "https://www.data.gouv.fr/fr/datasets/photos-aeriennes-orthorectifiees-de-la-reserve-naturelle-des-hauts-plateaux-du-vercors/",
     "start_date": "1999",
     "end_date": "1999",
+    "country_code": "FR",
     "attribution": {
       "required": true,
       "text": "Parc Naturel Régional du Vercors"
@@ -46959,6 +47170,7 @@
     "privacy_policy_url": "https://www.asitvd.ch/tarifs-conditions.html",
     "start_date": "2016-03-10",
     "end_date": "2016-03-10",
+    "country_code": "CH",
     "attribution": {
       "url": "http://www.nyon.ch/fr/officiel/services-offices/informatique-et-population-776-3911",
       "text": "Ville de Nyon"
@@ -47068,6 +47280,7 @@
     "url": "http://siot.um.zabrze.pl/arcgis/services/UMZ_Ortofoto_2011/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2011",
     "end_date": "2011",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Zabrza"},
     "extent": {
@@ -47156,6 +47369,7 @@
     "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
     "start_date": "2011",
     "end_date": "2011",
+    "country_code": "CH",
     "attribution": {"text": "Stadt Zürich Luftbild 2011"},
     "extent": {
       "max_zoom": 21,
@@ -47178,6 +47392,7 @@
     "license_url": "https://data.stadt-zuerich.ch/dataset/geo_orthofoto_stadt_zuerich_2011",
     "start_date": "2011",
     "end_date": "2011",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -47206,6 +47421,7 @@
     "url": "https://mapproxy.osm.ch/tiles/zh_uebersichtsplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
     "license_url": "https://data.stadt-zuerich.ch/dataset/geo_uebersichtsplan_stadt_zuerich",
     "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
+    "country_code": "CH",
     "attribution": {"text": "Stadt Zürich Open Government Data"},
     "extent": {
       "max_zoom": 21,
@@ -47244,6 +47460,7 @@
     "best": true,
     "start_date": "2011",
     "end_date": "2011",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -47301,6 +47518,7 @@
     "best": true,
     "start_date": "2016",
     "end_date": "2016",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -47344,6 +47562,7 @@
     "best": true,
     "start_date": "2018",
     "end_date": "2018",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -47381,6 +47600,7 @@
     "url": "https://mapproxy.osm.ch/tiles/zh_stadtplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",
     "license_url": "https://data.stadt-zuerich.ch/portal/de/index/ogd/nutzungsbedingungen.secure.html",
     "privacy_policy_url": "https://sosm.ch/about/terms-of-service/",
+    "country_code": "CH",
     "attribution": {"text": "Stadt Zürich Open Government Data"},
     "extent": {
       "max_zoom": 21,
@@ -47415,6 +47635,7 @@
     "name": "City of Zürich Overview map (Steets, buildings, house numbers)",
     "url": "https://www.gis.stadt-zuerich.ch/maps/services/wms/WMS-ZH-STZH-OGD/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Uebersichtsplan&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "https://data.stadt-zuerich.ch/dataset/geo_uebersichtsplan_stadt_zuerich",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -50506,6 +50727,7 @@
     "name": "Bavaria (80 cm)",
     "url": "https://geoservices.bayern.de/wms/v2/ogc_dop80_oa.cgi?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=by_dop80c&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "best": true,
+    "country_code": "DE",
     "available_projections": [
       "EPSG:4258",
       "EPSG:4326",
@@ -51806,6 +52028,7 @@
     "url": "https://tiles.openaerialmap.org/5ac65a9f91b5310010e0d489/0/5ac65a9f91b5310010e0d48a/{zoom}/{x}/{y}.png",
     "start_date": "2017-12-11",
     "end_date": "2017-12-20",
+    "country_code": "HT",
     "attribution": {
       "url": "http://americanredcross.github.io/",
       "text": "American Red Cross"
@@ -54066,6 +54289,7 @@
     "name": "Powiat dębicki: Buildings",
     "url": "https://debica.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki,adresy,EBU,EBT,S&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Powiat dębicki"},
     "extent": {
@@ -56695,6 +56919,7 @@
     "privacy_policy_url": "https://geoportal.dgu.hr/#/menu/uvjeti-koristenja",
     "start_date": "2011",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png",
+    "country_code": "HR",
     "available_projections": ["EPSG:3765", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -56975,6 +57200,7 @@
     "url": "https://imagery.openstreetmap.fr/tms/1.0.0/haiti_uav_201610/{zoom}/{x}/{y}",
     "start_date": "2016-10",
     "end_date": "2016-10",
+    "country_code": "HT",
     "extent": {
       "max_zoom": 18,
       "polygon": [
@@ -57990,6 +58216,7 @@
     "best": true,
     "start_date": "2010-08-01",
     "end_date": "2010-08-31",
+    "country_code": "HU",
     "attribution": {
       "required": true,
       "url": "http://www.bli.okologia.mta.hu/",
@@ -59103,6 +59330,7 @@
     "url": "https://imagery.openstreetmap.fr/tms/1.0.0/gaza_pleiades_20140706/{zoom}/{x}/{y}",
     "start_date": "2014-07-06",
     "end_date": "2014-07-06",
+    "country_code": "PS",
     "attribution": {
       "required": true,
       "url": "https://wiki.openstreetmap.org/wiki/2014_Gaza_Strip",
@@ -59187,6 +59415,7 @@
     "url": "https://imagery.openstreetmap.fr/tms/1.0.0/gaza_pleiades_20140706_nir/{zoom}/{x}/{y}",
     "start_date": "2014-07-06",
     "end_date": "2014-07-06",
+    "country_code": "PS",
     "attribution": {
       "required": true,
       "url": "https://wiki.openstreetmap.org/wiki/2014_Gaza_Strip",
@@ -59270,6 +59499,7 @@
     "name": "MD Transportation Basemap",
     "description": "Maryland State Highway Administration road features and additional Maryland focused landmarks",
     "url": "https://geodata.md.gov/imap/services/Transportation/MD_ColorBasemap/MapServer/WmsServer?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=MD_ColorBasemap&WIDTH={width}&HEIGHT={height}&CRS={proj}&STYLES=&BBOX={bbox}",
+    "country_code": "US",
     "available_projections": [
       "CRS:84",
       "EPSG:2248",
@@ -59343,6 +59573,7 @@
     "url": "https://geodata.md.gov/imap/services/Imagery/MD_SixInchImagery/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=MD_SixInchImagery&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2013",
     "end_date": "2016",
+    "country_code": "US",
     "available_projections": [
       "EPSG:2248",
       "EPSG:3857",
@@ -59414,6 +59645,7 @@
     "name": "MD Three Inch Aerial Imagery",
     "description": "Three Inch Resolution Imagery for the cities of Rockville, Gaithersburg and Annapolis",
     "url": "https://geodata.md.gov/imap/services/Imagery/MD_ThreeInchImagery/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=MD_ThreeInchImagery&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "US",
     "available_projections": [
       "EPSG:2248",
       "EPSG:3857",
@@ -60536,6 +60768,7 @@
     "license_url": "https://catalog.goteborg.se/catalog/6/datasets/718",
     "privacy_policy_url": "https://goteborg.se/wps/portal/start/kommun-o-politik/beslut-insyn-och-rattskerhet/sa-har-behandlar-kommunen-dina-personuppgifter/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziTYzcDQy9TAy9LVyDXA0CLcJ8A70sDQ3cLcz1wwkpiAJKG-AAjgb6BbmhigA2cFOY/dz/d5/L2dBISEvZ0FBIS9nQSEh/#collapse-012212692658198088",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png/206px-G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png",
+    "country_code": "SE",
     "available_projections": ["EPSG:3006", "EPSG:3007", "EPSG:3857"],
     "attribution": {
       "required": true,
@@ -60566,6 +60799,7 @@
     "privacy_policy_url": "https://goteborg.se/wps/portal/start/kommun-o-politik/beslut-insyn-och-rattskerhet/sa-har-behandlar-kommunen-dina-personuppgifter/",
     "best": true,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png/206px-G%C3%B6teborg_kommunvapen_-_Riksarkivet_Sverige.png",
+    "country_code": "SE",
     "available_projections": ["EPSG:3006", "EPSG:3007", "EPSG:3857"],
     "attribution": {
       "required": true,
@@ -60690,6 +60924,7 @@
     "type": "wms",
     "name": "Hamburg (20 cm)",
     "url": "https://geodienste.hamburg.de/HH_WMS_DOP20?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=1&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+    "country_code": "DE",
     "available_projections": [
       "EPSG:3034",
       "EPSG:3035",
@@ -60844,6 +61079,7 @@
     "license_url": "https://helsingborg.opendatasoft.com/explore/dataset/flygbilder/information/",
     "best": true,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Helsingborg_vapen.svg/198px-Helsingborg_vapen.svg.png",
+    "country_code": "SE",
     "attribution": {
       "required": true,
       "url": "https://helsingborg.opendatasoft.com/",
@@ -60873,6 +61109,7 @@
     "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/HRI_permission_07082018.pdf",
     "best": true,
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/HRI.png",
+    "country_code": "FI",
     "available_projections": ["EPSG:3857", "EPSG:3879", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -60907,6 +61144,7 @@
     "name": "Hillshade Hungary",
     "url": "https://{switch:a,b,c}.map.turistautak.hu/tiles/shading/{zoom}/{x}/{y}.png",
     "overlay": true,
+    "country_code": "HU",
     "attribution": {"text": "SRTM"},
     "extent": {
       "max_zoom": 18,
@@ -61128,6 +61366,7 @@
     "url": "https://img.nj.gov/imagerywms/Infrared2015?FORMAT=image/png&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&WIDTH={width}&HEIGHT={height}&LAYERS=Infrared2015&BBOX={bbox}",
     "start_date": "2015-03-29",
     "end_date": "2015-05-03",
+    "country_code": "US",
     "available_projections": [
       "EPSG:2959",
       "EPSG:3424",
@@ -61238,6 +61477,7 @@
     "url": "https://img.nj.gov/imagerywms/Natural2015?FORMAT=image/png&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&WIDTH={width}&HEIGHT={height}&LAYERS=Natural2015&BBOX={bbox}",
     "start_date": "2015-03-29",
     "end_date": "2015-05-03",
+    "country_code": "US",
     "available_projections": [
       "EPSG:2959",
       "EPSG:3424",
@@ -61351,6 +61591,7 @@
     "start_date": "2014",
     "end_date": "2014",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kalmarvapen_1a.svg/206px-Kalmarvapen_1a.svg.png",
+    "country_code": "SE",
     "available_projections": ["EPSG:3011", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -61401,6 +61642,7 @@
     "start_date": "2016",
     "end_date": "2016",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kalmarvapen_1a.svg/206px-Kalmarvapen_1a.svg.png",
+    "country_code": "SE",
     "available_projections": ["EPSG:3010", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -61447,6 +61689,7 @@
     "start_date": "2018",
     "end_date": "2018",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Kalmarvapen_1a.svg/206px-Kalmarvapen_1a.svg.png",
+    "country_code": "SE",
     "available_projections": ["EPSG:3010", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -63264,6 +63507,7 @@
     "url": "https://opencache{switch:,2,3}.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=sjokartraster&zoom={zoom}&x={x}&y={y}",
     "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
     "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+    "country_code": "NO",
     "attribution": {
       "url": "https://www.kartverket.no/Kart/Sjokart/",
       "text": "© Kartverket"
@@ -63739,6 +63983,7 @@
     "url": "https://ows.geo.tg.ch/geofy_access_proxy/basisplanf?LAYERS=Basisplan_farbig&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
     "license_url": "https://opendata.swiss/dataset/basisplan-av",
     "privacy_policy_url": "https://geoinformation.tg.ch/thurgis/thurgis-disclaimer.html/7128",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -63836,6 +64081,7 @@
     "privacy_policy_url": "https://geoinformation.tg.ch/thurgis/thurgis-disclaimer.html/7128",
     "start_date": "2014",
     "end_date": "2014",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -63934,6 +64180,7 @@
     "best": true,
     "start_date": "2017",
     "end_date": "2017",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -64029,6 +64276,7 @@
     "url": "https://ows.geo.tg.ch/geofy_access_proxy/radwege?LAYERS=Radwege&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
     "license_url": "https://opendata.swiss/dataset/rad-routen",
     "privacy_policy_url": "https://geoinformation.tg.ch/thurgis/thurgis-disclaimer.html/7128",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -64124,6 +64372,7 @@
     "url": "https://ows.geo.tg.ch/geofy_access_proxy/wanderwege?LAYERS=Wanderwege&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
     "license_url": "https://opendata.swiss/dataset/wanderwege",
     "privacy_policy_url": "https://geoinformation.tg.ch/thurgis/thurgis-disclaimer.html/7128",
+    "country_code": "CH",
     "available_projections": [
       "EPSG:2056",
       "EPSG:3857",
@@ -64220,6 +64469,7 @@
     "license_url": "https://lists.nuug.no/pipermail/kart/2017-December/006320.html",
     "overlay": true,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Coat_of_arms_of_the_Norwegian_Coastal_Administration.svg/143px-Coat_of_arms_of_the_Norwegian_Coastal_Administration.svg.png",
+    "country_code": "NO",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -64270,6 +64520,7 @@
     "name": "Powiat łańcucki: Buildings",
     "url": "https://lancut.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=EBT,budynki,adresy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Powiat łańcucki"},
     "extent": {
@@ -64772,6 +65023,7 @@
     "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/se/linkoping_permission.pdf",
     "best": true,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Linköping_vapen.svg/198px-Linköping_vapen.svg.png",
+    "country_code": "SE",
     "available_projections": ["EPSG:3009", "EPSG:3857"],
     "attribution": {
       "required": true,
@@ -65926,6 +66178,7 @@
     "start_date": "2017-04-09",
     "end_date": "2017-04-09",
     "icon": "https://www.geoportail.lu/static/img/lion.png",
+    "country_code": "LU",
     "attribution": {
       "url": "https://act.public.lu/fr/cartographie/lidar",
       "text": "Administration du Cadastre et de la Topographie"
@@ -66343,6 +66596,7 @@
     "name": "Powiat lubaczowski: Buildings",
     "url": "https://lubaczow.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=S,EBT,adresy,budynki_ewid&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2179", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Powiat lubaczowski"},
     "extent": {
@@ -66673,6 +66927,7 @@
     "url": "https://geodaten.mainz.de/map/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortho_2018&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "https://wiki.openstreetmap.org/wiki/Mainz/amtliche_Daten_f%C3%BCr_OSM",
     "icon": "https://www.mainz.de/configuration.inc.php.media/27432/Logo-72px.png",
+    "country_code": "DE",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4258",
@@ -68557,6 +68812,7 @@
     "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006333.html",
     "overlay": true,
     "icon": "https://register.geonorge.no/data/organizations/870917732_od_liten.png",
+    "country_code": "NO",
     "available_projections": [
       "EPSG:3034",
       "EPSG:3857",
@@ -69633,6 +69889,7 @@
     "privacy_policy_url": "https://data.beta.grandlyon.com/en/mentions-legales",
     "start_date": "2015-05",
     "end_date": "2018",
+    "country_code": "FR",
     "attribution": {
       "required": true,
       "url": "https://data.grandlyon.com/imagerie/orthophotographie-2015-du-grand-lyon/",
@@ -69669,6 +69926,7 @@
     "privacy_policy_url": "https://data.beta.grandlyon.com/en/mentions-legales",
     "start_date": "2012-03",
     "end_date": "2012-03",
+    "country_code": "FR",
     "available_projections": [
       "EPSG:2154",
       "EPSG:3857",
@@ -69712,6 +69970,7 @@
     "best": true,
     "start_date": "2018-04-17",
     "end_date": "2018-04-20",
+    "country_code": "FR",
     "available_projections": [
       "EPSG:2154",
       "EPSG:3857",
@@ -69757,6 +70016,7 @@
     "start_date": "2013",
     "end_date": "2018",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NewYorkState.png",
+    "country_code": "US",
     "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:120100"],
     "attribution": {
       "url": "https://gis.ny.gov/gateway/orthoprogram/index.cfm",
@@ -70665,6 +70925,7 @@
     "start_date": "2007",
     "end_date": "2007",
     "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/osm-hr.png",
+    "country_code": "HR",
     "extent": {
       "max_zoom": 19,
       "polygon": [
@@ -70701,6 +70962,7 @@
     "start_date": "2003",
     "end_date": "2007",
     "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/osm-hr.png",
+    "country_code": "HR",
     "extent": {
       "max_zoom": 17,
       "polygon": [
@@ -70948,6 +71210,7 @@
     "start_date": "1992",
     "end_date": "2002",
     "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/osm-hr.png",
+    "country_code": "HR",
     "extent": {
       "max_zoom": 15,
       "polygon": [
@@ -71122,6 +71385,7 @@
     "start_date": "2012",
     "end_date": "2012",
     "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/osm-hr.png",
+    "country_code": "HR",
     "attribution": {
       "required": true,
       "url": "https://geoportal.zagreb.hr/",
@@ -71191,6 +71455,7 @@
     "start_date": "2018",
     "end_date": "2018",
     "icon": "https://osmlab.github.io/editor-layer-index/sources/europe/hr/osm-hr.png",
+    "country_code": "HR",
     "attribution": {
       "required": true,
       "url": "https://geoportal.zagreb.hr/",
@@ -71254,6 +71519,7 @@
     "type": "tms",
     "name": "openstreetmap.hu orthophotos",
     "url": "http://adam.openstreetmap.hu/mapproxy/tiles/1.0.0/openstreetmap.hu.orthophotos/mercator/{zoom}/{x}/{y}.png",
+    "country_code": "HU",
     "attribution": {"text": "openstreetmap.hu"},
     "extent": {
       "max_zoom": 21,
@@ -72914,6 +73180,7 @@
     "url": "https://mapproxy.openstreetmap.se/tms/1.0.0/ek_EPSG3857/{zoom}/{x}/{-y}.jpeg",
     "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/lantmateriet.png",
+    "country_code": "SE",
     "attribution": {
       "required": true,
       "url": "https://www.lantmateriet.se",
@@ -73916,6 +74183,7 @@
     "url": "http://wms2.geopoz.poznan.pl:8080/geoserver/sip/wms?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki_ewidencyjne_sql&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2018",
     "end_date": "2018",
+    "country_code": "PL",
     "available_projections": [
       "EPSG:2177",
       "EPSG:2180",
@@ -73963,6 +74231,7 @@
     "url": "http://wms1.geopoz.poznan.pl:6080/arcgis/services/sip/ortofotomapa_2014/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa_2014_image&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2014",
     "end_date": "2014",
+    "country_code": "PL",
     "available_projections": [
       "EPSG:2177",
       "EPSG:2180",
@@ -74010,6 +74279,7 @@
     "url": "http://wms1.geopoz.poznan.pl:6080/arcgis/services/sip/ortofotomapy/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa_2016_image&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "start_date": "2016",
     "end_date": "2016",
+    "country_code": "PL",
     "available_projections": [
       "EPSG:2177",
       "EPSG:2180",
@@ -74056,6 +74326,7 @@
     "name": "Powiat poznański: Orthophotomap (aerial image)",
     "url": "http://wms.podgik.poznan.pl/cgi-bin/poznan?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto-poznan&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/PODGIK.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177"],
     "attribution": {"text": "PODGIK Poznań"},
     "extent": {
@@ -74095,6 +74366,7 @@
     "name": "Powiat poznański: Buildings",
     "url": "http://wms.podgik.poznan.pl/cgi-bin/poznan?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/PODGIK.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "PODGIK Poznań"},
     "extent": {
@@ -74133,6 +74405,7 @@
     "name": "Przemyśl: Ortophotomap (aerial image)",
     "url": "http://przemysl.geoportal2.pl/map/wms/wms.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2179", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Miasto Przemyśl"},
     "extent": {
@@ -74176,6 +74449,7 @@
     "name": "Przemyśl: Buildings",
     "url": "http://przemysl.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=adresy,budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2179", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Miasto Przemyśl"},
     "extent": {
@@ -75097,7 +75371,7 @@
     "url": "https://{switch:a,b,c}.tile.openstreetmap.fr/route500/{zoom}/{x}/{y}.png",
     "license_url": "https://wiki.openstreetmap.org/wiki/FR:Servers/tile.openstreetmap.fr#Route500.E2.84.A2.C2.A9.C2.AE",
     "overlay": true,
-    "country_code": "FX",
+    "country_code": "FR",
     "attribution": {
       "required": true,
       "url": "https://wiki.openstreetmap.org/wiki/FR:Servers/tile.openstreetmap.fr#Route500.E2.84.A2.C2.A9.C2.AE",
@@ -75711,7 +75985,7 @@
     "url": "https://{switch:a,b,c}.tile.openstreetmap.fr/route500hydro/{zoom}/{x}/{y}.png",
     "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/BDCarthage",
     "overlay": true,
-    "country_code": "FX",
+    "country_code": "FR",
     "attribution": {
       "required": true,
       "url": "http://www.sandre.eaufrance.fr/actualite/la-bd-carthage-en-licence-ouverte-open-licence",
@@ -76323,6 +76597,7 @@
     "name": "Powiat rzeszowski: Orthophotomap (aerial image)",
     "url": "https://powiatrzeszowski.geoportal2.pl/map/wms/wms.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Powiat rzeszowski"},
     "extent": {
@@ -76363,6 +76638,7 @@
     "name": "Powiat rzeszowski: Buildings",
     "url": "https://powiatrzeszowski.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki,EBT,EBU&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Powiat rzeszowski"},
     "extent": {
@@ -77069,6 +77345,7 @@
     "description": "Snowmobile trails",
     "url": "https://tiles.skoterleder.org/tiles/{zoom}/{x}/{y}.png",
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Sweden_road_sign_D9.svg/200px-Sweden_road_sign_D9.svg.png",
+    "country_code": "SE",
     "attribution": {
       "url": "https://skoterleder.org/",
       "text": "© Skoterleder.org"
@@ -77109,6 +77386,7 @@
     "name": "Powiat ropczycko-sędziszowski: Buildings",
     "url": "https://spropczyce.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Powiat ropczycko-sędziszowski"},
     "extent": {
@@ -77443,6 +77721,7 @@
     "name": "Powiat stalowowolski: Buildings",
     "url": "https://stalowawola.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=EBT,adresy,budynki,centroidy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
     "attribution": {"text": "Powiat stalowowolski"},
     "extent": {
@@ -77496,6 +77775,7 @@
     "license_url": "https://dataportalen.stockholm.se/dataportalen/GetMetaDataById?id=6841c003-2363-4b74-92b9-2509f75fd312",
     "best": true,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Stockholm_vapen_bra.svg/196px-Stockholm_vapen_bra.svg.png",
+    "country_code": "SE",
     "available_projections": [
       "EPSG:3006",
       "EPSG:3007",
@@ -77938,6 +78218,7 @@
     "start_date": "2017",
     "end_date": "2017",
     "overlay": true,
+    "country_code": "AL",
     "attribution": {
       "url": "https://geoportal.openlabs.cc/",
       "text": "Data provided by the Muncipality of Tirana hosted by Open Labs"
@@ -77964,6 +78245,7 @@
     "license_url": "https://cloud.openlabs.cc/s/3lzVn1ZzUEMifHq#pdfviewer",
     "start_date": "2017",
     "end_date": "2017",
+    "country_code": "AL",
     "attribution": {
       "url": "https://geoportal.openlabs.cc",
       "text": "Data provided by the Muncipality of Tirana hosted by Open Labs"
@@ -77999,6 +78281,7 @@
     "url": "https://gis.tirol.gv.at/arcgis/services/Service_Public/terrain/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Image_Schummerung_Gelaendemodell&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "https://www.tirol.gv.at/data/datenkatalog/geographie-und-planung/gelaende-tirol",
     "icon": "https://static.tirol.gv.at/plainhtml/v1/tirollogo.gif",
+    "country_code": "AT",
     "available_projections": [
       "EPSG:3035",
       "EPSG:3044",
@@ -78265,6 +78548,7 @@
     "url": "https://gis.tirol.gv.at/arcgis/services/Service_Public/terrain/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Image_Schummerung_Oberflaechenmodell&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "https://www.tirol.gv.at/data/datenkatalog/geographie-und-planung/gelaende-tirol",
     "icon": "https://static.tirol.gv.at/plainhtml/v1/tirollogo.gif",
+    "country_code": "AT",
     "available_projections": [
       "EPSG:3034",
       "EPSG:3035",
@@ -78533,6 +78817,7 @@
     "license_url": "https://www.tirol.gv.at/data/datenkatalog/geographie-und-planung/gelaende-tirol",
     "overlay": true,
     "icon": "https://static.tirol.gv.at/plainhtml/v1/tirollogo.gif",
+    "country_code": "AT",
     "available_projections": [
       "EPSG:3035",
       "EPSG:3044",
@@ -78800,6 +79085,7 @@
     "url": "https://gis.tirol.gv.at/arcgis/services/Service_Public/orthofoto/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Image_Aktuell_RGB&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "https://www.data.gv.at/katalog/dataset/35691b6c-9ed7-4517-b4b3-688b0569729a",
     "icon": "https://static.tirol.gv.at/plainhtml/v1/tirollogo.gif",
+    "country_code": "AT",
     "available_projections": [
       "EPSG:3035",
       "EPSG:3044",
@@ -79066,6 +79352,7 @@
     "url": "https://gis.tirol.gv.at/arcgis/services/Service_Public/orthofoto/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Image_Aktuell_CIR&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "https://www.data.gv.at/katalog/dataset/35691b6c-9ed7-4517-b4b3-688b0569729a",
     "icon": "https://static.tirol.gv.at/plainhtml/v1/tirollogo.gif",
+    "country_code": "AT",
     "available_projections": [
       "EPSG:3035",
       "EPSG:3044",
@@ -79332,6 +79619,7 @@
     "url": "https://txgi.tnris.org/login/path/ecology-fiona-poem-romeo/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=texas&STYLE=&FORMAT=image/png&tileMatrixSet=0to20&tileMatrix=0to20:{zoom}&tileRow={y}&tileCol={x}",
     "license_url": "https://wiki.openstreetmap.org/wiki/Potential_Datasources#Texas",
     "start_date": "2012",
+    "country_code": "US",
     "attribution": {
       "required": true,
       "url": "https://tnris.org/maps-and-data/online-mapping-services",
@@ -79991,6 +80279,7 @@
     "privacy_policy_url": "https://www.turku.fi/turku-tieto/tietosuoja/kayttotiedot-ja-evasteet",
     "best": true,
     "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Turku.vaakuna.svg/200px-Turku.vaakuna.svg.png",
+    "country_code": "FI",
     "available_projections": ["EPSG:3857", "EPSG:4326"],
     "attribution": {
       "required": true,
@@ -80674,6 +80963,7 @@
     "url": "https://vogis.cnv.at/mapserver/mapserv?map=i_hoehen_und_gelaende_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=schummerung_50cm_terrain&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/VoGIS.png",
+    "country_code": "AT",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -80950,6 +81240,7 @@
     "url": "https://vogis.cnv.at/mapserver/mapserv?map=i_hoehen_und_gelaende_r_wms.map&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=schummerung_50cm_surface&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
     "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/VoGIS.png",
+    "country_code": "AT",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -81228,6 +81519,7 @@
     "start_date": "2012",
     "end_date": "2012",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/VoGIS.png",
+    "country_code": "AT",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -81287,6 +81579,7 @@
     "start_date": "2015",
     "end_date": "2015",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/VoGIS.png",
+    "country_code": "AT",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -81346,6 +81639,7 @@
     "start_date": "2018",
     "end_date": "2018",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/VoGIS.png",
+    "country_code": "AT",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -81405,6 +81699,7 @@
     "start_date": "2015",
     "end_date": "2015",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/VoGIS.png",
+    "country_code": "AT",
     "available_projections": [
       "EPSG:3857",
       "EPSG:4326",
@@ -81495,6 +81790,7 @@
     "name": "Vienna: Orthofoto (aerial image)",
     "url": "https://maps.wien.gv.at/wmts/lb/farbe/google3857/{zoom}/{y}/{x}.jpeg",
     "icon": "https://www.wien.gv.at/layout-a/logo/wappen-klein.gif",
+    "country_code": "AT",
     "attribution": {"url": "https://data.wien.gv.at", "text": "Stadt Wien"},
     "extent": {
       "max_zoom": 19,
@@ -81528,6 +81824,7 @@
     "name": "Vienna: Mehrzweckkarte (general purpose)",
     "url": "https://maps.wien.gv.at/wmts/fmzk/pastell/google3857/{zoom}/{y}/{x}.jpeg",
     "icon": "https://www.wien.gv.at/layout-a/logo/wappen-klein.gif",
+    "country_code": "AT",
     "attribution": {"url": "https://data.wien.gv.at", "text": "Stadt Wien"},
     "extent": {
       "max_zoom": 19,
@@ -81629,6 +81926,7 @@
     "url": "https://maps.wien.gv.at/wmts/beschriftung/normal/google3857/{zoom}/{y}/{x}.png",
     "overlay": true,
     "icon": "https://www.wien.gv.at/layout-a/logo/wappen-klein.gif",
+    "country_code": "AT",
     "attribution": {"url": "https://data.wien.gv.at", "text": "Stadt Wien"},
     "extent": {
       "max_zoom": 19,
@@ -81744,6 +82042,7 @@
     "start_date": "2015",
     "end_date": "2015",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/wroclaw.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177", "EPSG:3857", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Wrocław"},
     "extent": {
@@ -81860,6 +82159,7 @@
     "start_date": "2018-04-06",
     "end_date": "2018-04-07",
     "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/wroclaw.png",
+    "country_code": "PL",
     "available_projections": ["EPSG:2177", "EPSG:3857", "EPSG:4326"],
     "attribution": {"text": "Urząd Miasta Wrocław"},
     "extent": {

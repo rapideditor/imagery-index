@@ -2,6 +2,7 @@
   "id": "Bytom-2014",
   "type": "wms",
   "locationSet": {"include": ["bytom.geojson"]},
+  "country_code": "PL",
   "name": "Bytom: Fotoplan 2014 (aerial image)",
   "url": "http://sitplan.um.bytom.pl:11180/isdp/gs/wms?SERVICE=WMS&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=default:fotoplan_2014&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "start_date": "2014",

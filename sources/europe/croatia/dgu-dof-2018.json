@@ -2,6 +2,7 @@
   "id": "dgu-dof-2018",
   "type": "wms",
   "locationSet": {"include": ["hr"], "exclude": ["dgu-dof-exclude-2018.geojson"]},
+  "country_code": "HR",
   "name": "dgu.hr: Croatia 2018 Aerial imagery",
   "url": "https://geoportal.dgu.hr/services/inspire/orthophoto_2018/ows?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=OI.OrthoImagery&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "permission_osm": "explicit",
@@ -11,7 +12,6 @@
   "start_date": "2018",
   "end_date": "2018",
   "icon": "dgu.png",
-  "country_code": "HR",
   "available_projections": ["EPSG:3765", "EPSG:4326"],
   "attribution": {
     "required": true,

@@ -2,6 +2,7 @@
   "id": "orthophoto_lyon",
   "type": "tms",
   "locationSet": {"include": ["lyon.geojson"]},
+  "country_code": "FR",
   "name": "Lyon Orthophoto 8cm",
   "url": "https://wms.openstreetmap.fr/tms/1.0.0/lyon/{zoom}/{x}/{y}",
   "min_zoom": 2,

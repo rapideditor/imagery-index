@@ -2,11 +2,11 @@
   "id": "OpenStreetMap-turistautak",
   "type": "tms",
   "locationSet": {"include": ["hu"]},
+  "country_code": "HU",
   "name": "OpenStreetMap (turistautak)",
   "url": "http://{switch:h,i,j}.tile.openstreetmap.hu/turistautak/{zoom}/{x}/{y}.png",
   "max_zoom": 18,
   "license_url": "http://www.openstreetmap.hu",
-  "country_code": "HU",
   "attribution": {
     "required": true,
     "url": "https://www.openstreetmap.org",

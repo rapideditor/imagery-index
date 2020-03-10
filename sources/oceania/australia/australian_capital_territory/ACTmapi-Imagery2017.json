@@ -2,6 +2,7 @@
   "id": "ACT2017",
   "type": "wms",
   "locationSet": {"include": ["actmapi-imagery2017.geojson"]},
+  "country_code": "AU",
   "name": "ACTmapi Imagery 2017",
   "url": "https://data.actmapi.act.gov.au/arcgis/rest/services/actmapi/imagery2017mga/ImageServer/exportImage?f=image&format=jpeg&imageSR=3857&bboxSR=3857&bbox={bbox}&size={width},{height}&foo={proj}",
   "max_zoom": 21,

@@ -2,6 +2,7 @@
   "id": "Zuerich-ortho-2011-tms",
   "type": "tms",
   "locationSet": {"include": ["stadt_zurich_ortho_2011.geojson"]},
+  "country_code": "CH",
   "name": "Stadt Zürich Luftbild 2011",
   "description": "This imagery is provided via a proxy operated by https://sosm.ch/",
   "url": "https://mapproxy.osm.ch/tiles/zh_luftbild2011/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",

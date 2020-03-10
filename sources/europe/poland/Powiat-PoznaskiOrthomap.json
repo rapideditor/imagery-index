@@ -2,6 +2,7 @@
   "id": "poznanski-aerial",
   "type": "wms",
   "locationSet": {"include": ["poznan.geojson"]},
+  "country_code": "PL",
   "name": "Powiat poznański: Orthophotomap (aerial image)",
   "url": "http://wms.podgik.poznan.pl/cgi-bin/poznan?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto-poznan&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 23,

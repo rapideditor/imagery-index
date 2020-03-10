@@ -2,6 +2,7 @@
   "id": "drone-imagery-2016",
   "type": "tms",
   "locationSet": {"include": ["haiti_matthew_oct2016.geojson"]},
+  "country_code": "HT",
   "name": "Drone Imagery Matthew(Haiti) October 2016",
   "url": "https://imagery.openstreetmap.fr/tms/1.0.0/haiti_uav_201610/{zoom}/{x}/{y}",
   "max_zoom": 18,

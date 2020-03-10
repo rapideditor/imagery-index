@@ -2,6 +2,7 @@
   "id": "NSW_LPI_TopographicMap",
   "type": "tms",
   "locationSet": {"include": ["new_south_wales.geojson"]},
+  "country_code": "AU",
   "name": "LPI NSW Topographic Map",
   "url": "https://maps.six.nsw.gov.au/arcgis/rest/services/public/NSW_Topo_Map/MapServer/tile/{zoom}/{y}/{x}",
   "min_zoom": 1,

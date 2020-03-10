@@ -2,6 +2,7 @@
   "id": "bartholomew_qi1940",
   "type": "tms",
   "locationSet": {"include": ["ie", "northern_ireland.geojson"]},
+  "country_code": "IE",
   "name": "Ireland Bartholomew Quarter-Inch 1940",
   "url": "https://geo.nls.uk/maps/ireland/bartholomew/{zoom}/{x}/{-y}.png",
   "min_zoom": 5,
@@ -9,7 +10,6 @@
   "start_date": "1940",
   "end_date": "1940",
   "icon": "NLS.png",
-  "country_code": "IE",
   "attribution": {
     "required": true,
     "url": "https://geo.nls.uk/maps",

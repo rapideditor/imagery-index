@@ -2,6 +2,7 @@
   "id": "Aargau-AGIS-2016",
   "type": "tms",
   "locationSet": {"include": ["kanton_aargau.geojson"]},
+  "country_code": "CH",
   "name": "Kanton Aargau 25cm (AGIS 2016)",
   "description": "This imagery is provided via a proxy operated by https://sosm.ch/",
   "url": "https://mapproxy.osm.ch/tiles/AGIS2016/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",

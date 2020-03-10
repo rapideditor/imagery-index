@@ -2,11 +2,11 @@
   "id": "TW_NLSC_WMS_LANDSECT",
   "type": "wms",
   "locationSet": {"include": ["tw"]},
+  "country_code": "TW",
   "name": "Taiwan Land-Section Data",
   "url": "https://wms.nlsc.gov.tw/wms?VERSION=1.1.1&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=LANDSECT&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
   "icon": "NLSC.png",
-  "country_code": "TW",
   "available_projections": ["EPSG:3825", "EPSG:3826", "EPSG:3857", "EPSG:4326"],
   "attribution": {
     "required": true,

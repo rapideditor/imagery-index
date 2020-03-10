@@ -2,6 +2,7 @@
   "id": "Zug-2018",
   "type": "wms",
   "locationSet": {"include": ["kanton_zug_sud.geojson"]},
+  "country_code": "CH",
   "name": "Kanton Zug Gemeinde Zug Süd 2018",
   "url": "https://services.geo.zg.ch:443/ows/Orthofotos?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=zg.orthofoto_2018_kt_zg&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "category": "photo",

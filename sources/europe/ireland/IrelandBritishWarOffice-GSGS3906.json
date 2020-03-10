@@ -2,11 +2,11 @@
   "id": "GSGS3906",
   "type": "tms",
   "locationSet": {"include": ["ie", "northern_ireland.geojson"]},
+  "country_code": "IE",
   "name": "Ireland British War Office 1:25k GSGS 3906",
   "url": "https://mapwarper.net/layers/tile/101/{zoom}/{x}/{y}.png",
   "max_zoom": 18,
   "icon": "IrelandBritishWarOffice.png",
-  "country_code": "IE",
   "attribution": {
     "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/Ireland/Background_Imagery#Trinity_College_Dublin",

@@ -2,6 +2,7 @@
   "id": "RABA-KGZ-3000",
   "type": "tms",
   "locationSet": {"include": ["si"]},
+  "country_code": "SI",
   "name": "RABA-KGZ: Slovenia built-up areas",
   "url": "https://wms.openstreetmap.de/tms/RABA3000/{zoom}/{x}/{y}.png",
   "min_zoom": 8,
@@ -9,7 +10,6 @@
   "permission_osm": "explicit",
   "license_url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ#License",
   "icon": "RABA.png",
-  "country_code": "SI",
   "attribution": {
     "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ",

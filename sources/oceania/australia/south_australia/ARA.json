@@ -2,6 +2,7 @@
   "id": "ARA_Bushfires_2020",
   "type": "tms",
   "locationSet": {"include": ["ara_bushfires_2020.geojson"]},
+  "country_code": "AU",
   "name": "ARA Bushfires 2020",
   "url": "https://cogeoxyz.b-cdn.net/46b53084a82973a36c0f57a1d5446c605d00ed851f11a6f5ca7c75db/{zoom}/{x}/{y}.jpg",
   "min_zoom": 14,

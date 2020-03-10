@@ -2,6 +2,7 @@
   "id": "eufar-balaton",
   "type": "tms",
   "locationSet": {"include": ["eufar_balaton.geojson"]},
+  "country_code": "HU",
   "name": "EUFAR Balaton orthophotos",
   "description": "1940 geo-tagged photography from Balaton Limnological Institute.",
   "url": "http://e.tile.openstreetmap.hu/balaton/0/{zoom}/{x}/{y}.jpg",

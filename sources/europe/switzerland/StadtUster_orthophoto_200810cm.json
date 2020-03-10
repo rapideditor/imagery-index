@@ -2,6 +2,7 @@
   "id": "Uster-2008",
   "type": "tms",
   "locationSet": {"include": ["uster.geojson"]},
+  "country_code": "CH",
   "name": "Stadt Uster Orthophoto 2008 10cm",
   "description": "This imagery is provided via a proxy operated by https://sosm.ch/",
   "url": "https://mapproxy.osm.ch/tiles/uster/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",

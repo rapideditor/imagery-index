@@ -2,13 +2,13 @@
   "id": "ign-topografico-tms",
   "type": "tms",
   "locationSet": {"include": ["ar"]},
+  "country_code": "AR",
   "name": "IGN topographical map (TMS)",
   "url": "https://ide.ign.gob.ar/geoservicios/rest/services/Mapas_IGN/mapa_topografico/MapServer/tile/{zoom}/{y}/{x}",
   "min_zoom": 1,
   "max_zoom": 19,
   "license_url": "https://www.ign.gob.ar/descargas/tyc1.html",
   "icon": "ign.png",
-  "country_code": "AR",
   "attribution": {
     "url": "https://www.ign.gob.ar/",
     "text": "Instituto Geográfico Nacional de la República Argentina"

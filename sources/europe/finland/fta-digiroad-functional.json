@@ -2,6 +2,7 @@
   "id": "fta-digiroad-functional",
   "type": "wms",
   "locationSet": {"include": ["fi"]},
+  "country_code": "FI",
   "name": "FTA Road Network",
   "description": "Digiroad national road network from the Finnish Transport Agency, functional road classes.",
   "url": "https://extranet.liikennevirasto.fi/inspirepalvelu/beta/wms?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=dr_tielinkki_toim_lk&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
@@ -10,7 +11,6 @@
   "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/Digiroad_permission_23032017.pdf",
   "overlay": true,
   "icon": "https://www.liikennevirasto.fi/livi-theme/images/general/liikennevirasto_logo_2x.png",
-  "country_code": "FI",
   "available_projections": [
     "EPSG:2391",
     "EPSG:2392",

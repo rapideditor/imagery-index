@@ -2,6 +2,7 @@
   "id": "poznan-ortofotomapa2014",
   "type": "wms",
   "locationSet": {"include": ["poznan2.geojson"]},
+  "country_code": "PL",
   "name": "Poznań: Orthophotomap 2014 (aerial image)",
   "url": "http://wms1.geopoz.poznan.pl:6080/arcgis/services/sip/ortofotomapa_2014/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa_2014_image&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 23,

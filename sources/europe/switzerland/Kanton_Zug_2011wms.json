@@ -2,6 +2,7 @@
   "id": "Zug-2011",
   "type": "wms",
   "locationSet": {"include": ["kanton_zug.geojson"]},
+  "country_code": "CH",
   "name": "Kanton Zug 2011",
   "url": "https://services.geo.zg.ch:443/ows/Orthofotos?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=zg.orthofoto_2011_kt_zg&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "min_zoom": 10,

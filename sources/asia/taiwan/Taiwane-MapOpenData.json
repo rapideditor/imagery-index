@@ -2,12 +2,12 @@
   "id": "TW_NLSC_WMS_EMAP6",
   "type": "tms",
   "locationSet": {"include": ["tw"]},
+  "country_code": "TW",
   "name": "Taiwan e-Map Open Data",
   "url": "https://wmts.nlsc.gov.tw/wmts/EMAP6_OPENDATA/default/GoogleMapsCompatible/{zoom}/{y}/{x}",
   "max_zoom": 15,
   "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
   "icon": "NLSC.png",
-  "country_code": "TW",
   "attribution": {
     "required": true,
     "url": "https://maps.nlsc.gov.tw/",

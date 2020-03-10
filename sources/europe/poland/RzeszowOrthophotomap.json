@@ -2,6 +2,7 @@
   "id": "Rzeszow-aerial_image",
   "type": "wms",
   "locationSet": {"include": ["rzeszow2.geojson"]},
+  "country_code": "PL",
   "name": "Rzeszów: Orthophotomap (aerial image)",
   "url": "http://wms.erzeszow.pl/?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=rastry&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 23,

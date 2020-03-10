@@ -2,6 +2,7 @@
   "id": "stalowowolski-buildings",
   "type": "wms",
   "locationSet": {"include": ["stalowa_wola.geojson"]},
+  "country_code": "PL",
   "name": "Powiat stalowowolski: Buildings",
   "url": "https://stalowawola.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=EBT,adresy,budynki,centroidy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 19,

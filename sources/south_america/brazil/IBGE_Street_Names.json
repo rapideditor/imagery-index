@@ -2,6 +2,7 @@
   "id": "IBGE_Nomes_Ruas",
   "type": "tms",
   "locationSet": {"include": ["br"]},
+  "country_code": "BR",
   "name": "IBGE Nomes de Ruas",
   "url": "https://api.maptiler.com/maps/b2037b15-5614-4fed-9608-9830b8dc574a/256/{zoom}/{x}/{y}.png?key=YmPoUxbTlEHlrASzv56Z",
   "min_zoom": 4,
@@ -9,6 +10,5 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/IBGE_Street_Names",
   "overlay": true,
   "icon": "IBGE.png",
-  "country_code": "BR",
   "attribution": {"text": "IBGE, OSM Brasil"}
 }

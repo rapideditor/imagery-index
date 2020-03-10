@@ -2,6 +2,7 @@
   "id": "OGDOrthoZH2016",
   "type": "wms",
   "locationSet": {"include": ["kanton_zurich.geojson"]},
+  "country_code": "CH",
   "name": "Kanton Zurich, Orthofoto ZH Frühjahr 2015/16 RGB 10cm",
   "url": "https://wms.zh.ch/OGDOrthoZH?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=ortho_w_15&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "min_zoom": 8,

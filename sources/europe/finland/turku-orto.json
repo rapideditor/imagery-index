@@ -2,6 +2,7 @@
   "id": "turku-orto",
   "type": "wms",
   "locationSet": {"include": ["turku_region.geojson"]},
+  "country_code": "FI",
   "name": "City of Turku ortophoto",
   "description": "Ortophotos from the city of Turku",
   "url": "https://opaskartta.turku.fi/TeklaOGCWeb/WMS.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ilmakuva&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

@@ -2,6 +2,7 @@
   "id": "bavaria-80cm",
   "type": "wms",
   "locationSet": {"include": ["bavaria.geojson"]},
+  "country_code": "DE",
   "name": "Bavaria (80 cm)",
   "url": "https://geoservices.bayern.de/wms/v2/ogc_dop80_oa.cgi?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=by_dop80c&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "category": "photo",

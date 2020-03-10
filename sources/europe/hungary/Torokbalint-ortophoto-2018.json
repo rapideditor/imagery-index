@@ -2,6 +2,7 @@
   "id": "Torokbalint-orthophoto-2018",
   "type": "wms",
   "locationSet": {"include": ["torokbalint.geojson"]},
+  "country_code": "HU",
   "name": "Törökbálint orthophoto 2018",
   "description": "5 cm resolution bald image",
   "url": "https://terkep.torokbalint.hu/mapproxy/service?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=TBORTO_2018&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&TRANSPARENT=true",

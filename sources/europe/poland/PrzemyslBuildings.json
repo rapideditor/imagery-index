@@ -2,6 +2,7 @@
   "id": "przemysl-buildings",
   "type": "wms",
   "locationSet": {"include": ["przemysl.geojson"]},
+  "country_code": "PL",
   "name": "Przemyśl: Buildings",
   "url": "http://przemysl.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=adresy,budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 19,

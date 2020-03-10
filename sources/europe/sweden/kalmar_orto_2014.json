@@ -2,6 +2,7 @@
   "id": "kalmar-orto-2014",
   "type": "wms",
   "locationSet": {"include": ["kalmar_orto_2014.geojson"]},
+  "country_code": "SE",
   "name": "Kalmar North Orthophoto 2014",
   "description": "Orthophotos for the north coast of the municipality of Kalmar 2014",
   "url": "https://kartportal.kalmar.se/arcgisserver/services/Ortofoto/Kalmar_2014/ImageServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

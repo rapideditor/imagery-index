@@ -2,6 +2,7 @@
   "id": "Erlangen-2013",
   "type": "wms",
   "locationSet": {"include": ["erlangen2013.geojson"]},
+  "country_code": "DE",
   "name": "Erlangen Luftbild (2013 6,25 cm)",
   "url": "https://secure.erlangen.de/arcgiser/services/Luftbilder2013/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Erlangen_ratio5_6.25cm.jp2&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "category": "historicphoto",

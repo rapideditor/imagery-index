@@ -2,6 +2,7 @@
   "id": "osm-hr-ustopo50",
   "type": "tms",
   "locationSet": {"include": ["ustopo.geojson"]},
+  "country_code": "HR",
   "name": "osm-hr: US Topo 50",
   "url": "https://tms.osm-hr.org/ustopo/{zoom}/{x}/{y}.png",
   "max_zoom": 15,

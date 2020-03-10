@@ -2,6 +2,7 @@
   "id": "Hampshire-Aerial-FCIR",
   "type": "tms",
   "locationSet": {"include": ["hampshire.geojson"]},
+  "country_code": "GB",
   "name": "Hampshire Aerial FCIR",
   "url": "https://{switch:a,b,c}.hampshire.aerial.openstreetmap.org.uk/layer/gb_hampshire_aerial_fcir/{zoom}/{x}/{y}.png",
   "min_zoom": 8,

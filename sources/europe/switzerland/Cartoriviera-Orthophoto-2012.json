@@ -2,6 +2,7 @@
   "id": "Cartoriviera-2012",
   "type": "tms",
   "locationSet": {"include": ["cartoriviera.geojson"]},
+  "country_code": "CH",
   "name": "Cartoriviera - Orthophoto 2012",
   "url": "https://osmdata.asitvd.ch/tiles/cartoriviera2012/{zoom}/{x}/{y}.png",
   "min_zoom": 14,

@@ -2,6 +2,7 @@
   "id": "Lodz-2017",
   "type": "wms",
   "locationSet": {"include": ["lodz.geojson"]},
+  "country_code": "PL",
   "name": "Łódź: Orthophotomap 2017 (aerial image)",
   "url": "https://mapa.lodz.pl/3/services/OGC/Ortofotomapa/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 22,

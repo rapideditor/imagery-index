@@ -2,6 +2,7 @@
   "id": "kartverket-ok-1st",
   "type": "wms",
   "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
+  "country_code": "NO",
   "name": "Kartverket Economic Maps (historic)",
   "description": "1st edition of historic Economic maps for Norway 1960-90s (`Økonomisk kartverk´). Available from zoom 16. Please correct local imagery offset.",
   "url": "https://wms.geonorge.no/skwms1/wms.n5raster2?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=n5raster_foerstegang_metadata,n5raster_foerstegang&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
@@ -9,7 +10,6 @@
   "max_zoom": 20,
   "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
   "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
-  "country_code": "NO",
   "available_projections": [
     "EPSG:3007",
     "EPSG:3008",

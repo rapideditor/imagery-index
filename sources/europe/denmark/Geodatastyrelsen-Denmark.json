@@ -2,12 +2,12 @@
   "id": "Geodatastyrelsen_Denmark",
   "type": "tms",
   "locationSet": {"include": ["dk"]},
+  "country_code": "DK",
   "name": "SDFE aerial imagery",
   "url": "https://osmtools.septima.dk/mapproxy/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg",
   "max_zoom": 21,
   "best": true,
   "icon": "SDFE.png",
-  "country_code": "DK",
   "attribution": {
     "required": true,
     "url": "https://download.kortforsyningen.dk/content/vilkaar-og-betingelser",

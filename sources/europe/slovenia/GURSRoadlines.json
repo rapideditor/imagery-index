@@ -2,6 +2,7 @@
   "id": "GURS-roads",
   "type": "tms",
   "locationSet": {"include": ["si"]},
+  "country_code": "SI",
   "name": "GURS: Road lines",
   "url": "https://wms.openstreetmap.de/tms/GURS-road-lines/{zoom}/{x}/{y}.png",
   "min_zoom": 8,
@@ -9,7 +10,6 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/GURS",
   "overlay": true,
   "icon": "GURS.png",
-  "country_code": "SI",
   "attribution": {
     "required": true,
     "url": "https://www.gov.si/drzavni-organi/organi-v-sestavi/geodetska-uprava/",

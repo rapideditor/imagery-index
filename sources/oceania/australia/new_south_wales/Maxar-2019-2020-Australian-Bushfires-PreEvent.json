@@ -2,6 +2,7 @@
   "id": "Maxar_2019-2020_Australian_Bushfires_PreEvent",
   "type": "tms",
   "locationSet": {"include": ["maxar_2019_2020_bushfire_preevent.geojson"]},
+  "country_code": "AU",
   "name": "Maxar 2019-2020 Australian Bushfires Pre-event",
   "url": "https://cogeoxyz.b-cdn.net/6b6f479fbacd9a42e9e38bc5c0c6889f009beae13b07742ec4a1648f/{zoom}/{x}/{y}.jpg",
   "category": "photo",

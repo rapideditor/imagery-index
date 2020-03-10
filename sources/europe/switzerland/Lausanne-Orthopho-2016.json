@@ -2,6 +2,7 @@
   "id": "Lausanne-2016",
   "type": "tms",
   "locationSet": {"include": ["lausanne.geojson"]},
+  "country_code": "CH",
   "name": "Lausanne - Orthophoto 2016",
   "url": "https://osmdata.asitvd.ch/tiles/lausanne2016/{zoom}/{x}/{y}.png",
   "category": "photo",

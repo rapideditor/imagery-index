@@ -2,13 +2,13 @@
   "id": "lu.geoportail.opendata.cadastre",
   "type": "tms",
   "locationSet": {"include": ["lu"]},
+  "country_code": "LU",
   "name": "Cadastre geoportail.lu",
   "url": "https://{switch:wmts3,wmts4}.geoportail.lu/opendata/wmts/cadastre/GLOBAL_WEBMERCATOR_4_V3/{zoom}/{x}/{y}.png",
   "min_zoom": 5,
   "max_zoom": 20,
   "license_url": "https://data.public.lu/en/datasets/plan-cadastral-numerise-pcn-webservices-wms-et-wmts",
   "icon": "https://www.geoportail.lu/static/img/lion.png",
-  "country_code": "LU",
   "attribution": {
     "url": "https://data.public.lu/en/datasets/plan-cadastral-numerise-pcn-webservices-wms-et-wmts",
     "text": "Administration du Cadastre et de la Topographie"

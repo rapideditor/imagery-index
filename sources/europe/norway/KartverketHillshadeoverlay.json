@@ -2,6 +2,7 @@
   "id": "kartverket-fjellskygge",
   "type": "tms",
   "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
+  "country_code": "NO",
   "name": "Kartverket Hillshade overlay",
   "description": "Hillshade for Norway",
   "url": "https://opencache{switch:,2,3}.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=fjellskygge&zoom={zoom}&x={x}&y={y}",
@@ -10,7 +11,6 @@
   "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
   "overlay": true,
   "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
-  "country_code": "NO",
   "attribution": {
     "url": "https://kartkatalog.geonorge.no/metadata/kartverket/fjellskygge-cache/cca7c129-fe66-4c96-9091-40d92290dd81",
     "text": "© Kartverket"

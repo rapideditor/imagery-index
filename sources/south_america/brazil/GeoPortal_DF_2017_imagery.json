@@ -2,6 +2,7 @@
   "id": "GeoPortal_DF_2017",
   "type": "wms",
   "locationSet": {"include": ["br"]},
+  "country_code": "BR",
   "name": "GeoPortal DF 2017",
   "description": "Satellite imagery",
   "url": "https://www.geoservicos1.segeth.df.gov.br/arcgis/services/Imagens/PLEIADES_2017/ImageServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
@@ -9,6 +10,5 @@
   "start_date": "2017",
   "end_date": "2017",
   "icon": "http://www.geoportal.segeth.df.gov.br/static/dist/img/logo_geoportal.png",
-  "country_code": "BR",
   "attribution": {"url": "http://www.geoportal.segeth.df.gov.br/", "text": "GeoPortal DF"}
 }

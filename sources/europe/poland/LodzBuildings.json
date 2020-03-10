@@ -2,6 +2,7 @@
   "id": "Lodz-buildings",
   "type": "wms",
   "locationSet": {"include": ["lodz.geojson"]},
+  "country_code": "PL",
   "name": "Łódź: Buildings",
   "url": "https://gis.mapa.lodz.pl/awiskts/services/WMS_publikowane/LODZ/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Budynki,Ulice,Adresy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "icon": "lodz.png",

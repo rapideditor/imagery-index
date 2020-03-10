@@ -2,6 +2,7 @@
   "id": "URBISfr2013",
   "type": "wms",
   "locationSet": {"include": ["brussels.geojson"]},
+  "country_code": "BE",
   "name": "URBISfr numerical imagery (2013)",
   "url": "https://gis.irisnet.be/arcgis/rest/services/basemap/urbisFR/MapServer/export?f=image&format=png8&transparent=False&SRS={proj}&bboxSR=3857&imageSR=3857&bbox={bbox}&size={width},{height}",
   "category": "map",

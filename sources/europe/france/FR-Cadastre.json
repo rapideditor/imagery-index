@@ -2,6 +2,7 @@
   "id": "Cadastre",
   "type": "tms",
   "locationSet": {"include": ["fx"]},
+  "country_code": "FR",
   "name": "Cadastre",
   "description": "French land registry",
   "url": "http://tms.cadastre.openstreetmap.fr/*/tout/{zoom}/{x}/{y}.png",
@@ -9,7 +10,6 @@
   "max_zoom": 22,
   "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation#Mention_de_la_source_et_du_mill.C3.A9sime",
   "icon": "https://svn.openstreetmap.org/applications/editors/josm/plugins/cadastre-fr/images/cadastre_small.png",
-  "country_code": "FX",
   "attribution": {
     "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation",

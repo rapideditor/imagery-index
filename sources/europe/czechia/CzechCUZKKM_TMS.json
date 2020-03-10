@@ -2,11 +2,11 @@
   "id": "Czech_CUZK-KM-tms",
   "type": "tms",
   "locationSet": {"include": ["cz"]},
+  "country_code": "CZ",
   "name": "Czech CUZK:KM tiles proxy",
   "url": "https://osm-{switch:a,b,c}.zby.cz/tiles_cuzk.php/{zoom}/{x}/{y}.png",
   "min_zoom": 13,
   "max_zoom": 18,
   "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
-  "overlay": true,
-  "country_code": "CZ"
+  "overlay": true
 }

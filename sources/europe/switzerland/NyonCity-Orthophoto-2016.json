@@ -2,6 +2,7 @@
   "id": "Ville_de_Nyon-HD-2016",
   "type": "tms",
   "locationSet": {"include": ["nyon.geojson"]},
+  "country_code": "CH",
   "name": "Ville de Nyon - Orthophoto 2016 HD 5cm/pi",
   "url": "http://osmdata.asitvd.ch/tiles/nyon2016/{zoom}/{x}/{y}.png",
   "min_zoom": 10,

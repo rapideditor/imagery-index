@@ -2,6 +2,7 @@
   "id": "dgu-dof-2011",
   "type": "wms",
   "locationSet": {"include": ["hr"]},
+  "country_code": "HR",
   "name": "dgu.hr: Croatia 2011 Aerial imagery",
   "url": "https://geoportal.dgu.hr/services/dof/ows?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=DOF5_2011&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "permission_osm": "explicit",
@@ -11,7 +12,6 @@
   "start_date": "2011",
   "end_date": "2011",
   "icon": "dgu.png",
-  "country_code": "HR",
   "available_projections": ["EPSG:3765", "EPSG:4326"],
   "attribution": {
     "required": true,

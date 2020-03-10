@@ -2,6 +2,7 @@
   "id": "Solothurn-infrared-SOGIS",
   "type": "wms",
   "locationSet": {"include": ["kanton_solothurn.geojson"]},
+  "country_code": "CH",
   "name": "Kanton Solothurn Infrarot (SOGIS)",
   "url": "https://geo.so.ch/api/wms?LAYERS=ch.so.agi.orthofoto_2015.cir&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap",
   "min_zoom": 15,

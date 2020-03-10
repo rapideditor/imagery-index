@@ -2,6 +2,7 @@
   "id": "SanJuanMetroAreaUSACEOrthophotos",
   "type": "tms",
   "locationSet": {"include": ["san_juan_metro_area.geojson"]},
+  "country_code": "US",
   "name": "San Juan Metro Area: 2013 USACE Orthophotos",
   "url": "http://imagery-pr-usace-2013.s3-website-us-east-1.amazonaws.com/tiles/{zoom}/{x}/{y}.jpg",
   "max_zoom": 20,

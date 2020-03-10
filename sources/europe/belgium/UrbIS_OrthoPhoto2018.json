@@ -2,6 +2,7 @@
   "id": "UrbISOrtho2018",
   "type": "wms",
   "locationSet": {"include": ["brussels.geojson"]},
+  "country_code": "BE",
   "name": "UrbIS-Ortho 2018",
   "url": "https://geoservices-urbis.irisnet.be/geoserver/ows?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&FORMAT=image/png&TRANSPARENT=true&LAYERS=Urbis:Ortho2018&WIDTH={width}&HEIGHT={height}&CRS={proj}&STYLES=&BBOX={bbox}",
   "category": "historicphoto",

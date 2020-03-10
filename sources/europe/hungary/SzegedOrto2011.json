@@ -2,6 +2,7 @@
   "id": "Szeged_2011",
   "type": "tms",
   "locationSet": {"include": ["szeged.geojson"]},
+  "country_code": "HU",
   "name": "Szeged orthophoto 2011",
   "description": "Inner part of Szeged",
   "url": "http://e.tile.openstreetmap.hu/szeged-2011-10cm/{zoom}/{x}/{y}.png",

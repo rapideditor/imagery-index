@@ -2,6 +2,7 @@
   "id": "Berlin-2016-infrared",
   "type": "tms",
   "locationSet": {"include": ["berlin.geojson"]},
+  "country_code": "DE",
   "name": "Berlin aerial photography 2016 (infrared)",
   "url": "https://tiles.codefor.de/berlin-2016i/{zoom}/{x}/{y}.png",
   "category": "historicphoto",

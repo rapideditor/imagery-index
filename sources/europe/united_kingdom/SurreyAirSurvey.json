@@ -2,6 +2,7 @@
   "id": "Surrey-Air_Survey",
   "type": "tms",
   "locationSet": {"include": ["surrey.geojson"]},
+  "country_code": "GB",
   "name": "Surrey Air Survey",
   "url": "https://{switch:a,b,c}.surrey.aerial.openstreetmap.org.uk/layer/gb_surrey_aerial/{zoom}/{x}/{y}.png",
   "min_zoom": 8,

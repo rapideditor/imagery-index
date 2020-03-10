@@ -2,6 +2,7 @@
   "id": "kartverket-friluft",
   "type": "wms",
   "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
+  "country_code": "NO",
   "name": "Kartverket Hiking Trails",
   "description": "Hiking trails from the Norwegian database `Tur- og Friluftsruter´, including DNT routes.",
   "url": "https://wms.geonorge.no/skwms1/wms.friluftsruter2?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Fotrute&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
@@ -10,7 +11,6 @@
   "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
   "overlay": true,
   "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
-  "country_code": "NO",
   "available_projections": ["EPSG:3857", "EPSG:4326"],
   "attribution": {
     "required": true,

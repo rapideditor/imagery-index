@@ -2,6 +2,7 @@
   "id": "Frankfurt-am-Main-2017",
   "type": "wms",
   "locationSet": {"include": ["frankfurt-am-main.geojson"]},
+  "country_code": "DE",
   "name": "Frankfurt am Main Luftbild 2017",
   "description": "Aerial imagery of Frankfurt am Main, photographed on 2017-06-11 and 2017-07-06",
   "url": "https://geoportal.frankfurt.de/opendata/luftbild-2017.exe?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=wms_opendata_luftbilder_2017&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

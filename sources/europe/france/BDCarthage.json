@@ -2,6 +2,7 @@
   "id": "route500hydro",
   "type": "tms",
   "locationSet": {"include": ["fx"]},
+  "country_code": "FR",
   "name": "BD Carthage",
   "description": "Réseau hydrographique: cours et plans d'eau et POI",
   "url": "https://{switch:a,b,c}.tile.openstreetmap.fr/route500hydro/{zoom}/{x}/{y}.png",
@@ -9,7 +10,6 @@
   "max_zoom": 20,
   "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/BDCarthage",
   "overlay": true,
-  "country_code": "FX",
   "attribution": {
     "required": true,
     "url": "http://www.sandre.eaufrance.fr/actualite/la-bd-carthage-en-licence-ouverte-open-licence",

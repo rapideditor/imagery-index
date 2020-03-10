@@ -2,6 +2,7 @@
   "id": "orthophoto_lyon_2018",
   "type": "wms",
   "locationSet": {"include": ["lyon.geojson"]},
+  "country_code": "FR",
   "name": "Lyon Orthophoto 2018",
   "url": "https://download.data.grandlyon.com/wms/grandlyon?VERSION=1.3.0&SERVICE=WMS&REQUEST=GetMap&WIDTH={width}&HEIGHT={height}&transparent=true&LAYERS=Ortho2018_Dalle_unique_8cm_CC46&FORMAT=image/png&CRS={proj}&BBOX={bbox}",
   "min_zoom": 10,

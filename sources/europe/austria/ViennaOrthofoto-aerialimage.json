@@ -2,6 +2,7 @@
   "id": "wien.gv.at-aerial_image",
   "type": "tms",
   "locationSet": {"include": ["vienna-orthofoto.geojson"]},
+  "country_code": "AT",
   "name": "Vienna: Orthofoto (aerial image)",
   "url": "https://maps.wien.gv.at/wmts/lb/farbe/google3857/{zoom}/{y}/{x}.jpeg",
   "category": "photo",

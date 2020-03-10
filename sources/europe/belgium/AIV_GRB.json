@@ -2,6 +2,7 @@
   "id": "AGIVFlandersGRB",
   "type": "tms",
   "locationSet": {"include": ["flanders.geojson"]},
+  "country_code": "BE",
   "name": "AIV Flanders GRB",
   "url": "https://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=grb_bsk&STYLE=&FORMAT=image/png&tileMatrixSet=GoogleMapsVL&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
   "category": "map",

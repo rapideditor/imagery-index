@@ -2,6 +2,7 @@
   "id": "trafikverket-baninfo",
   "type": "wms",
   "locationSet": {"include": ["se"]},
+  "country_code": "SE",
   "name": "Trafikverket Railway Network",
   "description": "Swedish railway network, including sidings",
   "url": "https://geo-baninfo.trafikverket.se/mapservice/wms.axd/BanInfo?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Spar_Huvud_och_sidospar&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
@@ -11,7 +12,6 @@
   "overlay": true,
   "icon": "https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png",
   "i18n": true,
-  "country_code": "SE",
   "available_projections": [
     "EPSG:3006",
     "EPSG:3007",

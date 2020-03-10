@@ -2,6 +2,7 @@
   "id": "IndianaMap2017",
   "type": "wms",
   "locationSet": {"include": ["indiana_map_2017.geojson"]},
+  "country_code": "US",
   "name": "IndianaMap Orthoimagery 2017",
   "description": "Orthophotography for 39 counties in eastern Indiana, collected during leaf-off conditions in 2017. One-foot resolution for Adams, Blackford, Clark, Crawford, Decatur, Delaware, Fayette, Floyd, Franklin, Grant, Hamilton, Hancock, Henry, Huntington, Jay, Jefferson, Jennings, Lagrange, Lawrence, Madison, Miami, Noble, Ohio, Orange, Randolph, Ripley, Rush, Scott, Switzerland, Union, and Washington counties. Six-inch resolution for Dearborn, Dekalb, Gibson, Shelby, Steuben, Wayne, Wells, and Whitley counties. Three-inch resolution for Hamilton County and Shelbyville.",
   "url": "https://maps.indiana.edu/arcgis/services/Imagery/Orthos_2017/MapServer/WmsServer?FORMAT=image/jpeg&TRANSPARENT=FALSE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

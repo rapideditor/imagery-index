@@ -2,6 +2,7 @@
   "id": "geoimage.at",
   "type": "wms",
   "locationSet": {"include": ["at"]},
+  "country_code": "AT",
   "name": "Geoimage.at MaxRes",
   "url": "https://gis.bmlfuw.gv.at/wmsgw/?key=4d80de696cd562a63ce463a58a61488d&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Luftbild_MR,Luftbild_1m,Luftbild_8m,Satellitenbild_30m&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "category": "photo",
@@ -9,7 +10,6 @@
   "license": "CC-BY-3.0",
   "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
   "icon": "Geoimageat.png",
-  "country_code": "AT",
   "available_projections": [
     "EPSG:3034",
     "EPSG:3035",

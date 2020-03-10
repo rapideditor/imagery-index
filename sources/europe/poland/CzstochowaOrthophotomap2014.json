@@ -2,6 +2,7 @@
   "id": "Czestochowa-2014",
   "type": "wms",
   "locationSet": {"include": ["czestochowa.geojson"]},
+  "country_code": "PL",
   "name": "Częstochowa: Orthophotomap 2014 (aerial image)",
   "url": "http://geoportal.czestochowa.um.gov.pl/isdp/scripts/isdp.dll/wms?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orto_2014&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 23,

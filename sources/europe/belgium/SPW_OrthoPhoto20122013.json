@@ -2,6 +2,7 @@
   "id": "SPW2012",
   "type": "wms",
   "locationSet": {"include": ["wallonia.geojson"]},
+  "country_code": "BE",
   "name": "SPW(allonie) 2012-2013 aerial imagery",
   "url": "https://geoservices.wallonie.be/arcgis/services/IMAGERIE/ORTHO_2012_2013/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "category": "historicphoto",

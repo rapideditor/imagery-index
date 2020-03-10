@@ -2,12 +2,12 @@
   "id": "londrina2011",
   "type": "tms",
   "locationSet": {"include": ["br"]},
+  "country_code": "BR",
   "name": "Londrina Ortofoto 2011",
   "url": "https://siglon.londrina.pr.gov.br/arcgis/rest/services/Imagens/Ortofotos_2011_Paranacidade/MapServer/WMTS/tile/1.0.0/Imagens_Ortofotos_2011_Paranacidade/default/GoogleMapsCompatible/{zoom}/{y}/{x}",
   "max_zoom": 19,
   "license_url": "http://siglon.londrina.pr.gov.br",
   "start_date": "2011",
   "end_date": "2011",
-  "country_code": "BR",
   "attribution": {"url": "http://siglon.londrina.pr.gov.br", "text": "Prefeitura do Londrinas, PR"}
 }

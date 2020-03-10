@@ -2,12 +2,12 @@
   "id": "USDA-NAIP",
   "type": "wms",
   "locationSet": {"include": ["us"], "exclude": ["as", "um", "alaska_hawaii.geojson"]},
+  "country_code": "US",
   "name": "National Agriculture Imagery Program",
   "description": "The most recent year of DOQQs from the National Agriculture Imagery Program (NAIP) for each state in the contiguous United States.",
   "url": "https://gis.apfo.usda.gov/arcgis/services/NAIP/USDA_CONUS_PRIME/ImageServer/WMSServer?FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "min_zoom": 12,
   "max_zoom": 20,
   "icon": "USDA.png",
-  "country_code": "US",
   "available_projections": ["EPSG:3857", "EPSG:4326"]
 }

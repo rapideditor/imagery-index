@@ -2,6 +2,7 @@
   "id": "UkraineKyiv2014DZK",
   "type": "tms",
   "locationSet": {"include": ["kyiv.geojson"]},
+  "country_code": "UA",
   "name": "Ukraine - Kyiv 2014 (DZK)",
   "description": "Works only from within Ukraine or with an Ukrainian proxy server.",
   "url": "https://map.land.gov.ua/map/ortho_kiev/{zoom}/{x}/{-y}.jpg",

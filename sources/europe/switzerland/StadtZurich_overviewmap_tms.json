@@ -2,6 +2,7 @@
   "id": "Zurich-overviewmap_tms",
   "type": "tms",
   "locationSet": {"include": ["stadt_zurich_overview.geojson"]},
+  "country_code": "CH",
   "name": "Stadtplan Zürich",
   "description": "This imagery is provided via a proxy operated by https://sosm.ch/",
   "url": "https://mapproxy.osm.ch/tiles/zh_stadtplan/EPSG900913/{zoom}/{x}/{y}.png?origin=nw",

@@ -2,6 +2,7 @@
   "id": "gothenburg-ortho",
   "type": "wms",
   "locationSet": {"include": ["gothenburg_ortho.geojson"]},
+  "country_code": "SE",
   "name": "Gothenburg Orthophoto",
   "description": "Orthophoto for Gothenburg municipality",
   "url": "https://opengeodata.goteborg.se/services/ortofoto.wms.v1/ows?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

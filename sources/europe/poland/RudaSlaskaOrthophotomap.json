@@ -2,6 +2,7 @@
   "id": "Ruda_Slaska-aerial_image",
   "type": "wms",
   "locationSet": {"include": ["ruda_slaska.geojson"]},
+  "country_code": "PL",
   "name": "Ruda Śląska: Orthophotomap (aerial image)",
   "url": "https://rudaslaska.geoportal2.pl/map/wmsorto/wms.php?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortofotomapa&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 23,

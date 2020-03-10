@@ -2,11 +2,11 @@
   "id": "Geodatastyrelsen_Skaermkort",
   "type": "wms",
   "locationSet": {"include": ["dk"]},
+  "country_code": "DK",
   "name": "SDFE Skærmkort",
   "url": "https://kortforsyningen.kms.dk/topo_skaermkort?FORMAT=image/png&VERSION=1.1.1&login=OpenStreetMapDK2015&password=Gall4Peters&SERVICE=WMS&REQUEST=GetMap&Layers=dtk_skaermkort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 19,
   "icon": "SDFE.png",
-  "country_code": "DK",
   "available_projections": [
     "EPSG:3395",
     "EPSG:3857",

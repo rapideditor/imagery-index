@@ -2,6 +2,7 @@
   "id": "Gliwice-2013",
   "type": "wms",
   "locationSet": {"include": ["gliwice.geojson"]},
+  "country_code": "PL",
   "name": "Gliwice: Orthophotomap 2013 (aerial image)",
   "url": "http://185.60.246.14:9090/isdp/gs/ows?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=orto_2013&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 23,

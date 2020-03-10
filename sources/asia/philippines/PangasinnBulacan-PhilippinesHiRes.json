@@ -2,6 +2,7 @@
   "id": "Pangasinan_Bulacan_HiRes",
   "type": "tms",
   "locationSet": {"include": ["pangasinn_bulacan.geojson"]},
+  "country_code": "PH",
   "name": "Pangasinán/Bulacan (Philippines HiRes)",
   "url": "https://gravitystorm.dev.openstreetmap.org/imagery/philippines/{zoom}/{x}/{y}.png",
   "min_zoom": 12,

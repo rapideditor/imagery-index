@@ -2,6 +2,7 @@
   "id": "gsi.go.jp_std_map",
   "type": "tms",
   "locationSet": {"include": ["jp"]},
+  "country_code": "JP",
   "name": "Japan GSI Standard Map",
   "description": "Japan GSI Standard Map. Widely covered.",
   "url": "https://cyberjapandata.gsi.go.jp/xyz/std/{zoom}/{x}/{y}.png",
@@ -9,6 +10,5 @@
   "max_zoom": 18,
   "license_url": "https://wiki.openstreetmap.org/wiki/GSImaps",
   "i18n": true,
-  "country_code": "JP",
   "attribution": {"url": "https://maps.gsi.go.jp/help/use.html", "text": "GSI Japan"}
 }

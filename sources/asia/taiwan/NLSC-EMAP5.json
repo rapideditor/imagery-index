@@ -2,6 +2,7 @@
   "id": "NLSC-EMAP5",
   "type": "tms",
   "locationSet": {"include": ["tw"]},
+  "country_code": "TW",
   "name": "NLSC General Map with Contour line",
   "description": "The emap from Taiwan National Land Surveying and Mapping Center",
   "url": "https://wmts.nlsc.gov.tw/wmts/EMAP5_OPENDATA/default/EPSG:3857/{zoom}/{y}/{x}",
@@ -9,7 +10,6 @@
   "license_url": "https://data.gov.tw/license",
   "start_date": "2015",
   "icon": "NLSC.png",
-  "country_code": "TW",
   "attribution": {
     "required": true,
     "url": "https://maps.nlsc.gov.tw",

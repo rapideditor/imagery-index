@@ -2,12 +2,12 @@
   "id": "Geoportal2-PL-prng",
   "type": "wms",
   "locationSet": {"include": ["pl"]},
+  "country_code": "PL",
   "name": "Geoportal 2: PRNG (geo names)",
   "url": "http://mapy.geoportal.gov.pl/wss/service/pub/guest/G2_PRNG_WMS/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=PozostaleObiektyFizjograficzne,Hydrografia,PozostaleMiejscowosci,Wies,UksztaltowanieTerenu&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}{header(User-Agent,Mozilla/5.0 (JOSM)}",
   "license_url": "https://wiki.openstreetmap.org/wiki/Geoportal.gov.pl",
   "overlay": true,
   "icon": "https://wiki.openstreetmap.org/w/images/2/25/Geoportal-josm.png",
-  "country_code": "PL",
   "available_projections": [
     "EPSG:2176",
     "EPSG:2177",

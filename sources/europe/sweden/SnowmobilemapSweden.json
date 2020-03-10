@@ -2,6 +2,7 @@
   "id": "skoterleder",
   "type": "tms",
   "locationSet": {"include": ["snowmobilemap_sweden.geojson"]},
+  "country_code": "SE",
   "name": "Snowmobile map Sweden",
   "description": "Snowmobile trails",
   "url": "https://tiles.skoterleder.org/tiles/{zoom}/{x}/{y}.png",

@@ -2,6 +2,7 @@
   "id": "kartverket-abas",
   "type": "wms",
   "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
+  "country_code": "NO",
   "name": "Kartverket Administrative Boundaries overlay",
   "description": "Official administrative boundaries at the national, county and municipality levels",
   "url": "https://openwms.statkart.no/skwms1/wms.adm_enheter?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=avtaltavgrensningslinje,territorialgrense,riksgrense,fylker,kommuner&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
@@ -9,7 +10,6 @@
   "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
   "overlay": true,
   "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
-  "country_code": "NO",
   "available_projections": [
     "EPSG:3034",
     "EPSG:3857",

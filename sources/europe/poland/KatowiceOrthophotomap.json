@@ -2,6 +2,7 @@
   "id": "Katowice-aerial_image",
   "type": "wms",
   "locationSet": {"include": ["katowice.geojson"]},
+  "country_code": "PL",
   "name": "Katowice: Orthophotomap (aerial image)",
   "url": "http://mapserver.um.katowice.pl/services/ortowms/MapServer/WMSServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=2&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "max_zoom": 23,

@@ -2,6 +2,7 @@
   "id": "Erlangen-2016",
   "type": "tms",
   "locationSet": {"include": ["erlangen2016.geojson"]},
+  "country_code": "DE",
   "name": "Erlangen Luftbild (2016 5,0 cm)",
   "url": "https://osm.rrze.fau.de/protected/YgktSWTTo6HS9nKi/lbe2016/{zoom}/{x}/{y}.jpg",
   "category": "historicphoto",

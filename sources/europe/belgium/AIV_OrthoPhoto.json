@@ -2,6 +2,7 @@
   "id": "AGIV",
   "type": "tms",
   "locationSet": {"include": ["flanders.geojson"]},
+  "country_code": "BE",
   "name": "AIV Flanders most recent aerial imagery",
   "url": "https://tile.informatievlaanderen.be/ws/raadpleegdiensten/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=omwrgbmrvl&STYLE=&FORMAT=image/png&tileMatrixSet=GoogleMapsVL&tileMatrix={zoom}&tileRow={y}&tileCol={x}",
   "category": "photo",

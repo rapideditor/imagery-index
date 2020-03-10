@@ -2,6 +2,7 @@
   "id": "linkoping-orto",
   "type": "wms",
   "locationSet": {"include": ["linkoping.geojson"]},
+  "country_code": "SE",
   "name": "Linköping Orthophoto",
   "description": "Orthophotos from the municipality of Linköping 2010, open data",
   "url": "http://kartan.linkoping.se/wms?servicename=wms_ortofoto&FORMAT=image/jpeg&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Kommun_2010_25cm&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",

@@ -2,6 +2,7 @@
   "id": "Erlangen-2018",
   "type": "tms",
   "locationSet": {"include": ["erlangen2018.geojson"]},
+  "country_code": "DE",
   "name": "Erlangen Luftbild (2018 5,0 cm)",
   "url": "https://osm.rrze.fau.de/protected/YgktSWTTo6HS9nKi/lbe2018/{zoom}/{x}/{y}.jpg",
   "category": "photo",

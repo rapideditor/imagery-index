@@ -2,6 +2,7 @@
   "id": "Solothurn-sogis2014-wms",
   "type": "wms",
   "locationSet": {"include": ["kanton_solothurn.geojson"]},
+  "country_code": "CH",
   "name": "Kanton Solothurn (SOGIS)",
   "url": "https://geoweb.so.ch/wms/sogis_orthofoto.wms?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Orthofoto_SO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "min_zoom": 15,

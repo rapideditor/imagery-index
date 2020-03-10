@@ -2,6 +2,7 @@
   "id": "Bern-dsm-hillshade-2015",
   "type": "wms",
   "locationSet": {"include": ["kanton_bern.geojson"]},
+  "country_code": "CH",
   "name": "Kanton Bern, Digitales Oberflaechenmodell 50cm, Relief",
   "url": "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_hoehenwms_d_fk/MapServer/WmsServer?LAYERS=GEODB.LDOM50CM_LORELIEF&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&STYLES=default&FORMAT=image/jpeg&CRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "min_zoom": 8,

@@ -2,6 +2,7 @@
   "id": "ORTOS_DGT_2014_15",
   "type": "wms",
   "locationSet": {"include": ["portugal_litoral.geojson"]},
+  "country_code": "PT",
   "name": "Ortofotos Litoral DGT 2014-2015 (WMS)",
   "url": "http://ows.dgterritorio.pt/wss/service/ortos2014-2015-wms/guest?language=por&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Ortoimagens_2014-2015_Litoral&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "min_zoom": 1,

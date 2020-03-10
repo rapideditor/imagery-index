@@ -2,6 +2,7 @@
   "id": "kartverket-sjokart",
   "type": "tms",
   "locationSet": {"include": ["kartverket_nautical_charts.geojson"]},
+  "country_code": "NO",
   "name": "Kartverket Nautical Charts",
   "description": "Norwegian nautical charts (includes Spitsbergen/Svalbard and Antarctica). Raster representation of paper charts. Updated biweekly.",
   "url": "https://opencache{switch:,2,3}.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=sjokartraster&zoom={zoom}&x={x}&y={y}",

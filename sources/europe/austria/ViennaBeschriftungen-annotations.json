@@ -2,6 +2,7 @@
   "id": "wien.gv.at-labels",
   "type": "tms",
   "locationSet": {"include": ["vienna.geojson"]},
+  "country_code": "AT",
   "name": "Vienna: Beschriftungen (annotations)",
   "url": "https://maps.wien.gv.at/wmts/beschriftung/normal/google3857/{zoom}/{y}/{x}.png",
   "category": "map",

@@ -2,6 +2,7 @@
   "id": "Torokbalint-orthophoto-2013",
   "type": "wms",
   "locationSet": {"include": ["torokbalint.geojson"]},
+  "country_code": "HU",
   "name": "Törökbálint orthophoto 2013",
   "description": "5 cm resolution bald image",
   "url": "https://terkep.torokbalint.hu/mapproxy/service?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ORTO_2013_5CM_2013SZEPT_TAKARASSAL_512_512&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&TRANSPARENT=true",

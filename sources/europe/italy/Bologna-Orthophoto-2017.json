@@ -2,6 +2,7 @@
   "id": "Bologna-Orthophoto-2017",
   "type": "tms",
   "locationSet": {"include": ["bologna.geojson"]},
+  "country_code": "IT",
   "name": "Bologna ortofoto 2017",
   "url": "https://sitmappe.comune.bologna.it/tms/tileserver/Ortofoto2017/{zoom}/{x}/{y}.png",
   "max_zoom": 19,

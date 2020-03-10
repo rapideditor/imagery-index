@@ -2,6 +2,7 @@
   "id": "dgu-topo-100",
   "type": "wms",
   "locationSet": {"include": ["hr"]},
+  "country_code": "HR",
   "name": "dgu.hr: Topo 100",
   "url": "https://geoportal.dgu.hr/services/tk/ows?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=tk:TK100&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "permission_osm": "explicit",
@@ -11,7 +12,6 @@
   "start_date": "1980",
   "end_date": "1984",
   "icon": "dgu.png",
-  "country_code": "HR",
   "available_projections": ["EPSG:3765", "EPSG:4326"],
   "attribution": {
     "required": true,

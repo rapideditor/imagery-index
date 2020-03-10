@@ -2,6 +2,7 @@
   "id": "Katowice-buildings",
   "type": "wms",
   "locationSet": {"include": ["katowice.geojson"]},
+  "country_code": "PL",
   "name": "Katowice: Buildings",
   "url": "http://mapserver.um.katowice.pl/services/ortowms/MapServer/WMSServer?FORMAT=image/png&transparent=true&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=4,5,6&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "available_projections": ["EPSG:2157", "EPSG:2177", "EPSG:4326"],

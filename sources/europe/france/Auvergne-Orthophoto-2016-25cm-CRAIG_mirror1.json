@@ -2,6 +2,7 @@
   "id": "CRAIG-Auvergne-2016_mirror1",
   "type": "wms",
   "locationSet": {"include": ["auvergne.geojson"]},
+  "country_code": "FR",
   "name": "Auvergne 2016 25cm CRAIG",
   "url": "https://tiles.craig.fr/ortho/service?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=ortho_2016&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/CRAIG",

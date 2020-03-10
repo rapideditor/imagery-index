@@ -2,6 +2,7 @@
   "id": "ssb-tettsteder",
   "type": "wms",
   "locationSet": {"include": ["no"], "exclude": ["sj", "bv"]},
+  "country_code": "NO",
   "name": "SSB Urban Areas overlay",
   "description": "Human settlements of at least 200 people with less than 200 meters between households",
   "url": "https://ogc.ssb.no/wms.ashx?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=layer_198&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
@@ -9,7 +10,6 @@
   "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006345.html",
   "overlay": true,
   "icon": "https://www.fosterhjemsforening.no/wp-content/uploads/2015/06/SSB_logo1.png",
-  "country_code": "NO",
   "available_projections": [
     "EPSG:3857",
     "EPSG:4326",

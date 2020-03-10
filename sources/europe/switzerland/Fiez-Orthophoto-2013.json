@@ -2,6 +2,7 @@
   "id": "Fiez-2013",
   "type": "tms",
   "locationSet": {"include": ["fiez.geojson"]},
+  "country_code": "CH",
   "name": "Fiez Orthophoto 2013",
   "url": "https://osmdata.asitvd.ch/tiles/fiez2013/{zoom}/{x}/{y}.png",
   "category": "photo",

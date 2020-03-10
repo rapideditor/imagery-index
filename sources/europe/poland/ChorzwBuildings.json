@@ -2,6 +2,7 @@
   "id": "Chorzow-buildings",
   "type": "wms",
   "locationSet": {"include": ["chorzow.geojson"]},
+  "country_code": "PL",
   "name": "Chorzów: Buildings",
   "url": "http://e-odgik.chorzow.eu/services/wms/wms_funkcje_bud/MapServer/WMSServer?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=3,2,1,8,7,6&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "available_projections": ["EPSG:4326"],
