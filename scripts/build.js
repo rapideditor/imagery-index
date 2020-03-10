@@ -90,6 +90,8 @@ function collectFeatures() {
     if (feature.properties) {
       obj.properties = feature.properties;
       delete obj.properties.id;  // to prevent possiblity of conflicting ids
+    } else {
+      obj.properties = {};
     }
 
     if (feature.geometry) {
