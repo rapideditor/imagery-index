@@ -1,6 +1,9 @@
 import LocationConflation from '@ideditor/location-conflation';
 export { LocationConflation };
 
+import knownFeatures from '../dist/featureCollection.json';
+export { knownFeatures };
+
 import { select as d3_select, geoMercatorRaw as d3_geoMercatorRaw } from 'd3';
 import { geoScaleToZoom } from '../node_modules/iD/modules/geo/geo.js';
 import { utilTiler } from '../node_modules/iD/modules/util/tiler.js';

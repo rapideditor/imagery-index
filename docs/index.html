@@ -25,7 +25,9 @@
 
     <div id='sidebar' class='hasRows'>
       <div id='eli' class='section'>
-        <p>Paste an ELI geojson file:</p>
+        <p>Paste an editor-layer-index .geojson file<br/>
+        <em>-or-</em><br/>
+        Paste an imagery-index .json file:</p>
 <textarea autofocus id='eli-textarea' name='eli-textarea' rows='16'>
 {
   "type": "Feature",
@@ -159,7 +161,7 @@ var _projection;
 var _dimensions;
 
 window.addEventListener('DOMContentLoaded', function(e) {
-  _loco = new bundle.LocationConflation();
+  _loco = new bundle.LocationConflation(bundle.knownFeatures);
 
 // todo handle resize
   var cr = tilelayer.getBoundingClientRect();
@@ -286,9 +288,11 @@ map.on('load', function() {
 
     // Lets go!
     try {
-      var eli = JSON5.parse(eliTextarea.value);
-      var props = eli.properties || {};
-      var geometry = eli.geometry || {};
+      // try to handle either `editor-layer-index` or `imagery-index` files..
+      var parsed = JSON5.parse(eliTextarea.value);
+      var isELI = !!parsed.properties;  // if it has a properties, it's probably ELI
+
+      var props = isELI ? parsed.properties : parsed;
       var name = props.name;
       var type = props.type;
       var url = props.url;
@@ -347,30 +351,37 @@ map.on('load', function() {
 
 
       // Setup the GeoJSON source and layer
-      if (geometry.coordinates) {
-        // Workaround for editor-layer-index weirdness..
-        // Add an extra array nest to each element in `coordinates`
-        // so the rings are not treated as a bunch of holes:
-        // what we have: [ [[outer],[hole],[hole]] ]
-        // what we want: [ [[outer]],[[outer]],[[outer]] ]
-        var rings = geometry.coordinates.map(function(ring) { return [ring]; });
-        var bounds = rings.reduce(function(bounds, ring) {
-          ring[0].forEach(function(coord) {
-            if (coord[0] > bounds[0])  bounds[0] = coord[0];
-            if (coord[1] > bounds[1])  bounds[1] = coord[1];
-            if (coord[0] < bounds[2])  bounds[2] = coord[0];
-            if (coord[1] < bounds[3])  bounds[3] = coord[1];
-          });
-          return bounds;
-        }, [-180, -90, 180, 90]);  // W,S,E,N
+      var feature, bounds, rings;
 
+      if (isELI) {  // editor-layer-index
+        var coordinates = parsed.geometry && parsed.geometry.coordinates;
+        if (coordinates) {
+          // Workaround for editor-layer-index weirdness..
+          // Add an extra array nest to each element in `coordinates`
+          // so the rings are not treated as a bunch of holes:
+          // what we have: [ [[outer],[hole],[hole]] ]
+          // what we want: [ [[outer]],[[outer]],[[outer]] ]
+          rings = coordinates.map(function(ring) { return [ring]; });
+
+          feature = {
+            type: 'Feature',
+            properties: {},
+            geometry: { type: 'MultiPolygon', coordinates: rings }
+          };
+        }
+      } else {   // imagery-index
+        feature = _loco.resolveLocationSet(parsed.locationSet);
+        if (feature.geometry.type === 'Polygon') {
+          rings = [ feature.geometry.coordinates ];
+        } else {   // MultiPolygon
+          rings = feature.geometry.coordinates;
+        }
+      }
+
+      if (feature && rings) {
         map.addSource('geojson-source', {
           type: 'geojson',
-          data: {
-            type: 'Feature',
-            properties: { },
-            geometry: { type: 'MultiPolygon', coordinates: rings }
-          }
+          data: feature
         });
 
         map.addLayer({
@@ -406,6 +417,16 @@ map.on('load', function() {
             'circle-stroke-opacity': 0.9
           }
         });
+
+        var bounds = rings.reduce(function(bounds, ring) {
+          ring[0].forEach(function(coord) {  // ring[0] is the "outer"
+            if (coord[0] > bounds[0])  bounds[0] = coord[0];
+            if (coord[1] > bounds[1])  bounds[1] = coord[1];
+            if (coord[0] < bounds[2])  bounds[2] = coord[0];
+            if (coord[1] < bounds[3])  bounds[3] = coord[1];
+          });
+          return bounds;
+        }, [-180, -90, 180, 90]);  // W,S,E,N
 
         map.fitBounds(bounds, { padding: 50 });
       }
