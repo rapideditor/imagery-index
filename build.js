@@ -51,6 +51,10 @@ function buildAll() {
 }
 
 
+//
+// `collectFeatures`
+// Gather all the features from `features/**/*.geojson`
+//
 function collectFeatures() {
   let features = [];
   let files = {};
@@ -128,6 +132,10 @@ function collectFeatures() {
 }
 
 
+//
+// `collectSources`
+// Gather all the sources from `sources/**/*.json`
+//
 function collectSources(tstrings, featureCollection) {
   let sources = {};
   let files = {};
@@ -227,7 +235,6 @@ function collectSources(tstrings, featureCollection) {
 
     sources[sourceId] = source;
     files[sourceId] = file;
-
 
     // Collect translation strings for some sources..
     if (source.i18n) {
