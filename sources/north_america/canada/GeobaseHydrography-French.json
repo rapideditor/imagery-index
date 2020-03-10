@@ -5,6 +5,7 @@
   "name": "Geobase Hydrography - French",
   "url": "https://maps.geogratis.gc.ca/wms/hydro_network_fr?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=nhn:nhn&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "overlay": true,
+  "country_code": "CA",
   "available_projections": [
     "EPSG:2019",
     "EPSG:2294",

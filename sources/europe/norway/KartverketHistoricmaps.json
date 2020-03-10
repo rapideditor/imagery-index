@@ -8,6 +8,7 @@
   "min_zoom": 5,
   "max_zoom": 15,
   "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+  "country_code": "NO",
   "available_projections": [
     "EPSG:3034",
     "EPSG:3857",

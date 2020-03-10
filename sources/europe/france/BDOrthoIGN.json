@@ -9,6 +9,7 @@
   "license_url": "https://openstreetmap.fr/bdortho",
   "best": true,
   "icon": "http://www.ign.fr/institut/sites/all/themes/ign_institut/logo.png",
+  "country_code": "FR",
   "attribution": {
     "required": true,
     "url": "https://openstreetmap.fr/bdortho",

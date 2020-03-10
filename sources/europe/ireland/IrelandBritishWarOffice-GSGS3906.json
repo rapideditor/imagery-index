@@ -6,6 +6,7 @@
   "url": "https://mapwarper.net/layers/tile/101/{zoom}/{x}/{y}.png",
   "max_zoom": 18,
   "icon": "IrelandBritishWarOffice.png",
+  "country_code": "IE",
   "attribution": {
     "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/Ireland/Background_Imagery#Trinity_College_Dublin",

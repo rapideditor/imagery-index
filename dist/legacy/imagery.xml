@@ -638,6 +638,7 @@
     <url>https://{switch:a,b,c}.agri.openstreetmap.org/layer/au_ga_agri/{zoom}/{x}/{y}.png</url>
     <max-zoom>16</max-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/Attribution/Geoscience_Australia</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AU</country_code>
     <date>2006;2011</date>
     <attribution-url>https://data.gov.au/dataset/agri-the-australian-geographic-reference-image</attribution-url>
     <attribution-text>AGRI, Geoscience Australia</attribution-text>
@@ -1679,6 +1680,7 @@
     <max-zoom>20</max-zoom>
     <min-zoom>12</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/FR:WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)#Licence_du_r.C3.A9sultat</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/FX</country_code>
     <attribution-url>https://wiki.openstreetmap.org/wiki/FR:WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)#Licence_du_r.C3.A9sultat</attribution-url>
     <attribution-text>Tiles © cquest@Openstreetmap France, data © OpenStreetMap contributors, ODBL</attribution-text>
     <bounds min-lat="51.52087" min-lon="10.09675" max-lat="41.05927" max-lon="-6.13339">
@@ -2285,6 +2287,7 @@
     <min-zoom>1</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/BDGEx_Tile_Layer</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Exercito.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-text>BDGEx</attribution-text>
     <projections>
       <code>EPSG:3857</code>
@@ -4635,6 +4638,7 @@
     <min-zoom>14</min-zoom>
     <permission-ref>http://www.dgterritorio.pt/dados_abertos/cos/</permission-ref>
     <icon>http://www.igeo.pt/favicon.ico</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/PT</country_code>
     <date>2010</date>
     <attribution-url>http://www.dgterritorio.pt/dados_abertos/cos/</attribution-url>
     <attribution-text>Direcção-Geral do Território</attribution-text>
@@ -5353,6 +5357,7 @@
     <min-zoom>12</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation#Mention_de_la_source_et_du_mill.C3.A9sime</permission-ref>
     <icon>https://svn.openstreetmap.org/applications/editors/josm/plugins/cadastre-fr/images/cadastre_small.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/FX</country_code>
     <attribution-url>https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation</attribution-url>
     <attribution-text>cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2020</attribution-text>
     <bounds min-lat="51.52087" min-lon="10.09675" max-lat="41.05927" max-lon="-6.13339">
@@ -5956,6 +5961,7 @@
     <id>Canvec</id>
     <type>wms</type>
     <url>https://maps.geogratis.gc.ca/wms/canvec_en?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=canvec&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/CA</country_code>
     <projections>
       <code>EPSG:2019</code>
       <code>EPSG:2294</code>
@@ -6326,6 +6332,7 @@
     <id>Canvec_French</id>
     <type>wms</type>
     <url>https://maps.geogratis.gc.ca/wms/canvec_fr?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=canvec&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/CA</country_code>
     <projections>
       <code>EPSG:2019</code>
       <code>EPSG:2294</code>
@@ -6790,6 +6797,7 @@
     <id>Catastro-Spain</id>
     <type>wms</type>
     <url>https://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=Catastro&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ES</country_code>
     <projections>
       <code>EPSG:3857</code>
       <code>EPSG:4230</code>
@@ -7584,6 +7592,7 @@
     <type>wms</type>
     <url>https://wms.cuzk.cz/wms.asp?service=WMS&amp;VERSION=1.1.1&amp;REQUEST=GetMap&amp;SRS={proj}&amp;LAYERS=parcelni_cisla_i,obrazy_parcel_i,RST_KMD_I,hranice_parcel_i,DEF_BUDOVY,RST_KN_I,dalsi_p_mapy_i,prehledka_kat_prac,prehledka_kat_uz,prehledka_kraju-linie&amp;FORMAT=image/png&amp;transparent=TRUE&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/CZ</country_code>
     <projections>
       <code>EPSG:3034</code>
       <code>EPSG:3035</code>
@@ -7938,6 +7947,7 @@
     <max-zoom>18</max-zoom>
     <min-zoom>13</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/CZ</country_code>
     <bounds min-lat="51.05515" min-lon="18.84786" max-lat="48.55852" max-lon="12.09287">
       <shape>
         <point lat="50.86966" lon="14.82803"/>
@@ -8275,6 +8285,7 @@
     <max-zoom>20</max-zoom>
     <min-zoom>12</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/Cs:WikiProjekt_%C4%8Cesko/freemap#.C4.8C.C3.9AZK_-_R.C3.9AIAN</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/CZ</country_code>
     <attribution-url>https://poloha.net/</attribution-url>
     <attribution-text>Czech RUIAN</attribution-text>
     <bounds min-lat="51.05515" min-lon="18.84786" max-lat="48.55852" max-lon="12.09287">
@@ -8614,6 +8625,7 @@
     <max-zoom>20</max-zoom>
     <min-zoom>12</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/Cs:WikiProjekt_%C4%8Cesko/freemap#.C4.8C.C3.9AZK_-_R.C3.9AIAN</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/CZ</country_code>
     <attribution-url>https://poloha.net/</attribution-url>
     <attribution-text>Czech RUIAN</attribution-text>
     <bounds min-lat="51.05515" min-lon="18.84786" max-lat="48.55852" max-lon="12.09287">
@@ -8951,6 +8963,7 @@
     <type>wms</type>
     <url>https://eagri.cz/public/app/wms/plpis.fcgi?FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=LPIS_FB4,LPIS_FB4_KOD&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}&amp;TRANSPARENT=true</url>
     <permission-ref>https://wiki.openstreetmap.org/wiki/Cs:WikiProjekt_%C4%8Cesko/freemap#pLPIS_-_ve.C5.99ejn.C3.BD_registr_p.C5.AFdy</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/CZ</country_code>
     <projections>
       <code>EPSG:4326</code>
       <code>EPSG:32633</code>
@@ -10552,6 +10565,7 @@
     <url>http://e.tile.openstreetmap.hu/ortofoto2000/{zoom}/{x}/{y}.jpg</url>
     <max-zoom>17</max-zoom>
     <permission-ref>http://e.tile.openstreetmap.hu/ortofoto2000/license.txt</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/HU</country_code>
     <date>2000</date>
     <attribution-url>https://www.fomi.hu</attribution-url>
     <attribution-text>Földmérési és Távérzékelési Intézet</attribution-text>
@@ -10737,6 +10751,7 @@
     <url>http://e.tile.openstreetmap.hu/ortofoto2005/{zoom}/{x}/{y}.jpg</url>
     <max-zoom>17</max-zoom>
     <permission-ref>http://e.tile.openstreetmap.hu/ortofoto2005/license.txt</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/HU</country_code>
     <date>2005</date>
     <attribution-url>https://www.fomi.hu</attribution-url>
     <attribution-text>Földmérési és Távérzékelési Intézet</attribution-text>
@@ -10998,6 +11013,7 @@
     <max-zoom>16</max-zoom>
     <min-zoom>8</min-zoom>
     <icon>https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SK</country_code>
     <attribution-text>Copyright ©2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.</attribution-text>
     <bounds min-lat="49.61583" min-lon="22.56155" max-lat="47.73541" max-lon="16.83317">
       <shape>
@@ -11136,6 +11152,7 @@
     <max-zoom>16</max-zoom>
     <min-zoom>8</min-zoom>
     <icon>https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SK</country_code>
     <attribution-text>Copyright ©2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.</attribution-text>
     <bounds min-lat="49.61583" min-lon="22.56155" max-lat="47.73541" max-lon="16.83317">
       <shape>
@@ -11274,6 +11291,7 @@
     <max-zoom>16</max-zoom>
     <min-zoom>8</min-zoom>
     <icon>https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SK</country_code>
     <attribution-text>Copyright ©2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.</attribution-text>
     <bounds min-lat="49.61583" min-lon="22.56155" max-lat="47.73541" max-lon="16.83317">
       <shape>
@@ -11412,6 +11430,7 @@
     <max-zoom>16</max-zoom>
     <min-zoom>8</min-zoom>
     <icon>https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SK</country_code>
     <attribution-text>Copyright ©2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved.</attribution-text>
     <bounds min-lat="49.61583" min-lon="22.56155" max-lat="47.73541" max-lon="16.83317">
       <shape>
@@ -12713,6 +12732,7 @@
     <url>https://mapwarper.net/layers/tile/101/{zoom}/{x}/{y}.png</url>
     <max-zoom>18</max-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IrelandBritishWarOffice.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IE</country_code>
     <attribution-url>https://wiki.openstreetmap.org/wiki/Ireland/Background_Imagery#Trinity_College_Dublin</attribution-url>
     <attribution-text>Glucksman Map Library, Trinity College Dublin</attribution-text>
     <bounds min-lat="55.84142" min-lon="-5" max-lat="48.19557" max-lon="-22.01468">
@@ -12922,6 +12942,7 @@
     <max-zoom>15</max-zoom>
     <min-zoom>5</min-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NLS.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IE</country_code>
     <date>1941;1943</date>
     <attribution-url>https://geo.nls.uk/maps</attribution-url>
     <attribution-text>National Library of Scotland Historic Maps</attribution-text>
@@ -13133,6 +13154,7 @@
     <min-zoom>8</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/GURS</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/GURS.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SI</country_code>
     <attribution-url>https://www.gov.si/drzavni-organi/organi-v-sestavi/geodetska-uprava/</attribution-url>
     <attribution-text>CC-BY ©2020 Geodetska uprava Republike Slovenije (gov.si).</attribution-text>
     <bounds min-lat="46.87775" min-lon="16.59527" max-lat="45.42309" max-lon="13.37671">
@@ -13371,6 +13393,7 @@
     <min-zoom>8</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/GURS</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/GURS.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SI</country_code>
     <attribution-url>https://www.gov.si/drzavni-organi/organi-v-sestavi/geodetska-uprava/</attribution-url>
     <attribution-text>CC-BY ©2020 Geodetska uprava Republike Slovenije (gov.si).</attribution-text>
     <bounds min-lat="46.87775" min-lon="16.59527" max-lat="45.42309" max-lon="13.37671">
@@ -13880,6 +13903,7 @@
     <url>https://www.geoservicos1.segeth.df.gov.br/arcgis/services/Imagens/FOTO_2015/ImageServer/WMSServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=0&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <max-zoom>22</max-zoom>
     <icon>http://www.geoportal.segeth.df.gov.br/static/dist/img/logo_geoportal.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <date>2015</date>
     <attribution-url>http://www.geoportal.segeth.df.gov.br/</attribution-url>
     <attribution-text>GeoPortal DF</attribution-text>
@@ -14199,6 +14223,7 @@
     <url>https://www.geoservicos1.segeth.df.gov.br/arcgis/services/Imagens/FOTO_2016/ImageServer/WMSServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=0&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <max-zoom>22</max-zoom>
     <icon>http://www.geoportal.segeth.df.gov.br/static/dist/img/logo_geoportal.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <date>2016</date>
     <attribution-url>http://www.geoportal.segeth.df.gov.br/</attribution-url>
     <attribution-text>GeoPortal DF</attribution-text>
@@ -14518,6 +14543,7 @@
     <url>https://www.geoservicos1.segeth.df.gov.br/arcgis/services/Imagens/PLEIADES_2017/ImageServer/WMSServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=0&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <max-zoom>20</max-zoom>
     <icon>http://www.geoportal.segeth.df.gov.br/static/dist/img/logo_geoportal.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <date>2017</date>
     <attribution-url>http://www.geoportal.segeth.df.gov.br/</attribution-url>
     <attribution-text>GeoPortal DF</attribution-text>
@@ -14834,6 +14860,7 @@
     <id>Geobase_Hydrography</id>
     <type>wms</type>
     <url>https://maps.geogratis.gc.ca/wms/hydro_network_en?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=nhn:nhn&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/CA</country_code>
     <projections>
       <code>EPSG:2019</code>
       <code>EPSG:2294</code>
@@ -15204,6 +15231,7 @@
     <id>Geobase_Hydrography_French</id>
     <type>wms</type>
     <url>https://maps.geogratis.gc.ca/wms/hydro_network_fr?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=nhn:nhn&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/CA</country_code>
     <projections>
       <code>EPSG:2019</code>
       <code>EPSG:2294</code>
@@ -15576,6 +15604,7 @@
     <url>https://maps.geogratis.gc.ca/wms/roads_en?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=roads&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <max-zoom>20</max-zoom>
     <min-zoom>4</min-zoom>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/CA</country_code>
     <projections>
       <code>EPSG:2019</code>
       <code>EPSG:2294</code>
@@ -15948,6 +15977,7 @@
     <url>https://cartes.geogratis.gc.ca/wms/roads_fr?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=routes&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <max-zoom>20</max-zoom>
     <min-zoom>4</min-zoom>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/CA</country_code>
     <projections>
       <code>EPSG:2019</code>
       <code>EPSG:2294</code>
@@ -16320,6 +16350,7 @@
     <url>https://kortforsyningen.kms.dk/cp_inspire?login=OpenStreetMapDK2015&amp;password=Gall4Peters&amp;FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=CP.CadastralParcel&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <max-zoom>20</max-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SDFE.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/DK</country_code>
     <attribution-text>Geodatastyrelsen og Danske Kommuner</attribution-text>
     <projections>
       <code>EPSG:3395</code>
@@ -16407,6 +16438,7 @@
     <url>https://kortforsyningen.kms.dk/topo25?FORMAT=image/png&amp;VERSION=1.1.1&amp;login=OpenStreetMapDK2015&amp;password=Gall4Peters&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=topo25_klassisk&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <max-zoom>19</max-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SDFE.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/DK</country_code>
     <attribution-text>Geodatastyrelsen og Danske Kommuner</attribution-text>
     <projections>
       <code>EPSG:3395</code>
@@ -16494,6 +16526,7 @@
     <url>https://osmtools.septima.dk/mapproxy/tiles/1.0.0/kortforsyningen_ortoforaar/EPSG3857/{zoom}/{x}/{y}.jpeg</url>
     <max-zoom>21</max-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SDFE.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/DK</country_code>
     <attribution-url>https://download.kortforsyningen.dk/content/vilkaar-og-betingelser</attribution-url>
     <attribution-text>Geodatastyrelsen og Danske Kommuner</attribution-text>
     <bounds min-lat="84.58738" min-lon="15.79951" max-lat="54.38543" max-lon="-76.75614">
@@ -16568,6 +16601,7 @@
     <url>https://kortforsyningen.kms.dk/topo_skaermkort?FORMAT=image/png&amp;VERSION=1.1.1&amp;login=OpenStreetMapDK2015&amp;password=Gall4Peters&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=dtk_skaermkort&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <max-zoom>19</max-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SDFE.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/DK</country_code>
     <attribution-text>Geodatastyrelsen og Danske Kommuner</attribution-text>
     <projections>
       <code>EPSG:3395</code>
@@ -17919,6 +17953,7 @@
     <max-zoom>23</max-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/Geoportal.gov.pl</permission-ref>
     <icon>https://wiki.openstreetmap.org/w/images/2/25/Geoportal-josm.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/PL</country_code>
     <attribution-url>https://geoportal.gov.pl/web/guest/regulamin</attribution-url>
     <attribution-text>Główny Urząd Geodezji i Kartografii</attribution-text>
     <projections>
@@ -18261,6 +18296,7 @@
     <url>http://mapy.geoportal.gov.pl/wss/service/pub/guest/G2_PRNG_WMS/MapServer/WMSServer?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=PozostaleObiektyFizjograficzne,Hydrografia,PozostaleMiejscowosci,Wies,UksztaltowanieTerenu&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}{header(User-Agent,Mozilla/5.0 (JOSM)}</url>
     <permission-ref>https://wiki.openstreetmap.org/wiki/Geoportal.gov.pl</permission-ref>
     <icon>https://wiki.openstreetmap.org/w/images/2/25/Geoportal-josm.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/PL</country_code>
     <attribution-url>http://www.codgik.gov.pl/index.php/darmowe-dane/prng.html</attribution-url>
     <attribution-text>Centralny Ośrodek Dokumentacji Geodezyjnej i Kartograficznej</attribution-text>
     <projections>
@@ -19280,6 +19316,7 @@
     <type>wms</type>
     <url>https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=CCAR:BC250_Aglomerado_Rural_Isolado_P&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=TRUE</url>
     <permission-ref>http://dados.gov.br</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-text>IBGE</attribution-text>
     <projections>
       <code>EPSG:3857</code>
@@ -19601,6 +19638,7 @@
     <type>wms</type>
     <url>https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=CCAR:BC250_Pista_Ponto_Pouso_L&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=TRUE</url>
     <permission-ref>http://dados.gov.br</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-text>IBGE</attribution-text>
     <projections>
       <code>EPSG:3857</code>
@@ -19922,6 +19960,7 @@
     <type>wms</type>
     <url>https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=CCAR:BC250_Trecho_Drenagem_L&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=TRUE</url>
     <permission-ref>http://dados.gov.br</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-text>IBGE</attribution-text>
     <projections>
       <code>EPSG:3857</code>
@@ -20243,6 +20282,7 @@
     <type>wms</type>
     <url>https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=CCAR:BC250_Trecho_Rodoviario_L&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE</url>
     <permission-ref>http://dados.gov.br</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-text>IBGE</attribution-text>
     <projections>
       <code>EPSG:3857</code>
@@ -20564,6 +20604,7 @@
     <type>wms</type>
     <url>https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=CCAR:BC250_Terra_Indigena_A&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=TRUE</url>
     <permission-ref>http://dados.gov.br</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-text>IBGE</attribution-text>
     <projections>
       <code>EPSG:3857</code>
@@ -20885,6 +20926,7 @@
     <type>wms</type>
     <url>https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=CCAR:BC250_Unidade_Uso_Sustentavel_A&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=TRUE</url>
     <permission-ref>http://dados.gov.br</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-text>IBGE</attribution-text>
     <projections>
       <code>EPSG:3857</code>
@@ -21206,6 +21248,7 @@
     <type>wms</type>
     <url>https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=CCAR:BC250_Vila_P&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=TRUE</url>
     <permission-ref>http://dados.gov.br</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-text>IBGE</attribution-text>
     <projections>
       <code>EPSG:3857</code>
@@ -21527,6 +21570,7 @@
     <type>wms</type>
     <url>https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=CCAR:BCIM_Est_Gerad_Energia_Eletrica_P&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=TRUE</url>
     <permission-ref>http://dados.gov.br</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-text>IBGE</attribution-text>
     <projections>
       <code>EPSG:3857</code>
@@ -21848,6 +21892,7 @@
     <type>wms</type>
     <url>https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=CCAR:BCIM_Municipio_A&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}&amp;FORMAT=image%2Fpng&amp;TRANSPARENT=TRUE</url>
     <permission-ref>http://dados.gov.br</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-text>IBGE</attribution-text>
     <projections>
       <code>EPSG:3857</code>
@@ -22170,6 +22215,7 @@
     <description>Addresses data from IBGE</description>
     <url>https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/wille/cirnnxni1000jg8nfppc8g7pm/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g</url>
     <max-zoom>20</max-zoom>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-text>IBGE</attribution-text>
     <bounds min-lat="5.28754" min-lon="-28.34015" max-lat="-34.01481" max-lon="-73.96938">
       <shape>
@@ -22488,6 +22534,7 @@
     <min-zoom>4</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/IBGE_Street_Names</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IBGE.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-text>IBGE, OSM Brasil</attribution-text>
     <bounds min-lat="5.28754" min-lon="-28.34015" max-lat="-34.01481" max-lon="-73.96938">
       <shape>
@@ -22804,6 +22851,7 @@
     <description>Streets geometry and names of Salvador, Bahia. Source: Faces de Logradouro - IBGE.</description>
     <url>https://api.mapbox.com/styles/v1/wille/cj8lp78dn62wl2rquim47qo0g/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g</url>
     <max-zoom>20</max-zoom>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <bounds min-lat="5.28754" min-lon="-28.34015" max-lat="-34.01481" max-lon="-73.96938">
       <shape>
         <point lat="4.34069" lon="-59.69361"/>
@@ -23120,6 +23168,7 @@
     <max-zoom>14</max-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/IBGE_Tile_Layer</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IBGE.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-text>IBGE</attribution-text>
     <bounds min-lat="5.28754" min-lon="-28.34015" max-lat="-34.01481" max-lon="-73.96938">
       <shape>
@@ -23437,6 +23486,7 @@
     <max-zoom>19</max-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/IBGE_Tile_Layer</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IBGE.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-text>IBGE</attribution-text>
     <bounds min-lat="5.28754" min-lon="-28.34015" max-lat="-34.01481" max-lon="-73.96938">
       <shape>
@@ -25497,6 +25547,7 @@
     <max-zoom>16</max-zoom>
     <min-zoom>7</min-zoom>
     <icon>https://israelhiking.osm.org.il/content/favicons/favicon.ico</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IL</country_code>
     <attribution-url>https://israelhiking.osm.org.il/</attribution-url>
     <attribution-text>Tiles © IsraelHiking, CC BY-SA-NC 3.0. Data by OpenStreetMap under ODbL.</attribution-text>
     <bounds min-lat="33.33609" min-lon="35.89298" max-lat="29.45305" max-lon="33.62659">
@@ -25586,6 +25637,7 @@
     <max-zoom>16</max-zoom>
     <min-zoom>7</min-zoom>
     <icon>https://israelhiking.osm.org.il/content/favicons/favicon.ico</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IL</country_code>
     <attribution-url>https://israelhiking.osm.org.il/</attribution-url>
     <attribution-text>Tiles © IsraelHiking, CC BY-SA-NC 3.0. Data by OpenStreetMap under ODbL.</attribution-text>
     <bounds min-lat="33.33609" min-lon="35.89298" max-lat="29.45305" max-lon="33.62659">
@@ -25921,6 +25973,7 @@
     <max-zoom>21</max-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/Contributors#LINZ</permission-ref>
     <icon>https://koordinates.a.ssl.fastly.net/media/settings/branding/favicon-lds.ico</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NZ</country_code>
     <attribution-url>https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data</attribution-url>
     <attribution-text>Sourced from LINZ CC-BY 4.0</attribution-text>
     <bounds min-lat="-7.4975" min-lon="179.49541" max-lat="-56.07661" max-lon="-180">
@@ -25962,6 +26015,7 @@
     <max-zoom>21</max-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/Contributors#LINZ</permission-ref>
     <icon>https://koordinates.a.ssl.fastly.net/media/settings/branding/favicon-lds.ico</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NZ</country_code>
     <attribution-url>https://data.linz.govt.nz/layer/2343-nz-mainland-topo50-gridless-maps</attribution-url>
     <attribution-text>CC BY 4.0 Land Information New Zealand</attribution-text>
     <bounds min-lat="-7.4975" min-lon="179.49541" max-lat="-56.07661" max-lon="-180">
@@ -27080,6 +27134,7 @@
     <type>wms</type>
     <url>https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=of10000,TOPOYKSUS_6569,TOPOYKSUS_6573&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://svimik.com/Maa-amet_vastus_OSM.pdf</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/EE</country_code>
     <attribution-text>Maa-Ameti katastrikaart ortofoto alusel</attribution-text>
     <projections>
       <code>EPSG:4326</code>
@@ -27152,6 +27207,7 @@
     <max-zoom>21</max-zoom>
     <min-zoom>15</min-zoom>
     <permission-ref>http://svimik.com/Maa-amet_vastus_OSM.pdf</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/EE</country_code>
     <attribution-text>Maa-Ameti ortofoto</attribution-text>
     <projections>
       <code>EPSG:3301</code>
@@ -28714,6 +28770,7 @@
     <max-zoom>15</max-zoom>
     <permission-ref>https://data.gov.tw/license</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NLSC.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TW</country_code>
     <date>2015;-</date>
     <attribution-url>https://maps.nlsc.gov.tw</attribution-url>
     <attribution-text>© National Land Surveying and Mapping Center, Taiwan OGDL 1.0</attribution-text>
@@ -29850,6 +29907,7 @@
     <url>https://ort10lt.openmap.lt/g16/{zoom}/{x}/{y}.jpeg</url>
     <max-zoom>18</max-zoom>
     <min-zoom>4</min-zoom>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/LT</country_code>
     <date>2010;2016</date>
     <attribution-url>https://www.geoportal.lt</attribution-url>
     <attribution-text>NŽT ORT10LT</attribution-text>
@@ -30026,6 +30084,7 @@
     <id>ORTOFOTO_V1</id>
     <type>wms</type>
     <url>https://services.lgia.gov.lv/arcfree/services/Ortofoto_v1/MapServer/WmsServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=0&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/LV</country_code>
     <attribution-text>Latvijas Ģeotelpiskās informācijas aģentūras brīvais WMS serviss 1994 - 1999.gada Latvijas ortofotokarte</attribution-text>
     <projections>
       <code>EPSG:3059</code>
@@ -30141,6 +30200,7 @@
     <min-zoom>14</min-zoom>
     <permission-ref>http://www.igeo.pt/DadosAbertos/Listagem.aspx</permission-ref>
     <icon>http://www.igeo.pt/favicon.ico</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/PT</country_code>
     <date>2004;2006</date>
     <attribution-url>http://www.dgterritorio.pt/dados_abertos/ortofotos/</attribution-url>
     <attribution-text>Direcção-Geral do Território</attribution-text>
@@ -30746,6 +30806,7 @@
     <url>http://{switch:h,i,j}.tile.openstreetmap.hu/turistautak/{zoom}/{x}/{y}.png</url>
     <max-zoom>18</max-zoom>
     <permission-ref>http://www.openstreetmap.hu</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/HU</country_code>
     <attribution-url>https://www.openstreetmap.org</attribution-url>
     <attribution-text>© OpenStreetMap contributors</attribution-text>
     <bounds min-lat="48.58456" min-lon="22.89849" max-lat="45.73972" max-lon="16.10983">
@@ -30941,6 +31002,7 @@
     <category>historicphoto</category>
     <type>wms</type>
     <url>http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/raster/ortofoto_colore_06.map&amp;FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=OI.ORTOIMMAGINI.2006.33,OI.ORTOIMMAGINI.2006.32&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IT</country_code>
     <date>2006</date>
     <projections>
       <code>EPSG:3857</code>
@@ -31171,6 +31233,7 @@
     <category>photo</category>
     <type>wms</type>
     <url>http://wms.pcn.minambiente.it/ogc?map=/ms_ogc/WMS_v1.3/raster/ortofoto_colore_12.map&amp;FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=OI.ORTOIMMAGINI.2012&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IT</country_code>
     <date>2012</date>
     <projections>
       <code>EPSG:4326</code>
@@ -31528,6 +31591,7 @@
     <id>PNOA-Spain</id>
     <type>wms</type>
     <url>https://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;SRS={proj}&amp;LAYERS=pnoa&amp;STYLES=default&amp;FORMAT=image/jpeg&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ES</country_code>
     <attribution-text>PNOA</attribution-text>
     <projections>
       <code>EPSG:3857</code>
@@ -31923,6 +31987,7 @@
     <type>tms</type>
     <url>https://www.ign.es/wmts/pnoa-ma?request=GetTile&amp;service=WMTS&amp;VERSION=1.0.0&amp;Layer=OI.OrthoimageCoverage&amp;Style=default&amp;Format=image/png&amp;TileMatrixSet=GoogleMapsCompatible&amp;TileMatrix={zoom}&amp;TileRow={y}&amp;TileCol={x}</url>
     <max-zoom>20</max-zoom>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ES</country_code>
     <attribution-text>PNOA</attribution-text>
     <bounds min-lat="44.17365" min-lon="5.18061" max-lat="27.02969" max-lon="-25.3475">
       <shape>
@@ -32413,6 +32478,7 @@
     <min-zoom>8</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ#License</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/RABA.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SI</country_code>
     <attribution-url>https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ</attribution-url>
     <attribution-text>Copyright ©2019 Ministrstvo za kmetijstvo, gozdarstvo in prehrano (mkgp.gov.si). Some rights reserved.</attribution-text>
     <bounds min-lat="46.87775" min-lon="16.59527" max-lat="45.42309" max-lon="13.37671">
@@ -32651,6 +32717,7 @@
     <min-zoom>8</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ#License</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/RABA.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SI</country_code>
     <attribution-url>https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ</attribution-url>
     <attribution-text>Copyright ©2019 Ministrstvo za kmetijstvo, gozdarstvo in prehrano (mkgp.gov.si). Some rights reserved.</attribution-text>
     <bounds min-lat="46.87775" min-lon="16.59527" max-lat="45.42309" max-lon="13.37671">
@@ -33055,6 +33122,7 @@
     <url>https://kortforsyningen.kms.dk/dhm?login=OpenStreetMapDK2015&amp;password=Gall4Peters&amp;FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=dhm_overflade_skyggekort&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <max-zoom>20</max-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SDFE.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/DK</country_code>
     <attribution-text>Geodatastyrelsen og Danske Kommuner</attribution-text>
     <projections>
       <code>EPSG:3395</code>
@@ -33142,6 +33210,7 @@
     <url>https://kortforsyningen.kms.dk/dhm?login=OpenStreetMapDK2015&amp;password=Gall4Peters&amp;FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=dhm_terraen_skyggekort&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <max-zoom>20</max-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SDFE.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/DK</country_code>
     <attribution-text>Geodatastyrelsen og Danske Kommuner</attribution-text>
     <projections>
       <code>EPSG:3395</code>
@@ -34277,6 +34346,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Sao_miguel_dos_campos&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -34701,6 +34771,7 @@
     <url>https://mapservices.onemap.sg/mapproxy/service?FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=singapore_landlot_wmts&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>https://www.onemap.sg/legal/opendatalicence.html</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/OM2.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SG</country_code>
     <attribution-url>https://www.onemap.sg/legal/opendatalicence.html</attribution-url>
     <attribution-text>©OneMap Singapore ODL v1.0</attribution-text>
     <projections>
@@ -34741,6 +34812,7 @@
     <url>https://mapservices.onemap.sg/mapproxy/service?FORMAT=image/png&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=singapore_3414_wms&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>https://www.onemap.sg/legal/opendatalicence.html</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/OM2.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SG</country_code>
     <attribution-url>https://www.onemap.sg/legal/opendatalicence.html</attribution-url>
     <attribution-text>©OneMap Singapore ODL v1.0</attribution-text>
     <projections>
@@ -34781,6 +34853,7 @@
     <url>https://tms.freemap.sk/historicke/{zoom}/{x}/{y}.png</url>
     <max-zoom>12</max-zoom>
     <icon>https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SK</country_code>
     <bounds min-lat="49.61583" min-lon="22.56155" max-lat="47.73541" max-lon="16.83317">
       <shape>
         <point lat="49.27806" lon="19.82237"/>
@@ -37564,6 +37637,7 @@
     <url>http://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg</url>
     <max-zoom>22</max-zoom>
     <min-zoom>1</min-zoom>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ZA</country_code>
     <bounds min-lat="-22.12917" min-lon="38.88176" max-lat="-48.03306" max-lon="12.51595">
       <shape>
         <point lat="-22.422" lon="31.30611"/>
@@ -38840,6 +38914,7 @@
     <max-zoom>15</max-zoom>
     <permission-ref>https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NLSC.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TW</country_code>
     <attribution-url>https://maps.nlsc.gov.tw/</attribution-url>
     <attribution-text>© National Land Surveying and Mapping Center, Taiwan OGDL 1.0</attribution-text>
     <bounds min-lat="25.98197" min-lon="123.0791" max-lat="21.52331" max-lon="118.11703">
@@ -38864,6 +38939,7 @@
     <url>https://wms.nlsc.gov.tw/wms?VERSION=1.1.1&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=LANDSECT&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NLSC.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TW</country_code>
     <attribution-url>https://maps.nlsc.gov.tw/</attribution-url>
     <attribution-text>© National Land Surveying and Mapping Center, Taiwan OGDL 1.0</attribution-text>
     <projections>
@@ -38894,6 +38970,7 @@
     <url>https://wms.nlsc.gov.tw/wms?VERSION=1.1.1&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=Village&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NLSC.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TW</country_code>
     <attribution-url>https://maps.nlsc.gov.tw/</attribution-url>
     <attribution-text>© National Land Surveying and Mapping Center, Taiwan OGDL 1.0</attribution-text>
     <projections>
@@ -40288,6 +40365,7 @@
     <url>https://{switch:a,b,c,d}.tiles.mapbox.com/v4/enf.e0b8291e/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJjaml5MjVyb3MwMWV0M3hxYmUzdGdwbzE4In0.q548FjhsSJzvXsGlPsFxAQ</url>
     <max-zoom>22</max-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TIGER.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/US</country_code>
     <date>2014</date>
     <bounds min-lat="84.39275" min-lon="180" max-lat="9.55515" max-lon="-179.55295">
       <shape>
@@ -40727,6 +40805,7 @@
     <url>https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/openstreetmapus/cj8dftc3q1ecn2tnx9qhwyj0c/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcHVzIiwiYSI6ImNpcnF4Ym43dDBoOXZmYW04bWhlNWdrY2EifQ.4SFexuTUuKkZeerO3dgtmw</url>
     <max-zoom>22</max-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TIGER.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/US</country_code>
     <date>2017</date>
     <bounds min-lat="84.39275" min-lon="180" max-lat="9.55515" max-lon="-179.55295">
       <shape>
@@ -41166,6 +41245,7 @@
     <url>https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/openstreetmapus/cjo1wbulo3ub82ro1c9onlzmh/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcHVzIiwiYSI6ImNpcnF4Ym43dDBoOXZmYW04bWhlNWdrY2EifQ.4SFexuTUuKkZeerO3dgtmw</url>
     <max-zoom>22</max-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TIGER.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/US</country_code>
     <date>2018</date>
     <bounds min-lat="84.39275" min-lon="180" max-lat="9.55515" max-lon="-179.55295">
       <shape>
@@ -41605,6 +41685,7 @@
     <url>https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/openstreetmapus/ck0dxfa7602e61cmjk7p86749/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcHVzIiwiYSI6ImNpcnF4Ym43dDBoOXZmYW04bWhlNWdrY2EifQ.4SFexuTUuKkZeerO3dgtmw</url>
     <max-zoom>22</max-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TIGER.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/US</country_code>
     <date>2019</date>
     <bounds min-lat="84.39275" min-lon="180" max-lat="9.55515" max-lon="-179.55295">
       <shape>
@@ -42045,6 +42126,7 @@
     <max-zoom>20</max-zoom>
     <min-zoom>12</min-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/USDA.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/US</country_code>
     <projections>
       <code>EPSG:3857</code>
       <code>EPSG:4326</code>
@@ -42594,6 +42676,7 @@
     <max-zoom>20</max-zoom>
     <min-zoom>12</min-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/USGS.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/US</country_code>
     <bounds min-lat="84.39275" min-lon="180" max-lat="9.55515" max-lon="-179.55295">
       <shape>
         <point lat="29.18961" lon="-177.8563"/>
@@ -43137,6 +43220,7 @@
     <url>https://caltopo.s3.amazonaws.com/topo/{zoom}/{x}/{y}.png</url>
     <max-zoom>16</max-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/USGS.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/US</country_code>
     <attribution-url>https://caltopo.com</attribution-url>
     <attribution-text>© Caltopo</attribution-text>
     <bounds min-lat="84.58738" min-lon="180" max-lat="9.55515" max-lon="-179.55295">
@@ -43254,6 +43338,7 @@
     <type>tms</type>
     <url>https://osm.cycle.travel/forest/{zoom}/{x}/{y}.png</url>
     <max-zoom>19</max-zoom>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/US</country_code>
     <bounds min-lat="84.39275" min-lon="180" max-lat="9.55515" max-lon="-179.55295">
       <shape>
         <point lat="29.18961" lon="-177.8563"/>
@@ -43688,6 +43773,7 @@
     <url>https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/glassman/cjf4qjmps0tgv2qpahj977mvz/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1IjoiZ2xhc3NtYW4iLCJhIjoiRjk3dWdwYyJ9.Tg_fMJWxygeKBgVTrZHmGA</url>
     <max-zoom>20</max-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/USFS.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/US</country_code>
     <bounds min-lat="84.39275" min-lon="180" max-lat="9.55515" max-lon="-179.55295">
       <shape>
         <point lat="29.18961" lon="-177.8563"/>
@@ -44114,6 +44200,7 @@
     <description>Works only from within Ukraine or with an Ukrainian proxy server.</description>
     <url>http://212.26.144.110/tile2/orto_10000/{zoom}/{x}/{-y}.jpg</url>
     <max-zoom>16</max-zoom>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UA</country_code>
     <date>2012</date>
     <bounds min-lat="52.3754" min-lon="40.22176" max-lat="44" max-lon="22.14689">
       <shape>
@@ -46269,6 +46356,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Palestina&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -46590,6 +46678,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Piranhas&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -46911,6 +47000,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Ortofotos%202006&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -47235,6 +47325,7 @@
     <max-zoom>20</max-zoom>
     <min-zoom>5</min-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IrelandCivilParishesandBaronies.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IE</country_code>
     <date>1901</date>
     <attribution-url>https://library.nuigalway.ie/collections/archives/depositedcollections/digitisedarchives/</attribution-url>
     <attribution-text>James Hardiman Library, NUIG</attribution-text>
@@ -47443,6 +47534,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Arapiraca&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -47766,6 +47858,7 @@
     <max-zoom>13</max-zoom>
     <min-zoom>5</min-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NLS.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IE</country_code>
     <date>1940</date>
     <attribution-url>https://geo.nls.uk/maps</attribution-url>
     <attribution-text>National Library of Scotland Historic Maps</attribution-text>
@@ -47978,6 +48071,7 @@
     <max-zoom>19</max-zoom>
     <permission-ref>https://basemap.at/#sec-nutzung</permission-ref>
     <icon>https://www.basemap.at/images/logo_basemap.jpg</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AT</country_code>
     <attribution-url>https://basemap.at</attribution-url>
     <attribution-text>basemap.at</attribution-text>
     <bounds min-lat="49.01444" min-lon="17.16001" max-lat="46.37208" max-lon="9.53116">
@@ -48415,6 +48509,7 @@
     <max-zoom>19</max-zoom>
     <permission-ref>https://basemap.at/#sec-nutzung</permission-ref>
     <icon>https://www.basemap.at/images/logo_basemap.jpg</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AT</country_code>
     <attribution-url>https://basemap.at</attribution-url>
     <attribution-text>basemap.at</attribution-text>
     <bounds min-lat="49.01444" min-lon="17.16001" max-lat="46.37208" max-lon="9.53116">
@@ -48852,6 +48947,7 @@
     <max-zoom>19</max-zoom>
     <permission-ref>https://basemap.at/#sec-nutzung</permission-ref>
     <icon>https://www.basemap.at/images/logo_basemap.jpg</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AT</country_code>
     <attribution-url>https://basemap.at</attribution-url>
     <attribution-text>basemap.at</attribution-text>
     <bounds min-lat="49.01444" min-lon="17.16001" max-lat="46.37208" max-lon="9.53116">
@@ -49607,6 +49703,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=Branquinha&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -49930,6 +50027,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Cajueiro&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -50251,6 +50349,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Campo%20Alegre&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -50649,6 +50748,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Capela&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -50970,6 +51070,7 @@
     <category>map</category>
     <type>wms</type>
     <url>https://wms.michreichert.de/vzg-strecken-2017?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=vzg_strecken,station_codes,level_crossings&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/DE</country_code>
     <date>2013-11</date>
     <attribution-url>https://data.deutschebahn.com/dataset/data-streckennetz</attribution-url>
     <attribution-text>Data CC-BY 4.0 Deutsche Bahn AG</attribution-text>
@@ -51892,6 +51993,7 @@
     <category>map</category>
     <type>wms</type>
     <url>https://wms.michreichert.de/vzg-strecken-2015?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=vzg_strecken,station_codes,level_crossings&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/DE</country_code>
     <date>2015-11</date>
     <attribution-url>https://data.deutschebahn.com/dataset/data-streckennetz</attribution-url>
     <attribution-text>Data CC-BY 4.0 Deutsche Bahn AG</attribution-text>
@@ -52851,6 +52953,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Delmiro%20Gouveia&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -53172,6 +53275,7 @@
     <type>wms</type>
     <url>http://portal.der.es.gov.br/geoserver/wms?SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=deres-ext:TRECHOINFO&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://www.acessoainformacao.es.gov.br/DER-ES</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>https://der.es.gov.br</attribution-url>
     <attribution-text>Departamento de Estradas de Rodagem do Estado do Espírito Santo</attribution-text>
     <projections>
@@ -53495,6 +53599,7 @@
     <url>https://geoportal.dgu.hr/services/dof/ows?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=DOF5_2011&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_25_403.html</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/HR</country_code>
     <date>2011</date>
     <attribution-url>https://dgu.gov.hr/</attribution-url>
     <attribution-text>Sadrži podatke Državne geodetske uprave</attribution-text>
@@ -53760,6 +53865,7 @@
     <url>https://geoportal.dgu.hr/services/inspire/orthophoto_2014-2016/ows?SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=OI.OrthoImagery&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_25_403.html</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/HR</country_code>
     <date>2014;2016</date>
     <attribution-url>https://dgu.gov.hr/</attribution-url>
     <attribution-text>Sadrži podatke Državne geodetske uprave</attribution-text>
@@ -54025,6 +54131,7 @@
     <url>https://geoportal.dgu.hr/services/inspire/orthophoto_2017/ows?FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=OI.OrthoImagery&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_25_403.html</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/HR</country_code>
     <date>2017</date>
     <attribution-url>https://dgu.gov.hr/</attribution-url>
     <attribution-text>Sadrži podatke Državne geodetske uprave</attribution-text>
@@ -54185,6 +54292,7 @@
     <url>https://geoportal.dgu.hr/services/inspire/orthophoto_2018/ows?SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=OI.OrthoImagery&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_25_403.html</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/HR</country_code>
     <date>2018</date>
     <attribution-url>https://dgu.gov.hr/</attribution-url>
     <attribution-text>Sadrži podatke Državne geodetske uprave</attribution-text>
@@ -54336,6 +54444,7 @@
     <url>https://geoportal.dgu.hr/services/hok/ows?SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=HOK5&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_25_403.html</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/HR</country_code>
     <date>1954;2009</date>
     <attribution-url>https://dgu.gov.hr/</attribution-url>
     <attribution-text>Sadrži podatke Državne geodetske uprave</attribution-text>
@@ -54601,6 +54710,7 @@
     <url>https://geoportal.dgu.hr/services/tk/ows?SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=tk:TK100&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_25_403.html</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/HR</country_code>
     <date>1980;1984</date>
     <attribution-url>https://dgu.gov.hr/</attribution-url>
     <attribution-text>Sadrži podatke Državne geodetske uprave</attribution-text>
@@ -54866,6 +54976,7 @@
     <url>https://geoportal.dgu.hr/services/tk/ows?SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=tk:TK200&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_25_403.html</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/HR</country_code>
     <date>1982;1986</date>
     <attribution-url>https://dgu.gov.hr/</attribution-url>
     <attribution-text>Sadrži podatke Državne geodetske uprave</attribution-text>
@@ -55131,6 +55242,7 @@
     <url>https://geoportal.dgu.hr/services/tk/ows?SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=tk:TK25&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_25_403.html</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/HR</country_code>
     <date>1996;2011</date>
     <attribution-url>https://dgu.gov.hr/</attribution-url>
     <attribution-text>Sadrži podatke Državne geodetske uprave</attribution-text>
@@ -56014,6 +56126,7 @@
     <max-zoom>19</max-zoom>
     <permission-ref>http://e-mapa.net/warunki/</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/emapa.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/PL</country_code>
     <attribution-url>https://polska.e-mapa.net/</attribution-url>
     <attribution-text>polska.e-mapa.net - Geoportal otwartych danych przestrzennych</attribution-text>
     <projections>
@@ -56356,6 +56469,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Estrela%20de%20Alagoas&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -56715,6 +56829,7 @@
     <max-zoom>20</max-zoom>
     <min-zoom>15</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/GSI_KIBAN</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/JP</country_code>
     <attribution-url>https://www.finds.jp/siteinfo/c_tou.html.ja</attribution-url>
     <attribution-text>GSI KIBAN 2500</attribution-text>
     <bounds min-lat="45.92937" min-lon="155.16731" max-lat="17.8782" max-lon="122.26612">
@@ -56742,6 +56857,7 @@
     <min-zoom>3</min-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2018-January/006347.html</permission-ref>
     <icon>https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg/175px-Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.fiskeridir.no/Kart</attribution-url>
     <attribution-text>© Fiskeridirektoratet</attribution-text>
     <projections>
@@ -56888,6 +57004,7 @@
     <min-zoom>2</min-zoom>
     <permission-ref>https://openstreetmap.fr/bdortho</permission-ref>
     <icon>http://www.ign.fr/institut/sites/all/themes/ign_institut/logo.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/FR</country_code>
     <attribution-url>https://openstreetmap.fr/bdortho</attribution-url>
     <attribution-text>BDOrtho IGN</attribution-text>
     <bounds min-lat="51.52087" min-lon="174.90025" max-lat="-23.53966" max-lon="-178.60852">
@@ -57584,6 +57701,7 @@
     <min-zoom>3</min-zoom>
     <permission-ref>https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/Digiroad_permission_23032017.pdf</permission-ref>
     <icon>https://www.liikennevirasto.fi/livi-theme/images/general/liikennevirasto_logo_2x.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/FI</country_code>
     <attribution-url>https://www.liikennevirasto.fi/web/en/open-data/digiroad/</attribution-url>
     <attribution-text>© Liikennevirasto</attribution-text>
     <projections>
@@ -58118,6 +58236,7 @@
     <url>https://gis.bmlfuw.gv.at/wmsgw/?key=4d80de696cd562a63ce463a58a61488d&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=Luftbild_MR,Luftbild_1m,Luftbild_8m,Satellitenbild_30m&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Geoimageat.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AT</country_code>
     <attribution-url>http://geoimage.at</attribution-url>
     <attribution-text>geoimage.at</attribution-text>
     <projections>
@@ -58573,6 +58692,7 @@
     <max-zoom>21</max-zoom>
     <permission-ref>https://forum.openstreetmap.org/viewtopic.php?id=62083</permission-ref>
     <icon>https://register.geonorge.no/data/organizations/_L_norgeibilder96x96.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.norgeibilder.no</attribution-url>
     <attribution-text>© Geovekst</attribution-text>
     <bounds min-lat="72.01005" min-lon="32.07813" max-lat="57.35913" max-lon="-0.3751">
@@ -58701,6 +58821,7 @@
     <max-zoom>19</max-zoom>
     <permission-ref>https://forum.openstreetmap.org/viewtopic.php?id=62083</permission-ref>
     <icon>https://register.geonorge.no/data/organizations/_L_norgeibilder96x96.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.norgeibilder.no</attribution-url>
     <attribution-text>© Geovekst</attribution-text>
     <bounds min-lat="72.01005" min-lon="32.07813" max-lat="57.35913" max-lon="-0.3751">
@@ -58826,6 +58947,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Girau%20do%20Ponciano&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -59211,6 +59333,7 @@
     <max-zoom>18</max-zoom>
     <min-zoom>13</min-zoom>
     <permission-ref>https://maps.gsi.go.jp/development/ichiran.html#airphoto</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/JP</country_code>
     <attribution-url>https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html</attribution-url>
     <attribution-text>GSI Japan</attribution-text>
     <bounds min-lat="45.92937" min-lon="155.16731" max-lat="17.8782" max-lon="122.26612">
@@ -59237,6 +59360,7 @@
     <max-zoom>18</max-zoom>
     <min-zoom>13</min-zoom>
     <permission-ref>https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/JP</country_code>
     <attribution-url>https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html</attribution-url>
     <attribution-text>GSI Japan seamless photo</attribution-text>
     <bounds min-lat="45.92937" min-lon="155.16731" max-lat="17.8782" max-lon="122.26612">
@@ -59263,6 +59387,7 @@
     <max-zoom>18</max-zoom>
     <min-zoom>4</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/GSImaps</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/JP</country_code>
     <attribution-url>https://maps.gsi.go.jp/help/use.html</attribution-url>
     <attribution-text>GSI Japan</attribution-text>
     <bounds min-lat="45.92937" min-lon="155.16731" max-lat="17.8782" max-lon="122.26612">
@@ -59510,6 +59635,7 @@
     <min-zoom>1</min-zoom>
     <permission-ref>https://www.ign.gob.ar/descargas/tyc1.html</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ign.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AR</country_code>
     <attribution-url>https://www.ign.gob.ar/</attribution-url>
     <attribution-text>Instituto Geográfico Nacional de la República Argentina</attribution-text>
     <bounds min-lat="-21.77837" min-lon="-53.63739" max-lat="-55.19618" max-lon="-73.55259">
@@ -60121,6 +60247,7 @@
     <max-zoom>22</max-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2014-August/004831.html</permission-ref>
     <icon>https://www.kartverket.no/Content/Images/logo-graphic-512.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.kartverket.no/data/Kartdata/Grenser/</attribution-url>
     <attribution-text>© Kartverket</attribution-text>
     <projections>
@@ -60276,6 +60403,7 @@
     <max-zoom>24</max-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2014-August/004831.html</permission-ref>
     <icon>https://www.kartverket.no/Content/Images/logo-graphic-512.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://hoydedata.no/</attribution-url>
     <attribution-text>© Kartverket</attribution-text>
     <projections>
@@ -60441,6 +60569,7 @@
     <max-zoom>24</max-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2014-August/004831.html</permission-ref>
     <icon>https://www.kartverket.no/Content/Images/logo-graphic-512.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://hoydedata.no/</attribution-url>
     <attribution-text>© Kartverket</attribution-text>
     <projections>
@@ -60607,6 +60736,7 @@
     <min-zoom>9</min-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2014-August/004831.html</permission-ref>
     <icon>https://www.kartverket.no/Content/Images/logo-graphic-512.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://kartkatalog.geonorge.no/metadata/kartverket/fjellskygge-cache/cca7c129-fe66-4c96-9091-40d92290dd81</attribution-url>
     <attribution-text>© Kartverket</attribution-text>
     <bounds min-lat="72.01005" min-lon="32.07813" max-lat="57.35913" max-lon="-0.3751">
@@ -60736,6 +60866,7 @@
     <min-zoom>6</min-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2014-August/004831.html</permission-ref>
     <icon>https://www.kartverket.no/Content/Images/logo-graphic-512.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://kartverket.no/geodataarbeid/temadata/nasjonal-database-for-tur--og-friluftsruter/</attribution-url>
     <attribution-text>© Kartverket</attribution-text>
     <projections>
@@ -60868,6 +60999,7 @@
     <max-zoom>15</max-zoom>
     <min-zoom>5</min-zoom>
     <icon>https://www.kartverket.no/Content/Images/logo-graphic-512.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.kartverket.no/kart/historiske-kart/</attribution-url>
     <attribution-text>© Kartverket</attribution-text>
     <projections>
@@ -61024,6 +61156,7 @@
     <min-zoom>9</min-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2014-August/004831.html</permission-ref>
     <icon>https://www.kartverket.no/Content/Images/logo-graphic-512.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.kartverket.no/Prosjekter/Nasjonal-detaljert-hoydemodell/</attribution-url>
     <attribution-text>© Kartverket</attribution-text>
     <projections>
@@ -61232,6 +61365,7 @@
     <min-zoom>7</min-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2014-August/004831.html</permission-ref>
     <icon>https://www.kartverket.no/Content/Images/logo-graphic-512.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://kartverket.no/kart/Nasjonalt-register-over-luftfartshindre/</attribution-url>
     <attribution-text>© Kartverket</attribution-text>
     <projections>
@@ -61411,6 +61545,7 @@
     <min-zoom>14</min-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2014-August/004831.html</permission-ref>
     <icon>https://www.kartverket.no/Content/Images/logo-graphic-512.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://seeiendom.kartverket.no</attribution-url>
     <attribution-text>© Kartverket</attribution-text>
     <projections>
@@ -61593,6 +61728,7 @@
     <min-zoom>11</min-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2014-August/004831.html</permission-ref>
     <icon>https://www.kartverket.no/Content/Images/logo-graphic-512.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.kartverket.no/kunnskap/historie/kartverkets-historiske-arkiv/</attribution-url>
     <attribution-text>© Kartverket</attribution-text>
     <projections>
@@ -61827,6 +61963,7 @@
     <min-zoom>3</min-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2014-August/004831.html</permission-ref>
     <icon>https://www.kartverket.no/Content/Images/logo-graphic-512.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://wiki.openstreetmap.org/wiki/No:Kartverket_import</attribution-url>
     <attribution-text>© Kartverket</attribution-text>
     <bounds min-lat="72.01005" min-lon="32.07813" max-lat="57.35913" max-lon="-0.3751">
@@ -61956,6 +62093,7 @@
     <min-zoom>3</min-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2014-August/004831.html</permission-ref>
     <icon>https://www.kartverket.no/Content/Images/logo-graphic-512.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.kartverket.no/data/kartdata/vegdata/</attribution-url>
     <attribution-text>© Kartverket</attribution-text>
     <projections>
@@ -62136,6 +62274,7 @@
     <max-zoom>18</max-zoom>
     <min-zoom>3</min-zoom>
     <icon>https://kelkkareitit.fi/img/favicon.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SE</country_code>
     <attribution-url>https://kelkkareitit.fi/</attribution-url>
     <attribution-text>© Kelkkareitit.fi</attribution-text>
     <bounds min-lat="72.01005" min-lon="32.07813" max-lat="55.13257" max-lon="-0.3751">
@@ -62763,6 +62902,7 @@
     <min-zoom>5</min-zoom>
     <permission-ref>https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/lantmateriet.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SE</country_code>
     <attribution-url>https://www.lantmateriet.se/</attribution-url>
     <attribution-text>© Lantmäteriet, CC0</attribution-text>
     <projections>
@@ -62920,6 +63060,7 @@
     <min-zoom>5</min-zoom>
     <permission-ref>https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/lantmateriet.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SE</country_code>
     <attribution-url>https://www.lantmateriet.se/</attribution-url>
     <attribution-text>© Lantmäteriet, CC0</attribution-text>
     <projections>
@@ -63077,6 +63218,7 @@
     <min-zoom>3</min-zoom>
     <permission-ref>https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/lantmateriet.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SE</country_code>
     <attribution-url>https://www.lantmateriet.se/</attribution-url>
     <attribution-text>© Lantmäteriet, CC0</attribution-text>
     <bounds min-lat="69.06069" min-lon="24.15791" max-lat="55.13257" max-lon="10.40861">
@@ -63246,6 +63388,7 @@
     <url>https://siglon.londrina.pr.gov.br/arcgis/rest/services/Imagens/Ortofotos_2011_Paranacidade/MapServer/WMTS/tile/1.0.0/Imagens_Ortofotos_2011_Paranacidade/default/GoogleMapsCompatible/{zoom}/{y}/{x}</url>
     <max-zoom>19</max-zoom>
     <permission-ref>http://siglon.londrina.pr.gov.br</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <date>2011</date>
     <attribution-url>http://siglon.londrina.pr.gov.br</attribution-url>
     <attribution-text>Prefeitura do Londrinas, PR</attribution-text>
@@ -63566,6 +63709,7 @@
     <min-zoom>5</min-zoom>
     <permission-ref>https://data.public.lu/en/datasets/carte-de-base-webservices-wms-et-wmts</permission-ref>
     <icon>https://www.geoportail.lu/static/img/lion.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/LU</country_code>
     <date>2013-07-19;2010-07-20</date>
     <attribution-url>https://data.public.lu/en/datasets/carte-de-base-webservices-wms-et-wmts</attribution-url>
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
@@ -63756,6 +63900,7 @@
     <min-zoom>5</min-zoom>
     <permission-ref>https://data.public.lu/en/datasets/plan-cadastral-numerise-pcn-webservices-wms-et-wmts</permission-ref>
     <icon>https://www.geoportail.lu/static/img/lion.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/LU</country_code>
     <attribution-url>https://data.public.lu/en/datasets/plan-cadastral-numerise-pcn-webservices-wms-et-wmts</attribution-url>
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
     <bounds min-lat="50.18283" min-lon="6.53122" max-lat="49.44801" max-lon="5.73621">
@@ -63945,6 +64090,7 @@
     <min-zoom>5</min-zoom>
     <permission-ref>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts</permission-ref>
     <icon>https://www.geoportail.lu/static/img/lion.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/LU</country_code>
     <date>2017-06-14;2017-06-22</date>
     <attribution-url>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts</attribution-url>
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
@@ -64135,6 +64281,7 @@
     <min-zoom>5</min-zoom>
     <permission-ref>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts</permission-ref>
     <icon>https://www.geoportail.lu/static/img/lion.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/LU</country_code>
     <date>2018-07-02;2018-08-05</date>
     <attribution-url>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts</attribution-url>
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
@@ -64347,6 +64494,7 @@
     <min-zoom>5</min-zoom>
     <permission-ref>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts</permission-ref>
     <icon>https://www.geoportail.lu/static/img/lion.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/LU</country_code>
     <date>2019-07-04;2019-08-22</date>
     <attribution-url>https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts</attribution-url>
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
@@ -64537,6 +64685,7 @@
     <min-zoom>5</min-zoom>
     <permission-ref>https://data.public.lu/en/datasets/cartes-topographiques-services-wms-et-wmts</permission-ref>
     <icon>https://www.geoportail.lu/static/img/lion.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/LU</country_code>
     <date>2013-07-19;2010-07-20</date>
     <attribution-url>https://data.public.lu/en/datasets/cartes-topographiques-services-wms-et-wmts</attribution-url>
     <attribution-text>Administration du Cadastre et de la Topographie</attribution-text>
@@ -64767,6 +64916,7 @@
     <type>wms</type>
     <url>https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=cir_ngr&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://svimik.com/Maa-amet_vastus_OSM.pdf</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/EE</country_code>
     <attribution-text>Maa-Ameti metsanduslik ortofoto</attribution-text>
     <projections>
       <code>EPSG:4326</code>
@@ -64839,6 +64989,7 @@
     <max-zoom>18</max-zoom>
     <min-zoom>6</min-zoom>
     <permission-ref>http://svimik.com/Maa-amet_vastus_OSM.pdf</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/EE</country_code>
     <attribution-text>Maa-Ameti ortofoto</attribution-text>
     <bounds min-lat="60.00121" min-lon="28.21137" max-lat="57.51813" max-lon="19.84909">
       <shape>
@@ -64906,6 +65057,7 @@
     <type>wms</type>
     <url>https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=pohi_vr2&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://svimik.com/Maa-amet_vastus_OSM.pdf</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/EE</country_code>
     <attribution-text>Maa-Ameti põhikaart</attribution-text>
     <projections>
       <code>EPSG:4326</code>
@@ -64976,6 +65128,7 @@
     <type>wms</type>
     <url>https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;Layers=reljeef&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://svimik.com/Maa-amet_vastus_OSM.pdf</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/EE</country_code>
     <attribution-text>Maa-Ameti reljeefikaart</attribution-text>
     <projections>
       <code>EPSG:4326</code>
@@ -65074,6 +65227,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Major%20Isidoro&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -65406,6 +65560,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Mar%20Vermelho&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -65730,6 +65885,7 @@
     <max-zoom>22</max-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2009-August/001095.html</permission-ref>
     <icon>https://www.miljodirektoratet.no/globalassets/profilbank/profilbank-bilder/m_logo_hoved_pos_rgb_thumb2.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://kartkatalog.miljodirektoratet.no/Dataset/Details/30</attribution-url>
     <attribution-text>© Miljødirektoratet</attribution-text>
     <projections>
@@ -65875,6 +66031,7 @@
     <max-zoom>22</max-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2009-August/001095.html</permission-ref>
     <icon>https://www.miljodirektoratet.no/globalassets/profilbank/profilbank-bilder/m_logo_hoved_pos_rgb_thumb2.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://kart.naturbase.no</attribution-url>
     <attribution-text>© Miljødirektoratet</attribution-text>
     <projections>
@@ -66030,6 +66187,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Minador%20do%20Negrao&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -66355,6 +66513,7 @@
     <min-zoom>2</min-zoom>
     <permission-ref>https://forum.openstreetmap.org/viewtopic.php?pid=356296#p356296</permission-ref>
     <icon>https://www.maanmittauslaitos.fi/apple-touch-icon.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/FI</country_code>
     <attribution-url>https://www.maanmittauslaitos.fi/en</attribution-url>
     <attribution-text>© Maanmittauslaitos</attribution-text>
     <bounds min-lat="70.0965" min-lon="31.58535" max-lat="59.15546" max-lon="19.08191">
@@ -66490,6 +66649,7 @@
     <min-zoom>2</min-zoom>
     <permission-ref>https://forum.openstreetmap.org/viewtopic.php?pid=356296#p356296</permission-ref>
     <icon>https://www.maanmittauslaitos.fi/apple-touch-icon.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/FI</country_code>
     <attribution-url>https://www.maanmittauslaitos.fi/en</attribution-url>
     <attribution-text>© Maanmittauslaitos</attribution-text>
     <bounds min-lat="70.0965" min-lon="31.58535" max-lat="59.15546" max-lon="19.08191">
@@ -66625,6 +66785,7 @@
     <min-zoom>2</min-zoom>
     <permission-ref>https://forum.openstreetmap.org/viewtopic.php?pid=356296#p356296</permission-ref>
     <icon>https://www.maanmittauslaitos.fi/apple-touch-icon.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/FI</country_code>
     <attribution-url>https://www.maanmittauslaitos.fi/en</attribution-url>
     <attribution-text>© Maanmittauslaitos</attribution-text>
     <bounds min-lat="70.0965" min-lon="31.58535" max-lat="59.15546" max-lon="19.08191">
@@ -66759,6 +66920,7 @@
     <max-zoom>14</max-zoom>
     <min-zoom>3</min-zoom>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/MTBmapno.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.mtbmap.no/</attribution-url>
     <attribution-text>© MTBmap.no</attribution-text>
     <bounds min-lat="72.01005" min-lon="32.07813" max-lat="57.35913" max-lon="-0.3751">
@@ -66946,6 +67108,7 @@
     <min-zoom>6</min-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2017-December/006312.html</permission-ref>
     <icon>https://kommunikasjon.ntb.no/data/images/00525/e8799776-4b69-4ec4-906d-46285ccb3dbe-w_300_h_100.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.nve.no/karttjenester/</attribution-url>
     <attribution-text>© NVE</attribution-text>
     <projections>
@@ -67091,6 +67254,7 @@
     <min-zoom>5</min-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2017-December/006312.html</permission-ref>
     <icon>https://kommunikasjon.ntb.no/data/images/00525/e8799776-4b69-4ec4-906d-46285ccb3dbe-w_300_h_100.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.nve.no/flaum-og-skred/kartlegging/aktsemdkart/aktsomhetskart-for-snoskred/</attribution-url>
     <attribution-text>© NVE</attribution-text>
     <projections>
@@ -67236,6 +67400,7 @@
     <min-zoom>6</min-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2017-December/006312.html</permission-ref>
     <icon>https://kommunikasjon.ntb.no/data/images/00525/e8799776-4b69-4ec4-906d-46285ccb3dbe-w_300_h_100.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.nve.no/karttjenester/</attribution-url>
     <attribution-text>© NVE</attribution-text>
     <projections>
@@ -67381,6 +67546,7 @@
     <min-zoom>6</min-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2017-December/006312.html</permission-ref>
     <icon>https://kommunikasjon.ntb.no/data/images/00525/e8799776-4b69-4ec4-906d-46285ccb3dbe-w_300_h_100.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.nve.no/karttjenester/</attribution-url>
     <attribution-text>© NVE</attribution-text>
     <projections>
@@ -67522,6 +67688,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Olho%20Dagua%20do%20Casado&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -68360,6 +68527,7 @@
     <type>tms</type>
     <url>https://{switch:a,b,c,d}.tile.osm-tools.org/osm/{zoom}/{x}/{y}.png</url>
     <max-zoom>20</max-zoom>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/KH</country_code>
     <attribution-url>http://www.osm-tools.org</attribution-url>
     <attribution-text>© osm-tools.org &amp; OpenStreetMap contributors, CC-BY-SA</attribution-text>
     <bounds min-lat="28.55628" min-lon="119.44841" max-lat="0.873" max-lon="92.17752">
@@ -69734,6 +69902,7 @@
     <max-zoom>18</max-zoom>
     <permission-ref>https://github.com/jbelien/openstreetmap-carto-be/wiki/Tile-Usage-Policy</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/OpenStreetMap.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BE</country_code>
     <attribution-url>https://openstreetmap.org/</attribution-url>
     <attribution-text>© OpenStreetMap contributors, CC-BY-SA; Tiles courtesy of GEO-6</attribution-text>
     <bounds min-lat="51.85301" min-lon="6.40785" max-lat="49.49825" max-lon="2.18458">
@@ -70120,6 +70289,7 @@
     <max-zoom>18</max-zoom>
     <permission-ref>https://github.com/jbelien/openstreetmap-carto-be/wiki/Tile-Usage-Policy</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/OpenStreetMap.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BE</country_code>
     <attribution-url>https://openstreetmap.org/</attribution-url>
     <attribution-text>© OpenStreetMap contributors, CC-BY-SA; Tiles courtesy of GEO-6</attribution-text>
     <bounds min-lat="51.85301" min-lon="6.40785" max-lat="49.49825" max-lon="2.18458">
@@ -70506,6 +70676,7 @@
     <max-zoom>18</max-zoom>
     <permission-ref>https://github.com/jbelien/openstreetmap-carto-be/wiki/Tile-Usage-Policy</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/OpenStreetMap.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BE</country_code>
     <attribution-url>https://openstreetmap.org/</attribution-url>
     <attribution-text>© OpenStreetMap contributors, CC-BY-SA; Tiles courtesy of GEO-6</attribution-text>
     <bounds min-lat="51.85301" min-lon="6.40785" max-lat="49.49825" max-lon="2.18458">
@@ -70902,6 +71073,7 @@
     <max-zoom>19</max-zoom>
     <min-zoom>2</min-zoom>
     <icon>https://www.townlands.ie/static/logo_small.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IE</country_code>
     <bounds min-lat="55.84142" min-lon="-5" max-lat="48.19557" max-lon="-22.01468">
       <shape>
         <point lat="54.09785" lon="-6.26218"/>
@@ -71139,6 +71311,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Palmeira%20dos%20Indios&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -71460,6 +71633,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Pao%20de%20Acucar&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -71781,6 +71955,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Poco%20das%20Trincheiras&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -72428,6 +72603,7 @@
     <min-zoom>13</min-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2018-January/006348.html</permission-ref>
     <icon>https://www.riksantikvaren.no/extension/riksantikvaren/design/internetsite/images/logo_na.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.riksantikvaren.no/Veiledning/Data-og-tjenester/Karttjenester</attribution-url>
     <attribution-text>© Riksantikvaren</attribution-text>
     <projections>
@@ -72619,6 +72795,7 @@
     <type>wms</type>
     <url>http://geo.rio.rj.gov.br/ArcGIS/services/Imagens/Mosaico_2013/MapServer/WMSServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=1&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://data.rio/about</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <date>2013</date>
     <attribution-url>https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Imagens/Mosaico_2013_UTM/MapServer</attribution-url>
     <attribution-text>Instituto Pereira Passos - Prefeitura da Cidade do Rio de Janeiro.</attribution-text>
@@ -72942,6 +73119,7 @@
     <url>https://pgeo3.rio.rj.gov.br/arcgis/services/Imagens/Mosaico_2015_UTM/MapServer/WmsServer?FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=0&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <max-zoom>13</max-zoom>
     <permission-ref>http://data.rio/about</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <date>2015</date>
     <attribution-url>https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Imagens/Mosaico_2015_UTM/MapServer</attribution-url>
     <attribution-text>Instituto Pereira Passos - Prefeitura da Cidade do Rio de Janeiro.</attribution-text>
@@ -73267,6 +73445,7 @@
     <max-zoom>20</max-zoom>
     <min-zoom>12</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/FR:Servers/tile.openstreetmap.fr#Route500.E2.84.A2.C2.A9.C2.AE</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/FX</country_code>
     <attribution-url>https://wiki.openstreetmap.org/wiki/FR:Servers/tile.openstreetmap.fr#Route500.E2.84.A2.C2.A9.C2.AE</attribution-url>
     <attribution-text>Tiles © cquest@Openstreetmap France, data © IGN, LO/OL</attribution-text>
     <bounds min-lat="51.52087" min-lon="10.09675" max-lat="41.05927" max-lon="-6.13339">
@@ -73874,6 +74053,7 @@
     <max-zoom>20</max-zoom>
     <min-zoom>6</min-zoom>
     <permission-ref>https://wiki.openstreetmap.org/wiki/WikiProject_France/BDCarthage</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/FX</country_code>
     <attribution-url>http://www.sandre.eaufrance.fr/actualite/la-bd-carthage-en-licence-ouverte-open-licence</attribution-url>
     <attribution-text>Tiles © cquest@Openstreetmap France, data © Onema - IGN, LO/OL</attribution-text>
     <bounds min-lat="51.52087" min-lon="10.09675" max-lat="41.05927" max-lon="-6.13339">
@@ -74562,6 +74742,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Santana%20do%20Ipanema&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -74883,6 +75064,7 @@
     <type>wms</type>
     <url>http://sigsc.sc.gov.br/sigserver/SIGSC/wms?SERVICE=WMS&amp;FORMAT=image/jpeg&amp;VERSION=1.1.1&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;LAYERS=OrtoRGB-Landsat-2012&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://sigsc.sds.sc.gov.br</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <date>2012</date>
     <attribution-url>http://sigsc.sds.sc.gov.br/download/termo_sigsc.pdf</attribution-url>
     <attribution-text>Sistema de Informações Geográficas - Governo de Santa Catarina</attribution-text>
@@ -75297,6 +75479,7 @@
     <max-zoom>22</max-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2018-January/006345.html</permission-ref>
     <icon>https://www.fosterhjemsforening.no/wp-content/uploads/2015/06/SSB_logo1.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.ssb.no/arealsentrum/</attribution-url>
     <attribution-text>© SSB</attribution-text>
     <projections>
@@ -75443,6 +75626,7 @@
     <max-zoom>22</max-zoom>
     <permission-ref>https://lists.nuug.no/pipermail/kart/2018-January/006345.html</permission-ref>
     <icon>https://www.fosterhjemsforening.no/wp-content/uploads/2015/06/SSB_logo1.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NO</country_code>
     <attribution-url>https://www.ssb.no/beftett</attribution-url>
     <attribution-text>© SSB</attribution-text>
     <projections>
@@ -75705,6 +75889,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Teotonio%20Vilela&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -77475,6 +77660,7 @@
     <min-zoom>7</min-zoom>
     <permission-ref>https://api.trafikinfo.trafikverket.se/Content/ContentDetails/58e384810bb22118e8041667</permission-ref>
     <icon>https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SE</country_code>
     <attribution-url>https://www.trafikverket.se</attribution-url>
     <attribution-text>© Trafikverket, CC0</attribution-text>
     <projections>
@@ -77627,6 +77813,7 @@
     <min-zoom>13</min-zoom>
     <permission-ref>https://api.trafikinfo.trafikverket.se/Content/ContentDetails/58e384810bb22118e8041667</permission-ref>
     <icon>https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SE</country_code>
     <attribution-url>https://www.trafikverket.se</attribution-url>
     <attribution-text>© Trafikverket, CC0</attribution-text>
     <projections>
@@ -77779,6 +77966,7 @@
     <min-zoom>3</min-zoom>
     <permission-ref>https://api.trafikinfo.trafikverket.se/Content/ContentDetails/58e384810bb22118e8041667</permission-ref>
     <icon>https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SE</country_code>
     <attribution-url>https://www.trafikverket.se</attribution-url>
     <attribution-text>© Trafikverket, CC0</attribution-text>
     <projections>
@@ -77931,6 +78119,7 @@
     <min-zoom>15</min-zoom>
     <permission-ref>https://api.trafikinfo.trafikverket.se/Content/ContentDetails/58e384810bb22118e8041667</permission-ref>
     <icon>https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SE</country_code>
     <attribution-url>https://www.trafikverket.se</attribution-url>
     <attribution-text>© Trafikverket, CC0</attribution-text>
     <bounds min-lat="69.06069" min-lon="24.15791" max-lat="55.13257" max-lon="10.40861">
@@ -78092,6 +78281,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Uniao%20dos%20Palmares&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>
@@ -78413,6 +78603,7 @@
     <type>wms</type>
     <url>http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Vicosa&amp;SERVICE=WMS&amp;FORMAT=image/png&amp;TRANSPARENT=TRUE&amp;VERSION=1.1.0&amp;SERVICE=WMS&amp;REQUEST=GetMap&amp;STYLES=&amp;SRS={proj}&amp;WIDTH={width}&amp;HEIGHT={height}&amp;BBOX={bbox}</url>
     <permission-ref>http://dados.al.gov.br/dataset/imagens-de-alta-resolucao</permission-ref>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/BR</country_code>
     <attribution-url>http://www.seplag.al.gov.br</attribution-url>
     <attribution-text>Secretaria de Estado do Planejamento, Gestão e Patrimônio</attribution-text>
     <projections>

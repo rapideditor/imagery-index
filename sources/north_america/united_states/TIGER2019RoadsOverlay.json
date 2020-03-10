@@ -10,5 +10,6 @@
   "start_date": "2019",
   "end_date": "2019",
   "overlay": true,
-  "icon": "TIGER.png"
+  "icon": "TIGER.png",
+  "country_code": "US"
 }

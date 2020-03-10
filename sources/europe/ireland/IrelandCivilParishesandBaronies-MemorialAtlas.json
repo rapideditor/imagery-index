@@ -10,6 +10,7 @@
   "start_date": "1901",
   "end_date": "1901",
   "icon": "IrelandCivilParishesandBaronies.png",
+  "country_code": "IE",
   "attribution": {
     "required": true,
     "url": "https://library.nuigalway.ie/collections/archives/depositedcollections/digitisedarchives/",

@@ -9,5 +9,6 @@
   "start_date": "2016",
   "end_date": "2016",
   "icon": "http://www.geoportal.segeth.df.gov.br/static/dist/img/logo_geoportal.png",
+  "country_code": "BR",
   "attribution": {"url": "http://www.geoportal.segeth.df.gov.br/", "text": "GeoPortal DF"}
 }

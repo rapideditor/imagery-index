@@ -9,6 +9,7 @@
   "license": "CC-BY-3.0",
   "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
   "icon": "Geoimageat.png",
+  "country_code": "AT",
   "available_projections": [
     "EPSG:3034",
     "EPSG:3035",

@@ -9,6 +9,7 @@
   "license_url": "https://lists.nuug.no/pipermail/kart/2009-August/001095.html",
   "overlay": true,
   "icon": "https://www.miljodirektoratet.no/globalassets/profilbank/profilbank-bilder/m_logo_hoved_pos_rgb_thumb2.png",
+  "country_code": "NO",
   "available_projections": [
     "EPSG:4267",
     "EPSG:4269",

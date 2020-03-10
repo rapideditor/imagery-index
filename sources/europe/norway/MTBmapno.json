@@ -8,5 +8,6 @@
   "min_zoom": 3,
   "max_zoom": 14,
   "icon": "MTBmapno.png",
+  "country_code": "NO",
   "attribution": {"url": "https://www.mtbmap.no/", "text": "© MTBmap.no"}
 }

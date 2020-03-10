@@ -10,6 +10,7 @@
   "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/Digiroad_permission_23032017.pdf",
   "overlay": true,
   "icon": "https://www.liikennevirasto.fi/livi-theme/images/general/liikennevirasto_logo_2x.png",
+  "country_code": "FI",
   "available_projections": [
     "EPSG:2391",
     "EPSG:2392",

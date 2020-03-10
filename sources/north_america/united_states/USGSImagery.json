@@ -8,5 +8,6 @@
   "min_zoom": 12,
   "max_zoom": 20,
   "privacy_policy_url": "https://www.usgs.gov/privacy-policies",
-  "icon": "USGS.png"
+  "icon": "USGS.png",
+  "country_code": "US"
 }

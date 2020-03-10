@@ -7,5 +7,6 @@
   "min_zoom": 13,
   "max_zoom": 18,
   "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
-  "overlay": true
+  "overlay": true,
+  "country_code": "CZ"
 }

@@ -10,6 +10,7 @@
   "start_date": "2013-07-19",
   "end_date": "2010-07-20",
   "icon": "https://www.geoportail.lu/static/img/lion.png",
+  "country_code": "LU",
   "attribution": {
     "url": "https://data.public.lu/en/datasets/carte-de-base-webservices-wms-et-wmts",
     "text": "Administration du Cadastre et de la Topographie"

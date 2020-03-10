@@ -8,6 +8,7 @@
   "max_zoom": 21,
   "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
   "best": true,
+  "country_code": "EE",
   "available_projections": ["EPSG:3301"],
   "attribution": {"required": true, "text": "Maa-Ameti ortofoto"}
 }

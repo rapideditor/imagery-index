@@ -10,6 +10,7 @@
   "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
   "overlay": true,
   "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+  "country_code": "NO",
   "available_projections": [
     "EPSG:3007",
     "EPSG:3008",

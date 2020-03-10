@@ -10,6 +10,7 @@
   "start_date": "2010",
   "end_date": "2010",
   "icon": "http://www.igeo.pt/favicon.ico",
+  "country_code": "PT",
   "available_projections": ["EPSG:3763", "EPSG:3857", "EPSG:4258", "EPSG:4326"],
   "attribution": {
     "url": "http://www.dgterritorio.pt/dados_abertos/cos/",

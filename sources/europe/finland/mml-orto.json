@@ -10,6 +10,7 @@
   "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=356296#p356296",
   "best": true,
   "icon": "https://www.maanmittauslaitos.fi/apple-touch-icon.png",
+  "country_code": "FI",
   "attribution": {
     "required": true,
     "url": "https://www.maanmittauslaitos.fi/en",

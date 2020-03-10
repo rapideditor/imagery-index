@@ -7,6 +7,7 @@
   "max_zoom": 21,
   "best": true,
   "icon": "SDFE.png",
+  "country_code": "DK",
   "attribution": {
     "required": true,
     "url": "https://download.kortforsyningen.dk/content/vilkaar-og-betingelser",

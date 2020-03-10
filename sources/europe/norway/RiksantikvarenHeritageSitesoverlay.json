@@ -10,6 +10,7 @@
   "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006348.html",
   "overlay": true,
   "icon": "https://www.riksantikvaren.no/extension/riksantikvaren/design/internetsite/images/logo_na.png",
+  "country_code": "NO",
   "available_projections": [
     "EPSG:3034",
     "EPSG:3857",

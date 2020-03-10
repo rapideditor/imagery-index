@@ -10,6 +10,7 @@
   "license_url": "https://lists.nuug.no/pipermail/kart/2017-December/006312.html",
   "overlay": true,
   "icon": "https://kommunikasjon.ntb.no/data/images/00525/e8799776-4b69-4ec4-906d-46285ccb3dbe-w_300_h_100.png",
+  "country_code": "NO",
   "available_projections": [
     "EPSG:3857",
     "EPSG:4326",

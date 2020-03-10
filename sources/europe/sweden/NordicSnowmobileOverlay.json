@@ -10,5 +10,6 @@
   "overlay": true,
   "icon": "https://kelkkareitit.fi/img/favicon.png",
   "i18n": true,
+  "country_code": "SE",
   "attribution": {"url": "https://kelkkareitit.fi/", "text": "© Kelkkareitit.fi"}
 }

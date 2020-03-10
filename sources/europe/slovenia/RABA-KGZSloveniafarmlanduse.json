@@ -9,6 +9,7 @@
   "permission_osm": "explicit",
   "license_url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ#License",
   "icon": "RABA.png",
+  "country_code": "SI",
   "attribution": {
     "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ",

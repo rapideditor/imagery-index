@@ -8,6 +8,7 @@
   "start_date": "2013-11",
   "end_date": "2013-11",
   "overlay": true,
+  "country_code": "DE",
   "available_projections": [
     "EPSG:3068",
     "EPSG:3857",

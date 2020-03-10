@@ -8,5 +8,6 @@
   "min_zoom": 12,
   "max_zoom": 20,
   "icon": "USDA.png",
+  "country_code": "US",
   "available_projections": ["EPSG:3857", "EPSG:4326"]
 }

@@ -7,6 +7,7 @@
   "min_zoom": 1,
   "license_url": "https://wiki.openstreetmap.org/wiki/BDGEx_Tile_Layer",
   "icon": "Exercito.png",
+  "country_code": "BR",
   "available_projections": ["EPSG:3857"],
   "attribution": {"text": "BDGEx"}
 }

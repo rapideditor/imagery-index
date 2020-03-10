@@ -5,6 +5,7 @@
   "name": "Estonia Basemap (Maaamet)",
   "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=pohi_vr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
+  "country_code": "EE",
   "available_projections": ["EPSG:4326"],
   "attribution": {"required": true, "text": "Maa-Ameti põhikaart"}
 }

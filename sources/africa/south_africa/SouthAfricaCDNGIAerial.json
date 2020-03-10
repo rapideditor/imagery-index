@@ -6,5 +6,6 @@
   "url": "http://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg",
   "min_zoom": 1,
   "max_zoom": 22,
-  "best": true
+  "best": true,
+  "country_code": "ZA"
 }

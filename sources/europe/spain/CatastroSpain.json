@@ -4,6 +4,7 @@
   "locationSet": {"include": ["es"]},
   "name": "Catastro Spain",
   "url": "https://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Catastro&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "country_code": "ES",
   "available_projections": [
     "EPSG:3857",
     "EPSG:4230",

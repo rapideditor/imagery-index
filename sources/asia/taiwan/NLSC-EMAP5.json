@@ -9,6 +9,7 @@
   "license_url": "https://data.gov.tw/license",
   "start_date": "2015",
   "icon": "NLSC.png",
+  "country_code": "TW",
   "attribution": {
     "required": true,
     "url": "https://maps.nlsc.gov.tw",

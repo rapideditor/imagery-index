@@ -9,5 +9,6 @@
   "license_url": "https://forum.openstreetmap.org/viewtopic.php?id=62083",
   "best": true,
   "icon": "https://register.geonorge.no/data/organizations/_L_norgeibilder96x96.png",
+  "country_code": "NO",
   "attribution": {"required": true, "url": "https://www.norgeibilder.no", "text": "© Geovekst"}
 }

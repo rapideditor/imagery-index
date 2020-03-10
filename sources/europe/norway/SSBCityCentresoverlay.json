@@ -9,6 +9,7 @@
   "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006345.html",
   "overlay": true,
   "icon": "https://www.fosterhjemsforening.no/wp-content/uploads/2015/06/SSB_logo1.png",
+  "country_code": "NO",
   "available_projections": [
     "EPSG:3857",
     "EPSG:4326",

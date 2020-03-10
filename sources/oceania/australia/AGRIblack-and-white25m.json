@@ -8,6 +8,7 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/Geoscience_Australia",
   "start_date": "2006",
   "end_date": "2011",
+  "country_code": "AU",
   "attribution": {
     "url": "https://data.gov.au/dataset/agri-the-australian-geographic-reference-image",
     "text": "AGRI, Geoscience Australia"

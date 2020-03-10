@@ -11,6 +11,7 @@
   "start_date": "2019-07-04",
   "end_date": "2019-08-22",
   "icon": "https://www.geoportail.lu/static/img/lion.png",
+  "country_code": "LU",
   "attribution": {
     "url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts",
     "text": "Administration du Cadastre et de la Topographie"

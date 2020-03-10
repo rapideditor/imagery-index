@@ -6,5 +6,6 @@
   "url": "https://www.townlands.ie/tiles/not_counties/{zoom}/{x}/{y}.png",
   "min_zoom": 2,
   "max_zoom": 19,
-  "icon": "https://www.townlands.ie/static/logo_small.png"
+  "icon": "https://www.townlands.ie/static/logo_small.png",
+  "country_code": "IE"
 }

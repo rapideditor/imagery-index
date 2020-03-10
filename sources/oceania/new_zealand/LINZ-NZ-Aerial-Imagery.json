@@ -9,6 +9,7 @@
   "license_url": "https://wiki.openstreetmap.org/wiki/Contributors#LINZ",
   "best": true,
   "icon": "https://koordinates.a.ssl.fastly.net/media/settings/branding/favicon-lds.ico",
+  "country_code": "NZ",
   "attribution": {
     "required": true,
     "url": "https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data",

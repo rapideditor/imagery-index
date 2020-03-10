@@ -10,6 +10,7 @@
   "license_url": "https://github.com/jbelien/openstreetmap-carto-be/wiki/Tile-Usage-Policy",
   "icon": "OpenStreetMap.png",
   "i18n": true,
+  "country_code": "BE",
   "attribution": {
     "required": true,
     "url": "https://openstreetmap.org/",

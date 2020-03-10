@@ -7,6 +7,7 @@
   "max_zoom": 15,
   "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
   "icon": "NLSC.png",
+  "country_code": "TW",
   "attribution": {
     "required": true,
     "url": "https://maps.nlsc.gov.tw/",

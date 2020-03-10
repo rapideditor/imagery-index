@@ -7,5 +7,6 @@
   "max_zoom": 19,
   "license_url": "https://wiki.openstreetmap.org/wiki/IBGE_Tile_Layer",
   "icon": "IBGE.png",
+  "country_code": "BR",
   "attribution": {"text": "IBGE"}
 }

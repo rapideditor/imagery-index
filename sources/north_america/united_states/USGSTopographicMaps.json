@@ -6,5 +6,6 @@
   "url": "https://caltopo.s3.amazonaws.com/topo/{zoom}/{x}/{y}.png",
   "max_zoom": 16,
   "icon": "USGS.png",
+  "country_code": "US",
   "attribution": {"required": true, "url": "https://caltopo.com", "text": "© Caltopo"}
 }

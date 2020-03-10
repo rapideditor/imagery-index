@@ -9,5 +9,6 @@
   "max_zoom": 20,
   "license_url": "https://wiki.openstreetmap.org/wiki/GSI_KIBAN",
   "i18n": true,
+  "country_code": "JP",
   "attribution": {"url": "https://www.finds.jp/siteinfo/c_tou.html.ja", "text": "GSI KIBAN 2500"}
 }

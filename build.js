@@ -1,4 +1,5 @@
 const colors = require('colors/safe');
+const CountryCoder = require('@ideditor/country-coder');
 const fs = require('fs');
 const glob = require('glob');
 const LocationConflation = require('@ideditor/location-conflation');
@@ -135,7 +136,7 @@ function collectSources(tstrings, featureCollection) {
   process.stdout.write('📦  Sources: ');
 
   glob.sync('sources/**/*.json').forEach(file => {
-    let contents = fs.readFileSync(file, 'utf8');
+    const contents = fs.readFileSync(file, 'utf8');
     let source;
     try {
       source = JSON.parse(contents);
@@ -146,23 +147,20 @@ function collectSources(tstrings, featureCollection) {
     }
 
     // Cleanup the source files to be consistent.
-    // Reorder properties and sort array values
+    // Reorder properties and sort array values.
     let obj = {};
-    if (source.id)    { obj.id = source.id; }
-    if (source.type)  { obj.type = source.type; }
+    obj.id = source.id;
+    obj.type = source.type;
 
-    if (source.locationSet) {
-      obj.locationSet = {};
-      if (source.locationSet.include) {
-        obj.locationSet.include = source.locationSet.include;
-        // force i18n true for worldwide sources
-        if (source.locationSet.include.indexOf('001') !== -1) source.i18n = true;
-        if (source.locationSet.include.indexOf('Q2') !== -1) source.i18n = true;
-      }
-      if (source.locationSet.exclude) {
-        obj.locationSet.exclude = source.locationSet.exclude;
-      }
+    // locationSet
+    obj.locationSet = {};
+    obj.locationSet.include = source.locationSet.include;
+    if (source.locationSet.exclude) {
+      obj.locationSet.exclude = source.locationSet.exclude;
     }
+    // force `i18n = true` for worldwide sources
+    if (source.locationSet.include.indexOf('001') !== -1) source.i18n = true;
+    if (source.locationSet.include.indexOf('Q2') !== -1) source.i18n = true;
 
     if (source.name)                { obj.name = source.name; }
     if (source.description)         { obj.description = source.description; }
@@ -180,6 +178,15 @@ function collectSources(tstrings, featureCollection) {
     if (source.overlay)             { obj.overlay = source.overlay; }
     if (source.icon)                { obj.icon = source.icon; }
     if (source.i18n)                { obj.i18n = source.i18n; }
+
+    if (source.country_code) {
+      obj.country_code = source.country_code;         // copy existing, or..
+    } else if (source.locationSet.include.length) {   // detect ISO 3166-1 code from locationSet
+      let feature = CountryCoder.feature(source.locationSet.include[0]);
+      if (feature && feature.properties.iso1A2) {
+        obj.country_code = feature.properties.iso1A2;
+      }
+    }
 
     if (source.available_projections)  {
       let unique = [...new Set(source.available_projections)];

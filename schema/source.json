@@ -123,6 +123,12 @@
       "type": "boolean"
     },
 
+    "country_code": {
+      "description": "(optional) The ISO 3166-1 alpha-2 two letter country code in uppercase.",
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+
     "available_projections": {
       "description": "(optional) WMS-only: An array of available projections supported by the imagery source",
       "type": "array",

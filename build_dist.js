@@ -182,8 +182,6 @@ function generateLegacyImageryGeojson() {
     }
     delete feature.properties.locationSet;
 
-    // todo restore country_code?
-
     keepFeatures.push(feature);
   });
 
@@ -243,9 +241,10 @@ function generateLegacyImageryJson() {
     if (source.end_date)               { obj.end_date = source.end_date; }
     if (source.overlay)                { obj.overlay = source.overlay; }
     if (source.icon)                   { obj.icon = iconPath(source.icon); }
+    if (source.country_code)           { obj.country_code = source.country_code; }
     if (source.available_projections)  { obj.available_projections = source.available_projections; }
 
-    // todo - country_code? default?
+    // todo - default?
 
     if (source.attribution) {
       obj.attribution = {};
@@ -327,8 +326,9 @@ function generateLegacyImageryXml() {
     if (source.min_zoom)     { entry.ele('min-zoom').txt(source.min_zoom); }
     if (source.license_url)  { entry.ele('permission-ref').txt(source.license_url); }
     if (source.icon)         { entry.ele('icon').txt(iconPath(source.icon)); }
+    if (source.country_code) { entry.ele('country_code').txt(iconPath(source.country_code)); }
 
-    // todo - country_code? default?
+    // todo - default?
 
     if (source.start_date) {
       let date = entry.ele('date');

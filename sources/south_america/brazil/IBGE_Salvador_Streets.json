@@ -6,5 +6,6 @@
   "description": "Streets geometry and names of Salvador, Bahia. Source: Faces de Logradouro - IBGE.",
   "url": "https://api.mapbox.com/styles/v1/wille/cj8lp78dn62wl2rquim47qo0g/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g",
   "max_zoom": 20,
-  "overlay": true
+  "overlay": true,
+  "country_code": "BR"
 }

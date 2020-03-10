@@ -10,6 +10,7 @@
   "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006347.html",
   "overlay": true,
   "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg/175px-Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg.png",
+  "country_code": "NO",
   "available_projections": [
     "EPSG:3857",
     "EPSG:4326",

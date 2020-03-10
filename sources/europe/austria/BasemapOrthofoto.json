@@ -13,5 +13,6 @@
   "best": true,
   "icon": "https://www.basemap.at/images/logo_basemap.jpg",
   "i18n": true,
+  "country_code": "AT",
   "attribution": {"required": true, "url": "https://basemap.at", "text": "basemap.at"}
 }

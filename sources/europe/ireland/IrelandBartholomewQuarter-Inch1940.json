@@ -9,6 +9,7 @@
   "start_date": "1940",
   "end_date": "1940",
   "icon": "NLS.png",
+  "country_code": "IE",
   "attribution": {
     "required": true,
     "url": "https://geo.nls.uk/maps",

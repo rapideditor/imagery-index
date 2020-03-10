@@ -6,6 +6,7 @@
   "url": "https://cartes.geogratis.gc.ca/wms/roads_fr?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=routes&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
   "min_zoom": 4,
   "max_zoom": 20,
+  "country_code": "CA",
   "available_projections": [
     "EPSG:2019",
     "EPSG:2294",

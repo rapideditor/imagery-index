@@ -8,6 +8,7 @@
   "min_zoom": 7,
   "max_zoom": 16,
   "icon": "https://israelhiking.osm.org.il/content/favicons/favicon.ico",
+  "country_code": "IL",
   "attribution": {
     "required": true,
     "url": "https://israelhiking.osm.org.il/",

@@ -611,6 +611,7 @@
             "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/Geoscience_Australia",
             "start_date": "2006",
             "end_date": "2011",
+            "country_code": "AU",
             "attribution": {
               "url": "https://data.gov.au/dataset/agri-the-australian-geographic-reference-image",
               "text": "AGRI, Geoscience Australia"
@@ -1216,6 +1217,7 @@
             "max_zoom": 20,
             "license_url": "https://wiki.openstreetmap.org/wiki/FR:WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)#Licence_du_r.C3.A9sultat",
             "overlay": true,
+            "country_code": "FX",
             "attribution": {
               "required": true,
               "url": "https://wiki.openstreetmap.org/wiki/FR:WikiProject_France/WikiProject_Base_Adresses_Nationale_Ouverte_(BANO)#Licence_du_r.C3.A9sultat",
@@ -1233,6 +1235,7 @@
             "max_zoom": 22,
             "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation#Mention_de_la_source_et_du_mill.C3.A9sime",
             "icon": "https://svn.openstreetmap.org/applications/editors/josm/plugins/cadastre-fr/images/cadastre_small.png",
+            "country_code": "FX",
             "attribution": {
               "required": true,
               "url": "https://wiki.openstreetmap.org/wiki/WikiProject_Cadastre_Fran%C3%A7ais/Conditions_d%27utilisation",
@@ -1250,6 +1253,7 @@
             "max_zoom": 20,
             "license_url": "https://wiki.openstreetmap.org/wiki/FR:Servers/tile.openstreetmap.fr#Route500.E2.84.A2.C2.A9.C2.AE",
             "overlay": true,
+            "country_code": "FX",
             "attribution": {
               "required": true,
               "url": "https://wiki.openstreetmap.org/wiki/FR:Servers/tile.openstreetmap.fr#Route500.E2.84.A2.C2.A9.C2.AE",
@@ -1267,6 +1271,7 @@
             "max_zoom": 20,
             "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/BDCarthage",
             "overlay": true,
+            "country_code": "FX",
             "attribution": {
               "required": true,
               "url": "http://www.sandre.eaufrance.fr/actualite/la-bd-carthage-en-licence-ouverte-open-licence",
@@ -1905,6 +1910,7 @@
             "min_zoom": 1,
             "license_url": "https://wiki.openstreetmap.org/wiki/BDGEx_Tile_Layer",
             "icon": "Exercito.png",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857"],
             "attribution": {"text": "BDGEx"}
           },
@@ -1919,6 +1925,7 @@
             "start_date": "2015",
             "end_date": "2015",
             "icon": "http://www.geoportal.segeth.df.gov.br/static/dist/img/logo_geoportal.png",
+            "country_code": "BR",
             "attribution": {
               "url": "http://www.geoportal.segeth.df.gov.br/",
               "text": "GeoPortal DF"
@@ -1935,6 +1942,7 @@
             "start_date": "2016",
             "end_date": "2016",
             "icon": "http://www.geoportal.segeth.df.gov.br/static/dist/img/logo_geoportal.png",
+            "country_code": "BR",
             "attribution": {
               "url": "http://www.geoportal.segeth.df.gov.br/",
               "text": "GeoPortal DF"
@@ -1951,6 +1959,7 @@
             "start_date": "2017",
             "end_date": "2017",
             "icon": "http://www.geoportal.segeth.df.gov.br/static/dist/img/logo_geoportal.png",
+            "country_code": "BR",
             "attribution": {
               "url": "http://www.geoportal.segeth.df.gov.br/",
               "text": "GeoPortal DF"
@@ -1964,6 +1973,7 @@
             "url": "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_Aglomerado_Rural_Isolado_P&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
             "license_url": "http://dados.gov.br",
             "overlay": true,
+            "country_code": "BR",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -1980,6 +1990,7 @@
             "url": "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_Pista_Ponto_Pouso_L&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
             "license_url": "http://dados.gov.br",
             "overlay": true,
+            "country_code": "BR",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -1996,6 +2007,7 @@
             "url": "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_Trecho_Drenagem_L&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
             "license_url": "http://dados.gov.br",
             "overlay": true,
+            "country_code": "BR",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -2012,6 +2024,7 @@
             "url": "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_Trecho_Rodoviario_L&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image/png&TRANSPARENT=TRUE",
             "license_url": "http://dados.gov.br",
             "overlay": true,
+            "country_code": "BR",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -2028,6 +2041,7 @@
             "url": "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_Terra_Indigena_A&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
             "license_url": "http://dados.gov.br",
             "overlay": true,
+            "country_code": "BR",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -2044,6 +2058,7 @@
             "url": "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_Unidade_Uso_Sustentavel_A&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
             "license_url": "http://dados.gov.br",
             "overlay": true,
+            "country_code": "BR",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -2060,6 +2075,7 @@
             "url": "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BC250_Vila_P&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
             "license_url": "http://dados.gov.br",
             "overlay": true,
+            "country_code": "BR",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -2076,6 +2092,7 @@
             "url": "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BCIM_Est_Gerad_Energia_Eletrica_P&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
             "license_url": "http://dados.gov.br",
             "overlay": true,
+            "country_code": "BR",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -2092,6 +2109,7 @@
             "url": "https://geoservicos.ibge.gov.br/geoserver/wms?service=WMS&version=1.1.0&request=GetMap&layers=CCAR:BCIM_Municipio_A&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
             "license_url": "http://dados.gov.br",
             "overlay": true,
+            "country_code": "BR",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -2109,6 +2127,7 @@
             "url": "https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/wille/cirnnxni1000jg8nfppc8g7pm/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g",
             "max_zoom": 20,
             "overlay": true,
+            "country_code": "BR",
             "attribution": {"text": "IBGE"}
           },
           "IBGE_Nomes_Ruas": {
@@ -2122,6 +2141,7 @@
             "license_url": "https://wiki.openstreetmap.org/wiki/IBGE_Street_Names",
             "overlay": true,
             "icon": "IBGE.png",
+            "country_code": "BR",
             "attribution": {"text": "IBGE, OSM Brasil"}
           },
           "IBGE_Salvador_Streets": {
@@ -2132,7 +2152,8 @@
             "description": "Streets geometry and names of Salvador, Bahia. Source: Faces de Logradouro - IBGE.",
             "url": "https://api.mapbox.com/styles/v1/wille/cj8lp78dn62wl2rquim47qo0g/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1Ijoid2lsbGUiLCJhIjoicFNVWk5VWSJ9.hluCd0YGvYHNlFi_utWe2g",
             "max_zoom": 20,
-            "overlay": true
+            "overlay": true,
+            "country_code": "BR"
           },
           "IBGE_Setores_Rurais": {
             "id": "IBGE_Setores_Rurais",
@@ -2143,6 +2164,7 @@
             "max_zoom": 14,
             "license_url": "https://wiki.openstreetmap.org/wiki/IBGE_Tile_Layer",
             "icon": "IBGE.png",
+            "country_code": "BR",
             "attribution": {"text": "IBGE"}
           },
           "IBGE_Setores_Urbanos": {
@@ -2154,6 +2176,7 @@
             "max_zoom": 19,
             "license_url": "https://wiki.openstreetmap.org/wiki/IBGE_Tile_Layer",
             "icon": "IBGE.png",
+            "country_code": "BR",
             "attribution": {"text": "IBGE"}
           },
           "Sao_miguel_dos_campos": {
@@ -2163,6 +2186,7 @@
             "name": "São Miguel dos Campos AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Sao_miguel_dos_campos&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2176,6 +2200,7 @@
             "name": "Palestina AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Palestina&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2189,6 +2214,7 @@
             "name": "Piranhas AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Piranhas&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2202,6 +2228,7 @@
             "name": "Alagoas Litoral 2006",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Ortofotos%202006&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2215,6 +2242,7 @@
             "name": "Arapiraca AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Arapiraca&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2228,6 +2256,7 @@
             "name": "Branquinha AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?service=WMS&version=1.1.0&request=GetMap&layers=Branquinha&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -2247,6 +2276,7 @@
             "name": "Cajueiro AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Cajueiro&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2260,6 +2290,7 @@
             "name": "Campo Alegre AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Campo%20Alegre&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2273,6 +2304,7 @@
             "name": "Capela AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Capela&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2286,6 +2318,7 @@
             "name": "Delmiro Gouveia AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Delmiro%20Gouveia&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2300,6 +2333,7 @@
             "url": "http://portal.der.es.gov.br/geoserver/wms?SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=deres-ext:TRECHOINFO&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://www.acessoainformacao.es.gov.br/DER-ES",
             "overlay": true,
+            "country_code": "BR",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -2318,6 +2352,7 @@
             "name": "Estrela de Alagoas",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Estrela%20de%20Alagoas&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2331,6 +2366,7 @@
             "name": "Girau do Ponciano",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Girau%20do%20Ponciano&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2347,6 +2383,7 @@
             "license_url": "http://siglon.londrina.pr.gov.br",
             "start_date": "2011",
             "end_date": "2011",
+            "country_code": "BR",
             "attribution": {
               "url": "http://siglon.londrina.pr.gov.br",
               "text": "Prefeitura do Londrinas, PR"
@@ -2359,6 +2396,7 @@
             "name": "Major Isidoro AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Major%20Isidoro&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2372,6 +2410,7 @@
             "name": "Mar Vermelho AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Mar%20Vermelho&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2385,6 +2424,7 @@
             "name": "Minador do Negrão",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Minador%20do%20Negrao&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2398,6 +2438,7 @@
             "name": "Olho d'Agua do Casado AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Olho%20Dagua%20do%20Casado&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2411,6 +2452,7 @@
             "name": "Palmeira dos Indios AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Palmeira%20dos%20Indios&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2424,6 +2466,7 @@
             "name": "Pão de Açucar AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Pao%20de%20Acucar&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2437,6 +2480,7 @@
             "name": "Poço das Trincheiras AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Poco%20das%20Trincheiras&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2452,6 +2496,7 @@
             "license_url": "http://data.rio/about",
             "start_date": "2013",
             "end_date": "2013",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:29193"],
             "attribution": {
               "url": "https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Imagens/Mosaico_2013_UTM/MapServer",
@@ -2468,6 +2513,7 @@
             "license_url": "http://data.rio/about",
             "start_date": "2015",
             "end_date": "2015",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:29193"],
             "attribution": {
               "url": "https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Imagens/Mosaico_2015_UTM/MapServer",
@@ -2481,6 +2527,7 @@
             "name": "Santana do Ipanema AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Santana%20do%20Ipanema&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2496,6 +2543,7 @@
             "license_url": "http://sigsc.sds.sc.gov.br",
             "start_date": "2012",
             "end_date": "2012",
+            "country_code": "BR",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -2515,6 +2563,7 @@
             "name": "Teotonio Vilela AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Teotonio%20Vilela&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2528,6 +2577,7 @@
             "name": "União dos Palmares AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Uniao%20dos%20Palmares&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -2541,6 +2591,7 @@
             "name": "Viçosa AL",
             "url": "http://geoserver.dados.al.gov.br:8080/geoserver/Alagoas/ows?LAYERS=Vicosa&SERVICE=WMS&FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.0&SERVICE=WMS&REQUEST=GetMap&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://dados.al.gov.br/dataset/imagens-de-alta-resolucao",
+            "country_code": "BR",
             "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:22525"],
             "attribution": {
               "url": "http://www.seplag.al.gov.br",
@@ -5389,6 +5440,7 @@
             "start_date": "2010",
             "end_date": "2010",
             "icon": "http://www.igeo.pt/favicon.ico",
+            "country_code": "PT",
             "available_projections": [
               "EPSG:3763",
               "EPSG:3857",
@@ -5412,6 +5464,7 @@
             "start_date": "2004",
             "end_date": "2006",
             "icon": "http://www.igeo.pt/favicon.ico",
+            "country_code": "PT",
             "available_projections": [
               "EPSG:3763",
               "EPSG:3857",
@@ -6428,6 +6481,7 @@
             "locationSet": {"include": ["ca", "pm"]},
             "name": "Canvec - English",
             "url": "https://maps.geogratis.gc.ca/wms/canvec_en?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=canvec&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+            "country_code": "CA",
             "available_projections": [
               "EPSG:2019",
               "EPSG:2294",
@@ -6491,6 +6545,7 @@
             "locationSet": {"include": ["ca", "pm"]},
             "name": "Canvec - French",
             "url": "https://maps.geogratis.gc.ca/wms/canvec_fr?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=canvec&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+            "country_code": "CA",
             "available_projections": [
               "EPSG:2019",
               "EPSG:2294",
@@ -6555,6 +6610,7 @@
             "name": "Geobase Hydrography - English",
             "url": "https://maps.geogratis.gc.ca/wms/hydro_network_en?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=nhn:nhn&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "overlay": true,
+            "country_code": "CA",
             "available_projections": [
               "EPSG:2019",
               "EPSG:2294",
@@ -6619,6 +6675,7 @@
             "name": "Geobase Hydrography - French",
             "url": "https://maps.geogratis.gc.ca/wms/hydro_network_fr?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=nhn:nhn&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "overlay": true,
+            "country_code": "CA",
             "available_projections": [
               "EPSG:2019",
               "EPSG:2294",
@@ -6684,6 +6741,7 @@
             "url": "https://maps.geogratis.gc.ca/wms/roads_en?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=roads&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "min_zoom": 4,
             "max_zoom": 20,
+            "country_code": "CA",
             "available_projections": [
               "EPSG:2019",
               "EPSG:2294",
@@ -6749,6 +6807,7 @@
             "url": "https://cartes.geogratis.gc.ca/wms/roads_fr?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=routes&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "min_zoom": 4,
             "max_zoom": 20,
+            "country_code": "CA",
             "available_projections": [
               "EPSG:2019",
               "EPSG:2294",
@@ -6948,6 +7007,7 @@
             "locationSet": {"include": ["es"]},
             "name": "Catastro Spain",
             "url": "https://ovc.catastro.meh.es/Cartografia/WMS/ServidorWMS.aspx?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=Catastro&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+            "country_code": "ES",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4230",
@@ -6973,6 +7033,7 @@
             "name": "PNOA Spain",
             "url": "https://www.idee.es/wms/PNOA/PNOA?REQUEST=GetMap&VERSION=1.1.1&SERVICE=WMS&SRS={proj}&LAYERS=pnoa&STYLES=default&FORMAT=image/jpeg&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "best": true,
+            "country_code": "ES",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4230",
@@ -7000,6 +7061,7 @@
             "url": "https://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&VERSION=1.0.0&Layer=OI.OrthoimageCoverage&Style=default&Format=image/png&TileMatrixSet=GoogleMapsCompatible&TileMatrix={zoom}&TileRow={y}&TileCol={x}",
             "max_zoom": 20,
             "best": true,
+            "country_code": "ES",
             "attribution": {"required": true, "text": "PNOA"}
           }
         }
@@ -7777,6 +7839,7 @@
             "url": "https://wms.cuzk.cz/wms.asp?service=WMS&VERSION=1.1.1&REQUEST=GetMap&SRS={proj}&LAYERS=parcelni_cisla_i,obrazy_parcel_i,RST_KMD_I,hranice_parcel_i,DEF_BUDOVY,RST_KN_I,dalsi_p_mapy_i,prehledka_kat_prac,prehledka_kat_uz,prehledka_kraju-linie&FORMAT=image/png&transparent=TRUE&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
             "overlay": true,
+            "country_code": "CZ",
             "available_projections": [
               "EPSG:3034",
               "EPSG:3035",
@@ -7804,7 +7867,8 @@
             "min_zoom": 13,
             "max_zoom": 18,
             "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap",
-            "overlay": true
+            "overlay": true,
+            "country_code": "CZ"
           },
           "Czech_RUIAN-budovy": {
             "id": "Czech_RUIAN-budovy",
@@ -7815,6 +7879,7 @@
             "min_zoom": 12,
             "max_zoom": 20,
             "license_url": "https://wiki.openstreetmap.org/wiki/Cs:WikiProjekt_%C4%8Cesko/freemap#.C4.8C.C3.9AZK_-_R.C3.9AIAN",
+            "country_code": "CZ",
             "attribution": {
               "required": true,
               "url": "https://poloha.net/",
@@ -7830,6 +7895,7 @@
             "min_zoom": 12,
             "max_zoom": 20,
             "license_url": "https://wiki.openstreetmap.org/wiki/Cs:WikiProjekt_%C4%8Cesko/freemap#.C4.8C.C3.9AZK_-_R.C3.9AIAN",
+            "country_code": "CZ",
             "attribution": {
               "required": true,
               "url": "https://poloha.net/",
@@ -7843,6 +7909,7 @@
             "name": "Czech pLPIS",
             "url": "https://eagri.cz/public/app/wms/plpis.fcgi?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=LPIS_FB4,LPIS_FB4_KOD&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}&TRANSPARENT=true",
             "license_url": "https://wiki.openstreetmap.org/wiki/Cs:WikiProjekt_%C4%8Cesko/freemap#pLPIS_-_ve.C5.99ejn.C3.BD_registr_p.C5.AFdy",
+            "country_code": "CZ",
             "available_projections": ["EPSG:4326", "EPSG:32633", "EPSG:102067"]
           }
         }
@@ -8929,6 +8996,7 @@
             "license_url": "http://e.tile.openstreetmap.hu/ortofoto2000/license.txt",
             "start_date": "2000",
             "end_date": "2000",
+            "country_code": "HU",
             "attribution": {
               "required": true,
               "url": "https://www.fomi.hu",
@@ -8945,6 +9013,7 @@
             "license_url": "http://e.tile.openstreetmap.hu/ortofoto2005/license.txt",
             "start_date": "2005",
             "end_date": "2005",
+            "country_code": "HU",
             "attribution": {
               "required": true,
               "url": "https://www.fomi.hu",
@@ -8959,6 +9028,7 @@
             "url": "http://{switch:h,i,j}.tile.openstreetmap.hu/turistautak/{zoom}/{x}/{y}.png",
             "max_zoom": 18,
             "license_url": "http://www.openstreetmap.hu",
+            "country_code": "HU",
             "attribution": {
               "required": true,
               "url": "https://www.openstreetmap.org",
@@ -9287,6 +9357,7 @@
             "min_zoom": 8,
             "max_zoom": 16,
             "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png",
+            "country_code": "SK",
             "attribution": {
               "required": true,
               "text": "Copyright ©2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved."
@@ -9301,6 +9372,7 @@
             "min_zoom": 8,
             "max_zoom": 16,
             "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png",
+            "country_code": "SK",
             "attribution": {
               "required": true,
               "text": "Copyright ©2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved."
@@ -9315,6 +9387,7 @@
             "min_zoom": 8,
             "max_zoom": 16,
             "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png",
+            "country_code": "SK",
             "attribution": {
               "required": true,
               "text": "Copyright ©2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved."
@@ -9329,6 +9402,7 @@
             "min_zoom": 8,
             "max_zoom": 16,
             "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png",
+            "country_code": "SK",
             "attribution": {
               "required": true,
               "text": "Copyright ©2007-2012 Freemap Slovakia (www.freemap.sk). Some rights reserved."
@@ -9341,7 +9415,8 @@
             "name": "Slovakia Historic Maps",
             "url": "https://tms.freemap.sk/historicke/{zoom}/{x}/{y}.png",
             "max_zoom": 12,
-            "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png"
+            "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png",
+            "country_code": "SK"
           }
         }
       },
@@ -10156,6 +10231,7 @@
             "url": "https://mapwarper.net/layers/tile/101/{zoom}/{x}/{y}.png",
             "max_zoom": 18,
             "icon": "IrelandBritishWarOffice.png",
+            "country_code": "IE",
             "attribution": {
               "required": true,
               "url": "https://wiki.openstreetmap.org/wiki/Ireland/Background_Imagery#Trinity_College_Dublin",
@@ -10173,6 +10249,7 @@
             "start_date": "1941",
             "end_date": "1943",
             "icon": "NLS.png",
+            "country_code": "IE",
             "attribution": {
               "required": true,
               "url": "https://geo.nls.uk/maps",
@@ -10191,6 +10268,7 @@
             "start_date": "1901",
             "end_date": "1901",
             "icon": "IrelandCivilParishesandBaronies.png",
+            "country_code": "IE",
             "attribution": {
               "required": true,
               "url": "https://library.nuigalway.ie/collections/archives/depositedcollections/digitisedarchives/",
@@ -10208,6 +10286,7 @@
             "start_date": "1940",
             "end_date": "1940",
             "icon": "NLS.png",
+            "country_code": "IE",
             "attribution": {
               "required": true,
               "url": "https://geo.nls.uk/maps",
@@ -10222,7 +10301,8 @@
             "url": "https://www.townlands.ie/tiles/not_counties/{zoom}/{x}/{y}.png",
             "min_zoom": 2,
             "max_zoom": 19,
-            "icon": "https://www.townlands.ie/static/logo_small.png"
+            "icon": "https://www.townlands.ie/static/logo_small.png",
+            "country_code": "IE"
           }
         }
       },
@@ -10258,6 +10338,7 @@
             "license_url": "https://wiki.openstreetmap.org/wiki/GURS",
             "overlay": true,
             "icon": "GURS.png",
+            "country_code": "SI",
             "attribution": {
               "required": true,
               "url": "https://www.gov.si/drzavni-organi/organi-v-sestavi/geodetska-uprava/",
@@ -10275,6 +10356,7 @@
             "license_url": "https://wiki.openstreetmap.org/wiki/GURS",
             "overlay": true,
             "icon": "GURS.png",
+            "country_code": "SI",
             "attribution": {
               "required": true,
               "url": "https://www.gov.si/drzavni-organi/organi-v-sestavi/geodetska-uprava/",
@@ -10292,6 +10374,7 @@
             "permission_osm": "explicit",
             "license_url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ#License",
             "icon": "RABA.png",
+            "country_code": "SI",
             "attribution": {
               "required": true,
               "url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ",
@@ -10309,6 +10392,7 @@
             "permission_osm": "explicit",
             "license_url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ#License",
             "icon": "RABA.png",
+            "country_code": "SI",
             "attribution": {
               "required": true,
               "url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ",
@@ -10869,6 +10953,7 @@
             "url": "https://kortforsyningen.kms.dk/cp_inspire?login=OpenStreetMapDK2015&password=Gall4Peters&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=CP.CadastralParcel&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "max_zoom": 20,
             "icon": "SDFE.png",
+            "country_code": "DK",
             "available_projections": [
               "EPSG:3395",
               "EPSG:3857",
@@ -10896,6 +10981,7 @@
             "url": "https://kortforsyningen.kms.dk/topo25?FORMAT=image/png&VERSION=1.1.1&login=OpenStreetMapDK2015&password=Gall4Peters&SERVICE=WMS&REQUEST=GetMap&Layers=topo25_klassisk&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "max_zoom": 19,
             "icon": "SDFE.png",
+            "country_code": "DK",
             "available_projections": [
               "EPSG:3395",
               "EPSG:3857",
@@ -10924,6 +11010,7 @@
             "max_zoom": 21,
             "best": true,
             "icon": "SDFE.png",
+            "country_code": "DK",
             "attribution": {
               "required": true,
               "url": "https://download.kortforsyningen.dk/content/vilkaar-og-betingelser",
@@ -10938,6 +11025,7 @@
             "url": "https://kortforsyningen.kms.dk/topo_skaermkort?FORMAT=image/png&VERSION=1.1.1&login=OpenStreetMapDK2015&password=Gall4Peters&SERVICE=WMS&REQUEST=GetMap&Layers=dtk_skaermkort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "max_zoom": 19,
             "icon": "SDFE.png",
+            "country_code": "DK",
             "available_projections": [
               "EPSG:3395",
               "EPSG:3857",
@@ -10965,6 +11053,7 @@
             "url": "https://kortforsyningen.kms.dk/dhm?login=OpenStreetMapDK2015&password=Gall4Peters&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=dhm_overflade_skyggekort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "max_zoom": 20,
             "icon": "SDFE.png",
+            "country_code": "DK",
             "available_projections": [
               "EPSG:3395",
               "EPSG:3857",
@@ -10992,6 +11081,7 @@
             "url": "https://kortforsyningen.kms.dk/dhm?login=OpenStreetMapDK2015&password=Gall4Peters&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=dhm_terraen_skyggekort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "max_zoom": 20,
             "icon": "SDFE.png",
+            "country_code": "DK",
             "available_projections": [
               "EPSG:3395",
               "EPSG:3857",
@@ -11945,6 +12035,7 @@
             "license_url": "https://wiki.openstreetmap.org/wiki/Geoportal.gov.pl",
             "best": true,
             "icon": "https://wiki.openstreetmap.org/w/images/2/25/Geoportal-josm.png",
+            "country_code": "PL",
             "available_projections": [
               "EPSG:2176",
               "EPSG:2177",
@@ -11967,6 +12058,7 @@
             "license_url": "https://wiki.openstreetmap.org/wiki/Geoportal.gov.pl",
             "overlay": true,
             "icon": "https://wiki.openstreetmap.org/w/images/2/25/Geoportal-josm.png",
+            "country_code": "PL",
             "available_projections": [
               "EPSG:2176",
               "EPSG:2177",
@@ -11989,6 +12081,7 @@
             "max_zoom": 19,
             "license_url": "http://e-mapa.net/warunki/",
             "icon": "emapa.png",
+            "country_code": "PL",
             "available_projections": [
               "EPSG:2176",
               "EPSG:2177",
@@ -14706,6 +14799,7 @@
             "min_zoom": 7,
             "max_zoom": 16,
             "icon": "https://israelhiking.osm.org.il/content/favicons/favicon.ico",
+            "country_code": "IL",
             "attribution": {
               "required": true,
               "url": "https://israelhiking.osm.org.il/",
@@ -14722,6 +14816,7 @@
             "min_zoom": 7,
             "max_zoom": 16,
             "icon": "https://israelhiking.osm.org.il/content/favicons/favicon.ico",
+            "country_code": "IL",
             "attribution": {
               "required": true,
               "url": "https://israelhiking.osm.org.il/",
@@ -15063,6 +15158,7 @@
             "license_url": "https://wiki.openstreetmap.org/wiki/Contributors#LINZ",
             "best": true,
             "icon": "https://koordinates.a.ssl.fastly.net/media/settings/branding/favicon-lds.ico",
+            "country_code": "NZ",
             "attribution": {
               "required": true,
               "url": "https://www.linz.govt.nz/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data",
@@ -15079,6 +15175,7 @@
             "license": "CC-BY-4.0",
             "license_url": "https://wiki.openstreetmap.org/wiki/Contributors#LINZ",
             "icon": "https://koordinates.a.ssl.fastly.net/media/settings/branding/favicon-lds.ico",
+            "country_code": "NZ",
             "attribution": {
               "required": true,
               "url": "https://data.linz.govt.nz/layer/2343-nz-mainland-topo50-gridless-maps",
@@ -16000,6 +16097,7 @@
             "name": "Estonia Cadastre (Maaamet)",
             "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=of10000,TOPOYKSUS_6569,TOPOYKSUS_6573&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
+            "country_code": "EE",
             "available_projections": ["EPSG:4326"],
             "attribution": {
               "required": true,
@@ -16016,6 +16114,7 @@
             "max_zoom": 21,
             "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
             "best": true,
+            "country_code": "EE",
             "available_projections": ["EPSG:3301"],
             "attribution": {"required": true, "text": "Maa-Ameti ortofoto"}
           },
@@ -16026,6 +16125,7 @@
             "name": "Estonia Forestry (Maaamet)",
             "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=cir_ngr&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
+            "country_code": "EE",
             "available_projections": ["EPSG:4326"],
             "attribution": {
               "required": true,
@@ -16041,6 +16141,7 @@
             "min_zoom": 6,
             "max_zoom": 18,
             "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
+            "country_code": "EE",
             "attribution": {"required": true, "text": "Maa-Ameti ortofoto"}
           },
           "maaamet.ee-pohi_vr2": {
@@ -16050,6 +16151,7 @@
             "name": "Estonia Basemap (Maaamet)",
             "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=pohi_vr2&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
+            "country_code": "EE",
             "available_projections": ["EPSG:4326"],
             "attribution": {"required": true, "text": "Maa-Ameti põhikaart"}
           },
@@ -16060,6 +16162,7 @@
             "name": "Estonia Hillshading (Maaamet)",
             "url": "https://kaart.maaamet.ee/wms/alus-geo?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=reljeef&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "http://svimik.com/Maa-amet_vastus_OSM.pdf",
+            "country_code": "EE",
             "available_projections": ["EPSG:4326"],
             "attribution": {"required": true, "text": "Maa-Ameti reljeefikaart"}
           }
@@ -17764,6 +17867,7 @@
             "license_url": "https://data.gov.tw/license",
             "start_date": "2015",
             "icon": "NLSC.png",
+            "country_code": "TW",
             "attribution": {
               "required": true,
               "url": "https://maps.nlsc.gov.tw",
@@ -17779,6 +17883,7 @@
             "max_zoom": 15,
             "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
             "icon": "NLSC.png",
+            "country_code": "TW",
             "attribution": {
               "required": true,
               "url": "https://maps.nlsc.gov.tw/",
@@ -17793,6 +17898,7 @@
             "url": "https://wms.nlsc.gov.tw/wms?VERSION=1.1.1&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=LANDSECT&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
             "icon": "NLSC.png",
+            "country_code": "TW",
             "available_projections": [
               "EPSG:3825",
               "EPSG:3826",
@@ -17813,6 +17919,7 @@
             "url": "https://wms.nlsc.gov.tw/wms?VERSION=1.1.1&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Village&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
             "icon": "NLSC.png",
+            "country_code": "TW",
             "available_projections": [
               "EPSG:3825",
               "EPSG:3826",
@@ -18186,6 +18293,7 @@
             "best": true,
             "start_date": "2010",
             "end_date": "2016",
+            "country_code": "LT",
             "attribution": {
               "required": true,
               "url": "https://www.geoportal.lt",
@@ -18393,6 +18501,7 @@
             "locationSet": {"include": ["lv"]},
             "name": "Orthophoto 1st cycle (1994-1999) - Latvia",
             "url": "https://services.lgia.gov.lv/arcfree/services/Ortofoto_v1/MapServer/WmsServer?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=0&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+            "country_code": "LV",
             "available_projections": ["EPSG:3059", "EPSG:3857", "EPSG:4326"],
             "attribution": {
               "text": "Latvijas Ģeotelpiskās informācijas aģentūras brīvais WMS serviss 1994 - 1999.gada Latvijas ortofotokarte"
@@ -19042,6 +19151,7 @@
             "category": "historicphoto",
             "start_date": "2006",
             "end_date": "2006",
+            "country_code": "IT",
             "available_projections": ["EPSG:3857", "EPSG:4326"]
           },
           "PCN-Italy-2012": {
@@ -19053,6 +19163,7 @@
             "category": "photo",
             "start_date": "2012",
             "end_date": "2012",
+            "country_code": "IT",
             "available_projections": ["EPSG:4326"]
           }
         }
@@ -19906,6 +20017,7 @@
             "url": "https://mapservices.onemap.sg/mapproxy/service?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=singapore_landlot_wmts&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "https://www.onemap.sg/legal/opendatalicence.html",
             "icon": "OM2.png",
+            "country_code": "SG",
             "available_projections": ["EPSG:3414", "EPSG:4326"],
             "attribution": {
               "required": true,
@@ -19921,6 +20033,7 @@
             "url": "https://mapservices.onemap.sg/mapproxy/service?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=singapore_3414_wms&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
             "license_url": "https://www.onemap.sg/legal/opendatalicence.html",
             "icon": "OM2.png",
+            "country_code": "SG",
             "available_projections": ["EPSG:3414", "EPSG:4326"],
             "attribution": {
               "required": true,
@@ -21309,7 +21422,8 @@
             "url": "http://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg",
             "min_zoom": 1,
             "max_zoom": 22,
-            "best": true
+            "best": true,
+            "country_code": "ZA"
           }
         }
       },
@@ -22942,7 +23056,8 @@
             "start_date": "2014",
             "end_date": "2014",
             "overlay": true,
-            "icon": "TIGER.png"
+            "icon": "TIGER.png",
+            "country_code": "US"
           },
           "US-TIGER-Roads-2017": {
             "id": "US-TIGER-Roads-2017",
@@ -22955,7 +23070,8 @@
             "start_date": "2017",
             "end_date": "2017",
             "overlay": true,
-            "icon": "TIGER.png"
+            "icon": "TIGER.png",
+            "country_code": "US"
           },
           "US-TIGER-Roads-2018": {
             "id": "US-TIGER-Roads-2018",
@@ -22968,7 +23084,8 @@
             "start_date": "2018",
             "end_date": "2018",
             "overlay": true,
-            "icon": "TIGER.png"
+            "icon": "TIGER.png",
+            "country_code": "US"
           },
           "US-TIGER-Roads-2019": {
             "id": "US-TIGER-Roads-2019",
@@ -22982,7 +23099,8 @@
             "start_date": "2019",
             "end_date": "2019",
             "overlay": true,
-            "icon": "TIGER.png"
+            "icon": "TIGER.png",
+            "country_code": "US"
           }
         }
       },
@@ -23451,6 +23569,7 @@
             "min_zoom": 12,
             "max_zoom": 20,
             "icon": "USDA.png",
+            "country_code": "US",
             "available_projections": ["EPSG:3857", "EPSG:4326"]
           },
           "USGS-Imagery": {
@@ -23466,7 +23585,8 @@
             "min_zoom": 12,
             "max_zoom": 20,
             "privacy_policy_url": "https://www.usgs.gov/privacy-policies",
-            "icon": "USGS.png"
+            "icon": "USGS.png",
+            "country_code": "US"
           }
         }
       },
@@ -24083,6 +24203,7 @@
             "url": "https://caltopo.s3.amazonaws.com/topo/{zoom}/{x}/{y}.png",
             "max_zoom": 16,
             "icon": "USGS.png",
+            "country_code": "US",
             "attribution": {
               "required": true,
               "url": "https://caltopo.com",
@@ -24230,7 +24351,8 @@
             "locationSet": {"include": ["us"], "exclude": ["as", "um", "vi"]},
             "name": "U.S. Forest Service roads",
             "url": "https://osm.cycle.travel/forest/{zoom}/{x}/{y}.png",
-            "max_zoom": 19
+            "max_zoom": 19,
+            "country_code": "US"
           }
         }
       },
@@ -24694,7 +24816,8 @@
             "url": "https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/glassman/cjf4qjmps0tgv2qpahj977mvz/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1IjoiZ2xhc3NtYW4iLCJhIjoiRjk3dWdwYyJ9.Tg_fMJWxygeKBgVTrZHmGA",
             "max_zoom": 20,
             "overlay": true,
-            "icon": "USFS.png"
+            "icon": "USFS.png",
+            "country_code": "US"
           }
         }
       },
@@ -25676,7 +25799,8 @@
             "url": "http://212.26.144.110/tile2/orto_10000/{zoom}/{x}/{-y}.jpg",
             "max_zoom": 16,
             "start_date": "2012",
-            "end_date": "2012"
+            "end_date": "2012",
+            "country_code": "UA"
           }
         }
       },
@@ -26713,6 +26837,7 @@
             "license_url": "https://basemap.at/#sec-nutzung",
             "icon": "https://www.basemap.at/images/logo_basemap.jpg",
             "i18n": true,
+            "country_code": "AT",
             "attribution": {
               "required": true,
               "url": "https://basemap.at",
@@ -26734,6 +26859,7 @@
             "best": true,
             "icon": "https://www.basemap.at/images/logo_basemap.jpg",
             "i18n": true,
+            "country_code": "AT",
             "attribution": {
               "required": true,
               "url": "https://basemap.at",
@@ -26755,6 +26881,7 @@
             "overlay": true,
             "icon": "https://www.basemap.at/images/logo_basemap.jpg",
             "i18n": true,
+            "country_code": "AT",
             "attribution": {
               "required": true,
               "url": "https://basemap.at",
@@ -26772,6 +26899,7 @@
             "license": "CC-BY-3.0",
             "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
             "icon": "Geoimageat.png",
+            "country_code": "AT",
             "available_projections": [
               "EPSG:3034",
               "EPSG:3035",
@@ -27692,6 +27820,7 @@
             "start_date": "2013-11",
             "end_date": "2013-11",
             "overlay": true,
+            "country_code": "DE",
             "available_projections": [
               "EPSG:3068",
               "EPSG:3857",
@@ -27717,6 +27846,7 @@
             "start_date": "2015-11",
             "end_date": "2015-11",
             "overlay": true,
+            "country_code": "DE",
             "available_projections": [
               "EPSG:3068",
               "EPSG:3857",
@@ -28725,6 +28855,7 @@
             "start_date": "2011",
             "end_date": "2011",
             "icon": "dgu.png",
+            "country_code": "HR",
             "available_projections": ["EPSG:3765", "EPSG:4326"],
             "attribution": {
               "required": true,
@@ -28745,6 +28876,7 @@
             "start_date": "2014",
             "end_date": "2016",
             "icon": "dgu.png",
+            "country_code": "HR",
             "available_projections": ["EPSG:3765", "EPSG:4326"],
             "attribution": {
               "required": true,
@@ -28765,6 +28897,7 @@
             "start_date": "1954",
             "end_date": "2009",
             "icon": "dgu.png",
+            "country_code": "HR",
             "available_projections": ["EPSG:3765", "EPSG:4326"],
             "attribution": {
               "required": true,
@@ -28785,6 +28918,7 @@
             "start_date": "1980",
             "end_date": "1984",
             "icon": "dgu.png",
+            "country_code": "HR",
             "available_projections": ["EPSG:3765", "EPSG:4326"],
             "attribution": {
               "required": true,
@@ -28805,6 +28939,7 @@
             "start_date": "1982",
             "end_date": "1986",
             "icon": "dgu.png",
+            "country_code": "HR",
             "available_projections": ["EPSG:3765", "EPSG:4326"],
             "attribution": {
               "required": true,
@@ -28825,6 +28960,7 @@
             "start_date": "1996",
             "end_date": "2011",
             "icon": "dgu.png",
+            "country_code": "HR",
             "available_projections": ["EPSG:3765", "EPSG:4326"],
             "attribution": {
               "required": true,
@@ -29113,6 +29249,7 @@
             "start_date": "2017",
             "end_date": "2017",
             "icon": "dgu.png",
+            "country_code": "HR",
             "available_projections": ["EPSG:3765", "EPSG:4326"],
             "attribution": {
               "required": true,
@@ -29298,6 +29435,7 @@
             "start_date": "2018",
             "end_date": "2018",
             "icon": "dgu.png",
+            "country_code": "HR",
             "available_projections": ["EPSG:3765", "EPSG:4326"],
             "attribution": {
               "required": true,
@@ -30222,6 +30360,7 @@
             "max_zoom": 20,
             "license_url": "https://wiki.openstreetmap.org/wiki/GSI_KIBAN",
             "i18n": true,
+            "country_code": "JP",
             "attribution": {
               "url": "https://www.finds.jp/siteinfo/c_tou.html.ja",
               "text": "GSI KIBAN 2500"
@@ -30238,6 +30377,7 @@
             "max_zoom": 18,
             "license_url": "https://maps.gsi.go.jp/development/ichiran.html#airphoto",
             "i18n": true,
+            "country_code": "JP",
             "attribution": {
               "url": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
               "text": "GSI Japan"
@@ -30254,6 +30394,7 @@
             "max_zoom": 18,
             "license_url": "https://maps.gsi.go.jp/development/ichiran.html#seamlessphoto",
             "i18n": true,
+            "country_code": "JP",
             "attribution": {
               "url": "https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html",
               "text": "GSI Japan seamless photo"
@@ -30270,6 +30411,7 @@
             "max_zoom": 18,
             "license_url": "https://wiki.openstreetmap.org/wiki/GSImaps",
             "i18n": true,
+            "country_code": "JP",
             "attribution": {
               "url": "https://maps.gsi.go.jp/help/use.html",
               "text": "GSI Japan"
@@ -30316,6 +30458,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006347.html",
             "overlay": true,
             "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg/175px-Emblem_of_the_Norwegian_Directorate_of_Fisheries.svg.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -30350,6 +30493,7 @@
             "license_url": "https://forum.openstreetmap.org/viewtopic.php?id=62083",
             "best": true,
             "icon": "https://register.geonorge.no/data/organizations/_L_norgeibilder96x96.png",
+            "country_code": "NO",
             "attribution": {
               "required": true,
               "url": "https://www.norgeibilder.no",
@@ -30367,6 +30511,7 @@
             "license_url": "https://forum.openstreetmap.org/viewtopic.php?id=62083",
             "best": true,
             "icon": "https://register.geonorge.no/data/organizations/_L_norgeibilder96x96.png",
+            "country_code": "NO",
             "attribution": {
               "required": true,
               "url": "https://www.norgeibilder.no",
@@ -30384,6 +30529,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
             "overlay": true,
             "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3034",
               "EPSG:3857",
@@ -30426,6 +30572,7 @@
             "max_zoom": 24,
             "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
             "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4258",
@@ -30479,6 +30626,7 @@
             "max_zoom": 24,
             "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
             "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4258",
@@ -30534,6 +30682,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
             "overlay": true,
             "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+            "country_code": "NO",
             "attribution": {
               "url": "https://kartkatalog.geonorge.no/metadata/kartverket/fjellskygge-cache/cca7c129-fe66-4c96-9091-40d92290dd81",
               "text": "© Kartverket"
@@ -30551,6 +30700,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
             "overlay": true,
             "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+            "country_code": "NO",
             "available_projections": ["EPSG:3857", "EPSG:4326"],
             "attribution": {
               "required": true,
@@ -30568,6 +30718,7 @@
             "min_zoom": 5,
             "max_zoom": 15,
             "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3034",
               "EPSG:3857",
@@ -30612,6 +30763,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
             "overlay": true,
             "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3006",
               "EPSG:3007",
@@ -30708,6 +30860,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
             "overlay": true,
             "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3007",
               "EPSG:3008",
@@ -30775,6 +30928,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
             "overlay": true,
             "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3034",
               "EPSG:3857",
@@ -30844,6 +30998,7 @@
             "max_zoom": 20,
             "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
             "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3007",
               "EPSG:3008",
@@ -30909,6 +31064,7 @@
             "max_zoom": 15,
             "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
             "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+            "country_code": "NO",
             "attribution": {
               "required": true,
               "url": "https://wiki.openstreetmap.org/wiki/No:Kartverket_import",
@@ -30927,6 +31083,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2014-August/004831.html",
             "overlay": true,
             "icon": "https://www.kartverket.no/Content/Images/logo-graphic-512.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3007",
               "EPSG:3008",
@@ -30996,6 +31153,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2009-August/001095.html",
             "overlay": true,
             "icon": "https://www.miljodirektoratet.no/globalassets/profilbank/profilbank-bilder/m_logo_hoved_pos_rgb_thumb2.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:4267",
               "EPSG:4269",
@@ -31028,6 +31186,7 @@
             "min_zoom": 3,
             "max_zoom": 14,
             "icon": "MTBmapno.png",
+            "country_code": "NO",
             "attribution": {
               "url": "https://www.mtbmap.no/",
               "text": "© MTBmap.no"
@@ -31046,6 +31205,7 @@
             "privacy_policy_url": "https://www.nve.no/nves-personvernerklaering/",
             "overlay": true,
             "icon": "https://kommunikasjon.ntb.no/data/images/00525/e8799776-4b69-4ec4-906d-46285ccb3dbe-w_300_h_100.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -31079,6 +31239,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2017-December/006312.html",
             "overlay": true,
             "icon": "https://kommunikasjon.ntb.no/data/images/00525/e8799776-4b69-4ec4-906d-46285ccb3dbe-w_300_h_100.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -31112,6 +31273,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2017-December/006312.html",
             "overlay": true,
             "icon": "https://kommunikasjon.ntb.no/data/images/00525/e8799776-4b69-4ec4-906d-46285ccb3dbe-w_300_h_100.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -31145,6 +31307,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2017-December/006312.html",
             "overlay": true,
             "icon": "https://kommunikasjon.ntb.no/data/images/00525/e8799776-4b69-4ec4-906d-46285ccb3dbe-w_300_h_100.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -31177,6 +31340,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006345.html",
             "overlay": true,
             "icon": "https://www.fosterhjemsforening.no/wp-content/uploads/2015/06/SSB_logo1.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -31211,6 +31375,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006345.html",
             "overlay": true,
             "icon": "https://www.fosterhjemsforening.no/wp-content/uploads/2015/06/SSB_logo1.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4326",
@@ -31377,6 +31542,7 @@
             "license_url": "https://openstreetmap.fr/bdortho",
             "best": true,
             "icon": "http://www.ign.fr/institut/sites/all/themes/ign_institut/logo.png",
+            "country_code": "FR",
             "attribution": {
               "required": true,
               "url": "https://openstreetmap.fr/bdortho",
@@ -32126,6 +32292,7 @@
             "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/Digiroad_permission_23032017.pdf",
             "overlay": true,
             "icon": "https://www.liikennevirasto.fi/livi-theme/images/general/liikennevirasto_logo_2x.png",
+            "country_code": "FI",
             "available_projections": [
               "EPSG:2391",
               "EPSG:2392",
@@ -32190,6 +32357,7 @@
             "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=356296#p356296",
             "best": true,
             "icon": "https://www.maanmittauslaitos.fi/apple-touch-icon.png",
+            "country_code": "FI",
             "attribution": {
               "required": true,
               "url": "https://www.maanmittauslaitos.fi/en",
@@ -32207,6 +32375,7 @@
             "max_zoom": 19,
             "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=356296#p356296",
             "icon": "https://www.maanmittauslaitos.fi/apple-touch-icon.png",
+            "country_code": "FI",
             "attribution": {
               "required": true,
               "url": "https://www.maanmittauslaitos.fi/en",
@@ -32224,6 +32393,7 @@
             "max_zoom": 19,
             "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=356296#p356296",
             "icon": "https://www.maanmittauslaitos.fi/apple-touch-icon.png",
+            "country_code": "FI",
             "attribution": {
               "required": true,
               "url": "https://www.maanmittauslaitos.fi/en",
@@ -32898,6 +33068,7 @@
             "max_zoom": 19,
             "license_url": "https://www.ign.gob.ar/descargas/tyc1.html",
             "icon": "ign.png",
+            "country_code": "AR",
             "attribution": {
               "url": "https://www.ign.gob.ar/",
               "text": "Instituto Geográfico Nacional de la República Argentina"
@@ -33610,6 +33781,7 @@
             "overlay": true,
             "icon": "https://kelkkareitit.fi/img/favicon.png",
             "i18n": true,
+            "country_code": "SE",
             "attribution": {
               "url": "https://kelkkareitit.fi/",
               "text": "© Kelkkareitit.fi"
@@ -34052,6 +34224,7 @@
             "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
             "icon": "lantmateriet.png",
             "i18n": true,
+            "country_code": "SE",
             "available_projections": [
               "EPSG:3006",
               "EPSG:3007",
@@ -34100,6 +34273,7 @@
             "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
             "icon": "lantmateriet.png",
             "i18n": true,
+            "country_code": "SE",
             "available_projections": [
               "EPSG:3006",
               "EPSG:3007",
@@ -34148,6 +34322,7 @@
             "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
             "icon": "lantmateriet.png",
             "i18n": true,
+            "country_code": "SE",
             "attribution": {
               "required": true,
               "url": "https://www.lantmateriet.se/",
@@ -34167,6 +34342,7 @@
             "overlay": true,
             "icon": "https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png",
             "i18n": true,
+            "country_code": "SE",
             "available_projections": [
               "EPSG:3006",
               "EPSG:3007",
@@ -34211,6 +34387,7 @@
             "overlay": true,
             "icon": "https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png",
             "i18n": true,
+            "country_code": "SE",
             "available_projections": [
               "EPSG:3006",
               "EPSG:3007",
@@ -34255,6 +34432,7 @@
             "overlay": true,
             "icon": "https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png",
             "i18n": true,
+            "country_code": "SE",
             "available_projections": [
               "EPSG:3006",
               "EPSG:3007",
@@ -34299,6 +34477,7 @@
             "overlay": true,
             "icon": "https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png",
             "i18n": true,
+            "country_code": "SE",
             "attribution": {
               "required": true,
               "url": "https://www.trafikverket.se",
@@ -34520,6 +34699,7 @@
             "start_date": "2013-07-19",
             "end_date": "2010-07-20",
             "icon": "https://www.geoportail.lu/static/img/lion.png",
+            "country_code": "LU",
             "attribution": {
               "url": "https://data.public.lu/en/datasets/carte-de-base-webservices-wms-et-wmts",
               "text": "Administration du Cadastre et de la Topographie"
@@ -34535,6 +34715,7 @@
             "max_zoom": 20,
             "license_url": "https://data.public.lu/en/datasets/plan-cadastral-numerise-pcn-webservices-wms-et-wmts",
             "icon": "https://www.geoportail.lu/static/img/lion.png",
+            "country_code": "LU",
             "attribution": {
               "url": "https://data.public.lu/en/datasets/plan-cadastral-numerise-pcn-webservices-wms-et-wmts",
               "text": "Administration du Cadastre et de la Topographie"
@@ -34552,6 +34733,7 @@
             "start_date": "2017-06-14",
             "end_date": "2017-06-22",
             "icon": "https://www.geoportail.lu/static/img/lion.png",
+            "country_code": "LU",
             "attribution": {
               "url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts",
               "text": "Administration du Cadastre et de la Topographie"
@@ -34569,6 +34751,7 @@
             "start_date": "2018-07-02",
             "end_date": "2018-08-05",
             "icon": "https://www.geoportail.lu/static/img/lion.png",
+            "country_code": "LU",
             "attribution": {
               "url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts",
               "text": "Administration du Cadastre et de la Topographie"
@@ -34587,6 +34770,7 @@
             "start_date": "2019-07-04",
             "end_date": "2019-08-22",
             "icon": "https://www.geoportail.lu/static/img/lion.png",
+            "country_code": "LU",
             "attribution": {
               "url": "https://data.public.lu/en/datasets/bd-l-ortho-webservices-wms-et-wmts",
               "text": "Administration du Cadastre et de la Topographie"
@@ -34604,6 +34788,7 @@
             "start_date": "2013-07-19",
             "end_date": "2010-07-20",
             "icon": "https://www.geoportail.lu/static/img/lion.png",
+            "country_code": "LU",
             "attribution": {
               "url": "https://data.public.lu/en/datasets/cartes-topographiques-services-wms-et-wmts",
               "text": "Administration du Cadastre et de la Topographie"
@@ -34949,6 +35134,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2009-August/001095.html",
             "overlay": true,
             "icon": "https://www.miljodirektoratet.no/globalassets/profilbank/profilbank-bilder/m_logo_hoved_pos_rgb_thumb2.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3857",
               "EPSG:4267",
@@ -34984,6 +35170,7 @@
             "license_url": "https://lists.nuug.no/pipermail/kart/2018-January/006348.html",
             "overlay": true,
             "icon": "https://www.riksantikvaren.no/extension/riksantikvaren/design/internetsite/images/logo_na.png",
+            "country_code": "NO",
             "available_projections": [
               "EPSG:3034",
               "EPSG:3857",
@@ -36261,6 +36448,7 @@
             "name": "Cambodia, Laos, Thailand, Vietnam, Malaysia, Myanmar bilingual",
             "url": "https://{switch:a,b,c,d}.tile.osm-tools.org/osm/{zoom}/{x}/{y}.png",
             "max_zoom": 20,
+            "country_code": "KH",
             "attribution": {
               "required": true,
               "url": "http://www.osm-tools.org",
@@ -37230,6 +37418,7 @@
             "license_url": "https://github.com/jbelien/openstreetmap-carto-be/wiki/Tile-Usage-Policy",
             "icon": "OpenStreetMap.png",
             "i18n": true,
+            "country_code": "BE",
             "attribution": {
               "required": true,
               "url": "https://openstreetmap.org/",
@@ -37248,6 +37437,7 @@
             "license_url": "https://github.com/jbelien/openstreetmap-carto-be/wiki/Tile-Usage-Policy",
             "icon": "OpenStreetMap.png",
             "i18n": true,
+            "country_code": "BE",
             "attribution": {
               "required": true,
               "url": "https://openstreetmap.org/",
@@ -37266,6 +37456,7 @@
             "license_url": "https://github.com/jbelien/openstreetmap-carto-be/wiki/Tile-Usage-Policy",
             "icon": "OpenStreetMap.png",
             "i18n": true,
+            "country_code": "BE",
             "attribution": {
               "required": true,
               "url": "https://openstreetmap.org/",

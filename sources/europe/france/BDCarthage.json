@@ -9,6 +9,7 @@
   "max_zoom": 20,
   "license_url": "https://wiki.openstreetmap.org/wiki/WikiProject_France/BDCarthage",
   "overlay": true,
+  "country_code": "FX",
   "attribution": {
     "required": true,
     "url": "http://www.sandre.eaufrance.fr/actualite/la-bd-carthage-en-licence-ouverte-open-licence",

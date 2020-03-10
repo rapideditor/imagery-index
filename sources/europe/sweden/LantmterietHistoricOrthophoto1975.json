@@ -11,6 +11,7 @@
   "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
   "icon": "lantmateriet.png",
   "i18n": true,
+  "country_code": "SE",
   "available_projections": [
     "EPSG:3006",
     "EPSG:3007",

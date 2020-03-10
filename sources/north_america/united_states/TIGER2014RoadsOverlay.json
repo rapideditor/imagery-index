@@ -9,5 +9,6 @@
   "start_date": "2014",
   "end_date": "2014",
   "overlay": true,
-  "icon": "TIGER.png"
+  "icon": "TIGER.png",
+  "country_code": "US"
 }

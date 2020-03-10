@@ -8,6 +8,7 @@
   "license_url": "http://e.tile.openstreetmap.hu/ortofoto2000/license.txt",
   "start_date": "2000",
   "end_date": "2000",
+  "country_code": "HU",
   "attribution": {
     "required": true,
     "url": "https://www.fomi.hu",

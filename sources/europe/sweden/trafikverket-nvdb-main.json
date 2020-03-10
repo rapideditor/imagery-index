@@ -11,6 +11,7 @@
   "overlay": true,
   "icon": "https://api.trafikinfo.trafikverket.se/img/apple-touch-icon-144-precomposed.png",
   "i18n": true,
+  "country_code": "SE",
   "available_projections": [
     "EPSG:3006",
     "EPSG:3007",
