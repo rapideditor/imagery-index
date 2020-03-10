@@ -25,12 +25,12 @@ function buildAll() {
   shell.rm('-f', [
     'dist/combined.geojson',
     'dist/combined.min.geojson',
-    'dist/legacy_imagery.geojson',
-    'dist/legacy_imagery.min.geojson',
-    'dist/legacy_imagery.json',
-    'dist/legacy_imagery.min.json',
-    'dist/legacy_imagery.xml',
-    'dist/legacy_imagery.min.xml',
+    'dist/legacy/imagery.geojson',
+    'dist/legacy/imagery.min.geojson',
+    'dist/legacy/imagery.json',
+    'dist/legacy/imagery.min.json',
+    'dist/legacy/imagery.xml',
+    'dist/legacy/imagery.min.xml',
     'dist/featureCollection.min.json',
     'dist/sources.min.json'
   ]);
@@ -68,7 +68,6 @@ function dateString() {
     .replace(/\.\d+Z/, '')
     .replace(/"/g, '');
 }
-
 
 
 // `generateCombined`
@@ -162,7 +161,7 @@ function generateCombined() {
 // }
 //
 function generateLegacyImageryGeojson() {
-  process.stdout.write('📦  dist/legacy_imagery.geojson  ');
+  process.stdout.write('📦  dist/legacy/imagery.geojson  ');
 
   let keepFeatures = [];
   Object.values(sources).forEach(source => {
@@ -193,8 +192,8 @@ function generateLegacyImageryGeojson() {
     meta: { generated: dateString(), version: '1.0' },
     features: keepFeatures
   };
-  fs.writeFileSync('dist/legacy_imagery.geojson', prettyStringify(legacyGeoJSON) );
-  fs.writeFileSync('dist/legacy_imagery.min.geojson', JSON.stringify(legacyGeoJSON) );
+  fs.writeFileSync('dist/legacy/imagery.geojson', prettyStringify(legacyGeoJSON) );
+  fs.writeFileSync('dist/legacy/imagery.min.geojson', JSON.stringify(legacyGeoJSON) );
 
   process.stdout.write(colors.green('✓\n'));
 }
@@ -227,7 +226,7 @@ function generateLegacyImageryGeojson() {
 // }
 //
 function generateLegacyImageryJson() {
-  process.stdout.write('📦  dist/legacy_imagery.json  ');
+  process.stdout.write('📦  dist/legacy/imagery.json  ');
 
   let keepSources = [];
   Object.values(sources).forEach(source => {
@@ -279,8 +278,8 @@ function generateLegacyImageryJson() {
     keepSources.push(obj);
   });
 
-  fs.writeFileSync('dist/legacy_imagery.json', prettyStringify(keepSources) );
-  fs.writeFileSync('dist/legacy_imagery.min.json', JSON.stringify(keepSources) );
+  fs.writeFileSync('dist/legacy/imagery.json', prettyStringify(keepSources) );
+  fs.writeFileSync('dist/legacy/imagery.min.json', JSON.stringify(keepSources) );
 
   process.stdout.write(colors.green('✓\n'));
 }
@@ -307,7 +306,7 @@ function generateLegacyImageryJson() {
 // </imagery>
 //
 function generateLegacyImageryXml() {
-  process.stdout.write('📦  dist/legacy_imagery.xml  ');
+  process.stdout.write('📦  dist/legacy/imagery.xml  ');
 
   let root = xmlbuilder2.create({ version: '1.0', encoding: 'UTF-8' });
   let imagery = root.ele('imagery');
@@ -386,8 +385,8 @@ function generateLegacyImageryXml() {
     }
   });
 
-  fs.writeFileSync('dist/legacy_imagery.xml', root.end({ prettyPrint: true }) );
-  fs.writeFileSync('dist/legacy_imagery.min.xml', root.end() );
+  fs.writeFileSync('dist/legacy/imagery.xml', root.end({ prettyPrint: true }) );
+  fs.writeFileSync('dist/legacy/imagery.min.xml', root.end() );
 
   process.stdout.write(colors.green('✓\n'));
 }
