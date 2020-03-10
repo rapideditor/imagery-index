@@ -10,9 +10,9 @@ const shell = require('shelljs');
 const Validator = require('jsonschema').Validator;
 const YAML = require('js-yaml');
 
-const geojsonSchema = require('./schema/geojson.json');
-const featureSchema = require('./schema/feature.json');
-const sourceSchema = require('./schema/source.json');
+const geojsonSchema = require('../schema/geojson.json');
+const featureSchema = require('../schema/feature.json');
+const sourceSchema = require('../schema/source.json');
 
 let v = new Validator();
 v.addSchema(geojsonSchema, 'http://json.schemastore.org/geojson.json');

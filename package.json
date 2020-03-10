@@ -10,11 +10,12 @@
   ],
   "scripts": {
     "appbuild": "rollup --config app/rollup.config.js",
-    "build": "node build.js",
-    "dist": "node build_dist.js",
-    "lint": "eslint *.js",
+    "build": "node scripts/build.js",
+    "dist": "node scripts/dist.js",
+    "lint": "eslint scripts/*.js",
     "test": "npm run build && npm run lint",
-    "stats": "node stats.js",
+    "stat": "npm run stats --silent",
+    "stats": "node scripts/stats.js --silent",
     "txpull": "tx pull -a",
     "txpush": "tx push -s"
   },

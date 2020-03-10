@@ -5,10 +5,9 @@ const prettyStringify = require('json-stringify-pretty-compact');
 const shell = require('shelljs');
 const xmlbuilder2 = require('xmlbuilder2');
 
-const sources = require('./dist/sources.json').sources;
-const featureCollection = require('./dist/featureCollection.json');
+const sources = require('../dist/sources.json').sources;
+const featureCollection = require('../dist/featureCollection.json');
 const loco = new LocationConflation(featureCollection);
-
 
 buildAll();
 
