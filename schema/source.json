@@ -32,13 +32,13 @@
     },
 
     "name": {
-      "$comment": "Assumed to be in English, this value will be sent to Transifex for translation",
+      "$comment": "Assumed to be in English, this value will be sent to Transifex for translation if `i18n=true`",
       "description": "(required) Display name for this imagery source",
       "type": "string"
     },
 
     "description": {
-      "$comment": "Assumed to be in English, this value will be sent to Transifex for translation",
+      "$comment": "Assumed to be in English, this value will be sent to Transifex for translation if `i18n=true`",
       "description": "(required) One line description of the imagery source",
       "type": "string"
     },
@@ -147,7 +147,7 @@
           "type": "string"
         },
         "text": {
-          "description": "(optional) Text for the attribution",
+          "description": "(optional) Text for the attribution, will be sent to Transifex for translation if `i18n=true`",
           "type": "string"
         },
         "html": {
