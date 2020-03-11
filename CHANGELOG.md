@@ -16,3 +16,6 @@ _Breaking changes, which may affect downstream projects, are marked with a_ :war
 [#xxx]: https://github.com/ideditor/location-conflation/issues/xxx
 -->
 
+## 0.1.0
+##### 2020-Mar-11
+* Initial release

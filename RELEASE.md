@@ -4,11 +4,11 @@
 - [ ] git checkout master
 - [ ] npm install
 - [ ] npm run test
-- [ ] npm run dist
 - [ ] npm run txpull
 - [ ] git add . && git commit -m 'npm run txpull'
 - [ ] Update `CHANGELOG.md`
 - [ ] Update version number in `package.json`
+- [ ] npm run dist
 - [ ] git add . && git commit -m 'vA.B.C'
 - [ ] git tag vA.B.C
 - [ ] git push origin master vA.B.C
