@@ -61,6 +61,8 @@ The source files for imagery-index are stored in two kinds of files:
 * Under `sources/` there are `.json` files to describe the imagery sources
 * Under `features/` there are custom `.geojson` files
 
+👉 See [CONTRIBUTING.md](CONTRIBUTING.md) for full details about how to add an imagery source to this index.
+
 
 ### Distributed Files
 
@@ -103,9 +105,9 @@ source.locationSet;
 let feature = loco.resolveLocationSet(source.locationSet);
 ```
 
-<img width="600px" alt="Croatia Aerial Imagery 2011" src="https://raw.githubusercontent.com/ideditor/imagery-index/master/docs/images/croatia-2011.png"/>
+<img width="500px" alt="Croatia Aerial Imagery 2011" src="https://raw.githubusercontent.com/ideditor/imagery-index/master/docs/images/croatia-2011.png"/>
 
-But we're not limited to only country borders. For example in 2017, only portions of Croatia were imaged. The `locationSet` contains a custom .geojson to exclude a squarish region from the middle of the country:
+But we're not limited only to country borders. For example in 2017, only portions of Croatia were imaged. The `locationSet` contains a custom .geojson to exclude a squarish region from the middle of the country:
 ```js
 let source = sources['dgu-dof-2017'];
 source.name;
@@ -115,7 +117,7 @@ source.locationSet;
 let feature = loco.resolveLocationSet(source.locationSet);
 ```
 
-<img width="600px" alt="Croatia Aerial Imagery 2017" src="https://raw.githubusercontent.com/ideditor/imagery-index/master/docs/images/croatia-2017.png"/>
+<img width="500px" alt="Croatia Aerial Imagery 2017" src="https://raw.githubusercontent.com/ideditor/imagery-index/master/docs/images/croatia-2017.png"/>
 
 In 2018, they imaged the rest of Croatia. A different .geojson file is used to exclude Croatia's outer regions:
 ```js
@@ -127,7 +129,7 @@ source.locationSet;
 let feature = loco.resolveLocationSet(source.locationSet);
 ```
 
-<img width="600px" alt="Croatia Aerial Imagery 2018" src="https://raw.githubusercontent.com/ideditor/imagery-index/master/docs/images/croatia-2018.png"/>
+<img width="500px" alt="Croatia Aerial Imagery 2018" src="https://raw.githubusercontent.com/ideditor/imagery-index/master/docs/images/croatia-2018.png"/>
 
 
 ### Interactive Viewer
@@ -136,7 +138,7 @@ Try out the interactive source viewer at https://ideditor.github.io/imagery-inde
 
 💡 The viewer itself is just a single .html page using a Mapbox GL base layer + the raster tile code from iD sitting on top of it. The source code is in [`docs/index.html`](https://github.com/ideditor/imagery-index/blob/master/docs/index.html).
 
-🧐: "Why use iD's `&lt;img&gt;`-based slippy map code instead of adding a Mapbox GL raster layer?"<br/>
+🧐: "Why use iD's `<img>`-based slippy map code instead of adding a Mapbox GL raster layer?"<br/>
 😭: "[CORS is why](https://github.com/ideditor/imagery-index/issues/1). WebGL needs access to the pixels of an image to show it, and this can't happen unless the tile server has the necessary CORS header set. The good news is, if an imagery source works here, it will work in iD also."<br/>
 
 
