@@ -25,9 +25,13 @@
 
     <div id='sidebar' class='hasRows'>
       <div id='eli' class='section'>
-        <p>Paste an editor-layer-index .geojson file<br/>
-        <em>-or-</em><br/>
-        Paste an imagery-index .json file:</p>
+        <p>Paste one of:
+          <ul>
+          <li>An imagery-index .json file</li>
+          <li>An editor-layer-index .geojson file</li>
+          <li>A single .geojson Feature</li>
+        </ul>
+        </p>
 <textarea autofocus id='eli-textarea' name='eli-textarea' rows='16'>
 {
   "type": "Feature",
@@ -288,21 +292,26 @@ map.on('load', function() {
 
     // Lets go!
     try {
-      // try to handle either `editor-layer-index` or `imagery-index` files..
       var parsed = JSON5.parse(eliTextarea.value);
-      var isELI = !!parsed.properties;  // if it has a properties, it's probably ELI
 
-      var props = isELI ? parsed.properties : parsed;
-      var name = props.name;
-      var type = props.type;
-      var url = props.url;
+      // what was pasted?
+      var detected = parsed.locationSet ? 'imagery-index'
+       : (parsed.properties && parsed.properties.url) ? 'editor-layer-index'
+       : (parsed.type === 'Feature' && parsed.geometry) ? 'geojson'
+       : null;
+
+      if (!detected) {
+        throw 'Unknown contents.';
+      }
+
+      var props = parsed.properties || parsed;
       var minzoom = props.min_zoom || 0;
       var maxzoom = props.max_zoom || 24;
 
-      // setup name display
-      controlName.textContent = '' + name;
+      // Setup name display
+      controlName.textContent = '' + props.name;
 
-      // show attribution, if any
+      // Setup the attribution, if any
       var attr = props.attribution || {};
       var attrText = attr.text || '';
       var attrURL = attr.url || '';
@@ -319,41 +328,44 @@ map.on('load', function() {
         attribution.innerHTML = baseAttribution;
       }
 
-      if (type === 'wms') {
-        var supportedWMSProjections = {
-          'EPSG:4326': true,
-          'EPSG:3857': true,
-          'EPSG:900913': true,
-          'EPSG:3587': true,
-          'EPSG:54004': true,
-          'EPSG:41001': true,
-          'EPSG:102113': true,
-          'EPSG:102100': true,
-          'EPSG:3785': true
-        };
+      // Setup the raster tile layer
+      if (props.url && props.type) {
+        if (props.type === 'wms') {
+          var supportedWMSProjections = {
+            'EPSG:4326': true,
+            'EPSG:3857': true,
+            'EPSG:900913': true,
+            'EPSG:3587': true,
+            'EPSG:54004': true,
+            'EPSG:41001': true,
+            'EPSG:102113': true,
+            'EPSG:102100': true,
+            'EPSG:3785': true
+          };
 
-        var projections = (props.available_projections || [])
-          .map(function(proj) { return proj.toUpperCase(); })
-          .filter(function (proj) { return supportedWMSProjections[proj]; });
+          var projections = (props.available_projections || [])
+            .map(function(proj) { return proj.toUpperCase(); })
+            .filter(function (proj) { return supportedWMSProjections[proj]; });
 
-        if (!projections.length) {
-          throw 'No supported wms projection found.';
+          if (!projections.length) {
+            throw 'No supported wms projection found.';
+          }
+          props.projection = projections[0];
         }
-        props.projection = projections[0];
+
+        // rename a few properties where iD uses different names
+        props.template = props.url;
+        props.zoomExtent = [minzoom, maxzoom];
+
+        _tileLayer.source(bundle.BackgroundSource(props));
+        renderTileLayer();
       }
 
-      // rename a few properties where iD uses different names
-      props.template = props.url;
-      props.zoomExtent = [minzoom, maxzoom];
 
-      _tileLayer.source(bundle.BackgroundSource(props));
-      renderTileLayer();
-
-
-      // Setup the GeoJSON source and layer
+      // Setup the GeoJSON feature layer
       var feature, bounds, rings;
 
-      if (isELI) {  // editor-layer-index
+      if (detected === 'editor-layer-index') {
         var coordinates = parsed.geometry && parsed.geometry.coordinates;
         if (coordinates) {
           // Workaround for editor-layer-index weirdness..
@@ -369,8 +381,13 @@ map.on('load', function() {
             geometry: { type: 'MultiPolygon', coordinates: rings }
           };
         }
-      } else {   // imagery-index
-        feature = _loco.resolveLocationSet(parsed.locationSet);
+      } else {
+        if (detected === 'imagery-index') {
+          feature = _loco.resolveLocationSet(parsed.locationSet);
+        } else if (detected === 'geojson') {
+          feature = parsed;
+        }
+
         if (feature.geometry.type === 'Polygon') {
           rings = [ feature.geometry.coordinates ];
         } else {   // MultiPolygon
@@ -431,14 +448,24 @@ map.on('load', function() {
         map.fitBounds(bounds, { padding: 50 });
       }
 
+
       eliRemoveButton.className = 'visible';
       eliIconGood.className = '';  // remove 'hidden'
       eliResultIcon.className = 'visible ' + ELICLASS;
       eliResultMessage.className = 'visible';
-      eliResultMessage.innerHTML = 'Valid JSON.<br/>' +
-        '<em>name = ' + name + '</em><br/>' +
-        '<em>minzoom = ' + minzoom + '</em><br/>' +
+
+      var messageHTML = '<strong>Detected ' + detected + '</strong><br/>';
+      if (props.id || parsed.id) {
+        messageHTML += '<em>id = ' + (props.id || parsed.id) + '</em><br/>';
+      }
+      if (props.name) {
+        messageHTML += '<em>name = ' + props.name + '</em><br/>';
+      }
+      if (props.url) {  // showing raster tiles
+        messageHTML += '<em>minzoom = ' + minzoom + '</em><br/>' +
         '<em>maxzoom = ' + maxzoom + '</em>';
+      }
+      eliResultMessage.innerHTML = messageHTML;
 
     } catch (err) {
       eliRemoveButton.className = 'visible';

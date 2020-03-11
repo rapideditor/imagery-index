@@ -193,6 +193,9 @@ a.mapboxgl-ctrl-logo {
   flex: 0 0 auto;
   padding: 10px 15px;
 }
+.section ul {
+  padding-left: 15px;
+}
 
 #button-row {
   align-items: center;
