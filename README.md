@@ -88,7 +88,7 @@ Several files are published under `dist/`.  These are generated - do not edit th
 
 Let's create a `LocationConflation` instance and seed it with the `featureCollection.json` containing all the custom geojsons from imagery-index.  We'll grab the imagery `sources.json` too.
 ```js
-const sources = require('@ideditor/imagery-index/dist/sources.json').sources;
+const sources = require('@ideditor/imagery-index/dist/sources.json');
 const features = require('@ideditor/imagery-index/dist/featureCollection.json');
 
 const LocationConflation = require('@ideditor/location-conflation');

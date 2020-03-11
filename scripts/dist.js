@@ -5,7 +5,7 @@ const prettyStringify = require('json-stringify-pretty-compact');
 const shell = require('shelljs');
 const xmlbuilder2 = require('xmlbuilder2');
 
-const sources = require('../dist/sources.json').sources;
+const sources = require('../dist/sources.json');
 const featureCollection = require('../dist/featureCollection.json');
 const loco = new LocationConflation(featureCollection);
 
@@ -36,7 +36,7 @@ function buildAll() {
 
   // Save individual data files
   fs.writeFileSync('dist/featureCollection.min.json', JSON.stringify(featureCollection) );
-  fs.writeFileSync('dist/sources.min.json', JSON.stringify({ sources: sources }) );
+  fs.writeFileSync('dist/sources.min.json', JSON.stringify(sources) );
 
   generateCombined();
   generateLegacyImageryGeojson();
