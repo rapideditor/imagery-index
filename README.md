@@ -136,10 +136,14 @@ let feature = loco.resolveLocationSet(source.locationSet);
 
 Try out the interactive source viewer at https://ideditor.github.io/imagery-index/ to inspect any of the imagery sources visually and to compare them to their boundary polygons. You can also test different `locationSet` values to see what they look like.
 
-💡 The viewer itself is just a single .html page using a Mapbox GL base layer + the raster tile code from iD sitting on top of it. The source code is in [`docs/index.html`](https://github.com/ideditor/imagery-index/blob/master/docs/index.html).
+The viewer itself is just a single .html page using:
+  * A [Mapbox GL](https://docs.mapbox.com/mapbox-gl-js/api/) base layer, and
+  * The raster tile code from [iD](https://github.com/openstreetmap/iD) sitting on top of it.
+
+The code for the is in [`docs/index.html`](https://github.com/ideditor/imagery-index/blob/master/docs/index.html).
 
 🧐: "Why use iD's `<img>`-based slippy map code instead of adding a Mapbox GL raster layer?"<br/>
-😭: "[CORS is why](https://github.com/ideditor/imagery-index/issues/1). WebGL needs access to the pixels of an image to show it, and this can't happen unless the tile server has the necessary CORS header set. The good news is, if an imagery source works here, it will work in iD also."<br/>
+😭: "[CORS is why](https://github.com/ideditor/imagery-index/issues/1). WebGL needs access to the pixels of an image in order to render it, and this can't happen unless the tile server has the necessary CORS header set. The good news is: if an imagery source works here, it will work in iD also."<br/>
 
 
 ### Prerequisites
