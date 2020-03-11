@@ -201,16 +201,16 @@ a.mapboxgl-ctrl-logo {
   align-items: center;
 }
 
-#eli-result-icon,
+#gj-result-icon,
 #loco-result-icon {
   flex: 0 0 40px;
 }
 
-#eli-remove-button,
+#gj-remove-button,
 #loco-remove-button,
-#eli-result-icon,
+#gj-result-icon,
 #loco-result-icon,
-#eli-result-message,
+#gj-result-message,
 #loco-result-message {
   transition: opacity 200ms ease;
 }

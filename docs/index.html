@@ -24,15 +24,15 @@
     </div>
 
     <div id='sidebar' class='hasRows'>
-      <div id='eli' class='section'>
+      <div id='gj' class='section'>
         <p>Paste one of:
           <ul>
-          <li>An imagery-index .json file</li>
-          <li>An editor-layer-index .geojson file</li>
+          <li>An imagery-index .json source</li>
+          <li>An editor-layer-index .geojson source</li>
           <li>A single .geojson Feature</li>
         </ul>
         </p>
-<textarea autofocus id='eli-textarea' name='eli-textarea' rows='16'>
+<textarea autofocus id='gj-textarea' name='gj-textarea' rows='8'>
 {
   "type": "Feature",
   "geometry": null,
@@ -45,14 +45,14 @@
 }
 </textarea>
         <div id='button-row' class='hasCols'>
-          <div><button id='eli-view-button'>View it!</button></div>
-          <div><button id='eli-remove-button' class='invisible'>Remove</button></div>
-          <div id='eli-result-icon' class='invisible'>
-            <div id='eli-icon-good' class='hidden'><i class='fas fa-check-circle fa-2x'></i></div>
-            <div id='eli-icon-bad' class='hidden'><i class='fas fa-times-circle fa-2x'></i></div>
+          <div><button id='gj-view-button'>View it!</button></div>
+          <div><button id='gj-remove-button' class='invisible'>Remove</button></div>
+          <div id='gj-result-icon' class='invisible'>
+            <div id='gj-icon-good' class='hidden'><i class='fas fa-check-circle fa-2x'></i></div>
+            <div id='gj-icon-bad' class='hidden'><i class='fas fa-times-circle fa-2x'></i></div>
           </div>
         </div>
-        <p id='eli-result-message' class='invisible'></p>
+        <p id='gj-result-message' class='invisible'></p>
       </div>
 
 
@@ -109,6 +109,7 @@
 
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoibWlrZWxtYXJvbiIsImEiOiJjaWZlY25lZGQ2cTJjc2trbmdiZDdjYjllIn0.Wx1n0X7aeCQyDTnK6_mrGw';
+
 var map = new mapboxgl.Map({
   attributionControl: false,
   container: 'basemap',
@@ -123,18 +124,30 @@ var map = new mapboxgl.Map({
   renderWorldCopies: false
 });
 
+// ----------------------------------- STATE ------------------------------------
+var _currOpacity = 35;
+var _currZoom = 1;
+var _gjReset = true;
+var _locoReset = true;
+var _loco;
+var _tilelayer;
+var _projection;
+var _dimensions;
+
+
+// ----------------------------------- DOM ------------------------------------
 // select some elements to use later
 var slider = document.getElementById('slider');
 var sliderValue = document.getElementById('slider-value');
 var zoomValue = document.getElementById('zoom-value');
 var controlName = document.getElementById('control-name');
-var eliTextarea = document.getElementById('eli-textarea');
-var eliViewButton = document.getElementById('eli-view-button');
-var eliRemoveButton = document.getElementById('eli-remove-button');
-var eliResultMessage = document.getElementById('eli-result-message');
-var eliResultIcon = document.getElementById('eli-result-icon');
-var eliIconGood = document.getElementById('eli-icon-good');
-var eliIconBad = document.getElementById('eli-icon-bad');
+var gjTextarea = document.getElementById('gj-textarea');
+var gjViewButton = document.getElementById('gj-view-button');
+var gjRemoveButton = document.getElementById('gj-remove-button');
+var gjResultMessage = document.getElementById('gj-result-message');
+var gjResultIcon = document.getElementById('gj-result-icon');
+var gjIconGood = document.getElementById('gj-icon-good');
+var gjIconBad = document.getElementById('gj-icon-bad');
 var locoTextarea = document.getElementById('loco-textarea');
 var locoViewButton = document.getElementById('loco-view-button');
 var locoRemoveButton = document.getElementById('loco-remove-button');
@@ -148,21 +161,82 @@ var attribution = document.getElementById('attribution');
 var baseAttribution = ' <a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a>';
 attribution.innerHTML = baseAttribution;
 
-// style
-var ELICOLOR = '#f0f';
-var LOCOCOLOR = '#f90';
-var ELICLASS = 'magenta';
-var LOCOCLASS = 'orange';
 
-// state
-var _currOpacity = 35;
-var _currZoom = 1;
-var _eliReset = true;
-var _locoReset = true;
-var _loco;
-var _tilelayer;
-var _projection;
-var _dimensions;
+// ------------------------------------ STYLE ------------------------------------
+var GEOJSON_COLOR = '#f0f';
+var LOCO_COLOR = '#f90';
+var GEOJSON_CLASS = 'magenta';
+var LOCO_CLASS = 'orange';
+
+var GEOJSON_FILL = {
+  id: 'geojson-fill-layer',
+  type: 'fill',
+  source: 'geojson-source',
+  paint: {
+    'fill-color': GEOJSON_COLOR,
+    'fill-opacity': 0.1
+  }
+};
+var GEOJSON_LINE = {
+  id: 'geojson-line-layer',
+  type: 'line',
+  source: 'geojson-source',
+  paint: {
+    'line-blur': 1,
+    'line-width': 4,
+    'line-color': GEOJSON_COLOR,
+    'line-opacity': 0.9
+  }
+};
+var GEOJSON_POINT = {
+  id: 'geojson-point-layer',
+  type: 'circle',
+  source: 'geojson-source',
+  paint: {
+    'circle-radius': 2.5,
+    'circle-color': GEOJSON_COLOR,
+    'circle-opacity': 0.9,
+    'circle-stroke-width': 1,
+    'circle-stroke-color': '#111',
+    'circle-stroke-opacity': 0.9
+  }
+};
+var LOCO_FILL = {
+  id: 'loco-fill-layer',
+  type: 'fill',
+  source: 'loco-source',
+  paint: {
+    'fill-color': LOCO_COLOR,
+    'fill-opacity': 0.1
+  }
+};
+var LOCO_LINE = {
+  id: 'loco-line-layer',
+  type: 'line',
+  source: 'loco-source',
+  paint: {
+    'line-blur': 1,
+    'line-width': 4,
+    'line-color': LOCO_COLOR,
+    'line-opacity': 0.9
+  }
+};
+var LOCO_POINT = {
+  id: 'loco-point-layer',
+  type: 'circle',
+  source: 'loco-source',
+  paint: {
+    'circle-radius': 2.5,
+    'circle-color': LOCO_COLOR,
+    'circle-opacity': 0.9,
+    'circle-stroke-width': 1,
+    'circle-stroke-color': '#111',
+    'circle-stroke-opacity': 0.9
+  }
+};
+
+
+// ---------------------------------- HANDLERS ------------------------------------
 
 window.addEventListener('DOMContentLoaded', function(e) {
   _loco = new bundle.LocationConflation(bundle.knownFeatures);
@@ -173,6 +247,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
   _projection = d3.geoMercator().clipExtent([[0, 0], _dimensions]);
   _tileLayer = bundle.TileLayer().projection(_projection).dimensions(_dimensions);
 });
+
 
 // wait for map to load before adjusting it
 map.on('load', function() {
@@ -197,387 +272,356 @@ map.on('load', function() {
     }
   });
 
-  eliViewButton.addEventListener('click', function(e) { e.target.blur(); eliParseInput(); });
-  eliRemoveButton.addEventListener('click', function(e) { e.target.blur(); eliRemoveData(); eliClearResults(); });
-  eliTextarea.addEventListener('input', eliClearResults);
+  gjViewButton.addEventListener('click', function(e) {
+    e.target.blur();
+    gjParseInput();
+  });
 
-  locoViewButton.addEventListener('click', function(e) { e.target.blur(); locoParseInput(); });
-  locoRemoveButton.addEventListener('click', function(e) { e.target.blur(); locoRemoveData(); locoClearResults(); });
-  locoTextarea.addEventListener('input', locoClearResults);
+  gjRemoveButton.addEventListener('click', function(e) {
+    e.target.blur();
+    gjRemoveData();
+    gjClearResults();
+  });
 
+  gjTextarea.addEventListener('input', gjClearResults);
 
-  function renderTileLayer() {
-    if (!_tileLayer.source()) return;
+  locoViewButton.addEventListener('click', function(e) {
+    e.target.blur();
+    locoParseInput();
+  });
 
-    var setCenter = map.getCenter();
-    var setZoom = map.getZoom();
-
-    var merc = d3.geoMercator()    // copy _projection
-      .translate(_projection.translate())
-      .scale(_projection.scale());
-
-    var tileSize = 512;  // calculate scale based on Mapbox GL tilesize
-    var k = tileSize * Math.pow(2, setZoom) / (2 * Math.PI);
-    merc.scale(k);
-
-    var t = merc.translate();
-    var point = merc([setCenter.lng, setCenter.lat]);
-    var center = [_dimensions[0] / 2, _dimensions[1] / 2];
-    t[0] += center[0] - point[0];
-    t[1] += center[1] - point[1];
-
-    _projection
-      .translate(t)
-      .scale(k);
-
-    d3.select('#tilelayer').call(_tileLayer);
-  }
-
-
-  function eliRemoveData() {
-    controlName.textContent = '';
-    eliRemoveButton.className = eliRemoveButton.className.replace('visible', 'invisible');
-
-    _tileLayer.source(null);
-    d3.selectAll('#tilelayer > img.tile')  // remove any existing tiles
-      .classed('tile-removing', true)
-      .each(function(d, i, nodes) {
-        window.setTimeout(function() { d3.select(nodes[i]).remove(); }, 300);
-      });
-
-    if (map.getLayer('geojson-fill-layer'))   map.removeLayer('geojson-fill-layer');
-    if (map.getLayer('geojson-line-layer'))   map.removeLayer('geojson-line-layer');
-    if (map.getLayer('geojson-point-layer'))  map.removeLayer('geojson-point-layer');
-    if (map.getSource('geojson-source'))      map.removeSource('geojson-source');
-  }
-
-  function locoRemoveData() {
-    locoRemoveButton.className = locoRemoveButton.className.replace('visible', 'invisible');
-    if (map.getLayer('loco-fill-layer'))   map.removeLayer('loco-fill-layer');
-    if (map.getLayer('loco-line-layer'))   map.removeLayer('loco-line-layer');
-    if (map.getLayer('loco-point-layer'))  map.removeLayer('loco-point-layer');
-    if (map.getSource('loco-source'))      map.removeSource('loco-source');
-  }
-
-
-  function eliClearResults() {
-    if (_eliReset) return;
-    _eliReset = true;
-    eliResultIcon.className = eliResultIcon.className.replace('visible', 'invisible');
-    eliResultMessage.className = eliResultMessage.className.replace('visible', 'invisible');
-    window.setTimeout(function() {
-      eliIconGood.className = 'hidden';
-      eliIconBad.className = 'hidden';
-      eliResultMessage.innerHTML = '';
-    }, 100);
-  }
-
-  function locoClearResults() {
-    if (_locoReset) return;
-    _locoReset = true;
-    locoResultIcon.className = locoResultIcon.className.replace('visible', 'invisible');
-    locoResultMessage.className = locoResultMessage.className.replace('visible', 'invisible');
-    window.setTimeout(function() {
-      locoIconGood.className = 'hidden';
-      locoIconBad.className = 'hidden';
-      locoResultMessage.innerHTML = '';
-    }, 100);
-  }
-
-
-  function eliParseInput() {
-    if (eliTextarea.value === '') return;
-    _eliReset = false;
-    eliRemoveData();
-
-    // Lets go!
-    try {
-      var parsed = JSON5.parse(eliTextarea.value);
-
-      // what was pasted?
-      var detected = parsed.locationSet ? 'imagery-index'
-       : (parsed.properties && parsed.properties.url) ? 'editor-layer-index'
-       : (parsed.type === 'Feature' && parsed.geometry) ? 'geojson'
-       : null;
-
-      if (!detected) {
-        throw 'Unknown contents.';
-      }
-
-      var props = parsed.properties || parsed;
-      var minzoom = props.min_zoom || 0;
-      var maxzoom = props.max_zoom || 24;
-
-      // Setup name display
-      controlName.textContent = '' + props.name;
-
-      // Setup the attribution, if any
-      var attr = props.attribution || {};
-      var attrText = attr.text || '';
-      var attrURL = attr.url || '';
-
-      if (attrText && !/^©/.test(attrText)) {   // prepend © if it doesn't have one
-        attrText = '© ' + attrText;
-      }
-
-      if (attrText && !attrURL) {
-        attribution.innerHTML = '<span>' + attrText + '</span>' + baseAttribution;
-      } else if (attrText && attrURL) {
-        attribution.innerHTML = '<a href="' + attrURL + '" target="_blank">' + attrText + '</a>' + baseAttribution;
-      } else {
-        attribution.innerHTML = baseAttribution;
-      }
-
-      // Setup the raster tile layer
-      if (props.url && props.type) {
-        if (props.type === 'wms') {
-          var supportedWMSProjections = {
-            'EPSG:4326': true,
-            'EPSG:3857': true,
-            'EPSG:900913': true,
-            'EPSG:3587': true,
-            'EPSG:54004': true,
-            'EPSG:41001': true,
-            'EPSG:102113': true,
-            'EPSG:102100': true,
-            'EPSG:3785': true
-          };
-
-          var projections = (props.available_projections || [])
-            .map(function(proj) { return proj.toUpperCase(); })
-            .filter(function (proj) { return supportedWMSProjections[proj]; });
-
-          if (!projections.length) {
-            throw 'No supported wms projection found.';
-          }
-          props.projection = projections[0];
-        }
-
-        // rename a few properties where iD uses different names
-        props.template = props.url;
-        props.zoomExtent = [minzoom, maxzoom];
-
-        _tileLayer.source(bundle.BackgroundSource(props));
-        renderTileLayer();
-      }
-
-
-      // Setup the GeoJSON feature layer
-      var feature, bounds, rings;
-
-      if (detected === 'editor-layer-index') {
-        var coordinates = parsed.geometry && parsed.geometry.coordinates;
-        if (coordinates) {
-          // Workaround for editor-layer-index weirdness..
-          // Add an extra array nest to each element in `coordinates`
-          // so the rings are not treated as a bunch of holes:
-          // what we have: [ [[outer],[hole],[hole]] ]
-          // what we want: [ [[outer]],[[outer]],[[outer]] ]
-          rings = coordinates.map(function(ring) { return [ring]; });
-
-          feature = {
-            type: 'Feature',
-            properties: {},
-            geometry: { type: 'MultiPolygon', coordinates: rings }
-          };
-        }
-      } else {
-        if (detected === 'imagery-index') {
-          feature = _loco.resolveLocationSet(parsed.locationSet);
-        } else if (detected === 'geojson') {
-          feature = parsed;
-        }
-
-        if (feature.geometry.type === 'Polygon') {
-          rings = [ feature.geometry.coordinates ];
-        } else {   // MultiPolygon
-          rings = feature.geometry.coordinates;
-        }
-      }
-
-      if (feature && rings) {
-        map.addSource('geojson-source', {
-          type: 'geojson',
-          data: feature
-        });
-
-        map.addLayer({
-          id: 'geojson-fill-layer',
-          type: 'fill',
-          source: 'geojson-source',
-          paint: {
-            'fill-color': ELICOLOR,
-            'fill-opacity': 0.1
-          }
-        });
-        map.addLayer({
-          id: 'geojson-line-layer',
-          type: 'line',
-          source: 'geojson-source',
-          paint: {
-            'line-blur': 1,
-            'line-width': 4,
-            'line-color': ELICOLOR,
-            'line-opacity': 0.9
-          }
-        });
-        map.addLayer({
-          id: 'geojson-point-layer',
-          type: 'circle',
-          source: 'geojson-source',
-          paint: {
-            'circle-radius': 2.5,
-            'circle-color': ELICOLOR,
-            'circle-opacity': 0.9,
-            'circle-stroke-width': 1,
-            'circle-stroke-color': '#111',
-            'circle-stroke-opacity': 0.9
-          }
-        });
-
-        // Fit to shape bounds
-        var bounds = rings.reduce(function(bounds, ring) {
-          ring[0].forEach(function(coord) {  // ring[0] is the "outer"
-            if (coord[0] > bounds[0])  bounds[0] = coord[0];
-            if (coord[1] > bounds[1])  bounds[1] = coord[1];
-            if (coord[0] < bounds[2])  bounds[2] = coord[0];
-            if (coord[1] < bounds[3])  bounds[3] = coord[1];
-          });
-          return bounds;
-        }, [-180, -90, 180, 90]);  // W,S,E,N
-
-        map.fitBounds(bounds, { padding: 50 });
-      }
-
-
-      eliRemoveButton.className = 'visible';
-      eliIconGood.className = '';  // remove 'hidden'
-      eliResultIcon.className = 'visible ' + ELICLASS;
-      eliResultMessage.className = 'visible';
-
-      var messageHTML = '<strong>Detected ' + detected + '</strong><br/>';
-      if (props.id || parsed.id) {
-        messageHTML += '<em>id = ' + (props.id || parsed.id) + '</em><br/>';
-      }
-      if (props.name) {
-        messageHTML += '<em>name = ' + props.name + '</em><br/>';
-      }
-      if (props.url) {  // showing raster tiles
-        messageHTML += '<em>minzoom = ' + minzoom + '</em><br/>' +
-        '<em>maxzoom = ' + maxzoom + '</em>';
-      }
-      eliResultMessage.innerHTML = messageHTML;
-
-    } catch (err) {
-      eliRemoveButton.className = 'visible';
-      eliIconBad.className = '';  // remove 'hidden'
-      eliResultIcon.className = 'visible red';
-      eliResultMessage.className = 'visible';
-      eliResultMessage.innerHTML = 'Invalid JSON.<br/><em>' + err + '</em>';
-    }
-  }
-
-
-  function locoParseInput() {
-    if (locoTextarea.value === '') return;
-    _locoReset = false;
+  locoRemoveButton.addEventListener('click', function(e) {
+    e.target.blur();
     locoRemoveData();
+    locoClearResults();
+  });
 
-    // Lets go!
-    try {
-      var locationSet = JSON5.parse(locoTextarea.value);
-      if (!locationSet.include) {
-        throw 'Missing property "include".';
-      }
-
-      var feature = _loco.resolveLocationSet(locationSet);
-      var props = feature.properties || {};
-
-      var displayHTML = '';
-      if (props.nameEn) {
-        displayHTML += '<span class="nameEn">' + props.nameEn + '</span>';
-      }
-      if (props.emojiFlag) {
-        displayHTML += '<span class="emojiFlag">' + props.emojiFlag + '</span>';
-      }
-
-      map.addSource('loco-source', {
-        type: 'geojson',
-        data: feature
-      });
-
-      map.addLayer({
-        id: 'loco-fill-layer',
-        type: 'fill',
-        source: 'loco-source',
-        paint: {
-          'fill-color': LOCOCOLOR,
-          'fill-opacity': 0.1
-        }
-      });
-      map.addLayer({
-        id: 'loco-line-layer',
-        type: 'line',
-        source: 'loco-source',
-        paint: {
-          'line-blur': 1,
-          'line-width': 4,
-          'line-color': LOCOCOLOR,
-          'line-opacity': 0.9
-        }
-      });
-      map.addLayer({
-        id: 'loco-point-layer',
-        type: 'circle',
-        source: 'loco-source',
-        paint: {
-          'circle-radius': 2.5,
-          'circle-color': LOCOCOLOR,
-          'circle-opacity': 0.9,
-          'circle-stroke-width': 1,
-          'circle-stroke-color': '#111',
-          'circle-stroke-opacity': 0.9
-        }
-      });
-
-      // Fit to shape bounds
-      var rings;
-      if (feature.geometry.type === 'Polygon') {
-        rings = [ feature.geometry.coordinates ];
-      } else {   // MultiPolygon
-        rings = feature.geometry.coordinates;
-      }
-
-      var bounds = rings.reduce(function(bounds, ring) {
-        ring[0].forEach(function(coord) {  // ring[0] is the "outer"
-          if (coord[0] > bounds[0])  bounds[0] = coord[0];
-          if (coord[1] > bounds[1])  bounds[1] = coord[1];
-          if (coord[0] < bounds[2])  bounds[2] = coord[0];
-          if (coord[1] < bounds[3])  bounds[3] = coord[1];
-        });
-        return bounds;
-      }, [-180, -90, 180, 90]);  // W,S,E,N
-
-      map.fitBounds(bounds, { padding: 50 });
-
-      locoRemoveButton.className = 'visible';
-      locoIconGood.className = '';  // remove 'hidden'
-      locoResultIcon.className = 'visible ' + LOCOCLASS;
-      locoResultMessage.className = 'visible';
-      locoResultMessage.innerHTML = 'Valid LocationSet.<br/>' +
-        '<em>id = ' + feature.id + '</em><br/>' +
-        displayHTML;
-
-    } catch (err) {
-      locoRemoveButton.className = 'visible';
-      locoIconBad.className = '';  // remove 'hidden'
-      locoResultIcon.className = 'visible red';
-      locoResultMessage.className = 'visible';
-      locoResultMessage.innerHTML = 'Invalid LocationSet.<br/><em>' + err + '</em>';
-    }
-  }
-
+  locoTextarea.addEventListener('input', locoClearResults);
 });
+
+
+// ---------------------------------- FUNCTIONS ------------------------------------
+
+//
+// Fit to shape bounds - pass a MultiPolygon coordinates array
+//
+function flyTo(multipolygon) {
+  var bounds = multipolygon.reduce(function(bounds, ring) {
+    ring[0].forEach(function(coord) {  // ring[0] is the "outer"
+      if (coord[0] > bounds[0])  bounds[0] = coord[0];
+      if (coord[1] > bounds[1])  bounds[1] = coord[1];
+      if (coord[0] < bounds[2])  bounds[2] = coord[0];
+      if (coord[1] < bounds[3])  bounds[3] = coord[1];
+    });
+    return bounds;
+  }, [-180, -90, 180, 90]);  // W,S,E,N
+
+  map.fitBounds(bounds, { padding: 50 });
+}
+
+//
+// Update the raster tile layer projection to match the Mapbox GL map..
+//
+function renderTileLayer() {
+  if (!_tileLayer.source()) return;
+
+  var setCenter = map.getCenter();
+  var setZoom = map.getZoom();
+
+  var merc = d3.geoMercator()    // copy _projection
+    .translate(_projection.translate())
+    .scale(_projection.scale());
+
+  var tileSize = 512;  // calculate scale based on Mapbox GL tilesize
+  var k = tileSize * Math.pow(2, setZoom) / (2 * Math.PI);
+  merc.scale(k);
+
+  var t = merc.translate();
+  var point = merc([setCenter.lng, setCenter.lat]);
+  var center = [_dimensions[0] / 2, _dimensions[1] / 2];
+  t[0] += center[0] - point[0];
+  t[1] += center[1] - point[1];
+
+  _projection
+    .translate(t)
+    .scale(k);
+
+  d3.select('#tilelayer').call(_tileLayer);
+}
+
+//
+// Remove the GeoJSON data from the map..
+//
+function gjRemoveData() {
+  controlName.textContent = '';
+  gjRemoveButton.className = gjRemoveButton.className.replace('visible', 'invisible');
+
+  _tileLayer.source(null);
+  d3.selectAll('#tilelayer > img.tile')  // remove any existing tiles
+    .classed('tile-removing', true)
+    .each(function(d, i, nodes) {
+      window.setTimeout(function() { d3.select(nodes[i]).remove(); }, 300);
+    });
+
+  if (map.getLayer('geojson-fill-layer'))   map.removeLayer('geojson-fill-layer');
+  if (map.getLayer('geojson-line-layer'))   map.removeLayer('geojson-line-layer');
+  if (map.getLayer('geojson-point-layer'))  map.removeLayer('geojson-point-layer');
+  if (map.getSource('geojson-source'))      map.removeSource('geojson-source');
+}
+
+//
+// Remove the LocationConflation data from the map..
+//
+function locoRemoveData() {
+  locoRemoveButton.className = locoRemoveButton.className.replace('visible', 'invisible');
+  if (map.getLayer('loco-fill-layer'))   map.removeLayer('loco-fill-layer');
+  if (map.getLayer('loco-line-layer'))   map.removeLayer('loco-line-layer');
+  if (map.getLayer('loco-point-layer'))  map.removeLayer('loco-point-layer');
+  if (map.getSource('loco-source'))      map.removeSource('loco-source');
+}
+
+//
+// Remove the GeoJSON results from the DOM..
+//
+function gjClearResults() {
+  if (_gjReset) return;
+  _gjReset = true;
+  gjResultIcon.className = gjResultIcon.className.replace('visible', 'invisible');
+  gjResultMessage.className = gjResultMessage.className.replace('visible', 'invisible');
+  window.setTimeout(function() {
+    gjIconGood.className = 'hidden';
+    gjIconBad.className = 'hidden';
+    gjResultMessage.innerHTML = '';
+  }, 100);
+}
+
+//
+// Remove the LocationConflation results from the DOM..
+//
+function locoClearResults() {
+  if (_locoReset) return;
+  _locoReset = true;
+  locoResultIcon.className = locoResultIcon.className.replace('visible', 'invisible');
+  locoResultMessage.className = locoResultMessage.className.replace('visible', 'invisible');
+  window.setTimeout(function() {
+    locoIconGood.className = 'hidden';
+    locoIconBad.className = 'hidden';
+    locoResultMessage.innerHTML = '';
+  }, 100);
+}
+
+//
+// Parse the pasted GeoJSON data,
+// then update the map and present results..
+//
+function gjParseInput() {
+  if (gjTextarea.value === '') return;
+  _gjReset = false;
+  gjRemoveData();
+
+  // Lets go!
+  try {
+    var parsed = JSON5.parse(gjTextarea.value);
+
+    // What was pasted?
+    var detected = parsed.locationSet ? 'imagery-index'
+     : (parsed.properties && parsed.properties.url) ? 'editor-layer-index'
+     : (parsed.type === 'Feature' && parsed.geometry) ? 'geojson'
+     : null;
+
+    if (!detected) {
+      throw 'Unknown contents.';
+    }
+
+    var props = parsed.properties || parsed;
+    var minzoom = props.min_zoom || 0;
+    var maxzoom = props.max_zoom || 24;
+
+    // Setup name display
+    controlName.textContent = '' + props.name;
+
+    // Setup the attribution, if any
+    var attr = props.attribution || {};
+    var attrText = attr.text || '';
+    var attrURL = attr.url || '';
+
+    if (attrText && !/^©/.test(attrText)) {   // prepend © if it doesn't have one
+      attrText = '© ' + attrText;
+    }
+
+    if (attrText && !attrURL) {
+      attribution.innerHTML = '<span>' + attrText + '</span>' + baseAttribution;
+    } else if (attrText && attrURL) {
+      attribution.innerHTML = '<a href="' + attrURL + '" target="_blank">' + attrText + '</a>' + baseAttribution;
+    } else {
+      attribution.innerHTML = baseAttribution;
+    }
+
+    // Setup the raster tile layer
+    if (props.url && props.type) {
+      if (props.type === 'wms') {
+        var supportedWMSProjections = {
+          'EPSG:4326': true,
+          'EPSG:3857': true,
+          'EPSG:900913': true,
+          'EPSG:3587': true,
+          'EPSG:54004': true,
+          'EPSG:41001': true,
+          'EPSG:102113': true,
+          'EPSG:102100': true,
+          'EPSG:3785': true
+        };
+
+        var projections = (props.available_projections || [])
+          .map(function(proj) { return proj.toUpperCase(); })
+          .filter(function (proj) { return supportedWMSProjections[proj]; });
+
+        if (!projections.length) {
+          throw 'No supported wms projection found.';
+        }
+        props.projection = projections[0];
+      }
+
+      // rename a few properties where iD uses different names
+      props.template = props.url;
+      props.zoomExtent = [minzoom, maxzoom];
+
+      _tileLayer.source(bundle.BackgroundSource(props));
+      renderTileLayer();
+    }
+
+
+    // Setup the GeoJSON feature layer
+    var feature, multipolygon;
+
+    if (detected === 'editor-layer-index') {
+      var coordinates = parsed.geometry && parsed.geometry.coordinates;
+      if (coordinates) {
+        // Workaround for editor-layer-index weirdness..
+        // Add an extra array nest to each element in `coordinates`
+        // so the rings are not treated as a bunch of holes:
+        // what we have: [ [[outer],[hole],[hole]] ]
+        // what we want: [ [[outer]],[[outer]],[[outer]] ]
+        multipolygon = coordinates.map(function(ring) { return [ring]; });
+
+        feature = {
+          type: 'Feature',
+          properties: {},
+          geometry: { type: 'MultiPolygon', coordinates: multipolygon }
+        };
+      }
+
+    } else {
+      if (detected === 'imagery-index') {
+        feature = _loco.resolveLocationSet(parsed.locationSet);
+      } else if (detected === 'geojson') {
+        feature = parsed;
+      }
+
+      if (feature.geometry.type === 'Polygon') {
+        multipolygon = [ feature.geometry.coordinates ];
+      } else {      // MultiPolygon
+        multipolygon = feature.geometry.coordinates;
+      }
+    }
+
+    if (feature && multipolygon) {
+      map.addSource('geojson-source', { type: 'geojson', data: feature });
+      map.addLayer(GEOJSON_FILL);
+      map.addLayer(GEOJSON_LINE);
+      map.addLayer(GEOJSON_POINT);
+      flyTo(multipolygon);
+    }
+
+    // Present results..
+    gjRemoveButton.className = 'visible';
+    gjIconGood.className = '';  // remove 'hidden'
+    gjResultIcon.className = 'visible ' + GEOJSON_CLASS;
+    gjResultMessage.className = 'visible';
+
+    var detectedText = detected + (detected === 'geojson' ? ' Feature' : ' source');
+    var messageHTML = '<strong class="' + GEOJSON_CLASS + '">Valid ' + detectedText + '.</strong><br/>';
+    if (props.id || parsed.id) {
+      messageHTML += '<em>id = ' + (props.id || parsed.id) + '</em><br/>';
+    }
+    if (props.name) {
+      messageHTML += '<em>name = ' + props.name + '</em><br/>';
+    }
+    if (props.url) {  // showing raster tiles
+      messageHTML += '<em>minzoom = ' + minzoom + '</em><br/>' +
+      '<em>maxzoom = ' + maxzoom + '</em>';
+    }
+    gjResultMessage.innerHTML = messageHTML;
+
+  } catch (err) {
+    gjRemoveButton.className = 'visible';
+    gjIconBad.className = '';  // remove 'hidden'
+    gjResultIcon.className = 'visible red';
+    gjResultMessage.className = 'visible';
+    gjResultMessage.innerHTML = 'Invalid JSON.<br/><em>' + err + '</em>';
+  }
+}
+
+
+//
+// Parse the pasted LocationConflation data,
+// then update the map and present results..
+//
+function locoParseInput() {
+  if (locoTextarea.value === '') return;
+  _locoReset = false;
+  locoRemoveData();
+
+  // Lets go!
+  try {
+    var locationSet = JSON5.parse(locoTextarea.value);
+    if (!locationSet.include) {
+      throw 'Missing property "include".';
+    }
+
+    var feature = _loco.resolveLocationSet(locationSet);
+    var props = feature.properties || {};
+
+    // Setup the LocationConflation feature layer
+    map.addSource('loco-source', { type: 'geojson', data: feature });
+    map.addLayer(LOCO_FILL);
+    map.addLayer(LOCO_LINE);
+    map.addLayer(LOCO_POINT);
+
+    var multipolygon;
+    if (feature.geometry.type === 'Polygon') {
+      multipolygon = [ feature.geometry.coordinates ];
+    } else {   // MultiPolygon
+      multipolygon = feature.geometry.coordinates;
+    }
+
+    flyTo(multipolygon);
+
+    // Present results..
+    locoRemoveButton.className = 'visible';
+    locoIconGood.className = '';  // remove 'hidden'
+    locoResultIcon.className = 'visible ' + LOCO_CLASS;
+    locoResultMessage.className = 'visible';
+
+    var messageHTML = '<strong class="' + LOCO_CLASS + '">Valid LocationSet.</strong><br/>' +
+      '<em>id = ' + feature.id + '</em><br/>';
+
+    if (props.nameEn) {
+      messageHTML += '<span class="nameEn">' + props.nameEn + '</span>';
+    }
+    if (props.emojiFlag) {
+      messageHTML += '<span class="emojiFlag">' + props.emojiFlag + '</span>';
+    }
+    locoResultMessage.innerHTML = messageHTML;
+
+  } catch (err) {
+    locoRemoveButton.className = 'visible';
+    locoIconBad.className = '';  // remove 'hidden'
+    locoResultIcon.className = 'visible red';
+    locoResultMessage.className = 'visible';
+    locoResultMessage.innerHTML = 'Invalid LocationSet.<br/><em>' + err + '</em>';
+  }
+}
 
 </script>
 </body>
