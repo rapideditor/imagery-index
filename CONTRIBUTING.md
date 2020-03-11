@@ -26,7 +26,19 @@ To add your imagery source to the index:
 * Clone this project, for example:
   `git clone git@github.com:ideditor/imagery-index.git`
 * `cd` into the project folder,
-* Run `npm install` to install libraries
+* Run `npm install` to install dependencies
+
+
+### Building
+
+For contributors:
+* `npm run build` - This will check the files and make them pretty
+
+For maintainers:
+* `npm run test` - Same as "build" but also checks the source code
+* `npm run stats` - Generate some statistics about the file sizes
+* `npm run dist` - Generate distibuted and minified files under `dist/`
+* `npm run appbuild` - Generate the JavaScript bundle used by the preview site: https://ideditor.github.io/imagery-index/
 
 
 ### Sources
@@ -211,12 +223,6 @@ The build script will automatically generate an `id` property to match the filen
 * You can draw and edit GeoJSON polygons with [geojson.io](http://geojson.io) - (Editing MultiPolygons does not work in drawing mode, but you can edit the code directly).
 * You can simplify GeoJSON files with [mapshaper.org](https://mapshaper.org/)
 * [More than you ever wanted to know about GeoJSON](https://macwright.org/2015/03/23/geojson-second-bite.html)
-
-
-### Building
-
-* Just `npm run test`
-  * This will check the files for errors and make them pretty.
 
 
 ### Translations
