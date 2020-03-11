@@ -435,6 +435,7 @@ map.on('load', function() {
           }
         });
 
+        // Fit to shape bounds
         var bounds = rings.reduce(function(bounds, ring) {
           ring[0].forEach(function(coord) {  // ring[0] is the "outer"
             if (coord[0] > bounds[0])  bounds[0] = coord[0];
@@ -488,8 +489,10 @@ map.on('load', function() {
       if (!locationSet.include) {
         throw 'Missing property "include".';
       }
-      var gj = _loco.resolveLocationSet(locationSet);
-      var props = gj.properties || {};
+
+      var feature = _loco.resolveLocationSet(locationSet);
+      var props = feature.properties || {};
+
       var displayHTML = '';
       if (props.nameEn) {
         displayHTML += '<span class="nameEn">' + props.nameEn + '</span>';
@@ -500,7 +503,7 @@ map.on('load', function() {
 
       map.addSource('loco-source', {
         type: 'geojson',
-        data: gj
+        data: feature
       });
 
       map.addLayer({
@@ -537,12 +540,32 @@ map.on('load', function() {
         }
       });
 
+      // Fit to shape bounds
+      var rings;
+      if (feature.geometry.type === 'Polygon') {
+        rings = [ feature.geometry.coordinates ];
+      } else {   // MultiPolygon
+        rings = feature.geometry.coordinates;
+      }
+
+      var bounds = rings.reduce(function(bounds, ring) {
+        ring[0].forEach(function(coord) {  // ring[0] is the "outer"
+          if (coord[0] > bounds[0])  bounds[0] = coord[0];
+          if (coord[1] > bounds[1])  bounds[1] = coord[1];
+          if (coord[0] < bounds[2])  bounds[2] = coord[0];
+          if (coord[1] < bounds[3])  bounds[3] = coord[1];
+        });
+        return bounds;
+      }, [-180, -90, 180, 90]);  // W,S,E,N
+
+      map.fitBounds(bounds, { padding: 50 });
+
       locoRemoveButton.className = 'visible';
       locoIconGood.className = '';  // remove 'hidden'
       locoResultIcon.className = 'visible ' + LOCOCLASS;
       locoResultMessage.className = 'visible';
       locoResultMessage.innerHTML = 'Valid LocationSet.<br/>' +
-        '<em>id = ' + gj.id + '</em><br/>' +
+        '<em>id = ' + feature.id + '</em><br/>' +
         displayHTML;
 
     } catch (err) {
