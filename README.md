@@ -3,7 +3,7 @@
 
 🛰 An index of aerial and satellite imagery useful for mapping.
 
-Play with the source files here: https://ideditor.github.io/imagery-index/
+Play with the data here: https://ideditor.github.io/imagery-index/
 
 
 ### About the index
@@ -24,47 +24,129 @@ To add an imagery source to the index:
 👉 See [CONTRIBUTING.md](CONTRIBUTING.md) for full details about how to add an imagery source to this index.
 
 
-#### Source files
+### Details
 
-The source files for this index are stored in two kinds of files:
+The goal of **imagery-index** is to collect public imagery sources useful for making maps.  We use imagery-index in the [iD editor](https://github.com/openstreetmap/iD).
+
+This project evolved from a previous project called [editor-layer-index](https://github.com/osmlab/editor-layer-index). Thank you, editor-layer-index!
+
+To avoid distributing redundant geojson data, imagery-index leverages several other projects:
+  * [country-coder](https://github.com/ideditor/country-coder) - a dataset of the world's country and region borders.
+  * [location-conflation](https://github.com/ideditor/location-conflation) - a library for defining complex geographic regions. Each `locationSet` may contain `include` and `exclude` regions.
+
+Before: Include multiple redundant copies of a 5kb boundary of Slovakia<br/>
+After: `"locationSet": {"include": ["sk"]}`
+
+Before: Include 67kb outline of the contiguous United States<br/>
+After: `"locationSet": {"include": ["us"], "exclude": ["as", "um", "alaska_hawaii.geojson"]}`
+
+The space savings are significant:
+
+Project | Size
+------- | ----
+osmlab/editor-layer-index  | 2.1Mb minified `imagery.geojson`
+@ideditor/imagery-index    | 221kb features, 354kb sources (575kb total)
+
+It's also much easier to contribute to and maintain the index.
+
+What's not included (yet):
+* historic scanned imagery from the United Kingdom.
+* sources that used `wmts` or `wms_endpoint` types.
+
+
+### Source files
+
+The source files for imagery-index are stored in two kinds of files:
 
 * Under `sources/` there are `.json` files to describe the imagery sources
 * Under `features/` there are custom `.geojson` files
 
 
-#### Distributed Files
+### Distributed Files
 
 Several files are published under `dist/`.  These are generated - do not edit them.
 
 * `dist/`
-  * `featureCollection.json` - All of the custom GeoJSON features.
-  * `sources.json` -  All of the sources.
+  * `featureCollection.json` - A GeoJSON FeatureCollection containing only the custom features
+  * `sources.json` -  An Object containing all of the sources
   * `combined.json` -  A "join" of every GeoJSON feature with the image sources stored in a `sources` property.
-  * `legacy/` - Compatible editor-layer-index style files.
-    * `imagery.geojson` - A GeoJSON featureCollection of all imagery sources
-    * `imagery.json` -  An Array of all imagery sources
-    * `imagery.xml` -  JOSM compatible imagery source XML
+  * `legacy/` - Compatible editor-layer-index style files
+    * `imagery.geojson` - A GeoJSON FeatureCollection of all imagery sources (including from country-coder)
+    * `imagery.json` - An Array of all imagery sources and their properties
+    * `imagery.xml` - A [JOSM-compatible](https://josm.openstreetmap.de/wiki/Maps#Documentation) imagery source XML file
   * `images/` - many of the source logos can be found here
 
-🧐: "Why use `.json` instead of `.geojson` for the file extension for generated GeoJSON files?"
-🤓: "So you can `require` or `import` them as modules into other JavaScript code if you want."
+🧐: "Why use `.json` instead of `.geojson` as the file extension for generated GeoJSON files?"<br/>
+🤓: "So you can `require` or `import` them as modules into other JavaScript code if you want."<br/>
+🧐: "Can you give me an example?"<br/>
+🤓: "Great segue!..."<br/>
 
+
+### Examples
+
+Let's create a `LocationConflation` instance and seed it with the `featureCollection.json` containing all the custom geojsons from imagery-index.  We'll grab the imagery `sources.json` too.
 ```js
+const sources = require('@ideditor/imagery-index/dist/sources.json').sources;
+const features = require('@ideditor/imagery-index/dist/featureCollection.json');
+
 const LocationConflation = require('@ideditor/location-conflation');
-const featureCollection = require('@ideditor/imagery-index/dist/featureCollection.json');
-const loco = new LocationConflation(featureCollection);
-const feature = loco.resolveLocationSet({include: ['hr'], exclude: ['dgu-dof-exclude-2017.geojson']});
+const loco = new LocationConflation(features);
 ```
-<img width="600px" alt="Croatia Custom GeoJSON" src="https://raw.githubusercontent.com/ideditor/imagery-index/master/docs/images/croatia-custom-geojson.png"/>
+
+We can use these to get info about the imagery sources.  A simple one might just be "include all of Croatia":
+```js
+let source = sources['dgu-dof-2011'];
+source.name;
+//  "dgu.hr: Croatia 2011 Aerial imagery"
+source.locationSet;
+//  { include: [ 'hr' ] }
+let feature = loco.resolveLocationSet(source.locationSet);
+```
+
+<img width="600px" alt="Croatia Aerial Imagery 2011" src="https://raw.githubusercontent.com/ideditor/imagery-index/master/docs/images/croatia-2011.png"/>
+
+But we're not limited to only country borders. For example in 2017, only portions of Croatia were imaged. The `locationSet` contains a custom .geojson to exclude a squarish region from the middle of the country:
+```js
+let source = sources['dgu-dof-2017'];
+source.name;
+//  "dgu.hr: Croatia 2017 Aerial imagery"
+source.locationSet;
+//  {include: ['hr'], exclude: ['dgu-dof-exclude-2017.geojson']}
+let feature = loco.resolveLocationSet(source.locationSet);
+```
+
+<img width="600px" alt="Croatia Aerial Imagery 2017" src="https://raw.githubusercontent.com/ideditor/imagery-index/master/docs/images/croatia-2017.png"/>
+
+In 2018, they imaged the rest of Croatia. A different .geojson file is used to exclude Croatia's outer regions:
+```js
+let source = sources['dgu-dof-2018'];
+source.name;
+//  "dgu.hr: Croatia 2018 Aerial imagery"
+source.locationSet;
+//  {include: ['hr'], exclude: ['dgu-dof-exclude-2018.geojson']}
+let feature = loco.resolveLocationSet(source.locationSet);
+```
+
+<img width="600px" alt="Croatia Aerial Imagery 2018" src="https://raw.githubusercontent.com/ideditor/imagery-index/master/docs/images/croatia-2018.png"/>
 
 
-#### Prerequisites
+### Interactive Viewer
+
+Try out the interactive source viewer at https://ideditor.github.io/imagery-index/ to inspect any of the imagery sources visually and to compare them to their boundary polygons. You can also test different `locationSet` values to see what they look like.
+
+💡 The viewer itself is just a single .html page using a Mapbox GL base layer + the raster tile code from iD sitting on top of it. The source code is in [`docs/index.html`](https://github.com/ideditor/imagery-index/blob/master/docs/index.html).
+
+🧐: "Why use iD's `&lt;img&gt;`-based slippy map code instead of adding a Mapbox GL raster layer?"<br/>
+😭: "[CORS is why](https://github.com/ideditor/imagery-index/issues/1). WebGL needs access to the pixels of an image to show it, and this can't happen unless the tile server has the necessary CORS header set. The good news is, if an imagery source works here, it will work in iD also."<br/>
+
+
+### Prerequisites
 
 * [Node.js](https://nodejs.org/) version 10 or newer
 * [`git`](https://www.atlassian.com/git/tutorials/install-git/) for your platform
 
 
-#### Installing
+### Installing
 
 * Clone this project, for example:
   `git clone git@github.com:ideditor/imagery-index.git`
@@ -72,7 +154,7 @@ const feature = loco.resolveLocationSet({include: ['hr'], exclude: ['dgu-dof-exc
 * Run `npm install` to install dependencies
 
 
-#### Building
+### Building
 
 For contributors:
 * `npm run build` - This will check the files and make them pretty
@@ -81,8 +163,7 @@ For maintainers:
 * `npm run test` - Same as "build" but also checks the source code
 * `npm run stats` - Generate some statistics about the file sizes
 * `npm run dist` - Generate distibuted and minified files under `dist/`
-* `npm run appbuild` - Generate the JavaScript bundle for the preview site
-https://ideditor.github.io/imagery-index/
+* `npm run appbuild` - Generate the JavaScript bundle used by the preview site: https://ideditor.github.io/imagery-index/
 
 
 ### License
