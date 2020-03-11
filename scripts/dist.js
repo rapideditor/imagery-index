@@ -22,8 +22,8 @@ function buildAll() {
 
   // Start clean
   shell.rm('-f', [
-    'dist/combined.geojson',
-    'dist/combined.min.geojson',
+    'dist/combined.json',
+    'dist/combined.min.json',
     'dist/legacy/imagery.geojson',
     'dist/legacy/imagery.min.geojson',
     'dist/legacy/imagery.json',
@@ -105,7 +105,7 @@ function dateString() {
 // }
 //
 function generateCombined() {
-  process.stdout.write('📦  dist/combined.geojson  ');
+  process.stdout.write('📦  dist/combined.json  ');
 
   let keepFeatures = {};
   Object.keys(sources).forEach(sourceId => {
@@ -126,8 +126,8 @@ function generateCombined() {
     type: 'FeatureCollection',
     features: Object.values(keepFeatures)
   };
-  fs.writeFileSync('dist/combined.geojson', prettyStringify(combined) );
-  fs.writeFileSync('dist/combined.min.geojson', JSON.stringify(combined) );
+  fs.writeFileSync('dist/combined.json', prettyStringify(combined) );
+  fs.writeFileSync('dist/combined.min.json', JSON.stringify(combined) );
 
   process.stdout.write(colors.green('✓\n'));
 }
