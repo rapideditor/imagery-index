@@ -172,7 +172,10 @@ For maintainers:
 * `npm run appbuild` - Generate the JavaScript bundle used by the preview site: https://ideditor.github.io/imagery-index/
 
 
-### License
+### Licenses
 
-imagery-index is available under the [ISC License](https://opensource.org/licenses/ISC).
+imagery-index data files are available under the [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 See the [LICENSE.md](LICENSE.md) file for more details.
+
+imagery-index build scripts are available separately under the [ISC License](https://opensource.org/licenses/ISC).
+See the [scripts/LICENSE.md](scripts/LICENSE.md) file for more details.

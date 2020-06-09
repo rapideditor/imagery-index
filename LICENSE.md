@@ -1,15 +1,8 @@
-ISC License
+imagery-index data files are available under the [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 
-Copyright (c) 2020, imagery-index contributors
+imagery-index build scripts are available separately under the [ISC License](https://opensource.org/licenses/ISC).
+See the [scripts/LICENSE.md](scripts/LICENSE.md) file for more details.
 
-Permission to use, copy, modify, and/or distribute this software for any purpose
-with or without fee is hereby granted, provided that the above copyright notice
-and this permission notice appear in all copies.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
-FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS
-OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
-TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
-THIS SOFTWARE.
+A list of past contributors can be found at:
+https://josm.openstreetmap.de/wiki/Maps?action=history
+https://github.com/osmlab/editor-layer-index/graphs/contributors

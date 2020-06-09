@@ -1,7 +1,7 @@
 {
   "name": "@ideditor/imagery-index",
   "version": "0.1.0",
-  "license": "ISC",
+  "license": "CC-BY-SA-3.0",
   "repository": "ideditor/imagery-index",
   "author": "Bryan Housel <bhousel@gmail.com>",
   "description": "An index of background imagery useful for mapping",
