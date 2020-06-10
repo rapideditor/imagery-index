@@ -39,7 +39,7 @@
     "jsonschema": "^1.2.5",
     "rollup": "~1.31.1",
     "shelljs": "^0.8.3",
-    "xmlbuilder2": "^1.4.3"
+    "xmlbuilder2": "^2.1.2"
   },
   "engines": {
     "node": ">=10"
