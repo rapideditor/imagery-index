@@ -7,3 +7,5 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    ignore: 
+      - dependency-name: "iD"   # Keep this pinned to the version we use for the slippymap
