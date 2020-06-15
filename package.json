@@ -3,7 +3,9 @@
   "version": "0.2.0",
   "license": "CC-BY-SA-3.0",
   "repository": "ideditor/imagery-index",
-  "author": "Bryan Housel <bhousel@gmail.com>",
+  "contributors": [
+    "Bryan Housel <bhousel@gmail.com> (https://github.com/bhousel)"
+  ],
   "description": "An index of background imagery useful for mapping",
   "keywords": [
     "imagery"
