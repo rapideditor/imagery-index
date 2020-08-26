@@ -209,21 +209,13 @@ function collectSources(tstrings, featureCollection) {
     source = obj;
     validateFile(file, source, sourceSchema);
 
-    (source.locationSet.include || []).forEach(location => {
-      if (!loco.validateLocation(location)) {
-        console.error(colors.red('Error - Invalid include location: ') + colors.yellow(location));
-        console.error('  ' + colors.yellow(file));
-        process.exit(1);
-      }
-    });
-
-    (source.locationSet.exclude || []).forEach(location => {
-      if (!loco.validateLocation(location)) {
-        console.error(colors.red('Error - Invalid exclude location: ') + colors.yellow(location));
-        console.error('  ' + colors.yellow(file));
-        process.exit(1);
-      }
-    });
+    try {
+      loco.validateLocationSet(source.locationSet);
+    } catch (err) {
+      console.error(colors.red(`Error - ${err.message} in:`));
+      console.error('  ' + colors.yellow(file));
+      process.exit(1);
+    }
 
     prettifyFile(file, source, contents);
 

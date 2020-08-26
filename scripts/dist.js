@@ -110,7 +110,7 @@ function generateCombined() {
   let keepFeatures = {};
   Object.keys(sources).forEach(sourceId => {
     const source = sources[sourceId];
-    const feature = loco.resolveLocationSet(source.locationSet);
+    const feature = loco.resolveLocationSet(source.locationSet).feature;
 
     let keepFeature = keepFeatures[feature.id];
     if (!keepFeature) {
@@ -164,7 +164,7 @@ function generateLegacyImageryGeojson() {
 
   let keepFeatures = [];
   Object.values(sources).forEach(source => {
-    const feature = loco.resolveLocationSet(source.locationSet);
+    const feature = loco.resolveLocationSet(source.locationSet).feature;
     feature.id = source.id;
     feature.properties = deepClone(source);
 
@@ -257,7 +257,7 @@ function generateLegacyImageryJson() {
     if (source.max_zoom)  { extent.max_zoom = source.max_zoom; }
     if (source.min_zoom)  { extent.min_zoom = source.min_zoom; }
 
-    const feature = loco.resolveLocationSet(source.locationSet);
+    const feature = loco.resolveLocationSet(source.locationSet).feature;
     if (feature.id === 'Q2') {   // whole world
       feature.geometry = null;
     }
@@ -350,7 +350,7 @@ function generateLegacyImageryXml() {
     }
 
     // gather bounds and polygon shapes
-    const feature = loco.resolveLocationSet(source.locationSet);
+    const feature = loco.resolveLocationSet(source.locationSet).feature;
     if (feature.geometry && feature.id !== 'Q2') {   // Q2 = whole world
       let bounds = entry.ele('bounds');
 
