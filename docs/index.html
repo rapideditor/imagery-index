@@ -513,7 +513,7 @@ function gjParseInput() {
 
     } else {
       if (detected === 'imagery-index') {
-        feature = _loco.resolveLocationSet(parsed.locationSet);
+        feature = _loco.resolveLocationSet(parsed.locationSet).feature;
       } else if (detected === 'geojson') {
         feature = parsed;
       }
@@ -579,7 +579,7 @@ function locoParseInput() {
       throw 'Missing property "include".';
     }
 
-    var feature = _loco.resolveLocationSet(locationSet);
+    var feature = _loco.resolveLocationSet(locationSet).feature;
     var props = feature.properties || {};
 
     // Setup the LocationConflation feature layer
