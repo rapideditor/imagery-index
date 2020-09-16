@@ -56,7 +56,7 @@ function iconPath(icon) {
   if (/^http(s)?/i.test(icon)) {
     return icon;
   } else {
-    return `https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/${icon}`;
+    return `https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/${icon}`;
   }
 }
 

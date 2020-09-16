@@ -105,7 +105,7 @@ source.locationSet;
 let feature = loco.resolveLocationSet(source.locationSet);
 ```
 
-<img width="500px" alt="Croatia Aerial Imagery 2011" src="https://raw.githubusercontent.com/ideditor/imagery-index/master/docs/images/croatia-2011.png"/>
+<img width="500px" alt="Croatia Aerial Imagery 2011" src="https://raw.githubusercontent.com/ideditor/imagery-index/main/docs/images/croatia-2011.png"/>
 
 But we're not limited only to country borders. For example in 2017, only portions of Croatia were imaged. The `locationSet` contains a custom .geojson to exclude a squarish region from the middle of the country:
 ```js
@@ -117,7 +117,7 @@ source.locationSet;
 let feature = loco.resolveLocationSet(source.locationSet);
 ```
 
-<img width="500px" alt="Croatia Aerial Imagery 2017" src="https://raw.githubusercontent.com/ideditor/imagery-index/master/docs/images/croatia-2017.png"/>
+<img width="500px" alt="Croatia Aerial Imagery 2017" src="https://raw.githubusercontent.com/ideditor/imagery-index/main/docs/images/croatia-2017.png"/>
 
 In 2018, they imaged the rest of Croatia. A different .geojson file is used to exclude Croatia's outer regions:
 ```js
@@ -129,7 +129,7 @@ source.locationSet;
 let feature = loco.resolveLocationSet(source.locationSet);
 ```
 
-<img width="500px" alt="Croatia Aerial Imagery 2018" src="https://raw.githubusercontent.com/ideditor/imagery-index/master/docs/images/croatia-2018.png"/>
+<img width="500px" alt="Croatia Aerial Imagery 2018" src="https://raw.githubusercontent.com/ideditor/imagery-index/main/docs/images/croatia-2018.png"/>
 
 
 ### Interactive Viewer
@@ -140,7 +140,7 @@ The viewer itself is just a single .html page using:
   * A [Mapbox GL](https://docs.mapbox.com/mapbox-gl-js/api/) base layer, and
   * The raster tile code from [iD](https://github.com/openstreetmap/iD) sitting on top of it.
 
-The code for the is in [`docs/index.html`](https://github.com/ideditor/imagery-index/blob/master/docs/index.html).
+The code for the is in [`docs/index.html`](https://github.com/ideditor/imagery-index/blob/main/docs/index.html).
 
 🧐: "Why use iD's `<img>`-based slippy map code instead of adding a Mapbox GL raster layer?"<br/>
 😭: "[CORS is why](https://github.com/ideditor/imagery-index/issues/1). WebGL needs access to the pixels of an image in order to render it, and this can't happen unless the tile server has the necessary CORS header set. The good news is: if an imagery source works here, it will work in iD also."<br/>
