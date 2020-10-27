@@ -1,7 +1,7 @@
 {
   "id": "antrimnuig",
   "type": "tms",
-  "locationSet": {"include": ["ie", "northern_ireland.geojson"]},
+  "locationSet": {"include": ["ie", "gb-nir"]},
   "country_code": "IE",
   "name": "Ireland Civil Parishes and Baronies - Memorial Atlas",
   "description": "Memorial Atlas of Ireland (1901) L.J. Richards",

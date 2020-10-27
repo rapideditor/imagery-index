@@ -1,7 +1,7 @@
 {
   "id": "osmie_tie_not_counties",
   "type": "tms",
-  "locationSet": {"include": ["ie", "northern_ireland.geojson"]},
+  "locationSet": {"include": ["ie", "gb-nir"]},
   "country_code": "IE",
   "name": "OSMIE T.ie Land not in Counties",
   "url": "https://www.townlands.ie/tiles/not_counties/{zoom}/{x}/{y}.png",

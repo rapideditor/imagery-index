@@ -1,7 +1,7 @@
 {
   "id": "GSGS4136",
   "type": "tms",
-  "locationSet": {"include": ["ie", "northern_ireland.geojson"]},
+  "locationSet": {"include": ["ie", "gb-nir"]},
   "country_code": "IE",
   "name": "Ireland British War Office One-Inch 1941-43 GSGS 4136",
   "url": "https://geo.nls.uk/maps/ireland/gsgs4136/{zoom}/{x}/{-y}.png",
