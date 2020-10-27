@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "meta": {"generated": "2020-08-26 21:26:49", "version": "1.0"},
+  "meta": {"generated": "2020-10-27 13:33:27", "version": "1.0"},
   "features": [
     {
       "type": "Feature",
@@ -17,7 +17,7 @@
         "privacy_policy_url": "https://www.environment.act.gov.au/about/privacy",
         "start_date": "2017-05",
         "end_date": "2017-05",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ACT-mapi.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/ACT-mapi.png",
         "available_projections": ["EPSG:3857"],
         "attribution": {
           "required": true,
@@ -111,7 +111,7 @@
         "privacy_policy_url": "https://www.environment.act.gov.au/about/privacy",
         "start_date": "2018-03-19",
         "end_date": "2018-03-19",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ACT-mapi.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/ACT-mapi.png",
         "available_projections": ["EPSG:3857"],
         "attribution": {
           "required": true,
@@ -208,7 +208,7 @@
         "privacy_policy_url": "https://www.environment.act.gov.au/about/privacy",
         "start_date": "2019-02",
         "end_date": "2019-02",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ACT-mapi.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/ACT-mapi.png",
         "available_projections": ["EPSG:3857"],
         "attribution": {
           "required": true,
@@ -273,7 +273,7 @@
         "best": true,
         "start_date": "2019-06",
         "end_date": "2019-06",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ACT-mapi.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/ACT-mapi.png",
         "available_projections": ["EPSG:3857"],
         "attribution": {
           "required": true,
@@ -337,7 +337,7 @@
         "license_url": "https://www.geopunt.be/catalogus/datasetfolder/07dcd02f-eb0a-4247-95d1-155bb1129b3b",
         "start_date": "2013",
         "end_date": "2015",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AIV.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/AIV.png",
         "i18n": true,
         "available_projections": [
           "EPSG:3043",
@@ -477,7 +477,7 @@
         "license_url": "https://www.geopunt.be/catalogus/datasetfolder/07dcd02f-eb0a-4247-95d1-155bb1129b3b",
         "start_date": "2013",
         "end_date": "2015",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AIV.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/AIV.png",
         "i18n": true,
         "available_projections": [
           "EPSG:3043",
@@ -617,7 +617,7 @@
         "license_url": "https://www.geopunt.be/catalogus/datasetfolder/07dcd02f-eb0a-4247-95d1-155bb1129b3b",
         "start_date": "2013",
         "end_date": "2015",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AIV.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/AIV.png",
         "i18n": true,
         "available_projections": [
           "EPSG:3043",
@@ -833,7 +833,7 @@
         "license_url": "https://www.geopunt.be/catalogus/datasetfolder/07dcd02f-eb0a-4247-95d1-155bb1129b3b",
         "start_date": "2013",
         "end_date": "2015",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AIV.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/AIV.png",
         "i18n": true,
         "available_projections": [
           "EPSG:3043",
@@ -973,7 +973,7 @@
         "license_url": "https://www.geopunt.be/catalogus/datasetfolder/07dcd02f-eb0a-4247-95d1-155bb1129b3b",
         "start_date": "2013",
         "end_date": "2015",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/AIV.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/AIV.png",
         "i18n": true,
         "available_projections": [
           "EPSG:3043",
@@ -1116,7 +1116,7 @@
         "best": true,
         "start_date": "2020-01-08",
         "end_date": "2020-02-06",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ara.gif",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/ara.gif",
         "attribution": {
           "required": true,
           "url": "https://www.airborneresearch.org.au/",
@@ -1825,7 +1825,7 @@
         "max_zoom": 19,
         "license_url": "https://forum.openstreetmap.org/viewtopic.php?pid=630995#p630995",
         "best": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/beeldmateriaal.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/beeldmateriaal.png",
         "attribution": {
           "required": true,
           "url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search?facet.q=license%2FCC-BY&isChild=%27false%27&resultType=details&any_OR_title_OR_keyword=luchtfoto&fast=index&_content_type=json&from=1&to=20&sortBy=relevance",
@@ -7733,7 +7733,7 @@
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/australia/au/tas/Launceston_OrthoPhoto.pdf",
         "start_date": "2011-12",
         "end_date": "2011-12",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/launceston.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/launceston.png",
         "attribution": {"required": true, "text": "© City of Launceston"}
       },
       "geometry": {
@@ -7767,7 +7767,7 @@
         "license_url": "https://osmlab.github.io/editor-layer-index/sources/australia/au/tas/Launceston_OrthoPhoto.pdf",
         "start_date": "2013-02-15",
         "end_date": "2013-02-15",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/launceston.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/launceston.png",
         "attribution": {"required": true, "text": "© City of Launceston"}
       },
       "geometry": {
@@ -7799,7 +7799,7 @@
         "privacy_policy_url": "https://www.mapbox.com/legal/privacy/",
         "start_date": "2018-05",
         "end_date": "2018-05",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/melbourne.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/melbourne.png",
         "attribution": {
           "required": true,
           "url": "https://data.melbourne.vic.gov.au/Property-Planning/2018-Aerial-Imagery-True-Ortho-/qa5h-sfgh",
@@ -7963,7 +7963,7 @@
         "privacy_policy_url": "https://www.mapbox.com/legal/privacy/",
         "start_date": "2018-05",
         "end_date": "2018-05",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/melbourne.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/melbourne.png",
         "attribution": {
           "required": true,
           "url": "https://data.melbourne.vic.gov.au/Property-Planning/2018-Aerial-Imagery-True-Ortho-/qa5h-sfgh",
@@ -12479,7 +12479,7 @@
         "name": "Saxony WebAtlasSN",
         "url": "https://geodienste.sachsen.de/wms_geosn_webatlas-sn/guest?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vegetation,Siedlung,Gewaesser,Verkehr,Administrative_Einheiten,Beschriftung&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/GeoSN.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/GeoSN.png",
         "available_projections": [
           "EPSG:3857",
           "EPSG:4326",
@@ -12635,7 +12635,7 @@
         "name": "Saxony WebAtlasSN",
         "url": "https://geodienste.sachsen.de/wms_geosn_webatlas-sn/guest?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vegetation,Siedlung,Gewaesser,Verkehr,Administrative_Einheiten,Beschriftung&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/GeoSN.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/GeoSN.png",
         "available_projections": [
           "EPSG:3857",
           "EPSG:4326",
@@ -12791,7 +12791,7 @@
         "name": "Saxony WebAtlasSN",
         "url": "https://geodienste.sachsen.de/wms_geosn_webatlas-sn/guest?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vegetation,Siedlung,Gewaesser,Verkehr,Administrative_Einheiten,Beschriftung&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/GeoSN.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/GeoSN.png",
         "available_projections": [
           "EPSG:3857",
           "EPSG:4326",
@@ -12947,7 +12947,7 @@
         "name": "Saxony WebAtlasSN",
         "url": "https://geodienste.sachsen.de/wms_geosn_webatlas-sn/guest?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vegetation,Siedlung,Gewaesser,Verkehr,Administrative_Einheiten,Beschriftung&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/GeoSN.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/GeoSN.png",
         "available_projections": [
           "EPSG:3857",
           "EPSG:4326",
@@ -13103,7 +13103,7 @@
         "name": "Saxony WebAtlasSN",
         "url": "https://geodienste.sachsen.de/wms_geosn_webatlas-sn/guest?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vegetation,Siedlung,Gewaesser,Verkehr,Administrative_Einheiten,Beschriftung&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/GeoSN.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/GeoSN.png",
         "available_projections": [
           "EPSG:3857",
           "EPSG:4326",
@@ -13259,7 +13259,7 @@
         "name": "Saxony WebAtlasSN",
         "url": "https://geodienste.sachsen.de/wms_geosn_webatlas-sn/guest?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Vegetation,Siedlung,Gewaesser,Verkehr,Administrative_Einheiten,Beschriftung&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://wiki.openstreetmap.org/wiki/GeoSN_Open_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/GeoSN.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/GeoSN.png",
         "available_projections": [
           "EPSG:3857",
           "EPSG:4326",
@@ -14189,7 +14189,7 @@
         "max_zoom": 19,
         "permission_osm": "explicit",
         "license_url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ#License",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/RABA.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/RABA.png",
         "attribution": {
           "required": true,
           "url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ",
@@ -14441,7 +14441,7 @@
         "max_zoom": 19,
         "permission_osm": "explicit",
         "license_url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ#License",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/RABA.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/RABA.png",
         "attribution": {
           "required": true,
           "url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ",
@@ -17490,7 +17490,7 @@
         "name": "SDFE Terrain Shadow Map (40 cm)",
         "url": "https://kortforsyningen.kms.dk/dhm?login=OpenStreetMapDK2015&password=Gall4Peters&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=dhm_terraen_skyggekort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 20,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SDFE.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/SDFE.png",
         "available_projections": [
           "EPSG:3395",
           "EPSG:3857",
@@ -17594,7 +17594,7 @@
         "name": "SDFE Terrain Shadow Map (40 cm)",
         "url": "https://kortforsyningen.kms.dk/dhm?login=OpenStreetMapDK2015&password=Gall4Peters&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=dhm_terraen_skyggekort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 20,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SDFE.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/SDFE.png",
         "available_projections": [
           "EPSG:3395",
           "EPSG:3857",
@@ -17698,7 +17698,7 @@
         "name": "SDFE Terrain Shadow Map (40 cm)",
         "url": "https://kortforsyningen.kms.dk/dhm?login=OpenStreetMapDK2015&password=Gall4Peters&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=dhm_terraen_skyggekort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 20,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SDFE.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/SDFE.png",
         "available_projections": [
           "EPSG:3395",
           "EPSG:3857",
@@ -17802,7 +17802,7 @@
         "name": "SDFE Terrain Shadow Map (40 cm)",
         "url": "https://kortforsyningen.kms.dk/dhm?login=OpenStreetMapDK2015&password=Gall4Peters&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=dhm_terraen_skyggekort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 20,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SDFE.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/SDFE.png",
         "available_projections": [
           "EPSG:3395",
           "EPSG:3857",
@@ -18454,7 +18454,7 @@
         "url": "https://integracja02.gugik.gov.pl/cgi-bin/KrajowaIntegracjaEwidencjiGruntow?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
         "license_url": "http://e-mapa.net/warunki/",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/emapa.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/emapa.png",
         "available_projections": [
           "EPSG:2176",
           "EPSG:2177",
@@ -18810,7 +18810,7 @@
         "url": "https://integracja02.gugik.gov.pl/cgi-bin/KrajowaIntegracjaEwidencjiGruntow?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
         "license_url": "http://e-mapa.net/warunki/",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/emapa.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/emapa.png",
         "available_projections": [
           "EPSG:2176",
           "EPSG:2177",
@@ -24832,7 +24832,7 @@
         "privacy_policy_url": "https://gis.iu.edu/privacy.php",
         "start_date": "2016",
         "end_date": "2016",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IU.gif",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/IU.gif",
         "available_projections": ["EPSG:4326", "EPSG:26916"],
         "attribution": {
           "text": "Indiana Office of Information Technology, Indiana University Spatial Data Portal, UITS, Woolpert Inc."
@@ -24976,7 +24976,7 @@
         "privacy_policy_url": "https://gis.iu.edu/privacy.php",
         "start_date": "2017",
         "end_date": "2017",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IU.gif",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/IU.gif",
         "available_projections": ["EPSG:4326", "EPSG:26916"],
         "attribution": {
           "text": "Indiana Office of Information Technology, Indiana University Spatial Data Portal, UITS, Woolpert Inc."
@@ -25148,7 +25148,7 @@
         "privacy_policy_url": "https://gis.iu.edu/privacy.php",
         "start_date": "2018",
         "end_date": "2018",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/IU.gif",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/IU.gif",
         "available_projections": ["EPSG:4326", "EPSG:26916"],
         "attribution": {
           "text": "Indiana Office of Information Technology, Indiana University Spatial Data Portal, UITS, Woolpert Inc."
@@ -27416,7 +27416,7 @@
         "min_zoom": 1,
         "max_zoom": 16,
         "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/nsw.png",
         "attribution": {
           "required": true,
           "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
@@ -27469,7 +27469,7 @@
         "min_zoom": 1,
         "max_zoom": 16,
         "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/nsw.png",
         "attribution": {
           "required": true,
           "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
@@ -27522,7 +27522,7 @@
         "min_zoom": 1,
         "max_zoom": 16,
         "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/nsw.png",
         "attribution": {
           "required": true,
           "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
@@ -27575,7 +27575,7 @@
         "min_zoom": 1,
         "max_zoom": 16,
         "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/nsw.png",
         "attribution": {
           "required": true,
           "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
@@ -27628,7 +27628,7 @@
         "min_zoom": 1,
         "max_zoom": 16,
         "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/nsw.png",
         "attribution": {
           "required": true,
           "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
@@ -27681,7 +27681,7 @@
         "min_zoom": 1,
         "max_zoom": 16,
         "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/nsw.png",
         "attribution": {
           "required": true,
           "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
@@ -27774,7 +27774,7 @@
         "country_code": "PL",
         "name": "Łódź: Buildings",
         "url": "https://gis.mapa.lodz.pl/awiskts/services/WMS_publikowane/LODZ/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Budynki,Ulice,Adresy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/lodz.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/lodz.png",
         "available_projections": ["EPSG:2177", "EPSG:4326"],
         "attribution": {"text": "Urząd Miasta Łodzi"}
       },
@@ -27850,7 +27850,7 @@
         "country_code": "PL",
         "name": "Łódź: Buildings",
         "url": "https://gis.mapa.lodz.pl/awiskts/services/WMS_publikowane/LODZ/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Budynki,Ulice,Adresy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/lodz.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/lodz.png",
         "available_projections": ["EPSG:2177", "EPSG:4326"],
         "attribution": {"text": "Urząd Miasta Łodzi"}
       },
@@ -27926,7 +27926,7 @@
         "country_code": "PL",
         "name": "Łódź: Buildings",
         "url": "https://gis.mapa.lodz.pl/awiskts/services/WMS_publikowane/LODZ/MapServer/WMSServer?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Budynki,Ulice,Adresy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/lodz.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/lodz.png",
         "available_projections": ["EPSG:2177", "EPSG:4326"],
         "attribution": {"text": "Urząd Miasta Łodzi"}
       },
@@ -29956,7 +29956,7 @@
         "name": "Taiwan Village Boundaries",
         "url": "https://wms.nlsc.gov.tw/wms?VERSION=1.1.1&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Village&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NLSC.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/NLSC.png",
         "available_projections": [
           "EPSG:3825",
           "EPSG:3826",
@@ -30002,7 +30002,7 @@
         "min_zoom": 1,
         "max_zoom": 16,
         "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/nsw.png",
         "attribution": {
           "required": true,
           "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
@@ -30055,7 +30055,7 @@
         "min_zoom": 1,
         "max_zoom": 16,
         "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/nsw.png",
         "attribution": {
           "required": true,
           "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
@@ -30108,7 +30108,7 @@
         "min_zoom": 1,
         "max_zoom": 16,
         "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/nsw.png",
         "attribution": {
           "required": true,
           "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
@@ -30161,7 +30161,7 @@
         "min_zoom": 1,
         "max_zoom": 16,
         "license_url": "https://wiki.openstreetmap.org/wiki/Attribution/New_South_Wales_Government_Data",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/nsw.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/nsw.png",
         "attribution": {
           "required": true,
           "url": "https://www.spatial.nsw.gov.au/mapping_and_imagery/lpi_web_services",
@@ -34051,7 +34051,7 @@
         "max_zoom": 19,
         "permission_osm": "explicit",
         "license_url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ#License",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/RABA.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/RABA.png",
         "attribution": {
           "required": true,
           "url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ",
@@ -34303,7 +34303,7 @@
         "max_zoom": 19,
         "permission_osm": "explicit",
         "license_url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ#License",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/RABA.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/RABA.png",
         "attribution": {
           "required": true,
           "url": "https://wiki.openstreetmap.org/wiki/Slovenia_Landcover_Import_-_RABA-KGZ",
@@ -34732,7 +34732,7 @@
         "name": "SDFE Terrain Shadow Map (40 cm)",
         "url": "https://kortforsyningen.kms.dk/dhm?login=OpenStreetMapDK2015&password=Gall4Peters&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=dhm_terraen_skyggekort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 20,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SDFE.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/SDFE.png",
         "available_projections": [
           "EPSG:3395",
           "EPSG:3857",
@@ -34836,7 +34836,7 @@
         "name": "SDFE Terrain Shadow Map (40 cm)",
         "url": "https://kortforsyningen.kms.dk/dhm?login=OpenStreetMapDK2015&password=Gall4Peters&FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&Layers=dhm_terraen_skyggekort&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 20,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/SDFE.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/SDFE.png",
         "available_projections": [
           "EPSG:3395",
           "EPSG:3857",
@@ -34983,7 +34983,7 @@
         "license": "CC-BY-SA-4.0",
         "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",
         "overlay": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TEC.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/TEC.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326"]
       },
@@ -35135,7 +35135,7 @@
         "license": "CC-BY-SA-4.0",
         "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",
         "overlay": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TEC.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/TEC.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326"]
       },
@@ -35287,7 +35287,7 @@
         "license": "CC-BY-SA-4.0",
         "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",
         "overlay": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TEC.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/TEC.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326"]
       },
@@ -35439,7 +35439,7 @@
         "license": "CC-BY-SA-4.0",
         "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",
         "overlay": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TEC.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/TEC.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326"]
       },
@@ -35591,7 +35591,7 @@
         "license": "CC-BY-SA-4.0",
         "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",
         "overlay": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TEC.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/TEC.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326"]
       },
@@ -35743,7 +35743,7 @@
         "license": "CC-BY-SA-4.0",
         "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",
         "overlay": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TEC.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/TEC.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326"]
       },
@@ -35895,7 +35895,7 @@
         "license": "CC-BY-SA-4.0",
         "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",
         "overlay": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TEC.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/TEC.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326"]
       },
@@ -36521,7 +36521,7 @@
         "name": "Singapore OneMap",
         "url": "https://mapservices.onemap.sg/mapproxy/service?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=singapore_3414_wms&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://www.onemap.sg/legal/opendatalicence.html",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/OM2.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/OM2.png",
         "available_projections": ["EPSG:3414", "EPSG:4326"],
         "attribution": {
           "required": true,
@@ -36571,7 +36571,7 @@
         "name": "Singapore OneMap",
         "url": "https://mapservices.onemap.sg/mapproxy/service?FORMAT=image/png&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=singapore_3414_wms&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://www.onemap.sg/legal/opendatalicence.html",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/OM2.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/OM2.png",
         "available_projections": ["EPSG:3414", "EPSG:4326"],
         "attribution": {
           "required": true,
@@ -36774,7 +36774,7 @@
         "best": true,
         "start_date": "2015",
         "end_date": "2017",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/KantonSolothurn.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/KantonSolothurn.png",
         "available_projections": ["EPSG:2056", "EPSG:4326", "EPSG:21781"],
         "attribution": {"text": "Orthofoto WMS Solothurn"}
       },
@@ -36964,7 +36964,7 @@
         "best": true,
         "start_date": "2015",
         "end_date": "2017",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/KantonSolothurn.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/KantonSolothurn.png",
         "available_projections": ["EPSG:2056", "EPSG:4326", "EPSG:21781"],
         "attribution": {"text": "Orthofoto WMS Solothurn"}
       },
@@ -37154,7 +37154,7 @@
         "best": true,
         "start_date": "2015",
         "end_date": "2017",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/KantonSolothurn.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/KantonSolothurn.png",
         "available_projections": ["EPSG:2056", "EPSG:4326", "EPSG:21781"],
         "attribution": {"text": "Orthofoto WMS Solothurn"}
       },
@@ -37344,7 +37344,7 @@
         "best": true,
         "start_date": "2015",
         "end_date": "2017",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/KantonSolothurn.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/KantonSolothurn.png",
         "available_projections": ["EPSG:2056", "EPSG:4326", "EPSG:21781"],
         "attribution": {"text": "Orthofoto WMS Solothurn"}
       },
@@ -39618,7 +39618,7 @@
         "license": "CC-BY-SA-4.0",
         "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",
         "overlay": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TEC.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/TEC.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326"]
       },
@@ -39770,7 +39770,7 @@
         "license": "CC-BY-SA-4.0",
         "license_url": "https://www.infotec.be/fr-be/minformer/opendata.aspx",
         "overlay": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TEC.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/TEC.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326"]
       },
@@ -39918,7 +39918,7 @@
         "name": "Taiwan Village Boundaries",
         "url": "https://wms.nlsc.gov.tw/wms?VERSION=1.1.1&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Village&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NLSC.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/NLSC.png",
         "available_projections": [
           "EPSG:3825",
           "EPSG:3826",
@@ -39961,7 +39961,7 @@
         "name": "Taiwan Village Boundaries",
         "url": "https://wms.nlsc.gov.tw/wms?VERSION=1.1.1&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Village&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NLSC.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/NLSC.png",
         "available_projections": [
           "EPSG:3825",
           "EPSG:3826",
@@ -40004,7 +40004,7 @@
         "name": "Taiwan Village Boundaries",
         "url": "https://wms.nlsc.gov.tw/wms?VERSION=1.1.1&FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Village&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "license_url": "https://github.com/osmlab/editor-layer-index/pull/255#issuecomment-266776138",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NLSC.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/NLSC.png",
         "available_projections": [
           "EPSG:3825",
           "EPSG:3826",
@@ -40947,7 +40947,7 @@
         "category": "map",
         "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
         "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/UrbIS.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
         "attribution": {
@@ -41052,7 +41052,7 @@
         "category": "map",
         "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
         "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/UrbIS.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
         "attribution": {
@@ -41157,7 +41157,7 @@
         "category": "map",
         "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
         "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/UrbIS.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
         "attribution": {
@@ -41262,7 +41262,7 @@
         "category": "map",
         "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
         "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/UrbIS.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
         "attribution": {
@@ -41367,7 +41367,7 @@
         "category": "map",
         "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
         "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/UrbIS.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
         "attribution": {
@@ -41472,7 +41472,7 @@
         "category": "map",
         "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
         "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/UrbIS.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
         "attribution": {
@@ -41579,7 +41579,7 @@
         "start_date": "2019",
         "end_date": "2019",
         "overlay": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TIGER.png"
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/TIGER.png"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -42041,7 +42041,7 @@
         "start_date": "2019",
         "end_date": "2019",
         "overlay": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TIGER.png"
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/TIGER.png"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -42503,7 +42503,7 @@
         "start_date": "2019",
         "end_date": "2019",
         "overlay": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TIGER.png"
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/TIGER.png"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -42965,7 +42965,7 @@
         "start_date": "2019",
         "end_date": "2019",
         "overlay": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/TIGER.png"
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/TIGER.png"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -43425,7 +43425,7 @@
         "min_zoom": 12,
         "max_zoom": 20,
         "privacy_policy_url": "https://www.usgs.gov/privacy-policies",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/USGS.png"
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/USGS.png"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44035,7 +44035,7 @@
         "min_zoom": 12,
         "max_zoom": 20,
         "privacy_policy_url": "https://www.usgs.gov/privacy-policies",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/USGS.png"
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/USGS.png"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44642,7 +44642,7 @@
         "name": "USGS Topographic Maps",
         "url": "https://caltopo.s3.amazonaws.com/topo/{zoom}/{x}/{y}.png",
         "max_zoom": 16,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/USGS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/USGS.png",
         "attribution": {
           "required": true,
           "url": "https://caltopo.com",
@@ -45232,7 +45232,7 @@
         "url": "https://{switch:a,b,c,d}.tiles.mapbox.com/styles/v1/glassman/cjf4qjmps0tgv2qpahj977mvz/tiles/256/{zoom}/{x}/{y}?access_token=pk.eyJ1IjoiZ2xhc3NtYW4iLCJhIjoiRjk3dWdwYyJ9.Tg_fMJWxygeKBgVTrZHmGA",
         "max_zoom": 20,
         "overlay": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/USFS.png"
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/USFS.png"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -46513,7 +46513,7 @@
         "category": "map",
         "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
         "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/UrbIS.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
         "attribution": {
@@ -46618,7 +46618,7 @@
         "category": "map",
         "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
         "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/UrbIS.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
         "attribution": {
@@ -46723,7 +46723,7 @@
         "category": "map",
         "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
         "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/UrbIS.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
         "attribution": {
@@ -46828,7 +46828,7 @@
         "category": "map",
         "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
         "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/UrbIS.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
         "attribution": {
@@ -46933,7 +46933,7 @@
         "category": "map",
         "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
         "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/UrbIS.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
         "attribution": {
@@ -47038,7 +47038,7 @@
         "category": "map",
         "license_url": "https://cibg.brussels/nl/onze-oplossingen/urbis-solutions/urbis-open-data-licentie",
         "privacy_policy_url": "https://bric.brussels/en/disclaimer-conditions-of-use-of-the-bric-website",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/UrbIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/UrbIS.png",
         "i18n": true,
         "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:31370"],
         "attribution": {
@@ -49905,7 +49905,7 @@
         "permission_osm": "explicit",
         "license": "CC-BY-3.0",
         "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Geoimageat.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/Geoimageat.png",
         "available_projections": [
           "EPSG:3034",
           "EPSG:3035",
@@ -50374,7 +50374,7 @@
         "permission_osm": "explicit",
         "license": "CC-BY-3.0",
         "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Geoimageat.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/Geoimageat.png",
         "available_projections": [
           "EPSG:3034",
           "EPSG:3035",
@@ -50843,7 +50843,7 @@
         "permission_osm": "explicit",
         "license": "CC-BY-3.0",
         "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Geoimageat.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/Geoimageat.png",
         "available_projections": [
           "EPSG:3034",
           "EPSG:3035",
@@ -54925,7 +54925,7 @@
         "name": "Powiat dębicki: Buildings",
         "url": "https://debica.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki,adresy,EBU,EBT,S&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/Powiat.png",
         "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
         "attribution": {"text": "Powiat dębicki"}
       },
@@ -55628,7 +55628,7 @@
         "privacy_policy_url": "https://geoportal.dgu.hr/#/menu/uvjeti-koristenja",
         "start_date": "1996",
         "end_date": "2011",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/dgu.png",
         "available_projections": ["EPSG:3765", "EPSG:4326"],
         "attribution": {
           "required": true,
@@ -55907,7 +55907,7 @@
         "privacy_policy_url": "https://geoportal.dgu.hr/#/menu/uvjeti-koristenja",
         "start_date": "1996",
         "end_date": "2011",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/dgu.png",
         "available_projections": ["EPSG:3765", "EPSG:4326"],
         "attribution": {
           "required": true,
@@ -56186,7 +56186,7 @@
         "privacy_policy_url": "https://geoportal.dgu.hr/#/menu/uvjeti-koristenja",
         "start_date": "2017",
         "end_date": "2017",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/dgu.png",
         "available_projections": ["EPSG:3765", "EPSG:4326"],
         "attribution": {
           "required": true,
@@ -56362,7 +56362,7 @@
         "privacy_policy_url": "https://geoportal.dgu.hr/#/menu/uvjeti-koristenja",
         "start_date": "2018",
         "end_date": "2018",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/dgu.png",
         "available_projections": ["EPSG:3765", "EPSG:4326"],
         "attribution": {
           "required": true,
@@ -56529,7 +56529,7 @@
         "privacy_policy_url": "https://geoportal.dgu.hr/#/menu/uvjeti-koristenja",
         "start_date": "1996",
         "end_date": "2011",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/dgu.png",
         "available_projections": ["EPSG:3765", "EPSG:4326"],
         "attribution": {
           "required": true,
@@ -56808,7 +56808,7 @@
         "privacy_policy_url": "https://geoportal.dgu.hr/#/menu/uvjeti-koristenja",
         "start_date": "1996",
         "end_date": "2011",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/dgu.png",
         "available_projections": ["EPSG:3765", "EPSG:4326"],
         "attribution": {
           "required": true,
@@ -57087,7 +57087,7 @@
         "privacy_policy_url": "https://geoportal.dgu.hr/#/menu/uvjeti-koristenja",
         "start_date": "1996",
         "end_date": "2011",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/dgu.png",
         "available_projections": ["EPSG:3765", "EPSG:4326"],
         "attribution": {
           "required": true,
@@ -57366,7 +57366,7 @@
         "privacy_policy_url": "https://geoportal.dgu.hr/#/menu/uvjeti-koristenja",
         "start_date": "1996",
         "end_date": "2011",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/dgu.png",
         "available_projections": ["EPSG:3765", "EPSG:4326"],
         "attribution": {
           "required": true,
@@ -57645,7 +57645,7 @@
         "license_url": "https://narodne-novine.nn.hr/clanci/sluzbeni/2013_02_25_403.html",
         "privacy_policy_url": "https://geoportal.dgu.hr/#/menu/uvjeti-koristenja",
         "start_date": "2011",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/dgu.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/dgu.png",
         "available_projections": ["EPSG:3765", "EPSG:4326"],
         "attribution": {
           "required": true,
@@ -58314,7 +58314,7 @@
         "url": "https://integracja02.gugik.gov.pl/cgi-bin/KrajowaIntegracjaEwidencjiGruntow?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
         "license_url": "http://e-mapa.net/warunki/",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/emapa.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/emapa.png",
         "available_projections": [
           "EPSG:2176",
           "EPSG:2177",
@@ -60538,7 +60538,7 @@
         "permission_osm": "explicit",
         "license": "CC-BY-3.0",
         "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Geoimageat.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/Geoimageat.png",
         "available_projections": [
           "EPSG:3034",
           "EPSG:3035",
@@ -62043,7 +62043,7 @@
         "max_zoom": 19,
         "license_url": "https://github.com/osmlab/editor-layer-index/blob/gh-pages/sources/europe/fi/HRI_permission_07082018.pdf",
         "best": true,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/HRI.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/HRI.png",
         "available_projections": ["EPSG:3857", "EPSG:3879", "EPSG:4326"],
         "attribution": {
           "required": true,
@@ -62102,7 +62102,7 @@
         "min_zoom": 1,
         "max_zoom": 19,
         "license_url": "https://www.ign.gob.ar/descargas/tyc1.html",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/ign.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/ign.png",
         "attribution": {
           "url": "https://www.ign.gob.ar/",
           "text": "Instituto Geográfico Nacional de la República Argentina"
@@ -65399,7 +65399,7 @@
         "name": "Powiat łańcucki: Buildings",
         "url": "https://lancut.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=EBT,budynki,adresy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/Powiat.png",
         "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
         "attribution": {"text": "Powiat łańcucki"}
       },
@@ -67508,7 +67508,7 @@
         "name": "Powiat lubaczowski: Buildings",
         "url": "https://lubaczow.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=S,EBT,adresy,budynki_ewid&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/Powiat.png",
         "available_projections": ["EPSG:2179", "EPSG:2180", "EPSG:4326"],
         "attribution": {"text": "Powiat lubaczowski"}
       },
@@ -71175,7 +71175,7 @@
         "max_zoom": 19,
         "start_date": "2013",
         "end_date": "2018",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/NewYorkState.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/NewYorkState.png",
         "available_projections": ["EPSG:3857", "EPSG:4326", "EPSG:120100"],
         "attribution": {
           "url": "https://gis.ny.gov/gateway/orthoprogram/index.cfm",
@@ -72893,7 +72893,7 @@
         "max_zoom": 18,
         "license": "CC-BY-SA-4.0",
         "license_url": "https://github.com/jbelien/openstreetmap-carto-be/wiki/Tile-Usage-Policy",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/OpenStreetMap.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/OpenStreetMap.png",
         "i18n": true,
         "attribution": {
           "required": true,
@@ -73298,7 +73298,7 @@
         "max_zoom": 18,
         "license": "CC-BY-SA-4.0",
         "license_url": "https://github.com/jbelien/openstreetmap-carto-be/wiki/Tile-Usage-Policy",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/OpenStreetMap.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/OpenStreetMap.png",
         "i18n": true,
         "attribution": {
           "required": true,
@@ -73703,7 +73703,7 @@
         "max_zoom": 18,
         "license": "CC-BY-SA-4.0",
         "license_url": "https://github.com/jbelien/openstreetmap-carto-be/wiki/Tile-Usage-Policy",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/OpenStreetMap.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/OpenStreetMap.png",
         "i18n": true,
         "attribution": {
           "required": true,
@@ -74346,7 +74346,7 @@
         "max_zoom": 17,
         "license": "CC0-1.0",
         "license_url": "https://www.lantmateriet.se/en/Kartor-och-geografisk-information/oppna-data/anvandarvillkor/",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/lantmateriet.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/lantmateriet.png",
         "i18n": true,
         "attribution": {
           "required": true,
@@ -75532,7 +75532,7 @@
         "country_code": "PL",
         "name": "Powiat poznański: Buildings",
         "url": "http://wms.podgik.poznan.pl/cgi-bin/poznan?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/PODGIK.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/PODGIK.png",
         "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:4326"],
         "attribution": {"text": "PODGIK Poznań"}
       },
@@ -75576,7 +75576,7 @@
         "country_code": "PL",
         "name": "Powiat poznański: Buildings",
         "url": "http://wms.podgik.poznan.pl/cgi-bin/poznan?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/PODGIK.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/PODGIK.png",
         "available_projections": ["EPSG:2177", "EPSG:2180", "EPSG:4326"],
         "attribution": {"text": "PODGIK Poznań"}
       },
@@ -75621,7 +75621,7 @@
         "name": "Przemyśl: Buildings",
         "url": "http://przemysl.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=adresy,budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/Powiat.png",
         "available_projections": ["EPSG:2179", "EPSG:2180", "EPSG:4326"],
         "attribution": {"text": "Miasto Przemyśl"}
       },
@@ -75670,7 +75670,7 @@
         "name": "Przemyśl: Buildings",
         "url": "http://przemysl.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=adresy,budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/Powiat.png",
         "available_projections": ["EPSG:2179", "EPSG:2180", "EPSG:4326"],
         "attribution": {"text": "Miasto Przemyśl"}
       },
@@ -77869,7 +77869,7 @@
         "name": "Powiat rzeszowski: Buildings",
         "url": "https://powiatrzeszowski.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki,EBT,EBU&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/Powiat.png",
         "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
         "attribution": {"text": "Powiat rzeszowski"}
       },
@@ -77915,7 +77915,7 @@
         "name": "Powiat rzeszowski: Buildings",
         "url": "https://powiatrzeszowski.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki,EBT,EBU&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/Powiat.png",
         "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
         "attribution": {"text": "Powiat rzeszowski"}
       },
@@ -78686,7 +78686,7 @@
         "name": "Powiat ropczycko-sędziszowski: Buildings",
         "url": "https://spropczyce.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=budynki&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/Powiat.png",
         "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
         "attribution": {"text": "Powiat ropczycko-sędziszowski"}
       },
@@ -79040,7 +79040,7 @@
         "name": "Powiat stalowowolski: Buildings",
         "url": "https://stalowawola.geoportal2.pl/map/wms/wms.php?FORMAT=image/png&TRANSPARENT=TRUE&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=EBT,adresy,budynki,centroidy&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
         "max_zoom": 19,
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/Powiat.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/Powiat.png",
         "available_projections": ["EPSG:2178", "EPSG:2180", "EPSG:4326"],
         "attribution": {"text": "Powiat stalowowolski"}
       },
@@ -82363,7 +82363,7 @@
         "permission_osm": "explicit",
         "license": "CC-BY-3.0",
         "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/VoGIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/VoGIS.png",
         "available_projections": [
           "EPSG:3857",
           "EPSG:4326",
@@ -82648,7 +82648,7 @@
         "permission_osm": "explicit",
         "license": "CC-BY-3.0",
         "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/VoGIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/VoGIS.png",
         "available_projections": [
           "EPSG:3857",
           "EPSG:4326",
@@ -82935,7 +82935,7 @@
         "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
         "start_date": "2018",
         "end_date": "2018",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/VoGIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/VoGIS.png",
         "available_projections": [
           "EPSG:3857",
           "EPSG:4326",
@@ -83003,7 +83003,7 @@
         "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
         "start_date": "2018",
         "end_date": "2018",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/VoGIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/VoGIS.png",
         "available_projections": [
           "EPSG:3857",
           "EPSG:4326",
@@ -83071,7 +83071,7 @@
         "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
         "start_date": "2018",
         "end_date": "2018",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/VoGIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/VoGIS.png",
         "available_projections": [
           "EPSG:3857",
           "EPSG:4326",
@@ -83139,7 +83139,7 @@
         "license_url": "http://data.vorarlberg.gv.at/ogd/nutzungsbedingungen/nutzungsbedingungen.htm",
         "start_date": "2015",
         "end_date": "2015",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/VoGIS.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/VoGIS.png",
         "available_projections": [
           "EPSG:3857",
           "EPSG:4326",
@@ -83521,7 +83521,7 @@
         "best": true,
         "start_date": "2018-04-06",
         "end_date": "2018-04-07",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/wroclaw.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/wroclaw.png",
         "available_projections": ["EPSG:2177", "EPSG:3857", "EPSG:4326"],
         "attribution": {"text": "Urząd Miasta Wrocław"}
       },
@@ -83643,7 +83643,7 @@
         "best": true,
         "start_date": "2018-04-06",
         "end_date": "2018-04-07",
-        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@master/dist/images/wroclaw.png",
+        "icon": "https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/wroclaw.png",
         "available_projections": ["EPSG:2177", "EPSG:3857", "EPSG:4326"],
         "attribution": {"text": "Urząd Miasta Wrocław"}
       },
