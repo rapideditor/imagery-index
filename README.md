@@ -1,3 +1,5 @@
+[![build](https://github.com/ideditor/imagery-index/workflows/build/badge.svg)](https://github.com/ideditor/imagery-index/actions?query=workflow%3A%22build%22)
+[![npm version](https://badge.fury.io/js/%40ideditor%2Fimagery-index.svg)](https://badge.fury.io/js/%40ideditor%2Fimagery-index)
 
 # imagery-index
 
