@@ -210,12 +210,10 @@ function collectSources(tstrings, featureCollection) {
     validateFile(file, source, sourceSchema);
 
     // check locationSet
-    let locationID;
     try {
       const resolved = loco.resolveLocationSet(source.locationSet);
-      locationID = resolved.id;
       if (!resolved.feature.geometry.coordinates.length || !resolved.feature.properties.area) {
-        throw new Error(`locationSet ${locationID} resolves to an empty feature.`);
+        throw new Error(`locationSet ${resolved.id} resolves to an empty feature.`);
       }
     } catch (err) {
       console.error(colors.red(`Error - ${err.message} in:`));
