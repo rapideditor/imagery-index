@@ -44,7 +44,7 @@ function buildAll() {
   // Sources
   const sources = collectSources(tstrings, featureCollection);
   fs.writeFileSync('dist/sources.json', prettyStringify(sortObject(sources), { maxLength: 99999 }));
-  fs.writeFileSync('i18n/en.yaml', YAML.safeDump({ en: { imagery: sortObject(tstrings) } }, { lineWidth: -1 }) );
+  fs.writeFileSync('i18n/en.yaml', YAML.dump({ en: { imagery: sortObject(tstrings) } }, { lineWidth: -1 }) );
 
   console.timeEnd(END);
   console.log('');
