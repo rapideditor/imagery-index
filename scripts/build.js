@@ -4,9 +4,9 @@ const glob = require('glob');
 const LocationConflation = require('@ideditor/location-conflation');
 const path = require('path');
 const precision = require('geojson-precision');
-const prettyStringify = require('json-stringify-pretty-compact');
 const rewind = require('geojson-rewind');
 const shell = require('shelljs');
+const stringify = require('@aitodotai/json-stringify-pretty-compact');
 const Validator = require('jsonschema').Validator;
 const YAML = require('js-yaml');
 
@@ -39,11 +39,11 @@ function buildAll() {
   let tstrings = {};   // translation strings
   const features = collectFeatures().sort((a,b) => a.id.localeCompare(b.id));
   const featureCollection = { type: 'FeatureCollection', features: features };
-  fs.writeFileSync('dist/featureCollection.json', prettyStringify(featureCollection, { maxLength: 99999 }));
+  fs.writeFileSync('dist/featureCollection.json', stringify(featureCollection, { maxLength: 99999 }) + '\n');
 
   // Sources
   const sources = collectSources(tstrings, featureCollection);
-  fs.writeFileSync('dist/sources.json', prettyStringify(sortObject(sources), { maxLength: 99999 }));
+  fs.writeFileSync('dist/sources.json', stringify(sortObject(sources), { maxLength: 99999 }) + '\n');
   fs.writeFileSync('i18n/en.yaml', YAML.dump({ en: { imagery: sortObject(tstrings) } }, { lineWidth: -1 }) );
 
   console.timeEnd(END);
@@ -268,7 +268,7 @@ function validateFile(file, source, schema) {
 
 
 function prettifyFile(file, object, contents) {
-  const pretty = prettyStringify(object, { maxLength: 100 });
+  const pretty = stringify(object, { maxLength: 100 }) + '\n';
   if (pretty !== contents) {
     fs.writeFileSync(file, pretty);
   }

@@ -1,8 +1,8 @@
 const colors = require('colors/safe');
 const fs = require('fs');
 const LocationConflation = require('@ideditor/location-conflation');
-const prettyStringify = require('json-stringify-pretty-compact');
 const shell = require('shelljs');
+const stringify = require('@aitodotai/json-stringify-pretty-compact');
 const xmlbuilder2 = require('xmlbuilder2');
 
 const sources = require('../dist/sources.json');
@@ -126,8 +126,8 @@ function generateCombined() {
     type: 'FeatureCollection',
     features: Object.values(keepFeatures)
   };
-  fs.writeFileSync('dist/combined.json', prettyStringify(combined) );
-  fs.writeFileSync('dist/combined.min.json', JSON.stringify(combined) );
+  fs.writeFileSync('dist/combined.json', stringify(combined) + '\n');
+  fs.writeFileSync('dist/combined.min.json', JSON.stringify(combined));
 
   process.stdout.write(colors.green('✓\n'));
 }
@@ -189,7 +189,7 @@ function generateLegacyImageryGeojson() {
     meta: { generated: dateString(), version: '1.0' },
     features: keepFeatures
   };
-  fs.writeFileSync('dist/legacy/imagery.geojson', prettyStringify(legacyGeoJSON) );
+  fs.writeFileSync('dist/legacy/imagery.geojson', stringify(legacyGeoJSON) + '\n');
   fs.writeFileSync('dist/legacy/imagery.min.geojson', JSON.stringify(legacyGeoJSON) );
 
   process.stdout.write(colors.green('✓\n'));
@@ -276,7 +276,7 @@ function generateLegacyImageryJson() {
     keepSources.push(obj);
   });
 
-  fs.writeFileSync('dist/legacy/imagery.json', prettyStringify(keepSources) );
+  fs.writeFileSync('dist/legacy/imagery.json', stringify(keepSources) + '\n');
   fs.writeFileSync('dist/legacy/imagery.min.json', JSON.stringify(keepSources) );
 
   process.stdout.write(colors.green('✓\n'));
