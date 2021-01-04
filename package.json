@@ -37,7 +37,7 @@
     "geojson-precision": "^1.0.0",
     "geojson-rewind": "^0.3.1",
     "glob": "^7.1.6",
-    "js-yaml": "^3.13.1",
+    "js-yaml": "^4.0.0",
     "json-stringify-pretty-compact": "^2.0.0",
     "jsonschema": "^1.2.5",
     "npm-run-all": "^4.0.0",
