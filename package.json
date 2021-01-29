@@ -41,7 +41,7 @@
     "js-yaml": "^4.0.0",
     "jsonschema": "^1.2.5",
     "npm-run-all": "^4.0.0",
-    "rollup": "~2.37.1",
+    "rollup": "~2.38.1",
     "shelljs": "^0.8.3",
     "xmlbuilder2": "^2.1.3"
   },
