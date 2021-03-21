@@ -8,7 +8,7 @@
   "description": "Aerial imagery for Slovakia",
   "category": "photo",
   "max_zoom": 19,
-  "best": "true",
+  "best": true,
   "country_code": "SK",
   "attribution": {
     "required": true,
