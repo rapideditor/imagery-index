@@ -108,11 +108,25 @@ Each source must have a `locationSet` to define where the source is active.
 ```
 
 The "locations" can be any of the following:
-* Codes recognized by the [country-coder library](https://github.com/ideditor/country-coder#readme). These should be [ISO 3166-1 2 or 3 letter country codes or UN M.49 numeric codes](https://en.wikipedia.org/wiki/List_of_countries_by_United_Nations_geoscheme).<br/>_Example: `"de"`_
-* Points as `[longitude, latitude]` coordinate pairs.  A 25km radius circle will be computed around the point.<br/>_Example: `[8.67039, 49.41882]`_
-* Filenames for `.geojson` features. If you want to use your own features, you'll need to add these under the `features/` folder.  Each `Feature` must have an `id` that ends in `.geojson`.<br/>_Example: `"de-hamburg.geojson"`_<br/>Tip: You can use [geojson.io](http://geojson.io) or other tools to create these.
 
-See [location-conflation](https://github.com/ideditor/location-conflation#readme) project for details and examples.
+- Strings recognized by the [country-coder library](https://github.com/ideditor/country-coder#readme).<br/>
+  These include [ISO 3166-1 2 or 3 letter country codes](https://en.wikipedia.org/wiki/List_of_countries_by_United_Nations_geoscheme), [UN M.49 numeric codes](https://en.wikipedia.org/wiki/UN_M49), and supported Wikidata QIDs.<br/>
+  _Examples: `"de"`, `"001"`, `"conus"`, `"gb-sct"`, `"Q620634"`_<br/>
+  👉 A current list of supported codes can be found at <https://ideditor.codes>
+
+- Filenames for custom `.geojson` features. If you want to use your own features, you need to add them under the `features/*` folder of this project (see [Features](#features) below for details)<br/>
+  Each `Feature` must have an `id` that ends in `.geojson`.<br/>
+  _Examples: `"de-hamburg.geojson"`, `"new_jersey.geojson"`_
+
+- Circular areas defined as `[longitude, latitude, radius?]` Array.<br/>
+  Radius is specified in kilometers and is optional. If not specified, it will default to a 25km radius.<br/>
+  _Examples: `[8.67039, 49.41882]`, `[-88.3726, 39.4818, 32]`_
+
+##### `locationSet` tips:
+- The M49 code for the whole world is `"001"`
+- A current list of supported codes can be found at <https://ideditor.codes>
+- You can view examples and learn more about working with `locationSets` in the [@ideditor/location-conflation](https://github.com/ideditor/location-conflation/blob/main/README.md) project.
+- You can test locationSets on this interactive map:  https://ideditor.github.io/location-conflation/
 
 
 #### url
