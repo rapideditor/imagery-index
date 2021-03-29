@@ -4,16 +4,15 @@
   "locationSet": {"include": ["sk"]},
   "country_code": "SK",
   "name": "Ortofotomozaika SR",
-  "url": "https://ofmozaika.tiles.freemap.sk/{zoom}/{x}/{y}.jpg",
   "description": "Aerial imagery for Slovakia",
+  "url": "https://ofmozaika.tiles.freemap.sk/{zoom}/{x}/{y}.jpg",
   "category": "photo",
   "max_zoom": 19,
   "best": true,
-  "country_code": "SK",
+  "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png",
   "attribution": {
     "required": true,
     "url": "https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Sources#Ortofotomozaika_SR_.28orthophoto_by_GK.C3.9A_and_NLC.29",
     "text": "© GKÚ, NLC 2017-2019"
-  },
-  "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png"
+  }
 }

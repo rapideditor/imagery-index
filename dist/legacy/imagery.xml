@@ -65832,6 +65832,147 @@
       </shape>
     </bounds>
   </entry>
+  <entry eli-best="true">
+    <name>Ortofotomozaika SR</name>
+    <id>ortofotomozaika-sr</id>
+    <category>photo</category>
+    <type>tms</type>
+    <description>Aerial imagery for Slovakia</description>
+    <url>https://ofmozaika.tiles.freemap.sk/{zoom}/{x}/{y}.jpg</url>
+    <max-zoom>19</max-zoom>
+    <icon>https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png</icon>
+    <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/SK</country_code>
+    <attribution-url>https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Sources#Ortofotomozaika_SR_.28orthophoto_by_GK.C3.9A_and_NLC.29</attribution-url>
+    <attribution-text>© GKÚ, NLC 2017-2019</attribution-text>
+    <bounds min-lat="49.61583" min-lon="22.56155" max-lat="47.73541" max-lon="16.83317">
+      <shape>
+        <point lat="49.27806" lon="19.82237"/>
+        <point lat="49.41701" lon="19.78581"/>
+        <point lat="49.39288" lon="19.72127"/>
+        <point lat="49.40897" lon="19.6375"/>
+        <point lat="49.45184" lon="19.64162"/>
+        <point lat="49.46077" lon="19.57845"/>
+        <point lat="49.52856" lon="19.53313"/>
+        <point lat="49.57311" lon="19.52626"/>
+        <point lat="49.61583" lon="19.45348"/>
+        <point lat="49.574" lon="19.37795"/>
+        <point lat="49.53747" lon="19.36009"/>
+        <point lat="49.53391" lon="19.25435"/>
+        <point lat="49.41165" lon="19.18019"/>
+        <point lat="49.39557" lon="18.9742"/>
+        <point lat="49.49914" lon="18.97283"/>
+        <point lat="49.52143" lon="18.94536"/>
+        <point lat="49.51672" lon="18.84521"/>
+        <point lat="49.492" lon="18.74761"/>
+        <point lat="49.50895" lon="18.67757"/>
+        <point lat="49.49824" lon="18.6144"/>
+        <point lat="49.51162" lon="18.57183"/>
+        <point lat="49.49022" lon="18.53063"/>
+        <point lat="49.47059" lon="18.54848"/>
+        <point lat="49.39467" lon="18.44686"/>
+        <point lat="49.40003" lon="18.4084"/>
+        <point lat="49.36517" lon="18.4139"/>
+        <point lat="49.3267" lon="18.36446"/>
+        <point lat="49.28909" lon="18.18456"/>
+        <point lat="49.24518" lon="18.15022"/>
+        <point lat="49.08624" lon="18.1104"/>
+        <point lat="49.03157" lon="18.06885"/>
+        <point lat="49.01784" lon="17.91814"/>
+        <point lat="48.92679" lon="17.87831"/>
+        <point lat="48.92318" lon="17.77944"/>
+        <point lat="48.87885" lon="17.73126"/>
+        <point lat="48.86721" lon="17.7094"/>
+        <point lat="48.81117" lon="17.5295"/>
+        <point lat="48.85004" lon="17.45671"/>
+        <point lat="48.80936" lon="17.3853"/>
+        <point lat="48.85546" lon="17.29054"/>
+        <point lat="48.87602" lon="17.19355"/>
+        <point lat="48.82925" lon="17.11202"/>
+        <point lat="48.70887" lon="17.00215"/>
+        <point lat="48.60371" lon="16.93955"/>
+        <point lat="48.53614" lon="16.94611"/>
+        <point lat="48.44968" lon="16.85204"/>
+        <point lat="48.38321" lon="16.8497"/>
+        <point lat="48.3844" lon="16.83588"/>
+        <point lat="48.38138" lon="16.83317"/>
+        <point lat="48.35258" lon="16.84243"/>
+        <point lat="48.32519" lon="16.90903"/>
+        <point lat="48.31332" lon="16.89461"/>
+        <point lat="48.17385" lon="16.97701"/>
+        <point lat="48.13996" lon="17.02919"/>
+        <point lat="48.14179" lon="17.05735"/>
+        <point lat="48.09366" lon="17.09168"/>
+        <point lat="48.0317" lon="17.07039"/>
+        <point lat="48.00636" lon="17.16001"/>
+        <point lat="48.02094" lon="17.23699"/>
+        <point lat="47.7548" lon="17.71215"/>
+        <point lat="47.75665" lon="18.02938"/>
+        <point lat="47.73541" lon="18.29305"/>
+        <point lat="47.76588" lon="18.56496"/>
+        <point lat="47.76772" lon="18.66521"/>
+        <point lat="47.8157" lon="18.74074"/>
+        <point lat="47.82308" lon="18.8506"/>
+        <point lat="47.87469" lon="18.76821"/>
+        <point lat="47.97499" lon="18.76134"/>
+        <point lat="48.04206" lon="18.82176"/>
+        <point lat="48.07052" lon="19.01952"/>
+        <point lat="48.0595" lon="19.23924"/>
+        <point lat="48.08336" lon="19.28182"/>
+        <point lat="48.09437" lon="19.47957"/>
+        <point lat="48.19791" lon="19.52489"/>
+        <point lat="48.25006" lon="19.63338"/>
+        <point lat="48.1283" lon="19.92452"/>
+        <point lat="48.2784" lon="20.24312"/>
+        <point lat="48.26104" lon="20.29943"/>
+        <point lat="48.53336" lon="20.5215"/>
+        <point lat="48.5824" lon="20.83248"/>
+        <point lat="48.49546" lon="21.11516"/>
+        <point lat="48.58456" lon="21.44063"/>
+        <point lat="48.50365" lon="21.6068"/>
+        <point lat="48.3989" lon="21.67134"/>
+        <point lat="48.34628" lon="21.72525"/>
+        <point lat="48.33321" lon="21.8279"/>
+        <point lat="48.36242" lon="21.83339"/>
+        <point lat="48.4005" lon="22.14689"/>
+        <point lat="48.56548" lon="22.16023"/>
+        <point lat="48.6218" lon="22.21379"/>
+        <point lat="48.68893" lon="22.34151"/>
+        <point lat="48.92857" lon="22.42934"/>
+        <point lat="48.99172" lon="22.48296"/>
+        <point lat="49.01424" lon="22.54338"/>
+        <point lat="49.08865" lon="22.56155"/>
+        <point lat="49.22136" lon="22.04427"/>
+        <point lat="49.3437" lon="21.96385"/>
+        <point lat="49.39467" lon="21.82927"/>
+        <point lat="49.35443" lon="21.77983"/>
+        <point lat="49.4447" lon="21.62328"/>
+        <point lat="49.41433" lon="21.43376"/>
+        <point lat="49.45988" lon="21.27858"/>
+        <point lat="49.4054" lon="21.19756"/>
+        <point lat="49.43666" lon="21.12477"/>
+        <point lat="49.41791" lon="21.041"/>
+        <point lat="49.37176" lon="21.09799"/>
+        <point lat="49.30774" lon="20.98733"/>
+        <point lat="49.29626" lon="20.9229"/>
+        <point lat="49.35383" lon="20.77971"/>
+        <point lat="49.41813" lon="20.72274"/>
+        <point lat="49.41791" lon="20.61666"/>
+        <point lat="49.375" lon="20.5631"/>
+        <point lat="49.41612" lon="20.46422"/>
+        <point lat="49.3896" lon="20.39939"/>
+        <point lat="49.39914" lon="20.31728"/>
+        <point lat="49.34817" lon="20.31453"/>
+        <point lat="49.35265" lon="20.21977"/>
+        <point lat="49.31685" lon="20.13738"/>
+        <point lat="49.1813" lon="20.08238"/>
+        <point lat="49.22904" lon="19.98494"/>
+        <point lat="49.23532" lon="19.90529"/>
+        <point lat="49.19316" lon="19.86409"/>
+        <point lat="49.20751" lon="19.75286"/>
+        <point lat="49.27806" lon="19.82237"/>
+      </shape>
+    </bounds>
+  </entry>
   <entry>
     <name>Cambodia, Laos, Thailand, Vietnam, Malaysia, Myanmar bilingual</name>
     <id>osm-cambodia_laos_thailand_vietnam-bilingual</id>

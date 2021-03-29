@@ -23,7 +23,6 @@
     "txpush": "tx push -s"
   },
   "devDependencies": {
-    "iD": "git://github.com/openstreetmap/iD.git#v2.17.2",
     "@aitodotai/json-stringify-pretty-compact": "^1.3.0",
     "@ideditor/location-conflation": "0.8.0",
     "@mapbox/geojson-area": "^0.2.2",
@@ -38,6 +37,7 @@
     "geojson-precision": "^1.0.0",
     "geojson-rewind": "^0.3.1",
     "glob": "^7.1.6",
+    "iD": "git://github.com/openstreetmap/iD.git#v2.17.2",
     "js-yaml": "^4.0.0",
     "jsonschema": "^1.2.5",
     "npm-run-all": "^4.0.0",

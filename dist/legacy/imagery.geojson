@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "meta": {"generated": "2021-01-04 17:14:53", "version": "1.0"},
+  "meta": {"generated": "2021-03-29 13:24:50", "version": "1.0"},
   "features": [
     {
       "type": "Feature",
@@ -11920,13 +11920,21 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "Slovakia-Historic-Maps",
+        "id": "ortofotomozaika-sr",
         "type": "tms",
         "country_code": "SK",
-        "name": "Slovakia Historic Maps",
-        "url": "https://tms.freemap.sk/historicke/{zoom}/{x}/{y}.png",
-        "max_zoom": 12,
-        "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png"
+        "name": "Ortofotomozaika SR",
+        "description": "Aerial imagery for Slovakia",
+        "url": "https://ofmozaika.tiles.freemap.sk/{zoom}/{x}/{y}.jpg",
+        "category": "photo",
+        "max_zoom": 19,
+        "best": true,
+        "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png",
+        "attribution": {
+          "required": true,
+          "url": "https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Sources#Ortofotomozaika_SR_.28orthophoto_by_GK.C3.9A_and_NLC.29",
+          "text": "© GKÚ, NLC 2017-2019"
+        }
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -12061,18 +12069,26 @@
           ]
         ]
       },
-      "id": "Slovakia-Historic-Maps"
+      "id": "ortofotomozaika-sr"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "Slovakia-Historic-Maps",
+        "id": "ortofotomozaika-sr",
         "type": "tms",
         "country_code": "SK",
-        "name": "Slovakia Historic Maps",
-        "url": "https://tms.freemap.sk/historicke/{zoom}/{x}/{y}.png",
-        "max_zoom": 12,
-        "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png"
+        "name": "Ortofotomozaika SR",
+        "description": "Aerial imagery for Slovakia",
+        "url": "https://ofmozaika.tiles.freemap.sk/{zoom}/{x}/{y}.jpg",
+        "category": "photo",
+        "max_zoom": 19,
+        "best": true,
+        "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png",
+        "attribution": {
+          "required": true,
+          "url": "https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Sources#Ortofotomozaika_SR_.28orthophoto_by_GK.C3.9A_and_NLC.29",
+          "text": "© GKÚ, NLC 2017-2019"
+        }
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -12207,18 +12223,26 @@
           ]
         ]
       },
-      "id": "Slovakia-Historic-Maps"
+      "id": "ortofotomozaika-sr"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "Slovakia-Historic-Maps",
+        "id": "ortofotomozaika-sr",
         "type": "tms",
         "country_code": "SK",
-        "name": "Slovakia Historic Maps",
-        "url": "https://tms.freemap.sk/historicke/{zoom}/{x}/{y}.png",
-        "max_zoom": 12,
-        "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png"
+        "name": "Ortofotomozaika SR",
+        "description": "Aerial imagery for Slovakia",
+        "url": "https://ofmozaika.tiles.freemap.sk/{zoom}/{x}/{y}.jpg",
+        "category": "photo",
+        "max_zoom": 19,
+        "best": true,
+        "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png",
+        "attribution": {
+          "required": true,
+          "url": "https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Sources#Ortofotomozaika_SR_.28orthophoto_by_GK.C3.9A_and_NLC.29",
+          "text": "© GKÚ, NLC 2017-2019"
+        }
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -12353,18 +12377,26 @@
           ]
         ]
       },
-      "id": "Slovakia-Historic-Maps"
+      "id": "ortofotomozaika-sr"
     },
     {
       "type": "Feature",
       "properties": {
-        "id": "Slovakia-Historic-Maps",
+        "id": "ortofotomozaika-sr",
         "type": "tms",
         "country_code": "SK",
-        "name": "Slovakia Historic Maps",
-        "url": "https://tms.freemap.sk/historicke/{zoom}/{x}/{y}.png",
-        "max_zoom": 12,
-        "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png"
+        "name": "Ortofotomozaika SR",
+        "description": "Aerial imagery for Slovakia",
+        "url": "https://ofmozaika.tiles.freemap.sk/{zoom}/{x}/{y}.jpg",
+        "category": "photo",
+        "max_zoom": 19,
+        "best": true,
+        "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png",
+        "attribution": {
+          "required": true,
+          "url": "https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Sources#Ortofotomozaika_SR_.28orthophoto_by_GK.C3.9A_and_NLC.29",
+          "text": "© GKÚ, NLC 2017-2019"
+        }
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -12499,7 +12531,7 @@
           ]
         ]
       },
-      "id": "Slovakia-Historic-Maps"
+      "id": "ortofotomozaika-sr"
     },
     {
       "type": "Feature",
@@ -36485,13 +36517,21 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "Slovakia-Historic-Maps",
+        "id": "ortofotomozaika-sr",
         "type": "tms",
         "country_code": "SK",
-        "name": "Slovakia Historic Maps",
-        "url": "https://tms.freemap.sk/historicke/{zoom}/{x}/{y}.png",
-        "max_zoom": 12,
-        "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png"
+        "name": "Ortofotomozaika SR",
+        "description": "Aerial imagery for Slovakia",
+        "url": "https://ofmozaika.tiles.freemap.sk/{zoom}/{x}/{y}.jpg",
+        "category": "photo",
+        "max_zoom": 19,
+        "best": true,
+        "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png",
+        "attribution": {
+          "required": true,
+          "url": "https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Sources#Ortofotomozaika_SR_.28orthophoto_by_GK.C3.9A_and_NLC.29",
+          "text": "© GKÚ, NLC 2017-2019"
+        }
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -36626,7 +36666,7 @@
           ]
         ]
       },
-      "id": "Slovakia-Historic-Maps"
+      "id": "ortofotomozaika-sr"
     },
     {
       "type": "Feature",
@@ -70757,6 +70797,160 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "ortofotomozaika-sr",
+        "type": "tms",
+        "country_code": "SK",
+        "name": "Ortofotomozaika SR",
+        "description": "Aerial imagery for Slovakia",
+        "url": "https://ofmozaika.tiles.freemap.sk/{zoom}/{x}/{y}.jpg",
+        "category": "photo",
+        "max_zoom": 19,
+        "best": true,
+        "icon": "https://raw.githubusercontent.com/FreemapSlovakia/freemap-v3-react/master/src/images/freemap-logo-small.png",
+        "attribution": {
+          "required": true,
+          "url": "https://wiki.openstreetmap.org/wiki/WikiProject_Slovakia/Sources#Ortofotomozaika_SR_.28orthophoto_by_GK.C3.9A_and_NLC.29",
+          "text": "© GKÚ, NLC 2017-2019"
+        }
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [19.82237, 49.27806],
+              [19.78581, 49.41701],
+              [19.72127, 49.39288],
+              [19.6375, 49.40897],
+              [19.64162, 49.45184],
+              [19.57845, 49.46077],
+              [19.53313, 49.52856],
+              [19.52626, 49.57311],
+              [19.45348, 49.61583],
+              [19.37795, 49.574],
+              [19.36009, 49.53747],
+              [19.25435, 49.53391],
+              [19.18019, 49.41165],
+              [18.9742, 49.39557],
+              [18.97283, 49.49914],
+              [18.94536, 49.52143],
+              [18.84521, 49.51672],
+              [18.74761, 49.492],
+              [18.67757, 49.50895],
+              [18.6144, 49.49824],
+              [18.57183, 49.51162],
+              [18.53063, 49.49022],
+              [18.54848, 49.47059],
+              [18.44686, 49.39467],
+              [18.4084, 49.40003],
+              [18.4139, 49.36517],
+              [18.36446, 49.3267],
+              [18.18456, 49.28909],
+              [18.15022, 49.24518],
+              [18.1104, 49.08624],
+              [18.06885, 49.03157],
+              [17.91814, 49.01784],
+              [17.87831, 48.92679],
+              [17.77944, 48.92318],
+              [17.73126, 48.87885],
+              [17.7094, 48.86721],
+              [17.5295, 48.81117],
+              [17.45671, 48.85004],
+              [17.3853, 48.80936],
+              [17.29054, 48.85546],
+              [17.19355, 48.87602],
+              [17.11202, 48.82925],
+              [17.00215, 48.70887],
+              [16.93955, 48.60371],
+              [16.94611, 48.53614],
+              [16.85204, 48.44968],
+              [16.8497, 48.38321],
+              [16.83588, 48.3844],
+              [16.83317, 48.38138],
+              [16.84243, 48.35258],
+              [16.90903, 48.32519],
+              [16.89461, 48.31332],
+              [16.97701, 48.17385],
+              [17.02919, 48.13996],
+              [17.05735, 48.14179],
+              [17.09168, 48.09366],
+              [17.07039, 48.0317],
+              [17.16001, 48.00636],
+              [17.23699, 48.02094],
+              [17.71215, 47.7548],
+              [18.02938, 47.75665],
+              [18.29305, 47.73541],
+              [18.56496, 47.76588],
+              [18.66521, 47.76772],
+              [18.74074, 47.8157],
+              [18.8506, 47.82308],
+              [18.76821, 47.87469],
+              [18.76134, 47.97499],
+              [18.82176, 48.04206],
+              [19.01952, 48.07052],
+              [19.23924, 48.0595],
+              [19.28182, 48.08336],
+              [19.47957, 48.09437],
+              [19.52489, 48.19791],
+              [19.63338, 48.25006],
+              [19.92452, 48.1283],
+              [20.24312, 48.2784],
+              [20.29943, 48.26104],
+              [20.5215, 48.53336],
+              [20.83248, 48.5824],
+              [21.11516, 48.49546],
+              [21.44063, 48.58456],
+              [21.6068, 48.50365],
+              [21.67134, 48.3989],
+              [21.72525, 48.34628],
+              [21.8279, 48.33321],
+              [21.83339, 48.36242],
+              [22.14689, 48.4005],
+              [22.16023, 48.56548],
+              [22.21379, 48.6218],
+              [22.34151, 48.68893],
+              [22.42934, 48.92857],
+              [22.48296, 48.99172],
+              [22.54338, 49.01424],
+              [22.56155, 49.08865],
+              [22.04427, 49.22136],
+              [21.96385, 49.3437],
+              [21.82927, 49.39467],
+              [21.77983, 49.35443],
+              [21.62328, 49.4447],
+              [21.43376, 49.41433],
+              [21.27858, 49.45988],
+              [21.19756, 49.4054],
+              [21.12477, 49.43666],
+              [21.041, 49.41791],
+              [21.09799, 49.37176],
+              [20.98733, 49.30774],
+              [20.9229, 49.29626],
+              [20.77971, 49.35383],
+              [20.72274, 49.41813],
+              [20.61666, 49.41791],
+              [20.5631, 49.375],
+              [20.46422, 49.41612],
+              [20.39939, 49.3896],
+              [20.31728, 49.39914],
+              [20.31453, 49.34817],
+              [20.21977, 49.35265],
+              [20.13738, 49.31685],
+              [20.08238, 49.1813],
+              [19.98494, 49.22904],
+              [19.90529, 49.23532],
+              [19.86409, 49.19316],
+              [19.75286, 49.20751],
+              [19.82237, 49.27806]
+            ]
+          ]
+        ]
+      },
+      "id": "ortofotomozaika-sr"
     },
     {
       "type": "Feature",
