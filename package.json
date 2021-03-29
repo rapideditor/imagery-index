@@ -28,7 +28,7 @@
     "@ideditor/location-conflation": "0.8.0",
     "@mapbox/geojson-area": "^0.2.2",
     "@rollup/plugin-buble": "^0.21.0",
-    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-commonjs": "^18.0.0",
     "@rollup/plugin-json": "^4.0.1",
     "@rollup/plugin-node-resolve": "^11.0.1",
     "bytes": "^3.1.0",
