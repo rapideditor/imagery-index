@@ -204,11 +204,12 @@
           "items": {
             "anyOf": [
               { "$ref": "#/definitions/countryCoder" },
-              { "$ref": "#/definitions/coordinatePair" },
+              { "$ref": "#/definitions/circularArea" },
               { "$ref": "#/definitions/geojsonFilename" }
             ]
           }
         },
+
         "exclude": {
           "description": "(optional) locations excluded",
           "type": "array",
@@ -216,29 +217,32 @@
           "items": {
             "anyOf": [
               { "$ref": "#/definitions/countryCoder" },
-              { "$ref": "#/definitions/coordinatePair" },
+              { "$ref": "#/definitions/circularArea" },
               { "$ref": "#/definitions/geojsonFilename" }
             ]
           }
         }
       }
     },
+
     "countryCoder": {
       "$comment": "See country-coder documentation for compatible values: https://github.com/ideditor/country-coder#readme",
       "description": "A country code (ISO 3166-1, United Nations M49, or anything recognized by country-coder)",
       "type": "string"
     },
-    "coordinatePair": {
-      "description": "A coordinate pair formatted as [longitude, latitude]",
+
+    "circularArea": {
+      "description": "A circular area defined as [longitude, latitude, radius?]. If not specified, radius will default to 25km.",
       "type": "array",
+      "minItems": 2,
+      "maxItems": 3,
       "items": {
-        "type": "number",
-        "minItems": 2,
-        "maxItems": 2
+        "type": "number"
       }
     },
+
     "geojsonFilename": {
-      "description": "A filename for one of the geojson features in this project",
+      "description": "A filename for one of the custom geojson features in this project",
       "type": "string",
       "pattern": "^.*\\.geojson$"
     }
