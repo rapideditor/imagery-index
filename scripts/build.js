@@ -3,8 +3,8 @@ const fs = require('fs');
 const glob = require('glob');
 const LocationConflation = require('@ideditor/location-conflation');
 const path = require('path');
-const precision = require('geojson-precision');
-const rewind = require('geojson-rewind');
+const geojsonPrecision = require('geojson-precision');
+const geojsonRewind = require('@mapbox/geojson-rewind');
 const shell = require('shelljs');
 const stringify = require('@aitodotai/json-stringify-pretty-compact');
 const Validator = require('jsonschema').Validator;
@@ -71,7 +71,7 @@ function collectFeatures() {
       process.exit(1);
     }
 
-    let feature = precision(rewind(parsed, true), 4);
+    let feature = geojsonPrecision(geojsonRewind(parsed, true), 4);
     let fc = feature.features;
 
     // A FeatureCollection with a single feature inside (geojson.io likes to make these).
