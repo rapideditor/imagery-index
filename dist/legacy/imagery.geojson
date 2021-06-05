@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "meta": {"generated": "2021-03-29 13:24:50", "version": "1.0"},
+  "meta": {"generated": "2021-06-05 23:09:20", "version": "1.0"},
   "features": [
     {
       "type": "Feature",
@@ -7291,7 +7291,7 @@
         "type": "tms",
         "country_code": "ES",
         "name": "PNOA Spain",
-        "url": "https://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&VERSION=1.0.0&Layer=OI.OrthoimageCoverage&Style=default&Format=image/png&TileMatrixSet=GoogleMapsCompatible&TileMatrix={zoom}&TileRow={y}&TileCol={x}",
+        "url": "https://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&VERSION=1.0.0&Layer=OI.OrthoimageCoverage&Style=default&Format=image/jpeg&TileMatrixSet=GoogleMapsCompatible&TileMatrix={zoom}&TileRow={y}&TileCol={x}",
         "max_zoom": 20,
         "best": true,
         "attribution": {"required": true, "text": "PNOA"}
@@ -33013,7 +33013,7 @@
         "type": "tms",
         "country_code": "ES",
         "name": "PNOA Spain",
-        "url": "https://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&VERSION=1.0.0&Layer=OI.OrthoimageCoverage&Style=default&Format=image/png&TileMatrixSet=GoogleMapsCompatible&TileMatrix={zoom}&TileRow={y}&TileCol={x}",
+        "url": "https://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&VERSION=1.0.0&Layer=OI.OrthoimageCoverage&Style=default&Format=image/jpeg&TileMatrixSet=GoogleMapsCompatible&TileMatrix={zoom}&TileRow={y}&TileCol={x}",
         "max_zoom": 20,
         "best": true,
         "attribution": {"required": true, "text": "PNOA"}
@@ -33416,7 +33416,7 @@
         "type": "tms",
         "country_code": "ES",
         "name": "PNOA Spain",
-        "url": "https://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&VERSION=1.0.0&Layer=OI.OrthoimageCoverage&Style=default&Format=image/png&TileMatrixSet=GoogleMapsCompatible&TileMatrix={zoom}&TileRow={y}&TileCol={x}",
+        "url": "https://www.ign.es/wmts/pnoa-ma?request=GetTile&service=WMTS&VERSION=1.0.0&Layer=OI.OrthoimageCoverage&Style=default&Format=image/jpeg&TileMatrixSet=GoogleMapsCompatible&TileMatrix={zoom}&TileRow={y}&TileCol={x}",
         "max_zoom": 20,
         "best": true,
         "attribution": {"required": true, "text": "PNOA"}

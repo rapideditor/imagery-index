@@ -30941,7 +30941,7 @@
     <name>PNOA Spain</name>
     <id>PNOA-Spain-TMS</id>
     <type>tms</type>
-    <url>https://www.ign.es/wmts/pnoa-ma?request=GetTile&amp;service=WMTS&amp;VERSION=1.0.0&amp;Layer=OI.OrthoimageCoverage&amp;Style=default&amp;Format=image/png&amp;TileMatrixSet=GoogleMapsCompatible&amp;TileMatrix={zoom}&amp;TileRow={y}&amp;TileCol={x}</url>
+    <url>https://www.ign.es/wmts/pnoa-ma?request=GetTile&amp;service=WMTS&amp;VERSION=1.0.0&amp;Layer=OI.OrthoimageCoverage&amp;Style=default&amp;Format=image/jpeg&amp;TileMatrixSet=GoogleMapsCompatible&amp;TileMatrix={zoom}&amp;TileRow={y}&amp;TileCol={x}</url>
     <max-zoom>20</max-zoom>
     <country_code>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/ES</country_code>
     <attribution-text>PNOA</attribution-text>
