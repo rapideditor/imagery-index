@@ -1,6 +1,6 @@
 const colors = require('colors/safe');
 const fs = require('fs');
-const LocationConflation = require('@ideditor/location-conflation');
+const LocationConflation = require('@ideditor/location-conflation').default;
 const shell = require('shelljs');
 const stringify = require('@aitodotai/json-stringify-pretty-compact');
 const xmlbuilder2 = require('xmlbuilder2');
