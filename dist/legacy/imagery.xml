@@ -1595,7 +1595,7 @@
     <id>Actueel_ortho25_WMS</id>
     <type>tms</type>
     <description>Nationwide data set 25cm resolution color aerial imagery of the most recent year.</description>
-    <url>https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/wmts?FORMAT=image/jpeg&amp;SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=Actueel_ortho25&amp;STYLE=&amp;FORMAT=image/jpeg&amp;tileMatrixSet=OGC:1.0:GoogleMapsCompatible&amp;tileMatrix={zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
+    <url>https://service.pdok.nl/hwh/luchtfotorgb/wmts/v1_0?FORMAT=image/jpeg&amp;SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=Actueel_ortho25&amp;STYLE=&amp;FORMAT=image/jpeg&amp;tileMatrixSet=OGC:1.0:GoogleMapsCompatible&amp;tileMatrix={zoom}&amp;tileRow={y}&amp;tileCol={x}</url>
     <max-zoom>19</max-zoom>
     <permission-ref>https://forum.openstreetmap.org/viewtopic.php?pid=630995#p630995</permission-ref>
     <icon>https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/beeldmateriaal.png</icon>
