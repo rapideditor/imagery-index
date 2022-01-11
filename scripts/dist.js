@@ -1,4 +1,4 @@
-const colors = require('colors/safe');
+const chalk = require('chalk');
 const fs = require('fs');
 const LocationConflation = require('@ideditor/location-conflation').default;
 const shell = require('shelljs');
@@ -13,8 +13,8 @@ buildAll();
 
 
 function buildAll() {
-  const START = '🏗   ' + colors.yellow('Building dist...');
-  const END = '👍  ' + colors.green('dist built');
+  const START = '🏗   ' + chalk.yellow('Building dist...');
+  const END = '👍  ' + chalk.green('dist built');
 
   console.log('');
   console.log(START);
@@ -129,7 +129,7 @@ function generateCombined() {
   fs.writeFileSync('dist/combined.json', stringify(combined) + '\n');
   fs.writeFileSync('dist/combined.min.json', JSON.stringify(combined));
 
-  process.stdout.write(colors.green('✓\n'));
+  process.stdout.write(chalk.green('✓\n'));
 }
 
 
@@ -192,7 +192,7 @@ function generateLegacyImageryGeojson() {
   fs.writeFileSync('dist/legacy/imagery.geojson', stringify(legacyGeoJSON) + '\n');
   fs.writeFileSync('dist/legacy/imagery.min.geojson', JSON.stringify(legacyGeoJSON) );
 
-  process.stdout.write(colors.green('✓\n'));
+  process.stdout.write(chalk.green('✓\n'));
 }
 
 
@@ -279,7 +279,7 @@ function generateLegacyImageryJson() {
   fs.writeFileSync('dist/legacy/imagery.json', stringify(keepSources) + '\n');
   fs.writeFileSync('dist/legacy/imagery.min.json', JSON.stringify(keepSources) );
 
-  process.stdout.write(colors.green('✓\n'));
+  process.stdout.write(chalk.green('✓\n'));
 }
 
 
@@ -387,5 +387,5 @@ function generateLegacyImageryXml() {
   fs.writeFileSync('dist/legacy/imagery.xml', root.end({ prettyPrint: true }) );
   fs.writeFileSync('dist/legacy/imagery.min.xml', root.end() );
 
-  process.stdout.write(colors.green('✓\n'));
+  process.stdout.write(chalk.green('✓\n'));
 }

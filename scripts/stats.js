@@ -1,5 +1,5 @@
 const bytes = require('bytes');
-const colors = require('colors/safe');
+const chalk = require('chalk');
 const fs = require('fs');
 const glob = require('glob');
 const path = require('path');
@@ -35,8 +35,8 @@ function getStats() {
 
   console.info(`\nTotals:`);
   console.info(`-------`);
-  console.info(colors.blue.bold(`Features:  ${featureSize} in ${featureFiles} files.`));
-  console.info(colors.blue.bold(`Sources:   ${sourceSize} in ${sourceFiles} files.`));
+  console.info(chalk.blue.bold(`Features:  ${featureSize} in ${featureFiles} files.`));
+  console.info(chalk.blue.bold(`Sources:   ${sourceSize} in ${sourceFiles} files.`));
   console.info('');
 
 
@@ -56,11 +56,11 @@ function getStats() {
 
   function colorBytes(size) {
     if (size > 1024 * 10) {  // 10 KB
-      return colors.red;
+      return chalk.red;
     } else if (size > 1024 * 2) {  // 2 KB
-      return colors.yellow;
+      return chalk.yellow;
     } else {
-      return colors.green;
+      return chalk.green;
     }
   }
 }

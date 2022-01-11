@@ -1,4 +1,4 @@
-const colors = require('colors/safe');
+const chalk = require('chalk');
 const fs = require('fs');
 const glob = require('glob');
 const LocationConflation = require('@ideditor/location-conflation').default;
@@ -21,8 +21,8 @@ buildAll();
 
 
 function buildAll() {
-  const START = '🏗   ' + colors.yellow('Building data...');
-  const END = '👍  ' + colors.green('data built');
+  const START = '🏗   ' + chalk.yellow('Building data...');
+  const END = '👍  ' + chalk.green('data built');
 
   console.log('');
   console.log(START);
@@ -66,8 +66,8 @@ function collectFeatures() {
     try {
       parsed = JSON.parse(contents);
     } catch (jsonParseError) {
-      console.error(colors.red(`Error - ${jsonParseError.message} in:`));
-      console.error('  ' + colors.yellow(file));
+      console.error(chalk.red(`Error - ${jsonParseError.message} in:`));
+      console.error('  ' + chalk.yellow(file));
       process.exit(1);
     }
 
@@ -96,13 +96,13 @@ function collectFeatures() {
 
     if (feature.geometry) {
       if (feature.geometry.type !== 'Polygon' && feature.geometry.type !== 'MultiPolygon') {
-        console.error(colors.red('Error - Feature type must be "Polygon" or "MultiPolygon" in:'));
-        console.error('  ' + colors.yellow(file));
+        console.error(chalk.red('Error - Feature type must be "Polygon" or "MultiPolygon" in:'));
+        console.error('  ' + chalk.yellow(file));
         process.exit(1);
       }
       if (!feature.geometry.coordinates) {
-        console.error(colors.red('Error - Feature missing coordinates in:'));
-        console.error('  ' + colors.yellow(file));
+        console.error(chalk.red('Error - Feature missing coordinates in:'));
+        console.error('  ' + chalk.yellow(file));
         process.exit(1);
       }
       obj.geometry = {
@@ -117,15 +117,15 @@ function collectFeatures() {
     prettifyFile(file, feature, contents);
 
     if (files[id]) {
-      console.error(colors.red('Error - Duplicate filenames: ') + colors.yellow(id));
-      console.error('  ' + colors.yellow(files[id]));
-      console.error('  ' + colors.yellow(file));
+      console.error(chalk.red('Error - Duplicate filenames: ') + chalk.yellow(id));
+      console.error('  ' + chalk.yellow(files[id]));
+      console.error('  ' + chalk.yellow(file));
       process.exit(1);
     }
     features.push(feature);
     files[id] = file;
 
-    process.stdout.write(colors.green('✓'));
+    process.stdout.write(chalk.green('✓'));
   });
 
   process.stdout.write(' ' + Object.keys(files).length + '\n');
@@ -150,8 +150,8 @@ function collectSources(tstrings, featureCollection) {
     try {
       source = JSON.parse(contents);
     } catch (jsonParseError) {
-      console.error(colors.red(`Error - ${jsonParseError.message} in:`));
-      console.error('  ' + colors.yellow(file));
+      console.error(chalk.red(`Error - ${jsonParseError.message} in:`));
+      console.error('  ' + chalk.yellow(file));
       process.exit(1);
     }
 
@@ -216,8 +216,8 @@ function collectSources(tstrings, featureCollection) {
         throw new Error(`locationSet ${resolved.id} resolves to an empty feature.`);
       }
     } catch (err) {
-      console.error(colors.red(`Error - ${err.message} in:`));
-      console.error('  ' + colors.yellow(file));
+      console.error(chalk.red(`Error - ${err.message} in:`));
+      console.error('  ' + chalk.yellow(file));
       process.exit(1);
     }
 
@@ -225,9 +225,9 @@ function collectSources(tstrings, featureCollection) {
 
     const sourceId = source.id;
     if (files[sourceId]) {
-      console.error(colors.red('Error - Duplicate source id: ') + colors.yellow(sourceId));
-      console.error('  ' + colors.yellow(files[sourceId]));
-      console.error('  ' + colors.yellow(file));
+      console.error(chalk.red('Error - Duplicate source id: ') + chalk.yellow(sourceId));
+      console.error('  ' + chalk.yellow(files[sourceId]));
+      console.error('  ' + chalk.yellow(file));
       process.exit(1);
     }
 
@@ -245,7 +245,7 @@ function collectSources(tstrings, featureCollection) {
       }
     }
 
-    process.stdout.write(colors.green('✓'));
+    process.stdout.write(chalk.green('✓'));
   });
 
   process.stdout.write(' ' + Object.keys(files).length + '\n');
@@ -257,13 +257,13 @@ function collectSources(tstrings, featureCollection) {
 function validateFile(file, source, schema) {
   const validationErrors = v.validate(source, schema).errors;
   if (validationErrors.length) {
-    console.error(colors.red('Error - Schema validation:'));
-    console.error('  ' + colors.yellow(file + ': '));
+    console.error(chalk.red('Error - Schema validation:'));
+    console.error('  ' + chalk.yellow(file + ': '));
     validationErrors.forEach(error => {
       if (error.property) {
-        console.error('  ' + colors.yellow(error.property + ' ' + error.message));
+        console.error('  ' + chalk.yellow(error.property + ' ' + error.message));
       } else {
-        console.error('  ' + colors.yellow(error));
+        console.error('  ' + chalk.yellow(error));
       }
     });
     process.exit(1);
