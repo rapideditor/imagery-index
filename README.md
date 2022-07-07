@@ -28,7 +28,7 @@ To add an imagery source to the index:
 
 ### Details
 
-The goal of **imagery-index** is to collect public imagery sources useful for making maps.  We use imagery-index in the [iD editor](https://github.com/openstreetmap/iD).
+The goal of **imagery-index** is to collect public imagery sources useful for making maps.
 
 This project evolved from a previous project called [editor-layer-index](https://github.com/osmlab/editor-layer-index). Thank you, editor-layer-index!
 
