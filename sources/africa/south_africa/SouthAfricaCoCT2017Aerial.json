@@ -1,0 +1,19 @@
+{
+  "id": "South_Africa-CapeTown-Aerial-2017",
+  "type": "wms",
+  "locationSet": {"include": ["cape_town.geojson"]},
+  "country_code": "ZA",
+  "name": "2017 Aerial Imagery from the City of Cape Town",
+  "description": "City of Cape Town Aerial ortho-photography of the municipal area. 8cm ground sample distance",
+  "url": "https://cityimg.capetown.gov.za/erdas-iws/ogc/wms/GeoSpatial%20Datasets?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=Aerial%20Imagery_Aerial%20Imagery%202017Jan&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "permission_osm": "explicit",
+  "license_url": "https://osmlab.github.io/editor-layer-index/sources/africa/za/South_Africa_CapeTown_2017_2018_Aerial_Imagery.pdf",
+  "start_date": "2017",
+  "end_date": "2017",
+  "available_projections": ["EPSG:3857", "EPSG:4326"],
+  "attribution": {
+    "required": true,
+    "url": "http://odp.capetown.gov.za/datasets/aerial-imagery",
+    "text": "City of Cape Town Aerial"
+  }
+}

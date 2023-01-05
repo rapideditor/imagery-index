@@ -1,11 +1,10 @@
 {
   "id": "South_Africa-CD_NGI-Aerial",
-  "type": "tms",
+  "type": "wms",
   "locationSet": {"include": ["za"]},
   "country_code": "ZA",
   "name": "South Africa CD:NGI Aerial",
-  "url": "http://{switch:a,b,c}.aerial.openstreetmap.org.za/ngi-aerial/{zoom}/{x}/{y}.jpg",
-  "min_zoom": 1,
-  "max_zoom": 22,
-  "best": true
+  "url": "http://apollo.cdngiportal.co.za/erdas-iws/ogc/wms/CDNGI_PORTAL_BACKDROP?FORMAT=image/jpeg&VERSION=1.1.1&SERVICE=WMS&REQUEST=GetMap&LAYERS=CDNGI_Imagery_50cm_MOSAIC&STYLES=&SRS={proj}&WIDTH={width}&HEIGHT={height}&BBOX={bbox}",
+  "best": true,
+  "available_projections": ["EPSG:3857", "EPSG:4326"]
 }
