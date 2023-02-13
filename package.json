@@ -34,7 +34,7 @@
     "bytes": "^3.1.0",
     "chalk": "^4.1.2",
     "easy-table": "^1.1.1",
-    "eslint": "^7.28.0",
+    "eslint": "^8.34.0",
     "geojson-precision": "^1.0.0",
     "glob": "^7.1.6",
     "iD": "git://github.com/openstreetmap/iD.git#v2.19.6",
