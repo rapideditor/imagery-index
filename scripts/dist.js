@@ -1,6 +1,6 @@
 const chalk = require('chalk');
 const fs = require('fs');
-const LocationConflation = require('@ideditor/location-conflation').default;
+const LocationConflation = require('@rapideditor/location-conflation').default;
 const shell = require('shelljs');
 const stringify = require('@aitodotai/json-stringify-pretty-compact');
 const xmlbuilder2 = require('xmlbuilder2');
@@ -56,7 +56,7 @@ function iconPath(icon) {
   if (/^http(s)?/i.test(icon)) {
     return icon;
   } else {
-    return `https://cdn.jsdelivr.net/gh/ideditor/imagery-index@main/dist/images/${icon}`;
+    return `https://cdn.jsdelivr.net/gh/rapideditor/imagery-index@main/dist/images/${icon}`;
   }
 }
 

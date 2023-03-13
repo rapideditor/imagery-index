@@ -1,11 +1,11 @@
-[![build](https://github.com/ideditor/imagery-index/workflows/build/badge.svg)](https://github.com/ideditor/imagery-index/actions?query=workflow%3A%22build%22)
-[![npm version](https://badge.fury.io/js/%40ideditor%2Fimagery-index.svg)](https://badge.fury.io/js/%40ideditor%2Fimagery-index)
+[![build](https://github.com/rapideditor/imagery-index/workflows/build/badge.svg)](https://github.com/rapideditor/imagery-index/actions?query=workflow%3A%22build%22)
+[![npm version](https://badge.fury.io/js/%40rapideditor%2Fimagery-index.svg)](https://badge.fury.io/js/%40rapideditor%2Fimagery-index)
 
 # imagery-index
 
 🛰 An index of aerial and satellite imagery useful for mapping.
 
-Play with the data here: https://ideditor.github.io/imagery-index/
+Play with the data here: https://rapideditor.github.io/imagery-index/
 
 
 ### About the index
@@ -33,8 +33,8 @@ The goal of **imagery-index** is to collect public imagery sources useful for ma
 This project evolved from a previous project called [editor-layer-index](https://github.com/osmlab/editor-layer-index). Thank you, editor-layer-index!
 
 To avoid distributing redundant geojson data, imagery-index leverages several other projects:
-  * [country-coder](https://github.com/ideditor/country-coder) - a dataset of the world's country and region borders.
-  * [location-conflation](https://github.com/ideditor/location-conflation) - a library for defining complex geographic regions. Each `locationSet` may contain `include` and `exclude` regions.
+  * [country-coder](https://github.com/rapideditor/country-coder) - a dataset of the world's country and region borders.
+  * [location-conflation](https://github.com/rapideditor/location-conflation) - a library for defining complex geographic regions. Each `locationSet` may contain `include` and `exclude` regions.
 
 Before: Include multiple redundant copies of a 5kb boundary of Slovakia<br/>
 After: `"locationSet": {"include": ["sk"]}`
@@ -46,8 +46,8 @@ The space savings are significant:
 
 Project | Size
 ------- | ----
-osmlab/editor-layer-index  | 2.1Mb minified `imagery.geojson`
-@ideditor/imagery-index    | 221kb features, 354kb sources (575kb total)
+osmlab/editor-layer-index  | 4.0Mb minified `imagery.geojson`
+@rapideditor/imagery-index | 221kb features, 354kb sources (575kb total)
 
 It's also much easier to contribute to and maintain the index.
 
@@ -90,10 +90,10 @@ Several files are published under `dist/`.  These are generated - do not edit th
 
 Let's create a `LocationConflation` instance and seed it with the `featureCollection.json` containing all the custom geojsons from imagery-index.  We'll grab the imagery `sources.json` too.
 ```js
-const sources = require('@ideditor/imagery-index/dist/sources.json');
-const features = require('@ideditor/imagery-index/dist/featureCollection.json');
+const sources = require('@rapideditor/imagery-index/dist/sources.json');
+const features = require('@rapideditor/imagery-index/dist/featureCollection.json');
 
-const LocationConflation = require('@ideditor/location-conflation');
+const LocationConflation = require('@rapideditor/location-conflation');
 const loco = new LocationConflation(features);
 ```
 
@@ -107,7 +107,7 @@ source.locationSet;
 let feature = loco.resolveLocationSet(source.locationSet);
 ```
 
-<img width="500px" alt="Croatia Aerial Imagery 2011" src="https://raw.githubusercontent.com/ideditor/imagery-index/main/docs/images/croatia-2011.png"/>
+<img width="500px" alt="Croatia Aerial Imagery 2011" src="https://raw.githubusercontent.com/rapideditor/imagery-index/main/docs/images/croatia-2011.png"/>
 
 But we're not limited only to country borders. For example in 2017, only portions of Croatia were imaged. The `locationSet` contains a custom .geojson to exclude a squarish region from the middle of the country:
 ```js
@@ -119,7 +119,7 @@ source.locationSet;
 let feature = loco.resolveLocationSet(source.locationSet);
 ```
 
-<img width="500px" alt="Croatia Aerial Imagery 2017" src="https://raw.githubusercontent.com/ideditor/imagery-index/main/docs/images/croatia-2017.png"/>
+<img width="500px" alt="Croatia Aerial Imagery 2017" src="https://raw.githubusercontent.com/rapideditor/imagery-index/main/docs/images/croatia-2017.png"/>
 
 In 2018, they imaged the rest of Croatia. A different .geojson file is used to exclude Croatia's outer regions:
 ```js
@@ -131,21 +131,21 @@ source.locationSet;
 let feature = loco.resolveLocationSet(source.locationSet);
 ```
 
-<img width="500px" alt="Croatia Aerial Imagery 2018" src="https://raw.githubusercontent.com/ideditor/imagery-index/main/docs/images/croatia-2018.png"/>
+<img width="500px" alt="Croatia Aerial Imagery 2018" src="https://raw.githubusercontent.com/rapideditor/imagery-index/main/docs/images/croatia-2018.png"/>
 
 
 ### Interactive Viewer
 
-Try out the interactive source viewer at https://ideditor.github.io/imagery-index/ to inspect any of the imagery sources visually and to compare them to their boundary polygons. You can also test different `locationSet` values to see what they look like.
+Try out the interactive source viewer at https://rapideditor.github.io/imagery-index/ to inspect any of the imagery sources visually and to compare them to their boundary polygons. You can also test different `locationSet` values to see what they look like.
 
 The viewer itself is just a single .html page using:
   * A [Mapbox GL](https://docs.mapbox.com/mapbox-gl-js/api/) base layer, and
   * The raster tile code from [iD](https://github.com/openstreetmap/iD) sitting on top of it.
 
-The code for the is in [`docs/index.html`](https://github.com/ideditor/imagery-index/blob/main/docs/index.html).
+The code for the is in [`docs/index.html`](https://github.com/rapideditor/imagery-index/blob/main/docs/index.html).
 
 🧐: "Why use iD's `<img>`-based slippy map code instead of adding a Mapbox GL raster layer?"<br/>
-😭: "[CORS is why](https://github.com/ideditor/imagery-index/issues/1). WebGL needs access to the pixels of an image in order to render it, and this can't happen unless the tile server has the necessary CORS header set. The good news is: if an imagery source works here, it will work in iD also."<br/>
+😭: "[CORS is why](https://github.com/rapideditor/imagery-index/issues/1). WebGL needs access to the pixels of an image in order to render it, and this can't happen unless the tile server has the necessary CORS header set. The good news is: if an imagery source works here, it will work in iD also."<br/>
 
 
 ### Prerequisites
@@ -157,7 +157,7 @@ The code for the is in [`docs/index.html`](https://github.com/ideditor/imagery-i
 ### Installing
 
 * Clone this project, for example:
-  `git clone git@github.com:ideditor/imagery-index.git`
+  `git clone git@github.com:rapideditor/imagery-index.git`
 * `cd` into the project folder,
 * Run `npm install` to install dependencies
 
@@ -171,7 +171,7 @@ For maintainers:
 * `npm run test` - Same as "build" but also checks the source code
 * `npm run stats` - Generate some statistics about the file sizes
 * `npm run dist` - Generate distibuted and minified files under `dist/`
-* `npm run appbuild` - Generate the JavaScript bundle used by the preview site: https://ideditor.github.io/imagery-index/
+* `npm run appbuild` - Generate the JavaScript bundle used by the preview site: https://rapideditor.github.io/imagery-index/
 
 
 ### Licenses

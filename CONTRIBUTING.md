@@ -1,6 +1,6 @@
 ## Contributing
 
-*If you don't understand the explanation below, feel free to [post an Issue](https://github.com/ideditor/imagery-index/issues) to describe your imagery sources. That page contains some pointers to help you fill in all the info we need. You do need [a Github account](https://github.com/join) to be able to post an Issue.*
+*If you don't understand the explanation below, feel free to [post an Issue](https://github.com/rapideditor/imagery-index/issues) to describe your imagery sources. That page contains some pointers to help you fill in all the info we need. You do need [a Github account](https://github.com/join) to be able to post an Issue.*
 
 There are 2 kinds of files in this project:
 
@@ -24,7 +24,7 @@ To add your imagery source to the index:
 ### Installing
 
 * Clone this project, for example:
-  `git clone git@github.com:ideditor/imagery-index.git`
+  `git clone git@github.com:rapideditor/imagery-index.git`
 * `cd` into the project folder,
 * Run `npm install` to install dependencies
 
@@ -38,7 +38,7 @@ For maintainers:
 * `npm run test` - Same as "build" but also checks the source code
 * `npm run stats` - Generate some statistics about the file sizes
 * `npm run dist` - Generate distibuted and minified files under `dist/`
-* `npm run appbuild` - Generate the JavaScript bundle used by the preview site: https://ideditor.github.io/imagery-index/
+* `npm run appbuild` - Generate the JavaScript bundle used by the preview site: https://rapideditor.github.io/imagery-index/
 
 
 ### Sources
@@ -109,7 +109,7 @@ Each source must have a `locationSet` to define where the source is active.
 
 The "locations" can be any of the following:
 
-- Strings recognized by the [country-coder library](https://github.com/ideditor/country-coder#readme).<br/>
+- Strings recognized by the [country-coder library](https://github.com/rapideditor/country-coder#readme).<br/>
   These include [ISO 3166-1 2 or 3 letter country codes](https://en.wikipedia.org/wiki/List_of_countries_by_United_Nations_geoscheme), [UN M.49 numeric codes](https://en.wikipedia.org/wiki/UN_M49), and supported Wikidata QIDs.<br/>
   _Examples: `"de"`, `"001"`, `"conus"`, `"gb-sct"`, `"Q620634"`_<br/>
   👉 A current list of supported codes can be found at <https://ideditor.codes>
@@ -125,8 +125,8 @@ The "locations" can be any of the following:
 ##### `locationSet` tips:
 - The M49 code for the whole world is `"001"`
 - A current list of supported codes can be found at <https://ideditor.codes>
-- You can view examples and learn more about working with `locationSets` in the [@ideditor/location-conflation](https://github.com/ideditor/location-conflation/blob/main/README.md) project.
-- You can test locationSets on this interactive map:  https://ideditor.github.io/location-conflation/
+- You can view examples and learn more about working with `locationSets` in the [@rapideditor/location-conflation](https://github.com/rapideditor/location-conflation/blob/main/README.md) project.
+- You can test locationSets on this interactive map:  https://location-conflation.com/
 
 
 #### url
