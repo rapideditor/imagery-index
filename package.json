@@ -36,7 +36,7 @@
     "easy-table": "^1.1.1",
     "eslint": "^7.28.0",
     "geojson-precision": "^1.0.0",
-    "glob": "^7.1.6",
+    "glob": "^10.2.6",
     "iD": "git://github.com/openstreetmap/iD.git#v2.19.6",
     "js-yaml": "^4.0.0",
     "jsonschema": "^1.2.5",
