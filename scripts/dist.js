@@ -2,7 +2,7 @@ const chalk = require('chalk');
 const fs = require('fs');
 const LocationConflation = require('@rapideditor/location-conflation').default;
 const shell = require('shelljs');
-const stringify = require('@aitodotai/json-stringify-pretty-compact');
+const stringify = require('json-stringify-pretty-compact');
 const xmlbuilder2 = require('xmlbuilder2');
 
 const sources = require('../dist/sources.json');

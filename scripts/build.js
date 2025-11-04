@@ -6,7 +6,7 @@ const path = require('path');
 const geojsonPrecision = require('geojson-precision');
 const geojsonRewind = require('@mapbox/geojson-rewind');
 const shell = require('shelljs');
-const stringify = require('@aitodotai/json-stringify-pretty-compact');
+const stringify = require('json-stringify-pretty-compact');
 const Validator = require('jsonschema').Validator;
 const YAML = require('js-yaml');
 
